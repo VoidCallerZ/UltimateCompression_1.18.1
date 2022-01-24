@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "uc:compressed_raw_iron"
+  },
+  "result": "uc:compressed_iron_ingot",
+  "experience": 0.0,
+  "cookingtime": 100
+}

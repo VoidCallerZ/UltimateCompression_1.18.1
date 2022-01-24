@@ -1,0 +1,6 @@
+{
+  "block.uc.compressed_iron_ore": "Compressed Iron Ore",
+  "item.uc.compressed_iron_ingot": "Compressed Iron Ingot",
+  "item.uc.compressed_raw_iron": "Compressed Raw Iron",
+  "itemGroup.ultimatecompression": "UltimateCompression"
+}
