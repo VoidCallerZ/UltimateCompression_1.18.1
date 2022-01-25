@@ -5,6 +5,8 @@ import com.VoidCallerZ.uc.setup.Registration;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
 
+import static com.VoidCallerZ.uc.blocks.PowergenBlock.MESSAGE_ULTIMATE_POWERGEN;
+import static com.VoidCallerZ.uc.blocks.PowergenBlock.SCREEN_ULTIMATE_POWERGEN;
 import static com.VoidCallerZ.uc.setup.ModSetup.TAB_NAME;
 
 public class ucLanguageProvider extends LanguageProvider
@@ -15,6 +17,10 @@ public class ucLanguageProvider extends LanguageProvider
     protected void  addTranslations()
     {
         add("itemGroup." + TAB_NAME, "UltimateCompression");
+        add(MESSAGE_ULTIMATE_POWERGEN, "Power generator generating %s per tick!");
+        add(SCREEN_ULTIMATE_POWERGEN, "Power generator");
+
+        add(Registration.ULTIMATE_POWERGEN.get(), "Ultimate power generator");
 
         add(Registration.COMPRESSED_IRON_ORE.get(), "Compressed Iron Ore");
 

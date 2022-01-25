@@ -19,6 +19,8 @@ public class ucItemModels extends ItemModelProvider
     {
         withExistingParent(Registration.COMPRESSED_IRON_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_iron_ore"));
 
+        withExistingParent(Registration.ULTIMATE_POWERGEN_ITEM.get().getRegistryName().getPath(), modLoc("block/powergen/main"));
+
         singleTexture(Registration.COMPRESSED_RAW_IRON.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed_raw_iron"));

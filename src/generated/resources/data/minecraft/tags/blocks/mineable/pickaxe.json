@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "uc:ultimate_powergen",
     "uc:compressed_iron_ore"
   ]
 }

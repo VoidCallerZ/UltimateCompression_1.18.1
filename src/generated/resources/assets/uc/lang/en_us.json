@@ -1,6 +1,9 @@
 {
   "block.uc.compressed_iron_ore": "Compressed Iron Ore",
+  "block.uc.ultimate_powergen": "Ultimate power generator",
   "item.uc.compressed_iron_ingot": "Compressed Iron Ingot",
   "item.uc.compressed_raw_iron": "Compressed Raw Iron",
-  "itemGroup.ultimatecompression": "UltimateCompression"
+  "itemGroup.ultimatecompression": "UltimateCompression",
+  "message.powergen": "Power generator generating %s per tick!",
+  "screen.tutorial.powergen": "Power generator"
 }

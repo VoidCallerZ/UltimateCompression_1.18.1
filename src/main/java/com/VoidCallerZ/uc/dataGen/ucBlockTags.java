@@ -19,9 +19,12 @@ public class ucBlockTags extends BlockTagsProvider
     protected void addTags()
     {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(Registration.ULTIMATE_POWERGEN.get())
                 .add(Registration.COMPRESSED_IRON_ORE.get());
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(Registration.COMPRESSED_IRON_ORE.get());
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(Registration.ULTIMATE_POWERGEN.get());
         tag(Tags.Blocks.ORES)
                 .add(Registration.COMPRESSED_IRON_ORE.get());
 
