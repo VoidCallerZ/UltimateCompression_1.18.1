@@ -11,7 +11,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "uc:compressed_ore"
+            "items": [
+              "uc:compressed_iron_ore"
+            ]
           }
         ]
       }

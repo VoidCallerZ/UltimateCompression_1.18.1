@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "uc:compressed_gold_ore"
+  },
+  "result": "uc:compressed_gold_ingot",
+  "experience": 1.0,
+  "cookingtime": 100
+}

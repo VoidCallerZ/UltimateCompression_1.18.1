@@ -1,9 +1,21 @@
 {
+  "block.uc.compressed_copper_block": "Compressed Block of Copper",
+  "block.uc.compressed_copper_ore": "Compressed Copper Ore",
+  "block.uc.compressed_diamond_block": "Compressed Block of Diamond",
+  "block.uc.compressed_diamond_ore": "Compressed Diamond Ore",
+  "block.uc.compressed_gold_block": "Compressed Block of Gold",
+  "block.uc.compressed_gold_ore": "Compressed Gold Ore",
+  "block.uc.compressed_iron_block": "Compressed Block of Iron",
   "block.uc.compressed_iron_ore": "Compressed Iron Ore",
   "block.uc.ultimate_powergen": "Ultimate power generator",
+  "item.uc.compressed_copper_ingot": "Compressed Copper Ingot",
+  "item.uc.compressed_diamond_gem": "Compressed Diamond",
+  "item.uc.compressed_gold_ingot": "Compressed Gold Ingot",
   "item.uc.compressed_iron_ingot": "Compressed Iron Ingot",
+  "item.uc.compressed_raw_copper": "Compressed Raw Copper",
+  "item.uc.compressed_raw_gold": "Compressed Raw Gold",
   "item.uc.compressed_raw_iron": "Compressed Raw Iron",
-  "itemGroup.ultimatecompression": "UltimateCompression",
+  "itemGroup.ultimatecompression": "Ultimate Compression",
   "message.powergen": "Power generator generating %s per tick!",
   "screen.tutorial.powergen": "Power generator"
 }

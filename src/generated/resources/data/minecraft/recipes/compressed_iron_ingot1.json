@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "tag": "uc:compressed_ore"
+    "item": "uc:compressed_iron_ore"
   },
   "result": "uc:compressed_iron_ingot",
   "experience": 1.0,

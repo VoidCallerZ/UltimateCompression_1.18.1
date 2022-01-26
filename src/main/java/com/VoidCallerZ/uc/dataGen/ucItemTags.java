@@ -22,14 +22,25 @@ public class ucItemTags extends ItemTagsProvider
     protected void addTags()
     {
         tag(Tags.Items.ORES)
-                .add(Registration.COMPRESSED_IRON_ORE_ITEM.get());
+                .add(Registration.COMPRESSED_IRON_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_GOLD_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_DIAMOND_ORE_ITEM.get());
         tag(Tags.Items.INGOTS)
-                .add(Registration.COMPRESSED_IRON_INGOT.get());
+                .add(Registration.COMPRESSED_IRON_INGOT.get())
+                .add(Registration.COMPRESSED_GOLD_INGOT.get())
+                .add(Registration.COMPRESSED_COPPER_INGOT.get());
+        tag(Tags.Items.GEMS)
+                .add(Registration.COMPRESSED_DIAMOND_GEM.get());
 
-        tag(Registration.COMPRESSED_ORE_ITEM)
-                .add(Registration.COMPRESSED_IRON_ORE_ITEM.get());
+        /*tag(Registration.COMPRESSED_ORE_ITEM)
+                .add(Registration.COMPRESSED_IRON_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_GOLD_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_DIAMOND_ORE_ITEM.get());*/
     }
 
     @Override
-    public String getName() {return "UC Tags";}
+    public String getName()
+    {
+        return "UC Tags";
+    }
 }

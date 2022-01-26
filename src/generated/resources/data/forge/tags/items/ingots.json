@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "uc:compressed_iron_ingot"
+    "uc:compressed_iron_ingot",
+    "uc:compressed_gold_ingot",
+    "uc:compressed_copper_ingot"
   ]
 }
