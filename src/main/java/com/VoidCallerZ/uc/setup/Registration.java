@@ -64,7 +64,13 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_DIAMOND_BLOCK_ITEM = fromBlock(COMPRESSED_DIAMOND_BLOCK);
     public static final RegistryObject<Block> COMPRESSED_COPPER_BLOCK = BLOCKS.register("compressed_copper_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_COPPER_BLOCK_ITEM = fromBlock(COMPRESSED_COPPER_BLOCK);
-
+    //RawBlocks
+    public static final RegistryObject<Block> COMPRESSED_RAW_IRON_BLOCK = BLOCKS.register("compressed_raw_iron_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_RAW_IRON_BLOCK_ITEM = fromBlock(COMPRESSED_RAW_IRON_BLOCK);
+    public static final RegistryObject<Block> COMPRESSED_RAW_GOLD_BLOCK = BLOCKS.register("compressed_raw_gold_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_RAW_GOLD_BLOCK_ITEM = fromBlock(COMPRESSED_RAW_GOLD_BLOCK);
+    public static final RegistryObject<Block> COMPRESSED_RAW_COPPER_BLOCK = BLOCKS.register("compressed_raw_copper_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_RAW_COPPER_BLOCK_ITEM = fromBlock(COMPRESSED_RAW_COPPER_BLOCK);
 
     //Only items
     public static final RegistryObject<Item> COMPRESSED_RAW_IRON = ITEMS.register("compressed_raw_iron", () -> new Item(ITEM_PROPERTIES));

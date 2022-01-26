@@ -5,6 +5,7 @@
     "uc:compressed_gold_ore",
     "uc:compressed_diamond_ore",
     "uc:compressed_gold_block",
-    "uc:compressed_diamond_block"
+    "uc:compressed_diamond_block",
+    "uc:compressed_raw_gold_block"
   ]
 }

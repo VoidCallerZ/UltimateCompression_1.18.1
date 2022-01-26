@@ -39,6 +39,13 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_COPPER_BLOCK.get(),
                 Registration.COMPRESSED_COPPER_INGOT.get(), 9, consumer);
 
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RAW_IRON_BLOCK.get(),
+                Registration.COMPRESSED_RAW_IRON.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RAW_GOLD_BLOCK.get(),
+                Registration.COMPRESSED_RAW_GOLD.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RAW_COPPER_BLOCK.get(),
+                Registration.COMPRESSED_RAW_COPPER.get(), 9, consumer);
+
         //Compressed Iron Ingot
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.COMPRESSED_IRON_ORE.get()), Registration.COMPRESSED_IRON_INGOT.get(), 1.0f, 100)
                 .unlockedBy("has_ore", has(Registration.COMPRESSED_IRON_ORE.get()))

@@ -33,6 +33,9 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_GOLD_BLOCK.get(), "Compressed Block of Gold");
         add(Registration.COMPRESSED_DIAMOND_BLOCK.get(), "Compressed Block of Diamond");
         add(Registration.COMPRESSED_COPPER_BLOCK.get(), "Compressed Block of Copper");
+        add(Registration.COMPRESSED_RAW_IRON_BLOCK.get(), "Compressed Block of Raw Iron");
+        add(Registration.COMPRESSED_RAW_GOLD_BLOCK.get(), "Compressed Block of Raw Gold");
+        add(Registration.COMPRESSED_RAW_COPPER_BLOCK.get(), "Compressed Block of Raw Copper");
 
         //Ingots & Chunks
         add(Registration.COMPRESSED_RAW_IRON.get(), "Compressed Raw Iron");

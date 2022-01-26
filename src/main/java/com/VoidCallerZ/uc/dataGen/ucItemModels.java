@@ -27,6 +27,10 @@ public class ucItemModels extends ItemModelProvider
         withExistingParent(Registration.COMPRESSED_DIAMOND_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_diamond_block"));
         withExistingParent(Registration.COMPRESSED_COPPER_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_copper_block"));
 
+        withExistingParent(Registration.COMPRESSED_RAW_IRON_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_raw_iron_block"));
+        withExistingParent(Registration.COMPRESSED_RAW_GOLD_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_raw_gold_block"));
+        withExistingParent(Registration.COMPRESSED_RAW_COPPER_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_raw_copper_block"));
+
         withExistingParent(Registration.ULTIMATE_POWERGEN_ITEM.get().getRegistryName().getPath(), modLoc("block/powergen/main"));
 
         singleTexture(Registration.COMPRESSED_RAW_IRON.get().getRegistryName().getPath(),

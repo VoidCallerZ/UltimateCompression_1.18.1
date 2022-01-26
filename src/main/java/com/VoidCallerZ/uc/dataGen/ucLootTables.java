@@ -20,5 +20,9 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(Registration.COMPRESSED_GOLD_BLOCK.get(), createSimpleTable("compessed_gold_block", Registration.COMPRESSED_GOLD_BLOCK.get()));
         lootTables.put(Registration.COMPRESSED_DIAMOND_BLOCK.get(), createSimpleTable("compessed_diamond_block", Registration.COMPRESSED_DIAMOND_BLOCK.get()));
         lootTables.put(Registration.COMPRESSED_COPPER_BLOCK.get(), createSimpleTable("compessed_copper_block", Registration.COMPRESSED_COPPER_BLOCK.get()));
+
+        lootTables.put(Registration.COMPRESSED_RAW_IRON_BLOCK.get(), createSimpleTable("compressed_raw_iron_block", Registration.COMPRESSED_RAW_IRON_BLOCK.get()));
+        lootTables.put(Registration.COMPRESSED_RAW_GOLD_BLOCK.get(), createSimpleTable("compressed_raw_gold_block", Registration.COMPRESSED_RAW_GOLD_BLOCK.get()));
+        lootTables.put(Registration.COMPRESSED_RAW_COPPER_BLOCK.get(), createSimpleTable("compressed_raw_copper_block", Registration.COMPRESSED_RAW_COPPER_BLOCK.get()));
     }
 }
