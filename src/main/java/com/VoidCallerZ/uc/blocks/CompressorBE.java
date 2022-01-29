@@ -5,39 +5,31 @@ import com.VoidCallerZ.uc.varia.CustomEnergyStorage;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.energy.CapabilityEnergy;
 import net.minecraftforge.energy.IEnergyStorage;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-import java.util.List;
 
 public class CompressorBE extends BlockEntity
 {
     private static int INGOTS_PER_BLOCK = 9;
-    public static final int ENERGY_CAPACITY = 100000;
-    public static final int ENERGY_RECEIVE = 1000;
-    public static final int ENERGY_COMPRESS = 500;
+    public static final int ENERGY_CAPACITY = 10000;
+    public static final int ENERGY_RECEIVE = 200;
+    public static final int ENERGY_COMPRESS_TICK = 500;
 
     private final ItemStackHandler itemHandler = createHandler();
     private final LazyOptional<IItemHandler> handler = LazyOptional.of(() -> itemHandler);
-    private final ItemStackHandler outputItemHandler = createOutputHandler();
-    private final LazyOptional<IItemHandler> outputHandler = LazyOptional.of(() -> outputItemHandler);
 
     private final CustomEnergyStorage energy = createEnergyStorage();
     private final LazyOptional<IEnergyStorage> energyHandler = LazyOptional.of(() -> energy);
@@ -80,12 +72,12 @@ public class CompressorBE extends BlockEntity
 
     private void compressBlocks(ItemStack stack, boolean canContinue)
     {
-        if(energy.getEnergyStored() >= ENERGY_COMPRESS)
+        if(energy.getEnergyStored() >= ENERGY_COMPRESS_TICK)
         {
             ItemStack item = itemHandler.getStackInSlot(1);
             if (canContinue)
             {
-                energy.consumeEnergy(ENERGY_COMPRESS);
+                energy.consumeEnergy(ENERGY_COMPRESS_TICK);
                 item = item.copy();
                 item.grow(1);
                 itemHandler.setStackInSlot(1, item);

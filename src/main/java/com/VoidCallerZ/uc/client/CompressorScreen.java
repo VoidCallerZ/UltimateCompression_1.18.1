@@ -27,7 +27,7 @@ public class CompressorScreen extends AbstractContainerScreen<CompressorContaine
     @Override
     protected void renderLabels(PoseStack matrixStack, int mouseX, int mouseY)
     {
-        drawString(matrixStack, Minecraft.getInstance().font, "Energy: " + menu.getEnergy(), 10, 10, 0xffffff);
+        drawString(matrixStack, Minecraft.getInstance().font, "Energy: " + menu.getEnergy(), 5, 50, 0xffffff);
     }
 
     @Override
