@@ -64,11 +64,11 @@ public class CompressorBE extends BlockEntity
         {
             itemHandler.extractItem(0, INGOTS_PER_BLOCK, false);
             setChanged();
-            compressBlocks();
+            compressBlocks(stack);
         }
     }
 
-    private void compressBlocks()
+    private void compressBlocks(ItemStack stack)
     {
         if(energy.getEnergyStored() >= ENERGY_COMPRESS)
         {
@@ -82,11 +82,23 @@ public class CompressorBE extends BlockEntity
             }
             else
             {
-                itemHandler.setStackInSlot(1, Registration.COMPRESSED_IRON_INGOT.get().getDefaultInstance());
+                if (stack.is(Items.IRON_INGOT))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_IRON_INGOT.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.GOLD_INGOT))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_GOLD_INGOT.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.COPPER_INGOT))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_COPPER_INGOT.get().getDefaultInstance());
+                }
+                else
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_DIAMOND_GEM.get().getDefaultInstance());
+                }
             }
-
-            //itemHandler.insertItem(1, Registration.COMPRESSED_IRON_INGOT.get().getDefaultInstance(), false);
-            //itemHandler.setStackInSlot(1, Registration.COMPRESSED_IRON_INGOT.get().getDefaultInstance());
         }
     }
 
