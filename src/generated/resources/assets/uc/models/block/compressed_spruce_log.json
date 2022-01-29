@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "uc:block/compressed/logs/compressed_spruce_log",
+    "end": "uc:block/compressed/logs/compressed_spruce_log_top"
+  }
+}

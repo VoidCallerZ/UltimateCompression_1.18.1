@@ -24,7 +24,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class PowergenBlockEntity extends BlockEntity
+public class PowergenBE extends BlockEntity
 {
     public static final int POWERGEN_CAPACITY = 50000; // Max capacity
     public static final int POWERGEN_GENERATE = 60;    // Generation per tick
@@ -39,7 +39,7 @@ public class PowergenBlockEntity extends BlockEntity
 
     private int counter;
 
-    public PowergenBlockEntity(BlockPos pos, BlockState state) {
+    public PowergenBE(BlockPos pos, BlockState state) {
         super(Registration.ULTIMATE_POWERGEN_BE.get(), pos, state);
     }
 

@@ -1,5 +1,6 @@
 package com.VoidCallerZ.uc.setup;
 
+import com.VoidCallerZ.uc.client.CompressorScreen;
 import com.VoidCallerZ.uc.client.PowergenScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -14,6 +15,7 @@ public class ClientSetup
         {
             MenuScreens.register(Registration.ULTIMATE_POWERGEN_CONTAINER.get(), PowergenScreen::new);
             ItemBlockRenderTypes.setRenderLayer(Registration.ULTIMATE_POWERGEN.get(), RenderType.translucent());
+            MenuScreens.register(Registration.COMPRESSOR_CONTAINER.get(), CompressorScreen::new);
         });
     }
 }

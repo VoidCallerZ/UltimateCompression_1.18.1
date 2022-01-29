@@ -31,7 +31,26 @@ public class ucItemModels extends ItemModelProvider
         withExistingParent(Registration.COMPRESSED_RAW_GOLD_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_raw_gold_block"));
         withExistingParent(Registration.COMPRESSED_RAW_COPPER_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_raw_copper_block"));
 
+        //Logs & Planks
+        withExistingParent(Registration.COMPRESSED_ACACIA_LOG_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_acacia_log"));
+        withExistingParent(Registration.COMPRESSED_ACACIA_PLANKS_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_acacia_planks"));
+        withExistingParent(Registration.COMPRESSED_BIRCH_LOG_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_birch_log"));
+        withExistingParent(Registration.COMPRESSED_BIRCH_PLANKS_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_birch_planks"));
+        withExistingParent(Registration.COMPRESSED_DARK_OAK_LOG_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_dark_oak_log"));
+        withExistingParent(Registration.COMPRESSED_DARK_OAK_PLANKS_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_dark_oak_planks"));
+        withExistingParent(Registration.COMPRESSED_JUNGLE_LOG_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_jungle_log"));
+        withExistingParent(Registration.COMPRESSED_JUNGLE_PLANKS_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_jungle_planks"));
+        withExistingParent(Registration.COMPRESSED_OAK_LOG_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_oak_log"));
+        withExistingParent(Registration.COMPRESSED_OAK_PLANKS_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_oak_planks"));
+        withExistingParent(Registration.COMPRESSED_SPRUCE_LOG_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_spruce_log"));
+        withExistingParent(Registration.COMPRESSED_SPRUCE_PLANKS_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_spruce_planks"));
+        withExistingParent(Registration.COMPRESSED_SPRUCE_CRIMSON_STEM_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_crimson_stem"));
+        withExistingParent(Registration.COMPRESSED_CRIMSON_PLANKS_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_crimson_planks"));
+        withExistingParent(Registration.COMPRESSED_WARPED_STEM_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_warped_stem"));
+        withExistingParent(Registration.COMPRESSED_WARPED_PLANKS_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_warped_planks"));
+
         withExistingParent(Registration.ULTIMATE_POWERGEN_ITEM.get().getRegistryName().getPath(), modLoc("block/powergen/main"));
+        withExistingParent(Registration.COMPRESSOR_ITEM.get().getRegistryName().getPath(), modLoc("block/compressor"));
 
         singleTexture(Registration.COMPRESSED_RAW_IRON.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),

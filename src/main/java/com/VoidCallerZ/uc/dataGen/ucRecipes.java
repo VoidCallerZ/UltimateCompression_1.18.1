@@ -7,7 +7,9 @@ import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 
 import java.util.function.Consumer;
@@ -45,6 +47,39 @@ public class ucRecipes extends BaseRecipeProvider
                 Registration.COMPRESSED_RAW_GOLD.get(), 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RAW_COPPER_BLOCK.get(),
                 Registration.COMPRESSED_RAW_COPPER.get(), 9, consumer);
+
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ACACIA_LOG.get(),
+                Items.ACACIA_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ACACIA_PLANKS.get(),
+                Items.ACACIA_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BIRCH_LOG.get(),
+                Items.BIRCH_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BIRCH_PLANKS.get(),
+                Items.BIRCH_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DARK_OAK_LOG.get(),
+                Items.DARK_OAK_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DARK_OAK_PLANKS.get(),
+                Items.DARK_OAK_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_JUNGLE_LOG.get(),
+                Items.JUNGLE_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_JUNGLE_PLANKS.get(),
+                Items.JUNGLE_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_OAK_LOG.get(),
+                Items.OAK_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_OAK_PLANKS.get(),
+                Items.OAK_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SPRUCE_LOG.get(),
+                Items.SPRUCE_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SPRUCE_PLANKS.get(),
+                Items.SPRUCE_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CRIMSON_STEM.get(),
+                Items.CRIMSON_STEM, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CRIMSON_PLANKS.get(),
+                Items.CRIMSON_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_WARPED_STEM.get(),
+                Items.WARPED_STEM, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_WARPED_PLANKS.get(),
+                Items.WARPED_PLANKS, 9, consumer);
 
         //Compressed Iron Ingot
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.COMPRESSED_IRON_ORE.get()), Registration.COMPRESSED_IRON_INGOT.get(), 1.0f, 100)

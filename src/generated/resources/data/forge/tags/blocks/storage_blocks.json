@@ -7,6 +7,22 @@
     "uc:compressed_gold_block",
     "uc:compressed_raw_iron_block",
     "uc:compressed_raw_gold_block",
-    "uc:compressed_raw_copper_block"
+    "uc:compressed_raw_copper_block",
+    "uc:compressed_acacia_log",
+    "uc:compressed_acacia_planks",
+    "uc:compressed_birch_log",
+    "uc:compressed_birch_planks",
+    "uc:compressed_dark_oak_log",
+    "uc:compressed_dark_oak_planks",
+    "uc:compressed_jungle_log",
+    "uc:compressed_jungle_planks",
+    "uc:compressed_oak_log",
+    "uc:compressed_oak_planks",
+    "uc:compressed_spruce_log",
+    "uc:compressed_spruce_planks",
+    "uc:compressed_crimson_stem",
+    "uc:compressed_crimson_planks",
+    "uc:compressed_warped_stem",
+    "uc:compressed_warped_planks"
   ]
 }

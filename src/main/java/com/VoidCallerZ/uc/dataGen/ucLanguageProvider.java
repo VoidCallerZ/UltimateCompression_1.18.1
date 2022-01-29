@@ -37,6 +37,24 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_RAW_GOLD_BLOCK.get(), "Compressed Block of Raw Gold");
         add(Registration.COMPRESSED_RAW_COPPER_BLOCK.get(), "Compressed Block of Raw Copper");
 
+        //Logs & Planks
+        add(Registration.COMPRESSED_ACACIA_LOG.get(), "Compressed Acacia Log");
+        add(Registration.COMPRESSED_ACACIA_PLANKS.get(), "Compressed Acacia Planks");
+        add(Registration.COMPRESSED_BIRCH_LOG.get(), "Compressed Birch Log");
+        add(Registration.COMPRESSED_BIRCH_PLANKS.get(), "Compressed Birch Planks");
+        add(Registration.COMPRESSED_DARK_OAK_LOG.get(), "Compressed Dark Oak Log");
+        add(Registration.COMPRESSED_DARK_OAK_PLANKS.get(), "Compressed Dark Oak Planks");
+        add(Registration.COMPRESSED_JUNGLE_LOG.get(), "Compressed Jungle Log");
+        add(Registration.COMPRESSED_JUNGLE_PLANKS.get(), "Compressed Jungle Planks");
+        add(Registration.COMPRESSED_OAK_LOG.get(), "Compressed Oak Log");
+        add(Registration.COMPRESSED_OAK_PLANKS.get(), "Compressed Oak Planks");
+        add(Registration.COMPRESSED_SPRUCE_LOG.get(), "Compressed Spruce Log");
+        add(Registration.COMPRESSED_SPRUCE_PLANKS.get(), "Compressed Spruce Planks");
+        add(Registration.COMPRESSED_CRIMSON_STEM.get(), "Compressed Crimson Stem");
+        add(Registration.COMPRESSED_CRIMSON_PLANKS.get(), "Compressed Crimson Planks");
+        add(Registration.COMPRESSED_WARPED_STEM.get(), "Compressed Warped Stem");
+        add(Registration.COMPRESSED_WARPED_PLANKS.get(), "Compressed Warped Planks");
+
         //Ingots & Chunks
         add(Registration.COMPRESSED_RAW_IRON.get(), "Compressed Raw Iron");
         add(Registration.COMPRESSED_IRON_INGOT.get(), "Compressed Iron Ingot");

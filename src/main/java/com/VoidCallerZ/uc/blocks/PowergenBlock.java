@@ -59,14 +59,14 @@ public class PowergenBlock extends Block implements EntityBlock
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter reader, List<Component> list, TooltipFlag flags) {
-        list.add(new TranslatableComponent(MESSAGE_ULTIMATE_POWERGEN, Integer.toString(PowergenBlockEntity.POWERGEN_GENERATE))
+        list.add(new TranslatableComponent(MESSAGE_ULTIMATE_POWERGEN, Integer.toString(PowergenBE.POWERGEN_GENERATE))
                 .withStyle(ChatFormatting.BLUE));
     }
 
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return new PowergenBlockEntity(blockPos, blockState);
+        return new PowergenBE(blockPos, blockState);
     }
 
     @Nullable
@@ -76,7 +76,7 @@ public class PowergenBlock extends Block implements EntityBlock
             return null;
         }
         return (lvl, pos, blockState, t) -> {
-            if (t instanceof PowergenBlockEntity tile) {
+            if (t instanceof PowergenBE tile) {
                 tile.tickServer();
             }
         };
@@ -99,7 +99,7 @@ public class PowergenBlock extends Block implements EntityBlock
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult trace) {
         if (!level.isClientSide) {
             BlockEntity be = level.getBlockEntity(pos);
-            if (be instanceof PowergenBlockEntity) {
+            if (be instanceof PowergenBE) {
                 MenuProvider containerProvider = new MenuProvider() {
                     @Override
                     public Component getDisplayName() {
