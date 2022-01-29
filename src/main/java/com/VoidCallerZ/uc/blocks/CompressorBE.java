@@ -59,21 +59,31 @@ public class CompressorBE extends BlockEntity
 
     public void tickServer()
     {
-        ItemStack stack = itemHandler.getStackInSlot(0);
-        if(stack.getCount() >= INGOTS_PER_BLOCK)
+        ItemStack inputSlot = itemHandler.getStackInSlot(0);
+        ItemStack outputSlot = itemHandler.getStackInSlot(1);
+        if(inputSlot.getCount() >= INGOTS_PER_BLOCK)
         {
-            itemHandler.extractItem(0, INGOTS_PER_BLOCK, false);
-            setChanged();
-            compressBlocks(stack);
+            if (("compressed_" + inputSlot.getItem()).equals(outputSlot.getItem().toString()) || ("compressed_" + inputSlot.getItem() + "_gem").equals(outputSlot.getItem().toString()))
+            {
+                itemHandler.extractItem(0, INGOTS_PER_BLOCK, false);
+                setChanged();
+                compressBlocks(inputSlot, true);
+            }
+            else if (outputSlot.isEmpty())
+            {
+                itemHandler.extractItem(0, INGOTS_PER_BLOCK, false);
+                setChanged();
+                compressBlocks(inputSlot, false);
+            }
         }
     }
 
-    private void compressBlocks(ItemStack stack)
+    private void compressBlocks(ItemStack stack, boolean canContinue)
     {
         if(energy.getEnergyStored() >= ENERGY_COMPRESS)
         {
             ItemStack item = itemHandler.getStackInSlot(1);
-            if (!item.isEmpty())
+            if (canContinue)
             {
                 energy.consumeEnergy(ENERGY_COMPRESS);
                 item = item.copy();
