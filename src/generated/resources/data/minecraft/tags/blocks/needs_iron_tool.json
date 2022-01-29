@@ -5,6 +5,10 @@
     "uc:compressor",
     "uc:compressed_gold_ore",
     "uc:compressed_diamond_ore",
+    "uc:compressed_deepslate_iron_ore",
+    "uc:compressed_deepslate_gold_ore",
+    "uc:compressed_deepslate_diamond_ore",
+    "uc:compressed_deepslate_copper_ore",
     "uc:compressed_gold_block",
     "uc:compressed_diamond_block",
     "uc:compressed_raw_gold_block"

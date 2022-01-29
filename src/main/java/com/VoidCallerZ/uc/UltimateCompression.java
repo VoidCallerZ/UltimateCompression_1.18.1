@@ -21,6 +21,7 @@ public class UltimateCompression
 
     public UltimateCompression()
     {
+        ModSetup.setup();
         Registration.init();
 
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();

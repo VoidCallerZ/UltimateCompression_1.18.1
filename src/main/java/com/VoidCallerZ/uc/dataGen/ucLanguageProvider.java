@@ -27,6 +27,10 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_GOLD_ORE.get(), "Compressed Gold Ore");
         add(Registration.COMPRESSED_DIAMOND_ORE.get(), "Compressed Diamond Ore");
         add(Registration.COMPRESSED_COPPER_ORE.get(), "Compressed Copper Ore");
+        add(Registration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), "Compressed Deepslate Iron Ore");
+        add(Registration.COMPRESSED_DEEPSLATE_GOLD_ORE.get(), "Compressed Deepslate Gold Ore");
+        add(Registration.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(), "Compressed Deepslate Diamond Ore");
+        add(Registration.COMPRESSED_DEEPSLATE_COPPER_ORE.get(), "Compressed Deepslate Copper Ore");
 
         //Blocks
         add(Registration.COMPRESSED_IRON_BLOCK.get(), "Compressed Block of Iron");

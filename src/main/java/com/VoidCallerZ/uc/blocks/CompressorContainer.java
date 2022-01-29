@@ -39,7 +39,7 @@ public class CompressorContainer extends AbstractContainerMenu
             blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(h ->
             {
                 addSlot(new SlotItemHandler(h, 0, 82, 12));
-                //addSlot(new SlotItemHandler(h, 1, 82, 43));
+                addSlot(new SlotItemHandler(h, 1, 82, 43));
             });
         }
         layoutPlayerInventorySlots(10, 70);
@@ -114,17 +114,17 @@ public class CompressorContainer extends AbstractContainerMenu
                 }
                 slot.onQuickCraft(stack, itemstack);
             }
-//            else if(index == 1)
-//            {
-//                if (!this.moveItemStackTo(stack, 1, 37, true))
-//                {
-//                    return ItemStack.EMPTY;
-//                }
-//                slot.onQuickCraft(stack, itemstack);
-//            }
+            else if (index == 1)
+            {
+                if (!this.moveItemStackTo(stack, 1, 37, true))
+                {
+                    return ItemStack.EMPTY;
+                }
+                slot.onQuickCraft(stack, itemstack);
+            }
             else
             {
-                if (stack.getItem() == Items.IRON_INGOT)
+                if (CompressorBE.compressorValid(stack))
                 {
                     if (!this.moveItemStackTo(stack, 0, 1, false))
                     {

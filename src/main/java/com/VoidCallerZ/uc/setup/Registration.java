@@ -40,6 +40,7 @@ public class Registration
 
     //Block & Item properties
     public static final BlockBehaviour.Properties ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops();
+    public static final BlockBehaviour.Properties DEEPSLATE_ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(4.5f).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties INGOT_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.METAL).strength(2f).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties WOOD_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.WOOD).strength(2f);
     public static final Item.Properties ITEM_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_COMPRESSION_TAB);
@@ -54,6 +55,16 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_DIAMOND_ORE_ITEM = fromBlock(COMPRESSED_DIAMOND_ORE);
     public static final RegistryObject<Block> COMPRESSED_COPPER_ORE = BLOCKS.register("compressed_copper_ore", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_COPPER_ORE_ITEM = fromBlock(COMPRESSED_COPPER_ORE);
+    //Deepslate Ores
+    public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_IRON_ORE = BLOCKS.register("compressed_deepslate_iron_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_IRON_ORE_ITEM = fromBlock(COMPRESSED_DEEPSLATE_IRON_ORE);
+    public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_GOLD_ORE = BLOCKS.register("compressed_deepslate_gold_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_GOLD_ORE_ITEM = fromBlock(COMPRESSED_DEEPSLATE_GOLD_ORE);
+    public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_DIAMOND_ORE = BLOCKS.register("compressed_deepslate_diamond_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_DIAMOND_ORE_ITEM = fromBlock(COMPRESSED_DEEPSLATE_DIAMOND_ORE);
+    public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_COPPER_ORE = BLOCKS.register("compressed_deepslate_copper_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_COPPER_ORE_ITEM = fromBlock(COMPRESSED_DEEPSLATE_COPPER_ORE);
+
     //IngotBlocks
     public static final RegistryObject<Block> COMPRESSED_IRON_BLOCK = BLOCKS.register("compressed_iron_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_IRON_BLOCK_ITEM = fromBlock(COMPRESSED_IRON_BLOCK);

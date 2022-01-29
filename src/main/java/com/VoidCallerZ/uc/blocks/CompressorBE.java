@@ -6,6 +6,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -17,12 +18,14 @@ import net.minecraftforge.energy.CapabilityEnergy;
 import net.minecraftforge.energy.IEnergyStorage;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.util.List;
 
 public class CompressorBE extends BlockEntity
 {
@@ -59,7 +62,7 @@ public class CompressorBE extends BlockEntity
         ItemStack stack = itemHandler.getStackInSlot(0);
         if(stack.getCount() >= INGOTS_PER_BLOCK)
         {
-            itemHandler.extractItem(0, 9, false);
+            itemHandler.extractItem(0, INGOTS_PER_BLOCK, false);
             setChanged();
             compressBlocks();
         }
@@ -69,12 +72,21 @@ public class CompressorBE extends BlockEntity
     {
         if(energy.getEnergyStored() >= ENERGY_COMPRESS)
         {
-            //outputItemHandler.insertItem(0, Registration.COMPRESSED_IRON_INGOT.get().getDefaultInstance(), false);
-            ItemEntity entityitem = new ItemEntity(level, worldPosition.getX(), worldPosition.getY() + 0.5, worldPosition.getZ(), Registration.COMPRESSED_IRON_INGOT.get().getDefaultInstance());
-            entityitem.setPickUpDelay(40);
-            entityitem.setDeltaMovement(entityitem.getDeltaMovement().multiply(0, 1, 0));
-            level.addFreshEntity(entityitem);
-            setChanged();
+            ItemStack item = itemHandler.getStackInSlot(1);
+            if (!item.isEmpty())
+            {
+                energy.consumeEnergy(ENERGY_COMPRESS);
+                item = item.copy();
+                item.grow(1);
+                itemHandler.setStackInSlot(1, item);
+            }
+            else
+            {
+                itemHandler.setStackInSlot(1, Registration.COMPRESSED_IRON_INGOT.get().getDefaultInstance());
+            }
+
+            //itemHandler.insertItem(1, Registration.COMPRESSED_IRON_INGOT.get().getDefaultInstance(), false);
+            //itemHandler.setStackInSlot(1, Registration.COMPRESSED_IRON_INGOT.get().getDefaultInstance());
         }
     }
 
@@ -93,7 +105,7 @@ public class CompressorBE extends BlockEntity
             public boolean isItemValid(int slot, @Nonnull ItemStack stack) {
                 if (slot == 0)
                 {
-                    return stack.getItem() == Items.IRON_INGOT;
+                    return compressorValid(stack);
                 }
                 return false;
             }
@@ -101,7 +113,7 @@ public class CompressorBE extends BlockEntity
             @Nonnull
             @Override
             public ItemStack insertItem(int slot, @Nonnull ItemStack stack, boolean simulate) {
-                if (stack.getItem() != Items.IRON_INGOT) {
+                if (!compressorValid(stack)) {
                     return stack;
                 }
                 return super.insertItem(slot, stack, simulate);
@@ -164,5 +176,10 @@ public class CompressorBE extends BlockEntity
             return energyHandler.cast();
         }
         return super.getCapability(cap, side);
+    }
+
+    public static boolean compressorValid(ItemStack stack)
+    {
+        return stack.is(Registration.COMPRESSOR_VALID_ITEMS);
     }
 }

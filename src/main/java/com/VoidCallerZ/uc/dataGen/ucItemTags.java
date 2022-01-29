@@ -25,7 +25,12 @@ public class ucItemTags extends ItemTagsProvider
         tag(Tags.Items.ORES)
                 .add(Registration.COMPRESSED_IRON_ORE_ITEM.get())
                 .add(Registration.COMPRESSED_GOLD_ORE_ITEM.get())
-                .add(Registration.COMPRESSED_DIAMOND_ORE_ITEM.get());
+                .add(Registration.COMPRESSED_DIAMOND_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_COPPER_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_DEEPSLATE_IRON_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_DEEPSLATE_GOLD_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_DEEPSLATE_DIAMOND_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_DEEPSLATE_COPPER_ORE_ITEM.get());
         tag(Tags.Items.INGOTS)
                 .add(Registration.COMPRESSED_IRON_INGOT.get())
                 .add(Registration.COMPRESSED_GOLD_INGOT.get())
@@ -34,7 +39,10 @@ public class ucItemTags extends ItemTagsProvider
                 .add(Registration.COMPRESSED_DIAMOND_GEM.get());
 
         tag(Registration.COMPRESSOR_VALID_ITEMS)
-                .add(Items.IRON_INGOT);
+                .add(Items.IRON_INGOT)
+                .add(Items.GOLD_INGOT)
+                .add(Items.DIAMOND)
+                .add(Items.COPPER_INGOT);
 
         /*tag(Registration.COMPRESSED_ORE_ITEM)
                 .add(Registration.COMPRESSED_IRON_ORE_ITEM.get())

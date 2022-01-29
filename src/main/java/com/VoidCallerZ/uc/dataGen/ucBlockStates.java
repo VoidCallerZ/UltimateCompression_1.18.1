@@ -27,6 +27,11 @@ public class ucBlockStates extends BaseBlockStateProvider {
         singleTextureBlock(Registration.COMPRESSED_DIAMOND_ORE.get(), "compressed_diamond_ore", "block/compressed/ores/compressed_diamond_ore");
         singleTextureBlock(Registration.COMPRESSED_COPPER_ORE.get(), "compressed_copper_ore", "block/compressed/ores/compressed_copper_ore");
 
+        singleTextureBlock(Registration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), "compressed_deepslate_iron_ore", "block/compressed/ores/compressed_deepslate_iron_ore");
+        singleTextureBlock(Registration.COMPRESSED_DEEPSLATE_GOLD_ORE.get(), "compressed_deepslate_gold_ore", "block/compressed/ores/compressed_deepslate_gold_ore");
+        singleTextureBlock(Registration.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(), "compressed_deepslate_diamond_ore", "block/compressed/ores/compressed_deepslate_diamond_ore");
+        singleTextureBlock(Registration.COMPRESSED_DEEPSLATE_COPPER_ORE.get(), "compressed_deepslate_copper_ore", "block/compressed/ores/compressed_deepslate_copper_ore");
+
         singleTextureBlock(Registration.COMPRESSED_IRON_BLOCK.get(), "compressed_iron_block", "block/compressed/materials/compressed_iron_block");
         singleTextureBlock(Registration.COMPRESSED_GOLD_BLOCK.get(), "compressed_gold_block", "block/compressed/materials/compressed_gold_block");
         singleTextureBlock(Registration.COMPRESSED_DIAMOND_BLOCK.get(), "compressed_diamond_block", "block/compressed/materials/compressed_diamond_block");

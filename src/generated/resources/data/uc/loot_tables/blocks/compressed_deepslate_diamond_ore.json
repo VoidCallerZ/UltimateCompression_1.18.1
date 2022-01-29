@@ -2,7 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "compressed_iron_ore",
+      "name": "compressed_deepslate_diamond_ore",
       "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "uc:compressed_iron_ore"
+              "name": "uc:compressed_deepslate_diamond_ore"
             },
             {
               "type": "minecraft:item",
@@ -52,7 +52,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "uc:compressed_raw_iron"
+              "name": "uc:compressed_diamond_gem"
             }
           ]
         }

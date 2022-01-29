@@ -21,6 +21,10 @@ public class ucItemModels extends ItemModelProvider
         withExistingParent(Registration.COMPRESSED_GOLD_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_gold_ore"));
         withExistingParent(Registration.COMPRESSED_DIAMOND_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_diamond_ore"));
         withExistingParent(Registration.COMPRESSED_COPPER_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_copper_ore"));
+        withExistingParent(Registration.COMPRESSED_DEEPSLATE_IRON_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_deepslate_iron_ore"));
+        withExistingParent(Registration.COMPRESSED_DEEPSLATE_GOLD_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_deepslate_gold_ore"));
+        withExistingParent(Registration.COMPRESSED_DEEPSLATE_DIAMOND_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_deepslate_diamond_ore"));
+        withExistingParent(Registration.COMPRESSED_DEEPSLATE_COPPER_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_deepslate_copper_ore"));
 
         withExistingParent(Registration.COMPRESSED_IRON_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_iron_block"));
         withExistingParent(Registration.COMPRESSED_GOLD_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_gold_block"));
