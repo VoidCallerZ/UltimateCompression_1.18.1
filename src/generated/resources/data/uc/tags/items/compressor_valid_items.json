@@ -4,6 +4,10 @@
     "minecraft:iron_ingot",
     "minecraft:gold_ingot",
     "minecraft:diamond",
-    "minecraft:copper_ingot"
+    "minecraft:copper_ingot",
+    "minecraft:iron_block",
+    "minecraft:gold_block",
+    "minecraft:diamond_block",
+    "minecraft:copper_block"
   ]
 }

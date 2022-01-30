@@ -7,6 +7,7 @@ import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -42,7 +43,11 @@ public class ucItemTags extends ItemTagsProvider
                 .add(Items.IRON_INGOT)
                 .add(Items.GOLD_INGOT)
                 .add(Items.DIAMOND)
-                .add(Items.COPPER_INGOT);
+                .add(Items.COPPER_INGOT)
+                .add(Items.IRON_BLOCK)
+                .add(Items.GOLD_BLOCK)
+                .add(Items.DIAMOND_BLOCK)
+                .add(Items.COPPER_BLOCK);
 
         /*tag(Registration.COMPRESSED_ORE_ITEM)
                 .add(Registration.COMPRESSED_IRON_ORE_ITEM.get())

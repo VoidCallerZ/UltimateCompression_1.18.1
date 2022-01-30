@@ -96,9 +96,25 @@ public class CompressorBE extends BlockEntity
                 {
                     itemHandler.setStackInSlot(1, Registration.COMPRESSED_COPPER_INGOT.get().getDefaultInstance());
                 }
-                else
+                else if (stack.is(Items.DIAMOND))
                 {
                     itemHandler.setStackInSlot(1, Registration.COMPRESSED_DIAMOND_GEM.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.IRON_BLOCK))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_IRON_BLOCK_ITEM.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.GOLD_BLOCK))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_GOLD_BLOCK_ITEM.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.COPPER_BLOCK))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_COPPER_BLOCK_ITEM.get().getDefaultInstance());
+                }
+                else
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_DIAMOND_BLOCK_ITEM.get().getDefaultInstance());
                 }
             }
         }
