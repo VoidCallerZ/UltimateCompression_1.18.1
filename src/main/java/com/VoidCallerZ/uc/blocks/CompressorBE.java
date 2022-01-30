@@ -24,6 +24,7 @@ import javax.annotation.Nullable;
 public class CompressorBE extends BlockEntity
 {
     private static int INGOTS_PER_BLOCK = 9;
+    private static int COMPRESS_DURATION = 100; // 5 seconds
     public static final int ENERGY_CAPACITY = 10000;
     public static final int ENERGY_RECEIVE = 200;
     public static final int ENERGY_COMPRESS_TICK = 500;
@@ -53,20 +54,27 @@ public class CompressorBE extends BlockEntity
     {
         ItemStack inputSlot = itemHandler.getStackInSlot(0);
         ItemStack outputSlot = itemHandler.getStackInSlot(1);
-        if(inputSlot.getCount() >= INGOTS_PER_BLOCK)
+        if (compressingCounter <= 0)
         {
-            if (("compressed_" + inputSlot.getItem()).equals(outputSlot.getItem().toString()) || ("compressed_" + inputSlot.getItem() + "_gem").equals(outputSlot.getItem().toString()))
+            if(inputSlot.getCount() >= INGOTS_PER_BLOCK)
             {
-                itemHandler.extractItem(0, INGOTS_PER_BLOCK, false);
-                setChanged();
-                compressBlocks(inputSlot, true);
+                if (("compressed_" + inputSlot.getItem()).equals(outputSlot.getItem().toString()) || ("compressed_" + inputSlot.getItem() + "_gem").equals(outputSlot.getItem().toString()))
+                {
+                    itemHandler.extractItem(0, INGOTS_PER_BLOCK, false);
+                    setChanged();
+                    compressBlocks(inputSlot, true);
+                }
+                else if (outputSlot.isEmpty())
+                {
+                    itemHandler.extractItem(0, INGOTS_PER_BLOCK, false);
+                    setChanged();
+                    compressBlocks(inputSlot, false);
+                }
             }
-            else if (outputSlot.isEmpty())
-            {
-                itemHandler.extractItem(0, INGOTS_PER_BLOCK, false);
-                setChanged();
-                compressBlocks(inputSlot, false);
-            }
+        }
+        else
+        {
+            compressingCounter--;
         }
     }
 
@@ -74,6 +82,7 @@ public class CompressorBE extends BlockEntity
     {
         if(energy.getEnergyStored() >= ENERGY_COMPRESS_TICK)
         {
+            compressingCounter = COMPRESS_DURATION;
             ItemStack item = itemHandler.getStackInSlot(1);
             if (canContinue)
             {

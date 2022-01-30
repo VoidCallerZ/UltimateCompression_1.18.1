@@ -4,10 +4,13 @@ import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.setup.Registration;
 import net.minecraft.core.Direction;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.common.data.ExistingFileHelper;
+
+import javax.swing.text.html.parser.Entity;
 
 public class ucBlockStates extends BaseBlockStateProvider {
     public ucBlockStates(DataGenerator gen, ExistingFileHelper helper) {
@@ -58,7 +61,17 @@ public class ucBlockStates extends BaseBlockStateProvider {
         singleTextureBlock(Registration.COMPRESSED_CRIMSON_PLANKS.get(), "compressed_crimson_planks", "block/compressed/planks/compressed_crimson_planks");
         singleTextureBlock(Registration.COMPRESSED_WARPED_PLANKS.get(), "compressed_warped_planks", "block/compressed/planks/compressed_warped_planks");
 
-        singleTextureBlock(Registration.COMPRESSOR.get(), "compressor", "block/compressed/planks/compressed_warped_planks");
+        registerCompressor();
+    }
+
+    private void registerCompressor()
+    {
+        ResourceLocation BASE = modLoc("block/compressor/compressor_back");
+        ResourceLocation BACK = modLoc("block/compressor/compressor_back_on");
+        ResourceLocation FRONT = modLoc("block/compressor/compressor_front_on");
+        ResourceLocation SIDE = modLoc("block/compressor/compressor_side");
+
+        horizontalBlock(Registration.COMPRESSOR.get(), models().cube("compressor", BASE, BASE, FRONT, BACK, SIDE, SIDE));
     }
 
     private void registerPowergen() {

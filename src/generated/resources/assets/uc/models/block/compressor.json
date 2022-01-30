@@ -1,6 +1,11 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "all": "uc:block/compressed/planks/compressed_warped_planks"
+    "down": "uc:block/compressor/compressor_back",
+    "up": "uc:block/compressor/compressor_back",
+    "north": "uc:block/compressor/compressor_front_on",
+    "south": "uc:block/compressor/compressor_back_on",
+    "east": "uc:block/compressor/compressor_side",
+    "west": "uc:block/compressor/compressor_side"
   }
 }

@@ -2,6 +2,7 @@ package com.VoidCallerZ.uc.blocks;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.server.level.ServerPlayer;
@@ -62,7 +63,7 @@ public class CompressorBlock extends Block implements EntityBlock
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter getter, BlockPos pos, CollisionContext context)
     {
-        return switch (state.getValue(BlockStateProperties.FACING))
+        return switch (state.getValue(BlockStateProperties.HORIZONTAL_FACING))
                 {
                     case DOWN, UP, NORTH -> SHAPE_NORTH;
                     case SOUTH -> SHAPE_SOUTH;
@@ -126,15 +127,16 @@ public class CompressorBlock extends Block implements EntityBlock
     }
 
     @Override
-    public BlockState getStateForPlacement(BlockPlaceContext context)
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
     {
-        return this.defaultBlockState().setValue(BlockStateProperties.FACING, context.getNearestLookingDirection().getOpposite());
+        super.createBlockStateDefinition(builder);
+        builder.add(BlockStateProperties.POWERED, BlockStateProperties.HORIZONTAL_FACING);
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
+    public BlockState getStateForPlacement(BlockPlaceContext context)
     {
-        builder.add(BlockStateProperties.FACING);
+        Direction direction = context.getHorizontalDirection().getOpposite();
+        return this.defaultBlockState().setValue(BlockStateProperties.HORIZONTAL_FACING, direction);
     }
-
 }
