@@ -2,6 +2,7 @@ package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.setup.Registration;
+import net.minecraft.client.renderer.block.model.BlockModel;
 import net.minecraft.core.Direction;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
@@ -12,8 +13,10 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 
 import javax.swing.text.html.parser.Entity;
 
-public class ucBlockStates extends BaseBlockStateProvider {
-    public ucBlockStates(DataGenerator gen, ExistingFileHelper helper) {
+public class ucBlockStates extends BaseBlockStateProvider
+{
+    public ucBlockStates(DataGenerator gen, ExistingFileHelper helper)
+    {
         super(gen, UltimateCompression.MODID, helper);
     }
 
@@ -74,7 +77,8 @@ public class ucBlockStates extends BaseBlockStateProvider {
         horizontalBlock(Registration.COMPRESSOR.get(), models().cube("compressor", BASE, BASE, FRONT, BACK, SIDE, SIDE));
     }
 
-    private void registerPowergen() {
+    private void registerPowergen()
+    {
         BlockModelBuilder frame = models().getBuilder("block/powergen/main");
         frame.parent(models().getExistingFile(mcLoc("cube")));
 
@@ -101,16 +105,18 @@ public class ucBlockStates extends BaseBlockStateProvider {
         createPowergenModel(Registration.ULTIMATE_POWERGEN.get(), frame);
     }
 
-    private void floatingCube(BlockModelBuilder builder, float fx, float fy, float fz, float tx, float ty, float tz) {
+    private void floatingCube(BlockModelBuilder builder, float fx, float fy, float fz, float tx, float ty, float tz)
+    {
         builder.element().from(fx, fy, fz).to(tx, ty, tz).allFaces((direction, faceBuilder) -> faceBuilder.texture("#window")).end();
     }
 
-    private void createPowergenModel(Block block, BlockModelBuilder frame) {
+    private void createPowergenModel(Block block, BlockModelBuilder frame)
+    {
         BlockModelBuilder singleOff = models().getBuilder("block/powergen/singleoff")
                 .element().from(3, 3, 3).to(13, 13, 13).face(Direction.DOWN).texture("#single").end().end()
-                .texture("single", modLoc("block/powergen_off"));
+                .texture("single", modLoc("block/powergen_empty"));
         BlockModelBuilder singleOn = models().getBuilder("block/powergen/singleon")
-                .element().from(3, 3, 3).to(13, 13, 13).face(Direction.DOWN).texture("#single").end().end()
+                .element().from(2, 2, 2).to(14, 14, 14).face(Direction.DOWN).texture("#single").end().end()
                 .texture("single", modLoc("block/powergen_on"));
 
         MultiPartBlockStateBuilder bld = getMultipartBuilder(block);
@@ -118,7 +124,8 @@ public class ucBlockStates extends BaseBlockStateProvider {
         bld.part().modelFile(frame).addModel();
 
         BlockModelBuilder[] models = new BlockModelBuilder[]{singleOff, singleOn};
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 2; i++)
+        {
             boolean powered = i == 1;
             bld.part().modelFile(models[i]).addModel().condition(BlockStateProperties.POWERED, powered);
             bld.part().modelFile(models[i]).rotationX(180).addModel().condition(BlockStateProperties.POWERED, powered);

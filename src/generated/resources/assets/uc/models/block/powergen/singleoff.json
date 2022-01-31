@@ -1,6 +1,6 @@
 {
   "textures": {
-    "single": "uc:block/powergen_off"
+    "single": "uc:block/powergen_empty"
   },
   "elements": [
     {
