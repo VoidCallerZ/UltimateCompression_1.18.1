@@ -28,26 +28,46 @@ public class ucItemTags extends ItemTagsProvider
                 .add(Registration.COMPRESSED_GOLD_ORE_ITEM.get())
                 .add(Registration.COMPRESSED_DIAMOND_ORE_ITEM.get())
                 .add(Registration.COMPRESSED_COPPER_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_COAL_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_EMERALD_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_LAPIS_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_REDSTONE_ORE_ITEM.get())
                 .add(Registration.COMPRESSED_DEEPSLATE_IRON_ORE_ITEM.get())
                 .add(Registration.COMPRESSED_DEEPSLATE_GOLD_ORE_ITEM.get())
                 .add(Registration.COMPRESSED_DEEPSLATE_DIAMOND_ORE_ITEM.get())
-                .add(Registration.COMPRESSED_DEEPSLATE_COPPER_ORE_ITEM.get());
+                .add(Registration.COMPRESSED_DEEPSLATE_COPPER_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_DEEPSLATE_COAL_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_DEEPSLATE_EMERALD_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_DEEPSLATE_LAPIS_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_DEEPSLATE_REDSTONE_ORE_ITEM.get());
         tag(Tags.Items.INGOTS)
                 .add(Registration.COMPRESSED_IRON_INGOT.get())
                 .add(Registration.COMPRESSED_GOLD_INGOT.get())
-                .add(Registration.COMPRESSED_COPPER_INGOT.get());
+                .add(Registration.COMPRESSED_COPPER_INGOT.get())
+                .add(Registration.COMPRESSED_NETHERITE_INGOT.get());
         tag(Tags.Items.GEMS)
-                .add(Registration.COMPRESSED_DIAMOND_GEM.get());
+                .add(Registration.COMPRESSED_DIAMOND_GEM.get())
+                .add(Registration.COMPRESSED_EMERALD_GEM.get());
 
         tag(Registration.COMPRESSOR_VALID_ITEMS)
                 .add(Items.IRON_INGOT)
                 .add(Items.GOLD_INGOT)
                 .add(Items.DIAMOND)
                 .add(Items.COPPER_INGOT)
+                .add(Items.COAL)
+                .add(Items.EMERALD)
+                .add(Items.LAPIS_LAZULI)
+                .add(Items.REDSTONE)
+                .add(Items.NETHERITE_INGOT)
                 .add(Items.IRON_BLOCK)
                 .add(Items.GOLD_BLOCK)
                 .add(Items.DIAMOND_BLOCK)
-                .add(Items.COPPER_BLOCK);
+                .add(Items.COPPER_BLOCK)
+                .add(Items.COAL_BLOCK)
+                .add(Items.EMERALD_BLOCK)
+                .add(Items.LAPIS_BLOCK)
+                .add(Items.REDSTONE_BLOCK)
+                .add(Items.NETHERITE_BLOCK);
 
         /*tag(Registration.COMPRESSED_ORE_ITEM)
                 .add(Registration.COMPRESSED_IRON_ORE_ITEM.get())

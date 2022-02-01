@@ -10,26 +10,55 @@ public class ucLootTables extends BaseLootTableProvider
     @Override
     protected void addTables()
     {
+        //Ores
         lootTables.put(Registration.ULTIMATE_POWERGEN.get(), createStandardTable("ultimate_powergen", Registration.ULTIMATE_POWERGEN.get(), Registration.ULTIMATE_POWERGEN_BE.get()));
         lootTables.put(Registration.COMPRESSED_IRON_ORE.get(), createSilkTouchTable("compressed_iron_ore", Registration.COMPRESSED_IRON_ORE.get(), Registration.COMPRESSED_RAW_IRON.get(), 1, 1));
         lootTables.put(Registration.COMPRESSED_GOLD_ORE.get(), createSilkTouchTable("compressed_gold_ore", Registration.COMPRESSED_GOLD_ORE.get(), Registration.COMPRESSED_RAW_GOLD.get(), 1, 1));
         lootTables.put(Registration.COMPRESSED_DIAMOND_ORE.get(), createSilkTouchTable("compressed_diamond_ore", Registration.COMPRESSED_DIAMOND_ORE.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), 1, 1));
         lootTables.put(Registration.COMPRESSED_COPPER_ORE.get(), createSilkTouchTable("compressed_copper_ore", Registration.COMPRESSED_COPPER_ORE.get(), Registration.COMPRESSED_RAW_COPPER.get(), 1, 3));
+        lootTables.put(Registration.COMPRESSED_COAL_ORE.get(), createSilkTouchTable("compressed_coal_ore", Registration.COMPRESSED_COAL_ORE.get(), Registration.COMPRESSED_COAL.get(), 1, 1));
+        lootTables.put(Registration.COMPRESSED_EMERALD_ORE.get(), createSilkTouchTable("compressed_emerald_ore", Registration.COMPRESSED_EMERALD_ORE.get(), Registration.COMPRESSED_EMERALD_GEM.get(), 1, 1));
+        lootTables.put(Registration.COMPRESSED_LAPIS_ORE.get(), createSilkTouchTable("compressed_lapis_ore", Registration.COMPRESSED_LAPIS_ORE.get(), Registration.COMPRESSED_LAPIS.get(), 1, 1));
+        lootTables.put(Registration.COMPRESSED_REDSTONE_ORE.get(), createSilkTouchTable("compressed_redstone_ore", Registration.COMPRESSED_REDSTONE_ORE.get(), Registration.COMPRESSED_REDSTONE.get(), 1, 1));
+
+        //Deepslate Ores
         lootTables.put(Registration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), createSilkTouchTable("compressed_deepslate_iron_ore", Registration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), Registration.COMPRESSED_RAW_IRON.get(), 1, 2));
         lootTables.put(Registration.COMPRESSED_DEEPSLATE_GOLD_ORE.get(), createSilkTouchTable("compressed_deepslate_gold_ore", Registration.COMPRESSED_DEEPSLATE_GOLD_ORE.get(), Registration.COMPRESSED_RAW_GOLD.get(), 1, 2));
         lootTables.put(Registration.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(), createSilkTouchTable("compressed_deepslate_diamond_ore", Registration.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), 1, 1));
         lootTables.put(Registration.COMPRESSED_DEEPSLATE_COPPER_ORE.get(), createSilkTouchTable("compressed_deepslate_copper_ore", Registration.COMPRESSED_DEEPSLATE_COPPER_ORE.get(), Registration.COMPRESSED_RAW_COPPER.get(), 2, 5));
+        lootTables.put(Registration.COMPRESSED_DEEPSLATE_COAL_ORE.get(), createSilkTouchTable("compressed_deepslate_coal_ore", Registration.COMPRESSED_DEEPSLATE_COAL_ORE.get(), Registration.COMPRESSED_COAL.get(), 1, 2));
+        lootTables.put(Registration.COMPRESSED_DEEPSLATE_EMERALD_ORE.get(), createSilkTouchTable("compressed_deepslate_emerald_ore", Registration.COMPRESSED_DEEPSLATE_EMERALD_ORE.get(), Registration.COMPRESSED_EMERALD_GEM.get(), 1, 2));
+        lootTables.put(Registration.COMPRESSED_DEEPSLATE_LAPIS_ORE.get(), createSilkTouchTable("compressed_deepslate_lapis_ore", Registration.COMPRESSED_DEEPSLATE_LAPIS_ORE.get(), Registration.COMPRESSED_LAPIS.get(), 1, 2));
+        lootTables.put(Registration.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get(), createSilkTouchTable("compressed_deepslate_redstone_ore", Registration.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get(), Registration.COMPRESSED_REDSTONE.get(), 1, 2));
 
+        //Blocks
         lootTables.put(Registration.COMPRESSED_IRON_BLOCK.get(), createSimpleTable("compessed_iron_block", Registration.COMPRESSED_IRON_BLOCK.get()));
         lootTables.put(Registration.COMPRESSED_GOLD_BLOCK.get(), createSimpleTable("compessed_gold_block", Registration.COMPRESSED_GOLD_BLOCK.get()));
         lootTables.put(Registration.COMPRESSED_DIAMOND_BLOCK.get(), createSimpleTable("compessed_diamond_block", Registration.COMPRESSED_DIAMOND_BLOCK.get()));
         lootTables.put(Registration.COMPRESSED_COPPER_BLOCK.get(), createSimpleTable("compessed_copper_block", Registration.COMPRESSED_COPPER_BLOCK.get()));
 
+        //Raw Blocks
         lootTables.put(Registration.COMPRESSED_RAW_IRON_BLOCK.get(), createSimpleTable("compressed_raw_iron_block", Registration.COMPRESSED_RAW_IRON_BLOCK.get()));
         lootTables.put(Registration.COMPRESSED_RAW_GOLD_BLOCK.get(), createSimpleTable("compressed_raw_gold_block", Registration.COMPRESSED_RAW_GOLD_BLOCK.get()));
         lootTables.put(Registration.COMPRESSED_RAW_COPPER_BLOCK.get(), createSimpleTable("compressed_raw_copper_block", Registration.COMPRESSED_RAW_COPPER_BLOCK.get()));
 
+        //Basic Blocks
+        lootTables.put(Registration.COMPRESSED_ANDESITE.get(), createSimpleTable("compressed_andesite", Registration.COMPRESSED_ANDESITE.get()));
+        lootTables.put(Registration.COMPRESSED_CALCITE.get(), createSimpleTable("compressed_calcite", Registration.COMPRESSED_CALCITE.get()));
+        lootTables.put(Registration.COMPRESSED_COBBLED_DEEPSLATE.get(), createSimpleTable("compressed_cobbled_deepslate", Registration.COMPRESSED_COBBLED_DEEPSLATE.get()));
+        lootTables.put(Registration.COMPRESSED_COBBLESTONE.get(), createSimpleTable("compressed_cobblestone", Registration.COMPRESSED_COBBLESTONE.get()));
+        lootTables.put(Registration.COMPRESSED_DEEPSLATE.get(), createSimpleTable("compressed_deepslate", Registration.COMPRESSED_DEEPSLATE.get()));
+        lootTables.put(Registration.COMPRESSED_DIORITE.get(), createSimpleTable("compressed_diorite", Registration.COMPRESSED_DIORITE.get()));
+        lootTables.put(Registration.COMPRESSED_DIRT.get(), createSimpleTable("compressed_dirt", Registration.COMPRESSED_DIRT.get()));
+        lootTables.put(Registration.COMPRESSED_GRANITE.get(), createSimpleTable("compressed_granite", Registration.COMPRESSED_GRANITE.get()));
+        lootTables.put(Registration.COMPRESSED_GRAVEL.get(), createSimpleTable("compressed_gravel", Registration.COMPRESSED_GRAVEL.get()));
+        lootTables.put(Registration.COMPRESSED_NETHERRACK.get(), createSimpleTable("compressed_netherrack", Registration.COMPRESSED_NETHERRACK.get()));
+        lootTables.put(Registration.COMPRESSED_RED_SAND.get(), createSimpleTable("compressed_red_sand", Registration.COMPRESSED_RED_SAND.get()));
+        lootTables.put(Registration.COMPRESSED_SAND.get(), createSimpleTable("compressed_sand", Registration.COMPRESSED_SAND.get()));
+        lootTables.put(Registration.COMPRESSED_STONE.get(), createSimpleTable("compressed_stone", Registration.COMPRESSED_STONE.get()));
+        lootTables.put(Registration.COMPRESSED_TUFF.get(), createSimpleTable("compressed_tuff", Registration.COMPRESSED_TUFF.get()));
 
+        //Logs & Planks
         lootTables.put(Registration.COMPRESSED_ACACIA_LOG.get(), createSimpleTable("compressed_acacia_log", Registration.COMPRESSED_ACACIA_LOG.get()));
         lootTables.put(Registration.COMPRESSED_ACACIA_PLANKS.get(), createSimpleTable("compressed_acacia_planks", Registration.COMPRESSED_ACACIA_PLANKS.get()));
         lootTables.put(Registration.COMPRESSED_BIRCH_LOG.get(), createSimpleTable("compressed_birch_log", Registration.COMPRESSED_BIRCH_LOG.get()));

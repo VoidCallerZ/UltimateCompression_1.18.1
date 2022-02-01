@@ -15,6 +15,7 @@ import net.minecraftforge.energy.CapabilityEnergy;
 import net.minecraftforge.energy.IEnergyStorage;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 
@@ -109,6 +110,26 @@ public class CompressorBE extends BlockEntity
                 {
                     itemHandler.setStackInSlot(1, Registration.COMPRESSED_DIAMOND_GEM.get().getDefaultInstance());
                 }
+                else if (stack.is(Items.COAL))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_COAL.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.EMERALD))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_EMERALD_GEM.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.LAPIS_LAZULI))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_LAPIS.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.REDSTONE))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_REDSTONE.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.NETHERITE_INGOT))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_NETHERITE_INGOT.get().getDefaultInstance());
+                }
                 else if (stack.is(Items.IRON_BLOCK))
                 {
                     itemHandler.setStackInSlot(1, Registration.COMPRESSED_IRON_BLOCK_ITEM.get().getDefaultInstance());
@@ -121,9 +142,29 @@ public class CompressorBE extends BlockEntity
                 {
                     itemHandler.setStackInSlot(1, Registration.COMPRESSED_COPPER_BLOCK_ITEM.get().getDefaultInstance());
                 }
-                else
+                else if (stack.is(Items.DIAMOND_BLOCK))
                 {
                     itemHandler.setStackInSlot(1, Registration.COMPRESSED_DIAMOND_BLOCK_ITEM.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.COAL_BLOCK))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_COAL_BLOCK_ITEM.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.EMERALD_BLOCK))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_EMERALD_BLOCK_ITEM.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.LAPIS_BLOCK))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_LAPIS_BLOCK_ITEM.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.REDSTONE_BLOCK))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_REDSTONE_BLOCK_ITEM.get().getDefaultInstance());
+                }
+                else if (stack.is(Items.NETHERITE_BLOCK))
+                {
+                    itemHandler.setStackInSlot(1, Registration.COMPRESSED_NETHERITE_BLOCK_ITEM.get().getDefaultInstance());
                 }
             }
         }

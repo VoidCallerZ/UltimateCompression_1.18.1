@@ -16,7 +16,10 @@ import java.util.function.Consumer;
 
 public class ucRecipes extends BaseRecipeProvider
 {
-    public ucRecipes(DataGenerator generatorIn) { super(generatorIn); }
+    public ucRecipes(DataGenerator generatorIn)
+    {
+        super(generatorIn);
+    }
 
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer)
@@ -31,7 +34,21 @@ public class ucRecipes extends BaseRecipeProvider
                 .unlockedBy("compressed_iron_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_IRON_INGOT.get()))
                 .save(consumer);
 
+        ShapedRecipeBuilder.shaped(Registration.COMPRESSOR.get())
+                .pattern("iii")
+                .pattern("dgd")
+                .pattern("iii")
+                .define('i', Registration.COMPRESSED_IRON_INGOT.get())
+                .define('d', Items.DIAMOND)
+                .define('g', Registration.COMPRESSED_GOLD_BLOCK.get())
+                .group("uc")
+                .unlockedBy("compressed_gold_iron_ingot_diamond", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_GOLD_INGOT.get(),
+                        Registration.COMPRESSED_IRON_INGOT.get(),
+                        Items.DIAMOND))
+                .save(consumer);
+
         //Compression & decompression of most blocks
+        //Material Blocks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_IRON_BLOCK.get(),
                 Registration.COMPRESSED_IRON_INGOT.get(), 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GOLD_BLOCK.get(),
@@ -40,7 +57,18 @@ public class ucRecipes extends BaseRecipeProvider
                 Registration.COMPRESSED_DIAMOND_GEM.get(), 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_COPPER_BLOCK.get(),
                 Registration.COMPRESSED_COPPER_INGOT.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_COAL_BLOCK.get(),
+                Registration.COMPRESSED_COAL.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_EMERALD_BLOCK.get(),
+                Registration.COMPRESSED_EMERALD_GEM.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_LAPIS_BLOCK.get(),
+                Registration.COMPRESSED_LAPIS.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_REDSTONE_BLOCK.get(),
+                Registration.COMPRESSED_REDSTONE.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHERITE_BLOCK.get(),
+                Registration.COMPRESSED_NETHERITE_INGOT.get(), 9, consumer);
 
+        //Raw Blocks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RAW_IRON_BLOCK.get(),
                 Registration.COMPRESSED_RAW_IRON.get(), 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RAW_GOLD_BLOCK.get(),
@@ -48,6 +76,37 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RAW_COPPER_BLOCK.get(),
                 Registration.COMPRESSED_RAW_COPPER.get(), 9, consumer);
 
+        //Basic Blocks
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ANDESITE.get(),
+                Items.ANDESITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CALCITE.get(),
+                Items.CALCITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_COBBLED_DEEPSLATE.get(),
+                Items.COBBLED_DEEPSLATE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_COBBLESTONE.get(),
+                Items.COBBLESTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DEEPSLATE.get(),
+                Items.DEEPSLATE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DIORITE.get(),
+                Items.DIORITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DIRT.get(),
+                Items.DIRT, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GRANITE.get(),
+                Items.GRANITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GRAVEL.get(),
+                Items.GRAVEL, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHERRACK.get(),
+                Items.NETHERRACK, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RED_SAND.get(),
+                Items.RED_SAND, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SAND.get(),
+                Items.SAND, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_STONE.get(),
+                Items.STONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_TUFF.get(),
+                Items.TUFF, 9, consumer);
+
+        //Logs & Planks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ACACIA_LOG.get(),
                 Items.ACACIA_LOG, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ACACIA_PLANKS.get(),

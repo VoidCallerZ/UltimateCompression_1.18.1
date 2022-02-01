@@ -25,25 +25,57 @@ public class ucBlockStates extends BaseBlockStateProvider
     {
         registerPowergen();
 
+        //Ores
         singleTextureBlock(Registration.COMPRESSED_IRON_ORE.get(), "compressed_iron_ore", "block/compressed/ores/compressed_iron_ore");
         singleTextureBlock(Registration.COMPRESSED_GOLD_ORE.get(), "compressed_gold_ore", "block/compressed/ores/compressed_gold_ore");
         singleTextureBlock(Registration.COMPRESSED_DIAMOND_ORE.get(), "compressed_diamond_ore", "block/compressed/ores/compressed_diamond_ore");
         singleTextureBlock(Registration.COMPRESSED_COPPER_ORE.get(), "compressed_copper_ore", "block/compressed/ores/compressed_copper_ore");
+        singleTextureBlock(Registration.COMPRESSED_COAL_ORE.get(), "compressed_coal_ore", "block/compressed/ores/compressed_coal_ore");
+        singleTextureBlock(Registration.COMPRESSED_EMERALD_ORE.get(), "compressed_emerald_ore", "block/compressed/ores/compressed_emerald_ore");
+        singleTextureBlock(Registration.COMPRESSED_LAPIS_ORE.get(), "compressed_lapis_ore", "block/compressed/ores/compressed_lapis_ore");
+        singleTextureBlock(Registration.COMPRESSED_REDSTONE_ORE.get(), "compressed_redstone_ore", "block/compressed/ores/compressed_redstone_ore");
 
+        //Deepslate Ores
         singleTextureBlock(Registration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), "compressed_deepslate_iron_ore", "block/compressed/ores/compressed_deepslate_iron_ore");
         singleTextureBlock(Registration.COMPRESSED_DEEPSLATE_GOLD_ORE.get(), "compressed_deepslate_gold_ore", "block/compressed/ores/compressed_deepslate_gold_ore");
         singleTextureBlock(Registration.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(), "compressed_deepslate_diamond_ore", "block/compressed/ores/compressed_deepslate_diamond_ore");
         singleTextureBlock(Registration.COMPRESSED_DEEPSLATE_COPPER_ORE.get(), "compressed_deepslate_copper_ore", "block/compressed/ores/compressed_deepslate_copper_ore");
+        singleTextureBlock(Registration.COMPRESSED_DEEPSLATE_COAL_ORE.get(), "compressed_deepslate_coal_ore", "block/compressed/ores/compressed_deepslate_coal_ore");
+        singleTextureBlock(Registration.COMPRESSED_DEEPSLATE_EMERALD_ORE.get(), "compressed_deepslate_emerald_ore", "block/compressed/ores/compressed_deepslate_emerald_ore");
+        singleTextureBlock(Registration.COMPRESSED_DEEPSLATE_LAPIS_ORE.get(), "compressed_deepslate_lapis_ore", "block/compressed/ores/compressed_deepslate_lapis_ore");
+        singleTextureBlock(Registration.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get(), "compressed_deepslate_redstone_ore", "block/compressed/ores/compressed_deepslate_redstone_ore");
 
+        //Ingot Blocks
         singleTextureBlock(Registration.COMPRESSED_IRON_BLOCK.get(), "compressed_iron_block", "block/compressed/materials/compressed_iron_block");
         singleTextureBlock(Registration.COMPRESSED_GOLD_BLOCK.get(), "compressed_gold_block", "block/compressed/materials/compressed_gold_block");
         singleTextureBlock(Registration.COMPRESSED_DIAMOND_BLOCK.get(), "compressed_diamond_block", "block/compressed/materials/compressed_diamond_block");
         singleTextureBlock(Registration.COMPRESSED_COPPER_BLOCK.get(), "compressed_copper_block", "block/compressed/materials/compressed_copper_block");
+        singleTextureBlock(Registration.COMPRESSED_COAL_BLOCK.get(), "compressed_coal_block", "block/compressed/materials/compressed_coal_block");
+        singleTextureBlock(Registration.COMPRESSED_EMERALD_BLOCK.get(), "compressed_emerald_block", "block/compressed/materials/compressed_emerald_block");
+        singleTextureBlock(Registration.COMPRESSED_LAPIS_BLOCK.get(), "compressed_lapis_block", "block/compressed/materials/compressed_lapis_block");
+        singleTextureBlock(Registration.COMPRESSED_REDSTONE_BLOCK.get(), "compressed_redstone_block", "block/compressed/materials/compressed_redstone_block");
+        singleTextureBlock(Registration.COMPRESSED_NETHERITE_BLOCK.get(), "compressed_netherite_block", "block/compressed/materials/compressed_netherite_block");
 
+        //Raw Blocks
         singleTextureBlock(Registration.COMPRESSED_RAW_IRON_BLOCK.get(), "compressed_raw_iron_block", "block/compressed/materials/compressed_raw_iron_block");
         singleTextureBlock(Registration.COMPRESSED_RAW_GOLD_BLOCK.get(), "compressed_raw_gold_block", "block/compressed/materials/compressed_raw_gold_block");
         singleTextureBlock(Registration.COMPRESSED_RAW_COPPER_BLOCK.get(), "compressed_raw_copper_block", "block/compressed/materials/compressed_raw_copper_block");
 
+        //Basic Blocks
+        singleTextureBlock(Registration.COMPRESSED_ANDESITE.get(), "compressed_andesite", "block/compressed/basic/compressed_andesite");
+        singleTextureBlock(Registration.COMPRESSED_CALCITE.get(), "compressed_calcite", "block/compressed/basic/compressed_calcite");
+        singleTextureBlock(Registration.COMPRESSED_COBBLED_DEEPSLATE.get(), "compressed_cobbled_deepslate", "block/compressed/basic/compressed_cobbled_deepslate");
+        singleTextureBlock(Registration.COMPRESSED_COBBLESTONE.get(), "compressed_cobblestone", "block/compressed/basic/compressed_cobblestone");
+        singleTextureBlock(Registration.COMPRESSED_DEEPSLATE.get(), "compressed_deepslate", "block/compressed/basic/compressed_deepslate");
+        singleTextureBlock(Registration.COMPRESSED_DIORITE.get(), "compressed_diorite", "block/compressed/basic/compressed_diorite");
+        singleTextureBlock(Registration.COMPRESSED_DIRT.get(), "compressed_dirt", "block/compressed/basic/compressed_dirt");
+        singleTextureBlock(Registration.COMPRESSED_GRANITE.get(), "compressed_granite", "block/compressed/basic/compressed_granite");
+        singleTextureBlock(Registration.COMPRESSED_GRAVEL.get(), "compressed_gravel", "block/compressed/basic/compressed_gravel");
+        singleTextureBlock(Registration.COMPRESSED_NETHERRACK.get(), "compressed_netherrack", "block/compressed/basic/compressed_netherrack");
+        singleTextureBlock(Registration.COMPRESSED_RED_SAND.get(), "compressed_red_sand", "block/compressed/basic/compressed_red_sand");
+        singleTextureBlock(Registration.COMPRESSED_SAND.get(), "compressed_sand", "block/compressed/basic/compressed_sand");
+        singleTextureBlock(Registration.COMPRESSED_STONE.get(), "compressed_stone", "block/compressed/basic/compressed_stone");
+        singleTextureBlock(Registration.COMPRESSED_TUFF.get(), "compressed_tuff", "block/compressed/basic/compressed_tuff");
 
         //Logs
         compressedLogBlock(Registration.COMPRESSED_ACACIA_LOG.get(), modLoc("block/compressed/logs/compressed_acacia_log"));

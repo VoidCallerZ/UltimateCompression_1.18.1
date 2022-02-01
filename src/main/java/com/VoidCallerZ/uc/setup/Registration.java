@@ -8,6 +8,7 @@ import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.PumpkinBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -55,6 +56,15 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_DIAMOND_ORE_ITEM = fromBlock(COMPRESSED_DIAMOND_ORE);
     public static final RegistryObject<Block> COMPRESSED_COPPER_ORE = BLOCKS.register("compressed_copper_ore", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_COPPER_ORE_ITEM = fromBlock(COMPRESSED_COPPER_ORE);
+    public static final RegistryObject<Block> COMPRESSED_COAL_ORE = BLOCKS.register("compressed_coal_ore", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_COAL_ORE_ITEM = fromBlock(COMPRESSED_COAL_ORE);
+    public static final RegistryObject<Block> COMPRESSED_EMERALD_ORE = BLOCKS.register("compressed_emerald_ore", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_EMERALD_ORE_ITEM = fromBlock(COMPRESSED_EMERALD_ORE);
+    public static final RegistryObject<Block> COMPRESSED_LAPIS_ORE = BLOCKS.register("compressed_lapis_ore", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LAPIS_ORE_ITEM = fromBlock(COMPRESSED_LAPIS_ORE);
+    public static final RegistryObject<Block> COMPRESSED_REDSTONE_ORE = BLOCKS.register("compressed_redstone_ore", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_REDSTONE_ORE_ITEM = fromBlock(COMPRESSED_REDSTONE_ORE);
+
     //Deepslate Ores
     public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_IRON_ORE = BLOCKS.register("compressed_deepslate_iron_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_IRON_ORE_ITEM = fromBlock(COMPRESSED_DEEPSLATE_IRON_ORE);
@@ -64,8 +74,16 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_DIAMOND_ORE_ITEM = fromBlock(COMPRESSED_DEEPSLATE_DIAMOND_ORE);
     public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_COPPER_ORE = BLOCKS.register("compressed_deepslate_copper_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_COPPER_ORE_ITEM = fromBlock(COMPRESSED_DEEPSLATE_COPPER_ORE);
+    public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_COAL_ORE = BLOCKS.register("compressed_deepslate_coal_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_COAL_ORE_ITEM = fromBlock(COMPRESSED_DEEPSLATE_COAL_ORE);
+    public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_EMERALD_ORE = BLOCKS.register("compressed_deepslate_emerald_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_EMERALD_ORE_ITEM = fromBlock(COMPRESSED_DEEPSLATE_EMERALD_ORE);
+    public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_LAPIS_ORE = BLOCKS.register("compressed_deepslate_lapis_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_LAPIS_ORE_ITEM = fromBlock(COMPRESSED_DEEPSLATE_LAPIS_ORE);
+    public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_REDSTONE_ORE = BLOCKS.register("compressed_deepslate_redstone_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_REDSTONE_ORE_ITEM = fromBlock(COMPRESSED_DEEPSLATE_REDSTONE_ORE);
 
-    //IngotBlocks
+    //Ingot Blocks
     public static final RegistryObject<Block> COMPRESSED_IRON_BLOCK = BLOCKS.register("compressed_iron_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_IRON_BLOCK_ITEM = fromBlock(COMPRESSED_IRON_BLOCK);
     public static final RegistryObject<Block> COMPRESSED_GOLD_BLOCK = BLOCKS.register("compressed_gold_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
@@ -74,13 +92,54 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_DIAMOND_BLOCK_ITEM = fromBlock(COMPRESSED_DIAMOND_BLOCK);
     public static final RegistryObject<Block> COMPRESSED_COPPER_BLOCK = BLOCKS.register("compressed_copper_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_COPPER_BLOCK_ITEM = fromBlock(COMPRESSED_COPPER_BLOCK);
-    //RawBlocks
+    public static final RegistryObject<Block> COMPRESSED_COAL_BLOCK = BLOCKS.register("compressed_coal_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_COAL_BLOCK_ITEM = fromBlock(COMPRESSED_COAL_BLOCK);
+    public static final RegistryObject<Block> COMPRESSED_EMERALD_BLOCK = BLOCKS.register("compressed_emerald_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_EMERALD_BLOCK_ITEM = fromBlock(COMPRESSED_EMERALD_BLOCK);
+    public static final RegistryObject<Block> COMPRESSED_LAPIS_BLOCK = BLOCKS.register("compressed_lapis_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LAPIS_BLOCK_ITEM = fromBlock(COMPRESSED_LAPIS_BLOCK);
+    public static final RegistryObject<Block> COMPRESSED_NETHERITE_BLOCK = BLOCKS.register("compressed_netherite_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_NETHERITE_BLOCK_ITEM = fromBlock(COMPRESSED_NETHERITE_BLOCK);
+    public static final RegistryObject<Block> COMPRESSED_REDSTONE_BLOCK = BLOCKS.register("compressed_redstone_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_REDSTONE_BLOCK_ITEM = fromBlock(COMPRESSED_REDSTONE_BLOCK);
+
+    //Raw Blocks
     public static final RegistryObject<Block> COMPRESSED_RAW_IRON_BLOCK = BLOCKS.register("compressed_raw_iron_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_RAW_IRON_BLOCK_ITEM = fromBlock(COMPRESSED_RAW_IRON_BLOCK);
     public static final RegistryObject<Block> COMPRESSED_RAW_GOLD_BLOCK = BLOCKS.register("compressed_raw_gold_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_RAW_GOLD_BLOCK_ITEM = fromBlock(COMPRESSED_RAW_GOLD_BLOCK);
     public static final RegistryObject<Block> COMPRESSED_RAW_COPPER_BLOCK = BLOCKS.register("compressed_raw_copper_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_RAW_COPPER_BLOCK_ITEM = fromBlock(COMPRESSED_RAW_COPPER_BLOCK);
+
+    //Basic Blocks
+    public static final RegistryObject<Block> COMPRESSED_ANDESITE = BLOCKS.register("compressed_andesite", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_ANDESITE_ITEM = fromBlock(COMPRESSED_ANDESITE);
+    public static final RegistryObject<Block> COMPRESSED_CALCITE = BLOCKS.register("compressed_calcite", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CALCITE_ITEM = fromBlock(COMPRESSED_CALCITE);
+    public static final RegistryObject<Block> COMPRESSED_COBBLED_DEEPSLATE = BLOCKS.register("compressed_cobbled_deepslate", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_COBBLED_DEEPSLATE_ITEM = fromBlock(COMPRESSED_COBBLED_DEEPSLATE);
+    public static final RegistryObject<Block> COMPRESSED_COBBLESTONE = BLOCKS.register("compressed_cobblestone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_COBBLESTONE_ITEM = fromBlock(COMPRESSED_COBBLESTONE);
+    public static final RegistryObject<Block> COMPRESSED_DEEPSLATE = BLOCKS.register("compressed_deepslate", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_ITEM = fromBlock(COMPRESSED_DEEPSLATE);
+    public static final RegistryObject<Block> COMPRESSED_DIORITE = BLOCKS.register("compressed_diorite", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_DIORITE_ITEM = fromBlock(COMPRESSED_DIORITE);
+    public static final RegistryObject<Block> COMPRESSED_DIRT = BLOCKS.register("compressed_dirt", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_DIRT_ITEM = fromBlock(COMPRESSED_DIRT);
+    public static final RegistryObject<Block> COMPRESSED_GRANITE = BLOCKS.register("compressed_granite", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_GRANITE_ITEM = fromBlock(COMPRESSED_GRANITE);
+    public static final RegistryObject<Block> COMPRESSED_GRAVEL = BLOCKS.register("compressed_gravel", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_GRAVEL_ITEM = fromBlock(COMPRESSED_GRAVEL);
+    public static final RegistryObject<Block> COMPRESSED_NETHERRACK = BLOCKS.register("compressed_netherrack", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_NETHERRACK_ITEM = fromBlock(COMPRESSED_NETHERRACK);
+    public static final RegistryObject<Block> COMPRESSED_RED_SAND = BLOCKS.register("compressed_red_sand", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_RED_SAND_ITEM = fromBlock(COMPRESSED_RED_SAND);
+    public static final RegistryObject<Block> COMPRESSED_SAND = BLOCKS.register("compressed_sand", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_SAND_ITEM = fromBlock(COMPRESSED_SAND);
+    public static final RegistryObject<Block> COMPRESSED_STONE = BLOCKS.register("compressed_stone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_STONE_ITEM = fromBlock(COMPRESSED_STONE);
+    public static final RegistryObject<Block> COMPRESSED_TUFF = BLOCKS.register("compressed_tuff", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_TUFF_ITEM = fromBlock(COMPRESSED_TUFF);
 
     //Logs & Planks
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_ACACIA_LOG = BLOCKS.register("compressed_acacia_log", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));
@@ -124,6 +183,11 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_DIAMOND_GEM = ITEMS.register("compressed_diamond_gem", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_RAW_COPPER = ITEMS.register("compressed_raw_copper", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_COPPER_INGOT = ITEMS.register("compressed_copper_ingot", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_COAL = ITEMS.register("compressed_coal", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_EMERALD_GEM = ITEMS.register("compressed_emerald_gem", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LAPIS = ITEMS.register("compressed_lapis", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_NETHERITE_INGOT = ITEMS.register("compressed_netherite_ingot", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_REDSTONE = ITEMS.register("compressed_redstone", () -> new Item(ITEM_PROPERTIES));
 
     //Custom Tags
     //For ores that are multi-dimensional
