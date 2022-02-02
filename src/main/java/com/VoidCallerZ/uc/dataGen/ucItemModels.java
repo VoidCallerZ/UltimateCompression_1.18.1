@@ -2,6 +2,7 @@ package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.setup.Registration;
+import com.VoidCallerZ.uc.setup.ToolRegistration;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -128,23 +129,101 @@ public class ucItemModels extends ItemModelProvider
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/materials/compressed_netherite_ingot"));
 
-        singleTexture(Registration.COMPRESSED_WOODEN_PICKAXE.get().getRegistryName().getPath(),
+        //TOOLS
+        //Pickaxes
+        singleTexture(ToolRegistration.COMPRESSED_WOODEN_PICKAXE.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/tools/compressed_wooden_pickaxe"));
-        singleTexture(Registration.COMPRESSED_STONE_PICKAXE.get().getRegistryName().getPath(),
+        singleTexture(ToolRegistration.COMPRESSED_STONE_PICKAXE.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/tools/compressed_stone_pickaxe"));
-        singleTexture(Registration.COMPRESSED_IRON_PICKAXE.get().getRegistryName().getPath(),
+        singleTexture(ToolRegistration.COMPRESSED_IRON_PICKAXE.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/tools/compressed_iron_pickaxe"));
-        singleTexture(Registration.COMPRESSED_GOLD_PICKAXE.get().getRegistryName().getPath(),
+        singleTexture(ToolRegistration.COMPRESSED_GOLD_PICKAXE.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/tools/compressed_golden_pickaxe"));
-        singleTexture(Registration.COMPRESSED_DIAMOND_PICKAXE.get().getRegistryName().getPath(),
+        singleTexture(ToolRegistration.COMPRESSED_DIAMOND_PICKAXE.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/tools/compressed_diamond_pickaxe"));
-        singleTexture(Registration.COMPRESSED_NETHERITE_PICKAXE.get().getRegistryName().getPath(),
+        singleTexture(ToolRegistration.COMPRESSED_NETHERITE_PICKAXE.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/tools/compressed_netherite_pickaxe"));
+        //Axes
+        singleTexture(ToolRegistration.COMPRESSED_WOODEN_AXE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_wooden_axe"));
+        singleTexture(ToolRegistration.COMPRESSED_STONE_AXE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_stone_axe"));
+        singleTexture(ToolRegistration.COMPRESSED_IRON_AXE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_iron_axe"));
+        singleTexture(ToolRegistration.COMPRESSED_GOLD_AXE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_golden_axe"));
+        singleTexture(ToolRegistration.COMPRESSED_DIAMOND_AXE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_diamond_axe"));
+        singleTexture(ToolRegistration.COMPRESSED_NETHERITE_AXE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_netherite_axe"));
+        //Shovels
+        singleTexture(ToolRegistration.COMPRESSED_WOODEN_SHOVEL.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_wooden_shovel"));
+        singleTexture(ToolRegistration.COMPRESSED_STONE_SHOVEL.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_stone_shovel"));
+        singleTexture(ToolRegistration.COMPRESSED_IRON_SHOVEL.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_iron_shovel"));
+        singleTexture(ToolRegistration.COMPRESSED_GOLD_SHOVEL.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_golden_shovel"));
+        singleTexture(ToolRegistration.COMPRESSED_DIAMOND_SHOVEL.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_diamond_shovel"));
+        singleTexture(ToolRegistration.COMPRESSED_NETHERITE_SHOVEL.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_netherite_shovel"));
+        //Swords
+        singleTexture(ToolRegistration.COMPRESSED_WOODEN_SWORD.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_wooden_sword"));
+        singleTexture(ToolRegistration.COMPRESSED_STONE_SWORD.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_stone_sword"));
+        singleTexture(ToolRegistration.COMPRESSED_IRON_SWORD.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_iron_sword"));
+        singleTexture(ToolRegistration.COMPRESSED_GOLD_SWORD.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_golden_sword"));
+        singleTexture(ToolRegistration.COMPRESSED_DIAMOND_SWORD.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_diamond_sword"));
+        singleTexture(ToolRegistration.COMPRESSED_NETHERITE_SWORD.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_netherite_sword"));
+        //Hoes
+        singleTexture(ToolRegistration.COMPRESSED_WOODEN_HOE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_wooden_hoe"));
+        singleTexture(ToolRegistration.COMPRESSED_STONE_HOE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_stone_hoe"));
+        singleTexture(ToolRegistration.COMPRESSED_IRON_HOE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_iron_hoe"));
+        singleTexture(ToolRegistration.COMPRESSED_GOLD_HOE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_golden_hoe"));
+        singleTexture(ToolRegistration.COMPRESSED_DIAMOND_HOE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_diamond_hoe"));
+        singleTexture(ToolRegistration.COMPRESSED_NETHERITE_HOE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_netherite_hoe"));
     }
 }

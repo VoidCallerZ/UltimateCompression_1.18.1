@@ -26,7 +26,7 @@ public class ModSetup
         @Override
         public ItemStack makeIcon()
         {
-            return new ItemStack(Registration.COMPRESSED_IRON_PICKAXE.get());
+            return new ItemStack(ToolRegistration.COMPRESSED_IRON_PICKAXE.get());
         }
     };
 

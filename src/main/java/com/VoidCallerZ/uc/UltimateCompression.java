@@ -3,6 +3,7 @@ package com.VoidCallerZ.uc;
 import com.VoidCallerZ.uc.setup.ClientSetup;
 import com.VoidCallerZ.uc.setup.ModSetup;
 import com.VoidCallerZ.uc.setup.Registration;
+import com.VoidCallerZ.uc.setup.ToolRegistration;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
@@ -23,6 +24,7 @@ public class UltimateCompression
     {
         ModSetup.setup();
         Registration.init();
+        ToolRegistration.init();
 
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
         modbus.addListener(ModSetup::init);
