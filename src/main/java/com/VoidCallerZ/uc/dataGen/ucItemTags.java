@@ -69,6 +69,16 @@ public class ucItemTags extends ItemTagsProvider
                 .add(Items.REDSTONE_BLOCK)
                 .add(Items.NETHERITE_BLOCK);
 
+        tag(Registration.COMPRESSED_PLANKS_FOR_TOOLS)
+                .add(Registration.COMPRESSED_ACACIA_PLANKS_ITEM.get())
+                .add(Registration.COMPRESSED_BIRCH_PLANKS_ITEM.get())
+                .add(Registration.COMPRESSED_DARK_OAK_PLANKS_ITEM.get())
+                .add(Registration.COMPRESSED_JUNGLE_PLANKS_ITEM.get())
+                .add(Registration.COMPRESSED_OAK_PLANKS_ITEM.get())
+                .add(Registration.COMPRESSED_SPRUCE_PLANKS_ITEM.get())
+                .add(Registration.COMPRESSED_CRIMSON_PLANKS_ITEM.get())
+                .add(Registration.COMPRESSED_WARPED_PLANKS_ITEM.get());
+
         /*tag(Registration.COMPRESSED_ORE_ITEM)
                 .add(Registration.COMPRESSED_IRON_ORE_ITEM.get())
                 .add(Registration.COMPRESSED_GOLD_ORE_ITEM.get())

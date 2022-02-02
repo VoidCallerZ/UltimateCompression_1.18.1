@@ -9,7 +9,7 @@ import static com.VoidCallerZ.uc.blocks.PowergenBlock.MESSAGE_ULTIMATE_POWERGEN;
 import static com.VoidCallerZ.uc.blocks.PowergenBlock.SCREEN_ULTIMATE_POWERGEN;
 import static com.VoidCallerZ.uc.blocks.CompressorBlock.MESSAGE_COMPRESSOR;
 import static com.VoidCallerZ.uc.blocks.CompressorBlock.SCREEN_MESSAGE_COMPRESSOR;
-import static com.VoidCallerZ.uc.setup.ModSetup.TAB_NAME;
+import static com.VoidCallerZ.uc.setup.ModSetup.UC_TAB;
 
 public class ucLanguageProvider extends LanguageProvider
 {
@@ -18,7 +18,7 @@ public class ucLanguageProvider extends LanguageProvider
     @Override
     protected void  addTranslations()
     {
-        add("itemGroup." + TAB_NAME, "Ultimate Compression");
+        add("itemGroup." + UC_TAB, "Ultimate Compression");
         add(MESSAGE_ULTIMATE_POWERGEN, "Power generator generating %s per tick!");
         add(SCREEN_ULTIMATE_POWERGEN, "Power generator");
         add(MESSAGE_COMPRESSOR, "A block capable to compress normal ingots and blocks into compressed ones.");

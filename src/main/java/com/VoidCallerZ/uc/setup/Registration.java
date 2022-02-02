@@ -7,8 +7,9 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.PumpkinBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -45,6 +46,28 @@ public class Registration
     public static final BlockBehaviour.Properties INGOT_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.METAL).strength(2f).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties WOOD_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.WOOD).strength(2f);
     public static final Item.Properties ITEM_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_COMPRESSION_TAB);
+    public static final Item.Properties WOODEN_TOOL_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_TOOL_COMPRESSION_TAB).durability(60 * 9);
+    public static final Item.Properties STONE_TOOL_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_TOOL_COMPRESSION_TAB).durability(132 * 9);
+    public static final Item.Properties IRON_TOOL_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_TOOL_COMPRESSION_TAB).durability(251 * 9);
+    public static final Item.Properties GOLD_TOOL_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_TOOL_COMPRESSION_TAB).durability(33 * 9);
+    public static final Item.Properties DIAMOND_TOOL_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_TOOL_COMPRESSION_TAB).durability(1562 * 9);
+    public static final Item.Properties NETHERITE_TOOL_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_TOOL_COMPRESSION_TAB).durability(2032 * 9);
+
+    //Tools
+    public static final Tags.IOptionalNamedTag<Item> COMPRESSED_PLANKS_FOR_TOOLS = ItemTags.createOptional(new ResourceLocation(UltimateCompression.MODID, "compressed_planks_for_tools"));
+    public static final RegistryObject<PickaxeItem> COMPRESSED_WOODEN_PICKAXE = ITEMS.register("compressed_wooden_pickaxe",
+            () -> new PickaxeItem(Tiers.WOOD, 2, -2.8f, WOODEN_TOOL_PROPERTIES));
+    public static final RegistryObject<PickaxeItem> COMPRESSED_STONE_PICKAXE = ITEMS.register("compressed_stone_pickaxe",
+            () -> new PickaxeItem(Tiers.STONE, 3, -2.8f, STONE_TOOL_PROPERTIES));
+    public static final RegistryObject<PickaxeItem> COMPRESSED_IRON_PICKAXE = ITEMS.register("compressed_iron_pickaxe",
+            () -> new PickaxeItem(Tiers.IRON, 4, -2.8f, IRON_TOOL_PROPERTIES));
+    public static final RegistryObject<PickaxeItem> COMPRESSED_GOLD_PICKAXE = ITEMS.register("compressed_gold_pickaxe",
+            () -> new PickaxeItem(Tiers.GOLD, 2, -2.8f, GOLD_TOOL_PROPERTIES));
+    public static final RegistryObject<PickaxeItem> COMPRESSED_DIAMOND_PICKAXE = ITEMS.register("compressed_diamond_pickaxe",
+            () -> new PickaxeItem(Tiers.DIAMOND, 5, -2.8f, DIAMOND_TOOL_PROPERTIES));
+    public static final RegistryObject<PickaxeItem> COMPRESSED_NETHERITE_PICKAXE = ITEMS.register("compressed_netherite_pickaxe",
+            () -> new PickaxeItem(Tiers.NETHERITE, 6, -2.8f, NETHERITE_TOOL_PROPERTIES));
+
 
     //parentBlocks & Items
     //Ores

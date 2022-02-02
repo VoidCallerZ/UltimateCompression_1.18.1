@@ -127,5 +127,24 @@ public class ucItemModels extends ItemModelProvider
         singleTexture(Registration.COMPRESSED_NETHERITE_INGOT.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/materials/compressed_netherite_ingot"));
+
+        singleTexture(Registration.COMPRESSED_WOODEN_PICKAXE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_wooden_pickaxe"));
+        singleTexture(Registration.COMPRESSED_STONE_PICKAXE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_stone_pickaxe"));
+        singleTexture(Registration.COMPRESSED_IRON_PICKAXE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_iron_pickaxe"));
+        singleTexture(Registration.COMPRESSED_GOLD_PICKAXE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_golden_pickaxe"));
+        singleTexture(Registration.COMPRESSED_DIAMOND_PICKAXE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_diamond_pickaxe"));
+        singleTexture(Registration.COMPRESSED_NETHERITE_PICKAXE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/tools/compressed_netherite_pickaxe"));
     }
 }

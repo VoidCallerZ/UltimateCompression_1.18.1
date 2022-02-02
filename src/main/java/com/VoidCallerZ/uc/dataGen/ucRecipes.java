@@ -7,6 +7,8 @@ import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.tags.Tag;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
@@ -168,5 +170,23 @@ public class ucRecipes extends BaseRecipeProvider
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.COMPRESSED_RAW_COPPER.get()), Registration.COMPRESSED_COPPER_INGOT.get(), 0.0f, 100)
                 .unlockedBy("has_chunk", has(Registration.COMPRESSED_RAW_COPPER.get()))
                 .save(consumer, "compressed_copper_ingot2");
+
+        //TOOLS
+        //Pickaxes
+        ShapedRecipeBuilder.shaped(Registration.COMPRESSED_WOODEN_PICKAXE.get())
+                .pattern("xxx")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('x', Registration.COMPRESSED_PLANKS_FOR_TOOLS)
+                .define('s', Items.STICK)
+                .group("uc")
+                .unlockedBy("has_compressed_oak_planks", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_OAK_PLANKS.get()))
+                .save(consumer);
+        CompressedPickaxeRecipeBuilder(Registration.COMPRESSED_STONE_PICKAXE.get(), Registration.COMPRESSED_COBBLESTONE_ITEM.get(), consumer);
+        CompressedPickaxeRecipeBuilder(Registration.COMPRESSED_IRON_PICKAXE.get(), Registration.COMPRESSED_IRON_INGOT.get(), consumer);
+        CompressedPickaxeRecipeBuilder(Registration.COMPRESSED_GOLD_PICKAXE.get(), Registration.COMPRESSED_GOLD_INGOT.get(), consumer);
+        CompressedPickaxeRecipeBuilder(Registration.COMPRESSED_DIAMOND_PICKAXE.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), consumer);
+        CompressedPickaxeRecipeBuilder(Registration.COMPRESSED_NETHERITE_PICKAXE.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), consumer);
+
     }
 }
