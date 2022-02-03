@@ -241,5 +241,44 @@ public class ucItemModels extends ItemModelProvider
         singleTexture(ArmorRegistration.COMPRESSED_IRON_BOOTS.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/armor/compressed_iron_boots"));
+        //Gold Armor
+        singleTexture(ArmorRegistration.COMPRESSED_GOLD_HELMET.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_golden_helmet"));
+        singleTexture(ArmorRegistration.COMPRESSED_GOLD_CHESTPLATE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_golden_chestplate"));
+        singleTexture(ArmorRegistration.COMPRESSED_GOLD_LEGGINGS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_golden_leggings"));
+        singleTexture(ArmorRegistration.COMPRESSED_GOLD_BOOTS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_golden_boots"));
+        //Diamond Armor
+        singleTexture(ArmorRegistration.COMPRESSED_DIAMOND_HELMET.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_diamond_helmet"));
+        singleTexture(ArmorRegistration.COMPRESSED_DIAMOND_CHESTPLATE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_diamond_chestplate"));
+        singleTexture(ArmorRegistration.COMPRESSED_DIAMOND_LEGGINGS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_diamond_leggings"));
+        singleTexture(ArmorRegistration.COMPRESSED_DIAMOND_BOOTS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_diamond_boots"));
+        //Netherite Armor
+        singleTexture(ArmorRegistration.COMPRESSED_NETHERITE_HELMET.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_netherite_helmet"));
+        singleTexture(ArmorRegistration.COMPRESSED_NETHERITE_CHESTPLATE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_netherite_chestplate"));
+        singleTexture(ArmorRegistration.COMPRESSED_NETHERITE_LEGGINGS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_netherite_leggings"));
+        singleTexture(ArmorRegistration.COMPRESSED_NETHERITE_BOOTS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_netherite_boots"));
     }
 }

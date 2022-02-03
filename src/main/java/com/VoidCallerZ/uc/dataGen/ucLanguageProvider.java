@@ -95,6 +95,22 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_REDSTONE.get(), "Compressed Redstone");
         add(Registration.COMPRESSED_NETHERITE_INGOT.get(), "Compressed Netherite Ingot");
 
+        //Basic Blocks
+        add(Registration.COMPRESSED_ANDESITE.get(), "Compressed Andesite");
+        add(Registration.COMPRESSED_CALCITE.get(), "Compressed Calcite");
+        add(Registration.COMPRESSED_COBBLED_DEEPSLATE.get(), "Compressed Cobbled Deepslate");
+        add(Registration.COMPRESSED_COBBLESTONE.get(), "Compressed Cobblestone");
+        add(Registration.COMPRESSED_DEEPSLATE.get(), "Compressed Deepslate");
+        add(Registration.COMPRESSED_DIORITE.get(), "Compressed Diorite");
+        add(Registration.COMPRESSED_DIRT.get(), "Compressed Dirt");
+        add(Registration.COMPRESSED_GRANITE.get(), "Compressed Granite");
+        add(Registration.COMPRESSED_GRAVEL.get(), "Compressed Gravel");
+        add(Registration.COMPRESSED_NETHERRACK.get(), "Compressed Netherrack");
+        add(Registration.COMPRESSED_RED_SAND.get(), "Compressed Red Sand");
+        add(Registration.COMPRESSED_SAND.get(), "Compressed Sand");
+        add(Registration.COMPRESSED_STONE.get(), "Compressed Stone");
+        add(Registration.COMPRESSED_TUFF.get(), "Compressed Tuff");
+
         //TOOLS
         //Pickaxes
         add(ToolRegistration.COMPRESSED_WOODEN_PICKAXE.get(), "Compressed Wooden Pickaxe");
@@ -138,5 +154,20 @@ public class ucLanguageProvider extends LanguageProvider
         add(ArmorRegistration.COMPRESSED_IRON_CHESTPLATE.get(), "Compressed Iron Chestplate");
         add(ArmorRegistration.COMPRESSED_IRON_LEGGINGS.get(), "Compressed Iron Leggings");
         add(ArmorRegistration.COMPRESSED_IRON_BOOTS.get(), "Compressed Iron Boots");
+        //Gold Armor
+        add(ArmorRegistration.COMPRESSED_GOLD_HELMET.get(), "Compressed Gold Helmet");
+        add(ArmorRegistration.COMPRESSED_GOLD_CHESTPLATE.get(), "Compressed Gold Chestplate");
+        add(ArmorRegistration.COMPRESSED_GOLD_LEGGINGS.get(), "Compressed Gold Leggings");
+        add(ArmorRegistration.COMPRESSED_GOLD_BOOTS.get(), "Compressed Gold Boots");
+        //Diamond Armor
+        add(ArmorRegistration.COMPRESSED_DIAMOND_HELMET.get(), "Compressed Diamond Helmet");
+        add(ArmorRegistration.COMPRESSED_DIAMOND_CHESTPLATE.get(), "Compressed Diamond Chestplate");
+        add(ArmorRegistration.COMPRESSED_DIAMOND_LEGGINGS.get(), "Compressed Diamond Leggings");
+        add(ArmorRegistration.COMPRESSED_DIAMOND_BOOTS.get(), "Compressed Diamond Boots");
+        //Netherite Armor
+        add(ArmorRegistration.COMPRESSED_NETHERITE_HELMET.get(), "Compressed Netherite Helmet");
+        add(ArmorRegistration.COMPRESSED_NETHERITE_CHESTPLATE.get(), "Compressed Netherite Chestplate");
+        add(ArmorRegistration.COMPRESSED_NETHERITE_LEGGINGS.get(), "Compressed Netherite Leggings");
+        add(ArmorRegistration.COMPRESSED_NETHERITE_BOOTS.get(), "Compressed Netherite Boots");
     }
 }
