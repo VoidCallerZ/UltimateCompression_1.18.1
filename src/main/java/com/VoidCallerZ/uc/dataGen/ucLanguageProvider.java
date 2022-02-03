@@ -1,6 +1,7 @@
 package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
+import com.VoidCallerZ.uc.setup.ArmorRegistration;
 import com.VoidCallerZ.uc.setup.Registration;
 import com.VoidCallerZ.uc.setup.ToolRegistration;
 import net.minecraft.data.DataGenerator;
@@ -130,5 +131,12 @@ public class ucLanguageProvider extends LanguageProvider
         add(ToolRegistration.COMPRESSED_GOLD_HOE.get(), "Compressed Golden Hoe");
         add(ToolRegistration.COMPRESSED_DIAMOND_HOE.get(), "Compressed Diamond Hoe");
         add(ToolRegistration.COMPRESSED_NETHERITE_HOE.get(), "Compressed Netherite Hoe");
+
+        //ARMOR
+        //Iron Armor
+        add(ArmorRegistration.COMPRESSED_IRON_HELMET.get(), "Compressed Iron Helmet");
+        add(ArmorRegistration.COMPRESSED_IRON_CHESTPLATE.get(), "Compressed Iron Chestplate");
+        add(ArmorRegistration.COMPRESSED_IRON_LEGGINGS.get(), "Compressed Iron Leggings");
+        add(ArmorRegistration.COMPRESSED_IRON_BOOTS.get(), "Compressed Iron Boots");
     }
 }

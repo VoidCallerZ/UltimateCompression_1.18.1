@@ -1,6 +1,7 @@
 package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
+import com.VoidCallerZ.uc.setup.ArmorRegistration;
 import com.VoidCallerZ.uc.setup.Registration;
 import com.VoidCallerZ.uc.setup.ToolRegistration;
 import net.minecraft.data.DataGenerator;
@@ -225,5 +226,20 @@ public class ucItemModels extends ItemModelProvider
         singleTexture(ToolRegistration.COMPRESSED_NETHERITE_HOE.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/tools/compressed_netherite_hoe"));
+
+        //ARMOR
+        //Iron Armor
+        singleTexture(ArmorRegistration.COMPRESSED_IRON_HELMET.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_iron_helmet"));
+        singleTexture(ArmorRegistration.COMPRESSED_IRON_CHESTPLATE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_iron_chestplate"));
+        singleTexture(ArmorRegistration.COMPRESSED_IRON_LEGGINGS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_iron_leggings"));
+        singleTexture(ArmorRegistration.COMPRESSED_IRON_BOOTS.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/armor/compressed_iron_boots"));
     }
 }
