@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "minecraft:poisonous_potato"
+    }
+  ],
+  "result": {
+    "item": "uc:compressed_poisonous_potato"
+  }
+}

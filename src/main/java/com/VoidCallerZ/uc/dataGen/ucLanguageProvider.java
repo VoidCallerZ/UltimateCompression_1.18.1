@@ -2,6 +2,7 @@ package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.setup.ArmorRegistration;
+import com.VoidCallerZ.uc.setup.FoodRegistration;
 import com.VoidCallerZ.uc.setup.Registration;
 import com.VoidCallerZ.uc.setup.ToolRegistration;
 import net.minecraft.data.DataGenerator;
@@ -11,8 +12,7 @@ import static com.VoidCallerZ.uc.blocks.PowergenBlock.MESSAGE_ULTIMATE_POWERGEN;
 import static com.VoidCallerZ.uc.blocks.PowergenBlock.SCREEN_ULTIMATE_POWERGEN;
 import static com.VoidCallerZ.uc.blocks.CompressorBlock.MESSAGE_COMPRESSOR;
 import static com.VoidCallerZ.uc.blocks.CompressorBlock.SCREEN_MESSAGE_COMPRESSOR;
-import static com.VoidCallerZ.uc.setup.ModSetup.UC_TAB;
-import static com.VoidCallerZ.uc.setup.ModSetup.UC_TOOLS_TAB;
+import static com.VoidCallerZ.uc.setup.ModSetup.*;
 
 public class ucLanguageProvider extends LanguageProvider
 {
@@ -23,6 +23,7 @@ public class ucLanguageProvider extends LanguageProvider
     {
         add("itemGroup." + UC_TAB, "Ultimate Compression");
         add("itemGroup." + UC_TOOLS_TAB, "Ultimate Tool Compression");
+        add("itemGroup." + UC_FOOD_TAB, "Ultimate Food Compression");
         add(MESSAGE_ULTIMATE_POWERGEN, "Power generator generating %s per tick!");
         add(SCREEN_ULTIMATE_POWERGEN, "Power generator");
         add(MESSAGE_COMPRESSOR, "A block capable to compress normal ingots and blocks into compressed ones.");
@@ -169,5 +170,43 @@ public class ucLanguageProvider extends LanguageProvider
         add(ArmorRegistration.COMPRESSED_NETHERITE_CHESTPLATE.get(), "Compressed Netherite Chestplate");
         add(ArmorRegistration.COMPRESSED_NETHERITE_LEGGINGS.get(), "Compressed Netherite Leggings");
         add(ArmorRegistration.COMPRESSED_NETHERITE_BOOTS.get(), "Compressed Netherite Boots");
+
+        //FOOD
+        add(FoodRegistration.COMPRESSED_APPLE.get(), "Compressed Apple");
+        add(FoodRegistration.COMPRESSED_BAKED_POTATO.get(), "Compressed Baked Potato");
+        add(FoodRegistration.COMPRESSED_BEEF.get(), "Compressed Beef");
+        add(FoodRegistration.COMPRESSED_BEETROOT.get(), "Compressed Beetroot");
+        add(FoodRegistration.COMPRESSED_BEETROOT_SOUP.get(), "Compressed Beetroot Soup");
+        add(FoodRegistration.COMPRESSED_BREAD.get(), "Compressed Bread");
+        add(FoodRegistration.COMPRESSED_CARROT.get(), "Compressed Carrot");
+        add(FoodRegistration.COMPRESSED_CHICKEN.get(), "Compressed Chicken");
+        add(FoodRegistration.COMPRESSED_COD.get(), "Compressed Cod");
+        add(FoodRegistration.COMPRESSED_COOKED_BEEF.get(), "Compressed Cooked Beef");
+        add(FoodRegistration.COMPRESSED_COOKED_CHICKEN.get(), "Compressed Cooked Chicken");
+        add(FoodRegistration.COMPRESSED_COOKED_COD.get(), "Compressed Cooked Cod");
+        add(FoodRegistration.COMPRESSED_COOKED_MUTTON.get(), "Compressed Cooked Mutton");
+        add(FoodRegistration.COMPRESSED_COOKED_PORKCHOP.get(), "Compressed Cooked Porkchop");
+        add(FoodRegistration.COMPRESSED_COOKED_RABBIT.get(), "Compressed Cooked Rabbit");
+        add(FoodRegistration.COMPRESSED_COOKED_SALMON.get(), "Compressed Cooked Salmon");
+        add(FoodRegistration.COMPRESSED_COOKIE.get(), "Compressed Cookie");
+        add(FoodRegistration.COMPRESSED_DRIED_KELP.get(), "Compressed Dried Kelp");
+        add(FoodRegistration.COMPRESSED_GLOW_BERRIES.get(), "Compressed Glow Berries");
+        add(FoodRegistration.COMPRESSED_GOLDEN_APPLE.get(), "Compressed Golden Apple");
+        add(FoodRegistration.COMPRESSED_ENCHANTED_GOLDEN_APPLE.get(), "Compressed Enchanted Golden Apple");
+        add(FoodRegistration.COMPRESSED_MELON_SLICE.get(), "Compressed Melon Slice");
+        add(FoodRegistration.COMPRESSED_MUSHROOM_STEW.get(), "Compressed Mushroom Stew");
+        add(FoodRegistration.COMPRESSED_MUTTON.get(), "Compressed Mutton");
+        add(FoodRegistration.COMPRESSED_POISONOUS_POTATO.get(), "Compressed Poisonous Potato");
+        add(FoodRegistration.COMPRESSED_PORKCHOP.get(), "Compressed Porkchop");
+        add(FoodRegistration.COMPRESSED_POTATO.get(), "Compressed Potato");
+        add(FoodRegistration.COMPRESSED_PUFFERFISH.get(), "Compressed Pufferfish");
+        add(FoodRegistration.COMPRESSED_PUMPKIN_PIE.get(), "Compressed Pumpkin Pie");
+        add(FoodRegistration.COMPRESSED_RABBIT.get(), "Compressed Rabbit");
+        add(FoodRegistration.COMPRESSED_RABBIT_STEW.get(), "Compressed Rabbit Stew");
+        add(FoodRegistration.COMPRESSED_ROTTEN_FLESH.get(), "Compressed Rotten Flesh");
+        add(FoodRegistration.COMPRESSED_SALMON.get(), "Compressed Salmon");
+        add(FoodRegistration.COMPRESSED_SPIDER_EYE.get(), "Compressed Spider Eye");
+        add(FoodRegistration.COMPRESSED_SWEET_BERRIES.get(), "Compressed Sweet Berries");
+        add(FoodRegistration.COMPRESSED_TROPICAL_FISH.get(), "Compressed Tropical Fish");
     }
 }

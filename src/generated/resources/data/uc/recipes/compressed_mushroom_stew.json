@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "pattern": [
+    "x x",
+    " x "
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:mushroom_stew"
+    }
+  },
+  "result": {
+    "item": "uc:compressed_mushroom_stew"
+  }
+}

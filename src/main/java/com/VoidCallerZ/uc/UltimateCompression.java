@@ -23,6 +23,7 @@ public class UltimateCompression
         Registration.init();
         ToolRegistration.init();
         ArmorRegistration.init();
+        FoodRegistration.init();
 
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
         modbus.addListener(ModSetup::init);

@@ -1,6 +1,7 @@
 package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.setup.ArmorRegistration;
+import com.VoidCallerZ.uc.setup.FoodRegistration;
 import com.VoidCallerZ.uc.setup.Registration;
 import com.VoidCallerZ.uc.setup.ToolRegistration;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
@@ -248,24 +249,65 @@ public class ucRecipes extends BaseRecipeProvider
 
         //ARMOR
         //Iron
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_IRON_HELMET.get(), Registration.COMPRESSED_IRON_INGOT.get(), BodyPart.HEAD, consumer);
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_IRON_CHESTPLATE.get(), Registration.COMPRESSED_IRON_INGOT.get(), BodyPart.CHEST, consumer);
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_IRON_LEGGINGS.get(), Registration.COMPRESSED_IRON_INGOT.get(), BodyPart.LEGS, consumer);
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_IRON_BOOTS.get(), Registration.COMPRESSED_IRON_INGOT.get(), BodyPart.FEET, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_HELMET.get(), Registration.COMPRESSED_IRON_INGOT.get(), BodyPart.HEAD, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_CHESTPLATE.get(), Registration.COMPRESSED_IRON_INGOT.get(), BodyPart.CHEST, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_LEGGINGS.get(), Registration.COMPRESSED_IRON_INGOT.get(), BodyPart.LEGS, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_BOOTS.get(), Registration.COMPRESSED_IRON_INGOT.get(), BodyPart.FEET, consumer);
         //Iron
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_GOLD_HELMET.get(), Registration.COMPRESSED_GOLD_INGOT.get(), BodyPart.HEAD, consumer);
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_GOLD_CHESTPLATE.get(), Registration.COMPRESSED_GOLD_INGOT.get(), BodyPart.CHEST, consumer);
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_GOLD_LEGGINGS.get(), Registration.COMPRESSED_GOLD_INGOT.get(), BodyPart.LEGS, consumer);
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_GOLD_BOOTS.get(), Registration.COMPRESSED_GOLD_INGOT.get(), BodyPart.FEET, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_HELMET.get(), Registration.COMPRESSED_GOLD_INGOT.get(), BodyPart.HEAD, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_CHESTPLATE.get(), Registration.COMPRESSED_GOLD_INGOT.get(), BodyPart.CHEST, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_LEGGINGS.get(), Registration.COMPRESSED_GOLD_INGOT.get(), BodyPart.LEGS, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_BOOTS.get(), Registration.COMPRESSED_GOLD_INGOT.get(), BodyPart.FEET, consumer);
         //Iron
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_DIAMOND_HELMET.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.HEAD, consumer);
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_DIAMOND_CHESTPLATE.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.CHEST, consumer);
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_DIAMOND_LEGGINGS.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.LEGS, consumer);
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_DIAMOND_BOOTS.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.FEET, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_HELMET.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.HEAD, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_CHESTPLATE.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.CHEST, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_LEGGINGS.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.LEGS, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_BOOTS.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.FEET, consumer);
         //Iron
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_NETHERITE_HELMET.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.HEAD, consumer);
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_NETHERITE_CHESTPLATE.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.CHEST, consumer);
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_NETHERITE_LEGGINGS.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.LEGS, consumer);
-        CompressedArmorRecipleBuilder(ArmorRegistration.COMPRESSED_NETHERITE_BOOTS.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.FEET, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_HELMET.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.HEAD, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_CHESTPLATE.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.CHEST, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_LEGGINGS.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.LEGS, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_BOOTS.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.FEET, consumer);
+
+        //FOOD
+        //Basic (Raw) Food
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_APPLE.get(), Items.APPLE, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_BEEF.get(), Items.BEEF, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_BEETROOT.get(), Items.BEETROOT, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_BREAD.get(), Items.BREAD, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_CARROT.get(), Items.CARROT, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_CHICKEN.get(), Items.CHICKEN, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_COD.get(), Items.COD, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_COOKIE.get(), Items.COOKIE, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_DRIED_KELP.get(), Items.DRIED_KELP, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_GLOW_BERRIES.get(), Items.GLOW_BERRIES, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_GOLDEN_APPLE.get(), Items.GOLDEN_APPLE, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_ENCHANTED_GOLDEN_APPLE.get(), Items.ENCHANTED_GOLDEN_APPLE, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_MELON_SLICE.get(), Items.MELON_SLICE, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_MUTTON.get(), Items.MUTTON, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_POISONOUS_POTATO.get(), Items.POISONOUS_POTATO, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_PORKCHOP.get(), Items.PORKCHOP, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_POTATO.get(), Items.POTATO, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_PUFFERFISH.get(), Items.PUFFERFISH, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_PUMPKIN_PIE.get(), Items.PUMPKIN_PIE, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_RABBIT.get(), Items.RABBIT, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_ROTTEN_FLESH.get(), Items.ROTTEN_FLESH, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_SALMON.get(), Items.SALMON, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_SPIDER_EYE.get(), Items.SPIDER_EYE, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_SWEET_BERRIES.get(), Items.SWEET_BERRIES, consumer);
+        BasicFoodRecipeBuilder(FoodRegistration.COMPRESSED_TROPICAL_FISH.get(), Items.TROPICAL_FISH, consumer);
+        //Stew Food
+        StewFoodRecipeBuilder(FoodRegistration.COMPRESSED_BEETROOT_SOUP.get(), Items.BEETROOT_SOUP, consumer);
+        StewFoodRecipeBuilder(FoodRegistration.COMPRESSED_MUSHROOM_STEW.get(), Items.MUSHROOM_STEW, consumer);
+        StewFoodRecipeBuilder(FoodRegistration.COMPRESSED_RABBIT_STEW.get(), Items.RABBIT_STEW, consumer);
+        //Cooking Food
+        CookingFoodRecipeBuilder(FoodRegistration.COMPRESSED_BAKED_POTATO.get(), FoodRegistration.COMPRESSED_POTATO.get(), consumer);
+        CookingFoodRecipeBuilder(FoodRegistration.COMPRESSED_COOKED_BEEF.get(), FoodRegistration.COMPRESSED_BEEF.get(), consumer);
+        CookingFoodRecipeBuilder(FoodRegistration.COMPRESSED_COOKED_CHICKEN.get(), FoodRegistration.COMPRESSED_CHICKEN.get(), consumer);
+        CookingFoodRecipeBuilder(FoodRegistration.COMPRESSED_COOKED_COD.get(), FoodRegistration.COMPRESSED_COD.get(), consumer);
+        CookingFoodRecipeBuilder(FoodRegistration.COMPRESSED_COOKED_MUTTON.get(), FoodRegistration.COMPRESSED_MUTTON.get(), consumer);
+        CookingFoodRecipeBuilder(FoodRegistration.COMPRESSED_COOKED_PORKCHOP.get(), FoodRegistration.COMPRESSED_PORKCHOP.get(), consumer);
+        CookingFoodRecipeBuilder(FoodRegistration.COMPRESSED_COOKED_RABBIT.get(), FoodRegistration.COMPRESSED_RABBIT.get(), consumer);
+        CookingFoodRecipeBuilder(FoodRegistration.COMPRESSED_COOKED_SALMON.get(), FoodRegistration.COMPRESSED_SALMON.get(), consumer);
     }
 }

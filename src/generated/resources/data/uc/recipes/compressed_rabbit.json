@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "minecraft:rabbit"
+    }
+  ],
+  "result": {
+    "item": "uc:compressed_rabbit"
+  }
+}

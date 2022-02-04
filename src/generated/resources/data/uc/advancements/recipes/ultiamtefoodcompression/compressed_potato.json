@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_potato"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:potato": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:potato"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_potato"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:potato",
+      "has_the_recipe"
+    ]
+  ]
+}

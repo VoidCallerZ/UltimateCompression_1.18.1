@@ -20,6 +20,7 @@ public class DataGenerators
             ucBlockTags blockTags = new ucBlockTags(generator, event.getExistingFileHelper());
             generator.addProvider(blockTags);
             generator.addProvider(new ucItemTags(generator, blockTags, event.getExistingFileHelper()));
+            generator.addProvider(new ucAdvancements(generator, event.getExistingFileHelper()));
         }
         if(event.includeClient())
         {

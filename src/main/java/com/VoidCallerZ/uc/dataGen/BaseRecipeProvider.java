@@ -1,17 +1,17 @@
 package com.VoidCallerZ.uc.dataGen;
 
+import com.VoidCallerZ.uc.setup.FoodRegistration;
 import com.VoidCallerZ.uc.setup.Registration;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
-import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.tags.Tag;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.SimpleCookingSerializer;
 import net.minecraft.world.level.block.Block;
+import org.objectweb.asm.tree.FieldInsnNode;
 
 import java.util.function.Consumer;
 
@@ -120,7 +120,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider
         }
     }
 
-    protected void CompressedArmorRecipleBuilder(Item armorItem, Item material, BodyPart part, Consumer<FinishedRecipe> consumer)
+    protected void CompressedArmorRecipeBuilder(Item armorItem, Item material, BodyPart part, Consumer<FinishedRecipe> consumer)
     {
         if (part == BodyPart.HEAD)
         {
@@ -164,5 +164,32 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                     .unlockedBy("has_" + armorItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
                     .save(consumer);
         }
+    }
+
+    protected void BasicFoodRecipeBuilder(Item foodItem, Item input, Consumer<FinishedRecipe> consumer)
+    {
+        ShapelessRecipeBuilder.shapeless(foodItem)
+                .requires(input)
+                .group("uc")
+                .unlockedBy("has_" + input.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(input))
+                .save(consumer);
+    }
+
+    protected void StewFoodRecipeBuilder(Item result, Item input, Consumer<FinishedRecipe> consumer)
+    {
+        ShapedRecipeBuilder.shaped(result)
+                .pattern("x x")
+                .pattern(" x ")
+                .define('x', input)
+                .group("uc")
+                .unlockedBy("has_" + input.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(input))
+                .save(consumer);
+    }
+
+    protected void CookingFoodRecipeBuilder(Item foodItem, Item input, Consumer<FinishedRecipe> consumer)
+    {
+        SimpleCookingRecipeBuilder.cooking(Ingredient.of(input), foodItem, 0.35f, 100, SimpleCookingSerializer.SMELTING_RECIPE)
+                .unlockedBy("has_" + input, InventoryChangeTrigger.TriggerInstance.hasItems(input))
+                .save(consumer);
     }
 }

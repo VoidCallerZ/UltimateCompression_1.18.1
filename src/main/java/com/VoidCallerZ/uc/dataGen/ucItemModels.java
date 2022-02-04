@@ -2,6 +2,7 @@ package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.setup.ArmorRegistration;
+import com.VoidCallerZ.uc.setup.FoodRegistration;
 import com.VoidCallerZ.uc.setup.Registration;
 import com.VoidCallerZ.uc.setup.ToolRegistration;
 import net.minecraft.data.DataGenerator;
@@ -280,5 +281,115 @@ public class ucItemModels extends ItemModelProvider
         singleTexture(ArmorRegistration.COMPRESSED_NETHERITE_BOOTS.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/armor/compressed_netherite_boots"));
+
+        //FOOD
+        singleTexture(FoodRegistration.COMPRESSED_APPLE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_apple"));
+        singleTexture(FoodRegistration.COMPRESSED_BAKED_POTATO.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_baked_potato"));
+        singleTexture(FoodRegistration.COMPRESSED_BEEF.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_beef"));
+        singleTexture(FoodRegistration.COMPRESSED_BEETROOT.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_beetroot"));
+        singleTexture(FoodRegistration.COMPRESSED_BEETROOT_SOUP.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_beetroot_soup"));
+        singleTexture(FoodRegistration.COMPRESSED_BREAD.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_bread"));
+        singleTexture(FoodRegistration.COMPRESSED_CARROT.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_carrot"));
+        singleTexture(FoodRegistration.COMPRESSED_CHICKEN.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_chicken"));
+        singleTexture(FoodRegistration.COMPRESSED_COD.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_cod"));
+        singleTexture(FoodRegistration.COMPRESSED_COOKED_BEEF.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_cooked_beef"));
+        singleTexture(FoodRegistration.COMPRESSED_COOKED_CHICKEN.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_cooked_chicken"));
+        singleTexture(FoodRegistration.COMPRESSED_COOKED_COD.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_cooked_cod"));
+        singleTexture(FoodRegistration.COMPRESSED_COOKED_MUTTON.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_cooked_mutton"));
+        singleTexture(FoodRegistration.COMPRESSED_COOKED_PORKCHOP.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_cooked_porkchop"));
+        singleTexture(FoodRegistration.COMPRESSED_COOKED_RABBIT.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_cooked_rabbit"));
+        singleTexture(FoodRegistration.COMPRESSED_COOKED_SALMON.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_cooked_salmon"));
+        singleTexture(FoodRegistration.COMPRESSED_COOKIE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_cookie"));
+        singleTexture(FoodRegistration.COMPRESSED_DRIED_KELP.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_dried_kelp"));
+        singleTexture(FoodRegistration.COMPRESSED_GLOW_BERRIES.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_glow_berries"));
+        singleTexture(FoodRegistration.COMPRESSED_GOLDEN_APPLE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_golden_apple"));
+        singleTexture(FoodRegistration.COMPRESSED_ENCHANTED_GOLDEN_APPLE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_golden_apple"));
+        singleTexture(FoodRegistration.COMPRESSED_MELON_SLICE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_melon_slice"));
+        singleTexture(FoodRegistration.COMPRESSED_MUSHROOM_STEW.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_mushroom_stew"));
+        singleTexture(FoodRegistration.COMPRESSED_MUTTON.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_mutton"));
+        singleTexture(FoodRegistration.COMPRESSED_POISONOUS_POTATO.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_poisonous_potato"));
+        singleTexture(FoodRegistration.COMPRESSED_PORKCHOP.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_porkchop"));
+        singleTexture(FoodRegistration.COMPRESSED_POTATO.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_potato"));
+        singleTexture(FoodRegistration.COMPRESSED_PUFFERFISH.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_pufferfish"));
+        singleTexture(FoodRegistration.COMPRESSED_PUMPKIN_PIE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_pumpkin_pie"));
+        singleTexture(FoodRegistration.COMPRESSED_RABBIT.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_rabbit"));
+        singleTexture(FoodRegistration.COMPRESSED_RABBIT_STEW.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_rabbit_stew"));
+        singleTexture(FoodRegistration.COMPRESSED_ROTTEN_FLESH.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_rotten_flesh"));
+        singleTexture(FoodRegistration.COMPRESSED_SALMON.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_salmon"));
+        singleTexture(FoodRegistration.COMPRESSED_SPIDER_EYE.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_spider_eye"));
+        singleTexture(FoodRegistration.COMPRESSED_SWEET_BERRIES.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_sweet_berries"));
+        singleTexture(FoodRegistration.COMPRESSED_TROPICAL_FISH.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/food/compressed_tropical_fish"));
     }
 }

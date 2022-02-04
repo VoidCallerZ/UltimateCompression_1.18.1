@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_cookie"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:cookie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cookie"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_cookie"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:cookie",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_chicken"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:chicken": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:chicken"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_chicken"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:chicken",
+      "has_the_recipe"
+    ]
+  ]
+}

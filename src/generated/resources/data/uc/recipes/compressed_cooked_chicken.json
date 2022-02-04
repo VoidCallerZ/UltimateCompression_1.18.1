@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "uc:compressed_chicken"
+  },
+  "result": "uc:compressed_cooked_chicken",
+  "experience": 0.35,
+  "cookingtime": 100
+}

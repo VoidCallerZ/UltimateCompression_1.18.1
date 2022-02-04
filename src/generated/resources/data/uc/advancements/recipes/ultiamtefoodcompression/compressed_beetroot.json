@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_beetroot"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:beetroot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:beetroot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_beetroot"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:beetroot",
+      "has_the_recipe"
+    ]
+  ]
+}
