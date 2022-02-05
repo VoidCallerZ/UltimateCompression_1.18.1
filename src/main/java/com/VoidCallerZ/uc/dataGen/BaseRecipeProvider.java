@@ -169,7 +169,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider
     protected void BasicFoodRecipeBuilder(Item foodItem, Item input, Consumer<FinishedRecipe> consumer)
     {
         ShapelessRecipeBuilder.shapeless(foodItem)
-                .requires(input)
+                .requires(input, 4)
                 .group("uc")
                 .unlockedBy("has_" + input.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(input))
                 .save(consumer);

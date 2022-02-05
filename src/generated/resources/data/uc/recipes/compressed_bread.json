@@ -4,6 +4,15 @@
   "ingredients": [
     {
       "item": "minecraft:bread"
+    },
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "minecraft:bread"
     }
   ],
   "result": {

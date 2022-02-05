@@ -4,6 +4,15 @@
   "ingredients": [
     {
       "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "minecraft:dried_kelp"
     }
   ],
   "result": {

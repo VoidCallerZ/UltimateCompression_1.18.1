@@ -4,6 +4,15 @@
   "ingredients": [
     {
       "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:melon_slice"
     }
   ],
   "result": {
