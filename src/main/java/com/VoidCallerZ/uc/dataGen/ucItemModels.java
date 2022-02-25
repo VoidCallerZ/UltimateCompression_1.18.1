@@ -20,6 +20,10 @@ public class ucItemModels extends ItemModelProvider
     @Override
     protected void registerModels()
     {
+        singleTexture(Registration.UC_ICON.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("gui/ucimage"));
+
         //Ores
         withExistingParent(Registration.COMPRESSED_IRON_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_iron_ore"));
         withExistingParent(Registration.COMPRESSED_GOLD_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_gold_ore"));

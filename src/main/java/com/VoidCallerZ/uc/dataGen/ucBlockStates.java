@@ -103,7 +103,7 @@ public class ucBlockStates extends BaseBlockStateProvider
     {
         ResourceLocation BASE = modLoc("block/compressor/compressor_back");
         ResourceLocation BACK = modLoc("block/compressor/compressor_back_on");
-        ResourceLocation FRONT = modLoc("block/compressor/compressor_front_on");
+        ResourceLocation FRONT = modLoc("block/compressor/compressor_front");
         ResourceLocation SIDE = modLoc("block/compressor/compressor_side");
 
         horizontalBlock(Registration.COMPRESSOR.get(), models().cube("compressor", BASE, BASE, FRONT, BACK, SIDE, SIDE));

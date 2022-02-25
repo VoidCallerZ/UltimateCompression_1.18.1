@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:mined_compressed_ore",
+  "display": {
+    "icon": {
+      "item": "uc:compressed_rotten_flesh"
+    },
+    "title": {
+      "text": "Desperate Measures"
+    },
+    "description": {
+      "text": "When a single rotten flesh isn\u0027t enough to feed a family"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "rewards": {
+    "experience": 25
+  },
+  "criteria": {
+    "eaten_compressed_rotten_flesh": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "uc:compressed_rotten_flesh"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "eaten_compressed_rotten_flesh"
+    ]
+  ]
+}

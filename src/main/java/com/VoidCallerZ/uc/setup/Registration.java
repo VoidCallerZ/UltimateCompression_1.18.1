@@ -46,6 +46,7 @@ public class Registration
 
     public static final Tags.IOptionalNamedTag<Item> COMPRESSED_PLANKS_FOR_TOOLS = ItemTags.createOptional(new ResourceLocation(UltimateCompression.MODID, "compressed_planks_for_tools"));
 
+    public static final RegistryObject<Item> UC_ICON = ITEMS.register("uc_icon", () -> new Item(new Item.Properties()));
     //parentBlocks & Items
     //Ores
     public static final RegistryObject<Block> COMPRESSED_IRON_ORE = BLOCKS.register("compressed_iron_ore", () -> new Block(ORE_PROPERTIES));

@@ -1,5 +1,6 @@
 package com.VoidCallerZ.uc.items;
 
+import com.VoidCallerZ.uc.UltimateCompression;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.LazyLoadedValue;
@@ -12,16 +13,16 @@ import java.util.function.Supplier;
 
 public enum UcArmorMaterial implements ArmorMaterial
 {
-    COMPRESSED_IRON("iron", 15, new int[]{2, 5, 6, 2}, 12, SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
+    COMPRESSED_IRON("compressed_iron", 15, new int[]{2, 5, 6, 2}, 12, SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
         return Ingredient.of(Items.IRON_INGOT);
     }),
-    COMPRESSED_GOLD("gold", 7, new int[]{1, 3, 5, 2}, 30, SoundEvents.ARMOR_EQUIP_GOLD, 2.0F, 0.1F, () -> {
+    COMPRESSED_GOLD("compressed_gold", 7, new int[]{1, 3, 5, 2}, 30, SoundEvents.ARMOR_EQUIP_GOLD, 2.0F, 0.1F, () -> {
         return Ingredient.of(Items.GOLD_INGOT);
     }),
-    COMPRESSED_DIAMOND("diamond", 33, new int[]{3, 6, 8, 3}, 14, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.0F, 0.2F, () -> {
+    COMPRESSED_DIAMOND("compressed_diamond", 33, new int[]{3, 6, 8, 3}, 14, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.0F, 0.2F, () -> {
         return Ingredient.of(Items.DIAMOND);
     }),
-    COMPRESSED_NETHERITE("netherite", 37, new int[]{6, 12, 16, 6}, 18, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.3F, () -> {
+    COMPRESSED_NETHERITE("compressed_netherite", 37, new int[]{6, 12, 16, 6}, 18, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.3F, () -> {
         return Ingredient.of(Items.NETHERITE_INGOT);
     });
 
@@ -67,7 +68,7 @@ public enum UcArmorMaterial implements ArmorMaterial
     }
 
     public String getName() {
-        return this.name;
+        return UltimateCompression.MODID + ":" + this.name;
     }
 
     public float getToughness() {

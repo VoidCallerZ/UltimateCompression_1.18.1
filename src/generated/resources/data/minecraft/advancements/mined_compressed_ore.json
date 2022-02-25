@@ -1,0 +1,68 @@
+{
+  "display": {
+    "icon": {
+      "item": "uc:uc_icon"
+    },
+    "title": {
+      "text": "Welcome to Ultimate Compression"
+    },
+    "description": {
+      "text": "This is the beginning of your Ultimate Compression adventure!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "rewards": {
+    "recipes": [
+      "uc:compressor"
+    ]
+  },
+  "criteria": {
+    "mined_compressed_iron_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_iron_ore"
+            ]
+          }
+        ]
+      }
+    },
+    "mined_compressed_gold_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_gold_ore"
+            ]
+          }
+        ]
+      }
+    },
+    "mined_compressed_diamond_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_diamond_ore"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "mined_compressed_iron_ore",
+      "mined_compressed_gold_ore",
+      "mined_compressed_diamond_ore"
+    ]
+  ]
+}

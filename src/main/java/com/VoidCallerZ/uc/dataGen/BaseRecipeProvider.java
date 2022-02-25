@@ -5,14 +5,17 @@ import com.VoidCallerZ.uc.setup.Registration;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.Tag;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.SimpleCookingSerializer;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import org.objectweb.asm.tree.FieldInsnNode;
 
+import javax.annotation.Nullable;
 import java.util.function.Consumer;
 
 public abstract class BaseRecipeProvider extends RecipeProvider
@@ -48,12 +51,13 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                 .define('x', compressedItem)
                 .group("uc")
                 .unlockedBy("has_" + compressedBlock.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
-                .save(consumer);
+                .save(consumer, "uc_" + compressedBlock.getRegistryName());
 
         ShapelessRecipeBuilder.shapeless(compressedItem, decompAmountItem)
                 .requires(compressedBlock)
+                .group("uc")
                 .unlockedBy("has_" + compressedItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
-                .save(consumer);
+                .save(consumer, "uc_" + compressedItem.getRegistryName());
     }
 
     protected void CompressedToolRecipeBuilder(Item toolItem, Item material, ToolType tool, Consumer<FinishedRecipe> consumer)
@@ -69,8 +73,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                     .group("uc")
                     .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
                     .save(consumer);
-        }
-        else if (tool == ToolType.AXE)
+        } else if (tool == ToolType.AXE)
         {
             ShapedRecipeBuilder.shaped(toolItem)
                     .pattern(" xx")
@@ -81,8 +84,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                     .group("uc")
                     .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
                     .save(consumer);
-        }
-        else if (tool == ToolType.SHOVEL)
+        } else if (tool == ToolType.SHOVEL)
         {
             ShapedRecipeBuilder.shaped(toolItem)
                     .pattern(" x ")
@@ -93,8 +95,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                     .group("uc")
                     .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
                     .save(consumer);
-        }
-        else if (tool == ToolType.SWORD)
+        } else if (tool == ToolType.SWORD)
         {
             ShapedRecipeBuilder.shaped(toolItem)
                     .pattern(" x ")
@@ -105,8 +106,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                     .group("uc")
                     .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
                     .save(consumer);
-        }
-        else
+        } else
         {
             ShapedRecipeBuilder.shaped(toolItem)
                     .pattern(" xx")
@@ -131,8 +131,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                     .group("uc")
                     .unlockedBy("has_" + armorItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
                     .save(consumer);
-        }
-        else if (part == BodyPart.CHEST)
+        } else if (part == BodyPart.CHEST)
         {
             ShapedRecipeBuilder.shaped(armorItem)
                     .pattern("x x")
@@ -142,8 +141,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                     .group("uc")
                     .unlockedBy("has_" + armorItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
                     .save(consumer);
-        }
-        else if (part == BodyPart.LEGS)
+        } else if (part == BodyPart.LEGS)
         {
             ShapedRecipeBuilder.shaped(armorItem)
                     .pattern("xxx")
@@ -153,8 +151,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                     .group("uc")
                     .unlockedBy("has_" + armorItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
                     .save(consumer);
-        }
-        else
+        } else
         {
             ShapedRecipeBuilder.shaped(armorItem)
                     .pattern("x x")
@@ -189,6 +186,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider
     protected void CookingFoodRecipeBuilder(Item foodItem, Item input, Consumer<FinishedRecipe> consumer)
     {
         SimpleCookingRecipeBuilder.cooking(Ingredient.of(input), foodItem, 0.35f, 100, SimpleCookingSerializer.SMELTING_RECIPE)
+                .group("uc")
                 .unlockedBy("has_" + input, InventoryChangeTrigger.TriggerInstance.hasItems(input))
                 .save(consumer);
     }
