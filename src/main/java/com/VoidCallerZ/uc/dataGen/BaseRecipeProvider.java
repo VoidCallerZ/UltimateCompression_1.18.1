@@ -60,6 +60,15 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                 .save(consumer, "uc_" + compressedItem.getRegistryName());
     }
 
+    protected void BasicDecompressorRecipeBuilder(Item result, int amount, Item requirement, Consumer<FinishedRecipe> consumer)
+    {
+        ShapelessRecipeBuilder.shapeless(result, amount)
+                .requires(requirement)
+                .group("uc")
+                .unlockedBy("uncompress_has_" + requirement, InventoryChangeTrigger.TriggerInstance.hasItems(requirement))
+                .save(consumer);
+    }
+
     protected void CompressedToolRecipeBuilder(Item toolItem, Item material, ToolType tool, Consumer<FinishedRecipe> consumer)
     {
         if (tool == ToolType.PICKAXE)

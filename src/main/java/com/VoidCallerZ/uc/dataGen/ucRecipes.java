@@ -8,6 +8,7 @@ import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -68,6 +69,16 @@ public class ucRecipes extends BaseRecipeProvider
                 Registration.COMPRESSED_REDSTONE.get(), 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHERITE_BLOCK.get(),
                 Registration.COMPRESSED_NETHERITE_INGOT.get(), 9, consumer);
+
+        BasicDecompressorRecipeBuilder(Items.IRON_INGOT, 9, Registration.COMPRESSED_IRON_INGOT.get(), consumer);
+        BasicDecompressorRecipeBuilder(Items.GOLD_INGOT, 9, Registration.COMPRESSED_GOLD_INGOT.get(), consumer);
+        BasicDecompressorRecipeBuilder(Items.DIAMOND, 9, Registration.COMPRESSED_DIAMOND_GEM.get(), consumer);
+        BasicDecompressorRecipeBuilder(Items.COPPER_INGOT, 9, Registration.COMPRESSED_COPPER_INGOT.get(), consumer);
+        BasicDecompressorRecipeBuilder(Items.COAL, 9, Registration.COMPRESSED_COAL.get(), consumer);
+        BasicDecompressorRecipeBuilder(Items.EMERALD, 9, Registration.COMPRESSED_EMERALD_GEM.get(), consumer);
+        BasicDecompressorRecipeBuilder(Items.LAPIS_LAZULI, 9, Registration.COMPRESSED_LAPIS.get(), consumer);
+        BasicDecompressorRecipeBuilder(Items.REDSTONE, 9, Registration.COMPRESSED_REDSTONE.get(), consumer);
+        BasicDecompressorRecipeBuilder(Items.NETHERITE_INGOT, 9, Registration.COMPRESSED_NETHERITE_INGOT.get(), consumer);
 
         //Raw Blocks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RAW_IRON_BLOCK.get(),
