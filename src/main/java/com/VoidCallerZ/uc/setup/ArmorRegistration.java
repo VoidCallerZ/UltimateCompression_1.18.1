@@ -1,5 +1,6 @@
 package com.VoidCallerZ.uc.setup;
 
+import com.VoidCallerZ.uc.items.UcArmorItem;
 import com.VoidCallerZ.uc.items.UcArmorMaterial;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -26,7 +27,7 @@ public class ArmorRegistration
 
     //Iron
     public static final RegistryObject<ArmorItem> COMPRESSED_IRON_HELMET = ITEMS.register("compressed_iron_helmet",
-            () -> new ArmorItem(UcArmorMaterial.COMPRESSED_IRON,
+            () -> new UcArmorItem(UcArmorMaterial.COMPRESSED_IRON,
                     EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModSetup.ULTIMATE_TOOL_COMPRESSION_TAB).durability(165 * 9)));
     public static final RegistryObject<ArmorItem> COMPRESSED_IRON_CHESTPLATE = ITEMS.register("compressed_iron_chestplate",
@@ -44,7 +45,7 @@ public class ArmorRegistration
 
     //Gold
     public static final RegistryObject<ArmorItem> COMPRESSED_GOLD_HELMET = ITEMS.register("compressed_gold_helmet",
-            () -> new ArmorItem(UcArmorMaterial.COMPRESSED_GOLD,
+            () -> new UcArmorItem(UcArmorMaterial.COMPRESSED_GOLD,
                     EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModSetup.ULTIMATE_TOOL_COMPRESSION_TAB).durability(77 * 9)));
     public static final RegistryObject<ArmorItem> COMPRESSED_GOLD_CHESTPLATE = ITEMS.register("compressed_gold_chestplate",
@@ -62,7 +63,7 @@ public class ArmorRegistration
 
     //Diamond
     public static final RegistryObject<ArmorItem> COMPRESSED_DIAMOND_HELMET = ITEMS.register("compressed_diamond_helmet",
-            () -> new ArmorItem(UcArmorMaterial.COMPRESSED_DIAMOND,
+            () -> new UcArmorItem(UcArmorMaterial.COMPRESSED_DIAMOND,
                     EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModSetup.ULTIMATE_TOOL_COMPRESSION_TAB).durability(363 * 9)));
     public static final RegistryObject<ArmorItem> COMPRESSED_DIAMOND_CHESTPLATE = ITEMS.register("compressed_diamond_chestplate",
@@ -80,7 +81,7 @@ public class ArmorRegistration
 
     //Netherite
     public static final RegistryObject<ArmorItem> COMPRESSED_NETHERITE_HELMET = ITEMS.register("compressed_netherite_helmet",
-            () -> new ArmorItem(UcArmorMaterial.COMPRESSED_NETHERITE,
+            () -> new UcArmorItem(UcArmorMaterial.COMPRESSED_NETHERITE,
                     EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModSetup.ULTIMATE_TOOL_COMPRESSION_TAB).durability(407 * 9)));
     public static final RegistryObject<ArmorItem> COMPRESSED_NETHERITE_CHESTPLATE = ITEMS.register("compressed_netherite_chestplate",
