@@ -20,7 +20,7 @@ public class UcShovelItem extends ShovelItem
 {
     public UcShovelItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties)
     {
-        super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
+        super(pTier, pAttackDamageModifier, (-4 + pAttackSpeedModifier), pProperties);
     }
 
     @Override
