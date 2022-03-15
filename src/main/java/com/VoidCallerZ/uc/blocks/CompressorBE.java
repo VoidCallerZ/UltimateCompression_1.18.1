@@ -25,9 +25,6 @@ public class CompressorBE extends BlockEntity
 {
     private static int INGOTS_PER_COMPRESSION = 9;
     private static int COMPRESS_DURATION = 20; // 1 seconds
-    public static final int ENERGY_CAPACITY = 10000;
-    public static final int ENERGY_RECEIVE = 200;
-    public static final int ENERGY_COMPRESS_TICK = 500;
 
     private final ItemStackHandler itemHandler = createHandler();
     private final LazyOptional<IItemHandler> handler = LazyOptional.of(() -> itemHandler);
@@ -80,13 +77,13 @@ public class CompressorBE extends BlockEntity
 
     private void compressBlocks(ItemStack stack, boolean canContinue)
     {
-        if(energy.getEnergyStored() >= ENERGY_COMPRESS_TICK)
+        if(energy.getEnergyStored() >= CompressorConfig.ENERGY_COMPRESS_TICK.get())
         {
             compressingCounter = COMPRESS_DURATION;
             ItemStack item = itemHandler.getStackInSlot(1);
             if (canContinue)
             {
-                energy.consumeEnergy(ENERGY_COMPRESS_TICK);
+                energy.consumeEnergy(CompressorConfig.ENERGY_COMPRESS_TICK.get());
                 item = item.copy();
                 item.grow(1);
                 itemHandler.setStackInSlot(1, item);
@@ -214,7 +211,7 @@ public class CompressorBE extends BlockEntity
 
     private CustomEnergyStorage createEnergyStorage()
     {
-        return new CustomEnergyStorage(ENERGY_CAPACITY, ENERGY_RECEIVE)
+        return new CustomEnergyStorage(CompressorConfig.ENERGY_CAPACITY.get(), CompressorConfig.ENERGY_RECEIVE.get())
         {
             @Override
             protected void onEnergyChanged()
