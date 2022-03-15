@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:netherite_ingot"
+      "uc_material_minecraft:copper_ingot"
     ]
   },
   "criteria": {
-    "uncompress_has_compressed_netherite_ingot": {
+    "has_uc:compressed_copper_ingot": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "uc:compressed_netherite_ingot"
+              "uc:compressed_copper_ingot"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:netherite_ingot"
+        "recipe": "uc_material_minecraft:copper_ingot"
       }
     }
   },
   "requirements": [
     [
-      "uncompress_has_compressed_netherite_ingot",
+      "has_uc:compressed_copper_ingot",
       "has_the_recipe"
     ]
   ]

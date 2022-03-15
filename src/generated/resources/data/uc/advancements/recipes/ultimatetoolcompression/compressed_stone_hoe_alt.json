@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:redstone"
+      "uc:compressed_stone_hoe_alt"
     ]
   },
   "criteria": {
-    "uncompress_has_compressed_redstone": {
+    "has_uc:compressed_stone_hoe": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "uc:compressed_redstone"
+              "uc:compressed_cobblestone"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:redstone"
+        "recipe": "uc:compressed_stone_hoe_alt"
       }
     }
   },
   "requirements": [
     [
-      "uncompress_has_compressed_redstone",
+      "has_uc:compressed_stone_hoe",
       "has_the_recipe"
     ]
   ]

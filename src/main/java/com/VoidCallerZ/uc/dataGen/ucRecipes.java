@@ -10,6 +10,7 @@ import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.Tags;
@@ -70,15 +71,15 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHERITE_BLOCK.get(),
                 Registration.COMPRESSED_NETHERITE_INGOT.get(), 9, consumer);
 
-        BasicDecompressorRecipeBuilder(Items.IRON_INGOT, 9, Registration.COMPRESSED_IRON_INGOT.get(), consumer);
-        BasicDecompressorRecipeBuilder(Items.GOLD_INGOT, 9, Registration.COMPRESSED_GOLD_INGOT.get(), consumer);
-        BasicDecompressorRecipeBuilder(Items.DIAMOND, 9, Registration.COMPRESSED_DIAMOND_GEM.get(), consumer);
-        BasicDecompressorRecipeBuilder(Items.COPPER_INGOT, 9, Registration.COMPRESSED_COPPER_INGOT.get(), consumer);
-        BasicDecompressorRecipeBuilder(Items.COAL, 9, Registration.COMPRESSED_COAL.get(), consumer);
-        BasicDecompressorRecipeBuilder(Items.EMERALD, 9, Registration.COMPRESSED_EMERALD_GEM.get(), consumer);
-        BasicDecompressorRecipeBuilder(Items.LAPIS_LAZULI, 9, Registration.COMPRESSED_LAPIS.get(), consumer);
-        BasicDecompressorRecipeBuilder(Items.REDSTONE, 9, Registration.COMPRESSED_REDSTONE.get(), consumer);
-        BasicDecompressorRecipeBuilder(Items.NETHERITE_INGOT, 9, Registration.COMPRESSED_NETHERITE_INGOT.get(), consumer);
+        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_IRON_INGOT.get(), Items.IRON_INGOT, 9, consumer);
+        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_GOLD_INGOT.get(), Items.GOLD_INGOT, 9, consumer);
+        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_DIAMOND_GEM.get(), Items.DIAMOND, 9, consumer);
+        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_COPPER_INGOT.get(), Items.COPPER_INGOT, 9, consumer);
+        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_COAL.get(), Items.COAL, 9, consumer);
+        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_EMERALD_GEM.get(), Items.EMERALD, 9, consumer);
+        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_LAPIS.get(), Items.LAPIS_LAZULI, 9, consumer);
+        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_REDSTONE.get(), Items.REDSTONE, 9, consumer);
+        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_NETHERITE_INGOT.get(), Items.NETHERITE_INGOT, 9, consumer);
 
         //Raw Blocks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RAW_IRON_BLOCK.get(),
@@ -183,75 +184,35 @@ public class ucRecipes extends BaseRecipeProvider
 
         //TOOLS
         //Pickaxes
-        ShapedRecipeBuilder.shaped(ToolRegistration.COMPRESSED_WOODEN_PICKAXE.get())
-                .pattern("xxx")
-                .pattern(" s ")
-                .pattern(" s ")
-                .define('x', Registration.COMPRESSED_PLANKS_FOR_TOOLS)
-                .define('s', Items.STICK)
-                .group("uc")
-                .unlockedBy("has_compressed_oak_planks", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_OAK_PLANKS.get()))
-                .save(consumer);
+        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_PICKAXE.get(), Registration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.PICKAXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_PICKAXE.get(), Registration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.PICKAXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_PICKAXE.get(), Registration.COMPRESSED_IRON_INGOT.get(), ToolType.PICKAXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_PICKAXE.get(), Registration.COMPRESSED_GOLD_INGOT.get(), ToolType.PICKAXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_PICKAXE.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), ToolType.PICKAXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_PICKAXE.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.PICKAXE, consumer);
         //Axes
-        ShapedRecipeBuilder.shaped(ToolRegistration.COMPRESSED_WOODEN_AXE.get())
-                .pattern(" xx")
-                .pattern(" sx")
-                .pattern(" s ")
-                .define('x', Registration.COMPRESSED_PLANKS_FOR_TOOLS)
-                .define('s', Items.STICK)
-                .group("uc")
-                .unlockedBy("has_compressed_oak_planks", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_OAK_PLANKS.get()))
-                .save(consumer);
+        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_AXE.get(), Registration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.AXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_AXE.get(), Registration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.AXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_AXE.get(), Registration.COMPRESSED_IRON_INGOT.get(), ToolType.AXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_AXE.get(), Registration.COMPRESSED_GOLD_INGOT.get(), ToolType.AXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_AXE.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), ToolType.AXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_AXE.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.AXE, consumer);
         //Shovels
-        ShapedRecipeBuilder.shaped(ToolRegistration.COMPRESSED_WOODEN_SHOVEL.get())
-                .pattern(" x ")
-                .pattern(" s ")
-                .pattern(" s ")
-                .define('x', Registration.COMPRESSED_PLANKS_FOR_TOOLS)
-                .define('s', Items.STICK)
-                .group("uc")
-                .unlockedBy("has_compressed_oak_planks", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_OAK_PLANKS.get()))
-                .save(consumer);
+        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_SHOVEL.get(), Registration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.SHOVEL, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_SHOVEL.get(), Registration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.SHOVEL, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_SHOVEL.get(), Registration.COMPRESSED_IRON_INGOT.get(), ToolType.SHOVEL, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_SHOVEL.get(), Registration.COMPRESSED_GOLD_INGOT.get(), ToolType.SHOVEL, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_SHOVEL.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), ToolType.SHOVEL, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_SHOVEL.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.SHOVEL, consumer);
         //Swords
-        ShapedRecipeBuilder.shaped(ToolRegistration.COMPRESSED_WOODEN_SWORD.get())
-                .pattern(" x ")
-                .pattern(" x ")
-                .pattern(" s ")
-                .define('x', Registration.COMPRESSED_PLANKS_FOR_TOOLS)
-                .define('s', Items.STICK)
-                .group("uc")
-                .unlockedBy("has_compressed_oak_planks", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_OAK_PLANKS.get()))
-                .save(consumer);
+        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_SWORD.get(), Registration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.SWORD, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_SWORD.get(), Registration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.SWORD, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_SWORD.get(), Registration.COMPRESSED_IRON_INGOT.get(), ToolType.SWORD, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_SWORD.get(), Registration.COMPRESSED_GOLD_INGOT.get(), ToolType.SWORD, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_SWORD.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), ToolType.SWORD, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_SWORD.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.SWORD, consumer);
         //Hoes
-        ShapedRecipeBuilder.shaped(ToolRegistration.COMPRESSED_WOODEN_HOE.get())
-                .pattern(" xx")
-                .pattern(" s ")
-                .pattern(" s ")
-                .define('x', Registration.COMPRESSED_PLANKS_FOR_TOOLS)
-                .define('s', Items.STICK)
-                .group("uc")
-                .unlockedBy("has_compressed_oak_planks", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_OAK_PLANKS.get()))
-                .save(consumer);
+        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_HOE.get(), Registration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.HOE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_HOE.get(), Registration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.HOE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_HOE.get(), Registration.COMPRESSED_IRON_INGOT.get(), ToolType.HOE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_HOE.get(), Registration.COMPRESSED_GOLD_INGOT.get(), ToolType.HOE, consumer);

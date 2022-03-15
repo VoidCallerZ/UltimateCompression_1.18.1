@@ -15,7 +15,6 @@ import net.minecraftforge.energy.CapabilityEnergy;
 import net.minecraftforge.energy.IEnergyStorage;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 
@@ -24,8 +23,8 @@ import javax.annotation.Nullable;
 
 public class CompressorBE extends BlockEntity
 {
-    private static int INGOTS_PER_BLOCK = 9;
-    private static int COMPRESS_DURATION = 100; // 5 seconds
+    private static int INGOTS_PER_COMPRESSION = 9;
+    private static int COMPRESS_DURATION = 20; // 1 seconds
     public static final int ENERGY_CAPACITY = 10000;
     public static final int ENERGY_RECEIVE = 200;
     public static final int ENERGY_COMPRESS_TICK = 500;
@@ -57,17 +56,17 @@ public class CompressorBE extends BlockEntity
         ItemStack outputSlot = itemHandler.getStackInSlot(1);
         if (compressingCounter <= 0)
         {
-            if(inputSlot.getCount() >= INGOTS_PER_BLOCK)
+            if(inputSlot.getCount() >= INGOTS_PER_COMPRESSION)
             {
                 if (("compressed_" + inputSlot.getItem()).equals(outputSlot.getItem().toString()) || ("compressed_" + inputSlot.getItem() + "_gem").equals(outputSlot.getItem().toString()))
                 {
-                    itemHandler.extractItem(0, INGOTS_PER_BLOCK, false);
+                    itemHandler.extractItem(0, INGOTS_PER_COMPRESSION, false);
                     setChanged();
                     compressBlocks(inputSlot, true);
                 }
                 else if (outputSlot.isEmpty())
                 {
-                    itemHandler.extractItem(0, INGOTS_PER_BLOCK, false);
+                    itemHandler.extractItem(0, INGOTS_PER_COMPRESSION, false);
                     setChanged();
                     compressBlocks(inputSlot, false);
                 }

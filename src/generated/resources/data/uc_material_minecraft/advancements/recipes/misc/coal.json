@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:emerald"
+      "uc_material_minecraft:coal"
     ]
   },
   "criteria": {
-    "uncompress_has_compressed_emerald_gem": {
+    "has_uc:compressed_coal": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "uc:compressed_emerald_gem"
+              "uc:compressed_coal"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:emerald"
+        "recipe": "uc_material_minecraft:coal"
       }
     }
   },
   "requirements": [
     [
-      "uncompress_has_compressed_emerald_gem",
+      "has_uc:compressed_coal",
       "has_the_recipe"
     ]
   ]

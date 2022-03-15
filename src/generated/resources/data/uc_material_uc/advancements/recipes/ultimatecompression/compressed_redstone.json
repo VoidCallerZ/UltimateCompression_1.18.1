@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:coal"
+      "uc_material_uc:compressed_redstone"
     ]
   },
   "criteria": {
-    "uncompress_has_compressed_coal": {
+    "has_minecraft:redstone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "uc:compressed_coal"
+              "minecraft:redstone"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:coal"
+        "recipe": "uc_material_uc:compressed_redstone"
       }
     }
   },
   "requirements": [
     [
-      "uncompress_has_compressed_coal",
+      "has_minecraft:redstone",
       "has_the_recipe"
     ]
   ]

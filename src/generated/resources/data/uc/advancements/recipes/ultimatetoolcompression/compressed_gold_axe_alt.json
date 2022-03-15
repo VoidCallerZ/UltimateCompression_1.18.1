@@ -2,11 +2,11 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:gold_ingot"
+      "uc:compressed_gold_axe_alt"
     ]
   },
   "criteria": {
-    "uncompress_has_compressed_gold_ingot": {
+    "has_uc:compressed_gold_axe": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:gold_ingot"
+        "recipe": "uc:compressed_gold_axe_alt"
       }
     }
   },
   "requirements": [
     [
-      "uncompress_has_compressed_gold_ingot",
+      "has_uc:compressed_gold_axe",
       "has_the_recipe"
     ]
   ]

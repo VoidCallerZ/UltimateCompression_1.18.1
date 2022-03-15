@@ -2,6 +2,7 @@ package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.setup.FoodRegistration;
 import com.VoidCallerZ.uc.setup.Registration;
+import com.VoidCallerZ.uc.setup.ToolRegistration;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
@@ -69,6 +70,102 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                 .save(consumer);
     }
 
+    protected void MaterialCompressionRecipeBuilder(Item compressedItem, Item uncompressedItem, int decompAmountItem, Consumer<FinishedRecipe> consumer)
+    {
+        ShapedRecipeBuilder.shaped(compressedItem)
+                .pattern("xxx")
+                .pattern("xxx")
+                .pattern("xxx")
+                .define('x', uncompressedItem)
+                .group("uc")
+                .unlockedBy("has_" + uncompressedItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(uncompressedItem))
+                .save(consumer, "uc_material_" + compressedItem.getRegistryName());
+
+        ShapelessRecipeBuilder.shapeless(uncompressedItem, decompAmountItem)
+                .requires(compressedItem)
+                .group("uc")
+                .unlockedBy("has_" + compressedItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
+                .save(consumer, "uc_material_" + uncompressedItem.getRegistryName());
+    }
+
+    protected void CompressedWoodenToolRecipeBuilder(Item toolItem, Tag material, ToolType tool, Consumer<FinishedRecipe> consumer)
+    {
+        if (tool == ToolType.PICKAXE)
+        {
+            ShapedRecipeBuilder.shaped(toolItem)
+                    .pattern("xxx")
+                    .pattern(" s ")
+                    .pattern(" s ")
+                    .define('x', material)
+                    .define('s', Items.STICK)
+                    .group("uc")
+                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, toolItem.getRegistryName());
+        } else if (tool == ToolType.AXE)
+        {
+            ShapedRecipeBuilder.shaped(toolItem)
+                    .pattern("xx")
+                    .pattern("sx")
+                    .pattern("s ")
+                    .define('x', material)
+                    .define('s', Items.STICK)
+                    .group("uc")
+                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, toolItem.getRegistryName());
+            ShapedRecipeBuilder.shaped(toolItem)
+                    .pattern("xx")
+                    .pattern("xs")
+                    .pattern(" s")
+                    .define('x', material)
+                    .define('s', Items.STICK)
+                    .group("uc")
+                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, toolItem.getRegistryName() + "_alt");
+        } else if (tool == ToolType.SHOVEL)
+        {
+            ShapedRecipeBuilder.shaped(toolItem)
+                    .pattern("x")
+                    .pattern("s")
+                    .pattern("s")
+                    .define('x', material)
+                    .define('s', Items.STICK)
+                    .group("uc")
+                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, toolItem.getRegistryName());
+        } else if (tool == ToolType.SWORD)
+        {
+            ShapedRecipeBuilder.shaped(toolItem)
+                    .pattern("x")
+                    .pattern("x")
+                    .pattern("s")
+                    .define('x', material)
+                    .define('s', Items.STICK)
+                    .group("uc")
+                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, toolItem.getRegistryName());
+        } else
+        {
+            ShapedRecipeBuilder.shaped(toolItem)
+                    .pattern("xx")
+                    .pattern("s ")
+                    .pattern("s ")
+                    .define('x', material)
+                    .define('s', Items.STICK)
+                    .group("uc")
+                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, toolItem.getRegistryName());
+            ShapedRecipeBuilder.shaped(toolItem)
+                    .pattern("xx")
+                    .pattern(" s")
+                    .pattern(" s")
+                    .define('x', material)
+                    .define('s', Items.STICK)
+                    .group("uc")
+                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, toolItem.getRegistryName() + "_alt");
+        }
+    }
+
     protected void CompressedToolRecipeBuilder(Item toolItem, Item material, ToolType tool, Consumer<FinishedRecipe> consumer)
     {
         if (tool == ToolType.PICKAXE)
@@ -81,51 +178,69 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                     .define('s', Items.STICK)
                     .group("uc")
                     .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
-                    .save(consumer);
+                    .save(consumer, toolItem.getRegistryName());
         } else if (tool == ToolType.AXE)
         {
             ShapedRecipeBuilder.shaped(toolItem)
-                    .pattern(" xx")
-                    .pattern(" sx")
-                    .pattern(" s ")
+                    .pattern("xx")
+                    .pattern("sx")
+                    .pattern("s ")
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
                     .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
-                    .save(consumer);
+                    .save(consumer, toolItem.getRegistryName());
+            ShapedRecipeBuilder.shaped(toolItem)
+                    .pattern("xx")
+                    .pattern("xs")
+                    .pattern(" s")
+                    .define('x', material)
+                    .define('s', Items.STICK)
+                    .group("uc")
+                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
+                    .save(consumer, toolItem.getRegistryName() + "_alt");
         } else if (tool == ToolType.SHOVEL)
         {
             ShapedRecipeBuilder.shaped(toolItem)
-                    .pattern(" x ")
-                    .pattern(" s ")
-                    .pattern(" s ")
+                    .pattern("x")
+                    .pattern("s")
+                    .pattern("s")
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
                     .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
-                    .save(consumer);
+                    .save(consumer, toolItem.getRegistryName());
         } else if (tool == ToolType.SWORD)
         {
             ShapedRecipeBuilder.shaped(toolItem)
-                    .pattern(" x ")
-                    .pattern(" x ")
-                    .pattern(" s ")
+                    .pattern("x")
+                    .pattern("x")
+                    .pattern("s")
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
                     .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
-                    .save(consumer);
+                    .save(consumer, toolItem.getRegistryName());
         } else
         {
             ShapedRecipeBuilder.shaped(toolItem)
-                    .pattern(" xx")
-                    .pattern(" s ")
-                    .pattern(" s ")
+                    .pattern("xx")
+                    .pattern("s ")
+                    .pattern("s ")
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
                     .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
-                    .save(consumer);
+                    .save(consumer, toolItem.getRegistryName());
+            ShapedRecipeBuilder.shaped(toolItem)
+                    .pattern("xx")
+                    .pattern(" s")
+                    .pattern(" s")
+                    .define('x', material)
+                    .define('s', Items.STICK)
+                    .group("uc")
+                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
+                    .save(consumer, toolItem.getRegistryName() + "_alt");
         }
     }
 

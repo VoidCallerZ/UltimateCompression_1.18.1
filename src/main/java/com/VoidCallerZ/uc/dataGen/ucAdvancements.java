@@ -4,6 +4,7 @@ import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.setup.FoodRegistration;
 import com.VoidCallerZ.uc.setup.ModSetup;
 import com.VoidCallerZ.uc.setup.Registration;
+import com.VoidCallerZ.uc.setup.ToolRegistration;
 import net.minecraft.advancements.*;
 import net.minecraft.advancements.critereon.ConsumeItemTrigger;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
@@ -55,5 +56,9 @@ public class ucAdvancements extends BaseAdvancementProvider
         BasicGatheredAdvancement(Registration.COMPRESSED_NETHERITE_BLOCK_ITEM, "Richness Overload",
                 "Bored? Dumb? Or just too rich for words?",
                 FrameType.CHALLENGE, "gathered_compressed_netherite_block", 500, mainAdvancement, consumer);
+
+        HoeItemGatheredAdvancement(ToolRegistration.COMPRESSED_NETHERITE_HOE, "Next Level Dedication",
+                "Use 18 netherite ingots to create a compressed netherite hoe, and then return reevaluating your life choices",
+                FrameType.CHALLENGE, "gathered_compressed_netherite_hoe", 200, mainAdvancement, consumer);
     }
 }

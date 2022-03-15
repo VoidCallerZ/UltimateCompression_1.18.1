@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:lapis_lazuli"
+      "uc_material_minecraft:diamond"
     ]
   },
   "criteria": {
-    "uncompress_has_compressed_lapis": {
+    "has_uc:compressed_diamond_gem": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "uc:compressed_lapis"
+              "uc:compressed_diamond_gem"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:lapis_lazuli"
+        "recipe": "uc_material_minecraft:diamond"
       }
     }
   },
   "requirements": [
     [
-      "uncompress_has_compressed_lapis",
+      "has_uc:compressed_diamond_gem",
       "has_the_recipe"
     ]
   ]

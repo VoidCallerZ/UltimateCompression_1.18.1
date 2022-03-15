@@ -6,13 +6,13 @@
     ]
   },
   "criteria": {
-    "has_compressed_oak_planks": {
+    "has_uc:compressed_wooden_shovel": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "uc:compressed_oak_planks"
+              "minecraft:oak_planks"
             ]
           }
         ]
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "has_compressed_oak_planks",
+      "has_uc:compressed_wooden_shovel",
       "has_the_recipe"
     ]
   ]
