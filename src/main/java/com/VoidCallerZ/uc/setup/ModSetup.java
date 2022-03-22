@@ -1,12 +1,14 @@
 package com.VoidCallerZ.uc.setup;
 
+import com.VoidCallerZ.uc.setup.registration.FoodRegistration;
+import com.VoidCallerZ.uc.setup.registration.Registration;
+import com.VoidCallerZ.uc.setup.registration.ToolRegistration;
 import com.VoidCallerZ.uc.worldgen.ores.Ores;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import org.checkerframework.checker.units.qual.C;
 
 public class ModSetup
 {

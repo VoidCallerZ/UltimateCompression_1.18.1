@@ -1,16 +1,11 @@
 package com.VoidCallerZ.uc.dataGen;
 
-import com.VoidCallerZ.uc.setup.ArmorRegistration;
-import com.VoidCallerZ.uc.setup.FoodRegistration;
-import com.VoidCallerZ.uc.setup.Registration;
-import com.VoidCallerZ.uc.setup.ToolRegistration;
+import com.VoidCallerZ.uc.setup.registration.*;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
-import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.Tags;
@@ -281,5 +276,29 @@ public class ucRecipes extends BaseRecipeProvider
         CookingFoodRecipeBuilder(FoodRegistration.COMPRESSED_COOKED_PORKCHOP.get(), FoodRegistration.COMPRESSED_PORKCHOP.get(), consumer);
         CookingFoodRecipeBuilder(FoodRegistration.COMPRESSED_COOKED_RABBIT.get(), FoodRegistration.COMPRESSED_RABBIT.get(), consumer);
         CookingFoodRecipeBuilder(FoodRegistration.COMPRESSED_COOKED_SALMON.get(), FoodRegistration.COMPRESSED_SALMON.get(), consumer);
+
+        //Single Items
+        MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_FLINT.get(), Items.FLINT, 9, consumer);
+
+        //Arrows
+        ShapedRecipeBuilder.shaped(ItemRegistration.COMPRESSED_ARROW.get(), 4)
+                .pattern("x")
+                .pattern("s")
+                .pattern("f")
+                .define('x', ItemRegistration.COMPRESSED_FLINT.get())
+                .define('s', Items.STICK)
+                .define('f', Items.FEATHER)
+                .group("uc")
+                .unlockedBy("has_" + ItemRegistration.COMPRESSED_FLINT.get().getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_FLINT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get(), 2)
+                .pattern(" x ")
+                .pattern("xax")
+                .pattern(" x ")
+                .define('x', Items.GLOWSTONE_DUST)
+                .define('a', ItemRegistration.COMPRESSED_ARROW.get())
+                .group("uc")
+                .unlockedBy("has_" + ItemRegistration.COMPRESSED_ARROW.get().getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_ARROW.get()))
+                .save(consumer);
     }
 }

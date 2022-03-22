@@ -1,6 +1,7 @@
-package com.VoidCallerZ.uc.setup;
+package com.VoidCallerZ.uc.setup.registration;
 
 import com.VoidCallerZ.uc.items.tools.*;
+import com.VoidCallerZ.uc.setup.ModSetup;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -27,7 +28,7 @@ public class ToolRegistration
     public static final Item.Properties DIAMOND_TOOL_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_TOOL_COMPRESSION_TAB).durability(1562 * 9);
     public static final Item.Properties NETHERITE_TOOL_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_TOOL_COMPRESSION_TAB).durability(2032 * 9);
 
-    //Tools
+    //Tool
     //Pickaxes
     public static final RegistryObject<PickaxeItem> COMPRESSED_WOODEN_PICKAXE = ITEMS.register("compressed_wooden_pickaxe",
             () -> new UcPickaxeItem(Tiers.WOOD, 3, 1.1f, WOODEN_TOOL_PROPERTIES));

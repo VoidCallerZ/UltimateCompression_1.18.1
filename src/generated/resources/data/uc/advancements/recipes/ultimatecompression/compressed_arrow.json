@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_arrow"
+    ]
+  },
+  "criteria": {
+    "has_uc:compressed_flint": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_flint"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_arrow"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_flint",
+      "has_the_recipe"
+    ]
+  ]
+}

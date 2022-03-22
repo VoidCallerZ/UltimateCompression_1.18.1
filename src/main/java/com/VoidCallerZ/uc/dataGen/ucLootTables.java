@@ -1,7 +1,8 @@
 package com.VoidCallerZ.uc.dataGen;
 
-import com.VoidCallerZ.uc.setup.Registration;
+import com.VoidCallerZ.uc.setup.registration.Registration;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.world.item.Items;
 
 public class ucLootTables extends BaseLootTableProvider
 {
@@ -51,7 +52,7 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(Registration.COMPRESSED_DIORITE.get(), createSimpleTable("compressed_diorite", Registration.COMPRESSED_DIORITE.get()));
         lootTables.put(Registration.COMPRESSED_DIRT.get(), createSimpleTable("compressed_dirt", Registration.COMPRESSED_DIRT.get()));
         lootTables.put(Registration.COMPRESSED_GRANITE.get(), createSimpleTable("compressed_granite", Registration.COMPRESSED_GRANITE.get()));
-        lootTables.put(Registration.COMPRESSED_GRAVEL.get(), createSimpleTable("compressed_gravel", Registration.COMPRESSED_GRAVEL.get()));
+        lootTables.put(Registration.COMPRESSED_GRAVEL.get(), createChanceDropTable("compressed_gravel", Registration.COMPRESSED_GRAVEL.get(), Items.FLINT));
         lootTables.put(Registration.COMPRESSED_NETHERRACK.get(), createSimpleTable("compressed_netherrack", Registration.COMPRESSED_NETHERRACK.get()));
         lootTables.put(Registration.COMPRESSED_RED_SAND.get(), createSimpleTable("compressed_red_sand", Registration.COMPRESSED_RED_SAND.get()));
         lootTables.put(Registration.COMPRESSED_SAND.get(), createSimpleTable("compressed_sand", Registration.COMPRESSED_SAND.get()));

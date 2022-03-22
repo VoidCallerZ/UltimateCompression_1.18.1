@@ -1,19 +1,13 @@
 package com.VoidCallerZ.uc.dataGen;
 
-import com.VoidCallerZ.uc.UltimateCompression;
-import com.VoidCallerZ.uc.setup.FoodRegistration;
-import com.VoidCallerZ.uc.setup.ModSetup;
-import com.VoidCallerZ.uc.setup.Registration;
-import com.VoidCallerZ.uc.setup.ToolRegistration;
+import com.VoidCallerZ.uc.setup.registration.FoodRegistration;
+import com.VoidCallerZ.uc.setup.registration.Registration;
+import com.VoidCallerZ.uc.setup.registration.ToolRegistration;
 import net.minecraft.advancements.*;
-import net.minecraft.advancements.critereon.ConsumeItemTrigger;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
-import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 import java.util.function.Consumer;

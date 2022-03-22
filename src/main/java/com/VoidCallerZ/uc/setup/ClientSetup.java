@@ -2,6 +2,7 @@ package com.VoidCallerZ.uc.setup;
 
 import com.VoidCallerZ.uc.client.CompressorScreen;
 import com.VoidCallerZ.uc.client.PowergenScreen;
+import com.VoidCallerZ.uc.setup.registration.Registration;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;

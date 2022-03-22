@@ -1,6 +1,7 @@
 package com.VoidCallerZ.uc;
 
 import com.VoidCallerZ.uc.setup.*;
+import com.VoidCallerZ.uc.setup.registration.*;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
@@ -24,6 +25,7 @@ public class UltimateCompression
         ToolRegistration.init();
         ArmorRegistration.init();
         FoodRegistration.init();
+        ItemRegistration.init();
         Config.register();
 
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();

@@ -1,9 +1,15 @@
-package com.VoidCallerZ.uc.setup;
+package com.VoidCallerZ.uc.setup.registration;
 
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.blocks.*;
+import com.VoidCallerZ.uc.items.UcArrowItem;
+import com.VoidCallerZ.uc.setup.ModSetup;
+import com.VoidCallerZ.uc.world.entity.projectile.CompressedArrow;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
@@ -11,11 +17,8 @@ import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.extensions.IForgeMenuType;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,7 +29,7 @@ import static com.VoidCallerZ.uc.UltimateCompression.MODID;
 public class Registration
 {
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
-    private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
     private static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, MODID);
     private static final DeferredRegister<MenuType<?>> CONTAINERS = DeferredRegister.create(ForgeRegistries.CONTAINERS, MODID);
 
@@ -44,9 +47,10 @@ public class Registration
     public static final BlockBehaviour.Properties DEEPSLATE_ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(4.5f).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties INGOT_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.METAL).strength(2f).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties WOOD_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.WOOD).strength(2f);
+    public static final BlockBehaviour.Properties SOFT_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.DIRT).strength(0.5f);
     public static final Item.Properties ITEM_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_COMPRESSION_TAB);
 
-    public static final Tags.IOptionalNamedTag<Item> COMPRESSED_PLANKS_FOR_TOOLS = ItemTags.createOptional(new ResourceLocation(UltimateCompression.MODID, "compressed_planks_for_tools"));
+    public static final TagKey<Item> COMPRESSED_PLANKS_FOR_TOOLS = ItemTags.create(new ResourceLocation(UltimateCompression.MODID, "compressed_planks_for_tools"));
 
     public static final RegistryObject<Item> UC_ICON = ITEMS.register("uc_icon", () -> new Item(new Item.Properties()));
 
@@ -128,17 +132,17 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_ITEM = fromBlock(COMPRESSED_DEEPSLATE);
     public static final RegistryObject<Block> COMPRESSED_DIORITE = BLOCKS.register("compressed_diorite", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_DIORITE_ITEM = fromBlock(COMPRESSED_DIORITE);
-    public static final RegistryObject<Block> COMPRESSED_DIRT = BLOCKS.register("compressed_dirt", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_DIRT = BLOCKS.register("compressed_dirt", () -> new Block(SOFT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_DIRT_ITEM = fromBlock(COMPRESSED_DIRT);
     public static final RegistryObject<Block> COMPRESSED_GRANITE = BLOCKS.register("compressed_granite", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_GRANITE_ITEM = fromBlock(COMPRESSED_GRANITE);
-    public static final RegistryObject<Block> COMPRESSED_GRAVEL = BLOCKS.register("compressed_gravel", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_GRAVEL = BLOCKS.register("compressed_gravel", () -> new Block(SOFT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_GRAVEL_ITEM = fromBlock(COMPRESSED_GRAVEL);
     public static final RegistryObject<Block> COMPRESSED_NETHERRACK = BLOCKS.register("compressed_netherrack", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_NETHERRACK_ITEM = fromBlock(COMPRESSED_NETHERRACK);
-    public static final RegistryObject<Block> COMPRESSED_RED_SAND = BLOCKS.register("compressed_red_sand", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_RED_SAND = BLOCKS.register("compressed_red_sand", () -> new Block(SOFT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_RED_SAND_ITEM = fromBlock(COMPRESSED_RED_SAND);
-    public static final RegistryObject<Block> COMPRESSED_SAND = BLOCKS.register("compressed_sand", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_SAND = BLOCKS.register("compressed_sand", () -> new Block(SOFT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_SAND_ITEM = fromBlock(COMPRESSED_SAND);
     public static final RegistryObject<Block> COMPRESSED_STONE = BLOCKS.register("compressed_stone", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_STONE_ITEM = fromBlock(COMPRESSED_STONE);
@@ -209,7 +213,7 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSOR_ITEM = fromBlock(COMPRESSOR);
     public static final RegistryObject<BlockEntityType<CompressorBE>> COMPRESSOR_BE = BLOCK_ENTITIES.register("compressor", () -> BlockEntityType.Builder.of(CompressorBE::new, COMPRESSOR.get()).build(null));
     public static final RegistryObject<MenuType<CompressorContainer>> COMPRESSOR_CONTAINER = CONTAINERS.register("compressor", () -> IForgeMenuType.create((windowId, inv, data) -> new CompressorContainer(windowId, data.readBlockPos(), inv, inv.player)));
-    public static final Tags.IOptionalNamedTag<Item> COMPRESSOR_VALID_ITEMS = ItemTags.createOptional(new ResourceLocation(UltimateCompression.MODID, "compressor_valid_items"));
+    public static final TagKey<Item> COMPRESSOR_VALID_ITEMS = ItemTags.create(new ResourceLocation(UltimateCompression.MODID, "compressor_valid_items"));
 
 
     public static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block)

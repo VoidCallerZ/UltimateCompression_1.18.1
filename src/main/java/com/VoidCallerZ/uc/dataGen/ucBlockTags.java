@@ -1,11 +1,10 @@
 package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
-import com.VoidCallerZ.uc.setup.Registration;
+import com.VoidCallerZ.uc.setup.registration.Registration;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -68,6 +67,13 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(Registration.COMPRESSED_NETHERITE_BLOCK.get())
                 .add(Registration.COMPRESSED_RAW_IRON_BLOCK.get())
                 .add(Registration.COMPRESSED_RAW_COPPER_BLOCK.get());
+
+        tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(Registration.COMPRESSED_GRAVEL.get())
+                .add(Registration.COMPRESSED_DIRT.get())
+                .add(Registration.COMPRESSED_RED_SAND.get())
+                .add(Registration.COMPRESSED_SAND.get());
+
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(Registration.COMPRESSED_IRON_ORE.get())
                 .add(Registration.COMPRESSED_COPPER_ORE.get())

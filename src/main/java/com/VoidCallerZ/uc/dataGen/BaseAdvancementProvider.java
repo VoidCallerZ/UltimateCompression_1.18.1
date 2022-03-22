@@ -1,7 +1,5 @@
 package com.VoidCallerZ.uc.dataGen;
 
-import com.VoidCallerZ.uc.setup.FoodRegistration;
-import com.VoidCallerZ.uc.setup.Registration;
 import net.minecraft.advancements.*;
 import net.minecraft.advancements.critereon.ConsumeItemTrigger;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;

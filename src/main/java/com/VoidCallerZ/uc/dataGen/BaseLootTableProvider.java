@@ -22,9 +22,12 @@ import net.minecraft.world.level.storage.loot.entries.DynamicLoot;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.*;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithLootingCondition;
 import net.minecraft.world.level.storage.loot.predicates.MatchTool;
 import net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraft.world.level.storage.loot.providers.number.NumberProvider;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -95,6 +98,18 @@ public abstract class BaseLootTableProvider extends LootTableProvider
         return LootTable.lootTable().withPool(builder);
     }
 
+    protected LootTable.Builder createChanceDropTable(String name, Block block, Item chanceItem)
+    {
+        LootPool.Builder builder = LootPool.lootPool()
+                .name(name)
+                .setRolls(ConstantValue.exactly(1))
+                .add(AlternativesEntry.alternatives(
+                        LootItem.lootTableItem(block)
+                                .when(LootItemRandomChanceCondition.randomChance(0.8f))
+                                .otherwise(LootItem.lootTableItem(chanceItem))
+                ));
+        return LootTable.lootTable().withPool(builder);
+    }
 
     @Override
     public void run(HashCache cache)

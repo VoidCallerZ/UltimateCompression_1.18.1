@@ -1,10 +1,9 @@
 package com.VoidCallerZ.uc.worldgen.ores;
 
-import com.VoidCallerZ.uc.setup.Registration;
-import net.minecraft.data.BuiltinRegistries;
+import com.VoidCallerZ.uc.setup.registration.Registration;
+import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
@@ -17,8 +16,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 public class Ores
 {
-
-    public static PlacedFeature UC_WORLDGEN;
+    public static Holder<PlacedFeature> UC_WORLDGEN;
 
     public static void registerConfiguredFeatures()
     {
@@ -48,10 +46,10 @@ public class Ores
         OreGeneration("compressed_deepslate_redstone_ore", true, Registration.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get().defaultBlockState(), OresConfig.DEEPSLATE_VEINSIZE.get(), OresConfig.DEEPSLATE_AMOUNT.get(), -64, 0);
     }
 
-    private static <C extends FeatureConfiguration, F extends Feature<C>> PlacedFeature registerPlacedFeature(String registryName, ConfiguredFeature<C, F> feature, PlacementModifier... placementModifiers)
+    private static <C extends FeatureConfiguration, F extends Feature<C>> Holder<PlacedFeature> registerPlacedFeature(String registryName, ConfiguredFeature<C, F> feature, PlacementModifier... placementModifiers)
     {
-        PlacedFeature placed = BuiltinRegistries.register(BuiltinRegistries.CONFIGURED_FEATURE, new ResourceLocation(registryName), feature).placed(placementModifiers);
-        return PlacementUtils.register(registryName, placed);
+        //PlacedFeature placed = BuiltinRegistries.register(BuiltinRegistries.CONFIGURED_FEATURE, new ResourceLocation(registryName), feature).placed(placementModifiers);
+        return PlacementUtils.register(registryName, Holder.direct(feature), placementModifiers);
     }
 
     public static void onBiomeLoadingEvent(BiomeLoadingEvent event)
@@ -61,7 +59,7 @@ public class Ores
 
     private static void OreGeneration(String registryName, boolean isDeepslateOre, BlockState oreBlock, int veinSize, int chunkAmount, int minY, int maxY)
     {
-        UC_WORLDGEN = registerPlacedFeature(registryName, Feature.ORE.configured(new OreConfiguration(isDeepslateOre == true ? OreFeatures.DEEPSLATE_ORE_REPLACEABLES : OreFeatures.STONE_ORE_REPLACEABLES, oreBlock, veinSize)),
+        UC_WORLDGEN = registerPlacedFeature(registryName, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(isDeepslateOre == true ? OreFeatures.DEEPSLATE_ORE_REPLACEABLES : OreFeatures.STONE_ORE_REPLACEABLES, oreBlock, veinSize)),
                 CountPlacement.of(chunkAmount),
                 InSquarePlacement.spread(),
                 BiomeFilter.biome(),

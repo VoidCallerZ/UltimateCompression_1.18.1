@@ -1,17 +1,15 @@
 package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
-import com.VoidCallerZ.uc.setup.Registration;
+import com.VoidCallerZ.uc.setup.registration.ItemRegistration;
+import com.VoidCallerZ.uc.setup.registration.Registration;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
-
-import java.security.PermissionCollection;
 
 public class ucItemTags extends ItemTagsProvider
 {
@@ -48,6 +46,10 @@ public class ucItemTags extends ItemTagsProvider
         tag(Tags.Items.GEMS)
                 .add(Registration.COMPRESSED_DIAMOND_GEM.get())
                 .add(Registration.COMPRESSED_EMERALD_GEM.get());
+
+        tag(ItemTags.ARROWS)
+                .add(ItemRegistration.COMPRESSED_ARROW.get())
+                .add(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get());
 
         tag(Registration.COMPRESSOR_VALID_ITEMS)
                 .add(Items.IRON_INGOT)

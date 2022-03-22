@@ -1,22 +1,15 @@
 package com.VoidCallerZ.uc.dataGen;
 
-import com.VoidCallerZ.uc.setup.FoodRegistration;
-import com.VoidCallerZ.uc.setup.Registration;
-import com.VoidCallerZ.uc.setup.ToolRegistration;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.Tag;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.SimpleCookingSerializer;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
-import org.objectweb.asm.tree.FieldInsnNode;
 
-import javax.annotation.Nullable;
 import java.util.function.Consumer;
 
 public abstract class BaseRecipeProvider extends RecipeProvider
@@ -88,7 +81,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                 .save(consumer, "uc_material_" + uncompressedItem.getRegistryName());
     }
 
-    protected void CompressedWoodenToolRecipeBuilder(Item toolItem, Tag material, ToolType tool, Consumer<FinishedRecipe> consumer)
+    protected void CompressedWoodenToolRecipeBuilder(Item toolItem, TagKey material, ToolType tool, Consumer<FinishedRecipe> consumer)
     {
         if (tool == ToolType.PICKAXE)
         {

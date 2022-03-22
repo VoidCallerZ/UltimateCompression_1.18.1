@@ -1,14 +1,10 @@
 package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
-import com.VoidCallerZ.uc.setup.ArmorRegistration;
-import com.VoidCallerZ.uc.setup.FoodRegistration;
-import com.VoidCallerZ.uc.setup.Registration;
-import com.VoidCallerZ.uc.setup.ToolRegistration;
+import com.VoidCallerZ.uc.setup.registration.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.RegistryObject;
 
 public class ucItemModels extends ItemModelProvider
 {
@@ -395,5 +391,18 @@ public class ucItemModels extends ItemModelProvider
         singleTexture(FoodRegistration.COMPRESSED_TROPICAL_FISH.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/food/compressed_tropical_fish"));
+
+        //Single Items
+        singleTexture(ItemRegistration.COMPRESSED_FLINT.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/single/compressed_flint"));
+
+        //Arrows
+        singleTexture(ItemRegistration.COMPRESSED_ARROW.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/arrows/compressed_arrow"));
+        singleTexture(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/arrows/compressed_spectral_arrow"));
     }
 }

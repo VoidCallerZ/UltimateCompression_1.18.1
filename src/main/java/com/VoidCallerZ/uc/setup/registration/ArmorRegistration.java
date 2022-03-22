@@ -1,7 +1,8 @@
-package com.VoidCallerZ.uc.setup;
+package com.VoidCallerZ.uc.setup.registration;
 
 import com.VoidCallerZ.uc.items.UcArmorItem;
 import com.VoidCallerZ.uc.items.UcArmorMaterial;
+import com.VoidCallerZ.uc.setup.ModSetup;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;

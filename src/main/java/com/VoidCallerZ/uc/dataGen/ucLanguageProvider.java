@@ -1,10 +1,7 @@
 package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
-import com.VoidCallerZ.uc.setup.ArmorRegistration;
-import com.VoidCallerZ.uc.setup.FoodRegistration;
-import com.VoidCallerZ.uc.setup.Registration;
-import com.VoidCallerZ.uc.setup.ToolRegistration;
+import com.VoidCallerZ.uc.setup.registration.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
 
@@ -30,7 +27,7 @@ public class ucLanguageProvider extends LanguageProvider
         add(SCREEN_MESSAGE_COMPRESSOR, "Compressor");
 
         add(Registration.ULTIMATE_POWERGEN.get(), "Ultimate power generator");
-        add(Registration.COMPRESSOR.get(), "Ultimate Compressor Tier I");
+        add(Registration.COMPRESSOR.get(), "Ultimate Compressor");
 
         //Ores
         add(Registration.COMPRESSED_IRON_ORE.get(), "Compressed Iron Ore");
@@ -208,5 +205,11 @@ public class ucLanguageProvider extends LanguageProvider
         add(FoodRegistration.COMPRESSED_SPIDER_EYE.get(), "Compressed Spider Eye");
         add(FoodRegistration.COMPRESSED_SWEET_BERRIES.get(), "Compressed Sweet Berries");
         add(FoodRegistration.COMPRESSED_TROPICAL_FISH.get(), "Compressed Tropical Fish");
+
+        //Single Items
+        add(ItemRegistration.COMPRESSED_FLINT.get(), "Compressed Flint");
+
+        //Arrows
+        add(ItemRegistration.COMPRESSED_ARROW.get(), "Compressed Arrow");
     }
 }

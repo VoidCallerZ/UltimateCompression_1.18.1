@@ -1,6 +1,6 @@
 package com.VoidCallerZ.uc.blocks;
 
-import com.VoidCallerZ.uc.setup.Registration;
+import com.VoidCallerZ.uc.setup.registration.Registration;
 import com.VoidCallerZ.uc.varia.CustomEnergyStorage;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

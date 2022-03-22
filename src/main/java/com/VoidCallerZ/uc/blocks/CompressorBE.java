@@ -1,6 +1,6 @@
 package com.VoidCallerZ.uc.blocks;
 
-import com.VoidCallerZ.uc.setup.Registration;
+import com.VoidCallerZ.uc.setup.registration.Registration;
 import com.VoidCallerZ.uc.varia.CustomEnergyStorage;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -24,7 +24,6 @@ import javax.annotation.Nullable;
 public class CompressorBE extends BlockEntity
 {
     private static int INGOTS_PER_COMPRESSION = 9;
-    private static int COMPRESS_DURATION = 20; // 1 seconds
 
     private final ItemStackHandler itemHandler = createHandler();
     private final LazyOptional<IItemHandler> handler = LazyOptional.of(() -> itemHandler);
@@ -79,7 +78,7 @@ public class CompressorBE extends BlockEntity
     {
         if(energy.getEnergyStored() >= CompressorConfig.ENERGY_COMPRESS_TICK.get())
         {
-            compressingCounter = COMPRESS_DURATION;
+            compressingCounter = CompressorConfig.COMPRESS_DURATION.get();
             ItemStack item = itemHandler.getStackInSlot(1);
             if (canContinue)
             {

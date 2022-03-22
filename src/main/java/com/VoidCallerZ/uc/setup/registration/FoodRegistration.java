@@ -1,6 +1,7 @@
-package com.VoidCallerZ.uc.setup;
+package com.VoidCallerZ.uc.setup.registration;
 
 import com.VoidCallerZ.uc.items.UcFoods;
+import com.VoidCallerZ.uc.setup.ModSetup;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
