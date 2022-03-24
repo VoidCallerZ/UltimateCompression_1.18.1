@@ -1,4 +1,4 @@
-package com.VoidCallerZ.uc.items;
+package com.VoidCallerZ.uc.items.arrows;
 
 import com.VoidCallerZ.uc.setup.registration.ItemRegistration;
 import com.VoidCallerZ.uc.world.entity.projectile.CompressedSpectralArrow;
@@ -21,7 +21,7 @@ public class UcSpectralArrowItem extends ArrowItem
     @Override
     public AbstractArrow createArrow(Level level, ItemStack stack, LivingEntity shooter)
     {
-        CompressedSpectralArrow arrow = new CompressedSpectralArrow(level, shooter);
+        CompressedSpectralArrow arrow = new CompressedSpectralArrow(shooter, level);
         arrow.setBaseDamage(this.damage);
         return arrow;
     }

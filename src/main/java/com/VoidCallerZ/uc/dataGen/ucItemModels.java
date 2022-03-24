@@ -134,98 +134,98 @@ public class ucItemModels extends ItemModelProvider
         //TOOLS
         //Pickaxes
         singleTexture(ToolRegistration.COMPRESSED_WOODEN_PICKAXE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_wooden_pickaxe"));
         singleTexture(ToolRegistration.COMPRESSED_STONE_PICKAXE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_stone_pickaxe"));
         singleTexture(ToolRegistration.COMPRESSED_IRON_PICKAXE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_iron_pickaxe"));
         singleTexture(ToolRegistration.COMPRESSED_GOLD_PICKAXE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_golden_pickaxe"));
         singleTexture(ToolRegistration.COMPRESSED_DIAMOND_PICKAXE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_diamond_pickaxe"));
         singleTexture(ToolRegistration.COMPRESSED_NETHERITE_PICKAXE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_netherite_pickaxe"));
         //Axes
         singleTexture(ToolRegistration.COMPRESSED_WOODEN_AXE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_wooden_axe"));
         singleTexture(ToolRegistration.COMPRESSED_STONE_AXE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_stone_axe"));
         singleTexture(ToolRegistration.COMPRESSED_IRON_AXE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_iron_axe"));
         singleTexture(ToolRegistration.COMPRESSED_GOLD_AXE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_golden_axe"));
         singleTexture(ToolRegistration.COMPRESSED_DIAMOND_AXE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_diamond_axe"));
         singleTexture(ToolRegistration.COMPRESSED_NETHERITE_AXE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_netherite_axe"));
         //Shovels
         singleTexture(ToolRegistration.COMPRESSED_WOODEN_SHOVEL.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_wooden_shovel"));
         singleTexture(ToolRegistration.COMPRESSED_STONE_SHOVEL.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_stone_shovel"));
         singleTexture(ToolRegistration.COMPRESSED_IRON_SHOVEL.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_iron_shovel"));
         singleTexture(ToolRegistration.COMPRESSED_GOLD_SHOVEL.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_golden_shovel"));
         singleTexture(ToolRegistration.COMPRESSED_DIAMOND_SHOVEL.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_diamond_shovel"));
         singleTexture(ToolRegistration.COMPRESSED_NETHERITE_SHOVEL.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_netherite_shovel"));
         //Swords
         singleTexture(ToolRegistration.COMPRESSED_WOODEN_SWORD.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_wooden_sword"));
         singleTexture(ToolRegistration.COMPRESSED_STONE_SWORD.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_stone_sword"));
         singleTexture(ToolRegistration.COMPRESSED_IRON_SWORD.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_iron_sword"));
         singleTexture(ToolRegistration.COMPRESSED_GOLD_SWORD.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_golden_sword"));
         singleTexture(ToolRegistration.COMPRESSED_DIAMOND_SWORD.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_diamond_sword"));
         singleTexture(ToolRegistration.COMPRESSED_NETHERITE_SWORD.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_netherite_sword"));
         //Hoes
         singleTexture(ToolRegistration.COMPRESSED_WOODEN_HOE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_wooden_hoe"));
         singleTexture(ToolRegistration.COMPRESSED_STONE_HOE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_stone_hoe"));
         singleTexture(ToolRegistration.COMPRESSED_IRON_HOE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_iron_hoe"));
         singleTexture(ToolRegistration.COMPRESSED_GOLD_HOE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_golden_hoe"));
         singleTexture(ToolRegistration.COMPRESSED_DIAMOND_HOE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_diamond_hoe"));
         singleTexture(ToolRegistration.COMPRESSED_NETHERITE_HOE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
+                mcLoc("item/handheld"),
                 "layer0", modLoc("item/compressed/tools/compressed_netherite_hoe"));
 
         //ARMOR
@@ -404,5 +404,8 @@ public class ucItemModels extends ItemModelProvider
         singleTexture(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/arrows/compressed_spectral_arrow"));
+        singleTexture(ItemRegistration.COMPRESSED_TIPPED_ARROW.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/arrows/compressed_arrow"));
     }
 }

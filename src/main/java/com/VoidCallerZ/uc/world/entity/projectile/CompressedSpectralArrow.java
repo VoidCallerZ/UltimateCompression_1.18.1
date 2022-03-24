@@ -20,7 +20,7 @@ public class CompressedSpectralArrow extends AbstractArrow
         super(entity, level);
     }
 
-    public CompressedSpectralArrow(Level level, LivingEntity entity)
+    public CompressedSpectralArrow(LivingEntity entity, Level level)
     {
         super(ItemRegistration.COMPRESSED_SPECTRAL_ARROW_ENTITY.get(), entity, level);
     }
@@ -30,7 +30,7 @@ public class CompressedSpectralArrow extends AbstractArrow
         super.tick();
         if (this.level.isClientSide && !this.inGround)
         {
-            this.level.addParticle(ParticleTypes.INSTANT_EFFECT, this.getX(), this.getY(), this.getZ(), 0, 0, 0);
+            this.level.addParticle(ParticleTypes.INSTANT_EFFECT, this.getX(), this.getY(), this.getZ(), 0.0D, 0.0D, 0.0D);
         }
     }
 

@@ -211,6 +211,10 @@ public class ucLanguageProvider extends LanguageProvider
 
         //Arrows
         add(ItemRegistration.COMPRESSED_ARROW.get(), "Compressed Arrow");
+        add(ItemRegistration.COMPRESSED_ARROW_ENTITY.get(), "Compressed Arrow Entity");
         add(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get(), "Compressed Spectral Arrow");
+        add(ItemRegistration.COMPRESSED_SPECTRAL_ARROW_ENTITY.get(), "Compressed Spectral Arrow Entity");
+        add(ItemRegistration.COMPRESSED_TIPPED_ARROW.get(), "Compressed Tipped Arrow");
+        add(ItemRegistration.COMPRESSED_TIPPED_ARROW_ENTITY.get(), "Compressed Tipped Arrow Entity");
     }
 }

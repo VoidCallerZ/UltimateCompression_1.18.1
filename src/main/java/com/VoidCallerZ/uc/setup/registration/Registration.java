@@ -2,14 +2,10 @@ package com.VoidCallerZ.uc.setup.registration;
 
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.blocks.*;
-import com.VoidCallerZ.uc.items.UcArrowItem;
 import com.VoidCallerZ.uc.setup.ModSetup;
-import com.VoidCallerZ.uc.world.entity.projectile.CompressedArrow;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
