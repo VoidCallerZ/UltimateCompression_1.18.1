@@ -1,4 +1,4 @@
-package com.VoidCallerZ.uc.blocks;
+package com.VoidCallerZ.uc.blocks.machines;
 
 import com.VoidCallerZ.uc.setup.registration.Registration;
 import com.VoidCallerZ.uc.varia.CustomEnergyStorage;

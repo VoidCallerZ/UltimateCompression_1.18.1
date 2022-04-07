@@ -11,9 +11,11 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
+import javax.annotation.Nullable;
 import java.util.Random;
 
 public class UcAxeItem extends AxeItem
@@ -65,5 +67,15 @@ public class UcAxeItem extends AxeItem
             }
         }
         return true;
+    }
+
+    @Override
+    public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType)
+    {
+        if (itemStack.getItem() == ToolRegistration.COMPRESSED_WOODEN_AXE.get())
+        {
+            return 1800;
+        }
+        return 0;
     }
 }

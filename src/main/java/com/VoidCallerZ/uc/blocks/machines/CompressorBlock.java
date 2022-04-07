@@ -1,4 +1,4 @@
-package com.VoidCallerZ.uc.blocks;
+package com.VoidCallerZ.uc.blocks.machines;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;

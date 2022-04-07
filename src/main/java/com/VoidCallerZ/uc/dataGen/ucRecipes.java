@@ -1,14 +1,17 @@
 package com.VoidCallerZ.uc.dataGen;
 
+import com.VoidCallerZ.uc.items.arrows.UcTippedArrowRecipe;
+import com.VoidCallerZ.uc.setup.UcRecipeSerializer;
 import com.VoidCallerZ.uc.setup.registration.*;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
-import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.SimpleRecipeSerializer;
 import net.minecraftforge.common.Tags;
+import net.minecraftforge.event.RegistryEvent;
 
 import java.util.function.Consumer;
 
@@ -76,6 +79,8 @@ public class ucRecipes extends BaseRecipeProvider
         MaterialCompressionRecipeBuilder(Registration.COMPRESSED_REDSTONE.get(), Items.REDSTONE, 9, consumer);
         MaterialCompressionRecipeBuilder(Registration.COMPRESSED_NETHERITE_INGOT.get(), Items.NETHERITE_INGOT, 9, consumer);
 
+        FourItemMaterialCompressionRecipeBuilder(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), ItemRegistration.COMPRESSED_QUARTZ.get(), 4, consumer);
+
         //Raw Blocks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RAW_IRON_BLOCK.get(),
                 Registration.COMPRESSED_RAW_IRON.get(), 9, consumer);
@@ -113,6 +118,8 @@ public class ucRecipes extends BaseRecipeProvider
                 Items.STONE, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_TUFF.get(),
                 Items.TUFF, 9, consumer);
+
+        //Nether Blocks
 
         //Logs & Planks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ACACIA_LOG.get(),
@@ -300,5 +307,20 @@ public class ucRecipes extends BaseRecipeProvider
                 .group("uc")
                 .unlockedBy("has_" + ItemRegistration.COMPRESSED_ARROW.get().getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_ARROW.get()))
                 .save(consumer);
+
+        ShapedRecipeBuilder.shaped(ItemRegistration.COMPRESSED_TIPPED_ARROW.get(), 8)
+                .pattern("xxx")
+                .pattern("xpx")
+                .pattern("xxx")
+                .define('x', ItemRegistration.COMPRESSED_ARROW.get())
+                .define('p', Items.LINGERING_POTION)
+                .group("uc")
+                .unlockedBy("has_" + Items.LINGERING_POTION.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.LINGERING_POTION))
+                .save(consumer);
+
+//        UcTippedArrowRecipe ucTippedArrowRecipe = new UcTippedArrowRecipe(new ResourceLocation("item/generated"));
+//        SpecialRecipeBuilder.special(ucTippedArrowRecipe.getSerializer()).save(consumer, "compressed_tipped_arrow");
+
+        //SpecialRecipeBuilder.special(UcRecipeSerializer.COMPRESSED_TIPPED_ARROW).save(consumer, "compressed_tipped_arrow");
     }
 }

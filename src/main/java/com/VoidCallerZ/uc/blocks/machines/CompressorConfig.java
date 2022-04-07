@@ -1,4 +1,4 @@
-package com.VoidCallerZ.uc.blocks;
+package com.VoidCallerZ.uc.blocks.machines;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 

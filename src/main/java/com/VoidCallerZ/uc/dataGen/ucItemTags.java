@@ -37,7 +37,10 @@ public class ucItemTags extends ItemTagsProvider
                 .add(Registration.COMPRESSED_DEEPSLATE_COAL_ORE_ITEM.get())
                 .add(Registration.COMPRESSED_DEEPSLATE_EMERALD_ORE_ITEM.get())
                 .add(Registration.COMPRESSED_DEEPSLATE_LAPIS_ORE_ITEM.get())
-                .add(Registration.COMPRESSED_DEEPSLATE_REDSTONE_ORE_ITEM.get());
+                .add(Registration.COMPRESSED_DEEPSLATE_REDSTONE_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_NETHER_GOLD_ORE_ITEM.get())
+                .add(Registration.COMPRESSED_NETHER_QUARTZ_ORE_ITEM.get());
+
         tag(Tags.Items.INGOTS)
                 .add(Registration.COMPRESSED_IRON_INGOT.get())
                 .add(Registration.COMPRESSED_GOLD_INGOT.get())

@@ -1,5 +1,6 @@
 package com.VoidCallerZ.uc.items.arrows;
 
+import com.VoidCallerZ.uc.setup.UcRecipeSerializer;
 import com.VoidCallerZ.uc.setup.registration.ItemRegistration;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.CraftingContainer;
@@ -8,6 +9,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraft.world.item.crafting.CustomRecipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.SimpleRecipeSerializer;
 import net.minecraft.world.level.Level;
 
 public class UcTippedArrowRecipe extends CustomRecipe
@@ -54,5 +56,5 @@ public class UcTippedArrowRecipe extends CustomRecipe
 
     public boolean canCraftInDimensions(int width, int height) { return width >= 2 && height >= 2; }
 
-    public RecipeSerializer<?> getSerializer() { return RecipeSerializer.TIPPED_ARROW; }
+    public SimpleRecipeSerializer<?> getSerializer() { return UcRecipeSerializer.COMPRESSED_TIPPED_ARROW; }
 }

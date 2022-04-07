@@ -4,25 +4,32 @@ import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.items.arrows.UcArrowItem;
 import com.VoidCallerZ.uc.items.arrows.UcSpectralArrowItem;
 import com.VoidCallerZ.uc.items.arrows.UcTippedArrowItem;
+import com.VoidCallerZ.uc.items.arrows.UcTippedArrowRecipe;
 import com.VoidCallerZ.uc.setup.ModSetup;
+import com.VoidCallerZ.uc.setup.UcRecipeSerializer;
 import com.VoidCallerZ.uc.world.entity.projectile.CompressedArrow;
 import com.VoidCallerZ.uc.world.entity.projectile.CompressedSpectralArrow;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.item.crafting.SimpleRecipeSerializer;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.*;
+import org.lwjgl.system.CallbackI;
 
 import static com.VoidCallerZ.uc.UltimateCompression.MODID;
 
 public class ItemRegistration
 {
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
-    public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITIES, UltimateCompression.MODID);
+    public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITIES, MODID);
+//    public static final DeferredRegister<RecipeSerializer<?>> RECIPES = DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, MODID);
+//    public static final IForgeRegistry<RecipeSerializer<?>> RECIPES = RegistryManager.ACTIVE.getRegistry(ForgeRegistries.Keys.RECIPE_SERIALIZERS);
+//    public static final DeferredRegister<RecipeSerializer<?>> TESTRECIPES = DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, MODID);
 
     public static void init()
     {
@@ -62,4 +69,7 @@ public class ItemRegistration
                     .clientTrackingRange(4)
                     .updateInterval(20)
                     .build(new ResourceLocation(MODID, "compressed_tipped_arrow_entity").toString()));
+
+    //Nether Items
+    public static final RegistryObject<Item> COMPRESSED_QUARTZ = ITEMS.register("compressed_quartz", () -> new Item(ITEM_PROPERTIES));
 }

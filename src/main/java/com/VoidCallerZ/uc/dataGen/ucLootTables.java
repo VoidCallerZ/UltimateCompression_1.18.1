@@ -1,5 +1,6 @@
 package com.VoidCallerZ.uc.dataGen;
 
+import com.VoidCallerZ.uc.setup.registration.ItemRegistration;
 import com.VoidCallerZ.uc.setup.registration.Registration;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.item.Items;
@@ -21,6 +22,8 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(Registration.COMPRESSED_EMERALD_ORE.get(), createSilkTouchTable("compressed_emerald_ore", Registration.COMPRESSED_EMERALD_ORE.get(), Registration.COMPRESSED_EMERALD_GEM.get(), 1, 1));
         lootTables.put(Registration.COMPRESSED_LAPIS_ORE.get(), createSilkTouchTable("compressed_lapis_ore", Registration.COMPRESSED_LAPIS_ORE.get(), Registration.COMPRESSED_LAPIS.get(), 1, 1));
         lootTables.put(Registration.COMPRESSED_REDSTONE_ORE.get(), createSilkTouchTable("compressed_redstone_ore", Registration.COMPRESSED_REDSTONE_ORE.get(), Registration.COMPRESSED_REDSTONE.get(), 1, 1));
+        lootTables.put(Registration.COMPRESSED_NETHER_GOLD_ORE.get(), createSilkTouchTable("compressed_nether_gold_ore", Registration.COMPRESSED_NETHER_GOLD_ORE.get(), Registration.COMPRESSED_GOLD_INGOT.get(), 1, 1));
+        lootTables.put(Registration.COMPRESSED_NETHER_QUARTZ_ORE.get(), createSilkTouchTable("compressed_nether_quartz_ore", Registration.COMPRESSED_NETHER_QUARTZ_ORE.get(), ItemRegistration.COMPRESSED_QUARTZ.get(), 2, 4));
 
         //Deepslate Ores
         lootTables.put(Registration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), createSilkTouchTable("compressed_deepslate_iron_ore", Registration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), Registration.COMPRESSED_RAW_IRON.get(), 1, 2));
@@ -58,6 +61,9 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(Registration.COMPRESSED_SAND.get(), createSimpleTable("compressed_sand", Registration.COMPRESSED_SAND.get()));
         lootTables.put(Registration.COMPRESSED_STONE.get(), createSimpleTable("compressed_stone", Registration.COMPRESSED_STONE.get()));
         lootTables.put(Registration.COMPRESSED_TUFF.get(), createSimpleTable("compressed_tuff", Registration.COMPRESSED_TUFF.get()));
+
+        //Nether Blocks
+        lootTables.put(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), createSimpleTable("compressed_nether_quartz_block", Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get()));
 
         //Logs & Planks
         lootTables.put(Registration.COMPRESSED_ACACIA_LOG.get(), createSimpleTable("compressed_acacia_log", Registration.COMPRESSED_ACACIA_LOG.get()));

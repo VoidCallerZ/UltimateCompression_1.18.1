@@ -1,12 +1,11 @@
 package com.VoidCallerZ.uc.setup;
 
-import com.VoidCallerZ.uc.blocks.CompressorConfig;
-import com.VoidCallerZ.uc.blocks.PowergenConfig;
+import com.VoidCallerZ.uc.blocks.machines.CompressorConfig;
+import com.VoidCallerZ.uc.blocks.machines.PowergenConfig;
 import com.VoidCallerZ.uc.worldgen.ores.OresConfig;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 
 public class Config
 {

@@ -81,6 +81,21 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                 .save(consumer, "uc_material_" + uncompressedItem.getRegistryName());
     }
 
+    protected void FourItemMaterialCompressionRecipeBuilder(Block compressedItem, Item uncompressedItem, int decompAmountItem, Consumer<FinishedRecipe> consumer)
+    {
+        ShapelessRecipeBuilder.shapeless(compressedItem, 1)
+                .requires(uncompressedItem, 4)
+                .group("uc")
+                .unlockedBy("has_" + compressedItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
+                .save(consumer, "uc_material_" + compressedItem.getRegistryName());
+
+        ShapelessRecipeBuilder.shapeless(uncompressedItem, decompAmountItem)
+                .requires(compressedItem)
+                .group("uc")
+                .unlockedBy("has_" + compressedItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
+                .save(consumer, "uc_material_" + uncompressedItem.getRegistryName());
+    }
+
     protected void CompressedWoodenToolRecipeBuilder(Item toolItem, TagKey material, ToolType tool, Consumer<FinishedRecipe> consumer)
     {
         if (tool == ToolType.PICKAXE)

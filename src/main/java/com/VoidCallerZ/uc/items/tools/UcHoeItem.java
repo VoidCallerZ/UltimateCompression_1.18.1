@@ -7,8 +7,10 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 
+import javax.annotation.Nullable;
 import java.util.Random;
 
 public class UcHoeItem extends HoeItem
@@ -53,5 +55,15 @@ public class UcHoeItem extends HoeItem
         }
 
         return InteractionResultHolder.pass(pPlayer.getItemInHand(pUsedHand));
+    }
+
+    @Override
+    public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType)
+    {
+        if (itemStack.getItem() == ToolRegistration.COMPRESSED_WOODEN_HOE.get())
+        {
+            return 1800;
+        }
+        return 0;
     }
 }

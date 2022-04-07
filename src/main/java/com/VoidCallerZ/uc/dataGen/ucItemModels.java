@@ -29,6 +29,8 @@ public class ucItemModels extends ItemModelProvider
         withExistingParent(Registration.COMPRESSED_EMERALD_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_emerald_ore"));
         withExistingParent(Registration.COMPRESSED_LAPIS_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_lapis_ore"));
         withExistingParent(Registration.COMPRESSED_REDSTONE_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_redstone_ore"));
+        withExistingParent(Registration.COMPRESSED_NETHER_GOLD_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_nether_gold_ore"));
+        withExistingParent(Registration.COMPRESSED_NETHER_QUARTZ_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_nether_quartz_ore"));
 
         //Deepslate Ores
         withExistingParent(Registration.COMPRESSED_DEEPSLATE_IRON_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_deepslate_iron_ore"));
@@ -71,6 +73,9 @@ public class ucItemModels extends ItemModelProvider
         withExistingParent(Registration.COMPRESSED_SAND_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_sand"));
         withExistingParent(Registration.COMPRESSED_STONE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_stone"));
         withExistingParent(Registration.COMPRESSED_TUFF_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_tuff"));
+
+        //Nether Blocks
+        withExistingParent(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_nether_quartz_block"));
 
         //Logs & Planks
         withExistingParent(Registration.COMPRESSED_ACACIA_LOG_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_acacia_log"));
@@ -396,6 +401,9 @@ public class ucItemModels extends ItemModelProvider
         singleTexture(ItemRegistration.COMPRESSED_FLINT.get().getRegistryName().getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc("item/compressed/single/compressed_flint"));
+        singleTexture(ItemRegistration.COMPRESSED_QUARTZ.get().getRegistryName().getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc("item/compressed/single/compressed_quartz"));
 
         //Arrows
         singleTexture(ItemRegistration.COMPRESSED_ARROW.get().getRegistryName().getPath(),

@@ -8,6 +8,9 @@
     "uc:compressed_coal_block",
     "uc:compressed_coal_ore",
     "uc:compressed_raw_iron_block",
-    "uc:compressed_raw_copper_block"
+    "uc:compressed_raw_copper_block",
+    "uc:compressed_gold_nether_ore",
+    "uc:compressed_nether_quartz_ore",
+    "uc:compressed_nether_quartz_block"
   ]
 }

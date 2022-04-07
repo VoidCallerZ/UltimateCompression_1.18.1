@@ -5,10 +5,10 @@ import com.VoidCallerZ.uc.setup.registration.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
 
-import static com.VoidCallerZ.uc.blocks.PowergenBlock.MESSAGE_ULTIMATE_POWERGEN;
-import static com.VoidCallerZ.uc.blocks.PowergenBlock.SCREEN_ULTIMATE_POWERGEN;
-import static com.VoidCallerZ.uc.blocks.CompressorBlock.MESSAGE_COMPRESSOR;
-import static com.VoidCallerZ.uc.blocks.CompressorBlock.SCREEN_MESSAGE_COMPRESSOR;
+import static com.VoidCallerZ.uc.blocks.machines.PowergenBlock.MESSAGE_ULTIMATE_POWERGEN;
+import static com.VoidCallerZ.uc.blocks.machines.PowergenBlock.SCREEN_ULTIMATE_POWERGEN;
+import static com.VoidCallerZ.uc.blocks.machines.CompressorBlock.MESSAGE_COMPRESSOR;
+import static com.VoidCallerZ.uc.blocks.machines.CompressorBlock.SCREEN_MESSAGE_COMPRESSOR;
 import static com.VoidCallerZ.uc.setup.ModSetup.*;
 
 public class ucLanguageProvider extends LanguageProvider
@@ -46,6 +46,8 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_DEEPSLATE_EMERALD_ORE.get(), "Compressed Deepslate Emerald Ore");
         add(Registration.COMPRESSED_DEEPSLATE_LAPIS_ORE.get(), "Compressed Deepslate Lapis Ore");
         add(Registration.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get(), "Compressed Deepslate Redstone Ore");
+        add(Registration.COMPRESSED_NETHER_GOLD_ORE.get(), "Compressed Nether Gold ore");
+        add(Registration.COMPRESSED_NETHER_QUARTZ_ORE.get(), "Compressed Nether Quartz Ore");
 
         //Blocks
         add(Registration.COMPRESSED_IRON_BLOCK.get(), "Compressed Block of Iron");
@@ -108,6 +110,9 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_SAND.get(), "Compressed Sand");
         add(Registration.COMPRESSED_STONE.get(), "Compressed Stone");
         add(Registration.COMPRESSED_TUFF.get(), "Compressed Tuff");
+
+        //Nether Blocks
+        add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "Compressed Block of Quartz");
 
         //TOOLS
         //Pickaxes
@@ -208,6 +213,7 @@ public class ucLanguageProvider extends LanguageProvider
 
         //Single Items
         add(ItemRegistration.COMPRESSED_FLINT.get(), "Compressed Flint");
+        add(ItemRegistration.COMPRESSED_QUARTZ.get(), "Comrpessed Quartz");
 
         //Arrows
         add(ItemRegistration.COMPRESSED_ARROW.get(), "Compressed Arrow");

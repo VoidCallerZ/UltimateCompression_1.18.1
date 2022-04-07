@@ -16,6 +16,8 @@
     "uc:compressed_deepslate_coal_ore",
     "uc:compressed_deepslate_emerald_ore",
     "uc:compressed_deepslate_lapis_ore",
-    "uc:compressed_deepslate_redstone_ore"
+    "uc:compressed_deepslate_redstone_ore",
+    "uc:compressed_gold_nether_ore",
+    "uc:compressed_nether_quartz_ore"
   ]
 }

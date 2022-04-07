@@ -1,7 +1,7 @@
 package com.VoidCallerZ.uc.client;
 
 import com.VoidCallerZ.uc.UltimateCompression;
-import com.VoidCallerZ.uc.blocks.CompressorContainer;
+import com.VoidCallerZ.uc.blocks.machines.CompressorContainer;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;

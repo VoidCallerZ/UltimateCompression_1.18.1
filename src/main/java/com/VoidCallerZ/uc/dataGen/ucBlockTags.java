@@ -66,7 +66,10 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(Registration.COMPRESSED_REDSTONE_BLOCK.get())
                 .add(Registration.COMPRESSED_NETHERITE_BLOCK.get())
                 .add(Registration.COMPRESSED_RAW_IRON_BLOCK.get())
-                .add(Registration.COMPRESSED_RAW_COPPER_BLOCK.get());
+                .add(Registration.COMPRESSED_RAW_COPPER_BLOCK.get())
+                .add(Registration.COMPRESSED_NETHER_GOLD_ORE.get())
+                .add(Registration.COMPRESSED_NETHER_QUARTZ_ORE.get())
+                .add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get());
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(Registration.COMPRESSED_GRAVEL.get())
@@ -82,7 +85,10 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(Registration.COMPRESSED_COAL_BLOCK.get())
                 .add(Registration.COMPRESSED_COAL_ORE.get())
                 .add(Registration.COMPRESSED_RAW_IRON_BLOCK.get())
-                .add(Registration.COMPRESSED_RAW_COPPER_BLOCK.get());
+                .add(Registration.COMPRESSED_RAW_COPPER_BLOCK.get())
+                .add(Registration.COMPRESSED_NETHER_GOLD_ORE.get())
+                .add(Registration.COMPRESSED_NETHER_QUARTZ_ORE.get())
+                .add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(Registration.ULTIMATE_POWERGEN.get())
                 .add(Registration.COMPRESSOR.get())

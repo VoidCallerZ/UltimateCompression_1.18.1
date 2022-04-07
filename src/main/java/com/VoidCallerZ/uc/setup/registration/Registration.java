@@ -1,7 +1,9 @@
 package com.VoidCallerZ.uc.setup.registration;
 
 import com.VoidCallerZ.uc.UltimateCompression;
-import com.VoidCallerZ.uc.blocks.*;
+import com.VoidCallerZ.uc.blocks.UcFuelBlockItem;
+import com.VoidCallerZ.uc.blocks.machines.*;
+import com.VoidCallerZ.uc.items.UcFuelItem;
 import com.VoidCallerZ.uc.setup.ModSetup;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
@@ -13,6 +15,7 @@ import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -41,6 +44,7 @@ public class Registration
     //Block & Item properties
     public static final BlockBehaviour.Properties ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties DEEPSLATE_ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(4.5f).requiresCorrectToolForDrops();
+    public static final BlockBehaviour.Properties NETHER_ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(3).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties INGOT_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.METAL).strength(2f).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties WOOD_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.WOOD).strength(2f);
     public static final BlockBehaviour.Properties SOFT_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.DIRT).strength(0.5f);
@@ -68,6 +72,10 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_LAPIS_ORE_ITEM = fromBlock(COMPRESSED_LAPIS_ORE);
     public static final RegistryObject<Block> COMPRESSED_REDSTONE_ORE = BLOCKS.register("compressed_redstone_ore", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_REDSTONE_ORE_ITEM = fromBlock(COMPRESSED_REDSTONE_ORE);
+    public static final RegistryObject<Block> COMPRESSED_NETHER_GOLD_ORE = BLOCKS.register("compressed_gold_nether_ore", () -> new Block(NETHER_ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_NETHER_GOLD_ORE_ITEM = fromBlock(COMPRESSED_NETHER_GOLD_ORE);
+    public static final RegistryObject<Block> COMPRESSED_NETHER_QUARTZ_ORE = BLOCKS.register("compressed_nether_quartz_ore", () -> new Block(NETHER_ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_NETHER_QUARTZ_ORE_ITEM = fromBlock(COMPRESSED_NETHER_QUARTZ_ORE);
 
     //Deepslate Ores
     public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_IRON_ORE = BLOCKS.register("compressed_deepslate_iron_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
@@ -97,7 +105,7 @@ public class Registration
     public static final RegistryObject<Block> COMPRESSED_COPPER_BLOCK = BLOCKS.register("compressed_copper_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_COPPER_BLOCK_ITEM = fromBlock(COMPRESSED_COPPER_BLOCK);
     public static final RegistryObject<Block> COMPRESSED_COAL_BLOCK = BLOCKS.register("compressed_coal_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_COAL_BLOCK_ITEM = fromBlock(COMPRESSED_COAL_BLOCK);
+    public static final RegistryObject<Item> COMPRESSED_COAL_BLOCK_ITEM = fromBlockFuelItem(COMPRESSED_COAL_BLOCK, 144000);
     public static final RegistryObject<Block> COMPRESSED_EMERALD_BLOCK = BLOCKS.register("compressed_emerald_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_EMERALD_BLOCK_ITEM = fromBlock(COMPRESSED_EMERALD_BLOCK);
     public static final RegistryObject<Block> COMPRESSED_LAPIS_BLOCK = BLOCKS.register("compressed_lapis_block", () -> new Block(INGOT_BLOCK_PROPERTIES));
@@ -145,39 +153,43 @@ public class Registration
     public static final RegistryObject<Block> COMPRESSED_TUFF = BLOCKS.register("compressed_tuff", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_TUFF_ITEM = fromBlock(COMPRESSED_TUFF);
 
+    //Nether Blocks
+    public static final RegistryObject<Block> COMPRESSED_NETHER_QUARTZ_BLOCK = BLOCKS.register("compressed_nether_quartz_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(0.8F)));
+    public static final RegistryObject<Item> COMPRESSED_NETHER_QUARTZ_BLOCK_ITEM = fromBlock(COMPRESSED_NETHER_QUARTZ_BLOCK);
+
     //Logs & Planks
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_ACACIA_LOG = BLOCKS.register("compressed_acacia_log", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_ACACIA_LOG_ITEM = fromBlock(COMPRESSED_ACACIA_LOG);
+    public static final RegistryObject<Item> COMPRESSED_ACACIA_LOG_ITEM = fromBlockFuelItem(COMPRESSED_ACACIA_LOG, 2700);
     public static final RegistryObject<Block> COMPRESSED_ACACIA_PLANKS = BLOCKS.register("compressed_acacia_planks", () -> new Block(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_ACACIA_PLANKS_ITEM = fromBlock(COMPRESSED_ACACIA_PLANKS);
+    public static final RegistryObject<Item> COMPRESSED_ACACIA_PLANKS_ITEM = fromBlockFuelItem(COMPRESSED_ACACIA_PLANKS, 2700);
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_BIRCH_LOG = BLOCKS.register("compressed_birch_log", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_BIRCH_LOG_ITEM = fromBlock(COMPRESSED_BIRCH_LOG);
+    public static final RegistryObject<Item> COMPRESSED_BIRCH_LOG_ITEM = fromBlockFuelItem(COMPRESSED_BIRCH_LOG, 2700);
     public static final RegistryObject<Block> COMPRESSED_BIRCH_PLANKS = BLOCKS.register("compressed_birch_planks", () -> new Block(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_BIRCH_PLANKS_ITEM = fromBlock(COMPRESSED_BIRCH_PLANKS);
+    public static final RegistryObject<Item> COMPRESSED_BIRCH_PLANKS_ITEM = fromBlockFuelItem(COMPRESSED_BIRCH_PLANKS, 2700);
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_DARK_OAK_LOG = BLOCKS.register("compressed_dark_oak_log", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_DARK_OAK_LOG_ITEM = fromBlock(COMPRESSED_DARK_OAK_LOG);
+    public static final RegistryObject<Item> COMPRESSED_DARK_OAK_LOG_ITEM = fromBlockFuelItem(COMPRESSED_DARK_OAK_LOG, 2700);
     public static final RegistryObject<Block> COMPRESSED_DARK_OAK_PLANKS = BLOCKS.register("compressed_dark_oak_planks", () -> new Block(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_DARK_OAK_PLANKS_ITEM = fromBlock(COMPRESSED_DARK_OAK_PLANKS);
+    public static final RegistryObject<Item> COMPRESSED_DARK_OAK_PLANKS_ITEM = fromBlockFuelItem(COMPRESSED_DARK_OAK_PLANKS, 2700);
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_JUNGLE_LOG = BLOCKS.register("compressed_jungle_log", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_JUNGLE_LOG_ITEM = fromBlock(COMPRESSED_JUNGLE_LOG);
+    public static final RegistryObject<Item> COMPRESSED_JUNGLE_LOG_ITEM = fromBlockFuelItem(COMPRESSED_JUNGLE_LOG, 2700);
     public static final RegistryObject<Block> COMPRESSED_JUNGLE_PLANKS = BLOCKS.register("compressed_jungle_planks", () -> new Block(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_JUNGLE_PLANKS_ITEM = fromBlock(COMPRESSED_JUNGLE_PLANKS);
+    public static final RegistryObject<Item> COMPRESSED_JUNGLE_PLANKS_ITEM = fromBlockFuelItem(COMPRESSED_JUNGLE_PLANKS, 2700);
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_OAK_LOG = BLOCKS.register("compressed_oak_log", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_OAK_LOG_ITEM = fromBlock(COMPRESSED_OAK_LOG);
+    public static final RegistryObject<Item> COMPRESSED_OAK_LOG_ITEM = fromBlockFuelItem(COMPRESSED_OAK_LOG, 2700);
     public static final RegistryObject<Block> COMPRESSED_OAK_PLANKS = BLOCKS.register("compressed_oak_planks", () -> new Block(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_OAK_PLANKS_ITEM = fromBlock(COMPRESSED_OAK_PLANKS);
+    public static final RegistryObject<Item> COMPRESSED_OAK_PLANKS_ITEM = fromBlockFuelItem(COMPRESSED_OAK_PLANKS, 2700);
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_SPRUCE_LOG = BLOCKS.register("compressed_spruce_log", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_SPRUCE_LOG_ITEM = fromBlock(COMPRESSED_SPRUCE_LOG);
+    public static final RegistryObject<Item> COMPRESSED_SPRUCE_LOG_ITEM = fromBlockFuelItem(COMPRESSED_SPRUCE_LOG, 2700);
     public static final RegistryObject<Block> COMPRESSED_SPRUCE_PLANKS = BLOCKS.register("compressed_spruce_planks", () -> new Block(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_SPRUCE_PLANKS_ITEM = fromBlock(COMPRESSED_SPRUCE_PLANKS);
+    public static final RegistryObject<Item> COMPRESSED_SPRUCE_PLANKS_ITEM = fromBlockFuelItem(COMPRESSED_SPRUCE_PLANKS, 2700);
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_CRIMSON_STEM = BLOCKS.register("compressed_crimson_stem", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_SPRUCE_CRIMSON_STEM_ITEM = fromBlock(COMPRESSED_CRIMSON_STEM);
+    public static final RegistryObject<Item> COMPRESSED_SPRUCE_CRIMSON_STEM_ITEM = fromBlockFuelItem(COMPRESSED_CRIMSON_STEM, 2700);
     public static final RegistryObject<Block> COMPRESSED_CRIMSON_PLANKS = BLOCKS.register("compressed_crimson_planks", () -> new Block(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_CRIMSON_PLANKS_ITEM = fromBlock(COMPRESSED_CRIMSON_PLANKS);
+    public static final RegistryObject<Item> COMPRESSED_CRIMSON_PLANKS_ITEM = fromBlockFuelItem(COMPRESSED_CRIMSON_PLANKS, 2700);
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_WARPED_STEM = BLOCKS.register("compressed_warped_stem", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_WARPED_STEM_ITEM = fromBlock(COMPRESSED_WARPED_STEM);
+    public static final RegistryObject<Item> COMPRESSED_WARPED_STEM_ITEM = fromBlockFuelItem(COMPRESSED_WARPED_STEM, 2700);
     public static final RegistryObject<Block> COMPRESSED_WARPED_PLANKS = BLOCKS.register("compressed_warped_planks", () -> new Block(WOOD_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_WARPED_PLANKS_ITEM = fromBlock(COMPRESSED_WARPED_PLANKS);
+    public static final RegistryObject<Item> COMPRESSED_WARPED_PLANKS_ITEM = fromBlockFuelItem(COMPRESSED_WARPED_PLANKS, 2700);
 
     //Only items
     public static final RegistryObject<Item> COMPRESSED_RAW_IRON = ITEMS.register("compressed_raw_iron", () -> new Item(ITEM_PROPERTIES));
@@ -187,7 +199,7 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_DIAMOND_GEM = ITEMS.register("compressed_diamond_gem", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_RAW_COPPER = ITEMS.register("compressed_raw_copper", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_COPPER_INGOT = ITEMS.register("compressed_copper_ingot", () -> new Item(ITEM_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSED_COAL = ITEMS.register("compressed_coal", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_COAL = ITEMS.register("compressed_coal", () -> new UcFuelItem(ITEM_PROPERTIES, 14400));
     public static final RegistryObject<Item> COMPRESSED_EMERALD_GEM = ITEMS.register("compressed_emerald_gem", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_LAPIS = ITEMS.register("compressed_lapis", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_NETHERITE_INGOT = ITEMS.register("compressed_netherite_ingot", () -> new Item(ITEM_PROPERTIES));
@@ -215,5 +227,10 @@ public class Registration
     public static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block)
     {
         return ITEMS.register(block.getId().getPath(), () -> new BlockItem(block.get(), ITEM_PROPERTIES));
+    }
+
+    public static <B extends Block> RegistryObject<Item> fromBlockFuelItem(RegistryObject<B> block, int burnTime)
+    {
+        return ITEMS.register(block.getId().getPath(), () -> new UcFuelBlockItem(block.get(), ITEM_PROPERTIES, burnTime));
     }
 }

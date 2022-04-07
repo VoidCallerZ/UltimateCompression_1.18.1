@@ -2,7 +2,6 @@ package com.VoidCallerZ.uc.world.entity.projectile;
 
 import com.VoidCallerZ.uc.setup.registration.ItemRegistration;
 import com.google.common.collect.Sets;
-import net.minecraft.core.Registry;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
@@ -10,13 +9,10 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.PotionUtils;
@@ -26,8 +22,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.Collection;
 import java.util.Set;
-
-import static net.minecraft.world.entity.projectile.Arrow.getCustomColor;
 
 public class CompressedArrow extends AbstractArrow
 {
@@ -39,7 +33,7 @@ public class CompressedArrow extends AbstractArrow
     private final Set<MobEffectInstance> effects = Sets.newHashSet();
     private boolean fixedColor;
 
-    public CompressedArrow(EntityType<? extends AbstractArrow> entityType, Level level)
+    public CompressedArrow(EntityType<? extends CompressedArrow> entityType, Level level)
     {
         super(entityType, level);
     }
@@ -231,7 +225,7 @@ public class CompressedArrow extends AbstractArrow
             }
         }
 
-        pLiving.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 1));
+        //pLiving.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 1));
     }
 
     @Override

@@ -21,6 +21,7 @@ public class ucBlockStates extends BaseBlockStateProvider
     protected void registerStatesAndModels()
     {
         registerPowergen();
+        registerCompressor();
 
         //Ores
         singleTextureBlock(Registration.COMPRESSED_IRON_ORE.get(), "compressed_iron_ore", "block/compressed/ores/compressed_iron_ore");
@@ -31,6 +32,8 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(Registration.COMPRESSED_EMERALD_ORE.get(), "compressed_emerald_ore", "block/compressed/ores/compressed_emerald_ore");
         singleTextureBlock(Registration.COMPRESSED_LAPIS_ORE.get(), "compressed_lapis_ore", "block/compressed/ores/compressed_lapis_ore");
         singleTextureBlock(Registration.COMPRESSED_REDSTONE_ORE.get(), "compressed_redstone_ore", "block/compressed/ores/compressed_redstone_ore");
+        singleTextureBlock(Registration.COMPRESSED_NETHER_GOLD_ORE.get(), "compressed_nether_gold_ore", "block/compressed/ores/compressed_nether_gold_ore");
+        singleTextureBlock(Registration.COMPRESSED_NETHER_QUARTZ_ORE.get(), "compressed_nether_quartz_ore", "block/compressed/ores/compressed_nether_quartz_ore");
 
         //Deepslate Ores
         singleTextureBlock(Registration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), "compressed_deepslate_iron_ore", "block/compressed/ores/compressed_deepslate_iron_ore");
@@ -74,6 +77,9 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(Registration.COMPRESSED_STONE.get(), "compressed_stone", "block/compressed/basic/compressed_stone");
         singleTextureBlock(Registration.COMPRESSED_TUFF.get(), "compressed_tuff", "block/compressed/basic/compressed_tuff");
 
+        //Nether Blocks
+        singleTextureBlock(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "compressed_nether_quartz_block", "block/compressed/nether/compressed_quartz_block_side");
+
         //Logs
         compressedLogBlock(Registration.COMPRESSED_ACACIA_LOG.get(), modLoc("block/compressed/logs/compressed_acacia_log"));
         compressedLogBlock(Registration.COMPRESSED_BIRCH_LOG.get(), modLoc("block/compressed/logs/compressed_birch_log"));
@@ -92,8 +98,6 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(Registration.COMPRESSED_SPRUCE_PLANKS.get(), "compressed_spruce_planks", "block/compressed/planks/compressed_spruce_planks");
         singleTextureBlock(Registration.COMPRESSED_CRIMSON_PLANKS.get(), "compressed_crimson_planks", "block/compressed/planks/compressed_crimson_planks");
         singleTextureBlock(Registration.COMPRESSED_WARPED_PLANKS.get(), "compressed_warped_planks", "block/compressed/planks/compressed_warped_planks");
-
-        registerCompressor();
     }
 
     private void registerCompressor()

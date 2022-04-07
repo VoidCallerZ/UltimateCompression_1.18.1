@@ -29,6 +29,7 @@ public class UcTippedArrowItem extends ArrowItem
     public AbstractArrow createArrow(Level level, ItemStack stack, LivingEntity shooter)
     {
         CompressedArrow arrow = new CompressedArrow(level, shooter);
+        arrow.setEffectsFromItem(stack);
         arrow.setBaseDamage(this.damage);
         return arrow;
     }
