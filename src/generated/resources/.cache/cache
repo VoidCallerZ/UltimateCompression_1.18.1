@@ -298,7 +298,7 @@ eded64d6597ed59ad8460305a76c246eda1d36fc assets/uc/models/item/compressed_wooden
 b17d5207d61e07d167cd15a926a20dab2a83a2cc assets/uc/models/item/compressor.json
 f18676dae7a0f1703fc48822f14fc17576408358 assets/uc/models/item/uc_icon.json
 c032b8e8cf155871e08cdc44616b9987a84d1392 assets/uc/models/item/ultimate_powergen.json
-3a7e0bf61a1fc8a60ceff92c83baaab0bf70d311 data/forge/tags/blocks/ores.json
+9a95222e324d1a464824919153d166de4c1ce8ad data/forge/tags/blocks/ores.json
 54b80a190957b7c47656c963e96c2ce2344e1174 data/forge/tags/blocks/storage_blocks.json
 a06ffe47beeaab69fb887b3d1d405bb91a34d6ef data/forge/tags/items/gems.json
 79db14533780cf4e487a5bfe4608fd3922cabd46 data/forge/tags/items/ingots.json
