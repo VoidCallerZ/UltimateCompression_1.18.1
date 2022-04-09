@@ -17,7 +17,6 @@ public class OresConfig
     public static ForgeConfigSpec.IntValue DEEPSLATE_COAL_VEINSIZE;
     public static ForgeConfigSpec.IntValue DEEPSLATE_COAL_AMOUNT;
 
-
     public static ForgeConfigSpec.IntValue NETHER_GOLD_ORE_VEINSIZE;
     public static ForgeConfigSpec.IntValue NETHER_GOLD_ORE_AMOUNT;
     public static ForgeConfigSpec.IntValue NETHER_QUARTZ_ORE_VEINSIZE;
@@ -35,7 +34,7 @@ public class OresConfig
         OVERWORLD_DIAMOND_VEINSIZE = COMMON_BUILDER.comment("Default veinsize of diamond ore").defineInRange("overworldDiamondVeinsize", 1, 0, 50);
         OVERWORLD_DIAMOND_AMOUNT = COMMON_BUILDER.comment("Default maximum amount of generations per chunk of diamond ore").defineInRange("overworldDiamondChunkAmount", 6, 0, 50);
         DEEPSLATE_DIAMOND_VEINSIZE = COMMON_BUILDER.comment("Default veinsize of diamond ore in deepslate").defineInRange("deepslateDiamondVeinsize", 3, 0, 50);
-        DEEPSLATE_DIAMOND_AMOUNT = COMMON_BUILDER.comment("Default maximum amount of generations per chunk of diamond ore in deepslate").defineInRange("deepslateDiamondChunkAmount", 4, 0, 50);
+        DEEPSLATE_DIAMOND_AMOUNT = COMMON_BUILDER.comment("Default maximum amount of generations per chunk of diamond ore in deepslate").defineInRange("deepslateDiamondChunkAmount", 6, 0, 50);
 
         OVERWORLD_COAL_VEINSIZE = COMMON_BUILDER.comment("Default veinsize of all coal ores").defineInRange("overworldCoalVeinsize", 14, 0, 50);
         OVERWORLD_COAL_AMOUNT = COMMON_BUILDER.comment("Default maximum amount of generations per chunk").defineInRange("overworldCoalChunkAmount", 18, 0, 50);
