@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc_minecraft:blackstone"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:blackstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_blackstone"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc_minecraft:blackstone"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:blackstone",
+      "has_the_recipe"
+    ]
+  ]
+}

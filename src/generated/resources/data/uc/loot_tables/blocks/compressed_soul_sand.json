@@ -2,13 +2,13 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "ultimate_powergen",
+      "name": "compressed_soul_sand",
       "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "uc:ultimate_powergen"
+          "name": "uc:compressed_soul_sand"
         }
       ]
     }

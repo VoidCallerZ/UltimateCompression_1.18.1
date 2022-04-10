@@ -113,6 +113,12 @@ public class ucLanguageProvider extends LanguageProvider
 
         //Nether Blocks
         add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "Compressed Block of Quartz");
+        add(Registration.COMPRESSED_BASALT.get(), "Compressed Basalt");
+        add(Registration.COMPRESSED_BLACKSTONE.get(), "Compressed Blackstone");
+        add(Registration.COMPRESSED_GLOWSTONE.get(), "Compressed Glowstone");
+        add(Registration.COMPRESSED_MAGMA.get(), "Compressed Magma Block");
+        add(Registration.COMPRESSED_SOUL_SAND.get(), "Compressed Soul Sand");
+        add(Registration.COMPRESSED_SOUL_SOIL.get(), "Compressed Soul Soil");
 
         //TOOLS
         //Pickaxes
@@ -213,7 +219,7 @@ public class ucLanguageProvider extends LanguageProvider
 
         //Single Items
         add(ItemRegistration.COMPRESSED_FLINT.get(), "Compressed Flint");
-        add(ItemRegistration.COMPRESSED_QUARTZ.get(), "Comrpessed Quartz");
+        add(ItemRegistration.COMPRESSED_QUARTZ.get(), "Compressed Quartz");
 
         //Arrows
         add(ItemRegistration.COMPRESSED_ARROW.get(), "Compressed Arrow");

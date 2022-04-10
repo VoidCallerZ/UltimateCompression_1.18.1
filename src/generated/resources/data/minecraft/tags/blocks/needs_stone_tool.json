@@ -11,6 +11,10 @@
     "uc:compressed_raw_copper_block",
     "uc:compressed_gold_nether_ore",
     "uc:compressed_nether_quartz_ore",
-    "uc:compressed_nether_quartz_block"
+    "uc:compressed_nether_quartz_block",
+    "uc:compressed_basalt",
+    "uc:compressed_blackstone",
+    "uc:compressed_glowstone",
+    "uc:compressed_magma"
   ]
 }

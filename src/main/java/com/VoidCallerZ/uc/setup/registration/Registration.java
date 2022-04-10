@@ -22,6 +22,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.lwjgl.system.CallbackI;
 
 import static com.VoidCallerZ.uc.UltimateCompression.MODID;
 
@@ -156,6 +157,18 @@ public class Registration
     //Nether Blocks
     public static final RegistryObject<Block> COMPRESSED_NETHER_QUARTZ_BLOCK = BLOCKS.register("compressed_nether_quartz_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(0.8F)));
     public static final RegistryObject<Item> COMPRESSED_NETHER_QUARTZ_BLOCK_ITEM = fromBlock(COMPRESSED_NETHER_QUARTZ_BLOCK);
+    public static final RegistryObject<RotatedPillarBlock> COMPRESSED_BASALT = BLOCKS.register("compressed_basalt", () -> new RotatedPillarBlock(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BASALT_ITEM = fromBlock(COMPRESSED_BASALT);
+    public static final RegistryObject<RotatedPillarBlock> COMPRESSED_BLACKSTONE = BLOCKS.register("compressed_blackstone", () -> new RotatedPillarBlock(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BLACKSTONE_ITEM = fromBlock(COMPRESSED_BLACKSTONE);
+    public static final RegistryObject<Block> COMPRESSED_GLOWSTONE = BLOCKS.register("compressed_glowstone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_GLOWSTONE_ITEM = fromBlock(COMPRESSED_GLOWSTONE);
+    public static final RegistryObject<Block> COMPRESSED_MAGMA = BLOCKS.register("compressed_magma", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_MAGMA_ITEM = fromBlock(COMPRESSED_MAGMA);
+    public static final RegistryObject<Block> COMPRESSED_SOUL_SAND = BLOCKS.register("compressed_soul_sand", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_SOUL_SAND_ITEM = fromBlock(COMPRESSED_SOUL_SAND);
+    public static final RegistryObject<Block> COMPRESSED_SOUL_SOIL = BLOCKS.register("compressed_soul_soil", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_SOUL_SOIL_ITEM = fromBlock(COMPRESSED_SOUL_SOIL);
 
     //Logs & Planks
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_ACACIA_LOG = BLOCKS.register("compressed_acacia_log", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));

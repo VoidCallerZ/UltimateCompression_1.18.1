@@ -76,6 +76,12 @@ public class ucItemModels extends ItemModelProvider
 
         //Nether Blocks
         withExistingParent(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_nether_quartz_block"));
+        withExistingParent(Registration.COMPRESSED_BASALT.get().getRegistryName().getPath(), modLoc("block/compressed_basalt"));
+        withExistingParent(Registration.COMPRESSED_BLACKSTONE.get().getRegistryName().getPath(), modLoc("block/compressed_blackstone"));
+        withExistingParent(Registration.COMPRESSED_GLOWSTONE.get().getRegistryName().getPath(), modLoc("block/compressed_glowstone"));
+        withExistingParent(Registration.COMPRESSED_MAGMA.get().getRegistryName().getPath(), modLoc("block/compressed_magma"));
+        withExistingParent(Registration.COMPRESSED_SOUL_SAND.get().getRegistryName().getPath(), modLoc("block/compressed_soul_sand"));
+        withExistingParent(Registration.COMPRESSED_SOUL_SOIL.get().getRegistryName().getPath(), modLoc("block/compressed_soul_soil"));
 
         //Logs & Planks
         withExistingParent(Registration.COMPRESSED_ACACIA_LOG_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_acacia_log"));

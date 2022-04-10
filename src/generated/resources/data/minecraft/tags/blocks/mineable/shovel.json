@@ -4,6 +4,8 @@
     "uc:compressed_gravel",
     "uc:compressed_dirt",
     "uc:compressed_red_sand",
-    "uc:compressed_sand"
+    "uc:compressed_sand",
+    "uc:compressed_soul_sand",
+    "uc:compressed_soul_soil"
   ]
 }

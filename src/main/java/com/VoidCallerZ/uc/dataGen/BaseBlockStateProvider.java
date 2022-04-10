@@ -20,7 +20,7 @@ public abstract class BaseBlockStateProvider extends BlockStateProvider {
         simpleBlock(block, model);
     }
 
-    protected void compressedLogBlock(RotatedPillarBlock block, ResourceLocation resLoc)
+    protected void compressedPillarBlock(RotatedPillarBlock block, ResourceLocation resLoc)
     {
         axisBlock(block, models().cubeColumn(block.getRegistryName().getPath(), resLoc, extend(resLoc, "_top")), models().cubeColumnHorizontal(block.getRegistryName().getPath() + "_horizontal", resLoc, extend(resLoc, "_top")));
     }

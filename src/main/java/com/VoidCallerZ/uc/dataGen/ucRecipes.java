@@ -120,6 +120,13 @@ public class ucRecipes extends BaseRecipeProvider
                 Items.TUFF, 9, consumer);
 
         //Nether Blocks
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), Items.QUARTZ_BLOCK, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BASALT.get(), Items.BASALT, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BLACKSTONE.get(), Items.BLACKSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GLOWSTONE.get(), Items.GLOWSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MAGMA.get(), Items.MAGMA_BLOCK, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SOUL_SAND.get(), Items.SOUL_SAND, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SOUL_SOIL.get(), Items.SOUL_SOIL, 9, consumer);
 
         //Logs & Planks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ACACIA_LOG.get(),

@@ -79,16 +79,22 @@ public class ucBlockStates extends BaseBlockStateProvider
 
         //Nether Blocks
         singleTextureBlock(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "compressed_nether_quartz_block", "block/compressed/nether/compressed_quartz_block_side");
+        compressedPillarBlock(Registration.COMPRESSED_BASALT.get(), modLoc("block/compressed/nether/compressed_basalt"));
+        compressedPillarBlock(Registration.COMPRESSED_BLACKSTONE.get(), modLoc("block/compressed/nether/compressed_blackstone"));
+        singleTextureBlock(Registration.COMPRESSED_GLOWSTONE.get(), "compressed_glowstone", "block/compressed/nether/compressed_glowstone");
+        singleTextureBlock(Registration.COMPRESSED_MAGMA.get(), "compressed_magma", "block/compressed/nether/compressed_magma");
+        singleTextureBlock(Registration.COMPRESSED_SOUL_SAND.get(), "compressed_soul_sand", "block/compressed/nether/compressed_soul_sand");
+        singleTextureBlock(Registration.COMPRESSED_SOUL_SOIL.get(), "compressed_soul_soil", "block/compressed/nether/compressed_soul_soil");
 
         //Logs
-        compressedLogBlock(Registration.COMPRESSED_ACACIA_LOG.get(), modLoc("block/compressed/logs/compressed_acacia_log"));
-        compressedLogBlock(Registration.COMPRESSED_BIRCH_LOG.get(), modLoc("block/compressed/logs/compressed_birch_log"));
-        compressedLogBlock(Registration.COMPRESSED_DARK_OAK_LOG.get(), modLoc("block/compressed/logs/compressed_dark_oak_log"));
-        compressedLogBlock(Registration.COMPRESSED_JUNGLE_LOG.get(), modLoc("block/compressed/logs/compressed_jungle_log"));
-        compressedLogBlock(Registration.COMPRESSED_OAK_LOG.get(), modLoc("block/compressed/logs/compressed_oak_log"));
-        compressedLogBlock(Registration.COMPRESSED_SPRUCE_LOG.get(), modLoc("block/compressed/logs/compressed_spruce_log"));
-        compressedLogBlock(Registration.COMPRESSED_CRIMSON_STEM.get(), modLoc("block/compressed/logs/compressed_crimson_stem"));
-        compressedLogBlock(Registration.COMPRESSED_WARPED_STEM.get(), modLoc("block/compressed/logs/compressed_warped_stem"));
+        compressedPillarBlock(Registration.COMPRESSED_ACACIA_LOG.get(), modLoc("block/compressed/logs/compressed_acacia_log"));
+        compressedPillarBlock(Registration.COMPRESSED_BIRCH_LOG.get(), modLoc("block/compressed/logs/compressed_birch_log"));
+        compressedPillarBlock(Registration.COMPRESSED_DARK_OAK_LOG.get(), modLoc("block/compressed/logs/compressed_dark_oak_log"));
+        compressedPillarBlock(Registration.COMPRESSED_JUNGLE_LOG.get(), modLoc("block/compressed/logs/compressed_jungle_log"));
+        compressedPillarBlock(Registration.COMPRESSED_OAK_LOG.get(), modLoc("block/compressed/logs/compressed_oak_log"));
+        compressedPillarBlock(Registration.COMPRESSED_SPRUCE_LOG.get(), modLoc("block/compressed/logs/compressed_spruce_log"));
+        compressedPillarBlock(Registration.COMPRESSED_CRIMSON_STEM.get(), modLoc("block/compressed/logs/compressed_crimson_stem"));
+        compressedPillarBlock(Registration.COMPRESSED_WARPED_STEM.get(), modLoc("block/compressed/logs/compressed_warped_stem"));
         //Planks
         singleTextureBlock(Registration.COMPRESSED_ACACIA_PLANKS.get(), "compressed_acacia_planks", "block/compressed/planks/compressed_acacia_planks");
         singleTextureBlock(Registration.COMPRESSED_BIRCH_PLANKS.get(), "compressed_birch_planks", "block/compressed/planks/compressed_birch_planks");

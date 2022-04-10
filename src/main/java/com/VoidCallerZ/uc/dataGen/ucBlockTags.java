@@ -69,13 +69,19 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(Registration.COMPRESSED_RAW_COPPER_BLOCK.get())
                 .add(Registration.COMPRESSED_NETHER_GOLD_ORE.get())
                 .add(Registration.COMPRESSED_NETHER_QUARTZ_ORE.get())
-                .add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get());
+                .add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get())
+                .add(Registration.COMPRESSED_BASALT.get())
+                .add(Registration.COMPRESSED_BLACKSTONE.get())
+                .add(Registration.COMPRESSED_GLOWSTONE.get())
+                .add(Registration.COMPRESSED_MAGMA.get());
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(Registration.COMPRESSED_GRAVEL.get())
                 .add(Registration.COMPRESSED_DIRT.get())
                 .add(Registration.COMPRESSED_RED_SAND.get())
-                .add(Registration.COMPRESSED_SAND.get());
+                .add(Registration.COMPRESSED_SAND.get())
+                .add(Registration.COMPRESSED_SOUL_SAND.get())
+                .add(Registration.COMPRESSED_SOUL_SOIL.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(Registration.COMPRESSED_IRON_ORE.get())
@@ -88,7 +94,11 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(Registration.COMPRESSED_RAW_COPPER_BLOCK.get())
                 .add(Registration.COMPRESSED_NETHER_GOLD_ORE.get())
                 .add(Registration.COMPRESSED_NETHER_QUARTZ_ORE.get())
-                .add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get());
+                .add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get())
+                .add(Registration.COMPRESSED_BASALT.get())
+                .add(Registration.COMPRESSED_BLACKSTONE.get())
+                .add(Registration.COMPRESSED_GLOWSTONE.get())
+                .add(Registration.COMPRESSED_MAGMA.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(Registration.ULTIMATE_POWERGEN.get())
                 .add(Registration.COMPRESSOR.get())
