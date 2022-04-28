@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "uc:compressed_cyan_wool"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cyan_wool",
+    "count": 9
+  }
+}

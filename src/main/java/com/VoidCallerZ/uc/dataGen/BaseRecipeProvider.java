@@ -1,5 +1,6 @@
 package com.VoidCallerZ.uc.dataGen;
 
+import com.VoidCallerZ.uc.setup.registration.Registration;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
@@ -31,6 +32,14 @@ public abstract class BaseRecipeProvider extends RecipeProvider
         HOE
     }
 
+    public enum ColorBlockType
+    {
+        WOOL,
+        CONCRETE,
+        CONCRETE_POWDER,
+        TERRACOTTA
+    }
+
     public BaseRecipeProvider(DataGenerator pGenerator)
     {
         super(pGenerator);
@@ -51,6 +60,52 @@ public abstract class BaseRecipeProvider extends RecipeProvider
                 .requires(compressedBlock)
                 .group("uc")
                 .unlockedBy("has_" + compressedItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
+                .save(consumer, "uc_" + compressedItem.getRegistryName());
+    }
+
+    protected void CompressedWoolRecipeBuilder(Block compressedBlock, Item compressedItem, ColorBlockType blockType, Item colorItem, Consumer<FinishedRecipe> consumer)
+    {
+        ShapedRecipeBuilder.shaped(compressedBlock)
+                .pattern("xxx")
+                .pattern("xxx")
+                .pattern("xxx")
+                .define('x', compressedItem)
+                .group("uc")
+                .unlockedBy("has_" + compressedBlock.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
+                .save(consumer, "uc_" + compressedBlock.getRegistryName());
+
+        if (blockType == ColorBlockType.WOOL)
+        {
+            ShapelessRecipeBuilder.shapeless(compressedBlock, 1)
+                    .requires(Registration.COMPRESSED_WHITE_WOOL.get())
+                    .requires(colorItem)
+                    .group("uc")
+                    .unlockedBy("has_" + compressedBlock.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
+                    .save(consumer, "uc_" + compressedBlock.getRegistryName() + "_1");
+        }
+        else if (blockType == ColorBlockType.CONCRETE)
+        {
+            ShapelessRecipeBuilder.shapeless(compressedBlock, 1)
+                    .requires(Registration.COMPRESSED_WHITE_CONCRETE.get())
+                    .requires(colorItem)
+                    .group("uc")
+                    .unlockedBy("has_" + compressedBlock.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
+                    .save(consumer, "uc_" + compressedBlock.getRegistryName() + "_1");
+        }
+        else if (blockType == ColorBlockType.CONCRETE_POWDER)
+        {
+            ShapelessRecipeBuilder.shapeless(compressedBlock, 1)
+                    .requires(Registration.COMPRESSED_WHITE_CONCRETE_POWDER.get())
+                    .requires(colorItem)
+                    .group("uc")
+                    .unlockedBy("has_" + compressedBlock.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
+                    .save(consumer, "uc_" + compressedBlock.getRegistryName() + "_1");
+        }
+
+        ShapelessRecipeBuilder.shapeless(compressedItem, 9)
+                .requires(compressedBlock)
+                .group("uc")
+                .unlockedBy("has_" + compressedItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
                 .save(consumer, "uc_" + compressedItem.getRegistryName());
     }
 

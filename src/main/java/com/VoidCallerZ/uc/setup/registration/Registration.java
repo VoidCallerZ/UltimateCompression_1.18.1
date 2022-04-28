@@ -49,6 +49,7 @@ public class Registration
     public static final BlockBehaviour.Properties INGOT_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.METAL).strength(2f).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties WOOD_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.WOOD).strength(2f);
     public static final BlockBehaviour.Properties SOFT_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.DIRT).strength(0.5f);
+    public static final BlockBehaviour.Properties WOOL_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.WOOL).strength(0.8f);
     public static final Item.Properties ITEM_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_COMPRESSION_TAB);
 
     public static final TagKey<Item> COMPRESSED_PLANKS_FOR_TOOLS = ItemTags.create(new ResourceLocation(UltimateCompression.MODID, "compressed_planks_for_tools"));
@@ -203,6 +204,108 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_WARPED_STEM_ITEM = fromBlockFuelItem(COMPRESSED_WARPED_STEM, 2700);
     public static final RegistryObject<Block> COMPRESSED_WARPED_PLANKS = BLOCKS.register("compressed_warped_planks", () -> new Block(WOOD_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_WARPED_PLANKS_ITEM = fromBlockFuelItem(COMPRESSED_WARPED_PLANKS, 2700);
+
+    //Wool Blocks
+    public static final RegistryObject<Block> COMPRESSED_BLACK_WOOL = BLOCKS.register("compressed_black_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BLACK_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_BLACK_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_BLUE_WOOL = BLOCKS.register("compressed_blue_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BLUE_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_BLUE_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_BROWN_WOOL = BLOCKS.register("compressed_brown_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BROWN_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_BROWN_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_CYAN_WOOL = BLOCKS.register("compressed_cyan_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CYAN_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_CYAN_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_GRAY_WOOL = BLOCKS.register("compressed_gray_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_GRAY_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_GRAY_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_GREEN_WOOL = BLOCKS.register("compressed_green_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_GREEN_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_GREEN_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_LIGHT_BLUE_WOOL = BLOCKS.register("compressed_light_blue_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LIGHT_BLUE_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_LIGHT_BLUE_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_LIGHT_GRAY_WOOL = BLOCKS.register("compressed_light_gray_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LIGHT_GRAY_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_LIGHT_GRAY_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_LIME_WOOL = BLOCKS.register("compressed_lime_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LIME_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_LIME_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_MAGENTA_WOOL = BLOCKS.register("compressed_magenta_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_MAGENTA_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_MAGENTA_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_ORANGE_WOOL = BLOCKS.register("compressed_orange_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_ORANGE_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_ORANGE_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_PINK_WOOL = BLOCKS.register("compressed_pink_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_PINK_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_PINK_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_PURPLE_WOOL = BLOCKS.register("compressed_purple_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_PURPLE_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_PURPLE_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_RED_WOOL = BLOCKS.register("compressed_red_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_RED_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_RED_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_WHITE_WOOL = BLOCKS.register("compressed_white_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_WHITE_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_WHITE_WOOL, 200);
+    public static final RegistryObject<Block> COMPRESSED_YELLOW_WOOL = BLOCKS.register("compressed_yellow_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_YELLOW_WOOL_ITEM = fromBlockFuelItem(COMPRESSED_YELLOW_WOOL, 200);
+
+    //Concrete
+    public static final RegistryObject<Block> COMPRESSED_BLACK_CONCRETE = BLOCKS.register("compressed_black_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BLACK_CONCRETE_ITEM = fromBlock(COMPRESSED_BLACK_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_BLUE_CONCRETE = BLOCKS.register("compressed_blue_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BLUE_CONCRETE_ITEM = fromBlock(COMPRESSED_BLUE_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_BROWN_CONCRETE = BLOCKS.register("compressed_brown_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BROWN_CONCRETE_ITEM = fromBlock(COMPRESSED_BROWN_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_CYAN_CONCRETE = BLOCKS.register("compressed_cyan_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CYAN_CONCRETE_ITEM = fromBlock(COMPRESSED_CYAN_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_GRAY_CONCRETE = BLOCKS.register("compressed_gray_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_GRAY_CONCRETE_ITEM = fromBlock(COMPRESSED_GRAY_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_GREEN_CONCRETE = BLOCKS.register("compressed_green_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_GREEN_CONCRETE_ITEM = fromBlock(COMPRESSED_GREEN_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_LIGHT_BLUE_CONCRETE = BLOCKS.register("compressed_light_blue_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LIGHT_BLUE_CONCRETE_ITEM = fromBlock(COMPRESSED_LIGHT_BLUE_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_LIGHT_GRAY_CONCRETE = BLOCKS.register("compressed_light_gray_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LIGHT_GRAY_CONCRETE_ITEM = fromBlock(COMPRESSED_LIGHT_GRAY_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_LIME_CONCRETE = BLOCKS.register("compressed_lime_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LIME_CONCRETE_ITEM = fromBlock(COMPRESSED_LIME_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_MAGENTA_CONCRETE = BLOCKS.register("compressed_magenta_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_MAGENTA_CONCRETE_ITEM = fromBlock(COMPRESSED_MAGENTA_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_ORANGE_CONCRETE = BLOCKS.register("compressed_orange_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_ORANGE_CONCRETE_ITEM = fromBlock(COMPRESSED_ORANGE_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_PINK_CONCRETE = BLOCKS.register("compressed_pink_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_PINK_CONCRETE_ITEM = fromBlock(COMPRESSED_PINK_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_PURPLE_CONCRETE = BLOCKS.register("compressed_purple_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_PURPLE_CONCRETE_ITEM = fromBlock(COMPRESSED_PURPLE_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_RED_CONCRETE = BLOCKS.register("compressed_red_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_RED_CONCRETE_ITEM = fromBlock(COMPRESSED_RED_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_WHITE_CONCRETE = BLOCKS.register("compressed_white_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_WHITE_CONCRETE_ITEM = fromBlock(COMPRESSED_WHITE_CONCRETE);
+    public static final RegistryObject<Block> COMPRESSED_YELLOW_CONCRETE = BLOCKS.register("compressed_yellow_concrete", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_YELLOW_CONCRETE_ITEM = fromBlock(COMPRESSED_YELLOW_CONCRETE);
+
+    //Concrete Powder
+    public static final RegistryObject<Block> COMPRESSED_BLACK_CONCRETE_POWDER = BLOCKS.register("compressed_black_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BLACK_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_BLACK_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_BLUE_CONCRETE_POWDER = BLOCKS.register("compressed_blue_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BLUE_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_BLUE_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_BROWN_CONCRETE_POWDER = BLOCKS.register("compressed_brown_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BROWN_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_BROWN_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_CYAN_CONCRETE_POWDER = BLOCKS.register("compressed_cyan_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CYAN_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_CYAN_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_GRAY_CONCRETE_POWDER = BLOCKS.register("compressed_gray_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_GRAY_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_GRAY_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_GREEN_CONCRETE_POWDER = BLOCKS.register("compressed_green_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_GREEN_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_GREEN_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_LIGHT_BLUE_CONCRETE_POWDER = BLOCKS.register("compressed_light_blue_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LIGHT_BLUE_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_LIGHT_BLUE_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_LIGHT_GRAY_CONCRETE_POWDER = BLOCKS.register("compressed_light_gray_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LIGHT_GRAY_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_LIGHT_GRAY_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_LIME_CONCRETE_POWDER = BLOCKS.register("compressed_lime_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LIME_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_LIME_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_MAGENTA_CONCRETE_POWDER = BLOCKS.register("compressed_magenta_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_MAGENTA_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_MAGENTA_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_ORANGE_CONCRETE_POWDER = BLOCKS.register("compressed_orange_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_ORANGE_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_ORANGE_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_PINK_CONCRETE_POWDER = BLOCKS.register("compressed_pink_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_PINK_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_PINK_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_PURPLE_CONCRETE_POWDER = BLOCKS.register("compressed_purple_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_PURPLE_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_PURPLE_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_RED_CONCRETE_POWDER = BLOCKS.register("compressed_red_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_RED_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_RED_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_WHITE_CONCRETE_POWDER = BLOCKS.register("compressed_white_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_WHITE_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_WHITE_CONCRETE_POWDER);
+    public static final RegistryObject<Block> COMPRESSED_YELLOW_CONCRETE_POWDER = BLOCKS.register("compressed_yellow_concrete_powder", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_YELLOW_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_YELLOW_CONCRETE_POWDER);
 
     //Only items
     public static final RegistryObject<Item> COMPRESSED_RAW_IRON = ITEMS.register("compressed_raw_iron", () -> new Item(ITEM_PROPERTIES));

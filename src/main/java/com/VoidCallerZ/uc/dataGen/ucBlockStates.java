@@ -104,6 +104,61 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(Registration.COMPRESSED_SPRUCE_PLANKS.get(), "compressed_spruce_planks", "block/compressed/planks/compressed_spruce_planks");
         singleTextureBlock(Registration.COMPRESSED_CRIMSON_PLANKS.get(), "compressed_crimson_planks", "block/compressed/planks/compressed_crimson_planks");
         singleTextureBlock(Registration.COMPRESSED_WARPED_PLANKS.get(), "compressed_warped_planks", "block/compressed/planks/compressed_warped_planks");
+
+        //Wool
+        singleTextureBlock(Registration.COMPRESSED_BLACK_WOOL.get(), "compressed_black_wool", "block/compressed/wool/compressed_black_wool");
+        singleTextureBlock(Registration.COMPRESSED_BLUE_WOOL.get(), "compressed_blue_wool", "block/compressed/wool/compressed_blue_wool");
+        singleTextureBlock(Registration.COMPRESSED_BROWN_WOOL.get(), "compressed_brown_wool", "block/compressed/wool/compressed_brown_wool");
+        singleTextureBlock(Registration.COMPRESSED_CYAN_WOOL.get(), "compressed_cyan_wool", "block/compressed/wool/compressed_cyan_wool");
+        singleTextureBlock(Registration.COMPRESSED_GRAY_WOOL.get(), "compressed_gray_wool", "block/compressed/wool/compressed_gray_wool");
+        singleTextureBlock(Registration.COMPRESSED_GREEN_WOOL.get(), "compressed_green_wool", "block/compressed/wool/compressed_green_wool");
+        singleTextureBlock(Registration.COMPRESSED_LIGHT_BLUE_WOOL.get(), "compressed_light_blue_wool", "block/compressed/wool/compressed_light_blue_wool");
+        singleTextureBlock(Registration.COMPRESSED_LIGHT_GRAY_WOOL.get(), "compressed_light_gray_wool", "block/compressed/wool/compressed_light_gray_wool");
+        singleTextureBlock(Registration.COMPRESSED_LIME_WOOL.get(), "compressed_lime_wool", "block/compressed/wool/compressed_lime_wool");
+        singleTextureBlock(Registration.COMPRESSED_MAGENTA_WOOL.get(), "compressed_magenta_wool", "block/compressed/wool/compressed_magenta_wool");
+        singleTextureBlock(Registration.COMPRESSED_ORANGE_WOOL.get(), "compressed_orange_wool", "block/compressed/wool/compressed_orange_wool");
+        singleTextureBlock(Registration.COMPRESSED_PINK_WOOL.get(), "compressed_pink_wool", "block/compressed/wool/compressed_pink_wool");
+        singleTextureBlock(Registration.COMPRESSED_PURPLE_WOOL.get(), "compressed_purple_wool", "block/compressed/wool/compressed_purple_wool");
+        singleTextureBlock(Registration.COMPRESSED_RED_WOOL.get(), "compressed_red_wool", "block/compressed/wool/compressed_red_wool");
+        singleTextureBlock(Registration.COMPRESSED_WHITE_WOOL.get(), "compressed_white_wool", "block/compressed/wool/compressed_white_wool");
+        singleTextureBlock(Registration.COMPRESSED_YELLOW_WOOL.get(), "compressed_yellow_wool", "block/compressed/wool/compressed_yellow_wool");
+
+        //Concrete
+        singleTextureBlock(Registration.COMPRESSED_BLACK_CONCRETE.get(), "compressed_black_concrete", "block/compressed/concrete/compressed_black_concrete");
+        singleTextureBlock(Registration.COMPRESSED_BLUE_CONCRETE.get(), "compressed_blue_concrete", "block/compressed/concrete/compressed_blue_concrete");
+        singleTextureBlock(Registration.COMPRESSED_BROWN_CONCRETE.get(), "compressed_brown_concrete", "block/compressed/concrete/compressed_brown_concrete");
+        singleTextureBlock(Registration.COMPRESSED_CYAN_CONCRETE.get(), "compressed_cyan_concrete", "block/compressed/concrete/compressed_cyan_concrete");
+        singleTextureBlock(Registration.COMPRESSED_GRAY_CONCRETE.get(), "compressed_gray_concrete", "block/compressed/concrete/compressed_gray_concrete");
+        singleTextureBlock(Registration.COMPRESSED_GREEN_CONCRETE.get(), "compressed_green_concrete", "block/compressed/concrete/compressed_green_concrete");
+        singleTextureBlock(Registration.COMPRESSED_LIGHT_BLUE_CONCRETE.get(), "compressed_light_blue_concrete", "block/compressed/concrete/compressed_light_blue_concrete");
+        singleTextureBlock(Registration.COMPRESSED_LIGHT_GRAY_CONCRETE.get(), "compressed_light_gray_concrete", "block/compressed/concrete/compressed_light_gray_concrete");
+        singleTextureBlock(Registration.COMPRESSED_LIME_CONCRETE.get(), "compressed_lime_concrete", "block/compressed/concrete/compressed_lime_concrete");
+        singleTextureBlock(Registration.COMPRESSED_MAGENTA_CONCRETE.get(), "compressed_magenta_concrete", "block/compressed/concrete/compressed_magenta_concrete");
+        singleTextureBlock(Registration.COMPRESSED_ORANGE_CONCRETE.get(), "compressed_orange_concrete", "block/compressed/concrete/compressed_orange_concrete");
+        singleTextureBlock(Registration.COMPRESSED_PINK_CONCRETE.get(), "compressed_pink_concrete", "block/compressed/concrete/compressed_pink_concrete");
+        singleTextureBlock(Registration.COMPRESSED_PURPLE_CONCRETE.get(), "compressed_purple_concrete", "block/compressed/concrete/compressed_purple_concrete");
+        singleTextureBlock(Registration.COMPRESSED_RED_CONCRETE.get(), "compressed_red_concrete", "block/compressed/concrete/compressed_red_concrete");
+        singleTextureBlock(Registration.COMPRESSED_WHITE_CONCRETE.get(), "compressed_white_concrete", "block/compressed/concrete/compressed_white_concrete");
+        singleTextureBlock(Registration.COMPRESSED_YELLOW_CONCRETE.get(), "compressed_yellow_concrete", "block/compressed/concrete/compressed_yellow_concrete");
+
+        //Concrete Powder
+        singleTextureBlock(Registration.COMPRESSED_BLACK_CONCRETE_POWDER.get(), "compressed_black_concrete_powder", "block/compressed/concrete/compressed_black_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_BLUE_CONCRETE_POWDER.get(), "compressed_blue_concrete_powder", "block/compressed/concrete/compressed_blue_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_BROWN_CONCRETE_POWDER.get(), "compressed_brown_concrete_powder", "block/compressed/concrete/compressed_brown_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_CYAN_CONCRETE_POWDER.get(), "compressed_cyan_concrete_powder", "block/compressed/concrete/compressed_cyan_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_GRAY_CONCRETE_POWDER.get(), "compressed_gray_concrete_powder", "block/compressed/concrete/compressed_gray_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_GREEN_CONCRETE_POWDER.get(), "compressed_green_concrete_powder", "block/compressed/concrete/compressed_green_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_LIGHT_BLUE_CONCRETE_POWDER.get(), "compressed_light_blue_concrete_powder", "block/compressed/concrete/compressed_light_blue_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_LIGHT_GRAY_CONCRETE_POWDER.get(), "compressed_light_gray_concrete_powder", "block/compressed/concrete/compressed_light_gray_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_LIME_CONCRETE_POWDER.get(), "compressed_lime_concrete_powder", "block/compressed/concrete/compressed_lime_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_MAGENTA_CONCRETE_POWDER.get(), "compressed_magenta_concrete_powder", "block/compressed/concrete/compressed_magenta_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_ORANGE_CONCRETE_POWDER.get(), "compressed_orange_concrete_powder", "block/compressed/concrete/compressed_orange_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_PINK_CONCRETE_POWDER.get(), "compressed_pink_concrete_powder", "block/compressed/concrete/compressed_pink_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_PURPLE_CONCRETE_POWDER.get(), "compressed_purple_concrete_powder", "block/compressed/concrete/compressed_purple_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_RED_CONCRETE_POWDER.get(), "compressed_red_concrete_powder", "block/compressed/concrete/compressed_red_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_WHITE_CONCRETE_POWDER.get(), "compressed_white_concrete_powder", "block/compressed/concrete/compressed_white_concrete_powder");
+        singleTextureBlock(Registration.COMPRESSED_YELLOW_CONCRETE_POWDER.get(), "compressed_yellow_concrete_powder", "block/compressed/concrete/compressed_yellow_concrete_powder");
+
     }
 
     private void registerCompressor()

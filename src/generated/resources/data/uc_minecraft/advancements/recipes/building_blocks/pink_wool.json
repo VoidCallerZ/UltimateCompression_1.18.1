@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc_minecraft:pink_wool"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:pink_wool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:pink_wool"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc_minecraft:pink_wool"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:pink_wool",
+      "has_the_recipe"
+    ]
+  ]
+}

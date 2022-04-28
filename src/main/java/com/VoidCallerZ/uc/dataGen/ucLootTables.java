@@ -89,5 +89,60 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(Registration.COMPRESSED_CRIMSON_PLANKS.get(), createSimpleTable("compressed_crimson_planks", Registration.COMPRESSED_CRIMSON_PLANKS.get()));
         lootTables.put(Registration.COMPRESSED_WARPED_STEM.get(), createSimpleTable("compressed_warped_stem", Registration.COMPRESSED_WARPED_STEM.get()));
         lootTables.put(Registration.COMPRESSED_WARPED_PLANKS.get(), createSimpleTable("compressed_warped_planks", Registration.COMPRESSED_WARPED_PLANKS.get()));
+
+        //Wool
+        lootTables.put(Registration.COMPRESSED_BLACK_WOOL.get(), createSimpleTable("compressed_black_wool", Registration.COMPRESSED_BLACK_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_BLUE_WOOL.get(), createSimpleTable("compressed_blue_wool", Registration.COMPRESSED_BLUE_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_BROWN_WOOL.get(), createSimpleTable("compressed_brown_wool", Registration.COMPRESSED_BROWN_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_CYAN_WOOL.get(), createSimpleTable("compressed_cyan_wool", Registration.COMPRESSED_CYAN_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_GRAY_WOOL.get(), createSimpleTable("compressed_gray_wool", Registration.COMPRESSED_GRAY_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_GREEN_WOOL.get(), createSimpleTable("compressed_green_wool", Registration.COMPRESSED_GREEN_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_LIGHT_BLUE_WOOL.get(), createSimpleTable("compressed_light_blue_wool", Registration.COMPRESSED_LIGHT_BLUE_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_LIGHT_GRAY_WOOL.get(), createSimpleTable("compressed_light_gray_wool", Registration.COMPRESSED_LIGHT_GRAY_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_LIME_WOOL.get(), createSimpleTable("compressed_lime_wool", Registration.COMPRESSED_LIME_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_MAGENTA_WOOL.get(), createSimpleTable("compressed_magenta_wool", Registration.COMPRESSED_MAGENTA_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_ORANGE_WOOL.get(), createSimpleTable("compressed_orange_wool", Registration.COMPRESSED_ORANGE_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_PINK_WOOL.get(), createSimpleTable("compressed_pink_wool", Registration.COMPRESSED_PINK_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_PURPLE_WOOL.get(), createSimpleTable("compressed_purple_wool", Registration.COMPRESSED_PURPLE_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_RED_WOOL.get(), createSimpleTable("compressed_red_wool", Registration.COMPRESSED_RED_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_WHITE_WOOL.get(), createSimpleTable("compressed_white_wool", Registration.COMPRESSED_WHITE_WOOL.get()));
+        lootTables.put(Registration.COMPRESSED_YELLOW_WOOL.get(), createSimpleTable("compressed_yellow_wool", Registration.COMPRESSED_YELLOW_WOOL.get()));
+
+        //Concrete
+        lootTables.put(Registration.COMPRESSED_BLACK_CONCRETE.get(), createSimpleTable("compressed_black_concrete", Registration.COMPRESSED_BLACK_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_BLUE_CONCRETE.get(), createSimpleTable("compressed_blue_concrete", Registration.COMPRESSED_BLUE_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_BROWN_CONCRETE.get(), createSimpleTable("compressed_brown_concrete", Registration.COMPRESSED_BROWN_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_CYAN_CONCRETE.get(), createSimpleTable("compressed_cyan_concrete", Registration.COMPRESSED_CYAN_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_GRAY_CONCRETE.get(), createSimpleTable("compressed_gray_concrete", Registration.COMPRESSED_GRAY_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_GREEN_CONCRETE.get(), createSimpleTable("compressed_green_concrete", Registration.COMPRESSED_GREEN_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_LIGHT_BLUE_CONCRETE.get(), createSimpleTable("compressed_light_blue_concrete", Registration.COMPRESSED_LIGHT_BLUE_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_LIGHT_GRAY_CONCRETE.get(), createSimpleTable("compressed_light_gray_concrete", Registration.COMPRESSED_LIGHT_GRAY_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_LIME_CONCRETE.get(), createSimpleTable("compressed_lime_concrete", Registration.COMPRESSED_LIME_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_MAGENTA_CONCRETE.get(), createSimpleTable("compressed_magenta_concrete", Registration.COMPRESSED_MAGENTA_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_ORANGE_CONCRETE.get(), createSimpleTable("compressed_orange_concrete", Registration.COMPRESSED_ORANGE_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_PINK_CONCRETE.get(), createSimpleTable("compressed_pink_concrete", Registration.COMPRESSED_PINK_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_PURPLE_CONCRETE.get(), createSimpleTable("compressed_purple_concrete", Registration.COMPRESSED_PURPLE_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_RED_CONCRETE.get(), createSimpleTable("compressed_red_concrete", Registration.COMPRESSED_RED_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_WHITE_CONCRETE.get(), createSimpleTable("compressed_white_concrete", Registration.COMPRESSED_WHITE_CONCRETE.get()));
+        lootTables.put(Registration.COMPRESSED_YELLOW_CONCRETE.get(), createSimpleTable("compressed_yellow_concrete", Registration.COMPRESSED_YELLOW_CONCRETE.get()));
+
+        //Concrete Powder
+        lootTables.put(Registration.COMPRESSED_BLACK_CONCRETE_POWDER.get(), createSimpleTable("compressed_black_concrete_powder", Registration.COMPRESSED_BLACK_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_BLUE_CONCRETE_POWDER.get(), createSimpleTable("compressed_blue_concrete_powder", Registration.COMPRESSED_BLUE_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_BROWN_CONCRETE_POWDER.get(), createSimpleTable("compressed_brown_concrete_powder", Registration.COMPRESSED_BROWN_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_CYAN_CONCRETE_POWDER.get(), createSimpleTable("compressed_cyan_concrete_powder", Registration.COMPRESSED_CYAN_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_GRAY_CONCRETE_POWDER.get(), createSimpleTable("compressed_gray_concrete_powder", Registration.COMPRESSED_GRAY_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_GREEN_CONCRETE_POWDER.get(), createSimpleTable("compressed_green_concrete_powder", Registration.COMPRESSED_GREEN_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_LIGHT_BLUE_CONCRETE_POWDER.get(), createSimpleTable("compressed_light_blue_concrete_powder", Registration.COMPRESSED_LIGHT_BLUE_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_LIGHT_GRAY_CONCRETE_POWDER.get(), createSimpleTable("compressed_light_gray_concrete_powder", Registration.COMPRESSED_LIGHT_GRAY_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_LIME_CONCRETE_POWDER.get(), createSimpleTable("compressed_lime_concrete_powder", Registration.COMPRESSED_LIME_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_MAGENTA_CONCRETE_POWDER.get(), createSimpleTable("compressed_magenta_concrete_powder", Registration.COMPRESSED_MAGENTA_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_ORANGE_CONCRETE_POWDER.get(), createSimpleTable("compressed_orange_concrete_powder", Registration.COMPRESSED_ORANGE_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_PINK_CONCRETE_POWDER.get(), createSimpleTable("compressed_pink_concrete_powder", Registration.COMPRESSED_PINK_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_PURPLE_CONCRETE_POWDER.get(), createSimpleTable("compressed_purple_concrete_powder", Registration.COMPRESSED_PURPLE_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_RED_CONCRETE_POWDER.get(), createSimpleTable("compressed_red_concrete_powder", Registration.COMPRESSED_RED_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_WHITE_CONCRETE_POWDER.get(), createSimpleTable("compressed_white_concrete_powder", Registration.COMPRESSED_WHITE_CONCRETE_POWDER.get()));
+        lootTables.put(Registration.COMPRESSED_YELLOW_CONCRETE_POWDER.get(), createSimpleTable("compressed_yellow_concrete_powder", Registration.COMPRESSED_YELLOW_CONCRETE_POWDER.get()));
+
     }
 }

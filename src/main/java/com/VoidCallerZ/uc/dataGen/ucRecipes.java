@@ -129,38 +129,76 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SOUL_SOIL.get(), Items.SOUL_SOIL, 9, consumer);
 
         //Logs & Planks
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ACACIA_LOG.get(),
-                Items.ACACIA_LOG, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ACACIA_PLANKS.get(),
-                Items.ACACIA_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BIRCH_LOG.get(),
-                Items.BIRCH_LOG, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BIRCH_PLANKS.get(),
-                Items.BIRCH_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DARK_OAK_LOG.get(),
-                Items.DARK_OAK_LOG, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DARK_OAK_PLANKS.get(),
-                Items.DARK_OAK_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_JUNGLE_LOG.get(),
-                Items.JUNGLE_LOG, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_JUNGLE_PLANKS.get(),
-                Items.JUNGLE_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_OAK_LOG.get(),
-                Items.OAK_LOG, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_OAK_PLANKS.get(),
-                Items.OAK_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SPRUCE_LOG.get(),
-                Items.SPRUCE_LOG, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SPRUCE_PLANKS.get(),
-                Items.SPRUCE_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CRIMSON_STEM.get(),
-                Items.CRIMSON_STEM, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CRIMSON_PLANKS.get(),
-                Items.CRIMSON_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_WARPED_STEM.get(),
-                Items.WARPED_STEM, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_WARPED_PLANKS.get(),
-                Items.WARPED_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ACACIA_LOG.get(), Items.ACACIA_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ACACIA_PLANKS.get(), Items.ACACIA_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BIRCH_LOG.get(), Items.BIRCH_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BIRCH_PLANKS.get(), Items.BIRCH_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DARK_OAK_LOG.get(), Items.DARK_OAK_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DARK_OAK_PLANKS.get(), Items.DARK_OAK_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_JUNGLE_LOG.get(), Items.JUNGLE_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_JUNGLE_PLANKS.get(), Items.JUNGLE_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_OAK_LOG.get(), Items.OAK_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_OAK_PLANKS.get(), Items.OAK_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SPRUCE_LOG.get(), Items.SPRUCE_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SPRUCE_PLANKS.get(), Items.SPRUCE_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CRIMSON_STEM.get(), Items.CRIMSON_STEM, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CRIMSON_PLANKS.get(), Items.CRIMSON_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_WARPED_STEM.get(), Items.WARPED_STEM, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_WARPED_PLANKS.get(), Items.WARPED_PLANKS, 9, consumer);
+
+        //Wool
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BLACK_WOOL.get(), Items.BLACK_WOOL, ColorBlockType.WOOL, Items.BLACK_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BLUE_WOOL.get(), Items.BLUE_WOOL, ColorBlockType.WOOL, Items.BLUE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BROWN_WOOL.get(), Items.BROWN_WOOL, ColorBlockType.WOOL, Items.BROWN_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_CYAN_WOOL.get(), Items.CYAN_WOOL, ColorBlockType.WOOL, Items.CYAN_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_GRAY_WOOL.get(), Items.GRAY_WOOL, ColorBlockType.WOOL, Items.GRAY_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_GREEN_WOOL.get(), Items.GREEN_WOOL, ColorBlockType.WOOL, Items.GREEN_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIGHT_BLUE_WOOL.get(), Items.LIGHT_BLUE_WOOL, ColorBlockType.WOOL, Items.LIGHT_BLUE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIGHT_GRAY_WOOL.get(), Items.LIGHT_GRAY_WOOL, ColorBlockType.WOOL, Items.LIGHT_GRAY_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIME_WOOL.get(), Items.LIME_WOOL, ColorBlockType.WOOL, Items.LIME_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_MAGENTA_WOOL.get(), Items.MAGENTA_WOOL, ColorBlockType.WOOL, Items.MAGENTA_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_ORANGE_WOOL.get(), Items.ORANGE_WOOL, ColorBlockType.WOOL, Items.ORANGE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_PINK_WOOL.get(), Items.PINK_WOOL, ColorBlockType.WOOL, Items.PINK_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_PURPLE_WOOL.get(), Items.PURPLE_WOOL, ColorBlockType.WOOL, Items.PURPLE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_RED_WOOL.get(), Items.RED_WOOL, ColorBlockType.WOOL, Items.RED_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_WHITE_WOOL.get(), Items.WHITE_WOOL, ColorBlockType.WOOL, Items.WHITE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_YELLOW_WOOL.get(), Items.YELLOW_WOOL, ColorBlockType.WOOL, Items.YELLOW_DYE, consumer);
+
+        //Concrete
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BLACK_CONCRETE.get(), Items.BLACK_CONCRETE, ColorBlockType.CONCRETE, Items.BLACK_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BLUE_CONCRETE.get(), Items.BLUE_CONCRETE, ColorBlockType.CONCRETE, Items.BLUE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BROWN_CONCRETE.get(), Items.BROWN_CONCRETE, ColorBlockType.CONCRETE, Items.BROWN_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_CYAN_CONCRETE.get(), Items.CYAN_CONCRETE, ColorBlockType.CONCRETE, Items.CYAN_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_GRAY_CONCRETE.get(), Items.GRAY_CONCRETE, ColorBlockType.CONCRETE, Items.GRAY_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_GREEN_CONCRETE.get(), Items.GREEN_CONCRETE, ColorBlockType.CONCRETE, Items.GREEN_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIGHT_BLUE_CONCRETE.get(), Items.LIGHT_BLUE_CONCRETE, ColorBlockType.CONCRETE, Items.LIGHT_BLUE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIGHT_GRAY_CONCRETE.get(), Items.LIGHT_GRAY_CONCRETE, ColorBlockType.CONCRETE, Items.LIGHT_GRAY_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIME_CONCRETE.get(), Items.LIME_CONCRETE, ColorBlockType.CONCRETE, Items.LIME_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_MAGENTA_CONCRETE.get(), Items.MAGENTA_CONCRETE, ColorBlockType.CONCRETE, Items.MAGENTA_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_ORANGE_CONCRETE.get(), Items.ORANGE_CONCRETE, ColorBlockType.CONCRETE, Items.ORANGE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_PINK_CONCRETE.get(), Items.PINK_CONCRETE, ColorBlockType.CONCRETE, Items.PINK_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_PURPLE_CONCRETE.get(), Items.PURPLE_CONCRETE, ColorBlockType.CONCRETE, Items.PURPLE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_RED_CONCRETE.get(), Items.RED_CONCRETE, ColorBlockType.CONCRETE, Items.RED_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_WHITE_CONCRETE.get(), Items.WHITE_CONCRETE, ColorBlockType.CONCRETE, Items.WHITE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_YELLOW_CONCRETE.get(), Items.YELLOW_CONCRETE, ColorBlockType.CONCRETE, Items.YELLOW_DYE, consumer);
+
+        //Concrete Powder
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BLACK_CONCRETE_POWDER.get(), Items.BLACK_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.BLACK_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BLUE_CONCRETE_POWDER.get(), Items.BLUE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.BLUE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BROWN_CONCRETE_POWDER.get(), Items.BROWN_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.BROWN_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_CYAN_CONCRETE_POWDER.get(), Items.CYAN_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.CYAN_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_GRAY_CONCRETE_POWDER.get(), Items.GRAY_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.GRAY_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_GREEN_CONCRETE_POWDER.get(), Items.GREEN_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.GREEN_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIGHT_BLUE_CONCRETE_POWDER.get(), Items.LIGHT_BLUE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.LIGHT_BLUE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIGHT_GRAY_CONCRETE_POWDER.get(), Items.LIGHT_GRAY_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.LIGHT_GRAY_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIME_CONCRETE_POWDER.get(), Items.LIME_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.LIME_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_MAGENTA_CONCRETE_POWDER.get(), Items.MAGENTA_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.MAGENTA_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_ORANGE_CONCRETE_POWDER.get(), Items.ORANGE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.ORANGE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_PINK_CONCRETE_POWDER.get(), Items.PINK_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.PINK_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_PURPLE_CONCRETE_POWDER.get(), Items.PURPLE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.PURPLE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_RED_CONCRETE_POWDER.get(), Items.RED_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.RED_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_WHITE_CONCRETE_POWDER.get(), Items.WHITE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.WHITE_DYE, consumer);
+        CompressedWoolRecipeBuilder(Registration.COMPRESSED_YELLOW_CONCRETE_POWDER.get(), Items.YELLOW_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.YELLOW_DYE, consumer);
 
         //Compressed Iron Ingot
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.COMPRESSED_IRON_ORE.get()), Registration.COMPRESSED_IRON_INGOT.get(), 1.0f, 100)
@@ -293,6 +331,8 @@ public class ucRecipes extends BaseRecipeProvider
 
         //Single Items
         MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_FLINT.get(), Items.FLINT, 9, consumer);
+        MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_STICK.get(), Items.STICK, 9, consumer);
+        MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_LEATHER.get(), Items.LEATHER, 9, consumer);
 
         //Arrows
         ShapedRecipeBuilder.shaped(ItemRegistration.COMPRESSED_ARROW.get(), 4)
@@ -325,9 +365,24 @@ public class ucRecipes extends BaseRecipeProvider
                 .unlockedBy("has_" + Items.LINGERING_POTION.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.LINGERING_POTION))
                 .save(consumer);
 
-//        UcTippedArrowRecipe ucTippedArrowRecipe = new UcTippedArrowRecipe(new ResourceLocation("item/generated"));
-//        SpecialRecipeBuilder.special(ucTippedArrowRecipe.getSerializer()).save(consumer, "compressed_tipped_arrow");
+        ShapedRecipeBuilder.shaped(Items.TORCH, 36)
+                .pattern("x")
+                .pattern("s")
+                .define('x', Registration.COMPRESSED_COAL.get())
+                .define('s', ItemRegistration.COMPRESSED_STICK.get())
+                .group("uc")
+                .unlockedBy("has_" + ItemRegistration.COMPRESSED_STICK.get().getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_STICK.get()))
+                .save(consumer);
 
-        //SpecialRecipeBuilder.special(UcRecipeSerializer.COMPRESSED_TIPPED_ARROW).save(consumer, "compressed_tipped_arrow");
+        ShapedRecipeBuilder.shaped(Items.SOUL_TORCH, 36)
+                .pattern("x")
+                .pattern("s")
+                .pattern("y")
+                .define('x', Registration.COMPRESSED_COAL.get())
+                .define('s', ItemRegistration.COMPRESSED_STICK.get())
+                .define('y', Registration.COMPRESSED_SOUL_SAND.get())
+                .group("uc")
+                .unlockedBy("has_" + ItemRegistration.COMPRESSED_STICK.get().getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_STICK.get()))
+                .save(consumer);
     }
 }

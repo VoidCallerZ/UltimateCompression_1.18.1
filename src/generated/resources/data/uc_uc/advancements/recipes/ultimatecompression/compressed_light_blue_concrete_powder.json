@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc_uc:compressed_light_blue_concrete_powder"
+    ]
+  },
+  "criteria": {
+    "has_uc:compressed_light_blue_concrete_powder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:light_blue_concrete_powder"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc_uc:compressed_light_blue_concrete_powder"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_light_blue_concrete_powder",
+      "has_the_recipe"
+    ]
+  ]
+}

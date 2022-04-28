@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc_uc:compressed_red_concrete_1"
+    ]
+  },
+  "criteria": {
+    "has_uc:compressed_red_concrete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_red_concrete"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc_uc:compressed_red_concrete_1"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_red_concrete",
+      "has_the_recipe"
+    ]
+  ]
+}

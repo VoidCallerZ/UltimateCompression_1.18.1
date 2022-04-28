@@ -81,6 +81,60 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_WARPED_STEM.get(), "Compressed Warped Stem");
         add(Registration.COMPRESSED_WARPED_PLANKS.get(), "Compressed Warped Planks");
 
+        //Wool
+        add(Registration.COMPRESSED_BLACK_WOOL.get(), "Compressed Black Wool");
+        add(Registration.COMPRESSED_BLUE_WOOL.get(), "Compressed Blue Wool");
+        add(Registration.COMPRESSED_BROWN_WOOL.get(), "Compressed Brown Wool");
+        add(Registration.COMPRESSED_CYAN_WOOL.get(), "Compressed Cyan Wool");
+        add(Registration.COMPRESSED_GRAY_WOOL.get(), "Compressed Gray Wool");
+        add(Registration.COMPRESSED_GREEN_WOOL.get(), "Compressed Green Wool");
+        add(Registration.COMPRESSED_LIGHT_BLUE_WOOL.get(), "Compressed Light Blue Wool");
+        add(Registration.COMPRESSED_LIGHT_GRAY_WOOL.get(), "Compressed Light Gray Wool");
+        add(Registration.COMPRESSED_LIME_WOOL.get(), "Compressed Lime Wool");
+        add(Registration.COMPRESSED_MAGENTA_WOOL.get(), "Compressed Magenta Wool");
+        add(Registration.COMPRESSED_ORANGE_WOOL.get(), "Compressed Orange Wool");
+        add(Registration.COMPRESSED_PINK_WOOL.get(), "Compressed Pink Wool");
+        add(Registration.COMPRESSED_PURPLE_WOOL.get(), "Compressed Purple Wool");
+        add(Registration.COMPRESSED_RED_WOOL.get(), "Compressed Red Wool");
+        add(Registration.COMPRESSED_WHITE_WOOL.get(), "Compressed White Wool");
+        add(Registration.COMPRESSED_YELLOW_WOOL.get(), "Compressed Yellow Wool");
+
+        //Concrete
+        add(Registration.COMPRESSED_BLACK_CONCRETE.get(), "Compressed Black Concrete");
+        add(Registration.COMPRESSED_BLUE_CONCRETE.get(), "Compressed Blue Concrete");
+        add(Registration.COMPRESSED_BROWN_CONCRETE.get(), "Compressed Brown Concrete");
+        add(Registration.COMPRESSED_CYAN_CONCRETE.get(), "Compressed Cyan Concrete");
+        add(Registration.COMPRESSED_GRAY_CONCRETE.get(), "Compressed Gray Concrete");
+        add(Registration.COMPRESSED_GREEN_CONCRETE.get(), "Compressed Green Concrete");
+        add(Registration.COMPRESSED_LIGHT_BLUE_CONCRETE.get(), "Compressed Light Blue Concrete");
+        add(Registration.COMPRESSED_LIGHT_GRAY_CONCRETE.get(), "Compressed Light Gray Concrete");
+        add(Registration.COMPRESSED_LIME_CONCRETE.get(), "Compressed Lime Concrete");
+        add(Registration.COMPRESSED_MAGENTA_CONCRETE.get(), "Compressed Magenta Concrete");
+        add(Registration.COMPRESSED_ORANGE_CONCRETE.get(), "Compressed Orange Concrete");
+        add(Registration.COMPRESSED_PINK_CONCRETE.get(), "Compressed Pink Concrete");
+        add(Registration.COMPRESSED_PURPLE_CONCRETE.get(), "Compressed Purple Concrete");
+        add(Registration.COMPRESSED_RED_CONCRETE.get(), "Compressed Red Concrete");
+        add(Registration.COMPRESSED_WHITE_CONCRETE.get(), "Compressed White Concrete");
+        add(Registration.COMPRESSED_YELLOW_CONCRETE.get(), "Compressed Yellow Concrete");
+
+        //Concrete Powder
+        add(Registration.COMPRESSED_BLACK_CONCRETE_POWDER.get(), "Compressed Black Concrete Powder");
+        add(Registration.COMPRESSED_BLUE_CONCRETE_POWDER.get(), "Compressed Blue Concrete Powder");
+        add(Registration.COMPRESSED_BROWN_CONCRETE_POWDER.get(), "Compressed Brown Concrete Powder");
+        add(Registration.COMPRESSED_CYAN_CONCRETE_POWDER.get(), "Compressed Cyan Concrete Powder");
+        add(Registration.COMPRESSED_GRAY_CONCRETE_POWDER.get(), "Compressed Gray Concrete Powder");
+        add(Registration.COMPRESSED_GREEN_CONCRETE_POWDER.get(), "Compressed Green Concrete Powder");
+        add(Registration.COMPRESSED_LIGHT_BLUE_CONCRETE_POWDER.get(), "Compressed Light Blue Concrete Powder");
+        add(Registration.COMPRESSED_LIGHT_GRAY_CONCRETE_POWDER.get(), "Compressed Light Gray Concrete Powder");
+        add(Registration.COMPRESSED_LIME_CONCRETE_POWDER.get(), "Compressed Lime Concrete Powder");
+        add(Registration.COMPRESSED_MAGENTA_CONCRETE_POWDER.get(), "Compressed Magenta Concrete Powder");
+        add(Registration.COMPRESSED_ORANGE_CONCRETE_POWDER.get(), "Compressed Orange Concrete Powder");
+        add(Registration.COMPRESSED_PINK_CONCRETE_POWDER.get(), "Compressed Pink Concrete Powder");
+        add(Registration.COMPRESSED_PURPLE_CONCRETE_POWDER.get(), "Compressed Purple Concrete Powder");
+        add(Registration.COMPRESSED_RED_CONCRETE_POWDER.get(), "Compressed Red Concrete Powder");
+        add(Registration.COMPRESSED_WHITE_CONCRETE_POWDER.get(), "Compressed White Concrete Powder");
+        add(Registration.COMPRESSED_YELLOW_CONCRETE_POWDER.get(), "Compressed Yellow Concrete Powder");
+
         //Ingots & Chunks
         add(Registration.COMPRESSED_RAW_IRON.get(), "Compressed Raw Iron");
         add(Registration.COMPRESSED_IRON_INGOT.get(), "Compressed Iron Ingot");
@@ -220,6 +274,8 @@ public class ucLanguageProvider extends LanguageProvider
         //Single Items
         add(ItemRegistration.COMPRESSED_FLINT.get(), "Compressed Flint");
         add(ItemRegistration.COMPRESSED_QUARTZ.get(), "Compressed Quartz");
+        add(ItemRegistration.COMPRESSED_STICK.get(), "Compressed Stick");
+        add(ItemRegistration.COMPRESSED_LEATHER.get(), "Compressed Leather");
 
         //Arrows
         add(ItemRegistration.COMPRESSED_ARROW.get(), "Compressed Arrow");

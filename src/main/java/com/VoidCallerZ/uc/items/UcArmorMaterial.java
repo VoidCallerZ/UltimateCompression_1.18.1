@@ -13,6 +13,9 @@ import java.util.function.Supplier;
 
 public enum UcArmorMaterial implements ArmorMaterial
 {
+    COMPRESSED_LEATHER("compressed_leather", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> {
+        return Ingredient.of(Items.LEATHER);
+    }),
     COMPRESSED_IRON("compressed_iron", 15, new int[]{2, 5, 6, 2}, 12, SoundEvents.ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
         return Ingredient.of(Items.IRON_INGOT);
     }),

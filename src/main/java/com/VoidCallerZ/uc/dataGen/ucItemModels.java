@@ -6,7 +6,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-public class ucItemModels extends ItemModelProvider
+public class ucItemModels extends BaseItemModelProvider
 {
     public ucItemModels(DataGenerator generator, ExistingFileHelper helper)
     {
@@ -101,325 +101,188 @@ public class ucItemModels extends ItemModelProvider
         withExistingParent(Registration.COMPRESSED_WARPED_STEM_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_warped_stem"));
         withExistingParent(Registration.COMPRESSED_WARPED_PLANKS_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_warped_planks"));
 
+        //Wool
+        withExistingParent(Registration.COMPRESSED_BLACK_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_black_wool"));
+        withExistingParent(Registration.COMPRESSED_BLUE_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_blue_wool"));
+        withExistingParent(Registration.COMPRESSED_BROWN_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_brown_wool"));
+        withExistingParent(Registration.COMPRESSED_CYAN_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_cyan_wool"));
+        withExistingParent(Registration.COMPRESSED_GRAY_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_gray_wool"));
+        withExistingParent(Registration.COMPRESSED_GREEN_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_green_wool"));
+        withExistingParent(Registration.COMPRESSED_LIGHT_BLUE_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_light_blue_wool"));
+        withExistingParent(Registration.COMPRESSED_LIGHT_GRAY_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_light_gray_wool"));
+        withExistingParent(Registration.COMPRESSED_LIME_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_lime_wool"));
+        withExistingParent(Registration.COMPRESSED_MAGENTA_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_magenta_wool"));
+        withExistingParent(Registration.COMPRESSED_ORANGE_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_orange_wool"));
+        withExistingParent(Registration.COMPRESSED_PINK_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_pink_wool"));
+        withExistingParent(Registration.COMPRESSED_PURPLE_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_purple_wool"));
+        withExistingParent(Registration.COMPRESSED_RED_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_red_wool"));
+        withExistingParent(Registration.COMPRESSED_WHITE_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_white_wool"));
+        withExistingParent(Registration.COMPRESSED_YELLOW_WOOL_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_yellow_wool"));
+
+        //Concrete
+        withExistingParent(Registration.COMPRESSED_BLACK_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_black_concrete"));
+        withExistingParent(Registration.COMPRESSED_BLUE_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_blue_concrete"));
+        withExistingParent(Registration.COMPRESSED_BROWN_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_brown_concrete"));
+        withExistingParent(Registration.COMPRESSED_CYAN_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_cyan_concrete"));
+        withExistingParent(Registration.COMPRESSED_GRAY_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_gray_concrete"));
+        withExistingParent(Registration.COMPRESSED_GREEN_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_green_concrete"));
+        withExistingParent(Registration.COMPRESSED_LIGHT_BLUE_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_light_blue_concrete"));
+        withExistingParent(Registration.COMPRESSED_LIGHT_GRAY_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_light_gray_concrete"));
+        withExistingParent(Registration.COMPRESSED_LIME_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_lime_concrete"));
+        withExistingParent(Registration.COMPRESSED_MAGENTA_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_magenta_concrete"));
+        withExistingParent(Registration.COMPRESSED_ORANGE_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_orange_concrete"));
+        withExistingParent(Registration.COMPRESSED_PINK_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_pink_concrete"));
+        withExistingParent(Registration.COMPRESSED_PURPLE_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_purple_concrete"));
+        withExistingParent(Registration.COMPRESSED_RED_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_red_concrete"));
+        withExistingParent(Registration.COMPRESSED_WHITE_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_white_concrete"));
+        withExistingParent(Registration.COMPRESSED_YELLOW_CONCRETE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_yellow_concrete"));
+
+        //Concrete Powder
+        withExistingParent(Registration.COMPRESSED_BLACK_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_black_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_BLUE_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_blue_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_BROWN_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_brown_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_CYAN_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_cyan_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_GRAY_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_gray_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_GREEN_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_green_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_LIGHT_BLUE_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_light_blue_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_LIGHT_GRAY_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_light_gray_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_LIME_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_lime_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_MAGENTA_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_magenta_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_ORANGE_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_orange_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_PINK_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_pink_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_PURPLE_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_purple_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_RED_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_red_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_WHITE_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_white_concrete_powder"));
+        withExistingParent(Registration.COMPRESSED_YELLOW_CONCRETE_POWDER_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_yellow_concrete_powder"));
+
         withExistingParent(Registration.ULTIMATE_POWERGEN_ITEM.get().getRegistryName().getPath(), modLoc("block/powergen/main"));
         withExistingParent(Registration.COMPRESSOR_ITEM.get().getRegistryName().getPath(), modLoc("block/compressor"));
 
-        singleTexture(Registration.COMPRESSED_RAW_IRON.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/materials/compressed_raw_iron"));
-        singleTexture(Registration.COMPRESSED_IRON_INGOT.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/materials/compressed_iron_ingot"));
-        singleTexture(Registration.COMPRESSED_RAW_GOLD.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/materials/compressed_raw_gold"));
-        singleTexture(Registration.COMPRESSED_GOLD_INGOT.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/materials/compressed_gold_ingot"));
-        singleTexture(Registration.COMPRESSED_DIAMOND_GEM.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/materials/compressed_diamond"));
-        singleTexture(Registration.COMPRESSED_RAW_COPPER.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/materials/compressed_raw_copper"));
-        singleTexture(Registration.COMPRESSED_COPPER_INGOT.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/materials/compressed_copper_ingot"));
+        singleTextureGenerated(Registration.COMPRESSED_RAW_IRON.get(), "item/compressed/materials/compressed_raw_iron");
+        singleTextureGenerated(Registration.COMPRESSED_IRON_INGOT.get(), "item/compressed/materials/compressed_iron_ingot");
+        singleTextureGenerated(Registration.COMPRESSED_RAW_GOLD.get(), "item/compressed/materials/compressed_raw_gold");
+        singleTextureGenerated(Registration.COMPRESSED_GOLD_INGOT.get(), "item/compressed/materials/compressed_gold_ingot");
+        singleTextureGenerated(Registration.COMPRESSED_DIAMOND_GEM.get(), "item/compressed/materials/compressed_diamond");
+        singleTextureGenerated(Registration.COMPRESSED_RAW_COPPER.get(), "item/compressed/materials/compressed_raw_copper");
+        singleTextureGenerated(Registration.COMPRESSED_COPPER_INGOT.get(), "item/compressed/materials/compressed_copper_ingot");
 
-        singleTexture(Registration.COMPRESSED_COAL.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/materials/compressed_coal"));
-        singleTexture(Registration.COMPRESSED_EMERALD_GEM.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/materials/compressed_emerald"));
-        singleTexture(Registration.COMPRESSED_LAPIS.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/materials/compressed_lapis_lazuli"));
-        singleTexture(Registration.COMPRESSED_REDSTONE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/materials/compressed_redstone"));
-        singleTexture(Registration.COMPRESSED_NETHERITE_INGOT.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/materials/compressed_netherite_ingot"));
+        singleTextureGenerated(Registration.COMPRESSED_COAL.get(), "item/compressed/materials/compressed_coal");
+        singleTextureGenerated(Registration.COMPRESSED_EMERALD_GEM.get(), "item/compressed/materials/compressed_emerald");
+        singleTextureGenerated(Registration.COMPRESSED_LAPIS.get(), "item/compressed/materials/compressed_lapis_lazuli");
+        singleTextureGenerated(Registration.COMPRESSED_REDSTONE.get(), "item/compressed/materials/compressed_redstone");
+        singleTextureGenerated(Registration.COMPRESSED_NETHERITE_INGOT.get(), "item/compressed/materials/compressed_netherite_ingot");
 
         //TOOLS
         //Pickaxes
-        singleTexture(ToolRegistration.COMPRESSED_WOODEN_PICKAXE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_wooden_pickaxe"));
-        singleTexture(ToolRegistration.COMPRESSED_STONE_PICKAXE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_stone_pickaxe"));
-        singleTexture(ToolRegistration.COMPRESSED_IRON_PICKAXE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_iron_pickaxe"));
-        singleTexture(ToolRegistration.COMPRESSED_GOLD_PICKAXE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_golden_pickaxe"));
-        singleTexture(ToolRegistration.COMPRESSED_DIAMOND_PICKAXE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_diamond_pickaxe"));
-        singleTexture(ToolRegistration.COMPRESSED_NETHERITE_PICKAXE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_netherite_pickaxe"));
+        singleTextureHandheld(ToolRegistration.COMPRESSED_WOODEN_PICKAXE.get(), "item/compressed/tools/compressed_wooden_pickaxe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_STONE_PICKAXE.get(), "item/compressed/tools/compressed_stone_pickaxe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_IRON_PICKAXE.get(), "item/compressed/tools/compressed_iron_pickaxe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_GOLD_PICKAXE.get(), "item/compressed/tools/compressed_golden_pickaxe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_DIAMOND_PICKAXE.get(), "item/compressed/tools/compressed_diamond_pickaxe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_NETHERITE_PICKAXE.get(), "item/compressed/tools/compressed_netherite_pickaxe");
         //Axes
-        singleTexture(ToolRegistration.COMPRESSED_WOODEN_AXE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_wooden_axe"));
-        singleTexture(ToolRegistration.COMPRESSED_STONE_AXE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_stone_axe"));
-        singleTexture(ToolRegistration.COMPRESSED_IRON_AXE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_iron_axe"));
-        singleTexture(ToolRegistration.COMPRESSED_GOLD_AXE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_golden_axe"));
-        singleTexture(ToolRegistration.COMPRESSED_DIAMOND_AXE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_diamond_axe"));
-        singleTexture(ToolRegistration.COMPRESSED_NETHERITE_AXE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_netherite_axe"));
+        singleTextureHandheld(ToolRegistration.COMPRESSED_WOODEN_AXE.get(), "item/compressed/tools/compressed_wooden_axe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_STONE_AXE.get(), "item/compressed/tools/compressed_stone_axe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_IRON_AXE.get(), "item/compressed/tools/compressed_iron_axe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_GOLD_AXE.get(), "item/compressed/tools/compressed_golden_axe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_DIAMOND_AXE.get(), "item/compressed/tools/compressed_diamond_axe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_NETHERITE_AXE.get(), "item/compressed/tools/compressed_netherite_axe");
         //Shovels
-        singleTexture(ToolRegistration.COMPRESSED_WOODEN_SHOVEL.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_wooden_shovel"));
-        singleTexture(ToolRegistration.COMPRESSED_STONE_SHOVEL.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_stone_shovel"));
-        singleTexture(ToolRegistration.COMPRESSED_IRON_SHOVEL.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_iron_shovel"));
-        singleTexture(ToolRegistration.COMPRESSED_GOLD_SHOVEL.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_golden_shovel"));
-        singleTexture(ToolRegistration.COMPRESSED_DIAMOND_SHOVEL.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_diamond_shovel"));
-        singleTexture(ToolRegistration.COMPRESSED_NETHERITE_SHOVEL.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_netherite_shovel"));
+        singleTextureHandheld(ToolRegistration.COMPRESSED_WOODEN_SHOVEL.get(), "item/compressed/tools/compressed_wooden_shovel");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_STONE_SHOVEL.get(), "item/compressed/tools/compressed_stone_shovel");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_IRON_SHOVEL.get(), "item/compressed/tools/compressed_iron_shovel");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_GOLD_SHOVEL.get(), "item/compressed/tools/compressed_golden_shovel");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_DIAMOND_SHOVEL.get(), "item/compressed/tools/compressed_diamond_shovel");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_NETHERITE_SHOVEL.get(), "item/compressed/tools/compressed_netherite_shovel");
         //Swords
-        singleTexture(ToolRegistration.COMPRESSED_WOODEN_SWORD.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_wooden_sword"));
-        singleTexture(ToolRegistration.COMPRESSED_STONE_SWORD.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_stone_sword"));
-        singleTexture(ToolRegistration.COMPRESSED_IRON_SWORD.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_iron_sword"));
-        singleTexture(ToolRegistration.COMPRESSED_GOLD_SWORD.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_golden_sword"));
-        singleTexture(ToolRegistration.COMPRESSED_DIAMOND_SWORD.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_diamond_sword"));
-        singleTexture(ToolRegistration.COMPRESSED_NETHERITE_SWORD.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_netherite_sword"));
+        singleTextureHandheld(ToolRegistration.COMPRESSED_WOODEN_SWORD.get(), "item/compressed/tools/compressed_wooden_sword");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_STONE_SWORD.get(), "item/compressed/tools/compressed_stone_sword");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_IRON_SWORD.get(), "item/compressed/tools/compressed_iron_sword");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_GOLD_SWORD.get(), "item/compressed/tools/compressed_golden_sword");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_DIAMOND_SWORD.get(), "item/compressed/tools/compressed_diamond_sword");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_NETHERITE_SWORD.get(), "item/compressed/tools/compressed_netherite_sword");
         //Hoes
-        singleTexture(ToolRegistration.COMPRESSED_WOODEN_HOE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_wooden_hoe"));
-        singleTexture(ToolRegistration.COMPRESSED_STONE_HOE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_stone_hoe"));
-        singleTexture(ToolRegistration.COMPRESSED_IRON_HOE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_iron_hoe"));
-        singleTexture(ToolRegistration.COMPRESSED_GOLD_HOE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_golden_hoe"));
-        singleTexture(ToolRegistration.COMPRESSED_DIAMOND_HOE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_diamond_hoe"));
-        singleTexture(ToolRegistration.COMPRESSED_NETHERITE_HOE.get().getRegistryName().getPath(),
-                mcLoc("item/handheld"),
-                "layer0", modLoc("item/compressed/tools/compressed_netherite_hoe"));
+        singleTextureHandheld(ToolRegistration.COMPRESSED_WOODEN_HOE.get(), "item/compressed/tools/compressed_wooden_hoe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_STONE_HOE.get(), "item/compressed/tools/compressed_stone_hoe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_IRON_HOE.get(), "item/compressed/tools/compressed_iron_hoe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_GOLD_HOE.get(), "item/compressed/tools/compressed_golden_hoe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_DIAMOND_HOE.get(), "item/compressed/tools/compressed_diamond_hoe");
+        singleTextureHandheld(ToolRegistration.COMPRESSED_NETHERITE_HOE.get(), "item/compressed/tools/compressed_netherite_hoe");
 
         //ARMOR
+        //Leather Armor
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_LEATHER_HELMET.get(), "item/compressed/armor/compressed_leather_helmet");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_LEATHER_CHESTPLATE.get(), "item/compressed/armor/compressed_leather_chestplate");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_LEATHER_LEGGINGS.get(), "item/compressed/armor/compressed_leather_leggings");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_LEATHER_BOOTS.get(), "item/compressed/armor/compressed_leather_boots");
         //Iron Armor
-        singleTexture(ArmorRegistration.COMPRESSED_IRON_HELMET.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_iron_helmet"));
-        singleTexture(ArmorRegistration.COMPRESSED_IRON_CHESTPLATE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_iron_chestplate"));
-        singleTexture(ArmorRegistration.COMPRESSED_IRON_LEGGINGS.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_iron_leggings"));
-        singleTexture(ArmorRegistration.COMPRESSED_IRON_BOOTS.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_iron_boots"));
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_IRON_HELMET.get(), "item/compressed/armor/compressed_iron_helmet");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_IRON_CHESTPLATE.get(), "item/compressed/armor/compressed_iron_chestplate");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_IRON_LEGGINGS.get(), "item/compressed/armor/compressed_iron_leggings");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_IRON_BOOTS.get(), "item/compressed/armor/compressed_iron_boots");
         //Gold Armor
-        singleTexture(ArmorRegistration.COMPRESSED_GOLD_HELMET.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_golden_helmet"));
-        singleTexture(ArmorRegistration.COMPRESSED_GOLD_CHESTPLATE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_golden_chestplate"));
-        singleTexture(ArmorRegistration.COMPRESSED_GOLD_LEGGINGS.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_golden_leggings"));
-        singleTexture(ArmorRegistration.COMPRESSED_GOLD_BOOTS.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_golden_boots"));
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_GOLD_HELMET.get(), "item/compressed/armor/compressed_golden_helmet");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_GOLD_CHESTPLATE.get(), "item/compressed/armor/compressed_golden_chestplate");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_GOLD_LEGGINGS.get(), "item/compressed/armor/compressed_golden_leggings");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_GOLD_BOOTS.get(), "item/compressed/armor/compressed_golden_boots");
         //Diamond Armor
-        singleTexture(ArmorRegistration.COMPRESSED_DIAMOND_HELMET.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_diamond_helmet"));
-        singleTexture(ArmorRegistration.COMPRESSED_DIAMOND_CHESTPLATE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_diamond_chestplate"));
-        singleTexture(ArmorRegistration.COMPRESSED_DIAMOND_LEGGINGS.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_diamond_leggings"));
-        singleTexture(ArmorRegistration.COMPRESSED_DIAMOND_BOOTS.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_diamond_boots"));
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_DIAMOND_HELMET.get(), "item/compressed/armor/compressed_diamond_helmet");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_DIAMOND_CHESTPLATE.get(), "item/compressed/armor/compressed_diamond_chestplate");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_DIAMOND_LEGGINGS.get(), "item/compressed/armor/compressed_diamond_leggings");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_DIAMOND_BOOTS.get(), "item/compressed/armor/compressed_diamond_boots");
         //Netherite Armor
-        singleTexture(ArmorRegistration.COMPRESSED_NETHERITE_HELMET.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_netherite_helmet"));
-        singleTexture(ArmorRegistration.COMPRESSED_NETHERITE_CHESTPLATE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_netherite_chestplate"));
-        singleTexture(ArmorRegistration.COMPRESSED_NETHERITE_LEGGINGS.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_netherite_leggings"));
-        singleTexture(ArmorRegistration.COMPRESSED_NETHERITE_BOOTS.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/armor/compressed_netherite_boots"));
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_NETHERITE_HELMET.get(), "item/compressed/armor/compressed_netherite_helmet");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_NETHERITE_CHESTPLATE.get(), "item/compressed/armor/compressed_netherite_chestplate");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_NETHERITE_LEGGINGS.get(), "item/compressed/armor/compressed_netherite_leggings");
+        singleTextureGenerated(ArmorRegistration.COMPRESSED_NETHERITE_BOOTS.get(), "item/compressed/armor/compressed_netherite_boots");
 
         //FOOD
-        singleTexture(FoodRegistration.COMPRESSED_APPLE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_apple"));
-        singleTexture(FoodRegistration.COMPRESSED_BAKED_POTATO.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_baked_potato"));
-        singleTexture(FoodRegistration.COMPRESSED_BEEF.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_beef"));
-        singleTexture(FoodRegistration.COMPRESSED_BEETROOT.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_beetroot"));
-        singleTexture(FoodRegistration.COMPRESSED_BEETROOT_SOUP.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_beetroot_soup"));
-        singleTexture(FoodRegistration.COMPRESSED_BREAD.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_bread"));
-        singleTexture(FoodRegistration.COMPRESSED_CARROT.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_carrot"));
-        singleTexture(FoodRegistration.COMPRESSED_CHICKEN.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_chicken"));
-        singleTexture(FoodRegistration.COMPRESSED_COD.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_cod"));
-        singleTexture(FoodRegistration.COMPRESSED_COOKED_BEEF.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_cooked_beef"));
-        singleTexture(FoodRegistration.COMPRESSED_COOKED_CHICKEN.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_cooked_chicken"));
-        singleTexture(FoodRegistration.COMPRESSED_COOKED_COD.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_cooked_cod"));
-        singleTexture(FoodRegistration.COMPRESSED_COOKED_MUTTON.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_cooked_mutton"));
-        singleTexture(FoodRegistration.COMPRESSED_COOKED_PORKCHOP.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_cooked_porkchop"));
-        singleTexture(FoodRegistration.COMPRESSED_COOKED_RABBIT.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_cooked_rabbit"));
-        singleTexture(FoodRegistration.COMPRESSED_COOKED_SALMON.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_cooked_salmon"));
-        singleTexture(FoodRegistration.COMPRESSED_COOKIE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_cookie"));
-        singleTexture(FoodRegistration.COMPRESSED_DRIED_KELP.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_dried_kelp"));
-        singleTexture(FoodRegistration.COMPRESSED_GLOW_BERRIES.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_glow_berries"));
-        singleTexture(FoodRegistration.COMPRESSED_GOLDEN_APPLE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_golden_apple"));
-        singleTexture(FoodRegistration.COMPRESSED_ENCHANTED_GOLDEN_APPLE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_golden_apple"));
-        singleTexture(FoodRegistration.COMPRESSED_MELON_SLICE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_melon_slice"));
-        singleTexture(FoodRegistration.COMPRESSED_MUSHROOM_STEW.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_mushroom_stew"));
-        singleTexture(FoodRegistration.COMPRESSED_MUTTON.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_mutton"));
-        singleTexture(FoodRegistration.COMPRESSED_POISONOUS_POTATO.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_poisonous_potato"));
-        singleTexture(FoodRegistration.COMPRESSED_PORKCHOP.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_porkchop"));
-        singleTexture(FoodRegistration.COMPRESSED_POTATO.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_potato"));
-        singleTexture(FoodRegistration.COMPRESSED_PUFFERFISH.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_pufferfish"));
-        singleTexture(FoodRegistration.COMPRESSED_PUMPKIN_PIE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_pumpkin_pie"));
-        singleTexture(FoodRegistration.COMPRESSED_RABBIT.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_rabbit"));
-        singleTexture(FoodRegistration.COMPRESSED_RABBIT_STEW.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_rabbit_stew"));
-        singleTexture(FoodRegistration.COMPRESSED_ROTTEN_FLESH.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_rotten_flesh"));
-        singleTexture(FoodRegistration.COMPRESSED_SALMON.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_salmon"));
-        singleTexture(FoodRegistration.COMPRESSED_SPIDER_EYE.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_spider_eye"));
-        singleTexture(FoodRegistration.COMPRESSED_SWEET_BERRIES.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_sweet_berries"));
-        singleTexture(FoodRegistration.COMPRESSED_TROPICAL_FISH.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/food/compressed_tropical_fish"));
+        singleTextureGenerated(FoodRegistration.COMPRESSED_APPLE.get(), "item/compressed/food/compressed_apple");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_BAKED_POTATO.get(), "item/compressed/food/compressed_baked_potato");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_BEEF.get(), "item/compressed/food/compressed_beef");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_BEETROOT.get(), "item/compressed/food/compressed_beetroot");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_BEETROOT_SOUP.get(), "item/compressed/food/compressed_beetroot_soup");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_BREAD.get(), "item/compressed/food/compressed_bread");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_CARROT.get(), "item/compressed/food/compressed_carrot");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_CHICKEN.get(), "item/compressed/food/compressed_chicken");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_COD.get(), "item/compressed/food/compressed_cod");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_COOKED_BEEF.get(), "item/compressed/food/compressed_cooked_beef");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_COOKED_CHICKEN.get(), "item/compressed/food/compressed_cooked_chicken");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_COOKED_COD.get(), "item/compressed/food/compressed_cooked_cod");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_COOKED_MUTTON.get(), "item/compressed/food/compressed_cooked_mutton");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_COOKED_PORKCHOP.get(), "item/compressed/food/compressed_cooked_porkchop");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_COOKED_RABBIT.get(), "item/compressed/food/compressed_cooked_rabbit");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_COOKED_SALMON.get(), "item/compressed/food/compressed_cooked_salmon");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_COOKIE.get(), "item/compressed/food/compressed_cookie");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_DRIED_KELP.get(), "item/compressed/food/compressed_dried_kelp");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_GLOW_BERRIES.get(), "item/compressed/food/compressed_glow_berries");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_GOLDEN_APPLE.get(), "item/compressed/food/compressed_golden_apple");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_ENCHANTED_GOLDEN_APPLE.get(), "item/compressed/food/compressed_golden_apple");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_MELON_SLICE.get(), "item/compressed/food/compressed_melon_slice");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_MUSHROOM_STEW.get(), "item/compressed/food/compressed_mushroom_stew");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_MUTTON.get(), "item/compressed/food/compressed_mutton");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_POISONOUS_POTATO.get(), "item/compressed/food/compressed_poisonous_potato");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_PORKCHOP.get(), "item/compressed/food/compressed_porkchop");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_POTATO.get(), "item/compressed/food/compressed_potato");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_PUFFERFISH.get(), "item/compressed/food/compressed_pufferfish");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_PUMPKIN_PIE.get(), "item/compressed/food/compressed_pumpkin_pie");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_RABBIT.get(), "item/compressed/food/compressed_rabbit");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_RABBIT_STEW.get(), "item/compressed/food/compressed_rabbit_stew");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_ROTTEN_FLESH.get(), "item/compressed/food/compressed_rotten_flesh");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_SALMON.get(), "item/compressed/food/compressed_salmon");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_SPIDER_EYE.get(), "item/compressed/food/compressed_spider_eye");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_SWEET_BERRIES.get(), "item/compressed/food/compressed_sweet_berries");
+        singleTextureGenerated(FoodRegistration.COMPRESSED_TROPICAL_FISH.get(), "item/compressed/food/compressed_tropical_fish");
 
         //Single Items
-        singleTexture(ItemRegistration.COMPRESSED_FLINT.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/single/compressed_flint"));
-        singleTexture(ItemRegistration.COMPRESSED_QUARTZ.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/single/compressed_quartz"));
+        singleTextureGenerated(ItemRegistration.COMPRESSED_FLINT.get(), "item/compressed/single/compressed_flint");
+        singleTextureGenerated(ItemRegistration.COMPRESSED_QUARTZ.get(), "item/compressed/single/compressed_quartz");
+        singleTextureGenerated(ItemRegistration.COMPRESSED_STICK.get(), "item/compressed/single/compressed_stick");
+        singleTextureGenerated(ItemRegistration.COMPRESSED_LEATHER.get(), "item/compressed/single/compressed_leather");
 
         //Arrows
-        singleTexture(ItemRegistration.COMPRESSED_ARROW.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/arrows/compressed_arrow"));
-        singleTexture(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/arrows/compressed_spectral_arrow"));
-        singleTexture(ItemRegistration.COMPRESSED_TIPPED_ARROW.get().getRegistryName().getPath(),
-                mcLoc("item/generated"),
-                "layer0", modLoc("item/compressed/arrows/compressed_arrow"));
+        singleTextureGenerated(ItemRegistration.COMPRESSED_ARROW.get(), "item/compressed/arrows/compressed_arrow");
+        singleTextureGenerated(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get(), "item/compressed/arrows/compressed_spectral_arrow");
+        singleTextureGenerated(ItemRegistration.COMPRESSED_TIPPED_ARROW.get(), "item/compressed/arrows/compressed_arrow");
     }
 }
