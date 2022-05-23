@@ -76,6 +76,7 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(Registration.COMPRESSED_SAND.get(), "compressed_sand", "block/compressed/basic/compressed_sand");
         singleTextureBlock(Registration.COMPRESSED_STONE.get(), "compressed_stone", "block/compressed/basic/compressed_stone");
         singleTextureBlock(Registration.COMPRESSED_TUFF.get(), "compressed_tuff", "block/compressed/basic/compressed_tuff");
+        singleTextureBlock(Registration.COMPRESSED_CLAY.get(), "compressed_clay", "block/compressed/basic/compressed_clay");
 
         //Nether Blocks
         singleTextureBlock(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "compressed_nether_quartz_block", "block/compressed/nether/compressed_quartz_block_side");

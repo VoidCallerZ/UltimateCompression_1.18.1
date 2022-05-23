@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc_minecraft:clay"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:clay": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_clay"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc_minecraft:clay"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:clay",
+      "has_the_recipe"
+    ]
+  ]
+}

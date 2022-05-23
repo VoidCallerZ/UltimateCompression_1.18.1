@@ -90,34 +90,21 @@ public class ucRecipes extends BaseRecipeProvider
                 Registration.COMPRESSED_RAW_COPPER.get(), 9, consumer);
 
         //Basic Blocks
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ANDESITE.get(),
-                Items.ANDESITE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CALCITE.get(),
-                Items.CALCITE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_COBBLED_DEEPSLATE.get(),
-                Items.COBBLED_DEEPSLATE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_COBBLESTONE.get(),
-                Items.COBBLESTONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DEEPSLATE.get(),
-                Items.DEEPSLATE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DIORITE.get(),
-                Items.DIORITE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DIRT.get(),
-                Items.DIRT, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GRANITE.get(),
-                Items.GRANITE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GRAVEL.get(),
-                Items.GRAVEL, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHERRACK.get(),
-                Items.NETHERRACK, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RED_SAND.get(),
-                Items.RED_SAND, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SAND.get(),
-                Items.SAND, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_STONE.get(),
-                Items.STONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_TUFF.get(),
-                Items.TUFF, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ANDESITE.get(), Items.ANDESITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CALCITE.get(), Items.CALCITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_COBBLED_DEEPSLATE.get(), Items.COBBLED_DEEPSLATE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_COBBLESTONE.get(), Items.COBBLESTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DEEPSLATE.get(), Items.DEEPSLATE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DIORITE.get(), Items.DIORITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DIRT.get(), Items.DIRT, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GRANITE.get(), Items.GRANITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GRAVEL.get(), Items.GRAVEL, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHERRACK.get(), Items.NETHERRACK, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RED_SAND.get(), Items.RED_SAND, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SAND.get(), Items.SAND, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_STONE.get(), Items.STONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_TUFF.get(), Items.TUFF, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CLAY.get(), Items.CLAY, 9, consumer);
 
         //Nether Blocks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), Items.QUARTZ_BLOCK, 9, consumer);

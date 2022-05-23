@@ -164,6 +164,7 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_SAND.get(), "Compressed Sand");
         add(Registration.COMPRESSED_STONE.get(), "Compressed Stone");
         add(Registration.COMPRESSED_TUFF.get(), "Compressed Tuff");
+        add(Registration.COMPRESSED_CLAY.get(), "Compressed Clay");
 
         //Nether Blocks
         add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "Compressed Block of Quartz");

@@ -62,6 +62,7 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(Registration.COMPRESSED_SAND.get(), createSimpleTable("compressed_sand", Registration.COMPRESSED_SAND.get()));
         lootTables.put(Registration.COMPRESSED_STONE.get(), createSimpleTable("compressed_stone", Registration.COMPRESSED_STONE.get()));
         lootTables.put(Registration.COMPRESSED_TUFF.get(), createSimpleTable("compressed_tuff", Registration.COMPRESSED_TUFF.get()));
+        lootTables.put(Registration.COMPRESSED_CLAY.get(), createSilkTouchTable("compressed_clay", Registration.COMPRESSED_CLAY.get(), Items.CLAY_BALL, 3, 8));
 
         //Nether Blocks
         lootTables.put(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), createSimpleTable("compressed_nether_quartz_block", Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get()));

@@ -81,7 +81,8 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(Registration.COMPRESSED_RED_SAND.get())
                 .add(Registration.COMPRESSED_SAND.get())
                 .add(Registration.COMPRESSED_SOUL_SAND.get())
-                .add(Registration.COMPRESSED_SOUL_SOIL.get());
+                .add(Registration.COMPRESSED_SOUL_SOIL.get())
+                .add(Registration.COMPRESSED_CLAY.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(Registration.COMPRESSED_IRON_ORE.get())

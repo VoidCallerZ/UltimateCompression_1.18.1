@@ -73,6 +73,7 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(Registration.COMPRESSED_SAND_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_sand"));
         withExistingParent(Registration.COMPRESSED_STONE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_stone"));
         withExistingParent(Registration.COMPRESSED_TUFF_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_tuff"));
+        withExistingParent(Registration.COMPRESSED_CLAY.get().getRegistryName().getPath(), modLoc("block/compressed_clay"));
 
         //Nether Blocks
         withExistingParent(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_nether_quartz_block"));

@@ -156,6 +156,8 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_STONE_ITEM = fromBlock(COMPRESSED_STONE);
     public static final RegistryObject<Block> COMPRESSED_TUFF = BLOCKS.register("compressed_tuff", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_TUFF_ITEM = fromBlock(COMPRESSED_TUFF);
+    public static final RegistryObject<Block> COMPRESSED_CLAY = BLOCKS.register("compressed_clay", () -> new Block(SOFT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CLAY_ITEM = fromBlock(COMPRESSED_CLAY);
 
     //Nether Blocks
     public static final RegistryObject<Block> COMPRESSED_NETHER_QUARTZ_BLOCK = BLOCKS.register("compressed_nether_quartz_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(0.8F)));
