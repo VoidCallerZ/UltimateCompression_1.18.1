@@ -1,9 +1,12 @@
 package com.VoidCallerZ.uc.dataGen;
 
+import com.VoidCallerZ.uc.dataGen.custom.CompressorRecipeBuilder;
 import com.VoidCallerZ.uc.items.arrows.UcTippedArrowRecipe;
+import com.VoidCallerZ.uc.recipe.CompressorItemRecipe;
 import com.VoidCallerZ.uc.setup.UcRecipeSerializer;
 import com.VoidCallerZ.uc.setup.registration.*;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
+import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
@@ -370,6 +373,34 @@ public class ucRecipes extends BaseRecipeProvider
                 .define('y', Registration.COMPRESSED_SOUL_SAND.get())
                 .group("uc")
                 .unlockedBy("has_" + ItemRegistration.COMPRESSED_STICK.get().getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_STICK.get()))
+                .save(consumer);
+
+        new CompressorRecipeBuilder(Items.COAL, Registration.COMPRESSED_COAL.get(), 9, 0)
+                .unlockedBy("compressor_has_" + Items.COAL, InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_INGOT))
+                .save(consumer);
+        new CompressorRecipeBuilder(Items.COPPER_INGOT, Registration.COMPRESSED_COPPER_INGOT.get(), 9, 0)
+                .unlockedBy("compressor_has_" + Items.COPPER_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(Items.COPPER_INGOT))
+                .save(consumer);
+        new CompressorRecipeBuilder(Items.IRON_INGOT, Registration.COMPRESSED_IRON_INGOT.get(), 9, 0)
+                .unlockedBy("compressor_has_" + Items.IRON_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_INGOT))
+                .save(consumer);
+        new CompressorRecipeBuilder(Items.GOLD_INGOT, Registration.COMPRESSED_GOLD_INGOT.get(), 9, 0)
+                .unlockedBy("compressor_has_" + Items.GOLD_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(Items.GOLD_INGOT))
+                .save(consumer);
+        new CompressorRecipeBuilder(Items.DIAMOND, Registration.COMPRESSED_DIAMOND_GEM.get(), 9, 0)
+                .unlockedBy("compressor_has_" + Items.DIAMOND, InventoryChangeTrigger.TriggerInstance.hasItems(Items.DIAMOND))
+                .save(consumer);
+        new CompressorRecipeBuilder(Items.EMERALD, Registration.COMPRESSED_EMERALD_GEM.get(), 9, 0)
+                .unlockedBy("compressor_has_" + Items.EMERALD, InventoryChangeTrigger.TriggerInstance.hasItems(Items.EMERALD))
+                .save(consumer);
+        new CompressorRecipeBuilder(Items.LAPIS_LAZULI, Registration.COMPRESSED_LAPIS.get(), 9, 0)
+                .unlockedBy("compressor_has_" + Items.EMERALD, InventoryChangeTrigger.TriggerInstance.hasItems(Items.EMERALD))
+                .save(consumer);
+        new CompressorRecipeBuilder(Items.REDSTONE, Registration.COMPRESSED_REDSTONE.get(), 9, 0)
+                .unlockedBy("compressor_has_" + Items.EMERALD, InventoryChangeTrigger.TriggerInstance.hasItems(Items.EMERALD))
+                .save(consumer);
+        new CompressorRecipeBuilder(Items.NETHERITE_INGOT, Registration.COMPRESSED_NETHERITE_INGOT.get(), 9, 0)
+                .unlockedBy("compressor_has_" + Items.EMERALD, InventoryChangeTrigger.TriggerInstance.hasItems(Items.EMERALD))
                 .save(consumer);
     }
 }

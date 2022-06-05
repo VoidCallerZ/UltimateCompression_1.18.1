@@ -1,19 +1,20 @@
 package com.VoidCallerZ.uc.setup.registration;
 
 import com.VoidCallerZ.uc.UltimateCompression;
+import com.VoidCallerZ.uc.blocks.CompressorBlock;
 import com.VoidCallerZ.uc.blocks.UcFuelBlockItem;
+import com.VoidCallerZ.uc.blocks.entity.custom.CompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.machines.*;
+import com.VoidCallerZ.uc.blocks.screen.CompressorBlockMenu;
 import com.VoidCallerZ.uc.items.UcFuelItem;
 import com.VoidCallerZ.uc.setup.ModSetup;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.GravelBlock;
-import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.SandBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -21,6 +22,7 @@ import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.network.IContainerFactory;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -337,12 +339,19 @@ public class Registration
     public static final RegistryObject<MenuType<PowergenContainer>> ULTIMATE_POWERGEN_CONTAINER = CONTAINERS.register("ultimate_powergen", () -> IForgeMenuType.create((windowId, inv, data) -> new PowergenContainer(windowId, data.readBlockPos(), inv, inv.player)));
 
     //Compressor
-    public static final RegistryObject<CompressorBlock> COMPRESSOR = BLOCKS.register("compressor", CompressorBlock::new);
+    public static final RegistryObject<CompressorBlock> COMPRESSOR = BLOCKS.register("compressor", () -> new CompressorBlock(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSOR_ITEM = fromBlock(COMPRESSOR);
-    public static final RegistryObject<BlockEntityType<CompressorBE>> COMPRESSOR_BE = BLOCK_ENTITIES.register("compressor", () -> BlockEntityType.Builder.of(CompressorBE::new, COMPRESSOR.get()).build(null));
-    public static final RegistryObject<MenuType<CompressorContainer>> COMPRESSOR_CONTAINER = CONTAINERS.register("compressor", () -> IForgeMenuType.create((windowId, inv, data) -> new CompressorContainer(windowId, data.readBlockPos(), inv, inv.player)));
-    public static final TagKey<Item> COMPRESSOR_VALID_ITEMS = ItemTags.create(new ResourceLocation(UltimateCompression.MODID, "compressor_valid_items"));
+    //public static final RegistryObject<BlockEntityType<CompressorBE>> COMPRESSOR_BE = BLOCK_ENTITIES.register("compressor", () -> BlockEntityType.Builder.of(CompressorBE::new, COMPRESSOR.get()).build(null));
+    //public static final RegistryObject<MenuType<CompressorContainer>> COMPRESSOR_CONTAINER = CONTAINERS.register("compressor", () -> IForgeMenuType.create((windowId, inv, data) -> new CompressorContainer(windowId, data.readBlockPos(), inv, inv.player)));
+    //public static final TagKey<Item> COMPRESSOR_VALID_ITEMS = ItemTags.create(new ResourceLocation(UltimateCompression.MODID, "compressor_valid_items"));
 
+    public static final RegistryObject<BlockEntityType<CompressorBlockEntity>> COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("compressor_block_entity", () -> BlockEntityType.Builder.of(CompressorBlockEntity::new, COMPRESSOR.get()).build(null));
+    public static final RegistryObject<MenuType<CompressorBlockMenu>> COMPRESSOR_BLOCK_MENU = registerMenuType(CompressorBlockMenu::new, "compressor_block_menu");
+
+    public static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name)
+    {
+        return CONTAINERS.register(name, () -> IForgeMenuType.create(factory));
+    }
 
     public static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block)
     {

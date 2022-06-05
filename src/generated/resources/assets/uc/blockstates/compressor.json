@@ -1,32 +1,17 @@
 {
   "variants": {
-    "facing=north,powered=false": {
+    "facing=north": {
       "model": "uc:block/compressor"
     },
-    "facing=south,powered=false": {
+    "facing=south": {
       "model": "uc:block/compressor",
       "y": 180
     },
-    "facing=west,powered=false": {
+    "facing=west": {
       "model": "uc:block/compressor",
       "y": 270
     },
-    "facing=east,powered=false": {
-      "model": "uc:block/compressor",
-      "y": 90
-    },
-    "facing=north,powered=true": {
-      "model": "uc:block/compressor"
-    },
-    "facing=south,powered=true": {
-      "model": "uc:block/compressor",
-      "y": 180
-    },
-    "facing=west,powered=true": {
-      "model": "uc:block/compressor",
-      "y": 270
-    },
-    "facing=east,powered=true": {
+    "facing=east": {
       "model": "uc:block/compressor",
       "y": 90
     }

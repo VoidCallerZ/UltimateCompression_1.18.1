@@ -224,8 +224,6 @@
   "itemGroup.ultiamtefoodcompression": "Ultimate Food Compression",
   "itemGroup.ultimatecompression": "Ultimate Compression",
   "itemGroup.ultimatetoolcompression": "Ultimate Tool Compression",
-  "message.compressor": "A block capable to compress normal ingots and blocks into compressed ones.",
   "message.powergen": "Power generator generating %s per tick!",
-  "screen.message.compressor": "Compressor",
   "screen.tutorial.powergen": "Power generator"
 }

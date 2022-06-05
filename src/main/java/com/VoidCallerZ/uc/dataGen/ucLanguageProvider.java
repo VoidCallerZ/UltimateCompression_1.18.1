@@ -7,8 +7,6 @@ import net.minecraftforge.common.data.LanguageProvider;
 
 import static com.VoidCallerZ.uc.blocks.machines.PowergenBlock.MESSAGE_ULTIMATE_POWERGEN;
 import static com.VoidCallerZ.uc.blocks.machines.PowergenBlock.SCREEN_ULTIMATE_POWERGEN;
-import static com.VoidCallerZ.uc.blocks.machines.CompressorBlock.MESSAGE_COMPRESSOR;
-import static com.VoidCallerZ.uc.blocks.machines.CompressorBlock.SCREEN_MESSAGE_COMPRESSOR;
 import static com.VoidCallerZ.uc.setup.ModSetup.*;
 
 public class ucLanguageProvider extends LanguageProvider
@@ -23,8 +21,6 @@ public class ucLanguageProvider extends LanguageProvider
         add("itemGroup." + UC_FOOD_TAB, "Ultimate Food Compression");
         add(MESSAGE_ULTIMATE_POWERGEN, "Power generator generating %s per tick!");
         add(SCREEN_ULTIMATE_POWERGEN, "Power generator");
-        add(MESSAGE_COMPRESSOR, "A block capable to compress normal ingots and blocks into compressed ones.");
-        add(SCREEN_MESSAGE_COMPRESSOR, "Compressor");
 
         add(Registration.ULTIMATE_POWERGEN.get(), "Ultimate power generator");
         add(Registration.COMPRESSOR.get(), "Ultimate Compressor");

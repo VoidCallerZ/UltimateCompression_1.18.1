@@ -10,10 +10,11 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.SimpleCookingSerializer;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.function.Consumer;
 
-public abstract class BaseRecipeProvider extends RecipeProvider
+public abstract class BaseRecipeProvider extends RecipeProvider implements IConditionBuilder
 {
     public enum BodyPart
     {
