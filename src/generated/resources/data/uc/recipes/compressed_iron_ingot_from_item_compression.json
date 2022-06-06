@@ -2,8 +2,7 @@
   "type": "uc:item_compression",
   "ingredients": [
     {
-      "item": "minecraft:iron_ingot",
-
+      "item": "minecraft:iron_ingot"
     }
   ],
   "output": {

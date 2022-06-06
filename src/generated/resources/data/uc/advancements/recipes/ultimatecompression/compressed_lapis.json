@@ -6,13 +6,13 @@
     ]
   },
   "criteria": {
-    "compressor_has_emerald": {
+    "compressor_has_lapis_lazuli": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:emerald"
+              "minecraft:lapis_lazuli"
             ]
           }
         ]
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "compressor_has_emerald",
+      "compressor_has_lapis_lazuli",
       "has_the_recipe"
     ]
   ]

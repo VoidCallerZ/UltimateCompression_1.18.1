@@ -7,6 +7,7 @@ import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
 import mezz.jei.api.helpers.IGuiHelper;
+import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.category.IRecipeCategory;
@@ -20,7 +21,7 @@ import javax.annotation.Nonnull;
 public class CompressorRecipeCategory implements IRecipeCategory<CompressorItemRecipe>
 {
     public final static ResourceLocation UID = new ResourceLocation(UltimateCompression.MODID, "item_compression");
-    public final static ResourceLocation TEXTURE = new ResourceLocation(UltimateCompression.MODID, "textures/gui/compressor_gui.png");
+    public final static ResourceLocation TEXTURE = new ResourceLocation(UltimateCompression.MODID, "textures/gui/compressor_gui_jei.png");
 
     private final IDrawable background;
     private final IDrawable icon;

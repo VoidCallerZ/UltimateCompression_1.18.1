@@ -6,13 +6,13 @@
     ]
   },
   "criteria": {
-    "compressor_has_emerald": {
+    "compressor_has_redstone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:emerald"
+              "minecraft:redstone"
             ]
           }
         ]
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "compressor_has_emerald",
+      "compressor_has_redstone",
       "has_the_recipe"
     ]
   ]

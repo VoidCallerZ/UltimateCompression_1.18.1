@@ -376,7 +376,7 @@ public class ucRecipes extends BaseRecipeProvider
                 .save(consumer);
 
         new CompressorRecipeBuilder(Items.COAL, Registration.COMPRESSED_COAL.get(), 9, 0)
-                .unlockedBy("compressor_has_" + Items.COAL, InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_INGOT))
+                .unlockedBy("compressor_has_" + Items.COAL, InventoryChangeTrigger.TriggerInstance.hasItems(Items.COAL))
                 .save(consumer);
         new CompressorRecipeBuilder(Items.COPPER_INGOT, Registration.COMPRESSED_COPPER_INGOT.get(), 9, 0)
                 .unlockedBy("compressor_has_" + Items.COPPER_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(Items.COPPER_INGOT))
@@ -394,13 +394,13 @@ public class ucRecipes extends BaseRecipeProvider
                 .unlockedBy("compressor_has_" + Items.EMERALD, InventoryChangeTrigger.TriggerInstance.hasItems(Items.EMERALD))
                 .save(consumer);
         new CompressorRecipeBuilder(Items.LAPIS_LAZULI, Registration.COMPRESSED_LAPIS.get(), 9, 0)
-                .unlockedBy("compressor_has_" + Items.EMERALD, InventoryChangeTrigger.TriggerInstance.hasItems(Items.EMERALD))
+                .unlockedBy("compressor_has_" + Items.LAPIS_LAZULI, InventoryChangeTrigger.TriggerInstance.hasItems(Items.LAPIS_LAZULI))
                 .save(consumer);
         new CompressorRecipeBuilder(Items.REDSTONE, Registration.COMPRESSED_REDSTONE.get(), 9, 0)
-                .unlockedBy("compressor_has_" + Items.EMERALD, InventoryChangeTrigger.TriggerInstance.hasItems(Items.EMERALD))
+                .unlockedBy("compressor_has_" + Items.REDSTONE, InventoryChangeTrigger.TriggerInstance.hasItems(Items.REDSTONE))
                 .save(consumer);
         new CompressorRecipeBuilder(Items.NETHERITE_INGOT, Registration.COMPRESSED_NETHERITE_INGOT.get(), 9, 0)
-                .unlockedBy("compressor_has_" + Items.EMERALD, InventoryChangeTrigger.TriggerInstance.hasItems(Items.EMERALD))
+                .unlockedBy("compressor_has_" + Items.NETHERITE_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(Items.NETHERITE_INGOT))
                 .save(consumer);
     }
 }

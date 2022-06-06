@@ -341,10 +341,6 @@ public class Registration
     //Compressor
     public static final RegistryObject<CompressorBlock> COMPRESSOR = BLOCKS.register("compressor", () -> new CompressorBlock(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSOR_ITEM = fromBlock(COMPRESSOR);
-    //public static final RegistryObject<BlockEntityType<CompressorBE>> COMPRESSOR_BE = BLOCK_ENTITIES.register("compressor", () -> BlockEntityType.Builder.of(CompressorBE::new, COMPRESSOR.get()).build(null));
-    //public static final RegistryObject<MenuType<CompressorContainer>> COMPRESSOR_CONTAINER = CONTAINERS.register("compressor", () -> IForgeMenuType.create((windowId, inv, data) -> new CompressorContainer(windowId, data.readBlockPos(), inv, inv.player)));
-    //public static final TagKey<Item> COMPRESSOR_VALID_ITEMS = ItemTags.create(new ResourceLocation(UltimateCompression.MODID, "compressor_valid_items"));
-
     public static final RegistryObject<BlockEntityType<CompressorBlockEntity>> COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("compressor_block_entity", () -> BlockEntityType.Builder.of(CompressorBlockEntity::new, COMPRESSOR.get()).build(null));
     public static final RegistryObject<MenuType<CompressorBlockMenu>> COMPRESSOR_BLOCK_MENU = registerMenuType(CompressorBlockMenu::new, "compressor_block_menu");
 

@@ -31,7 +31,7 @@ public class CompressorBlockScreen extends AbstractContainerScreen<CompressorBlo
 
         if (menu.isCrafting())
         {
-            blit(pPoseStack, x + 102, y + 41, 176, 0, 8, menu.getScaledProgress());
+            blit(pPoseStack, x + 101, y + 40, 176, 0, 8, menu.getScaledProgress());
         }
     }
 
