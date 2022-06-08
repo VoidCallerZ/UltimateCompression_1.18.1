@@ -161,6 +161,29 @@ public class Registration
     public static final RegistryObject<Block> COMPRESSED_CLAY = BLOCKS.register("compressed_clay", () -> new Block(SOFT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_CLAY_ITEM = fromBlock(COMPRESSED_CLAY);
 
+    //Polished Blocks
+    public static final RegistryObject<Block> COMPRESSED_POLISHED_ANDESITE = BLOCKS.register("compressed_polished_andesite", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_POLISHED_ANDESITE_ITEM = fromBlock(COMPRESSED_POLISHED_ANDESITE);
+    public static final RegistryObject<RotatedPillarBlock> COMPRESSED_POLISHED_BASALT = BLOCKS.register("compressed_polished_basalt", () -> new RotatedPillarBlock(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_POLISHED_BASALT_ITEM = fromBlock(COMPRESSED_POLISHED_BASALT);
+    public static final RegistryObject<Block> COMPRESSED_POLISHED_BLACKSTONE = BLOCKS.register("compressed_polished_blackstone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_POLISHED_BLACKSTONE_ITEM = fromBlock(COMPRESSED_POLISHED_BLACKSTONE);
+    public static final RegistryObject<Block> COMPRESSED_POLISHED_BLACKSTONE_BRICKS = BLOCKS.register("compressed_polished_blackstone_bricks", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_POLISHED_BLACKSTONE_BRICKS_ITEM = fromBlock(COMPRESSED_POLISHED_BLACKSTONE_BRICKS);
+    public static final RegistryObject<Block> COMPRESSED_POLISHED_DEEPSLATE = BLOCKS.register("compressed_polished_deepslate", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_POLISHED_DEEPSLATE_ITEM = fromBlock(COMPRESSED_POLISHED_DEEPSLATE);
+    public static final RegistryObject<Block> COMPRESSED_POLISHED_DIORITE = BLOCKS.register("compressed_polished_diorite", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_POLISHED_DIORITE_ITEM = fromBlock(COMPRESSED_POLISHED_DIORITE);
+    public static final RegistryObject<Block> COMPRESSED_POLISHED_GRANITE = BLOCKS.register("compressed_polished_granite", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_POLISHED_GRANITE_ITEM = fromBlock(COMPRESSED_POLISHED_GRANITE);
+
+    //Smooth Blocks
+    public static final RegistryObject<Block> COMPRESSED_SMOOTH_QUARTZ_BLOCK = BLOCKS.register("compressed_smooth_quartz_block", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_SMOOTH_RED_SANDSTONE = BLOCKS.register("compressed_smooth_quartz_block", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_SMOOTH_QUARTZ_BLOCK = BLOCKS.register("compressed_smooth_quartz_block", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_SMOOTH_QUARTZ_BLOCK = BLOCKS.register("compressed_smooth_quartz_block", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_SMOOTH_QUARTZ_BLOCK = BLOCKS.register("compressed_smooth_quartz_block", () -> new Block(ORE_PROPERTIES));
+
     //Nether Blocks
     public static final RegistryObject<Block> COMPRESSED_NETHER_QUARTZ_BLOCK = BLOCKS.register("compressed_nether_quartz_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(0.8F)));
     public static final RegistryObject<Item> COMPRESSED_NETHER_QUARTZ_BLOCK_ITEM = fromBlock(COMPRESSED_NETHER_QUARTZ_BLOCK);
@@ -326,11 +349,6 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_LAPIS = ITEMS.register("compressed_lapis", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_NETHERITE_INGOT = ITEMS.register("compressed_netherite_ingot", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_REDSTONE = ITEMS.register("compressed_redstone", () -> new Item(ITEM_PROPERTIES));
-
-    //Custom Tags
-    //For ores that are multi-dimensional
-    //public static final Tags.IOptionalNamedTag<Block> COMPRESSED_ORE = BlockTags.createOptional(new ResourceLocation(UltimateCompression.MODID, "compressed_ore"));
-    //public static final Tags.IOptionalNamedTag<Item> COMPRESSED_ORE_ITEM = ItemTags.createOptional(new ResourceLocation(UltimateCompression.MODID, "compressed_ore"));
 
     //Power generator
     public static final RegistryObject<PowergenBlock> ULTIMATE_POWERGEN = BLOCKS.register("ultimate_powergen", PowergenBlock::new);

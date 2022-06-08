@@ -78,6 +78,15 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(Registration.COMPRESSED_TUFF.get(), "compressed_tuff", "block/compressed/basic/compressed_tuff");
         singleTextureBlock(Registration.COMPRESSED_CLAY.get(), "compressed_clay", "block/compressed/basic/compressed_clay");
 
+        //Polished Blocks
+        singleTextureBlock(Registration.COMPRESSED_POLISHED_ANDESITE.get(), "compressed_polished_andesite", "block/compressed/basic/polished/compressed_polished_andesite");
+        compressedPillarBlock(Registration.COMPRESSED_POLISHED_BASALT.get(), modLoc("block/compressed/basic/polished/compressed_polished_basalt"));
+        singleTextureBlock(Registration.COMPRESSED_POLISHED_BLACKSTONE.get(), "compressed_polished_blackstone", "block/compressed/basic/polished/compressed_polished_blackstone");
+        singleTextureBlock(Registration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS.get(), "compressed_polished_blackstone_bricks", "block/compressed/basic/polished/compressed_polished_blackstone_bricks");
+        singleTextureBlock(Registration.COMPRESSED_POLISHED_DEEPSLATE.get(), "compressed_polished_deepslate", "block/compressed/basic/polished/compressed_polished_deepslate");
+        singleTextureBlock(Registration.COMPRESSED_POLISHED_DIORITE.get(), "compressed_polished_diorite", "block/compressed/basic/polished/compressed_polished_diorite");
+        singleTextureBlock(Registration.COMPRESSED_POLISHED_GRANITE.get(), "compressed_polished_granite", "block/compressed/basic/polished/compressed_polished_granite");
+
         //Nether Blocks
         singleTextureBlock(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "compressed_nether_quartz_block", "block/compressed/nether/compressed_quartz_block_side");
         compressedPillarBlock(Registration.COMPRESSED_BASALT.get(), modLoc("block/compressed/nether/compressed_basalt"));
