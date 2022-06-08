@@ -178,7 +178,6 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_POLISHED_GRANITE_ITEM = fromBlock(COMPRESSED_POLISHED_GRANITE);
 
     //Smooth Blocks
-    public static final RegistryObject<Block> COMPRESSED_SMOOTH_QUARTZ_BLOCK = BLOCKS.register("compressed_smooth_quartz_block", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Block> COMPRESSED_SMOOTH_STONE = BLOCKS.register("compressed_smooth_stone", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Block> COMPRESSED_SMOOTH_BASALT = BLOCKS.register("compressed_smooth_basalt", () -> new Block(ORE_PROPERTIES));
 
