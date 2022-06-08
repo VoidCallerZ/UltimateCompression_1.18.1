@@ -2,15 +2,15 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "compressed_lime_concrete",
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "uc:compressed_lime_concrete"
         }
-      ]
+      ],
+      "name": "compressed_lime_concrete",
+      "rolls": 1.0
     }
   ]
 }

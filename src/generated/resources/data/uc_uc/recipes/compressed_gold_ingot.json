@@ -7,7 +7,7 @@
     }
   ],
   "result": {
-    "item": "uc:compressed_gold_ingot",
-    "count": 9
+    "count": 9,
+    "item": "uc:compressed_gold_ingot"
   }
 }

@@ -3,7 +3,6 @@ package com.VoidCallerZ.uc.blocks.machines;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -59,7 +58,7 @@ public class PowergenBlock extends Block implements EntityBlock
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter reader, List<Component> list, TooltipFlag flags) {
-        list.add(new TranslatableComponent(MESSAGE_ULTIMATE_POWERGEN, Integer.toString(PowergenConfig.POWERGEN_GENERATE.get()))
+        list.add(Component.translatable(MESSAGE_ULTIMATE_POWERGEN, Integer.toString(PowergenConfig.POWERGEN_GENERATE.get()))
                 .withStyle(ChatFormatting.BLUE));
     }
 
@@ -103,7 +102,7 @@ public class PowergenBlock extends Block implements EntityBlock
                 MenuProvider containerProvider = new MenuProvider() {
                     @Override
                     public Component getDisplayName() {
-                        return new TranslatableComponent(SCREEN_ULTIMATE_POWERGEN);
+                        return Component.translatable(SCREEN_ULTIMATE_POWERGEN);
                     }
 
                     @Override

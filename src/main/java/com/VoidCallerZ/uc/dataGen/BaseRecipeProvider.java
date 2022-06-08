@@ -11,6 +11,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.SimpleCookingSerializer;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.function.Consumer;
 
@@ -54,14 +55,14 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .pattern("xxx")
                 .define('x', compressedItem)
                 .group("uc")
-                .unlockedBy("has_" + compressedBlock.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
-                .save(consumer, "uc_" + compressedBlock.getRegistryName());
+                .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
+                .save(consumer, "uc_" + ForgeRegistries.BLOCKS.getKey(compressedBlock));
 
         ShapelessRecipeBuilder.shapeless(compressedItem, decompAmountItem)
                 .requires(compressedBlock)
                 .group("uc")
-                .unlockedBy("has_" + compressedItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
-                .save(consumer, "uc_" + compressedItem.getRegistryName());
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(compressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
+                .save(consumer, "uc_" + ForgeRegistries.ITEMS.getKey(compressedItem));
     }
 
     protected void CompressedWoolRecipeBuilder(Block compressedBlock, Item compressedItem, ColorBlockType blockType, Item colorItem, Consumer<FinishedRecipe> consumer)
@@ -72,8 +73,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .pattern("xxx")
                 .define('x', compressedItem)
                 .group("uc")
-                .unlockedBy("has_" + compressedBlock.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
-                .save(consumer, "uc_" + compressedBlock.getRegistryName());
+                .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
+                .save(consumer, "uc_" + ForgeRegistries.BLOCKS.getKey(compressedBlock));
 
         if (blockType == ColorBlockType.WOOL)
         {
@@ -81,8 +82,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .requires(Registration.COMPRESSED_WHITE_WOOL.get())
                     .requires(colorItem)
                     .group("uc")
-                    .unlockedBy("has_" + compressedBlock.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
-                    .save(consumer, "uc_" + compressedBlock.getRegistryName() + "_1");
+                    .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
+                    .save(consumer, "uc_" + ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_1");
         }
         else if (blockType == ColorBlockType.CONCRETE)
         {
@@ -90,8 +91,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .requires(Registration.COMPRESSED_WHITE_CONCRETE.get())
                     .requires(colorItem)
                     .group("uc")
-                    .unlockedBy("has_" + compressedBlock.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
-                    .save(consumer, "uc_" + compressedBlock.getRegistryName() + "_1");
+                    .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
+                    .save(consumer, "uc_" + ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_1");
         }
         else if (blockType == ColorBlockType.CONCRETE_POWDER)
         {
@@ -99,15 +100,15 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .requires(Registration.COMPRESSED_WHITE_CONCRETE_POWDER.get())
                     .requires(colorItem)
                     .group("uc")
-                    .unlockedBy("has_" + compressedBlock.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
-                    .save(consumer, "uc_" + compressedBlock.getRegistryName() + "_1");
+                    .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
+                    .save(consumer, "uc_" + ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_1");
         }
 
         ShapelessRecipeBuilder.shapeless(compressedItem, 9)
                 .requires(compressedBlock)
                 .group("uc")
-                .unlockedBy("has_" + compressedItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
-                .save(consumer, "uc_" + compressedItem.getRegistryName());
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(compressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
+                .save(consumer, "uc_" + ForgeRegistries.ITEMS.getKey(compressedItem));
     }
 
     protected void BasicDecompressorRecipeBuilder(Item result, int amount, Item requirement, Consumer<FinishedRecipe> consumer)
@@ -127,14 +128,14 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .pattern("xxx")
                 .define('x', uncompressedItem)
                 .group("uc")
-                .unlockedBy("has_" + uncompressedItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(uncompressedItem))
-                .save(consumer, "uc_material_" + compressedItem.getRegistryName());
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(compressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(uncompressedItem))
+                .save(consumer, "uc_material_" + ForgeRegistries.ITEMS.getKey(compressedItem));
 
         ShapelessRecipeBuilder.shapeless(uncompressedItem, decompAmountItem)
                 .requires(compressedItem)
                 .group("uc")
-                .unlockedBy("has_" + compressedItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
-                .save(consumer, "uc_material_" + uncompressedItem.getRegistryName());
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(compressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
+                .save(consumer, "uc_material_" + ForgeRegistries.ITEMS.getKey(uncompressedItem));
     }
 
     protected void FourItemMaterialCompressionRecipeBuilder(Block compressedItem, Item uncompressedItem, int decompAmountItem, Consumer<FinishedRecipe> consumer)
@@ -142,14 +143,14 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
         ShapelessRecipeBuilder.shapeless(compressedItem, 1)
                 .requires(uncompressedItem, 4)
                 .group("uc")
-                .unlockedBy("has_" + compressedItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
-                .save(consumer, "uc_material_" + compressedItem.getRegistryName());
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(uncompressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
+                .save(consumer, "uc_material_" + ForgeRegistries.BLOCKS.getKey(compressedItem));
 
         ShapelessRecipeBuilder.shapeless(uncompressedItem, decompAmountItem)
                 .requires(compressedItem)
                 .group("uc")
-                .unlockedBy("has_" + compressedItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
-                .save(consumer, "uc_material_" + uncompressedItem.getRegistryName());
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(uncompressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
+                .save(consumer, "uc_material_" + ForgeRegistries.ITEMS.getKey(uncompressedItem));
     }
 
     protected void CompressedWoodenToolRecipeBuilder(Item toolItem, TagKey material, ToolType tool, Consumer<FinishedRecipe> consumer)
@@ -163,8 +164,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
-                    .save(consumer, toolItem.getRegistryName());
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem));
         } else if (tool == ToolType.AXE)
         {
             ShapedRecipeBuilder.shaped(toolItem)
@@ -174,8 +175,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
-                    .save(consumer, toolItem.getRegistryName());
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem));
             ShapedRecipeBuilder.shaped(toolItem)
                     .pattern("xx")
                     .pattern("xs")
@@ -183,8 +184,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
-                    .save(consumer, toolItem.getRegistryName() + "_alt");
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem) + "_alt");
         } else if (tool == ToolType.SHOVEL)
         {
             ShapedRecipeBuilder.shaped(toolItem)
@@ -194,8 +195,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
-                    .save(consumer, toolItem.getRegistryName());
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem));
         } else if (tool == ToolType.SWORD)
         {
             ShapedRecipeBuilder.shaped(toolItem)
@@ -205,8 +206,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
-                    .save(consumer, toolItem.getRegistryName());
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem));
         } else
         {
             ShapedRecipeBuilder.shaped(toolItem)
@@ -216,8 +217,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
-                    .save(consumer, toolItem.getRegistryName());
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem));
             ShapedRecipeBuilder.shaped(toolItem)
                     .pattern("xx")
                     .pattern(" s")
@@ -225,8 +226,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
-                    .save(consumer, toolItem.getRegistryName() + "_alt");
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(Items.OAK_PLANKS))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem) + "_alt");
         }
     }
 
@@ -241,8 +242,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
-                    .save(consumer, toolItem.getRegistryName());
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(material))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem));
         } else if (tool == ToolType.AXE)
         {
             ShapedRecipeBuilder.shaped(toolItem)
@@ -252,8 +253,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
-                    .save(consumer, toolItem.getRegistryName());
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(material))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem));
             ShapedRecipeBuilder.shaped(toolItem)
                     .pattern("xx")
                     .pattern("xs")
@@ -261,8 +262,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
-                    .save(consumer, toolItem.getRegistryName() + "_alt");
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(material))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem) + "_alt");
         } else if (tool == ToolType.SHOVEL)
         {
             ShapedRecipeBuilder.shaped(toolItem)
@@ -272,8 +273,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
-                    .save(consumer, toolItem.getRegistryName());
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(material))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem));
         } else if (tool == ToolType.SWORD)
         {
             ShapedRecipeBuilder.shaped(toolItem)
@@ -283,8 +284,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
-                    .save(consumer, toolItem.getRegistryName());
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(material))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem));
         } else
         {
             ShapedRecipeBuilder.shaped(toolItem)
@@ -294,8 +295,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
-                    .save(consumer, toolItem.getRegistryName());
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(material))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem));
             ShapedRecipeBuilder.shaped(toolItem)
                     .pattern("xx")
                     .pattern(" s")
@@ -303,8 +304,8 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .define('x', material)
                     .define('s', Items.STICK)
                     .group("uc")
-                    .unlockedBy("has_" + toolItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
-                    .save(consumer, toolItem.getRegistryName() + "_alt");
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(toolItem), InventoryChangeTrigger.TriggerInstance.hasItems(material))
+                    .save(consumer, ForgeRegistries.ITEMS.getKey(toolItem) + "_alt");
         }
     }
 
@@ -317,7 +318,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .pattern("x x")
                     .define('x', material)
                     .group("uc")
-                    .unlockedBy("has_" + armorItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(armorItem), InventoryChangeTrigger.TriggerInstance.hasItems(material))
                     .save(consumer);
         } else if (part == BodyPart.CHEST)
         {
@@ -327,7 +328,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .pattern("xxx")
                     .define('x', material)
                     .group("uc")
-                    .unlockedBy("has_" + armorItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(armorItem), InventoryChangeTrigger.TriggerInstance.hasItems(material))
                     .save(consumer);
         } else if (part == BodyPart.LEGS)
         {
@@ -337,7 +338,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .pattern("x x")
                     .define('x', material)
                     .group("uc")
-                    .unlockedBy("has_" + armorItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(armorItem), InventoryChangeTrigger.TriggerInstance.hasItems(material))
                     .save(consumer);
         } else
         {
@@ -346,7 +347,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .pattern("x x")
                     .define('x', material)
                     .group("uc")
-                    .unlockedBy("has_" + armorItem.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(material))
+                    .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(armorItem), InventoryChangeTrigger.TriggerInstance.hasItems(material))
                     .save(consumer);
         }
     }
@@ -356,7 +357,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
         ShapelessRecipeBuilder.shapeless(foodItem)
                 .requires(input, 4)
                 .group("uc")
-                .unlockedBy("has_" + input.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(input))
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(input), InventoryChangeTrigger.TriggerInstance.hasItems(input))
                 .save(consumer);
     }
 
@@ -367,7 +368,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .pattern(" x ")
                 .define('x', input)
                 .group("uc")
-                .unlockedBy("has_" + input.getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(input))
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(input), InventoryChangeTrigger.TriggerInstance.hasItems(input))
                 .save(consumer);
     }
 

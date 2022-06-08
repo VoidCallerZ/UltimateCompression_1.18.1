@@ -5,6 +5,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public abstract class BaseItemModelProvider extends ItemModelProvider
 {
@@ -15,14 +16,14 @@ public abstract class BaseItemModelProvider extends ItemModelProvider
 
     public void singleTextureGenerated(Item item, String textureLocation)
     {
-        singleTexture(item.getRegistryName().getPath(),
+        singleTexture(ForgeRegistries.ITEMS.getKey(item).getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc(textureLocation));
     }
 
     public void singleTextureHandheld(Item item, String textureLocation)
     {
-        singleTexture(item.getRegistryName().getPath(),
+        singleTexture(ForgeRegistries.ITEMS.getKey(item).getPath(),
                 mcLoc("item/handheld"),
                 "layer0", modLoc(textureLocation));
     }

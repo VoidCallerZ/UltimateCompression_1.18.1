@@ -48,36 +48,36 @@ public class CompressedArrow extends AbstractArrow
         super(ItemRegistration.COMPRESSED_ARROW_ENTITY.get(), entity, level);
     }
 
-    public void setEffectsFromItem(ItemStack stack)
-    {
-        if (stack.is(ItemRegistration.COMPRESSED_TIPPED_ARROW.get()))
-        {
-            this.potion = PotionUtils.getPotion(stack);
-            Collection<MobEffectInstance> collection = PotionUtils.getCustomEffects(stack);
-            if (!collection.isEmpty())
-            {
-                for (MobEffectInstance mobEffectInstance : collection)
-                {
-                    this.effects.add(new MobEffectInstance(mobEffectInstance));
-                }
-            }
-            int i = getCustomColor(stack);
-            if (i == -1)
-            {
-                this.updateColor();
-            }
-            else
-            {
-                this.setFixedColor(i);
-            }
-        }
-        else if (stack.is(ItemRegistration.COMPRESSED_ARROW.get()))
-        {
-            this.potion = Potions.EMPTY;
-            this.effects.clear();
-            this.entityData.set(ID_EFFECT_COLOR, -1);
-        }
-    }
+//    public void setEffectsFromItem(ItemStack stack)
+//    {
+//        if (stack.is(ItemRegistration.COMPRESSED_TIPPED_ARROW.get()))
+//        {
+//            this.potion = PotionUtils.getPotion(stack);
+//            Collection<MobEffectInstance> collection = PotionUtils.getCustomEffects(stack);
+//            if (!collection.isEmpty())
+//            {
+//                for (MobEffectInstance mobEffectInstance : collection)
+//                {
+//                    this.effects.add(new MobEffectInstance(mobEffectInstance));
+//                }
+//            }
+//            int i = getCustomColor(stack);
+//            if (i == -1)
+//            {
+//                this.updateColor();
+//            }
+//            else
+//            {
+//                this.setFixedColor(i);
+//            }
+//        }
+//        else if (stack.is(ItemRegistration.COMPRESSED_ARROW.get()))
+//        {
+//            this.potion = Potions.EMPTY;
+//            this.effects.clear();
+//            this.entityData.set(ID_EFFECT_COLOR, -1);
+//        }
+//    }
 
     public static int getCustomColor(ItemStack stack)
     {
@@ -235,18 +235,19 @@ public class CompressedArrow extends AbstractArrow
         {
             return new ItemStack(ItemRegistration.COMPRESSED_ARROW.get());
         }
-        else
-        {
-            ItemStack itemStack = new ItemStack(ItemRegistration.COMPRESSED_TIPPED_ARROW.get());
-            PotionUtils.setPotion(itemStack, this.potion);
-            PotionUtils.setCustomEffects(itemStack, this.effects);
-            if (this.fixedColor)
-            {
-                itemStack.getOrCreateTag().putInt("CustomPotionColor", this.getColor());
-            }
-
-            return itemStack;
-        }
+//        else
+//        {
+//            ItemStack itemStack = new ItemStack(ItemRegistration.COMPRESSED_TIPPED_ARROW.get());
+//            PotionUtils.setPotion(itemStack, this.potion);
+//            PotionUtils.setCustomEffects(itemStack, this.effects);
+//            if (this.fixedColor)
+//            {
+//                itemStack.getOrCreateTag().putInt("CustomPotionColor", this.getColor());
+//            }
+//
+//            return itemStack;
+//        }
+        return ItemStack.EMPTY;
     }
 
     public void handleEntityEvent(byte id)

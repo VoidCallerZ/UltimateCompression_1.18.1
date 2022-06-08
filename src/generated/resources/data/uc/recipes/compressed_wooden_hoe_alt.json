@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "group": "uc",
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "x": {
+      "tag": "uc:compressed_planks_for_tools"
+    }
+  },
   "pattern": [
     "xx",
     " s",
     " s"
   ],
-  "key": {
-    "x": {
-      "tag": "uc:compressed_planks_for_tools"
-    },
-    "s": {
-      "item": "minecraft:stick"
-    }
-  },
   "result": {
     "item": "uc:compressed_wooden_hoe"
   }

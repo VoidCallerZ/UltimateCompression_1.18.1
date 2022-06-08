@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "side": "uc:block/compressed/nether/compressed_blackstone",
-    "end": "uc:block/compressed/nether/compressed_blackstone_top"
+    "end": "uc:block/compressed/nether/compressed_blackstone_top",
+    "side": "uc:block/compressed/nether/compressed_blackstone"
   }
 }

@@ -18,6 +18,6 @@ public class ClientModEventSubscriber
     {
         event.registerEntityRenderer(ItemRegistration.COMPRESSED_ARROW_ENTITY.get(), CompressedArrowRenderer::new);
         event.registerEntityRenderer(ItemRegistration.COMPRESSED_SPECTRAL_ARROW_ENTITY.get(), CompressedSpectralArrowRenderer::new);
-        event.registerEntityRenderer(ItemRegistration.COMPRESSED_TIPPED_ARROW_ENTITY.get(), CompressedTippableArrowRenderer::new);
+        //event.registerEntityRenderer(ItemRegistration.COMPRESSED_TIPPED_ARROW_ENTITY.get(), CompressedTippableArrowRenderer::new);
     }
 }

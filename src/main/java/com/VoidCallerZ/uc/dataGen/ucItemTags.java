@@ -52,8 +52,8 @@ public class ucItemTags extends ItemTagsProvider
 
         tag(ItemTags.ARROWS)
                 .add(ItemRegistration.COMPRESSED_ARROW.get())
-                .add(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get())
-                .add(ItemRegistration.COMPRESSED_TIPPED_ARROW.get());
+                .add(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get());
+                //.add(ItemRegistration.COMPRESSED_TIPPED_ARROW.get());
 
 //        tag(Registration.COMPRESSOR_VALID_ITEMS)
 //                .add(Items.IRON_INGOT)

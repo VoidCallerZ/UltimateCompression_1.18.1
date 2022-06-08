@@ -2,15 +2,15 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "ultimate_powergen",
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "uc:ultimate_powergen"
         }
-      ]
+      ],
+      "name": "ultimate_powergen",
+      "rolls": 1.0
     }
   ]
 }

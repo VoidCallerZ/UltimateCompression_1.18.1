@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "group": "uc",
-  "pattern": [
-    "x x",
-    "xxx",
-    "xxx"
-  ],
   "key": {
     "x": {
       "item": "uc:compressed_netherite_ingot"
     }
   },
+  "pattern": [
+    "x x",
+    "xxx",
+    "xxx"
+  ],
   "result": {
     "item": "uc:compressed_netherite_chestplate"
   }

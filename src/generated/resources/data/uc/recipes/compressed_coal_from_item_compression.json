@@ -1,5 +1,5 @@
 {
-  "type": "uc:item_compression",
+  "type": "uc:compressor_item_serializer",
   "ingredients": [
     {
       "item": "minecraft:coal"

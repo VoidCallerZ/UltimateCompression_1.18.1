@@ -1,9 +1,11 @@
 {
-  "textures": {
-    "single": "uc:block/powergen_on"
-  },
   "elements": [
     {
+      "faces": {
+        "down": {
+          "texture": "#single"
+        }
+      },
       "from": [
         2,
         2,
@@ -13,12 +15,10 @@
         14,
         14,
         14
-      ],
-      "faces": {
-        "down": {
-          "texture": "#single"
-        }
-      }
+      ]
     }
-  ]
+  ],
+  "textures": {
+    "single": "uc:block/powergen_on"
+  }
 }

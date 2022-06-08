@@ -1,27 +1,7 @@
 {
   "parent": "minecraft:mined_compressed_ore",
-  "display": {
-    "icon": {
-      "item": "uc:compressed_netherite_block"
-    },
-    "title": {
-      "text": "Richness Overload"
-    },
-    "description": {
-      "text": "Bored? Dumb? Or just too rich for words?"
-    },
-    "frame": "challenge",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": true,
-    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
-  },
-  "rewards": {
-    "experience": 500
-  },
   "criteria": {
     "gathered_compressed_netherite_block": {
-      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
@@ -30,12 +10,32 @@
             ]
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "text": "Bored? Dumb? Or just too rich for words?"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "uc:compressed_netherite_block"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Richness Overload"
     }
   },
   "requirements": [
     [
       "gathered_compressed_netherite_block"
     ]
-  ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
 }

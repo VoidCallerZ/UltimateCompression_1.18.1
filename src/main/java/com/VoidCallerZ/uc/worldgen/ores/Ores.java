@@ -4,16 +4,13 @@ import com.VoidCallerZ.uc.setup.registration.Registration;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
-import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.placement.*;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 public class Ores
 {
@@ -87,26 +84,26 @@ public class Ores
                 HeightRangePlacement.uniform(VerticalAnchor.absolute(minY), VerticalAnchor.absolute(maxY)));
     }
 
-    public static void onBiomeLoadingEvent(BiomeLoadingEvent event)
-    {
-        if (event.getCategory() == Biome.BiomeCategory.NETHER)
-        {
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, NETHER_GOLD_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, NETHER_QUARTZ_OREGEN);
-        }
-        else
-        {
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, IRON_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, GOLD_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, COPPER_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, DIAMOND_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, COAL_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, LAPIS_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, REDSTONE_OREGEN);
-            if (event.getCategory() == Biome.BiomeCategory.MOUNTAIN)
-            {
-                event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, EMERALD_OREGEN);
-            }
-        }
-    }
+//    public static void onBiomeLoadingEvent(BiomeLoadingEvent event)
+//    {
+//        if (event.getCategory() == Biome.BiomeCategory.NETHER)
+//        {
+//            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, NETHER_GOLD_OREGEN);
+//            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, NETHER_QUARTZ_OREGEN);
+//        }
+//        else
+//        {
+//            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, IRON_OREGEN);
+//            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, GOLD_OREGEN);
+//            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, COPPER_OREGEN);
+//            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, DIAMOND_OREGEN);
+//            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, COAL_OREGEN);
+//            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, LAPIS_OREGEN);
+//            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, REDSTONE_OREGEN);
+//            if (event.getCategory() == Biome.BiomeCategory.MOUNTAIN)
+//            {
+//                event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, EMERALD_OREGEN);
+//            }
+//        }
+//    }
 }

@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public abstract class BaseBlockStateProvider extends BlockStateProvider {
     public BaseBlockStateProvider(DataGenerator gen, String modid, ExistingFileHelper exFileHelper)
@@ -22,7 +23,7 @@ public abstract class BaseBlockStateProvider extends BlockStateProvider {
 
     protected void compressedPillarBlock(RotatedPillarBlock block, ResourceLocation resLoc)
     {
-        axisBlock(block, models().cubeColumn(block.getRegistryName().getPath(), resLoc, extend(resLoc, "_top")), models().cubeColumnHorizontal(block.getRegistryName().getPath() + "_horizontal", resLoc, extend(resLoc, "_top")));
+        axisBlock(block, models().cubeColumn(ForgeRegistries.BLOCKS.getKey(block).getPath(), resLoc, extend(resLoc, "_top")), models().cubeColumnHorizontal(ForgeRegistries.BLOCKS.getKey(block).getPath() + "_horizontal", resLoc, extend(resLoc, "_top")));
     }
 
     private ResourceLocation extend(ResourceLocation rl, String suffix) {

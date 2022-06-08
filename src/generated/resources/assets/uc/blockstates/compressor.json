@@ -1,5 +1,9 @@
 {
   "variants": {
+    "facing=east": {
+      "model": "uc:block/compressor",
+      "y": 90
+    },
     "facing=north": {
       "model": "uc:block/compressor"
     },
@@ -10,10 +14,6 @@
     "facing=west": {
       "model": "uc:block/compressor",
       "y": 270
-    },
-    "facing=east": {
-      "model": "uc:block/compressor",
-      "y": 90
     }
   }
 }

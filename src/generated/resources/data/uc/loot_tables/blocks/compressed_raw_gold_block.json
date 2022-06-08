@@ -2,15 +2,15 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "compressed_raw_gold_block",
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "uc:compressed_raw_gold_block"
         }
-      ]
+      ],
+      "name": "compressed_raw_gold_block",
+      "rolls": 1.0
     }
   ]
 }

@@ -1,27 +1,7 @@
 {
   "parent": "minecraft:mined_compressed_ore",
-  "display": {
-    "icon": {
-      "item": "uc:compressed_netherite_ingot"
-    },
-    "title": {
-      "text": "Getting Rich"
-    },
-    "description": {
-      "text": "A compressed piece of netherite? You didn\u0027t have anything else to do?"
-    },
-    "frame": "goal",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": true,
-    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
-  },
-  "rewards": {
-    "experience": 100
-  },
   "criteria": {
     "gathered_compressed_netherite_ingot": {
-      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
@@ -30,12 +10,32 @@
             ]
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "text": "A compressed piece of netherite? You didn't have anything else to do?"
+    },
+    "frame": "goal",
+    "hidden": true,
+    "icon": {
+      "item": "uc:compressed_netherite_ingot"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Getting Rich"
     }
   },
   "requirements": [
     [
       "gathered_compressed_netherite_ingot"
     ]
-  ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
 }

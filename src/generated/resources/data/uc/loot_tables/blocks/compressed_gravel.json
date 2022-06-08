@@ -2,8 +2,6 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "compressed_gravel",
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -16,8 +14,8 @@
                   "type": "minecraft:item",
                   "conditions": [
                     {
-                      "condition": "minecraft:random_chance",
-                      "chance": 0.8
+                      "chance": 0.8,
+                      "condition": "minecraft:random_chance"
                     }
                   ],
                   "name": "uc:compressed_gravel"
@@ -30,7 +28,9 @@
             }
           ]
         }
-      ]
+      ],
+      "name": "compressed_gravel",
+      "rolls": 1.0
     }
   ]
 }

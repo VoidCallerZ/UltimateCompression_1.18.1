@@ -1,5 +1,6 @@
 package com.VoidCallerZ.uc;
 
+import com.VoidCallerZ.uc.dataGen.ucWorldGen;
 import com.VoidCallerZ.uc.setup.*;
 import com.VoidCallerZ.uc.setup.registration.*;
 import net.minecraftforge.api.distmarker.Dist;
@@ -27,10 +28,12 @@ public class UltimateCompression
         FoodRegistration.init();
         ItemRegistration.init();
         RecipeRegistration.init();
+        WorldGenRegistration.init();
         Config.register();
 
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
         modbus.addListener(ModSetup::init);
+        //modbus.addListener(ucWorldGen::onGatherData);
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> modbus.addListener(ClientSetup::init));
     }
 }

@@ -5,7 +5,7 @@ import net.minecraft.advancements.critereon.ConsumeItemTrigger;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.advancements.AdvancementProvider;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
@@ -25,8 +25,8 @@ public abstract class BaseAdvancementProvider extends AdvancementProvider
                                          String criterionName, int amountOfExp, Advancement parent, Consumer<Advancement> consumer)
     {
         Advancement.Builder.advancement().display(item.get().getDefaultInstance(),
-                        new TextComponent(title),
-                        new TextComponent(description),
+                        Component.literal(title),
+                        Component.literal(description),
                         new ResourceLocation("textures/gui/advancements/backgrounds/adventure.png"),
                         frameType,
                         true,
@@ -43,8 +43,8 @@ public abstract class BaseAdvancementProvider extends AdvancementProvider
                                          String criterionName, int amountOfExp, Advancement parent, Consumer<Advancement> consumer)
     {
         Advancement.Builder.advancement().display(item.get().getDefaultInstance(),
-                        new TextComponent(title),
-                        new TextComponent(description),
+                        Component.literal(title),
+                        Component.literal(description),
                         new ResourceLocation("textures/gui/advancements/backgrounds/adventure.png"),
                         frameType,
                         true,
@@ -61,8 +61,8 @@ public abstract class BaseAdvancementProvider extends AdvancementProvider
                                               String criterionName, int amountOfExp, Advancement parent, Consumer<Advancement> consumer)
     {
         Advancement.Builder.advancement().display(item.get().getDefaultInstance(),
-                        new TextComponent(title),
-                        new TextComponent(description),
+                        Component.literal(title),
+                        Component.literal(description),
                         new ResourceLocation("textures/gui/advancements/backgrounds/adventure.png"),
                         frameType,
                         true,

@@ -7,7 +7,7 @@
     }
   ],
   "result": {
-    "item": "uc:compressed_redstone",
-    "count": 9
+    "count": 9,
+    "item": "uc:compressed_redstone"
   }
 }

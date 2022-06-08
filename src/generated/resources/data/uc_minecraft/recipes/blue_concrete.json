@@ -7,7 +7,7 @@
     }
   ],
   "result": {
-    "item": "minecraft:blue_concrete",
-    "count": 9
+    "count": 9,
+    "item": "minecraft:blue_concrete"
   }
 }

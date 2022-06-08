@@ -1,28 +1,7 @@
 {
   "parent": "minecraft:mined_compressed_ore",
-  "display": {
-    "icon": {
-      "item": "uc:compressed_netherite_hoe",
-      "nbt": "{Damage:0}"
-    },
-    "title": {
-      "text": "Next Level Dedication"
-    },
-    "description": {
-      "text": "Use 18 netherite ingots to create a compressed netherite hoe, and then return reevaluating your life choices"
-    },
-    "frame": "challenge",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": true,
-    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
-  },
-  "rewards": {
-    "experience": 200
-  },
   "criteria": {
     "gathered_compressed_netherite_hoe": {
-      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
@@ -31,12 +10,33 @@
             ]
           }
         ]
-      }
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "text": "Use 18 netherite ingots to create a compressed netherite hoe, and then return reevaluating your life choices"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "uc:compressed_netherite_hoe",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Next Level Dedication"
     }
   },
   "requirements": [
     [
       "gathered_compressed_netherite_hoe"
     ]
-  ]
+  ],
+  "rewards": {
+    "experience": 200
+  }
 }

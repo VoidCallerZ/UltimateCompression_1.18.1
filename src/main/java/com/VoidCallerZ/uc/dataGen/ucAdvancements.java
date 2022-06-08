@@ -6,7 +6,7 @@ import com.VoidCallerZ.uc.setup.registration.ToolRegistration;
 import net.minecraft.advancements.*;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -23,8 +23,8 @@ public class ucAdvancements extends BaseAdvancementProvider
     protected void registerAdvancements(Consumer<Advancement> consumer, ExistingFileHelper fileHelper)
     {
         Advancement mainAdvancement = Advancement.Builder.advancement().display(Registration.UC_ICON.get().getDefaultInstance(),
-                        new TextComponent("Welcome to Ultimate Compression"),
-                        new TextComponent("This is the beginning of your Ultimate Compression adventure!"),
+                        Component.literal("Welcome to Ultimate Compression"),
+                        Component.literal("This is the beginning of your Ultimate Compression adventure!"),
                         new ResourceLocation("textures/gui/advancements/backgrounds/adventure.png"),
                         FrameType.TASK,
                         true, true, false)

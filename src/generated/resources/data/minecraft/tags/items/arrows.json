@@ -1,8 +1,6 @@
 {
-  "replace": false,
   "values": [
     "uc:compressed_arrow",
-    "uc:compressed_spectral_arrow",
-    "uc:compressed_tipped_arrow"
+    "uc:compressed_spectral_arrow"
   ]
 }

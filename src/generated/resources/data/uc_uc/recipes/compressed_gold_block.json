@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "group": "uc",
-  "pattern": [
-    "xxx",
-    "xxx",
-    "xxx"
-  ],
   "key": {
     "x": {
       "item": "uc:compressed_gold_ingot"
     }
   },
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
   "result": {
     "item": "uc:compressed_gold_block"
   }
