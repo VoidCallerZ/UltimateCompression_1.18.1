@@ -179,10 +179,8 @@ public class Registration
 
     //Smooth Blocks
     public static final RegistryObject<Block> COMPRESSED_SMOOTH_QUARTZ_BLOCK = BLOCKS.register("compressed_smooth_quartz_block", () -> new Block(ORE_PROPERTIES));
-    public static final RegistryObject<Block> COMPRESSED_SMOOTH_RED_SANDSTONE = BLOCKS.register("compressed_smooth_quartz_block", () -> new Block(ORE_PROPERTIES));
-    public static final RegistryObject<Block> COMPRESSED_SMOOTH_QUARTZ_BLOCK = BLOCKS.register("compressed_smooth_quartz_block", () -> new Block(ORE_PROPERTIES));
-    public static final RegistryObject<Block> COMPRESSED_SMOOTH_QUARTZ_BLOCK = BLOCKS.register("compressed_smooth_quartz_block", () -> new Block(ORE_PROPERTIES));
-    public static final RegistryObject<Block> COMPRESSED_SMOOTH_QUARTZ_BLOCK = BLOCKS.register("compressed_smooth_quartz_block", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_SMOOTH_STONE = BLOCKS.register("compressed_smooth_stone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_SMOOTH_BASALT = BLOCKS.register("compressed_smooth_basalt", () -> new Block(ORE_PROPERTIES));
 
     //Nether Blocks
     public static final RegistryObject<Block> COMPRESSED_NETHER_QUARTZ_BLOCK = BLOCKS.register("compressed_nether_quartz_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(0.8F)));
