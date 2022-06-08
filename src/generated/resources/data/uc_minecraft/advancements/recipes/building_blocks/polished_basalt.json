@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc_minecraft:polished_basalt"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:polished_basalt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_polished_basalt"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc_minecraft:polished_basalt"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:polished_basalt",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc_minecraft:polished_blackstone_bricks"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:polished_blackstone_bricks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_polished_blackstone_bricks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc_minecraft:polished_blackstone_bricks"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:polished_blackstone_bricks",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -75,6 +75,15 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(Registration.COMPRESSED_TUFF_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_tuff"));
         withExistingParent(Registration.COMPRESSED_CLAY.get().getRegistryName().getPath(), modLoc("block/compressed_clay"));
 
+        //Polished Blocks
+        withExistingParent(Registration.COMPRESSED_POLISHED_ANDESITE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_polished_andesite"));
+        withExistingParent(Registration.COMPRESSED_POLISHED_BASALT_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_polished_basalt"));
+        withExistingParent(Registration.COMPRESSED_POLISHED_DEEPSLATE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_polished_deepslate"));
+        withExistingParent(Registration.COMPRESSED_POLISHED_BLACKSTONE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_polished_blackstone"));
+        withExistingParent(Registration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_polished_blackstone_bricks"));
+        withExistingParent(Registration.COMPRESSED_POLISHED_DIORITE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_polished_diorite"));
+        withExistingParent(Registration.COMPRESSED_POLISHED_GRANITE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_polished_granite"));
+
         //Nether Blocks
         withExistingParent(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_nether_quartz_block"));
         withExistingParent(Registration.COMPRESSED_BASALT.get().getRegistryName().getPath(), modLoc("block/compressed_basalt"));

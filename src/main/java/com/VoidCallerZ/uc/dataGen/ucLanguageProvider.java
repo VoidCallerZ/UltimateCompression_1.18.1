@@ -162,6 +162,15 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_TUFF.get(), "Compressed Tuff");
         add(Registration.COMPRESSED_CLAY.get(), "Compressed Clay");
 
+        //Polished Blocks
+        add(Registration.COMPRESSED_POLISHED_ANDESITE.get(), "Compressed Polished Andesite");
+        add(Registration.COMPRESSED_POLISHED_BASALT.get(), "Compressed Polished Basalt");
+        add(Registration.COMPRESSED_POLISHED_DEEPSLATE.get(), "Compressed Polished Deepslate");
+        add(Registration.COMPRESSED_POLISHED_BLACKSTONE.get(), "Compressed Polished Blackstone");
+        add(Registration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS.get(), "Compressed Polished Blackstone Bricks");
+        add(Registration.COMPRESSED_POLISHED_DIORITE.get(), "Compressed Polished Diorite");
+        add(Registration.COMPRESSED_POLISHED_GRANITE.get(), "Compressed Polished Granite");
+
         //Nether Blocks
         add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "Compressed Block of Quartz");
         add(Registration.COMPRESSED_BASALT.get(), "Compressed Basalt");

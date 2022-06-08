@@ -109,6 +109,15 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_TUFF.get(), Items.TUFF, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CLAY.get(), Items.CLAY, 9, consumer);
 
+        //Polished Blocks
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_ANDESITE.get(), Items.POLISHED_ANDESITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_BASALT.get(), Items.POLISHED_BASALT, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_DEEPSLATE.get(), Items.POLISHED_DEEPSLATE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_BLACKSTONE.get(), Items.POLISHED_BLACKSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS.get(), Items.POLISHED_BLACKSTONE_BRICKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_DIORITE.get(), Items.POLISHED_DIORITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_GRANITE.get(), Items.POLISHED_GRANITE, 9, consumer);
+
         //Nether Blocks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), Items.QUARTZ_BLOCK, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BASALT.get(), Items.BASALT, 9, consumer);

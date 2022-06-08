@@ -73,7 +73,14 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(Registration.COMPRESSED_BASALT.get())
                 .add(Registration.COMPRESSED_BLACKSTONE.get())
                 .add(Registration.COMPRESSED_GLOWSTONE.get())
-                .add(Registration.COMPRESSED_MAGMA.get());
+                .add(Registration.COMPRESSED_MAGMA.get())
+                .add(Registration.COMPRESSED_POLISHED_ANDESITE.get())
+                .add(Registration.COMPRESSED_POLISHED_BASALT.get())
+                .add(Registration.COMPRESSED_POLISHED_BLACKSTONE.get())
+                .add(Registration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS.get())
+                .add(Registration.COMPRESSED_POLISHED_DEEPSLATE.get())
+                .add(Registration.COMPRESSED_POLISHED_DIORITE.get())
+                .add(Registration.COMPRESSED_POLISHED_GRANITE.get());
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(Registration.COMPRESSED_GRAVEL.get())

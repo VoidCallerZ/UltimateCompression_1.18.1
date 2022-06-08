@@ -64,6 +64,15 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(Registration.COMPRESSED_TUFF.get(), createSimpleTable("compressed_tuff", Registration.COMPRESSED_TUFF.get()));
         lootTables.put(Registration.COMPRESSED_CLAY.get(), createSilkTouchTable("compressed_clay", Registration.COMPRESSED_CLAY.get(), Items.CLAY_BALL, 3, 8));
 
+        //Polished Blocks
+        lootTables.put(Registration.COMPRESSED_POLISHED_ANDESITE.get(), createSimpleTable("compressed_polished_andesite", Registration.COMPRESSED_POLISHED_ANDESITE.get()));
+        lootTables.put(Registration.COMPRESSED_POLISHED_BASALT.get(), createSimpleTable("compressed_polished_basalt", Registration.COMPRESSED_POLISHED_BASALT.get()));
+        lootTables.put(Registration.COMPRESSED_POLISHED_DEEPSLATE.get(), createSimpleTable("compressed_polished_deepslate", Registration.COMPRESSED_POLISHED_DEEPSLATE.get()));
+        lootTables.put(Registration.COMPRESSED_POLISHED_BLACKSTONE.get(), createSimpleTable("compressed_polished_blackstone", Registration.COMPRESSED_POLISHED_BLACKSTONE.get()));
+        lootTables.put(Registration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS.get(), createSimpleTable("compressed_polished_blackstone_bricks", Registration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS.get()));
+        lootTables.put(Registration.COMPRESSED_POLISHED_DIORITE.get(), createSimpleTable("compressed_polished_diorite", Registration.COMPRESSED_POLISHED_DIORITE.get()));
+        lootTables.put(Registration.COMPRESSED_POLISHED_GRANITE.get(), createSimpleTable("compressed_polished_granite", Registration.COMPRESSED_POLISHED_GRANITE.get()));
+
         //Nether Blocks
         lootTables.put(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), createSimpleTable("compressed_nether_quartz_block", Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get()));
         lootTables.put(Registration.COMPRESSED_BASALT.get(), createSimpleTable("compressed_basalt", Registration.COMPRESSED_BASALT.get()));

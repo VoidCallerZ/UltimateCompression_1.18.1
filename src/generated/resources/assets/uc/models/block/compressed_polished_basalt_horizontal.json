@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "side": "uc:block/compressed/basic/polished/compressed_polished_basalt",
+    "end": "uc:block/compressed/basic/polished/compressed_polished_basalt_top"
+  }
+}
