@@ -95,7 +95,7 @@ public class ucBlockStates extends BaseBlockStateProvider
         //Stone Bricks
         singleTextureBlock(Registration.COMPRESSED_CHISELED_STONE_BRICKS.get(), "compressed_chiseled_stone_bricks", "block/compressed/basic/stone_bricks/compressed_chiseled_stone_bricks");
         singleTextureBlock(Registration.COMPRESSED_CRACKED_STONE_BRICKS.get(), "compressed_cracked_stone_bricks", "block/compressed/basic/stone_bricks/compressed_cracked_stone_bricks");
-        singleTextureBlock(Registration.COMPRESSED_MOSSY_COBBLESTONE.get(), "compressed_mossy_stone_bricks", "block/compressed/basic/stone_bricks/compressed_mossy_stone_bricks");
+        singleTextureBlock(Registration.COMPRESSED_MOSSY_STONE_BRICKS.get(), "compressed_mossy_stone_bricks", "block/compressed/basic/stone_bricks/compressed_mossy_stone_bricks");
         singleTextureBlock(Registration.COMPRESSED_STONE_BRICKS.get(), "compressed_stone_bricks", "block/compressed/basic/stone_bricks/compressed_stone_bricks");
 
         //Nether Blocks

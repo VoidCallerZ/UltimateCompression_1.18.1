@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "uc:compressed_chiseled_stone_bricks"
+    }
+  ],
+  "result": {
+    "item": "minecraft:chiseled_stone_bricks",
+    "count": 9
+  }
+}
