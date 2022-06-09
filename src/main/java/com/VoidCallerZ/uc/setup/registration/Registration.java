@@ -179,7 +179,9 @@ public class Registration
 
     //Smooth Blocks
     public static final RegistryObject<Block> COMPRESSED_SMOOTH_BASALT = BLOCKS.register("compressed_smooth_basalt", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_SMOOTH_BASALT_ITEM = fromBlock(COMPRESSED_SMOOTH_BASALT);
     public static final RegistryObject<Block> COMPRESSED_SMOOTH_STONE = BLOCKS.register("compressed_smooth_stone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_SMOOTH_STONE_ITEM = fromBlock(COMPRESSED_SMOOTH_STONE);
 
     //Nether Blocks
     public static final RegistryObject<Block> COMPRESSED_NETHER_QUARTZ_BLOCK = BLOCKS.register("compressed_nether_quartz_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(0.8F)));

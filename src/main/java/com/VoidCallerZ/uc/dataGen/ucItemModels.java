@@ -5,6 +5,7 @@ import com.VoidCallerZ.uc.setup.registration.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class ucItemModels extends BaseItemModelProvider
 {
@@ -83,6 +84,9 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(Registration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_polished_blackstone_bricks"));
         withExistingParent(Registration.COMPRESSED_POLISHED_DIORITE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_polished_diorite"));
         withExistingParent(Registration.COMPRESSED_POLISHED_GRANITE_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_polished_granite"));
+
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_SMOOTH_BASALT_ITEM.get()).getPath(), modLoc("block/compressed_smooth_basalt"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_SMOOTH_STONE_ITEM.get()).getPath(), modLoc("block/compressed_smooth_stone"));
 
         //Nether Blocks
         withExistingParent(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK_ITEM.get().getRegistryName().getPath(), modLoc("block/compressed_nether_quartz_block"));

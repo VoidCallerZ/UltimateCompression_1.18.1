@@ -118,6 +118,10 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_DIORITE.get(), Items.POLISHED_DIORITE, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_GRANITE.get(), Items.POLISHED_GRANITE, 9, consumer);
 
+        //Smooth Blocks
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SMOOTH_BASALT.get(), Items.SMOOTH_BASALT, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SMOOTH_STONE.get(), Items.SMOOTH_STONE, 9, consumer);
+
         //Nether Blocks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), Items.QUARTZ_BLOCK, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BASALT.get(), Items.BASALT, 9, consumer);

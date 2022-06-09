@@ -171,6 +171,10 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_POLISHED_DIORITE.get(), "Compressed Polished Diorite");
         add(Registration.COMPRESSED_POLISHED_GRANITE.get(), "Compressed Polished Granite");
 
+        //Smooth Blocks
+        add(Registration.COMPRESSED_SMOOTH_BASALT.get(), "Compressed Smooth Basalt");
+        add(Registration.COMPRESSED_SMOOTH_STONE.get(), "Compressed Smooth Stone");
+
         //Nether Blocks
         add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "Compressed Block of Quartz");
         add(Registration.COMPRESSED_BASALT.get(), "Compressed Basalt");

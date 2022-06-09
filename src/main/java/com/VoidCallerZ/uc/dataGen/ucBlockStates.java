@@ -87,6 +87,10 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(Registration.COMPRESSED_POLISHED_DIORITE.get(), "compressed_polished_diorite", "block/compressed/basic/polished/compressed_polished_diorite");
         singleTextureBlock(Registration.COMPRESSED_POLISHED_GRANITE.get(), "compressed_polished_granite", "block/compressed/basic/polished/compressed_polished_granite");
 
+        //Smooth Blocks
+        singleTextureBlock(Registration.COMPRESSED_SMOOTH_BASALT.get(), "compressed_smooth_basalt", "block/compressed/basic/smooth/compressed_smooth_basalt");
+        singleTextureBlock(Registration.COMPRESSED_SMOOTH_STONE.get(), "compressed_smooth_stone", "block/compressed/basic/smooth/compressed_smooth_stone");
+
         //Nether Blocks
         singleTextureBlock(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "compressed_nether_quartz_block", "block/compressed/nether/compressed_quartz_block_side");
         compressedPillarBlock(Registration.COMPRESSED_BASALT.get(), modLoc("block/compressed/nether/compressed_basalt"));

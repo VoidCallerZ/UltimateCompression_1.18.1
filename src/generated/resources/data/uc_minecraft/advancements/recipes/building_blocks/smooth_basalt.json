@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc_minecraft:smooth_basalt"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:smooth_basalt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_smooth_basalt"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc_minecraft:smooth_basalt"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:smooth_basalt",
+      "has_the_recipe"
+    ]
+  ]
+}
