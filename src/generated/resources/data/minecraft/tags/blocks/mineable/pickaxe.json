@@ -38,12 +38,14 @@
     "uc:compressed_blackstone",
     "uc:compressed_glowstone",
     "uc:compressed_magma",
-    "uc:compressed_polished_granite",
-    "uc:compressed_polished_diorite",
     "uc:compressed_polished_andesite",
-    "uc:compressed_polished_deepslate",
     "uc:compressed_polished_basalt",
     "uc:compressed_polished_blackstone",
-    "uc:compressed_polished_blackstone_bricks"
+    "uc:compressed_polished_blackstone_bricks",
+    "uc:compressed_polished_deepslate",
+    "uc:compressed_polished_diorite",
+    "uc:compressed_polished_granite",
+    "uc:compressed_smooth_basalt",
+    "uc:compressed_smooth_stone"
   ]
 }
