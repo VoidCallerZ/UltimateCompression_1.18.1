@@ -44,6 +44,7 @@ public class ucWorldGen
         final String directory = PackType.SERVER_DATA.getDirectory();
         Registry<PlacedFeature> placedFeatures = ops.registry(Registry.PLACED_FEATURE_REGISTRY).get();
 
+
         final String featurePathString = String.join("/", directory, UltimateCompression.MODID, Registry.PLACED_FEATURE_REGISTRY.location().getPath(), "iron_oregen" + ".json");
         final Path featurePath = outputFolder.resolve(featurePathString);
         final PlacedFeature feature = placedFeatures.get(new ResourceLocation(UltimateCompression.MODID, "test"));

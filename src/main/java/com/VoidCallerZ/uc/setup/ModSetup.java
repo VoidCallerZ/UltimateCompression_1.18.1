@@ -1,5 +1,6 @@
 package com.VoidCallerZ.uc.setup;
 
+import com.VoidCallerZ.uc.dataGen.ucWorldGen;
 import com.VoidCallerZ.uc.setup.registration.FoodRegistration;
 import com.VoidCallerZ.uc.setup.registration.Registration;
 import com.VoidCallerZ.uc.setup.registration.ToolRegistration;
@@ -47,6 +48,7 @@ public class ModSetup
     public static void setup()
     {
         IEventBus bus = MinecraftForge.EVENT_BUS;
+        bus.addListener(ucWorldGen::onGatherData);
         //bus.addListener(Ores::onBiomeLoadingEvent);
     }
 

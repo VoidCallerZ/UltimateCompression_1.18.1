@@ -27,7 +27,7 @@ public class OresConfig
         COMMON_BUILDER.comment("Settings for ore generation").push("ores");
 
         OVERWORLD_VEINSIZE = COMMON_BUILDER.comment("Default veinsize of iron, gold, copper, lapis & redstone").defineInRange("overworldVeinsize", 5, 0, 50);
-        OVERWORLD_AMOUNT = COMMON_BUILDER.comment("Default maximum amount of generations per chunk").defineInRange("overworldChunkAmount", 5, 0, 50);
+        OVERWORLD_AMOUNT = COMMON_BUILDER.comment("Default maximum amount of generations per chunk").defineInRange("overworldChunkAmount", 30, 0, 50);
         DEEPSLATE_VEINSIZE = COMMON_BUILDER.comment("Default veinsize of iron, gold, copper, lapis & redstone").defineInRange("deepslateVeinsize", 5, 0, 50);
         DEEPSLATE_AMOUNT = COMMON_BUILDER.comment("Default maximum amount of generations per chunk in deepslate").defineInRange("deepslateChunkAmount", 5, 0, 50);
 

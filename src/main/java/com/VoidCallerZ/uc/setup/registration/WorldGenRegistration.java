@@ -28,6 +28,11 @@ public class WorldGenRegistration
     private static final DeferredRegister<Codec<? extends BiomeModifier>> SERIALIZERS = DeferredRegister.create(ForgeRegistries.Keys.BIOME_MODIFIER_SERIALIZERS, UltimateCompression.MODID);
 
     public static Holder<PlacedFeature> IRON_OREGEN;
+    public static Holder<PlacedFeature> GOLD_OREGEN;
+    public static Holder<PlacedFeature> COPPER_OREGEN;
+    public static Holder<PlacedFeature> DIAMOND_OREGEN;
+    public static Holder<PlacedFeature> LAPIS_OREGEN;
+    public static Holder<PlacedFeature> REDSTONE_OREGEN;
 
     public static void init()
     {
@@ -39,6 +44,11 @@ public class WorldGenRegistration
     public static void registerConfiguredFeatures()
     {
         IRON_OREGEN = registerPlacedFeatureUniform("compressed_iron_ore", false, Registration.COMPRESSED_IRON_ORE.get().defaultBlockState(), OresConfig.OVERWORLD_VEINSIZE.get(), OresConfig.OVERWORLD_AMOUNT.get(), 0, 48);
+        GOLD_OREGEN = registerPlacedFeatureUniform("compressed_gold_ore", false, Registration.COMPRESSED_GOLD_ORE.get().defaultBlockState(), OresConfig.OVERWORLD_VEINSIZE.get(), OresConfig.OVERWORLD_AMOUNT.get(), 0, 48);
+        COPPER_OREGEN = registerPlacedFeatureUniform("compressed_copper_ore", false, Registration.COMPRESSED_COPPER_ORE.get().defaultBlockState(), OresConfig.OVERWORLD_VEINSIZE.get(), OresConfig.OVERWORLD_AMOUNT.get(), 0, 96);
+        DIAMOND_OREGEN = registerPlacedFeatureUniform("compressed_diamond_ore", false, Registration.COMPRESSED_DIAMOND_ORE.get().defaultBlockState(), OresConfig.OVERWORLD_VEINSIZE.get(), OresConfig.OVERWORLD_AMOUNT.get(), 0, 16);
+        LAPIS_OREGEN = registerPlacedFeatureUniform("compressed_lapis_ore", false, Registration.COMPRESSED_LAPIS_ORE.get().defaultBlockState(), OresConfig.OVERWORLD_VEINSIZE.get(), OresConfig.OVERWORLD_AMOUNT.get(), 0, 30);
+        REDSTONE_OREGEN = registerPlacedFeatureUniform("compressed_redstone_ore", false, Registration.COMPRESSED_REDSTONE_ORE.get().defaultBlockState(), OresConfig.OVERWORLD_VEINSIZE.get(), OresConfig.OVERWORLD_AMOUNT.get(), 0, 15);
     }
 
     private static <C extends FeatureConfiguration, F extends Feature<C>> Holder<PlacedFeature> registerPlacedFeatureUniform(String registryName, boolean isDeepslateOre, BlockState oreBlock, int veinSize, int chunkAmount, int minY, int maxY)
