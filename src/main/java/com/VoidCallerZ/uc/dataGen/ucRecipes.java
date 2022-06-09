@@ -102,6 +102,7 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_STONE.get(), Items.STONE, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_TUFF.get(), Items.TUFF, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CLAY.get(), Items.CLAY, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MOSSY_COBBLESTONE.get(), Items.MOSSY_COBBLESTONE, 9, consumer);
 
         //Polished Blocks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_ANDESITE.get(), Items.POLISHED_ANDESITE, 9, consumer);
@@ -111,6 +112,16 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS.get(), Items.POLISHED_BLACKSTONE_BRICKS, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_DIORITE.get(), Items.POLISHED_DIORITE, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_GRANITE.get(), Items.POLISHED_GRANITE, 9, consumer);
+
+        //Smooth Blocks
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SMOOTH_BASALT.get(), Items.SMOOTH_BASALT, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SMOOTH_STONE.get(), Items.SMOOTH_STONE, 9, consumer);
+
+        //Stone Bricks
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CHISELED_STONE_BRICKS.get(), Items.CHISELED_STONE_BRICKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CRACKED_STONE_BRICKS.get(), Items.CRACKED_STONE_BRICKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MOSSY_STONE_BRICKS.get(), Items.MOSSY_STONE_BRICKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_STONE_BRICKS.get(), Items.STONE_BRICKS, 9, consumer);
 
         //Nether Blocks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), Items.QUARTZ_BLOCK, 9, consumer);

@@ -75,6 +75,7 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_STONE_ITEM.get()).getPath(), modLoc("block/compressed_stone"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_TUFF_ITEM.get()).getPath(), modLoc("block/compressed_tuff"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_CLAY_ITEM.get()).getPath(), modLoc("block/compressed_clay"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_MOSSY_COBBLESTONE_ITEM.get()).getPath(), modLoc("block/compressed_mossy_cobblestone"));
 
         //Polished Blocks
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_POLISHED_ANDESITE_ITEM.get()).getPath(), modLoc("block/compressed_polished_andesite"));
@@ -84,6 +85,16 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_polished_blackstone_bricks"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_POLISHED_DIORITE_ITEM.get()).getPath(), modLoc("block/compressed_polished_diorite"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_POLISHED_GRANITE_ITEM.get()).getPath(), modLoc("block/compressed_polished_granite"));
+
+        //Smooth Blocks
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_SMOOTH_BASALT_ITEM.get()).getPath(), modLoc("block/compressed_smooth_basalt"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_SMOOTH_STONE_ITEM.get()).getPath(), modLoc("block/compressed_smooth_stone"));
+
+        //Stone Bricks
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_CHISELED_STONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_stone_bricks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_CRACKED_STONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_cracked_stone_bricks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_MOSSY_STONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_mossy_stone_bricks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_STONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_stone_bricks"));
 
         //Nether Blocks
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_nether_quartz_block"));

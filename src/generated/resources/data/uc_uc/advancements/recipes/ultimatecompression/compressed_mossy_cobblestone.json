@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "uc_uc:compressed_mossy_cobblestone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uc:compressed_mossy_cobblestone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:mossy_cobblestone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_mossy_cobblestone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "uc_uc:compressed_mossy_cobblestone"
+    ]
+  }
+}

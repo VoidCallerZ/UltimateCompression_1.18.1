@@ -77,6 +77,7 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(Registration.COMPRESSED_STONE.get(), "compressed_stone", "block/compressed/basic/compressed_stone");
         singleTextureBlock(Registration.COMPRESSED_TUFF.get(), "compressed_tuff", "block/compressed/basic/compressed_tuff");
         singleTextureBlock(Registration.COMPRESSED_CLAY.get(), "compressed_clay", "block/compressed/basic/compressed_clay");
+        singleTextureBlock(Registration.COMPRESSED_MOSSY_COBBLESTONE.get(), "compressed_mossy_cobblestone", "block/compressed/basic/compressed_mossy_cobblestone");
 
         //Polished Blocks
         singleTextureBlock(Registration.COMPRESSED_POLISHED_ANDESITE.get(), "compressed_polished_andesite", "block/compressed/basic/polished/compressed_polished_andesite");
@@ -86,6 +87,16 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(Registration.COMPRESSED_POLISHED_DEEPSLATE.get(), "compressed_polished_deepslate", "block/compressed/basic/polished/compressed_polished_deepslate");
         singleTextureBlock(Registration.COMPRESSED_POLISHED_DIORITE.get(), "compressed_polished_diorite", "block/compressed/basic/polished/compressed_polished_diorite");
         singleTextureBlock(Registration.COMPRESSED_POLISHED_GRANITE.get(), "compressed_polished_granite", "block/compressed/basic/polished/compressed_polished_granite");
+
+        //Smooth Blocks
+        singleTextureBlock(Registration.COMPRESSED_SMOOTH_BASALT.get(), "compressed_smooth_basalt", "block/compressed/basic/smooth/compressed_smooth_basalt");
+        singleTextureBlock(Registration.COMPRESSED_SMOOTH_STONE.get(), "compressed_smooth_stone", "block/compressed/basic/smooth/compressed_smooth_stone");
+
+        //Stone Bricks
+        singleTextureBlock(Registration.COMPRESSED_CHISELED_STONE_BRICKS.get(), "compressed_chiseled_stone_bricks", "block/compressed/basic/stone_bricks/compressed_chiseled_stone_bricks");
+        singleTextureBlock(Registration.COMPRESSED_CRACKED_STONE_BRICKS.get(), "compressed_cracked_stone_bricks", "block/compressed/basic/stone_bricks/compressed_cracked_stone_bricks");
+        singleTextureBlock(Registration.COMPRESSED_MOSSY_STONE_BRICKS.get(), "compressed_mossy_stone_bricks", "block/compressed/basic/stone_bricks/compressed_mossy_stone_bricks");
+        singleTextureBlock(Registration.COMPRESSED_STONE_BRICKS.get(), "compressed_stone_bricks", "block/compressed/basic/stone_bricks/compressed_stone_bricks");
 
         //Nether Blocks
         singleTextureBlock(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "compressed_nether_quartz_block", "block/compressed/nether/compressed_quartz_block_side");
