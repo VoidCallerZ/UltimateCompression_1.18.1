@@ -161,6 +161,7 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_STONE.get(), "Compressed Stone");
         add(Registration.COMPRESSED_TUFF.get(), "Compressed Tuff");
         add(Registration.COMPRESSED_CLAY.get(), "Compressed Clay");
+        add(Registration.COMPRESSED_MOSSY_COBBLESTONE.get(), "Compressed Mossy Cobblestone");
 
         //Polished Blocks
         add(Registration.COMPRESSED_POLISHED_ANDESITE.get(), "Compressed Polished Andesite");
@@ -174,6 +175,12 @@ public class ucLanguageProvider extends LanguageProvider
         //Smooth Blocks
         add(Registration.COMPRESSED_SMOOTH_BASALT.get(), "Compressed Smooth Basalt");
         add(Registration.COMPRESSED_SMOOTH_STONE.get(), "Compressed Smooth Stone");
+
+        //Stone Bricks
+        add(Registration.COMPRESSED_CHISELED_STONE_BRICKS.get(), "Compressed Chiseled Stone Bricks");
+        add(Registration.COMPRESSED_CRACKED_STONE_BRICKS.get(), "Compressed Cracked Stone Bricks");
+        add(Registration.COMPRESSED_MOSSY_STONE_BRICKS.get(), "Compressed Mossy Stone Bricks");
+        add(Registration.COMPRESSED_STONE_BRICKS.get(), "Compressed Stone Bricks");
 
         //Nether Blocks
         add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "Compressed Block of Quartz");

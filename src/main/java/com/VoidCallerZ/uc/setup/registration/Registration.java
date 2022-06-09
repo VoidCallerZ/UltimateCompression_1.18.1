@@ -160,6 +160,8 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_TUFF_ITEM = fromBlock(COMPRESSED_TUFF);
     public static final RegistryObject<Block> COMPRESSED_CLAY = BLOCKS.register("compressed_clay", () -> new Block(SOFT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_CLAY_ITEM = fromBlock(COMPRESSED_CLAY);
+    public static final RegistryObject<Block> COMPRESSED_MOSSY_COBBLESTONE = BLOCKS.register("compressed_mossy_cobblestone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_MOSSY_COBBLESTONE_ITEM = fromBlock(COMPRESSED_MOSSY_COBBLESTONE);
 
     //Polished Blocks
     public static final RegistryObject<Block> COMPRESSED_POLISHED_ANDESITE = BLOCKS.register("compressed_polished_andesite", () -> new Block(ORE_PROPERTIES));
@@ -182,6 +184,16 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_SMOOTH_BASALT_ITEM = fromBlock(COMPRESSED_SMOOTH_BASALT);
     public static final RegistryObject<Block> COMPRESSED_SMOOTH_STONE = BLOCKS.register("compressed_smooth_stone", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_SMOOTH_STONE_ITEM = fromBlock(COMPRESSED_SMOOTH_STONE);
+
+    //Stone Bricks
+    public static final RegistryObject<Block> COMPRESSED_CHISELED_STONE_BRICKS = BLOCKS.register("compressed_chiseled_stone_bricks", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CHISELED_STONE_BRICKS_ITEM = fromBlock(COMPRESSED_CHISELED_STONE_BRICKS);
+    public static final RegistryObject<Block> COMPRESSED_CRACKED_STONE_BRICKS = BLOCKS.register("compressed_cracked_stone_bricks", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CRACKED_STONE_BRICKS_ITEM = fromBlock(COMPRESSED_CRACKED_STONE_BRICKS);
+    public static final RegistryObject<Block> COMPRESSED_MOSSY_STONE_BRICKS = BLOCKS.register("compressed_mossy_stone_bricks", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_MOSSY_STONE_BRICKS_ITEM = fromBlock(COMPRESSED_MOSSY_STONE_BRICKS);
+    public static final RegistryObject<Block> COMPRESSED_STONE_BRICKS = BLOCKS.register("compressed_stone_bricks", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_STONE_BRICKS_ITEM = fromBlock(COMPRESSED_STONE_BRICKS);
 
     //Nether Blocks
     public static final RegistryObject<Block> COMPRESSED_NETHER_QUARTZ_BLOCK = BLOCKS.register("compressed_nether_quartz_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(0.8F)));

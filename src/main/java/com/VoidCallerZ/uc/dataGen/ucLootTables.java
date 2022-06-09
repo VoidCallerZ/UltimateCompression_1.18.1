@@ -63,6 +63,7 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(Registration.COMPRESSED_STONE.get(), createSimpleTable("compressed_stone", Registration.COMPRESSED_STONE.get()));
         lootTables.put(Registration.COMPRESSED_TUFF.get(), createSimpleTable("compressed_tuff", Registration.COMPRESSED_TUFF.get()));
         lootTables.put(Registration.COMPRESSED_CLAY.get(), createSilkTouchTable("compressed_clay", Registration.COMPRESSED_CLAY.get(), Items.CLAY_BALL, 3, 8));
+        lootTables.put(Registration.COMPRESSED_MOSSY_COBBLESTONE.get(), createSimpleTable("compressed_mossy_cobblestone", Registration.COMPRESSED_MOSSY_COBBLESTONE.get()));
 
         //Polished Blocks
         lootTables.put(Registration.COMPRESSED_POLISHED_ANDESITE.get(), createSimpleTable("compressed_polished_andesite", Registration.COMPRESSED_POLISHED_ANDESITE.get()));
@@ -76,6 +77,12 @@ public class ucLootTables extends BaseLootTableProvider
         //Smooth Blocks
         lootTables.put(Registration.COMPRESSED_SMOOTH_BASALT.get(), createSimpleTable("compressed_smooth_basalt", Registration.COMPRESSED_SMOOTH_BASALT.get()));
         lootTables.put(Registration.COMPRESSED_SMOOTH_STONE.get(), createSimpleTable("compressed_smooth_stone", Registration.COMPRESSED_SMOOTH_STONE.get()));
+
+        //Stone Bricks
+        lootTables.put(Registration.COMPRESSED_CHISELED_STONE_BRICKS.get(), createSimpleTable("compressed_chiseled_stone_bricks", Registration.COMPRESSED_CHISELED_STONE_BRICKS.get()));
+        lootTables.put(Registration.COMPRESSED_CRACKED_STONE_BRICKS.get(), createSimpleTable("compressed_cracked_stone_bricks", Registration.COMPRESSED_CRACKED_STONE_BRICKS.get()));
+        lootTables.put(Registration.COMPRESSED_MOSSY_STONE_BRICKS.get(), createSimpleTable("compressed_mossy_stone_bricks", Registration.COMPRESSED_MOSSY_STONE_BRICKS.get()));
+        lootTables.put(Registration.COMPRESSED_STONE_BRICKS.get(), createSimpleTable("compressed_stone_bricks", Registration.COMPRESSED_STONE_BRICKS.get()));
 
         //Nether Blocks
         lootTables.put(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), createSimpleTable("compressed_nether_quartz_block", Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get()));
