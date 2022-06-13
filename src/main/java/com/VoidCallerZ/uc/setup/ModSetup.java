@@ -1,11 +1,8 @@
 package com.VoidCallerZ.uc.setup;
 
-import com.VoidCallerZ.uc.dataGen.ucWorldGen;
 import com.VoidCallerZ.uc.setup.registration.FoodRegistration;
 import com.VoidCallerZ.uc.setup.registration.Registration;
 import com.VoidCallerZ.uc.setup.registration.ToolRegistration;
-import com.VoidCallerZ.uc.setup.registration.WorldGenRegistration;
-import com.VoidCallerZ.uc.worldgen.ores.Ores;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -48,13 +45,10 @@ public class ModSetup
     public static void setup()
     {
         IEventBus bus = MinecraftForge.EVENT_BUS;
-        bus.addListener(ucWorldGen::onGatherData);
-        //bus.addListener(Ores::onBiomeLoadingEvent);
     }
 
     public static void init(FMLCommonSetupEvent event)
     {
-        event.enqueueWork(() ->
-                WorldGenRegistration.registerConfiguredFeatures());
+
     }
 }

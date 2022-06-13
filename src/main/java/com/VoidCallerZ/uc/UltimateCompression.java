@@ -1,8 +1,10 @@
 package com.VoidCallerZ.uc;
 
-import com.VoidCallerZ.uc.dataGen.ucWorldGen;
+import com.VoidCallerZ.uc.dataGen.BiomeModifierProvider;
 import com.VoidCallerZ.uc.setup.*;
 import com.VoidCallerZ.uc.setup.registration.*;
+import com.VoidCallerZ.uc.worldgen.ModBiomeModifiers;
+import com.VoidCallerZ.uc.worldgen.ModPlacedFeatures;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
@@ -27,13 +29,14 @@ public class UltimateCompression
         ArmorRegistration.init();
         FoodRegistration.init();
         ItemRegistration.init();
-        WorldGenRegistration.init();
         RecipeRegistration.init();
+        ModPlacedFeatures.init();
+        ModBiomeModifiers.init();
         Config.register();
 
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
         modbus.addListener(ModSetup::init);
-        //modbus.addListener(ucWorldGen::onGatherData);
+        modbus.addListener(BiomeModifierProvider::onGatherData);
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> modbus.addListener(ClientSetup::init));
     }
 }

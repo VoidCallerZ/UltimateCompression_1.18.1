@@ -1,7 +1,10 @@
 package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
-import com.VoidCallerZ.uc.worldgen.UcGenModifier;
+import com.VoidCallerZ.uc.setup.registration.Registration;
+import com.VoidCallerZ.uc.worldgen.ModConfiguredFeatures;
+import com.VoidCallerZ.uc.worldgen.ModPlacedFeatures;
+import com.VoidCallerZ.uc.worldgen.biomemodifiers.ModOreBiomeModifier;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
@@ -18,10 +21,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.tags.BiomeTags;
-import net.minecraft.world.level.biome.MobSpawnSettings;
-import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -31,7 +31,7 @@ import org.apache.logging.log4j.Logger;
 import java.io.IOException;
 import java.nio.file.Path;
 
-public class ucWorldGen
+public class BiomeModifierProvider
 {
     public static final Logger LOGGER = LogManager.getLogger();
 
@@ -44,48 +44,44 @@ public class ucWorldGen
         final String directory = PackType.SERVER_DATA.getDirectory();
         Registry<PlacedFeature> placedFeatures = ops.registry(Registry.PLACED_FEATURE_REGISTRY).get();
 
-
-        final String featurePathString = String.join("/", directory, UltimateCompression.MODID, Registry.PLACED_FEATURE_REGISTRY.location().getPath(), "iron_oregen" + ".json");
+        final String featurePathString = String.join("/", directory, UltimateCompression.MODID, Registry.PLACED_FEATURE_REGISTRY.location().getPath(), "test.json");
         final Path featurePath = outputFolder.resolve(featurePathString);
-        final PlacedFeature feature = placedFeatures.get(new ResourceLocation(UltimateCompression.MODID, "test"));
+        final PlacedFeature feature = placedFeatures.get(ModPlacedFeatures.PLACED_FEATURES.getRegistryName());
 
         final ResourceLocation biomeModifiersRegistryID = ForgeRegistries.Keys.BIOME_MODIFIERS.location();
-        final String biomeModifierPathString = String.join("/", directory, UltimateCompression.MODID, biomeModifiersRegistryID.getNamespace(), biomeModifiersRegistryID.getNamespace(), "iron_oregen_biome_modifier" + ".json");
+        final String biomeModifierPathString = String.join("/", directory, UltimateCompression.MODID, biomeModifiersRegistryID.getNamespace(), biomeModifiersRegistryID.getPath(), "modify_overworld.json");
         final Path biomeModifierPath = outputFolder.resolve(biomeModifierPathString);
-        final BiomeModifier biomeModifier = new UcGenModifier(
-                new HolderSet.Named<>(ops.registry(Registry.BIOME_REGISTRY).get(), BiomeTags.IS_OVERWORLD),
-                GenerationStep.Decoration.UNDERGROUND_ORES,
-                HolderSet.direct(placedFeatures.getOrCreateHolderOrThrow(ResourceKey.create(Registry.PLACED_FEATURE_REGISTRY, new ResourceLocation(UltimateCompression.MODID, "iron_oregen"))))
-        );
+        final BiomeModifier biomeModifier = new ModOreBiomeModifier(new HolderSet.Named<>(ops.registry(Registry.BIOME_REGISTRY).get(), BiomeTags.IS_OVERWORLD),
+                Holder.direct(ModPlacedFeatures.IRON_OREGEN.get()));
 
         generator.addProvider(event.includeServer(), new DataProvider()
         {
             @Override
-            public void run(final CachedOutput cache) throws IOException
+            public void run(CachedOutput cache) throws IOException
             {
                 PlacedFeature.DIRECT_CODEC.encodeStart(ops, feature)
-                        .resultOrPartial(msg -> LOGGER.error("Failed to encode {}: {}", featurePathString, msg))
-                        .ifPresent(json ->
+                        .resultOrPartial(msg -> LOGGER.error("Failed to encode {}: {}", featurePathString, msg)) // Log error on encode failure.
+                        .ifPresent(json -> // Output to file on encode success.
                         {
                             try
                             {
                                 DataProvider.saveStable(cache, json, featurePath);
                             }
-                            catch (IOException e)
+                            catch (IOException e) // The throws can't deal with this exception, because we're inside the ifPresent.
                             {
                                 LOGGER.error("Failed to save " + featurePathString, e);
                             }
                         });
 
                 BiomeModifier.DIRECT_CODEC.encodeStart(ops, biomeModifier)
-                        .resultOrPartial(msg -> LOGGER.error("Failed to encode {}: {}", biomeModifierPathString, msg))
-                        .ifPresent(json ->
+                        .resultOrPartial(msg -> LOGGER.error("Failed to encode {}: {}", biomeModifierPathString, msg)) // Log error on encode failure.
+                        .ifPresent(json -> // Output to file on encode success.
                         {
                             try
                             {
                                 DataProvider.saveStable(cache, json, biomeModifierPath);
                             }
-                            catch (IOException e)
+                            catch (IOException e) // The throws can't deal with this exception, because we're inside the ifPresent.
                             {
                                 LOGGER.error("Failed to save " + biomeModifierPathString, e);
                             }
@@ -99,6 +95,4 @@ public class ucWorldGen
             }
         });
     }
-
-
 }
