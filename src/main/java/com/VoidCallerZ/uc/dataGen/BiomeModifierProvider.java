@@ -52,7 +52,7 @@ public class BiomeModifierProvider
         final String biomeModifierPathString = String.join("/", directory, UltimateCompression.MODID, biomeModifiersRegistryID.getNamespace(), biomeModifiersRegistryID.getPath(), "modify_overworld.json");
         final Path biomeModifierPath = outputFolder.resolve(biomeModifierPathString);
         final BiomeModifier biomeModifier = new ModOreBiomeModifier(new HolderSet.Named<>(ops.registry(Registry.BIOME_REGISTRY).get(), BiomeTags.IS_OVERWORLD),
-                Holder.direct(ModPlacedFeatures.IRON_OREGEN.get()));
+                HolderSet.direct(ModPlacedFeatures.IRON_OREGEN.get()));
 
         generator.addProvider(event.includeServer(), new DataProvider()
         {

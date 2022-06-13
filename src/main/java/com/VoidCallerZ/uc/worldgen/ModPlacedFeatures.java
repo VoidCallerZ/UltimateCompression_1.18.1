@@ -2,6 +2,7 @@ package com.VoidCallerZ.uc.worldgen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.setup.registration.Registration;
+import com.VoidCallerZ.uc.worldgen.ores.Ores;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.data.worldgen.features.OreFeatures;

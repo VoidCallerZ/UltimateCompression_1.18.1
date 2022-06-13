@@ -8,6 +8,9 @@ import com.VoidCallerZ.uc.blocks.machines.*;
 import com.VoidCallerZ.uc.blocks.screen.CompressorBlockMenu;
 import com.VoidCallerZ.uc.items.UcFuelItem;
 import com.VoidCallerZ.uc.setup.ModSetup;
+import com.VoidCallerZ.uc.worldgen.biomemodifiers.ModOreBiomeModifier;
+import com.VoidCallerZ.uc.worldgen.ores.Ores;
+import com.mojang.serialization.Codec;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -17,9 +20,11 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.common.extensions.IForgeMenuType;
+import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.network.IContainerFactory;
@@ -29,6 +34,8 @@ import net.minecraftforge.registries.RegistryObject;
 import org.lwjgl.system.CallbackI;
 
 import static com.VoidCallerZ.uc.UltimateCompression.MODID;
+import static com.VoidCallerZ.uc.worldgen.ModBiomeModifiers.BIOME_MODIFIERS;
+import static com.VoidCallerZ.uc.worldgen.ModPlacedFeatures.PLACED_FEATURES;
 
 public class Registration
 {
@@ -45,6 +52,9 @@ public class Registration
         BLOCK_ENTITIES.register(bus);
         CONTAINERS.register(bus);
     }
+
+    public static final RegistryObject<Codec<? extends BiomeModifier>> ORE_BIOME_MODIFIER = BIOME_MODIFIERS.register("ore_biome_modifier", ModOreBiomeModifier::makeCodec);
+    public static final RegistryObject<PlacedFeature> COMPRESSED_IRON_ORE_GENERATION = PLACED_FEATURES.register("compressed_iron_ore", () -> Ores.createOverworldOregen().get());
 
     //Block & Item properties
     public static final BlockBehaviour.Properties ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops();

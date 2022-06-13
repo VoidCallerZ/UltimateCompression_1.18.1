@@ -31,7 +31,7 @@ public class UltimateCompression
         ItemRegistration.init();
         RecipeRegistration.init();
         ModPlacedFeatures.init();
-        ModBiomeModifiers.init();
+//        ModBiomeModifiers.init();
         Config.register();
 
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();

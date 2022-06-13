@@ -26,6 +26,6 @@ public class ModBiomeModifiers
     public static RegistryObject<Codec<ModOreBiomeModifier>> ORE_MODIFIER = BIOME_MODIFIERS.register("ores", () ->
             RecordCodecBuilder.create(builder -> builder.group(
                     Biome.LIST_CODEC.fieldOf("biomes").forGetter(ModOreBiomeModifier::biomes),
-                    PlacedFeature.CODEC.fieldOf("feature").forGetter(ModOreBiomeModifier::feature)
+                    PlacedFeature.LIST_CODEC.fieldOf("feature").forGetter(ModOreBiomeModifier::features)
             ).apply(builder, ModOreBiomeModifier::new)));
 }
