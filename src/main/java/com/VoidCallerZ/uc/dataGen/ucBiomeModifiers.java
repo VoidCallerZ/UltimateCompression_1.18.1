@@ -25,7 +25,7 @@ import static com.VoidCallerZ.uc.UltimateCompression.MODID;
 
 public class ucBiomeModifiers implements DataProvider
 {
-    private final DataGenerator generator;
+    public final DataGenerator generator;
 
     public ucBiomeModifiers(DataGenerator generator)
     {
@@ -39,7 +39,7 @@ public class ucBiomeModifiers implements DataProvider
         Registry<PlacedFeature> placedFeatures = ops.registry(Registry.PLACED_FEATURE_REGISTRY).get();
         final Path outputFolder = generator.getOutputFolder();
         final String directory = PackType.SERVER_DATA.getDirectory();
-        final String featurePathString = String.join("/", directory, MODID, Registry.PLACED_FEATURE_REGISTRY.location().getPath(), "ore_overworld.json");
+        final String featurePathString = String.join("/", directory, MODID, "forge/biome_modifier" /*Registry.PLACED_FEATURE_REGISTRY.location().getPath()*/, "ore_overworld.json");
         final Path featurePath = outputFolder.resolve(featurePathString);
         final String biomeModifierPathString = String.join("/", directory, MODID, WorldGenRegistration.ORE_BIOME_MODIFIER.getId().getNamespace(), WorldGenRegistration.ORE_BIOME_MODIFIER.getId().getPath(), "ore_modifiers.json");
         final Path biomeModifierPath = outputFolder.resolve(biomeModifierPathString);
