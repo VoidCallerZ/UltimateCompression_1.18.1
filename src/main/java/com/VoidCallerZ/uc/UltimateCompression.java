@@ -1,10 +1,7 @@
 package com.VoidCallerZ.uc;
 
-import com.VoidCallerZ.uc.dataGen.BiomeModifierProvider;
 import com.VoidCallerZ.uc.setup.*;
 import com.VoidCallerZ.uc.setup.registration.*;
-import com.VoidCallerZ.uc.worldgen.ModBiomeModifiers;
-import com.VoidCallerZ.uc.worldgen.ModPlacedFeatures;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
@@ -18,25 +15,23 @@ import org.apache.logging.log4j.Logger;
 public class UltimateCompression
 {
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MODID = "uc";
 
     public UltimateCompression()
     {
         ModSetup.setup();
         Registration.init();
+        WorldGenRegistration.init();
         ToolRegistration.init();
         ArmorRegistration.init();
         FoodRegistration.init();
         ItemRegistration.init();
         RecipeRegistration.init();
-        ModPlacedFeatures.init();
-//        ModBiomeModifiers.init();
         Config.register();
 
         IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
         modbus.addListener(ModSetup::init);
-        modbus.addListener(BiomeModifierProvider::onGatherData);
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> modbus.addListener(ClientSetup::init));
     }
 }
