@@ -96,6 +96,14 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_MOSSY_STONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_mossy_stone_bricks"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_STONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_stone_bricks"));
 
+        //Sandstone
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_CHISELED_SANDSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_sandstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_CHISELED_RED_SANDSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_red_sandstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_CUT_SANDSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_sandstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_CUT_RED_SANDSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_red_sandstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_SANDSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_sandstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_RED_SANDSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_red_sandstone"));
+
         //Nether Blocks
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_nether_quartz_block"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_BASALT_ITEM.get()).getPath(), modLoc("block/compressed_basalt"));

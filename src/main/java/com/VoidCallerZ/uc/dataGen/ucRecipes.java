@@ -123,6 +123,14 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MOSSY_STONE_BRICKS.get(), Items.MOSSY_STONE_BRICKS, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_STONE_BRICKS.get(), Items.STONE_BRICKS, 9, consumer);
 
+        //Sandstone
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CHISELED_RED_SANDSTONE.get(), Items.CHISELED_RED_SANDSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CHISELED_SANDSTONE.get(), Items.CHISELED_SANDSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CUT_RED_SANDSTONE.get(), Items.CUT_RED_SANDSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CUT_SANDSTONE.get(), Items.CUT_SANDSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RED_SANDSTONE.get(), Items.RED_SANDSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SANDSTONE.get(), Items.SANDSTONE, 9, consumer);
+
         //Nether Blocks
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), Items.QUARTZ_BLOCK, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BASALT.get(), Items.BASALT, 9, consumer);

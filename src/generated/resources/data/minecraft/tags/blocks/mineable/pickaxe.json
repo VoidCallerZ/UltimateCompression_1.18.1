@@ -60,6 +60,12 @@
     "uc:compressed_chiseled_stone_bricks",
     "uc:compressed_cracked_stone_bricks",
     "uc:compressed_mossy_stone_bricks",
-    "uc:compressed_stone_bricks"
+    "uc:compressed_stone_bricks",
+    "uc:compressed_chiseled_red_sandstone",
+    "uc:compressed_chiseled_sandstone",
+    "uc:compressed_cut_red_sandstone",
+    "uc:compressed_cut_sandstone",
+    "uc:compressed_red_sandstone",
+    "uc:compressed_sandstone"
   ]
 }

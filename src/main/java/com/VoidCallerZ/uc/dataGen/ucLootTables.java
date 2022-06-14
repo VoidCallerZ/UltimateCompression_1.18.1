@@ -84,6 +84,14 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(Registration.COMPRESSED_MOSSY_STONE_BRICKS.get(), createSimpleTable("compressed_mossy_stone_bricks", Registration.COMPRESSED_MOSSY_STONE_BRICKS.get()));
         lootTables.put(Registration.COMPRESSED_STONE_BRICKS.get(), createSimpleTable("compressed_stone_bricks", Registration.COMPRESSED_STONE_BRICKS.get()));
 
+        //Sandstone
+        lootTables.put(Registration.COMPRESSED_CHISELED_RED_SANDSTONE.get(), createSimpleTable("compressed_chiseled_red_sandstone", Registration.COMPRESSED_CHISELED_RED_SANDSTONE.get()));
+        lootTables.put(Registration.COMPRESSED_CHISELED_SANDSTONE.get(), createSimpleTable("compressed_chiseled_sandstone", Registration.COMPRESSED_CHISELED_SANDSTONE.get()));
+        lootTables.put(Registration.COMPRESSED_CUT_RED_SANDSTONE.get(), createSimpleTable("compressed_cut_red_sandstone", Registration.COMPRESSED_CUT_RED_SANDSTONE.get()));
+        lootTables.put(Registration.COMPRESSED_CUT_SANDSTONE.get(), createSimpleTable("compressed_cut_sandstone", Registration.COMPRESSED_CUT_SANDSTONE.get()));
+        lootTables.put(Registration.COMPRESSED_RED_SANDSTONE.get(), createSimpleTable("compressed_red_sandstone", Registration.COMPRESSED_RED_SANDSTONE.get()));
+        lootTables.put(Registration.COMPRESSED_SANDSTONE.get(), createSimpleTable("compressed_sandstone", Registration.COMPRESSED_SANDSTONE.get()));
+
         //Nether Blocks
         lootTables.put(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), createSimpleTable("compressed_nether_quartz_block", Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get()));
         lootTables.put(Registration.COMPRESSED_BASALT.get(), createSimpleTable("compressed_basalt", Registration.COMPRESSED_BASALT.get()));

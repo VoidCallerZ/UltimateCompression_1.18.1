@@ -7,7 +7,7 @@
       "targets": [
         {
           "state": {
-            "Name": "uc:compressed_iron_ore"
+            "Name": "uc:compressed_copper_ore"
           },
           "target": {
             "predicate_type": "minecraft:tag_match",
@@ -33,7 +33,7 @@
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "absolute": 90
+          "absolute": 96
         },
         "min_inclusive": {
           "absolute": 0

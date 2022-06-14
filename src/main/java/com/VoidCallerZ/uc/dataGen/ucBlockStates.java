@@ -98,6 +98,14 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(Registration.COMPRESSED_MOSSY_STONE_BRICKS.get(), "compressed_mossy_stone_bricks", "block/compressed/basic/stone_bricks/compressed_mossy_stone_bricks");
         singleTextureBlock(Registration.COMPRESSED_STONE_BRICKS.get(), "compressed_stone_bricks", "block/compressed/basic/stone_bricks/compressed_stone_bricks");
 
+        //Sandstone
+        singleTextureBlock(Registration.COMPRESSED_CHISELED_RED_SANDSTONE.get(), "compressed_chiseled_red_sandstone", "block/compressed/basic/sandstone/compressed_chiseled_red_sandstone");
+        singleTextureBlock(Registration.COMPRESSED_CHISELED_SANDSTONE.get(), "compressed_chiseled_sandstone", "block/compressed/basic/sandstone/compressed_chiseled_sandstone");
+        singleTextureBlock(Registration.COMPRESSED_CUT_RED_SANDSTONE.get(), "compressed_cut_red_sandstone", "block/compressed/basic/sandstone/compressed_cut_red_sandstone");
+        singleTextureBlock(Registration.COMPRESSED_CUT_SANDSTONE.get(), "compressed_cut_sandstone", "block/compressed/basic/sandstone/compressed_cut_sandstone");
+        singleTextureBlock(Registration.COMPRESSED_RED_SANDSTONE.get(), "compressed_red_sandstone", "block/compressed/basic/sandstone/compressed_red_sandstone");
+        singleTextureBlock(Registration.COMPRESSED_SANDSTONE.get(), "compressed_sandstone", "block/compressed/basic/sandstone/compressed_sandstone");
+
         //Nether Blocks
         singleTextureBlock(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "compressed_nether_quartz_block", "block/compressed/nether/compressed_quartz_block_side");
         compressedPillarBlock(Registration.COMPRESSED_BASALT.get(), modLoc("block/compressed/nether/compressed_basalt"));

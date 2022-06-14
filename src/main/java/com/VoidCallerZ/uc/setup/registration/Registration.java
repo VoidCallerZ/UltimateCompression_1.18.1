@@ -194,6 +194,20 @@ public class Registration
     public static final RegistryObject<Block> COMPRESSED_STONE_BRICKS = BLOCKS.register("compressed_stone_bricks", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_STONE_BRICKS_ITEM = fromBlock(COMPRESSED_STONE_BRICKS);
 
+    //Sandstone
+    public static final RegistryObject<Block> COMPRESSED_CHISELED_RED_SANDSTONE = BLOCKS.register("compressed_chiseled_red_sandstone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CHISELED_RED_SANDSTONE_ITEM = fromBlock(COMPRESSED_CHISELED_RED_SANDSTONE);
+    public static final RegistryObject<Block> COMPRESSED_CHISELED_SANDSTONE = BLOCKS.register("compressed_chiseled_sandstone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CHISELED_SANDSTONE_ITEM = fromBlock(COMPRESSED_CHISELED_SANDSTONE);
+    public static final RegistryObject<Block> COMPRESSED_CUT_RED_SANDSTONE = BLOCKS.register("compressed_cut_red_sandstone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CUT_RED_SANDSTONE_ITEM = fromBlock(COMPRESSED_CUT_RED_SANDSTONE);
+    public static final RegistryObject<Block> COMPRESSED_CUT_SANDSTONE = BLOCKS.register("compressed_cut_sandstone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CUT_SANDSTONE_ITEM = fromBlock(COMPRESSED_CUT_SANDSTONE);
+    public static final RegistryObject<Block> COMPRESSED_RED_SANDSTONE = BLOCKS.register("compressed_red_sandstone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_RED_SANDSTONE_ITEM = fromBlock(COMPRESSED_RED_SANDSTONE);
+    public static final RegistryObject<Block> COMPRESSED_SANDSTONE = BLOCKS.register("compressed_sandstone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_SANDSTONE_ITEM = fromBlock(COMPRESSED_SANDSTONE);
+
     //Nether Blocks
     public static final RegistryObject<Block> COMPRESSED_NETHER_QUARTZ_BLOCK = BLOCKS.register("compressed_nether_quartz_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(0.8F)));
     public static final RegistryObject<Item> COMPRESSED_NETHER_QUARTZ_BLOCK_ITEM = fromBlock(COMPRESSED_NETHER_QUARTZ_BLOCK);

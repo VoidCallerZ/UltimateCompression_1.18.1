@@ -1,0 +1,5 @@
+{
+  "type": "uc:ore_biome_modifier",
+  "biomes": "#minecraft:is_overworld",
+  "feature": "uc:compressed_copper_ore"
+}

@@ -182,6 +182,14 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_MOSSY_STONE_BRICKS.get(), "Compressed Mossy Stone Bricks");
         add(Registration.COMPRESSED_STONE_BRICKS.get(), "Compressed Stone Bricks");
 
+        //Sandstone
+        add(Registration.COMPRESSED_CHISELED_RED_SANDSTONE.get(), "Compressed Chiseled Red Sandstone");
+        add(Registration.COMPRESSED_CHISELED_SANDSTONE.get(), "Compressed Chiseled Sandstone");
+        add(Registration.COMPRESSED_CUT_RED_SANDSTONE.get(), "Compressed Cut Red Sandstone");
+        add(Registration.COMPRESSED_CUT_SANDSTONE.get(), "Compressed Cut Sandstone");
+        add(Registration.COMPRESSED_RED_SANDSTONE.get(), "Compressed Red Sandstone");
+        add(Registration.COMPRESSED_SANDSTONE.get(), "Compressed Sandstone");
+
         //Nether Blocks
         add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "Compressed Block of Quartz");
         add(Registration.COMPRESSED_BASALT.get(), "Compressed Basalt");
