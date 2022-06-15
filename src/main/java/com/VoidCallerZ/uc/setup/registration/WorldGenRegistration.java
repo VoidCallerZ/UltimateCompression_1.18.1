@@ -30,6 +30,7 @@ public class WorldGenRegistration
 
     public static final RegistryObject<Codec<? extends BiomeModifier>> ORE_BIOME_MODIFIER = BIOME_MODIFIERS.register(ORE_BIOME_MODIFIER_NAME, OreBiomeModifier::makeCodec);
 
+    //Overworld Ores
     public static final RegistryObject<PlacedFeature> COMPRESSED_IRON_ORE_GEN = PLACED_FEATURES.register("compressed_iron_ore", () -> Ores.createOverworldOregen(false, true, Registration.COMPRESSED_IRON_ORE, OresConfig.OVERWORLD_VEINSIZE.get(), OresConfig.OVERWORLD_AMOUNT.get(), 48).get());
     public static final RegistryObject<PlacedFeature> COMPRESSED_GOLD_ORE_GEN = PLACED_FEATURES.register("compressed_gold_ore", () -> Ores.createOverworldOregen(false, true, Registration.COMPRESSED_GOLD_ORE, OresConfig.OVERWORLD_VEINSIZE.get(), OresConfig.OVERWORLD_AMOUNT.get(), 48).get());
     public static final RegistryObject<PlacedFeature> COMPRESSED_COPPER_ORE_GEN = PLACED_FEATURES.register("compressed_copper_ore", () -> Ores.createOverworldOregen(false, true, Registration.COMPRESSED_COPPER_ORE, OresConfig.OVERWORLD_VEINSIZE.get(), OresConfig.OVERWORLD_AMOUNT.get(), 96).get());
@@ -47,4 +48,8 @@ public class WorldGenRegistration
     public static final RegistryObject<PlacedFeature> COMPRESSED_DEEPSLATE_EMERALD_ORE_GEN = PLACED_FEATURES.register("compressed_deepslate_emerald_ore", () -> Ores.createOverworldOregen(true, false, Registration.COMPRESSED_DEEPSLATE_EMERALD_ORE, OresConfig.DEEPSLATE_DIAMOND_VEINSIZE.get(), OresConfig.DEEPSLATE_DIAMOND_AMOUNT.get(), -64).get());
     public static final RegistryObject<PlacedFeature> COMPRESSED_DEEPSLATE_LAPIS_ORE_GEN = PLACED_FEATURES.register("compressed_deepslate_lapis_ore", () -> Ores.createOverworldOregen(true, true, Registration.COMPRESSED_DEEPSLATE_LAPIS_ORE, OresConfig.DEEPSLATE_VEINSIZE.get(), OresConfig.DEEPSLATE_AMOUNT.get(), -64).get());
     public static final RegistryObject<PlacedFeature> COMPRESSED_DEEPSLATE_REDSTONE_ORE_GEN = PLACED_FEATURES.register("compressed_deepslate_redstone_ore", () -> Ores.createOverworldOregen(true, true, Registration.COMPRESSED_DEEPSLATE_REDSTONE_ORE, OresConfig.DEEPSLATE_VEINSIZE.get(), OresConfig.DEEPSLATE_AMOUNT.get(), -64).get());
+
+    //Nether Ores
+    public static final RegistryObject<PlacedFeature> COMPRESSED_NETHER_QUARTZ_ORE_GEN = PLACED_FEATURES.register("comrpessed_nether_quartz_ore", () -> Ores.createNetherOregen(Registration.COMPRESSED_NETHER_QUARTZ_ORE, OresConfig.NETHER_QUARTZ_ORE_VEINSIZE.get(), OresConfig.NETHER_QUARTZ_ORE_AMOUNT.get(), 10, 117).get());
+    public static final RegistryObject<PlacedFeature> COMPRESSED_NETHER_GOLD_ORE_GEN = PLACED_FEATURES.register("compressed_nether_gold_ore", () -> Ores.createNetherOregen(Registration.COMPRESSED_NETHER_GOLD_ORE, OresConfig.NETHER_GOLD_ORE_VEINSIZE.get(), OresConfig.NETHER_GOLD_ORE_AMOUNT.get(), 10, 117).get());
 }

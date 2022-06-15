@@ -1,4 +1,4 @@
-// 1.19	2022-06-14T20:50:33.7718465	UC Biome Modifiers
+// 1.19	2022-06-15T11:04:34.5582654	UC Biome Modifiers
 124e2f23090decc58558f4932f074ff7c7320d05 data/uc/forge/biome_modifier/compressed_coal_ore_bm.json
 b96a0a7d976962996f038fa3083440aec30d1a33 data/uc/forge/biome_modifier/compressed_copper_ore_bm.json
 1ca6dad73112d629b758ce99743a4be3eca9cbaa data/uc/forge/biome_modifier/compressed_deepslate_coal_ore_bm.json
@@ -14,7 +14,9 @@ ada168495271a3c7a63f3b73d8ac92ab21e0c26d data/uc/forge/biome_modifier/compressed
 d0875562ac5fb5866b8de24a04632ce75b659205 data/uc/forge/biome_modifier/compressed_gold_ore_bm.json
 fa2e5580aee0fbe783c8b00aff4593416348e98f data/uc/forge/biome_modifier/compressed_iron_ore_bm.json
 0ac01ac8a3b9d89e26b7281dad16d063e7f3244b data/uc/forge/biome_modifier/compressed_lapis_ore_bm.json
+68d49d326fe0e909a8d800167e22d9823404cdc3 data/uc/forge/biome_modifier/compressed_nether_gold_ore_bm.json
 7d74a95cc6640a59c5c766575e452fe01e57de06 data/uc/forge/biome_modifier/compressed_redstone_ore_bm.json
+d058daee0af907ff99e1acab53613e1cfeffdff8 data/uc/forge/biome_modifier/comrpessed_nether_quartz_ore_bm.json
 73fc69063e347d5e15c12543bcb0c1726a64d699 data/uc/worldgen/placed_feature/compressed_coal_ore_pf.json
 94ed9e73713a7f9308e0c6768b47e31b453b1da4 data/uc/worldgen/placed_feature/compressed_copper_ore_pf.json
 4e2ac99821a96a080a719527dc0d5c4ca10a0b69 data/uc/worldgen/placed_feature/compressed_deepslate_coal_ore_pf.json
@@ -30,4 +32,6 @@ beab035b1926e8d24ae094015170c6daf5f3b3a9 data/uc/worldgen/placed_feature/compres
 50c3cdb7e8f6c1b2908c2a079ded9e4341789415 data/uc/worldgen/placed_feature/compressed_gold_ore_pf.json
 515d965e917176c1ef9bc1638bf320bcd73d3de7 data/uc/worldgen/placed_feature/compressed_iron_ore_pf.json
 5edb212b921459338bde0253d99ff5225c5cb556 data/uc/worldgen/placed_feature/compressed_lapis_ore_pf.json
+08dd5af862014f5c5d354f9a288a832a216f4a53 data/uc/worldgen/placed_feature/compressed_nether_gold_ore_pf.json
 1f8cf18093eceef112eb14717c20749a457325ac data/uc/worldgen/placed_feature/compressed_redstone_ore_pf.json
+61fca1c05dfae4a0d66803f33e92e392e7e85dee data/uc/worldgen/placed_feature/comrpessed_nether_quartz_ore_pf.json
