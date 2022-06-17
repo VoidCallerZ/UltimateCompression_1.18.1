@@ -7,12 +7,11 @@
 //import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 //import mezz.jei.api.gui.drawable.IDrawable;
 //import mezz.jei.api.helpers.IGuiHelper;
-//import mezz.jei.api.ingredients.IIngredients;
 //import mezz.jei.api.recipe.IFocusGroup;
 //import mezz.jei.api.recipe.RecipeIngredientRole;
+//import mezz.jei.api.recipe.RecipeType;
 //import mezz.jei.api.recipe.category.IRecipeCategory;
 //import net.minecraft.network.chat.Component;
-//import net.minecraft.network.chat.TextComponent;
 //import net.minecraft.resources.ResourceLocation;
 //import net.minecraft.world.item.ItemStack;
 //
@@ -33,21 +32,15 @@
 //    }
 //
 //    @Override
-//    public ResourceLocation getUid()
+//    public RecipeType<CompressorItemRecipe> getRecipeType()
 //    {
-//        return UID;
-//    }
-//
-//    @Override
-//    public Class<? extends CompressorItemRecipe> getRecipeClass()
-//    {
-//        return CompressorItemRecipe.class;
+//        return RecipeType.create("test", "test", CompressorItemRecipe.class);
 //    }
 //
 //    @Override
 //    public Component getTitle()
 //    {
-//        return new TextComponent("Compressor");
+//        return Component.literal("Compressor");
 //    }
 //
 //    @Override

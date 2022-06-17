@@ -43,6 +43,7 @@
 //    @Override
 //    public void registerRecipeCatalysts(IRecipeCatalystRegistration registration)
 //    {
+//        registration.addRecipeCatalyst(new ItemStack(Registration.COMPRESSOR.get()), CompressorRecipeCategory.getRecipeType());
 //        registration.addRecipeCatalyst(new ItemStack(Registration.COMPRESSOR.get()), CompressorRecipeCategory.UID);
 //    }
 //}
