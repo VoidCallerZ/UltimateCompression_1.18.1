@@ -4,7 +4,6 @@ import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.blocks.CompressorBlock;
 import com.VoidCallerZ.uc.blocks.UcFuelBlockItem;
 import com.VoidCallerZ.uc.blocks.entity.custom.CompressorBlockEntity;
-import com.VoidCallerZ.uc.blocks.machines.*;
 import com.VoidCallerZ.uc.blocks.screen.CompressorBlockMenu;
 import com.VoidCallerZ.uc.items.UcFuelItem;
 import com.VoidCallerZ.uc.setup.ModSetup;
@@ -215,6 +214,12 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_BASALT_ITEM = fromBlock(COMPRESSED_BASALT);
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_BLACKSTONE = BLOCKS.register("compressed_blackstone", () -> new RotatedPillarBlock(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_BLACKSTONE_ITEM = fromBlock(COMPRESSED_BLACKSTONE);
+    public static final RegistryObject<Block> COMPRESSED_CHISELED_POLISHED_BLACKSTONE = BLOCKS.register("compressed_chiseled_polished_blackstone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CHISELED_POLISHED_BLACKSTONE_ITEM = fromBlock(COMPRESSED_CHISELED_POLISHED_BLACKSTONE);
+    public static final RegistryObject<Block> COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS = BLOCKS.register("compressed_cracked_polished_blackstone_bricks", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS_ITEM = fromBlock(COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS);
+    public static final RegistryObject<Block> COMPRESSED_GILDED_BLACKSTONE = BLOCKS.register("compressed_gilded_blackstone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_GILDED_BLACKSTONE_ITEM = fromBlock(COMPRESSED_GILDED_BLACKSTONE);
     public static final RegistryObject<Block> COMPRESSED_GLOWSTONE = BLOCKS.register("compressed_glowstone", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_GLOWSTONE_ITEM = fromBlock(COMPRESSED_GLOWSTONE);
     public static final RegistryObject<Block> COMPRESSED_MAGMA = BLOCKS.register("compressed_magma", () -> new Block(ORE_PROPERTIES));
@@ -374,11 +379,11 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_NETHERITE_INGOT = ITEMS.register("compressed_netherite_ingot", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_REDSTONE = ITEMS.register("compressed_redstone", () -> new Item(ITEM_PROPERTIES));
 
-    //Power generator
-    public static final RegistryObject<PowergenBlock> ULTIMATE_POWERGEN = BLOCKS.register("ultimate_powergen", PowergenBlock::new);
-    public static final RegistryObject<Item> ULTIMATE_POWERGEN_ITEM = fromBlock(ULTIMATE_POWERGEN);
-    public static final RegistryObject<BlockEntityType<PowergenBE>> ULTIMATE_POWERGEN_BE = BLOCK_ENTITIES.register("ultimate_powergen", () -> BlockEntityType.Builder.of(PowergenBE::new, ULTIMATE_POWERGEN.get()).build(null));
-    public static final RegistryObject<MenuType<PowergenContainer>> ULTIMATE_POWERGEN_CONTAINER = CONTAINERS.register("ultimate_powergen", () -> IForgeMenuType.create((windowId, inv, data) -> new PowergenContainer(windowId, data.readBlockPos(), inv, inv.player)));
+//    //Power generator
+//    public static final RegistryObject<PowergenBlock> ULTIMATE_POWERGEN = BLOCKS.register("ultimate_powergen", PowergenBlock::new);
+//    public static final RegistryObject<Item> ULTIMATE_POWERGEN_ITEM = fromBlock(ULTIMATE_POWERGEN);
+//    public static final RegistryObject<BlockEntityType<PowergenBE>> ULTIMATE_POWERGEN_BE = BLOCK_ENTITIES.register("ultimate_powergen", () -> BlockEntityType.Builder.of(PowergenBE::new, ULTIMATE_POWERGEN.get()).build(null));
+//    public static final RegistryObject<MenuType<PowergenContainer>> ULTIMATE_POWERGEN_CONTAINER = CONTAINERS.register("ultimate_powergen", () -> IForgeMenuType.create((windowId, inv, data) -> new PowergenContainer(windowId, data.readBlockPos(), inv, inv.player)));
 
     //Compressor
     public static final RegistryObject<CompressorBlock> COMPRESSOR = BLOCKS.register("compressor", () -> new CompressorBlock(INGOT_BLOCK_PROPERTIES));

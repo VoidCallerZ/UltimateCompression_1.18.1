@@ -108,6 +108,9 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_nether_quartz_block"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_BASALT_ITEM.get()).getPath(), modLoc("block/compressed_basalt"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_BLACKSTONE_ITEM.get()).getPath(), modLoc("block/compressed_blackstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_CHISELED_POLISHED_BLACKSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_polished_blackstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_cracked_polished_blackstone_bricks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_GILDED_BLACKSTONE_ITEM.get()).getPath(), modLoc("block/compressed_gilded_blackstone"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_GLOWSTONE_ITEM.get()).getPath(), modLoc("block/compressed_glowstone"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_MAGMA_ITEM.get()).getPath(), modLoc("block/compressed_magma"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_SOUL_SAND_ITEM.get()).getPath(), modLoc("block/compressed_soul_sand"));
@@ -185,7 +188,7 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_WHITE_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_white_concrete_powder"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_YELLOW_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_yellow_concrete_powder"));
 
-        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.ULTIMATE_POWERGEN_ITEM.get()).getPath(), modLoc("block/powergen/main"));
+//        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.ULTIMATE_POWERGEN_ITEM.get()).getPath(), modLoc("block/powergen/main"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSOR_ITEM.get()).getPath(), modLoc("block/compressor"));
 
         singleTextureGenerated(Registration.COMPRESSED_RAW_IRON.get(), "item/compressed/materials/compressed_raw_iron");

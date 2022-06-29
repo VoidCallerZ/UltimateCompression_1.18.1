@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "compressed_iron_ingot": {
+    "has_minecraft:gilded_blackstone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "uc:compressed_iron_ingot"
+              "uc:compressed_gilded_blackstone"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "uc:ultimate_powergen"
+        "recipe": "uc_minecraft:gilded_blackstone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "compressed_iron_ingot",
+      "has_minecraft:gilded_blackstone",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "uc:ultimate_powergen"
+      "uc_minecraft:gilded_blackstone"
     ]
   }
 }

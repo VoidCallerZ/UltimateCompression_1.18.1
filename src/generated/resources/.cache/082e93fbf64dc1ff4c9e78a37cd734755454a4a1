@@ -1,4 +1,4 @@
-// 1.19	2022-06-14T17:42:21.7024251	UC LootTables
+// 1.19	2022-06-22T13:34:00.4187046	UC LootTables
 99ec0c801d3197f720018c169d043ffccd7774ca data/uc/loot_tables/blocks/compressed_acacia_log.json
 f56353c6f3c239b59dc1e3056c70d4a543ef647a data/uc/loot_tables/blocks/compressed_acacia_planks.json
 205e998d60b754d88273c9cc8b16efe11090ac2f data/uc/loot_tables/blocks/compressed_andesite.json
@@ -16,6 +16,7 @@ ae60c75683df173a8fac4d22e380e94cf19d4e84 data/uc/loot_tables/blocks/compressed_b
 201e0d729279a52376a6a115e3475f85f5143df4 data/uc/loot_tables/blocks/compressed_brown_concrete_powder.json
 7ab3a42b3249f6ab23797c0b818c2cfc34bd72c6 data/uc/loot_tables/blocks/compressed_brown_wool.json
 0eb385cfd86b6c6984bf4cb5f4c2bc283fa993a8 data/uc/loot_tables/blocks/compressed_calcite.json
+89ee3b9f6b3c8235a8cb4b5cb16730687c7f4211 data/uc/loot_tables/blocks/compressed_chiseled_polished_blackstone.json
 ae07f9e96def7b4aee5190ed1e86b044d18e7b42 data/uc/loot_tables/blocks/compressed_chiseled_red_sandstone.json
 40f17a56920327ff5b24187b016ae0e81b7f449b data/uc/loot_tables/blocks/compressed_chiseled_sandstone.json
 8c00463b91afb361cab12225bb5771c8dd104b80 data/uc/loot_tables/blocks/compressed_chiseled_stone_bricks.json
@@ -25,6 +26,7 @@ eab488e206d67988970c23802f743e663c10390a data/uc/loot_tables/blocks/compressed_c
 c83014efac664ae1c0c3477d07a6596c2419ee19 data/uc/loot_tables/blocks/compressed_cobblestone.json
 623e6cde696d827d794becfd53218795a7593eb8 data/uc/loot_tables/blocks/compressed_copper_block.json
 b5aea9561dce6d2960be0ab5ac4e5b25d7e1aafe data/uc/loot_tables/blocks/compressed_copper_ore.json
+38334122212b54cbd058b7bf170655cc1c575394 data/uc/loot_tables/blocks/compressed_cracked_polished_blackstone_bricks.json
 b4ef76e884aadae87d2a97e40d2839a1ffc21ce4 data/uc/loot_tables/blocks/compressed_cracked_stone_bricks.json
 c49dab45b3406169f967b6ea24af12a693e791ef data/uc/loot_tables/blocks/compressed_crimson_planks.json
 654366e5b0bdc61c5a61b272a774bcca9a794a17 data/uc/loot_tables/blocks/compressed_crimson_stem.json
@@ -49,6 +51,7 @@ d01450c142c3b334e862e25f04d63e1f342b2e08 data/uc/loot_tables/blocks/compressed_d
 ad83f2751d50af2fd3a96afa7c808015cab5c03a data/uc/loot_tables/blocks/compressed_diorite.json
 51cd8abed71060f34f89db0419cd48ea8e952719 data/uc/loot_tables/blocks/compressed_dirt.json
 e7fe84db0e06b3f007895c149328f0844f9171c3 data/uc/loot_tables/blocks/compressed_emerald_ore.json
+684def8672110edc3fb027c4fda40f6f6413ff79 data/uc/loot_tables/blocks/compressed_gilded_blackstone.json
 e168d25cc371baf830e22b32181b05e2ff9d1999 data/uc/loot_tables/blocks/compressed_glowstone.json
 be7b46e16230fb519dace8cbae633bf7170a0f43 data/uc/loot_tables/blocks/compressed_gold_block.json
 165e2c5fa1c2177597bb3af8482bc90b53f35286 data/uc/loot_tables/blocks/compressed_gold_nether_ore.json
@@ -131,4 +134,3 @@ e376e1c3243e1318b6622804d375e0b97be2e0e1 data/uc/loot_tables/blocks/compressed_w
 851466ece5dff0a3e1d6c179f1cf2549360ddead data/uc/loot_tables/blocks/compressed_yellow_concrete_powder.json
 44c7ee8ffb5ecbd101af084e479ce187d3582cad data/uc/loot_tables/blocks/compressed_yellow_wool.json
 597fe49a935613149517aaa0d7046e23d9fff0f3 data/uc/loot_tables/blocks/compressor.json
-cd03fba2738b38b8e7372a2ac688533b5c0b438d data/uc/loot_tables/blocks/ultimate_powergen.json

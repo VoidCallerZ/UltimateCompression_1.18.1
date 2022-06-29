@@ -1,7 +1,5 @@
 package com.VoidCallerZ.uc.setup;
 
-import com.VoidCallerZ.uc.blocks.machines.CompressorConfig;
-import com.VoidCallerZ.uc.blocks.machines.PowergenConfig;
 import com.VoidCallerZ.uc.worldgen.ores.OresConfig;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -19,8 +17,6 @@ public class Config
     private static void registerServerConfigs()
     {
         ForgeConfigSpec.Builder SERVER_BUILDER = new ForgeConfigSpec.Builder();
-        CompressorConfig.registerServerConfig(SERVER_BUILDER);
-        PowergenConfig.registerServerConfig(SERVER_BUILDER);
         ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, SERVER_BUILDER.build());
     }
 

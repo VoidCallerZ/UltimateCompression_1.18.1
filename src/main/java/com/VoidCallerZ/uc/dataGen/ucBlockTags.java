@@ -37,8 +37,6 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(Registration.COMPRESSED_WARPED_PLANKS.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(Registration.ULTIMATE_POWERGEN.get())
-                .add(Registration.COMPRESSOR.get())
                 .add(Registration.COMPRESSOR.get())
                 .add(Registration.COMPRESSED_IRON_ORE.get())
                 .add(Registration.COMPRESSED_GOLD_ORE.get())
@@ -66,12 +64,16 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(Registration.COMPRESSED_REDSTONE_BLOCK.get())
                 .add(Registration.COMPRESSED_NETHERITE_BLOCK.get())
                 .add(Registration.COMPRESSED_RAW_IRON_BLOCK.get())
+                .add(Registration.COMPRESSED_RAW_GOLD_BLOCK.get())
                 .add(Registration.COMPRESSED_RAW_COPPER_BLOCK.get())
                 .add(Registration.COMPRESSED_NETHER_GOLD_ORE.get())
                 .add(Registration.COMPRESSED_NETHER_QUARTZ_ORE.get())
                 .add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get())
                 .add(Registration.COMPRESSED_BASALT.get())
                 .add(Registration.COMPRESSED_BLACKSTONE.get())
+                .add(Registration.COMPRESSED_CHISELED_POLISHED_BLACKSTONE.get())
+                .add(Registration.COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS.get())
+                .add(Registration.COMPRESSED_GILDED_BLACKSTONE.get())
                 .add(Registration.COMPRESSED_GLOWSTONE.get())
                 .add(Registration.COMPRESSED_MAGMA.get())
                 .add(Registration.COMPRESSED_ANDESITE.get())
@@ -131,7 +133,6 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(Registration.COMPRESSED_GLOWSTONE.get())
                 .add(Registration.COMPRESSED_MAGMA.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(Registration.ULTIMATE_POWERGEN.get())
                 .add(Registration.COMPRESSOR.get())
                 .add(Registration.COMPRESSED_GOLD_ORE.get())
                 .add(Registration.COMPRESSED_DIAMOND_ORE.get())

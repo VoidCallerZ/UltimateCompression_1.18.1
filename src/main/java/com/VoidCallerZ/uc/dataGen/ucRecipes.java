@@ -22,15 +22,15 @@ public class ucRecipes extends BaseRecipeProvider
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer)
     {
-        ShapedRecipeBuilder.shaped(Registration.ULTIMATE_POWERGEN.get())
-                .pattern("iii")
-                .pattern("iri")
-                .pattern("iii")
-                .define('i', Registration.COMPRESSED_IRON_INGOT.get())
-                .define('r', Tags.Items.STORAGE_BLOCKS_REDSTONE)
-                .group("uc")
-                .unlockedBy("compressed_iron_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_IRON_INGOT.get()))
-                .save(consumer);
+//        ShapedRecipeBuilder.shaped(Registration.ULTIMATE_POWERGEN.get())
+//                .pattern("iii")
+//                .pattern("iri")
+//                .pattern("iii")
+//                .define('i', Registration.COMPRESSED_IRON_INGOT.get())
+//                .define('r', Tags.Items.STORAGE_BLOCKS_REDSTONE)
+//                .group("uc")
+//                .unlockedBy("compressed_iron_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_IRON_INGOT.get()))
+//                .save(consumer);
 
         ShapedRecipeBuilder.shaped(Registration.COMPRESSOR.get())
                 .pattern("iii")
@@ -135,6 +135,9 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), Items.QUARTZ_BLOCK, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BASALT.get(), Items.BASALT, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BLACKSTONE.get(), Items.BLACKSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CHISELED_POLISHED_BLACKSTONE.get(), Items.CHISELED_POLISHED_BLACKSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS.get(), Items.CRACKED_POLISHED_BLACKSTONE_BRICKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GILDED_BLACKSTONE.get(), Items.GILDED_BLACKSTONE, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GLOWSTONE.get(), Items.GLOWSTONE, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MAGMA.get(), Items.MAGMA_BLOCK, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SOUL_SAND.get(), Items.SOUL_SAND, 9, consumer);

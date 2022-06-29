@@ -16,6 +16,7 @@
   "block.uc.compressed_brown_concrete_powder": "Compressed Brown Concrete Powder",
   "block.uc.compressed_brown_wool": "Compressed Brown Wool",
   "block.uc.compressed_calcite": "Compressed Calcite",
+  "block.uc.compressed_chiseled_polished_blackstone": "Compressed Chiseled Polished Blackstone",
   "block.uc.compressed_chiseled_red_sandstone": "Compressed Chiseled Red Sandstone",
   "block.uc.compressed_chiseled_sandstone": "Compressed Chiseled Sandstone",
   "block.uc.compressed_chiseled_stone_bricks": "Compressed Chiseled Stone Bricks",
@@ -26,6 +27,7 @@
   "block.uc.compressed_cobblestone": "Compressed Cobblestone",
   "block.uc.compressed_copper_block": "Compressed Block of Copper",
   "block.uc.compressed_copper_ore": "Compressed Copper Ore",
+  "block.uc.compressed_cracked_polished_blackstone_bricks": "Compressed Cracked Polished Blackstone Bricks",
   "block.uc.compressed_cracked_stone_bricks": "Compressed Cracked Stone Bricks",
   "block.uc.compressed_crimson_planks": "Compressed Crimson Planks",
   "block.uc.compressed_crimson_stem": "Compressed Crimson Stem",
@@ -51,6 +53,7 @@
   "block.uc.compressed_dirt": "Compressed Dirt",
   "block.uc.compressed_emerald_block": "Compressed Block of Emerald",
   "block.uc.compressed_emerald_ore": "Compressed Emerald Ore",
+  "block.uc.compressed_gilded_blackstone": "Compressed Gilded Blackstone",
   "block.uc.compressed_glowstone": "Compressed Glowstone",
   "block.uc.compressed_gold_block": "Compressed Block of Gold",
   "block.uc.compressed_gold_nether_ore": "Compressed Nether Gold ore",
@@ -136,7 +139,6 @@
   "block.uc.compressed_yellow_concrete_powder": "Compressed Yellow Concrete Powder",
   "block.uc.compressed_yellow_wool": "Compressed Yellow Wool",
   "block.uc.compressor": "Ultimate Compressor",
-  "block.uc.ultimate_powergen": "Ultimate power generator",
   "entity.uc.compressed_arrow_entity": "Compressed Arrow Entity",
   "entity.uc.compressed_spectral_arrow_entity": "Compressed Spectral Arrow Entity",
   "item.uc.compressed_apple": "Compressed Apple",
@@ -241,7 +243,5 @@
   "item.uc.compressed_wooden_sword": "Compressed Wooden Sword",
   "itemGroup.ultiamtefoodcompression": "Ultimate Food Compression",
   "itemGroup.ultimatecompression": "Ultimate Compression",
-  "itemGroup.ultimatetoolcompression": "Ultimate Tool Compression",
-  "message.powergen": "Power generator generating %s per tick!",
-  "screen.tutorial.powergen": "Power generator"
+  "itemGroup.ultimatetoolcompression": "Ultimate Tool Compression"
 }

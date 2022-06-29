@@ -20,7 +20,7 @@ public class ucBlockStates extends BaseBlockStateProvider
     @Override
     protected void registerStatesAndModels()
     {
-        registerPowergen();
+//        registerPowergen();
         registerCompressor();
 
         //Ores
@@ -110,6 +110,9 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "compressed_nether_quartz_block", "block/compressed/nether/compressed_quartz_block_side");
         compressedPillarBlock(Registration.COMPRESSED_BASALT.get(), modLoc("block/compressed/nether/compressed_basalt"));
         compressedPillarBlock(Registration.COMPRESSED_BLACKSTONE.get(), modLoc("block/compressed/nether/compressed_blackstone"));
+        singleTextureBlock(Registration.COMPRESSED_CHISELED_POLISHED_BLACKSTONE.get(), "compressed_chiseled_polished_blackstone", "block/compressed/nether/compressed_chiseled_polished_blackstone");
+        singleTextureBlock(Registration.COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS.get(), "compressed_cracked_polished_blackstone_bricks", "block/compressed/nether/compressed_cracked_polished_blackstone_bricks");
+        singleTextureBlock(Registration.COMPRESSED_GILDED_BLACKSTONE.get(), "compressed_gilded_blackstone", "block/compressed/nether/compressed_gilded_blackstone");
         singleTextureBlock(Registration.COMPRESSED_GLOWSTONE.get(), "compressed_glowstone", "block/compressed/nether/compressed_glowstone");
         singleTextureBlock(Registration.COMPRESSED_MAGMA.get(), "compressed_magma", "block/compressed/nether/compressed_magma");
         singleTextureBlock(Registration.COMPRESSED_SOUL_SAND.get(), "compressed_soul_sand", "block/compressed/nether/compressed_soul_sand");
@@ -200,33 +203,33 @@ public class ucBlockStates extends BaseBlockStateProvider
         horizontalBlock(Registration.COMPRESSOR.get(), models().cube("compressor", BASE, BASE, FRONT, BACK, SIDE, SIDE));
     }
 
-    private void registerPowergen()
-    {
-        BlockModelBuilder frame = models().getBuilder("block/powergen/main");
-        frame.parent(models().getExistingFile(mcLoc("cube")));
-
-        floatingCube(frame, 0f, 0f, 0f, 1f, 16f, 1f);
-        floatingCube(frame, 15f, 0f, 0f, 16f, 16f, 1f);
-        floatingCube(frame, 0f, 0f, 15f, 1f, 16f, 16f);
-        floatingCube(frame, 15f, 0f, 15f, 16f, 16f, 16f);
-
-        floatingCube(frame, 1f, 0f, 0f, 15f, 1f, 1f);
-        floatingCube(frame, 1f, 15f, 0f, 15f, 16f, 1f);
-        floatingCube(frame, 1f, 0f, 15f, 15f, 1f, 16f);
-        floatingCube(frame, 1f, 15f, 15f, 15f, 16f, 16f);
-
-        floatingCube(frame, 0f, 0f, 1f, 1f, 1f, 15f);
-        floatingCube(frame, 15f, 0f, 1f, 16f, 1f, 15f);
-        floatingCube(frame, 0f, 15f, 1f, 1f, 16f, 15f);
-        floatingCube(frame, 15f, 15f, 1f, 16f, 16f, 15f);
-
-        floatingCube(frame, 1f, 1f, 1f, 15f, 15f, 15f);
-
-        frame.texture("window", modLoc("block/powergen_window"));
-        frame.texture("particle", modLoc("block/powergen_off"));
-
-        createPowergenModel(Registration.ULTIMATE_POWERGEN.get(), frame);
-    }
+//    private void registerPowergen()
+//    {
+//        BlockModelBuilder frame = models().getBuilder("block/powergen/main");
+//        frame.parent(models().getExistingFile(mcLoc("cube")));
+//
+//        floatingCube(frame, 0f, 0f, 0f, 1f, 16f, 1f);
+//        floatingCube(frame, 15f, 0f, 0f, 16f, 16f, 1f);
+//        floatingCube(frame, 0f, 0f, 15f, 1f, 16f, 16f);
+//        floatingCube(frame, 15f, 0f, 15f, 16f, 16f, 16f);
+//
+//        floatingCube(frame, 1f, 0f, 0f, 15f, 1f, 1f);
+//        floatingCube(frame, 1f, 15f, 0f, 15f, 16f, 1f);
+//        floatingCube(frame, 1f, 0f, 15f, 15f, 1f, 16f);
+//        floatingCube(frame, 1f, 15f, 15f, 15f, 16f, 16f);
+//
+//        floatingCube(frame, 0f, 0f, 1f, 1f, 1f, 15f);
+//        floatingCube(frame, 15f, 0f, 1f, 16f, 1f, 15f);
+//        floatingCube(frame, 0f, 15f, 1f, 1f, 16f, 15f);
+//        floatingCube(frame, 15f, 15f, 1f, 16f, 16f, 15f);
+//
+//        floatingCube(frame, 1f, 1f, 1f, 15f, 15f, 15f);
+//
+//        frame.texture("window", modLoc("block/powergen_window"));
+//        frame.texture("particle", modLoc("block/powergen_off"));
+//
+//        createPowergenModel(Registration.ULTIMATE_POWERGEN.get(), frame);
+//    }
 
     private void floatingCube(BlockModelBuilder builder, float fx, float fy, float fz, float tx, float ty, float tz)
     {

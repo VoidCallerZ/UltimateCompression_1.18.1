@@ -13,7 +13,7 @@ public class ucLootTables extends BaseLootTableProvider
     protected void addTables()
     {
         //Ores
-        lootTables.put(Registration.ULTIMATE_POWERGEN.get(), createSimpleTable("ultimate_powergen", Registration.ULTIMATE_POWERGEN.get()));
+//        lootTables.put(Registration.ULTIMATE_POWERGEN.get(), createSimpleTable("ultimate_powergen", Registration.ULTIMATE_POWERGEN.get()));
         lootTables.put(Registration.COMPRESSOR.get(), createSimpleTable("ultimate_compressor", Registration.COMPRESSOR.get()));
         lootTables.put(Registration.COMPRESSED_IRON_ORE.get(), createSilkTouchTable("compressed_iron_ore", Registration.COMPRESSED_IRON_ORE.get(), Registration.COMPRESSED_RAW_IRON.get(), 1, 1));
         lootTables.put(Registration.COMPRESSED_GOLD_ORE.get(), createSilkTouchTable("compressed_gold_ore", Registration.COMPRESSED_GOLD_ORE.get(), Registration.COMPRESSED_RAW_GOLD.get(), 1, 1));
@@ -96,6 +96,9 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), createSimpleTable("compressed_nether_quartz_block", Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get()));
         lootTables.put(Registration.COMPRESSED_BASALT.get(), createSimpleTable("compressed_basalt", Registration.COMPRESSED_BASALT.get()));
         lootTables.put(Registration.COMPRESSED_BLACKSTONE.get(), createSimpleTable("compressed_blackstone", Registration.COMPRESSED_BLACKSTONE.get()));
+        lootTables.put(Registration.COMPRESSED_CHISELED_POLISHED_BLACKSTONE.get(), createSimpleTable("compressed_chiseled_polished_blackstone", Registration.COMPRESSED_CHISELED_POLISHED_BLACKSTONE.get()));
+        lootTables.put(Registration.COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS.get(), createSimpleTable("compressed_cracked_polished_blackstone_bricks", Registration.COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS.get()));
+        lootTables.put(Registration.COMPRESSED_GILDED_BLACKSTONE.get(), createSimpleTable("compressed_gilded_blackstone", Registration.COMPRESSED_GILDED_BLACKSTONE.get()));
         lootTables.put(Registration.COMPRESSED_GLOWSTONE.get(), createSimpleTable("compressed_glowstone", Registration.COMPRESSED_GLOWSTONE.get()));
         lootTables.put(Registration.COMPRESSED_MAGMA.get(), createSimpleTable("compressed_magma", Registration.COMPRESSED_MAGMA.get()));
         lootTables.put(Registration.COMPRESSED_SOUL_SAND.get(), createSimpleTable("compressed_soul_sand", Registration.COMPRESSED_SOUL_SAND.get()));

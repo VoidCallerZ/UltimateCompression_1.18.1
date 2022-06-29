@@ -5,8 +5,6 @@ import com.VoidCallerZ.uc.setup.registration.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
 
-import static com.VoidCallerZ.uc.blocks.machines.PowergenBlock.MESSAGE_ULTIMATE_POWERGEN;
-import static com.VoidCallerZ.uc.blocks.machines.PowergenBlock.SCREEN_ULTIMATE_POWERGEN;
 import static com.VoidCallerZ.uc.setup.ModSetup.*;
 
 public class ucLanguageProvider extends LanguageProvider
@@ -19,10 +17,10 @@ public class ucLanguageProvider extends LanguageProvider
         add("itemGroup." + UC_TAB, "Ultimate Compression");
         add("itemGroup." + UC_TOOLS_TAB, "Ultimate Tool Compression");
         add("itemGroup." + UC_FOOD_TAB, "Ultimate Food Compression");
-        add(MESSAGE_ULTIMATE_POWERGEN, "Power generator generating %s per tick!");
-        add(SCREEN_ULTIMATE_POWERGEN, "Power generator");
-
-        add(Registration.ULTIMATE_POWERGEN.get(), "Ultimate power generator");
+//        add(MESSAGE_ULTIMATE_POWERGEN, "Power generator generating %s per tick!");
+//        add(SCREEN_ULTIMATE_POWERGEN, "Power generator");
+//
+//        add(Registration.ULTIMATE_POWERGEN.get(), "Ultimate power generator");
         add(Registration.COMPRESSOR.get(), "Ultimate Compressor");
 
         //Ores
@@ -194,6 +192,9 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), "Compressed Block of Quartz");
         add(Registration.COMPRESSED_BASALT.get(), "Compressed Basalt");
         add(Registration.COMPRESSED_BLACKSTONE.get(), "Compressed Blackstone");
+        add(Registration.COMPRESSED_CHISELED_POLISHED_BLACKSTONE.get(), "Compressed Chiseled Polished Blackstone");
+        add(Registration.COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS.get(), "Compressed Cracked Polished Blackstone Bricks");
+        add(Registration.COMPRESSED_GILDED_BLACKSTONE.get(), "Compressed Gilded Blackstone");
         add(Registration.COMPRESSED_GLOWSTONE.get(), "Compressed Glowstone");
         add(Registration.COMPRESSED_MAGMA.get(), "Compressed Magma Block");
         add(Registration.COMPRESSED_SOUL_SAND.get(), "Compressed Soul Sand");
