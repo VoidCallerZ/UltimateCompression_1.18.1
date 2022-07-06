@@ -358,9 +358,9 @@ public class ucRecipes extends BaseRecipeProvider
                 .define('s', Items.STICK)
                 .define('f', Items.FEATHER)
                 .group("uc")
-                //.unlockedBy("has_" + ItemRegistration.COMPRESSED_FLINT.get().getRegistryName(), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_FLINT.get()))
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_FLINT.get()), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_FLINT.get()))
                 .save(consumer);
+
         ShapedRecipeBuilder.shaped(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get(), 2)
                 .pattern(" x ")
                 .pattern("xax")
@@ -371,16 +371,6 @@ public class ucRecipes extends BaseRecipeProvider
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_ARROW.get()), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_ARROW.get()))
                 .save(consumer);
 
-//        ShapedRecipeBuilder.shaped(ItemRegistration.COMPRESSED_TIPPED_ARROW.get(), 8)
-//                .pattern("xxx")
-//                .pattern("xpx")
-//                .pattern("xxx")
-//                .define('x', ItemRegistration.COMPRESSED_ARROW.get())
-//                .define('p', Items.LINGERING_POTION)
-//                .group("uc")
-//                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(Items.LINGERING_POTION), InventoryChangeTrigger.TriggerInstance.hasItems(Items.LINGERING_POTION))
-//                .save(consumer);
-
         ShapedRecipeBuilder.shaped(Items.TORCH, 36)
                 .pattern("x")
                 .pattern("s")
@@ -388,7 +378,7 @@ public class ucRecipes extends BaseRecipeProvider
                 .define('s', ItemRegistration.COMPRESSED_STICK.get())
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_STICK.get()), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_STICK.get()))
-                .save(consumer);
+                .save(consumer, "torch1");
 
         ShapedRecipeBuilder.shaped(Items.SOUL_TORCH, 36)
                 .pattern("x")
@@ -399,7 +389,7 @@ public class ucRecipes extends BaseRecipeProvider
                 .define('y', Registration.COMPRESSED_SOUL_SAND.get())
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_STICK.get()), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_STICK.get()))
-                .save(consumer);
+                .save(consumer, "soul_torch1");
 
         new CompressorRecipeBuilder(Items.COAL, Registration.COMPRESSED_COAL.get(), 9, 0)
                 .unlockedBy("compressor_has_" + Items.COAL, InventoryChangeTrigger.TriggerInstance.hasItems(Items.COAL))

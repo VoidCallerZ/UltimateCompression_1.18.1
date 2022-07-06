@@ -54,7 +54,7 @@ public class ToolRegistration
     public static final RegistryObject<AxeItem> COMPRESSED_DIAMOND_AXE = ITEMS.register("compressed_diamond_axe",
             () -> new UcAxeItem(Tiers.DIAMOND, 9, 0.9f, DIAMOND_TOOL_PROPERTIES));
     public static final RegistryObject<AxeItem> COMPRESSED_NETHERITE_AXE = ITEMS.register("compressed_netherite_axe",
-            () -> new UcAxeItem(Tiers.NETHERITE, 6, 0.9f, NETHERITE_TOOL_PROPERTIES));
+            () -> new UcAxeItem(Tiers.NETHERITE, 10, 0.9f, NETHERITE_TOOL_PROPERTIES));
     //Shovels
     public static final RegistryObject<ShovelItem> COMPRESSED_WOODEN_SHOVEL = ITEMS.register("compressed_wooden_shovel",
             () -> new UcShovelItem(Tiers.WOOD, 3, 0.9f, WOODEN_TOOL_PROPERTIES));
