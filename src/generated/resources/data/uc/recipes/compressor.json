@@ -6,10 +6,10 @@
       "item": "minecraft:diamond"
     },
     "g": {
-      "item": "uc:compressed_gold_block"
+      "item": "minecraft:gold_block"
     },
     "i": {
-      "item": "uc:compressed_iron_ingot"
+      "item": "minecraft:iron_ingot"
     }
   },
   "pattern": [

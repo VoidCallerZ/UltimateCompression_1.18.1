@@ -36,13 +36,11 @@ public class ucRecipes extends BaseRecipeProvider
                 .pattern("iii")
                 .pattern("dgd")
                 .pattern("iii")
-                .define('i', Registration.COMPRESSED_IRON_INGOT.get())
+                .define('i', Items.IRON_INGOT)
                 .define('d', Items.DIAMOND)
-                .define('g', Registration.COMPRESSED_GOLD_BLOCK.get())
+                .define('g', Items.GOLD_BLOCK)
                 .group("uc")
-                .unlockedBy("compressed_gold_iron_ingot_diamond", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_GOLD_INGOT.get(),
-                        Registration.COMPRESSED_IRON_INGOT.get(),
-                        Items.DIAMOND))
+                .unlockedBy("get_iron_ingot_for_compressor", InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_INGOT))
                 .save(consumer);
 
         //Compression & decompression of most blocks

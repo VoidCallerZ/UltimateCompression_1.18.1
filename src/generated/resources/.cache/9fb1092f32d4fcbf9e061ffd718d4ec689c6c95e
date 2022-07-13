@@ -1,4 +1,4 @@
-// 1.19	2022-07-06T23:14:36.4187893	Recipes
+// 1.19	2022-07-13T22:39:33.0188178	Recipes
 6bb237ea03da3e73f67e26b2681bea96a44c6f1a data/minecraft/advancements/recipes/decorations/soul_torch1.json
 42d89dec8c01082965582e237cd878b3353a6514 data/minecraft/advancements/recipes/decorations/torch1.json
 0a8a15a2899c7cddbf3fc40a97588719c0ebef12 data/minecraft/advancements/recipes/ultimatecompression/compressed_copper_ingot1.json
@@ -64,7 +64,7 @@ bbea7a8e6715429e6ba1e48f749ed61d2731d383 data/uc/advancements/recipes/ultimateco
 6aac5ccf8eacf4b8d8fe22fb75ba41a07d0734d8 data/uc/advancements/recipes/ultimatecompression/compressed_netherite_ingot.json
 e173184e3fa96009e373152224c926d880370d3d data/uc/advancements/recipes/ultimatecompression/compressed_redstone.json
 d9023cbfbc3b8fc9be71b61e0a8d83fac872c1bd data/uc/advancements/recipes/ultimatecompression/compressed_spectral_arrow.json
-1d9f2567fb6c1e8195fbb7d6bdc4fff46a27f341 data/uc/advancements/recipes/ultimatecompression/compressor.json
+27a84a6991ab6c65f811a1d6e33606feb6d5c9a7 data/uc/advancements/recipes/ultimatecompression/compressor.json
 681a73029e3cd28719c729304aadf3e8edc21bb5 data/uc/advancements/recipes/ultimatetoolcompression/compressed_diamond_axe.json
 f3ac949ea558e286e65cb163d0ea5b9fc005019c data/uc/advancements/recipes/ultimatetoolcompression/compressed_diamond_axe_alt.json
 a7ecdc89d91f2aa89ef5bd3c15ca7f2362ccbab1 data/uc/advancements/recipes/ultimatetoolcompression/compressed_diamond_boots.json
@@ -228,7 +228,7 @@ e25a66ddfd595a8d7af4cefc68cfd187f20751c8 data/uc/recipes/compressed_wooden_hoe_a
 d0fda32a07a5f52a9d9fbb1a8a6d6c480b6bca5f data/uc/recipes/compressed_wooden_pickaxe.json
 d63b07f03c701e93e8ab166d4fe30b3b97a6b499 data/uc/recipes/compressed_wooden_shovel.json
 c069b62de500925ded8e41b16f593b45a1b257f8 data/uc/recipes/compressed_wooden_sword.json
-9f34c0aa16757bb80fc96a7145d3b97cf8313fce data/uc/recipes/compressor.json
+181658b0ed07841ba66ed256ed8ecd181f09f0f4 data/uc/recipes/compressor.json
 214640baa31d07faa97b64fdad07cbb834857449 data/uc_material_minecraft/advancements/recipes/misc/coal.json
 ea97a2ce70f4ee9270b5d9176a34969a73793bc1 data/uc_material_minecraft/advancements/recipes/misc/copper_ingot.json
 23ab41d56b6408ef5267de272bf8ec7195833532 data/uc_material_minecraft/advancements/recipes/misc/diamond.json
