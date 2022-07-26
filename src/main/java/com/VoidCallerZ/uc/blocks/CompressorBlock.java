@@ -91,7 +91,7 @@ public class CompressorBlock extends BaseEntityBlock
             BlockEntity entity = level.getBlockEntity(pos);
             if (entity instanceof CompressorBlockEntity)
             {
-                NetworkHooks.openGui(((ServerPlayer) player), (CompressorBlockEntity)entity, pos);
+                NetworkHooks.openScreen(((ServerPlayer) player), (CompressorBlockEntity)entity, pos);
             }
             else
             {

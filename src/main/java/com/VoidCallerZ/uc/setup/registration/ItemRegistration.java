@@ -18,10 +18,7 @@ import static com.VoidCallerZ.uc.UltimateCompression.MODID;
 public class ItemRegistration
 {
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
-    public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITIES, MODID);
-//    public static final DeferredRegister<RecipeSerializer<?>> RECIPES = DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, MODID);
-//    public static final IForgeRegistry<RecipeSerializer<?>> RECIPES = RegistryManager.ACTIVE.getRegistry(ForgeRegistries.Keys.RECIPE_SERIALIZERS);
-//    public static final DeferredRegister<RecipeSerializer<?>> TESTRECIPES = DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, MODID);
+    public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MODID);
 
     public static void init()
     {
@@ -53,15 +50,6 @@ public class ItemRegistration
                     .clientTrackingRange(4)
                     .updateInterval(20)
                     .build(new ResourceLocation(MODID, "compressed_spectral_arrow_entity").toString()));
-
-    //Tipped
-//    public static final RegistryObject<Item> COMPRESSED_TIPPED_ARROW = ITEMS.register("compressed_tipped_arrow", () -> new UcTippedArrowItem(ITEM_PROPERTIES, 1.5f));
-//    public static final RegistryObject<EntityType<CompressedArrow>> COMPRESSED_TIPPED_ARROW_ENTITY = ENTITIES.register("compressed_tipped_arrow_entity", () ->
-//            EntityType.Builder.<CompressedArrow>of(CompressedArrow::new, MobCategory.MISC)
-//                    .sized(0.5f, 0.5f)
-//                    .clientTrackingRange(4)
-//                    .updateInterval(20)
-//                    .build(new ResourceLocation(MODID, "compressed_tipped_arrow_entity").toString()));
 
     //Nether Items
     public static final RegistryObject<Item> COMPRESSED_QUARTZ = ITEMS.register("compressed_quartz", () -> new Item(ITEM_PROPERTIES));

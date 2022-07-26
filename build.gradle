@@ -16,7 +16,7 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.19-3.0.3'
+version = '1.19-3.0.4'
 group = 'com.VoidCallerZ.uc' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'ultimatecompression'
 
@@ -90,7 +90,7 @@ dependencies {
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft', it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.19-41.0.64'
+    minecraft 'net.minecraftforge:forge:1.19-41.0.98'
 
     compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
     compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
@@ -99,6 +99,7 @@ dependencies {
     runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
 
     //implementation fg.deobf("curse.maven:the-one-probe-245211:3838419")
+    //runtimeOnly fg.deobf("curse.maven:the-one-probe-245211:3871444")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
