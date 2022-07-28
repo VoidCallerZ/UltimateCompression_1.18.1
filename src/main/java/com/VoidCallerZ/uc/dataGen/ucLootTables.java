@@ -121,6 +121,9 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(Registration.COMPRESSED_CRIMSON_PLANKS.get(), createSimpleTable("compressed_crimson_planks", Registration.COMPRESSED_CRIMSON_PLANKS.get()));
         lootTables.put(Registration.COMPRESSED_WARPED_STEM.get(), createSimpleTable("compressed_warped_stem", Registration.COMPRESSED_WARPED_STEM.get()));
         lootTables.put(Registration.COMPRESSED_WARPED_PLANKS.get(), createSimpleTable("compressed_warped_planks", Registration.COMPRESSED_WARPED_PLANKS.get()));
+        lootTables.put(Registration.COMPRESSED_MANGROVE_LOG.get(), createSimpleTable("compressed_mangrove_log", Registration.COMPRESSED_MANGROVE_LOG.get()));
+        lootTables.put(Registration.COMPRESSED_MANGROVE_PLANKS.get(), createSimpleTable("compressed_mangrove_planks", Registration.COMPRESSED_MANGROVE_PLANKS.get()));
+        lootTables.put(Registration.COMPRESSED_MANGROVE_ROOTS.get(), createSimpleTable("compressed_mangrove_roots", Registration.COMPRESSED_MANGROVE_ROOTS.get()));
 
         //Wool
         lootTables.put(Registration.COMPRESSED_BLACK_WOOL.get(), createSimpleTable("compressed_black_wool", Registration.COMPRESSED_BLACK_WOOL.get()));

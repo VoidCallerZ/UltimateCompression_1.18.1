@@ -133,6 +133,9 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_CRIMSON_PLANKS_ITEM.get()).getPath(), modLoc("block/compressed_crimson_planks"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_WARPED_STEM_ITEM.get()).getPath(), modLoc("block/compressed_warped_stem"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_WARPED_PLANKS_ITEM.get()).getPath(), modLoc("block/compressed_warped_planks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_MANGROVE_LOG_ITEM.get()).getPath(), modLoc("block/compressed_mangrove_log"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_MANGROVE_PLANKS_ITEM.get()).getPath(), modLoc("block/compressed_mangrove_planks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_MANGROVE_ROOTS_ITEM.get()).getPath(), modLoc("block/compressed_mangrove_roots"));
 
         //Wool
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_BLACK_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_black_wool"));

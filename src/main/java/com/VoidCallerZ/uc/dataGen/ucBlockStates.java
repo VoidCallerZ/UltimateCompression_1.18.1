@@ -127,6 +127,9 @@ public class ucBlockStates extends BaseBlockStateProvider
         compressedPillarBlock(Registration.COMPRESSED_SPRUCE_LOG.get(), modLoc("block/compressed/logs/compressed_spruce_log"));
         compressedPillarBlock(Registration.COMPRESSED_CRIMSON_STEM.get(), modLoc("block/compressed/logs/compressed_crimson_stem"));
         compressedPillarBlock(Registration.COMPRESSED_WARPED_STEM.get(), modLoc("block/compressed/logs/compressed_warped_stem"));
+        compressedPillarBlock(Registration.COMPRESSED_MANGROVE_LOG.get(), modLoc("block/compressed/logs/compressed_mangrove_log"));
+        compressedPillarBlock(Registration.COMPRESSED_MANGROVE_ROOTS.get(), modLoc("block/compressed/logs/compressed_mangrove_roots"));
+
         //Planks
         singleTextureBlock(Registration.COMPRESSED_ACACIA_PLANKS.get(), "compressed_acacia_planks", "block/compressed/planks/compressed_acacia_planks");
         singleTextureBlock(Registration.COMPRESSED_BIRCH_PLANKS.get(), "compressed_birch_planks", "block/compressed/planks/compressed_birch_planks");
@@ -136,6 +139,7 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(Registration.COMPRESSED_SPRUCE_PLANKS.get(), "compressed_spruce_planks", "block/compressed/planks/compressed_spruce_planks");
         singleTextureBlock(Registration.COMPRESSED_CRIMSON_PLANKS.get(), "compressed_crimson_planks", "block/compressed/planks/compressed_crimson_planks");
         singleTextureBlock(Registration.COMPRESSED_WARPED_PLANKS.get(), "compressed_warped_planks", "block/compressed/planks/compressed_warped_planks");
+        singleTextureBlock(Registration.COMPRESSED_MANGROVE_PLANKS.get(), "compressed_mangrove_planks", "block/compressed/planks/compressed_mangrove_planks");
 
         //Wool
         singleTextureBlock(Registration.COMPRESSED_BLACK_WOOL.get(), "compressed_black_wool", "block/compressed/wool/compressed_black_wool");

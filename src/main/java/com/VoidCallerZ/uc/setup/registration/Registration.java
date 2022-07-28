@@ -262,6 +262,12 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_WARPED_STEM_ITEM = fromBlockFuelItem(COMPRESSED_WARPED_STEM, 2700);
     public static final RegistryObject<Block> COMPRESSED_WARPED_PLANKS = BLOCKS.register("compressed_warped_planks", () -> new Block(WOOD_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_WARPED_PLANKS_ITEM = fromBlockFuelItem(COMPRESSED_WARPED_PLANKS, 2700);
+    public static final RegistryObject<RotatedPillarBlock> COMPRESSED_MANGROVE_LOG = BLOCKS.register("compressed_mangrove_log", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_MANGROVE_LOG_ITEM = fromBlockFuelItem(COMPRESSED_MANGROVE_LOG, 2700);
+    public static final RegistryObject<Block> COMPRESSED_MANGROVE_PLANKS = BLOCKS.register("compressed_mangrove_planks", () -> new Block(WOOD_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_MANGROVE_PLANKS_ITEM = fromBlockFuelItem(COMPRESSED_MANGROVE_PLANKS, 2700);
+    public static final RegistryObject<RotatedPillarBlock> COMPRESSED_MANGROVE_ROOTS = BLOCKS.register("compressed_mangrove_roots", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_MANGROVE_ROOTS_ITEM = fromBlockFuelItem(COMPRESSED_MANGROVE_ROOTS, 2700);
 
     //Wool Blocks
     public static final RegistryObject<Block> COMPRESSED_BLACK_WOOL = BLOCKS.register("compressed_black_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));

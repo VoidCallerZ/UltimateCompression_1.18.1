@@ -1,4 +1,4 @@
-// 1.19	2022-06-22T13:34:00.4187046	UC LootTables
+// 1.19	2022-07-28T16:20:17.1575954	UC LootTables
 99ec0c801d3197f720018c169d043ffccd7774ca data/uc/loot_tables/blocks/compressed_acacia_log.json
 f56353c6f3c239b59dc1e3056c70d4a543ef647a data/uc/loot_tables/blocks/compressed_acacia_planks.json
 205e998d60b754d88273c9cc8b16efe11090ac2f data/uc/loot_tables/blocks/compressed_andesite.json
@@ -82,6 +82,9 @@ f3f02b412f5f761cd016408b9899223d555352ae data/uc/loot_tables/blocks/compressed_m
 0b0a9ca1df107908a1315ba0646acaf9487cdc34 data/uc/loot_tables/blocks/compressed_magenta_concrete_powder.json
 ceab7435bfd0cbcc1b081a7edef93f473d3322c1 data/uc/loot_tables/blocks/compressed_magenta_wool.json
 91fc69000b04487f9b1ac744e180f141863cd82f data/uc/loot_tables/blocks/compressed_magma.json
+a4e6ae117fc40ee0bd5f8f1535a6b12ed44e61be data/uc/loot_tables/blocks/compressed_mangrove_log.json
+09dbb2b72597b3feb16f81b76ac0c22356a85615 data/uc/loot_tables/blocks/compressed_mangrove_planks.json
+036123d71d02bdb10c203ada52b06f33a2b6df3a data/uc/loot_tables/blocks/compressed_mangrove_roots.json
 f2c8d942a228b21e2571c90c1e044cfb7dd46c68 data/uc/loot_tables/blocks/compressed_mossy_cobblestone.json
 fb3654582a070ad2d9281f8b5cc41d4bc782406d data/uc/loot_tables/blocks/compressed_mossy_stone_bricks.json
 b3de816126ff86d337e33f5d6a0722b6eb1dcd8c data/uc/loot_tables/blocks/compressed_netherrack.json

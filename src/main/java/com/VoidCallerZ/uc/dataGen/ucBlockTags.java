@@ -34,7 +34,10 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(Registration.COMPRESSED_CRIMSON_STEM.get())
                 .add(Registration.COMPRESSED_CRIMSON_PLANKS.get())
                 .add(Registration.COMPRESSED_WARPED_STEM.get())
-                .add(Registration.COMPRESSED_WARPED_PLANKS.get());
+                .add(Registration.COMPRESSED_WARPED_PLANKS.get())
+                .add(Registration.COMPRESSED_MANGROVE_LOG.get())
+                .add(Registration.COMPRESSED_MANGROVE_ROOTS.get())
+                .add(Registration.COMPRESSED_MANGROVE_PLANKS.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(Registration.COMPRESSOR.get())

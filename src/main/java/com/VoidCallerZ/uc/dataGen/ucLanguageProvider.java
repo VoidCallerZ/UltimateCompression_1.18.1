@@ -74,6 +74,9 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_CRIMSON_PLANKS.get(), "Compressed Crimson Planks");
         add(Registration.COMPRESSED_WARPED_STEM.get(), "Compressed Warped Stem");
         add(Registration.COMPRESSED_WARPED_PLANKS.get(), "Compressed Warped Planks");
+        add(Registration.COMPRESSED_MANGROVE_LOG.get(), "Compressed Mangrove Log");
+        add(Registration.COMPRESSED_MANGROVE_PLANKS.get(), "Compressed Mangrove Planks");
+        add(Registration.COMPRESSED_MANGROVE_ROOTS.get(), "Compressed Mangrove Roots");
 
         //Wool
         add(Registration.COMPRESSED_BLACK_WOOL.get(), "Compressed Black Wool");

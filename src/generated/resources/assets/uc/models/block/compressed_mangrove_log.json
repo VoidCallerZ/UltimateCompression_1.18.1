@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "uc:block/compressed/logs/compressed_mangrove_log_top",
+    "side": "uc:block/compressed/logs/compressed_mangrove_log"
+  }
+}

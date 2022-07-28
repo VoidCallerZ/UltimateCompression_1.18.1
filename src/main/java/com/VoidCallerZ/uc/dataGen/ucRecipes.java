@@ -157,6 +157,9 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CRIMSON_PLANKS.get(), Items.CRIMSON_PLANKS, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_WARPED_STEM.get(), Items.WARPED_STEM, 9, consumer);
         CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_WARPED_PLANKS.get(), Items.WARPED_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MANGROVE_LOG.get(), Items.MANGROVE_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MANGROVE_PLANKS.get(), Items.MANGROVE_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MANGROVE_ROOTS.get(), Items.MANGROVE_ROOTS, 9, consumer);
 
         //Wool
         CompressedWoolRecipeBuilder(Registration.COMPRESSED_BLACK_WOOL.get(), Items.BLACK_WOOL, ColorBlockType.WOOL, Items.BLACK_DYE, consumer);

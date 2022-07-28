@@ -1,4 +1,4 @@
-// 1.19	2022-06-22T13:34:00.4157115	Item Models: uc
+// 1.19	2022-07-28T16:20:17.140381	Item Models: uc
 f381bd2053cc90b43b7e3d5375a556bc65a53121 assets/uc/models/item/compressed_acacia_log.json
 681df59d895167a265d1b4f93674ad2b384984ba assets/uc/models/item/compressed_acacia_planks.json
 1f67eb77cf349f3cd06d486b9fa61baff8fec05e assets/uc/models/item/compressed_andesite.json
@@ -147,6 +147,9 @@ a4e236fb153554c69a89d8d3b0ce9f622b74ed80 assets/uc/models/item/compressed_light_
 02a7752c7b4a8a320217bdee625745a562fe2526 assets/uc/models/item/compressed_magenta_concrete_powder.json
 092be7893ccad540d97e9f022a8ef135adccdf6b assets/uc/models/item/compressed_magenta_wool.json
 d838618f2623def5bfed9a2ae402399d90304699 assets/uc/models/item/compressed_magma.json
+63c6022934d39887f07ffc8ea2c0bda3f8291451 assets/uc/models/item/compressed_mangrove_log.json
+25e332cc86616bee419af660dd8d89cffe23dfc3 assets/uc/models/item/compressed_mangrove_planks.json
+5e72f19d64a6946a61d2eb7f26a2e31e5cd1d49f assets/uc/models/item/compressed_mangrove_roots.json
 5685ee7df175b58a422a814c9c3ca3ff76517c9c assets/uc/models/item/compressed_melon_slice.json
 f6e7813c8b0017a511d73bab017e532ae02546ca assets/uc/models/item/compressed_mossy_cobblestone.json
 ed5fda17b49933afe0773e6b0e2771f704c7ab9a assets/uc/models/item/compressed_mossy_stone_bricks.json

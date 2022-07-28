@@ -15,6 +15,9 @@
     "uc:compressed_crimson_stem",
     "uc:compressed_crimson_planks",
     "uc:compressed_warped_stem",
-    "uc:compressed_warped_planks"
+    "uc:compressed_warped_planks",
+    "uc:compressed_mangrove_log",
+    "uc:compressed_mangrove_roots",
+    "uc:compressed_mangrove_planks"
   ]
 }
