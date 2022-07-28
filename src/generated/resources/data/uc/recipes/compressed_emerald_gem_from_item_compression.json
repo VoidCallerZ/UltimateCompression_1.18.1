@@ -1,0 +1,11 @@
+{
+  "type": "uc:compressor_item_serializer",
+  "ingredients": [
+    {
+      "item": "minecraft:emerald"
+    }
+  ],
+  "output": {
+    "item": "uc:compressed_emerald_gem"
+  }
+}

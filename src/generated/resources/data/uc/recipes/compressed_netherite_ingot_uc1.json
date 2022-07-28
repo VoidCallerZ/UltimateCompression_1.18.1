@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "uc:compressed_netherite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "uc:compressed_netherite_ingot"
+  }
+}

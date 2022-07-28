@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "key": {
+    "x": {
+      "item": "minecraft:light_blue_wool"
+    }
+  },
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "result": {
+    "item": "uc:compressed_light_blue_wool"
+  }
+}

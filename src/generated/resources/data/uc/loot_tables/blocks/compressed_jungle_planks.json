@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "uc:compressed_jungle_planks"
+        }
+      ],
+      "name": "compressed_jungle_planks",
+      "rolls": 1.0
+    }
+  ]
+}

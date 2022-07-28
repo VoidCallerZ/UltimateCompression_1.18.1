@@ -1,0 +1,11 @@
+{
+  "type": "uc:compressor_item_serializer",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "output": {
+    "item": "uc:compressed_diamond_gem"
+  }
+}

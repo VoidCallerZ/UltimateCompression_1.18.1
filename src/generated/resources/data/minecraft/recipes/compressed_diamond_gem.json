@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "uc:compressed_diamond_ore"
+  },
+  "result": "uc:compressed_diamond_gem"
+}

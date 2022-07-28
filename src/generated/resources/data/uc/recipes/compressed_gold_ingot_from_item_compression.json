@@ -1,0 +1,11 @@
+{
+  "type": "uc:compressor_item_serializer",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "output": {
+    "item": "uc:compressed_gold_ingot"
+  }
+}

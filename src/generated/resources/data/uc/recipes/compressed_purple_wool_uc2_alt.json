@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "uc:compressed_white_wool"
+    },
+    {
+      "item": "minecraft:purple_dye"
+    }
+  ],
+  "result": {
+    "item": "uc:compressed_purple_wool"
+  }
+}

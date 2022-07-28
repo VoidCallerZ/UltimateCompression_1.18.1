@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "key": {
+    "x": {
+      "item": "uc:compressed_emerald_gem"
+    }
+  },
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "result": {
+    "item": "uc:compressed_emerald_block"
+  }
+}

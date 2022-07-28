@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "key": {
+    "x": {
+      "item": "uc:compressed_lapis"
+    }
+  },
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "result": {
+    "item": "uc:compressed_lapis_block"
+  }
+}

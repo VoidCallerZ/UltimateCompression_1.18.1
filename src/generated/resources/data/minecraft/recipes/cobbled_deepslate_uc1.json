@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "uc:compressed_cobbled_deepslate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:cobbled_deepslate"
+  }
+}

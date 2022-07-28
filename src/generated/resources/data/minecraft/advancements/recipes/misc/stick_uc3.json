@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:stick_uc3"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uc:compressed_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_stick"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_stick",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:stick_uc3"
+    ]
+  }
+}

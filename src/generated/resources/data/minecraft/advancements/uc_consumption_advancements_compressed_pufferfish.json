@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:mined_compressed_ore",
+  "criteria": {
+    "eaten_compressed_pufferfish": {
+      "conditions": {
+        "item": {
+          "items": [
+            "uc:compressed_pufferfish"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "text": "You just ate a compressed pufferfish and are now suffering from the consequences"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "uc:compressed_pufferfish"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Deadly Consumption"
+    }
+  },
+  "requirements": [
+    [
+      "eaten_compressed_pufferfish"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  }
+}

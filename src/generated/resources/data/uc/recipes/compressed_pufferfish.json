@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "minecraft:pufferfish"
+    },
+    {
+      "item": "minecraft:pufferfish"
+    },
+    {
+      "item": "minecraft:pufferfish"
+    },
+    {
+      "item": "minecraft:pufferfish"
+    }
+  ],
+  "result": {
+    "item": "uc:compressed_pufferfish"
+  }
+}

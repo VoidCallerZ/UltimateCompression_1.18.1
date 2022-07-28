@@ -1,0 +1,5 @@
+{
+  "type": "uc:ore_biome_modifier",
+  "biomes": "#minecraft:is_nether",
+  "feature": "uc:compressed_nether_gold_ore"
+}

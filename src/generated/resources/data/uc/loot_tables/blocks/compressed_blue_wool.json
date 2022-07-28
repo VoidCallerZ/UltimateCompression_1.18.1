@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "uc:compressed_blue_wool"
+        }
+      ],
+      "name": "compressed_blue_wool",
+      "rolls": 1.0
+    }
+  ]
+}

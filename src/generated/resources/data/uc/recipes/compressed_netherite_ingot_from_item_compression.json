@@ -1,0 +1,11 @@
+{
+  "type": "uc:compressor_item_serializer",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  ],
+  "output": {
+    "item": "uc:compressed_netherite_ingot"
+  }
+}
