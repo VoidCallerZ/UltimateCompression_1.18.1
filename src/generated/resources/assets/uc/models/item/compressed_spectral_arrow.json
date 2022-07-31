@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "uc:item/compressed/arrows/compressed_spectral_arrow"
+    "layer0": "uc:item/compressed/projectiles/compressed_spectral_arrow"
   }
 }

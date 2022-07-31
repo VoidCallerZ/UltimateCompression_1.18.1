@@ -316,9 +316,11 @@ public class ucItemModels extends BaseItemModelProvider
         singleTextureGenerated(ItemRegistration.COMPRESSED_STICK.get(), "item/compressed/single/compressed_stick");
         singleTextureGenerated(ItemRegistration.COMPRESSED_LEATHER.get(), "item/compressed/single/compressed_leather");
 
-        //Arrows
-        singleTextureGenerated(ItemRegistration.COMPRESSED_ARROW.get(), "item/compressed/arrows/compressed_arrow");
-        singleTextureGenerated(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get(), "item/compressed/arrows/compressed_spectral_arrow");
+        //Projectiles
+        singleTextureGenerated(ItemRegistration.COMPRESSED_ARROW.get(), "item/compressed/projectiles/compressed_arrow");
+        singleTextureGenerated(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get(), "item/compressed/projectiles/compressed_spectral_arrow");
+
+        singleTextureGenerated(ItemRegistration.COMPRESSED_SNOWBALL.get(), "item/compressed/projectiles/compressed_snowball");
         //singleTextureGenerated(ItemRegistration.COMPRESSED_TIPPED_ARROW.get(), "item/compressed/arrows/compressed_arrow");
     }
 }

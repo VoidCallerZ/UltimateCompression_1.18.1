@@ -306,11 +306,13 @@ public class ucLanguageProvider extends LanguageProvider
         add(ItemRegistration.COMPRESSED_STICK.get(), "Compressed Stick");
         add(ItemRegistration.COMPRESSED_LEATHER.get(), "Compressed Leather");
 
-        //Arrows
+        //Projectiles
         add(ItemRegistration.COMPRESSED_ARROW.get(), "Compressed Arrow");
         add(ItemRegistration.COMPRESSED_ARROW_ENTITY.get(), "Compressed Arrow Entity");
         add(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get(), "Compressed Spectral Arrow");
         add(ItemRegistration.COMPRESSED_SPECTRAL_ARROW_ENTITY.get(), "Compressed Spectral Arrow Entity");
+        add(ItemRegistration.COMPRESSED_SNOWBALL.get(), "Compressed Snowball");
+        add(ItemRegistration.COMPRESSED_SNOWBALL_ENTITY.get(), "Compressed SnowBall Entity");
 //        add(ItemRegistration.COMPRESSED_TIPPED_ARROW.get(), "Compressed Tipped Arrow");
 //        add(ItemRegistration.COMPRESSED_TIPPED_ARROW_ENTITY.get(), "Compressed Tipped Arrow Entity");
     }

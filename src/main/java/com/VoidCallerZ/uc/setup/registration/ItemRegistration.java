@@ -1,5 +1,7 @@
 package com.VoidCallerZ.uc.setup.registration;
 
+import com.VoidCallerZ.uc.items.UcSnowball;
+import com.VoidCallerZ.uc.items.UcSnowballItem;
 import com.VoidCallerZ.uc.items.arrows.UcArrowItem;
 import com.VoidCallerZ.uc.items.arrows.UcSpectralArrowItem;
 import com.VoidCallerZ.uc.setup.ModSetup;
@@ -9,6 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SnowballItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.*;
@@ -50,6 +53,15 @@ public class ItemRegistration
                     .clientTrackingRange(4)
                     .updateInterval(20)
                     .build(new ResourceLocation(MODID, "compressed_spectral_arrow_entity").toString()));
+
+    //Snowball
+    public static final RegistryObject<Item> COMPRESSED_SNOWBALL = ITEMS.register("compressed_snowball", () -> new UcSnowballItem(ITEM_PROPERTIES));
+    public static final RegistryObject<EntityType<UcSnowball>> COMPRESSED_SNOWBALL_ENTITY = ENTITIES.register("compressed_snowball_entity", () ->
+            EntityType.Builder.<UcSnowball>of(UcSnowball::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f)
+                    .clientTrackingRange(4)
+                    .updateInterval(20)
+                    .build(new ResourceLocation(MODID, "compressed_snowball_entity").toString()));
 
     //Nether Items
     public static final RegistryObject<Item> COMPRESSED_QUARTZ = ITEMS.register("compressed_quartz", () -> new Item(ITEM_PROPERTIES));

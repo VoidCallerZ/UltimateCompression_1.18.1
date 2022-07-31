@@ -7,6 +7,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.function.Consumer;
@@ -370,6 +371,12 @@ public class ucRecipes extends BaseRecipeProvider
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_ARROW.get()), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_ARROW.get()))
                 .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(ItemRegistration.COMPRESSED_SNOWBALL.get(), 16)
+                .requires(Items.SNOWBALL, 4)
+                .group("uc")
+                .unlockedBy("has_" + Items.SNOWBALL, InventoryChangeTrigger.TriggerInstance.hasItems(Items.SNOWBALL));
+
 
         ShapedRecipeBuilder.shaped(Items.TORCH, 36)
                 .pattern("x")
