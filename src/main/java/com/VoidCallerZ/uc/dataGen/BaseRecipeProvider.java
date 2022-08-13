@@ -56,13 +56,13 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .pattern("xxx")
                 .define('x', compressedItem)
                 .group("uc")
-                .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(compressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
                 .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_uc1");
 
         ShapelessRecipeBuilder.shapeless(compressedItem, decompAmountItem)
                 .requires(compressedBlock)
                 .group("uc")
-                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(compressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
+                .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
                 .save(consumer, ForgeRegistries.ITEMS.getKey(compressedItem) + "_uc1");
     }
 

@@ -1,7 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_minecraft:sandstone": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:sandstone_uc1"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uc:compressed_sandstone": {
       "conditions": {
         "items": [
           {
@@ -12,17 +18,11 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "minecraft:sandstone_uc1"
-      },
-      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_minecraft:sandstone",
+      "has_uc:compressed_sandstone",
       "has_the_recipe"
     ]
   ],

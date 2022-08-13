@@ -1,7 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_minecraft:cracked_stone_bricks": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:cracked_stone_bricks_uc1"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uc:compressed_cracked_stone_bricks": {
       "conditions": {
         "items": [
           {
@@ -12,17 +18,11 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "minecraft:cracked_stone_bricks_uc1"
-      },
-      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_minecraft:cracked_stone_bricks",
+      "has_uc:compressed_cracked_stone_bricks",
       "has_the_recipe"
     ]
   ],

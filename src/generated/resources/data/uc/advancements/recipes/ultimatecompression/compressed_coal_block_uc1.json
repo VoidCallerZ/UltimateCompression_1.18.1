@@ -7,7 +7,7 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_uc:compressed_coal_block": {
+    "has_uc:compressed_coal": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_uc:compressed_coal_block",
+      "has_uc:compressed_coal",
       "has_the_recipe"
     ]
   ],

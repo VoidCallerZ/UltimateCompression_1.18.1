@@ -1,13 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "uc:compressed_andesite_uc1"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_uc:compressed_andesite": {
+    "has_minecraft:andesite": {
       "conditions": {
         "items": [
           {
@@ -18,11 +12,17 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "uc:compressed_andesite_uc1"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_uc:compressed_andesite",
+      "has_minecraft:andesite",
       "has_the_recipe"
     ]
   ],

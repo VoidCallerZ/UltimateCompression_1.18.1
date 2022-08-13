@@ -7,7 +7,7 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_uc:compressed_emerald_block": {
+    "has_uc:compressed_emerald_gem": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_uc:compressed_emerald_block",
+      "has_uc:compressed_emerald_gem",
       "has_the_recipe"
     ]
   ],
