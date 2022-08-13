@@ -6,6 +6,8 @@
     "uc:compressed_sand",
     "uc:compressed_soul_sand",
     "uc:compressed_soul_soil",
-    "uc:compressed_clay"
+    "uc:compressed_clay",
+    "uc:compressed_snow_block",
+    "uc:compressed_powder_snow"
   ]
 }

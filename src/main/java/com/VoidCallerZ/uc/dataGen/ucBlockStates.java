@@ -195,6 +195,9 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(Registration.COMPRESSED_WHITE_CONCRETE_POWDER.get(), "compressed_white_concrete_powder", "block/compressed/concrete/compressed_white_concrete_powder");
         singleTextureBlock(Registration.COMPRESSED_YELLOW_CONCRETE_POWDER.get(), "compressed_yellow_concrete_powder", "block/compressed/concrete/compressed_yellow_concrete_powder");
 
+        //Snow Blocks
+        singleTextureBlock(Registration.COMPRESSED_SNOW_BLOCK.get(), "compressed_snow_block", "block/compressed/basic/snow/compressed_snow");
+        singleTextureBlock(Registration.COMPRESSED_POWDER_SNOW.get(), "compressed_powder_snow", "block/compressed/basic/snow/compressed_powder_snow");
     }
 
     private void registerCompressor()

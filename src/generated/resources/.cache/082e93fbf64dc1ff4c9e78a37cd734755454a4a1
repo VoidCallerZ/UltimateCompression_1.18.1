@@ -1,4 +1,4 @@
-// 1.19.2	2022-08-13T20:51:50.3953376	UC LootTables
+// 1.19.2	2022-08-13T23:45:42.9554756	UC LootTables
 99ec0c801d3197f720018c169d043ffccd7774ca data/uc/loot_tables/blocks/compressed_acacia_log.json
 f56353c6f3c239b59dc1e3056c70d4a543ef647a data/uc/loot_tables/blocks/compressed_acacia_planks.json
 205e998d60b754d88273c9cc8b16efe11090ac2f data/uc/loot_tables/blocks/compressed_andesite.json
@@ -121,6 +121,7 @@ d0ae51068a9501d92dc66817ac76b9965e16f1c8 data/uc/loot_tables/blocks/compressed_s
 8f76d1350aa8ba6e58fd07d0697c8532405538a0 data/uc/loot_tables/blocks/compressed_sandstone.json
 bd24eda56f445ae29feae7a8bdfda9f4fb079e9e data/uc/loot_tables/blocks/compressed_smooth_basalt.json
 64937e3be3249617bc93e208a7cf16669e7ab976 data/uc/loot_tables/blocks/compressed_smooth_stone.json
+2bb2ddd5c7ed7526d33fae34a3dd795ae5c3a002 data/uc/loot_tables/blocks/compressed_snow_block.json
 a142a8ae3f88f7036024fe0609c2acf68ba676b5 data/uc/loot_tables/blocks/compressed_soul_sand.json
 68288e6cffeaba903b9032a6330355948b0013f0 data/uc/loot_tables/blocks/compressed_soul_soil.json
 72cb218c7c32bae96bdf6ebdc336037a7e00bd9b data/uc/loot_tables/blocks/compressed_spruce_log.json

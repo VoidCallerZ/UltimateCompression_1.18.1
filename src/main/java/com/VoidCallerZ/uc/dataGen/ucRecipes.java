@@ -7,7 +7,6 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -343,6 +342,9 @@ public class ucRecipes extends BaseRecipeProvider
         MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_FLINT.get(), Items.FLINT, 9, consumer);
         MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_STICK.get(), Items.STICK, 9, consumer);
         MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_LEATHER.get(), Items.LEATHER, 9, consumer);
+
+        //Snow
+        ShapedRecipeBuilder.shaped(Items.SNOW, 54).pattern("xxx").define('x', Registration.COMPRESSED_SNOW_BLOCK.get()).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Registration.COMPRESSED_SNOW_BLOCK.get()), InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_SNOW_BLOCK.get()));
 
         //Arrows
         ShapedRecipeBuilder.shaped(ItemRegistration.COMPRESSED_ARROW.get(), 4)

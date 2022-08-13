@@ -13,7 +13,6 @@ public class ucLootTables extends BaseLootTableProvider
     protected void addTables()
     {
         //Ores
-//        lootTables.put(Registration.ULTIMATE_POWERGEN.get(), createSimpleTable("ultimate_powergen", Registration.ULTIMATE_POWERGEN.get()));
         lootTables.put(Registration.COMPRESSOR.get(), createSimpleTable("ultimate_compressor", Registration.COMPRESSOR.get()));
         lootTables.put(Registration.COMPRESSED_IRON_ORE.get(), createSilkTouchTable("compressed_iron_ore", Registration.COMPRESSED_IRON_ORE.get(), Registration.COMPRESSED_RAW_IRON.get(), 1, 1));
         lootTables.put(Registration.COMPRESSED_GOLD_ORE.get(), createSilkTouchTable("compressed_gold_ore", Registration.COMPRESSED_GOLD_ORE.get(), Registration.COMPRESSED_RAW_GOLD.get(), 1, 1));
@@ -179,5 +178,6 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(Registration.COMPRESSED_WHITE_CONCRETE_POWDER.get(), createSimpleTable("compressed_white_concrete_powder", Registration.COMPRESSED_WHITE_CONCRETE_POWDER.get()));
         lootTables.put(Registration.COMPRESSED_YELLOW_CONCRETE_POWDER.get(), createSimpleTable("compressed_yellow_concrete_powder", Registration.COMPRESSED_YELLOW_CONCRETE_POWDER.get()));
 
+        lootTables.put(Registration.COMPRESSED_SNOW_BLOCK.get(), createSimpleTable("compressed_snow_block", Registration.COMPRESSED_SNOW_BLOCK.get()));
     }
 }

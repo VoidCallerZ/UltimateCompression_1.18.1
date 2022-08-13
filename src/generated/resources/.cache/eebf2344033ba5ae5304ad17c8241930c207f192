@@ -1,4 +1,4 @@
-// 1.19.2	2022-08-13T20:51:50.3963346	Item Models: uc
+// 1.19.2	2022-08-13T23:26:07.0971761	Item Models: uc
 f381bd2053cc90b43b7e3d5375a556bc65a53121 assets/uc/models/item/compressed_acacia_log.json
 681df59d895167a265d1b4f93674ad2b384984ba assets/uc/models/item/compressed_acacia_planks.json
 1f67eb77cf349f3cd06d486b9fa61baff8fec05e assets/uc/models/item/compressed_andesite.json
@@ -187,6 +187,7 @@ bd7e98af0ee4ffd153c6406f963d360970b12ba2 assets/uc/models/item/compressed_polish
 8328389afb5a1fddea29f71fa80b41a834a7c378 assets/uc/models/item/compressed_polished_granite.json
 06dc4e0ce20123e1bb5d288637705f91e95a6b3a assets/uc/models/item/compressed_porkchop.json
 6a93d27089903dc47d41b4801805110b1044705d assets/uc/models/item/compressed_potato.json
+e237c67cc29aea6d6a6e563fa6e78d6bab37c539 assets/uc/models/item/compressed_powder_snow_bucket.json
 5344945d1a086541764fbec8d560889fee2cf6d2 assets/uc/models/item/compressed_pufferfish.json
 fa92432f588b14f838f21a65777e0e4e501f5c3f assets/uc/models/item/compressed_pumpkin_pie.json
 8153d70ef9f47f6733861cc444f7b14668b8bfb3 assets/uc/models/item/compressed_purple_concrete.json
@@ -216,6 +217,7 @@ a7cf1ee61662531959c37544de64c1ab9ffe0f27 assets/uc/models/item/compressed_sandst
 847845850615b5dc933d5fe634472b73c238f02b assets/uc/models/item/compressed_smooth_basalt.json
 f9e31b8d1a810912169613e080e6b632d85adf96 assets/uc/models/item/compressed_smooth_stone.json
 329655ef8b8789922267ca0a2f328df70a2a6dfa assets/uc/models/item/compressed_snowball.json
+47f3d6041ee89316f715601154a9832808b1ac4b assets/uc/models/item/compressed_snow_block.json
 582f579e735a9b651da83514c7e867555f033953 assets/uc/models/item/compressed_soul_sand.json
 cdab326308969589827e9f38e283ec07da67978e assets/uc/models/item/compressed_soul_soil.json
 b0600c63ed3d11c07433d148c7b6400decf8e603 assets/uc/models/item/compressed_spectral_arrow.json

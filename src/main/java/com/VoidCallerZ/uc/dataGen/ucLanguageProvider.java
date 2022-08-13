@@ -132,6 +132,10 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_WHITE_CONCRETE_POWDER.get(), "Compressed White Concrete Powder");
         add(Registration.COMPRESSED_YELLOW_CONCRETE_POWDER.get(), "Compressed Yellow Concrete Powder");
 
+        //Snow Blocks
+        add(Registration.COMPRESSED_SNOW_BLOCK.get(), "Compressed Snow Block");
+        add(Registration.COMPRESSED_POWDER_SNOW.get(), "Compressed Powder Snow");
+
         //Ingots & Chunks
         add(Registration.COMPRESSED_RAW_IRON.get(), "Compressed Raw Iron");
         add(Registration.COMPRESSED_IRON_INGOT.get(), "Compressed Iron Ingot");
@@ -305,6 +309,7 @@ public class ucLanguageProvider extends LanguageProvider
         add(ItemRegistration.COMPRESSED_QUARTZ.get(), "Compressed Quartz");
         add(ItemRegistration.COMPRESSED_STICK.get(), "Compressed Stick");
         add(ItemRegistration.COMPRESSED_LEATHER.get(), "Compressed Leather");
+        add(ItemRegistration.COMPRESSED_POWDER_SNOW_BUCKET.get(), "Compressed Powder Snow Bucket");
 
         //Projectiles
         add(ItemRegistration.COMPRESSED_ARROW.get(), "Compressed Arrow");

@@ -3,6 +3,7 @@ package com.VoidCallerZ.uc.setup.registration;
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.blocks.CompressorBlock;
 import com.VoidCallerZ.uc.blocks.UcFuelBlockItem;
+import com.VoidCallerZ.uc.blocks.UcPowderSnowBlock;
 import com.VoidCallerZ.uc.blocks.entity.custom.CompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.screen.CompressorBlockMenu;
 import com.VoidCallerZ.uc.items.UcFuelItem;
@@ -370,6 +371,11 @@ public class Registration
     public static final RegistryObject<Item> COMPRESSED_WHITE_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_WHITE_CONCRETE_POWDER);
     public static final RegistryObject<Block> COMPRESSED_YELLOW_CONCRETE_POWDER = BLOCKS.register("compressed_yellow_concrete_powder", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_YELLOW_CONCRETE_POWDER_ITEM = fromBlock(COMPRESSED_YELLOW_CONCRETE_POWDER);
+
+    //Snow Blocks
+    public static final RegistryObject<Block> COMPRESSED_SNOW_BLOCK = BLOCKS.register("compressed_snow_block", () -> new Block(SOFT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_SNOW_BLOCK_ITEM = fromBlock(COMPRESSED_SNOW_BLOCK);
+    public static final RegistryObject<Block> COMPRESSED_POWDER_SNOW = BLOCKS.register("compressed_powder_snow", () -> new UcPowderSnowBlock(BlockBehaviour.Properties.of(Material.POWDER_SNOW).strength(0.25F).sound(SoundType.POWDER_SNOW).dynamicShape()));
 
     //Only items
     public static final RegistryObject<Item> COMPRESSED_RAW_IRON = ITEMS.register("compressed_raw_iron", () -> new Item(ITEM_PROPERTIES));

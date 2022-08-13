@@ -191,6 +191,8 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_WHITE_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_white_concrete_powder"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_YELLOW_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_yellow_concrete_powder"));
 
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_SNOW_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_snow_block"));
+
 //        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.ULTIMATE_POWERGEN_ITEM.get()).getPath(), modLoc("block/powergen/main"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSOR_ITEM.get()).getPath(), modLoc("block/compressor"));
 
@@ -315,6 +317,7 @@ public class ucItemModels extends BaseItemModelProvider
         singleTextureGenerated(ItemRegistration.COMPRESSED_QUARTZ.get(), "item/compressed/single/compressed_quartz");
         singleTextureGenerated(ItemRegistration.COMPRESSED_STICK.get(), "item/compressed/single/compressed_stick");
         singleTextureGenerated(ItemRegistration.COMPRESSED_LEATHER.get(), "item/compressed/single/compressed_leather");
+        singleTextureGenerated(ItemRegistration.COMPRESSED_POWDER_SNOW_BUCKET.get(), "item/compressed/single/compressed_powder_snow_bucket");
 
         //Projectiles
         singleTextureGenerated(ItemRegistration.COMPRESSED_ARROW.get(), "item/compressed/projectiles/compressed_arrow");

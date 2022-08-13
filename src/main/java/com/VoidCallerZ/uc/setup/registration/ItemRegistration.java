@@ -8,10 +8,13 @@ import com.VoidCallerZ.uc.setup.ModSetup;
 import com.VoidCallerZ.uc.world.entity.projectile.CompressedArrow;
 import com.VoidCallerZ.uc.world.entity.projectile.CompressedSpectralArrow;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SnowballItem;
+import net.minecraft.world.item.SolidBucketItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.*;
@@ -62,6 +65,9 @@ public class ItemRegistration
                     .clientTrackingRange(4)
                     .updateInterval(20)
                     .build(new ResourceLocation(MODID, "compressed_snowball_entity").toString()));
+
+    //Bucket of Compressed Powder Snow
+    public static final RegistryObject<Item> COMPRESSED_POWDER_SNOW_BUCKET = ITEMS.register("compressed_powder_snow_bucket", () -> new SolidBucketItem(Registration.COMPRESSED_POWDER_SNOW.get(), SoundEvents.BUCKET_EMPTY_POWDER_SNOW, ITEM_PROPERTIES));
 
     //Nether Items
     public static final RegistryObject<Item> COMPRESSED_QUARTZ = ITEMS.register("compressed_quartz", () -> new Item(ITEM_PROPERTIES));
