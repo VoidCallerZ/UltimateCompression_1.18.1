@@ -8,12 +8,11 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.projectile.Snowball;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SnowballItem;
 import net.minecraft.world.level.Level;
 
-public class UcSnowballItem extends SnowballItem
+public class UcSnowballItem extends Item
 {
     public UcSnowballItem(Properties properties)
     {
@@ -31,6 +30,12 @@ public class UcSnowballItem extends SnowballItem
             snowball.setItem(itemstack);
             snowball.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, 1.5F, 1.0F);
             pLevel.addFreshEntity(snowball);
+        }
+
+        pPlayer.awardStat(Stats.ITEM_USED.get(this));
+        if (!pPlayer.getAbilities().instabuild)
+        {
+            itemstack.shrink(1);
         }
 
         return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());
