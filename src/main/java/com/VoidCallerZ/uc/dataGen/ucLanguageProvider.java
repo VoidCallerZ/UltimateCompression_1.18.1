@@ -136,6 +136,10 @@ public class ucLanguageProvider extends LanguageProvider
         add(Registration.COMPRESSED_SNOW_BLOCK.get(), "Compressed Snow Block");
         add(Registration.COMPRESSED_POWDER_SNOW.get(), "Compressed Powder Snow");
 
+        //Sculk Blocks
+        add(Registration.COMPRESSED_SCULK.get(), "Compressed Sculk");
+        add(Registration.COMPRESSED_SCULK_CATALYST.get(), "Compressed Sculk Catalyst");
+
         //Ingots & Chunks
         add(Registration.COMPRESSED_RAW_IRON.get(), "Compressed Raw Iron");
         add(Registration.COMPRESSED_IRON_INGOT.get(), "Compressed Iron Ingot");

@@ -1,4 +1,4 @@
-// 1.19.2	2022-08-13T23:26:07.0971761	Item Models: uc
+// 1.19.2	2022-08-14T19:19:05.7445351	Item Models: uc
 f381bd2053cc90b43b7e3d5375a556bc65a53121 assets/uc/models/item/compressed_acacia_log.json
 681df59d895167a265d1b4f93674ad2b384984ba assets/uc/models/item/compressed_acacia_planks.json
 1f67eb77cf349f3cd06d486b9fa61baff8fec05e assets/uc/models/item/compressed_andesite.json
@@ -214,6 +214,8 @@ a479d05cab09c7871cd322b1453d033ab6f3bb81 assets/uc/models/item/compressed_rotten
 d21f087281bfb0e949ccfd57c973488f446af378 assets/uc/models/item/compressed_salmon.json
 de4b378839d298a61eafa8c3acd648aecd6f8310 assets/uc/models/item/compressed_sand.json
 a7cf1ee61662531959c37544de64c1ab9ffe0f27 assets/uc/models/item/compressed_sandstone.json
+340b17b76d014c97164054a4c158599ad59afe68 assets/uc/models/item/compressed_sculk.json
+15e986cd2f902a5788a054fdb9495f41e6ee398b assets/uc/models/item/compressed_sculk_catalyst.json
 847845850615b5dc933d5fe634472b73c238f02b assets/uc/models/item/compressed_smooth_basalt.json
 f9e31b8d1a810912169613e080e6b632d85adf96 assets/uc/models/item/compressed_smooth_stone.json
 329655ef8b8789922267ca0a2f328df70a2a6dfa assets/uc/models/item/compressed_snowball.json

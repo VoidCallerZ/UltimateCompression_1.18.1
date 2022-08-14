@@ -191,7 +191,12 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_WHITE_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_white_concrete_powder"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_YELLOW_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_yellow_concrete_powder"));
 
+        //Snow
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_SNOW_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_snow_block"));
+
+        //Sculk
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_SCULK_ITEM.get()).getPath(), modLoc("block/compressed_sculk"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSED_SCULK_CATALYST_ITEM.get()).getPath(), modLoc("block/compressed_sculk_catalyst"));
 
 //        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.ULTIMATE_POWERGEN_ITEM.get()).getPath(), modLoc("block/powergen/main"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.COMPRESSOR_ITEM.get()).getPath(), modLoc("block/compressor"));

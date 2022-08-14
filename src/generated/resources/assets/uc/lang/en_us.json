@@ -125,6 +125,8 @@
   "block.uc.compressed_redstone_ore": "Compressed Redstone Ore",
   "block.uc.compressed_sand": "Compressed Sand",
   "block.uc.compressed_sandstone": "Compressed Sandstone",
+  "block.uc.compressed_sculk": "Compressed Sculk",
+  "block.uc.compressed_sculk_catalyst": "Compressed Sculk Catalyst",
   "block.uc.compressed_smooth_basalt": "Compressed Smooth Basalt",
   "block.uc.compressed_smooth_stone": "Compressed Smooth Stone",
   "block.uc.compressed_snow_block": "Compressed Snow Block",

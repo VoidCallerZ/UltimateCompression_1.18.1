@@ -1,4 +1,4 @@
-// 1.19.2	2022-08-13T23:12:19.2091556	Block States: uc
+// 1.19.2	2022-08-14T18:48:45.4342656	Block States: uc
 17dee2b51c09c019bdcfc795512e0f21c37f7870 assets/uc/blockstates/compressed_acacia_log.json
 47729bb940ddec3415b0e6eb9d865a6cedcd2ed6 assets/uc/blockstates/compressed_acacia_planks.json
 f86cad1a0b4189d5245a0e05c5a92b9f0666b1cd assets/uc/blockstates/compressed_andesite.json
@@ -125,6 +125,8 @@ c8c0cc6307ea5b2842a9ebe907a433579958b186 assets/uc/blockstates/compressed_red_co
 c8c66ec8196c607f81ea3ac7a8af70f320a81e3f assets/uc/blockstates/compressed_red_wool.json
 31b287004c51928c136bfa9aceb0ba7f926acb84 assets/uc/blockstates/compressed_sand.json
 673e36bc5e09cde3d3d4a10e9032af2a5bd6310c assets/uc/blockstates/compressed_sandstone.json
+c2d062fa78dc3fe0682f2d65447a092929cf575c assets/uc/blockstates/compressed_sculk.json
+98aad7ea6a33f733111bf0902751c1109f638919 assets/uc/blockstates/compressed_sculk_catalyst.json
 672a0963c3f5d6eb246653ac43042f06a84c78c8 assets/uc/blockstates/compressed_smooth_basalt.json
 6b5cd3b1747689a54ff1901d31439b4b475f5c6c assets/uc/blockstates/compressed_smooth_stone.json
 98035b1daf2792a0fdd5e3e8424700fe65db654e assets/uc/blockstates/compressed_snow_block.json
@@ -281,6 +283,8 @@ e6e87998c4ef0982e657996d16334f1b2af8489e assets/uc/models/block/compressed_raw_g
 3a26f581bfadd7efb3bde477a38d11e48e25bcf6 assets/uc/models/block/compressed_red_wool.json
 57463622c7f7b4793269db1576822e65e4a4bd54 assets/uc/models/block/compressed_sand.json
 c76c317353df9a64b5aed6f55332f5a8bdaecaf9 assets/uc/models/block/compressed_sandstone.json
+b3e7dd53f439b20d5d30bb6ab193f788579ce23c assets/uc/models/block/compressed_sculk.json
+13e59524f0ed705756cc6ed7c668f2d70cb20a24 assets/uc/models/block/compressed_sculk_catalyst.json
 d27b2ee8381e65f2e92ef7fccb40034f5543f69d assets/uc/models/block/compressed_smooth_basalt.json
 d7680d1765fc71b858a56e2b47c892d08a9923e0 assets/uc/models/block/compressed_smooth_stone.json
 2e95ffdd2340c1855d5069368c481093fd1a1136 assets/uc/models/block/compressed_snow_block.json

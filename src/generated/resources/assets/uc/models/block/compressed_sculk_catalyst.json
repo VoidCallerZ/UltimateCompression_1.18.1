@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "uc:block/compressed/sculk/compressed_sculk_catalyst_bottom",
+    "east": "uc:block/compressed/sculk/compressed_sculk_catalyst_side",
+    "north": "uc:block/compressed/sculk/compressed_sculk_catalyst_side",
+    "south": "uc:block/compressed/sculk/compressed_sculk_catalyst_side",
+    "up": "uc:block/compressed/sculk/compressed_sculk_catalyst_top",
+    "west": "uc:block/compressed/sculk/compressed_sculk_catalyst_side"
+  }
+}

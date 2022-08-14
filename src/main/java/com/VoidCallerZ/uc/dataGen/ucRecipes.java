@@ -346,6 +346,10 @@ public class ucRecipes extends BaseRecipeProvider
         //Snow
         ShapedRecipeBuilder.shaped(Items.SNOW, 54).pattern("xxx").define('x', Registration.COMPRESSED_SNOW_BLOCK.get()).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Registration.COMPRESSED_SNOW_BLOCK.get()), InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_SNOW_BLOCK.get()));
 
+        //Sculk
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SCULK.get(), Items.SCULK, 9, consumer);
+        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SCULK_CATALYST.get(), Items.SCULK_CATALYST, 9, consumer);
+
         //Arrows
         ShapedRecipeBuilder.shaped(ItemRegistration.COMPRESSED_ARROW.get(), 4)
                 .pattern("x")

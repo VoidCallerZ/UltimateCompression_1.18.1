@@ -22,6 +22,7 @@ public class ucBlockStates extends BaseBlockStateProvider
     {
 //        registerPowergen();
         registerCompressor();
+        registerSculkCatalyst();
 
         //Ores
         singleTextureBlock(Registration.COMPRESSED_IRON_ORE.get(), "compressed_iron_ore", "block/compressed/ores/compressed_iron_ore");
@@ -198,6 +199,9 @@ public class ucBlockStates extends BaseBlockStateProvider
         //Snow Blocks
         singleTextureBlock(Registration.COMPRESSED_SNOW_BLOCK.get(), "compressed_snow_block", "block/compressed/basic/snow/compressed_snow");
         singleTextureBlock(Registration.COMPRESSED_POWDER_SNOW.get(), "compressed_powder_snow", "block/compressed/basic/snow/compressed_powder_snow");
+
+        //Sculk Blocks
+        singleTextureBlock(Registration.COMPRESSED_SCULK.get(), "compressed_sculk", "block/compressed/sculk/compressed_sculk");
     }
 
     private void registerCompressor()
@@ -208,6 +212,16 @@ public class ucBlockStates extends BaseBlockStateProvider
         ResourceLocation SIDE = modLoc("block/compressor/compressor_side");
 
         horizontalBlock(Registration.COMPRESSOR.get(), models().cube("compressor", BASE, BASE, FRONT, BACK, SIDE, SIDE));
+    }
+
+    private void registerSculkCatalyst()
+    {
+        String base = "block/compressed/sculk/compressed_sculk_catalyst_";
+        ResourceLocation TOP = modLoc(base + "top");
+        ResourceLocation SIDE = modLoc(base + "side");
+        ResourceLocation BOTTOM = modLoc(base + "bottom");
+
+        horizontalBlock(Registration.COMPRESSED_SCULK_CATALYST.get(), models().cube("compressed_sculk_catalyst", BOTTOM, TOP, SIDE, SIDE, SIDE, SIDE));
     }
 
 //    private void registerPowergen()

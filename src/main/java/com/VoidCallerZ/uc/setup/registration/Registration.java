@@ -4,7 +4,9 @@ import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.blocks.CompressorBlock;
 import com.VoidCallerZ.uc.blocks.UcFuelBlockItem;
 import com.VoidCallerZ.uc.blocks.UcPowderSnowBlock;
+import com.VoidCallerZ.uc.blocks.UcSculkCatalystBlock;
 import com.VoidCallerZ.uc.blocks.entity.custom.CompressorBlockEntity;
+import com.VoidCallerZ.uc.blocks.entity.custom.UcSculkCatalystBlockEntity;
 import com.VoidCallerZ.uc.blocks.screen.CompressorBlockMenu;
 import com.VoidCallerZ.uc.items.UcFuelItem;
 import com.VoidCallerZ.uc.setup.ModSetup;
@@ -16,6 +18,7 @@ import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.SculkCatalystBlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
@@ -376,6 +379,13 @@ public class Registration
     public static final RegistryObject<Block> COMPRESSED_SNOW_BLOCK = BLOCKS.register("compressed_snow_block", () -> new Block(SOFT_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_SNOW_BLOCK_ITEM = fromBlock(COMPRESSED_SNOW_BLOCK);
     public static final RegistryObject<Block> COMPRESSED_POWDER_SNOW = BLOCKS.register("compressed_powder_snow", () -> new UcPowderSnowBlock(BlockBehaviour.Properties.of(Material.POWDER_SNOW).strength(0.25F).sound(SoundType.POWDER_SNOW).dynamicShape()));
+
+    //Sculk Blocks
+    public static final RegistryObject<Block> COMPRESSED_SCULK_CATALYST = BLOCKS.register("compressed_sculk_catalyst", () -> new UcSculkCatalystBlock(SOFT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_SCULK_CATALYST_ITEM = fromBlock(COMPRESSED_SCULK_CATALYST);
+    public static final RegistryObject<BlockEntityType<UcSculkCatalystBlockEntity>> COMPRESSED_SCULK_CATALYST_ENTITY = BLOCK_ENTITIES.register("compressed_sculk_catalyst_entity", () -> BlockEntityType.Builder.of(UcSculkCatalystBlockEntity::new, COMPRESSED_SCULK_CATALYST.get()).build(null));
+    public static final RegistryObject<Block> COMPRESSED_SCULK = BLOCKS.register("compressed_sculk", () -> new SculkBlock(SOFT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_SCULK_ITEM = fromBlock(COMPRESSED_SCULK);
 
     //Only items
     public static final RegistryObject<Item> COMPRESSED_RAW_IRON = ITEMS.register("compressed_raw_iron", () -> new Item(ITEM_PROPERTIES));
