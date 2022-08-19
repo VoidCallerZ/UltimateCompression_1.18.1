@@ -1,7 +1,7 @@
 package com.VoidCallerZ.uc.blocks;
 
 import com.VoidCallerZ.uc.blocks.entity.custom.UcSculkCatalystBlockEntity;
-import com.VoidCallerZ.uc.setup.registration.Registration;
+import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -97,7 +97,7 @@ public class UcSculkCatalystBlock extends BaseEntityBlock
     @Nullable
     public <T extends BlockEntity>BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> type)
     {
-        return level.isClientSide ? null : createTickerHelper(type, Registration.COMPRESSED_SCULK_CATALYST_ENTITY.get(), UcSculkCatalystBlockEntity::serverTick);
+        return level.isClientSide ? null : createTickerHelper(type, BlockRegistration.COMPRESSED_SCULK_CATALYST_ENTITY.get(), UcSculkCatalystBlockEntity::serverTick);
     }
 
     public RenderShape getRenderShape(BlockState state)

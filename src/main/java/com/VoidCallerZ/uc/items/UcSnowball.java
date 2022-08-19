@@ -1,6 +1,6 @@
 package com.VoidCallerZ.uc.items;
 
-import com.VoidCallerZ.uc.setup.registration.ItemRegistration;
+import com.VoidCallerZ.uc.registration.ItemRegistration;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;

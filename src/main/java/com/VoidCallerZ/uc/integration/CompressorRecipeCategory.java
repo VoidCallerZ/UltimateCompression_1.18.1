@@ -2,7 +2,7 @@
 //
 //import com.VoidCallerZ.uc.UltimateCompression;
 //import com.VoidCallerZ.uc.recipe.CompressorItemRecipe;
-//import com.VoidCallerZ.uc.setup.registration.Registration;
+//import com.VoidCallerZ.uc.registration.Registration;
 //import mezz.jei.api.constants.VanillaTypes;
 //import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 //import mezz.jei.api.gui.drawable.IDrawable;

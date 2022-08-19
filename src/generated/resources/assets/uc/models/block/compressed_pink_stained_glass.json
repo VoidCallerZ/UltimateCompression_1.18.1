@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "all": "uc:block/compressed/glass/compressed_pink_stained_glass"
+  }
+}

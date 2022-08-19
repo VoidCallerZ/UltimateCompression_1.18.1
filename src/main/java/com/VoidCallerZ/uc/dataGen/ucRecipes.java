@@ -1,7 +1,8 @@
 package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.dataGen.custom.CompressorRecipeBuilder;
-import com.VoidCallerZ.uc.setup.registration.*;
+import com.VoidCallerZ.uc.dataGen.providers.BaseRecipeProvider;
+import com.VoidCallerZ.uc.registration.*;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
@@ -22,7 +23,7 @@ public class ucRecipes extends BaseRecipeProvider
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer)
     {
-        ShapedRecipeBuilder.shaped(Registration.COMPRESSOR.get())
+        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSOR.get())
                 .pattern("iii")
                 .pattern("dgd")
                 .pattern("iii")
@@ -36,266 +37,298 @@ public class ucRecipes extends BaseRecipeProvider
         //Compression & decompression of most blocks
         //Material Blocks
         //Compressed Ingots -> Compressed Blocks
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_IRON_BLOCK.get(), Registration.COMPRESSED_IRON_INGOT.get(), 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GOLD_BLOCK.get(), Registration.COMPRESSED_GOLD_INGOT.get(), 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DIAMOND_BLOCK.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_COPPER_BLOCK.get(), Registration.COMPRESSED_COPPER_INGOT.get(), 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_COAL_BLOCK.get(), Registration.COMPRESSED_COAL.get(), 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_EMERALD_BLOCK.get(), Registration.COMPRESSED_EMERALD_GEM.get(), 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_LAPIS_BLOCK.get(), Registration.COMPRESSED_LAPIS.get(), 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_REDSTONE_BLOCK.get(), Registration.COMPRESSED_REDSTONE.get(), 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHERITE_BLOCK.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_IRON_BLOCK.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_GOLD_BLOCK.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_DIAMOND_BLOCK.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_COPPER_BLOCK.get(), ItemRegistration.COMPRESSED_COPPER_INGOT.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_COAL_BLOCK.get(), ItemRegistration.COMPRESSED_COAL.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_EMERALD_BLOCK.get(), ItemRegistration.COMPRESSED_EMERALD_GEM.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_LAPIS_BLOCK.get(), ItemRegistration.COMPRESSED_LAPIS.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_REDSTONE_BLOCK.get(), ItemRegistration.COMPRESSED_REDSTONE.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_NETHERITE_BLOCK.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), 9, consumer);
 
         //Material Blocks -> Compressed Blocks
-        ShapedRecipeBuilder.shaped(Registration.COMPRESSED_IRON_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.IRON_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.IRON_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(Registration.COMPRESSED_GOLD_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.GOLD_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.GOLD_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.GOLD_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(Registration.COMPRESSED_DIAMOND_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.DIAMOND_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.DIAMOND_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.DIAMOND_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(Registration.COMPRESSED_COPPER_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.COPPER_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.COPPER_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.COPPER_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(Registration.COMPRESSED_COAL_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.COAL_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.COAL_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.COAL_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(Registration.COMPRESSED_EMERALD_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.EMERALD_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.EMERALD_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.EMERALD_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(Registration.COMPRESSED_LAPIS_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.LAPIS_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.LAPIS_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.LAPIS_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(Registration.COMPRESSED_REDSTONE_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.REDSTONE_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.REDSTONE_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.REDSTONE_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(Registration.COMPRESSED_NETHERITE_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.NETHERITE_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.NETHERITE_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.NETHERITE_BLOCK)).group("uc").save(consumer);
+        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_IRON_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.IRON_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.IRON_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_BLOCK)).group("uc").save(consumer);
+        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_GOLD_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.GOLD_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.GOLD_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.GOLD_BLOCK)).group("uc").save(consumer);
+        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_DIAMOND_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.DIAMOND_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.DIAMOND_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.DIAMOND_BLOCK)).group("uc").save(consumer);
+        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_COPPER_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.COPPER_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.COPPER_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.COPPER_BLOCK)).group("uc").save(consumer);
+        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_COAL_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.COAL_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.COAL_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.COAL_BLOCK)).group("uc").save(consumer);
+        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_EMERALD_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.EMERALD_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.EMERALD_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.EMERALD_BLOCK)).group("uc").save(consumer);
+        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_LAPIS_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.LAPIS_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.LAPIS_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.LAPIS_BLOCK)).group("uc").save(consumer);
+        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_REDSTONE_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.REDSTONE_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.REDSTONE_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.REDSTONE_BLOCK)).group("uc").save(consumer);
+        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_NETHERITE_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.NETHERITE_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.NETHERITE_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.NETHERITE_BLOCK)).group("uc").save(consumer);
 
-        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_IRON_INGOT.get(), Items.IRON_INGOT, 9, consumer);
-        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_GOLD_INGOT.get(), Items.GOLD_INGOT, 9, consumer);
-        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_DIAMOND_GEM.get(), Items.DIAMOND, 9, consumer);
-        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_COPPER_INGOT.get(), Items.COPPER_INGOT, 9, consumer);
-        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_COAL.get(), Items.COAL, 9, consumer);
-        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_EMERALD_GEM.get(), Items.EMERALD, 9, consumer);
-        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_LAPIS.get(), Items.LAPIS_LAZULI, 9, consumer);
-        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_REDSTONE.get(), Items.REDSTONE, 9, consumer);
-        MaterialCompressionRecipeBuilder(Registration.COMPRESSED_NETHERITE_INGOT.get(), Items.NETHERITE_INGOT, 9, consumer);
+        MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_IRON_INGOT.get(), Items.IRON_INGOT, 9, consumer);
+        MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_GOLD_INGOT.get(), Items.GOLD_INGOT, 9, consumer);
+        MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), Items.DIAMOND, 9, consumer);
+        MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_COPPER_INGOT.get(), Items.COPPER_INGOT, 9, consumer);
+        MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_COAL.get(), Items.COAL, 9, consumer);
+        MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_EMERALD_GEM.get(), Items.EMERALD, 9, consumer);
+        MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_LAPIS.get(), Items.LAPIS_LAZULI, 9, consumer);
+        MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_REDSTONE.get(), Items.REDSTONE, 9, consumer);
+        MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), Items.NETHERITE_INGOT, 9, consumer);
 
-        FourItemMaterialCompressionRecipeBuilder(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), ItemRegistration.COMPRESSED_QUARTZ.get(), 4, consumer);
+        FourItemMaterialCompressionRecipeBuilder(BlockRegistration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), ItemRegistration.COMPRESSED_QUARTZ.get(), 4, consumer);
 
         //Raw Blocks
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RAW_IRON_BLOCK.get(),
-                Registration.COMPRESSED_RAW_IRON.get(), 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RAW_GOLD_BLOCK.get(),
-                Registration.COMPRESSED_RAW_GOLD.get(), 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RAW_COPPER_BLOCK.get(),
-                Registration.COMPRESSED_RAW_COPPER.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_RAW_IRON_BLOCK.get(), ItemRegistration.COMPRESSED_RAW_IRON.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_RAW_GOLD_BLOCK.get(), ItemRegistration.COMPRESSED_RAW_GOLD.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_RAW_COPPER_BLOCK.get(), ItemRegistration.COMPRESSED_RAW_COPPER.get(), 9, consumer);
 
         //Basic Blocks
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ANDESITE.get(), Items.ANDESITE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CALCITE.get(), Items.CALCITE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_COBBLED_DEEPSLATE.get(), Items.COBBLED_DEEPSLATE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_COBBLESTONE.get(), Items.COBBLESTONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DEEPSLATE.get(), Items.DEEPSLATE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DIORITE.get(), Items.DIORITE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DIRT.get(), Items.DIRT, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GRANITE.get(), Items.GRANITE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GRAVEL.get(), Items.GRAVEL, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHERRACK.get(), Items.NETHERRACK, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RED_SAND.get(), Items.RED_SAND, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SAND.get(), Items.SAND, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_STONE.get(), Items.STONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_TUFF.get(), Items.TUFF, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CLAY.get(), Items.CLAY, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MOSSY_COBBLESTONE.get(), Items.MOSSY_COBBLESTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_ANDESITE.get(), Items.ANDESITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CALCITE.get(), Items.CALCITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_COBBLED_DEEPSLATE.get(), Items.COBBLED_DEEPSLATE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_COBBLESTONE.get(), Items.COBBLESTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE.get(), Items.DEEPSLATE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_DIORITE.get(), Items.DIORITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_DIRT.get(), Items.DIRT, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_GRANITE.get(), Items.GRANITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_GRAVEL.get(), Items.GRAVEL, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_NETHERRACK.get(), Items.NETHERRACK, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_RED_SAND.get(), Items.RED_SAND, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SAND.get(), Items.SAND, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_STONE.get(), Items.STONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_TUFF.get(), Items.TUFF, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CLAY.get(), Items.CLAY, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_MOSSY_COBBLESTONE.get(), Items.MOSSY_COBBLESTONE, 9, consumer);
 
         //Polished Blocks
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_ANDESITE.get(), Items.POLISHED_ANDESITE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_BASALT.get(), Items.POLISHED_BASALT, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_DEEPSLATE.get(), Items.POLISHED_DEEPSLATE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_BLACKSTONE.get(), Items.POLISHED_BLACKSTONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS.get(), Items.POLISHED_BLACKSTONE_BRICKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_DIORITE.get(), Items.POLISHED_DIORITE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_POLISHED_GRANITE.get(), Items.POLISHED_GRANITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_POLISHED_ANDESITE.get(), Items.POLISHED_ANDESITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_POLISHED_BASALT.get(), Items.POLISHED_BASALT, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_POLISHED_DEEPSLATE.get(), Items.POLISHED_DEEPSLATE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_POLISHED_BLACKSTONE.get(), Items.POLISHED_BLACKSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS.get(), Items.POLISHED_BLACKSTONE_BRICKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_POLISHED_DIORITE.get(), Items.POLISHED_DIORITE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_POLISHED_GRANITE.get(), Items.POLISHED_GRANITE, 9, consumer);
 
         //Smooth Blocks
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SMOOTH_BASALT.get(), Items.SMOOTH_BASALT, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SMOOTH_STONE.get(), Items.SMOOTH_STONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SMOOTH_BASALT.get(), Items.SMOOTH_BASALT, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SMOOTH_STONE.get(), Items.SMOOTH_STONE, 9, consumer);
 
         //Stone Bricks
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CHISELED_STONE_BRICKS.get(), Items.CHISELED_STONE_BRICKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CRACKED_STONE_BRICKS.get(), Items.CRACKED_STONE_BRICKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MOSSY_STONE_BRICKS.get(), Items.MOSSY_STONE_BRICKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_STONE_BRICKS.get(), Items.STONE_BRICKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CHISELED_STONE_BRICKS.get(), Items.CHISELED_STONE_BRICKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CRACKED_STONE_BRICKS.get(), Items.CRACKED_STONE_BRICKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_MOSSY_STONE_BRICKS.get(), Items.MOSSY_STONE_BRICKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_STONE_BRICKS.get(), Items.STONE_BRICKS, 9, consumer);
 
         //Sandstone
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CHISELED_RED_SANDSTONE.get(), Items.CHISELED_RED_SANDSTONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CHISELED_SANDSTONE.get(), Items.CHISELED_SANDSTONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CUT_RED_SANDSTONE.get(), Items.CUT_RED_SANDSTONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CUT_SANDSTONE.get(), Items.CUT_SANDSTONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_RED_SANDSTONE.get(), Items.RED_SANDSTONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SANDSTONE.get(), Items.SANDSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CHISELED_RED_SANDSTONE.get(), Items.CHISELED_RED_SANDSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CHISELED_SANDSTONE.get(), Items.CHISELED_SANDSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CUT_RED_SANDSTONE.get(), Items.CUT_RED_SANDSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CUT_SANDSTONE.get(), Items.CUT_SANDSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_RED_SANDSTONE.get(), Items.RED_SANDSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SANDSTONE.get(), Items.SANDSTONE, 9, consumer);
 
         //Nether Blocks
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), Items.QUARTZ_BLOCK, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BASALT.get(), Items.BASALT, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BLACKSTONE.get(), Items.BLACKSTONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CHISELED_POLISHED_BLACKSTONE.get(), Items.CHISELED_POLISHED_BLACKSTONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS.get(), Items.CRACKED_POLISHED_BLACKSTONE_BRICKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GILDED_BLACKSTONE.get(), Items.GILDED_BLACKSTONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_GLOWSTONE.get(), Items.GLOWSTONE, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MAGMA.get(), Items.MAGMA_BLOCK, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SOUL_SAND.get(), Items.SOUL_SAND, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SOUL_SOIL.get(), Items.SOUL_SOIL, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_NETHER_QUARTZ_BLOCK.get(), Items.QUARTZ_BLOCK, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_BASALT.get(), Items.BASALT, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_BLACKSTONE.get(), Items.BLACKSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CHISELED_POLISHED_BLACKSTONE.get(), Items.CHISELED_POLISHED_BLACKSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS.get(), Items.CRACKED_POLISHED_BLACKSTONE_BRICKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_GILDED_BLACKSTONE.get(), Items.GILDED_BLACKSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_GLOWSTONE.get(), Items.GLOWSTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_MAGMA.get(), Items.MAGMA_BLOCK, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SOUL_SAND.get(), Items.SOUL_SAND, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SOUL_SOIL.get(), Items.SOUL_SOIL, 9, consumer);
 
         //Logs & Planks
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ACACIA_LOG.get(), Items.ACACIA_LOG, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_ACACIA_PLANKS.get(), Items.ACACIA_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BIRCH_LOG.get(), Items.BIRCH_LOG, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_BIRCH_PLANKS.get(), Items.BIRCH_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DARK_OAK_LOG.get(), Items.DARK_OAK_LOG, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_DARK_OAK_PLANKS.get(), Items.DARK_OAK_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_JUNGLE_LOG.get(), Items.JUNGLE_LOG, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_JUNGLE_PLANKS.get(), Items.JUNGLE_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_OAK_LOG.get(), Items.OAK_LOG, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_OAK_PLANKS.get(), Items.OAK_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SPRUCE_LOG.get(), Items.SPRUCE_LOG, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SPRUCE_PLANKS.get(), Items.SPRUCE_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CRIMSON_STEM.get(), Items.CRIMSON_STEM, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_CRIMSON_PLANKS.get(), Items.CRIMSON_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_WARPED_STEM.get(), Items.WARPED_STEM, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_WARPED_PLANKS.get(), Items.WARPED_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MANGROVE_LOG.get(), Items.MANGROVE_LOG, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MANGROVE_PLANKS.get(), Items.MANGROVE_PLANKS, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_MANGROVE_ROOTS.get(), Items.MANGROVE_ROOTS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_ACACIA_LOG.get(), Items.ACACIA_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_ACACIA_PLANKS.get(), Items.ACACIA_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_BIRCH_LOG.get(), Items.BIRCH_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_BIRCH_PLANKS.get(), Items.BIRCH_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_DARK_OAK_LOG.get(), Items.DARK_OAK_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_DARK_OAK_PLANKS.get(), Items.DARK_OAK_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_JUNGLE_LOG.get(), Items.JUNGLE_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_JUNGLE_PLANKS.get(), Items.JUNGLE_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_OAK_LOG.get(), Items.OAK_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_OAK_PLANKS.get(), Items.OAK_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SPRUCE_LOG.get(), Items.SPRUCE_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SPRUCE_PLANKS.get(), Items.SPRUCE_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CRIMSON_STEM.get(), Items.CRIMSON_STEM, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CRIMSON_PLANKS.get(), Items.CRIMSON_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_WARPED_STEM.get(), Items.WARPED_STEM, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_WARPED_PLANKS.get(), Items.WARPED_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_MANGROVE_LOG.get(), Items.MANGROVE_LOG, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_MANGROVE_PLANKS.get(), Items.MANGROVE_PLANKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_MANGROVE_ROOTS.get(), Items.MANGROVE_ROOTS, 9, consumer);
 
         //Wool
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BLACK_WOOL.get(), Items.BLACK_WOOL, ColorBlockType.WOOL, Items.BLACK_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BLUE_WOOL.get(), Items.BLUE_WOOL, ColorBlockType.WOOL, Items.BLUE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BROWN_WOOL.get(), Items.BROWN_WOOL, ColorBlockType.WOOL, Items.BROWN_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_CYAN_WOOL.get(), Items.CYAN_WOOL, ColorBlockType.WOOL, Items.CYAN_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_GRAY_WOOL.get(), Items.GRAY_WOOL, ColorBlockType.WOOL, Items.GRAY_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_GREEN_WOOL.get(), Items.GREEN_WOOL, ColorBlockType.WOOL, Items.GREEN_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIGHT_BLUE_WOOL.get(), Items.LIGHT_BLUE_WOOL, ColorBlockType.WOOL, Items.LIGHT_BLUE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIGHT_GRAY_WOOL.get(), Items.LIGHT_GRAY_WOOL, ColorBlockType.WOOL, Items.LIGHT_GRAY_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIME_WOOL.get(), Items.LIME_WOOL, ColorBlockType.WOOL, Items.LIME_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_MAGENTA_WOOL.get(), Items.MAGENTA_WOOL, ColorBlockType.WOOL, Items.MAGENTA_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_ORANGE_WOOL.get(), Items.ORANGE_WOOL, ColorBlockType.WOOL, Items.ORANGE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_PINK_WOOL.get(), Items.PINK_WOOL, ColorBlockType.WOOL, Items.PINK_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_PURPLE_WOOL.get(), Items.PURPLE_WOOL, ColorBlockType.WOOL, Items.PURPLE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_RED_WOOL.get(), Items.RED_WOOL, ColorBlockType.WOOL, Items.RED_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_WHITE_WOOL.get(), Items.WHITE_WOOL, ColorBlockType.WOOL, Items.WHITE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_YELLOW_WOOL.get(), Items.YELLOW_WOOL, ColorBlockType.WOOL, Items.YELLOW_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_BLACK_WOOL.get(), Items.BLACK_WOOL, ColorBlockType.WOOL, Items.BLACK_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_BLUE_WOOL.get(), Items.BLUE_WOOL, ColorBlockType.WOOL, Items.BLUE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_BROWN_WOOL.get(), Items.BROWN_WOOL, ColorBlockType.WOOL, Items.BROWN_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_CYAN_WOOL.get(), Items.CYAN_WOOL, ColorBlockType.WOOL, Items.CYAN_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_GRAY_WOOL.get(), Items.GRAY_WOOL, ColorBlockType.WOOL, Items.GRAY_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_GREEN_WOOL.get(), Items.GREEN_WOOL, ColorBlockType.WOOL, Items.GREEN_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_LIGHT_BLUE_WOOL.get(), Items.LIGHT_BLUE_WOOL, ColorBlockType.WOOL, Items.LIGHT_BLUE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_LIGHT_GRAY_WOOL.get(), Items.LIGHT_GRAY_WOOL, ColorBlockType.WOOL, Items.LIGHT_GRAY_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_LIME_WOOL.get(), Items.LIME_WOOL, ColorBlockType.WOOL, Items.LIME_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_MAGENTA_WOOL.get(), Items.MAGENTA_WOOL, ColorBlockType.WOOL, Items.MAGENTA_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_ORANGE_WOOL.get(), Items.ORANGE_WOOL, ColorBlockType.WOOL, Items.ORANGE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_PINK_WOOL.get(), Items.PINK_WOOL, ColorBlockType.WOOL, Items.PINK_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_PURPLE_WOOL.get(), Items.PURPLE_WOOL, ColorBlockType.WOOL, Items.PURPLE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_RED_WOOL.get(), Items.RED_WOOL, ColorBlockType.WOOL, Items.RED_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_WHITE_WOOL.get(), Items.WHITE_WOOL, ColorBlockType.WOOL, Items.WHITE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_YELLOW_WOOL.get(), Items.YELLOW_WOOL, ColorBlockType.WOOL, Items.YELLOW_DYE, consumer);
 
         //Concrete
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BLACK_CONCRETE.get(), Items.BLACK_CONCRETE, ColorBlockType.CONCRETE, Items.BLACK_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BLUE_CONCRETE.get(), Items.BLUE_CONCRETE, ColorBlockType.CONCRETE, Items.BLUE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BROWN_CONCRETE.get(), Items.BROWN_CONCRETE, ColorBlockType.CONCRETE, Items.BROWN_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_CYAN_CONCRETE.get(), Items.CYAN_CONCRETE, ColorBlockType.CONCRETE, Items.CYAN_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_GRAY_CONCRETE.get(), Items.GRAY_CONCRETE, ColorBlockType.CONCRETE, Items.GRAY_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_GREEN_CONCRETE.get(), Items.GREEN_CONCRETE, ColorBlockType.CONCRETE, Items.GREEN_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIGHT_BLUE_CONCRETE.get(), Items.LIGHT_BLUE_CONCRETE, ColorBlockType.CONCRETE, Items.LIGHT_BLUE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIGHT_GRAY_CONCRETE.get(), Items.LIGHT_GRAY_CONCRETE, ColorBlockType.CONCRETE, Items.LIGHT_GRAY_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIME_CONCRETE.get(), Items.LIME_CONCRETE, ColorBlockType.CONCRETE, Items.LIME_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_MAGENTA_CONCRETE.get(), Items.MAGENTA_CONCRETE, ColorBlockType.CONCRETE, Items.MAGENTA_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_ORANGE_CONCRETE.get(), Items.ORANGE_CONCRETE, ColorBlockType.CONCRETE, Items.ORANGE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_PINK_CONCRETE.get(), Items.PINK_CONCRETE, ColorBlockType.CONCRETE, Items.PINK_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_PURPLE_CONCRETE.get(), Items.PURPLE_CONCRETE, ColorBlockType.CONCRETE, Items.PURPLE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_RED_CONCRETE.get(), Items.RED_CONCRETE, ColorBlockType.CONCRETE, Items.RED_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_WHITE_CONCRETE.get(), Items.WHITE_CONCRETE, ColorBlockType.CONCRETE, Items.WHITE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_YELLOW_CONCRETE.get(), Items.YELLOW_CONCRETE, ColorBlockType.CONCRETE, Items.YELLOW_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_BLACK_CONCRETE.get(), Items.BLACK_CONCRETE, ColorBlockType.CONCRETE, Items.BLACK_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_BLUE_CONCRETE.get(), Items.BLUE_CONCRETE, ColorBlockType.CONCRETE, Items.BLUE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_BROWN_CONCRETE.get(), Items.BROWN_CONCRETE, ColorBlockType.CONCRETE, Items.BROWN_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_CYAN_CONCRETE.get(), Items.CYAN_CONCRETE, ColorBlockType.CONCRETE, Items.CYAN_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_GRAY_CONCRETE.get(), Items.GRAY_CONCRETE, ColorBlockType.CONCRETE, Items.GRAY_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_GREEN_CONCRETE.get(), Items.GREEN_CONCRETE, ColorBlockType.CONCRETE, Items.GREEN_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_LIGHT_BLUE_CONCRETE.get(), Items.LIGHT_BLUE_CONCRETE, ColorBlockType.CONCRETE, Items.LIGHT_BLUE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_LIGHT_GRAY_CONCRETE.get(), Items.LIGHT_GRAY_CONCRETE, ColorBlockType.CONCRETE, Items.LIGHT_GRAY_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_LIME_CONCRETE.get(), Items.LIME_CONCRETE, ColorBlockType.CONCRETE, Items.LIME_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_MAGENTA_CONCRETE.get(), Items.MAGENTA_CONCRETE, ColorBlockType.CONCRETE, Items.MAGENTA_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_ORANGE_CONCRETE.get(), Items.ORANGE_CONCRETE, ColorBlockType.CONCRETE, Items.ORANGE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_PINK_CONCRETE.get(), Items.PINK_CONCRETE, ColorBlockType.CONCRETE, Items.PINK_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_PURPLE_CONCRETE.get(), Items.PURPLE_CONCRETE, ColorBlockType.CONCRETE, Items.PURPLE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_RED_CONCRETE.get(), Items.RED_CONCRETE, ColorBlockType.CONCRETE, Items.RED_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_WHITE_CONCRETE.get(), Items.WHITE_CONCRETE, ColorBlockType.CONCRETE, Items.WHITE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_YELLOW_CONCRETE.get(), Items.YELLOW_CONCRETE, ColorBlockType.CONCRETE, Items.YELLOW_DYE, consumer);
 
         //Concrete Powder
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BLACK_CONCRETE_POWDER.get(), Items.BLACK_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.BLACK_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BLUE_CONCRETE_POWDER.get(), Items.BLUE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.BLUE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_BROWN_CONCRETE_POWDER.get(), Items.BROWN_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.BROWN_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_CYAN_CONCRETE_POWDER.get(), Items.CYAN_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.CYAN_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_GRAY_CONCRETE_POWDER.get(), Items.GRAY_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.GRAY_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_GREEN_CONCRETE_POWDER.get(), Items.GREEN_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.GREEN_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIGHT_BLUE_CONCRETE_POWDER.get(), Items.LIGHT_BLUE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.LIGHT_BLUE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIGHT_GRAY_CONCRETE_POWDER.get(), Items.LIGHT_GRAY_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.LIGHT_GRAY_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_LIME_CONCRETE_POWDER.get(), Items.LIME_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.LIME_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_MAGENTA_CONCRETE_POWDER.get(), Items.MAGENTA_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.MAGENTA_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_ORANGE_CONCRETE_POWDER.get(), Items.ORANGE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.ORANGE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_PINK_CONCRETE_POWDER.get(), Items.PINK_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.PINK_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_PURPLE_CONCRETE_POWDER.get(), Items.PURPLE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.PURPLE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_RED_CONCRETE_POWDER.get(), Items.RED_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.RED_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_WHITE_CONCRETE_POWDER.get(), Items.WHITE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.WHITE_DYE, consumer);
-        CompressedWoolRecipeBuilder(Registration.COMPRESSED_YELLOW_CONCRETE_POWDER.get(), Items.YELLOW_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.YELLOW_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_BLACK_CONCRETE_POWDER.get(), Items.BLACK_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.BLACK_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_BLUE_CONCRETE_POWDER.get(), Items.BLUE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.BLUE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_BROWN_CONCRETE_POWDER.get(), Items.BROWN_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.BROWN_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_CYAN_CONCRETE_POWDER.get(), Items.CYAN_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.CYAN_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_GRAY_CONCRETE_POWDER.get(), Items.GRAY_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.GRAY_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_GREEN_CONCRETE_POWDER.get(), Items.GREEN_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.GREEN_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_LIGHT_BLUE_CONCRETE_POWDER.get(), Items.LIGHT_BLUE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.LIGHT_BLUE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_LIGHT_GRAY_CONCRETE_POWDER.get(), Items.LIGHT_GRAY_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.LIGHT_GRAY_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_LIME_CONCRETE_POWDER.get(), Items.LIME_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.LIME_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_MAGENTA_CONCRETE_POWDER.get(), Items.MAGENTA_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.MAGENTA_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_ORANGE_CONCRETE_POWDER.get(), Items.ORANGE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.ORANGE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_PINK_CONCRETE_POWDER.get(), Items.PINK_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.PINK_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_PURPLE_CONCRETE_POWDER.get(), Items.PURPLE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.PURPLE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_RED_CONCRETE_POWDER.get(), Items.RED_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.RED_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_WHITE_CONCRETE_POWDER.get(), Items.WHITE_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.WHITE_DYE, consumer);
+        CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_YELLOW_CONCRETE_POWDER.get(), Items.YELLOW_CONCRETE_POWDER, ColorBlockType.CONCRETE_POWDER, Items.YELLOW_DYE, consumer);
+
+        //Glass Blocks
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS.get(), Items.BLACK_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS.get(), Items.BLUE_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_BROWN_STAINED_GLASS.get(), Items.BROWN_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CYAN_STAINED_GLASS.get(), Items.CYAN_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_GRAY_STAINED_GLASS.get(), Items.GRAY_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_GREEN_STAINED_GLASS.get(), Items.GREEN_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_LIGHT_BLUE_STAINED_GLASS.get(), Items.LIGHT_BLUE_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_LIGHT_GRAY_STAINED_GLASS.get(), Items.LIGHT_GRAY_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_LIME_STAINED_GLASS.get(), Items.LIME_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_MAGENTA_STAINED_GLASS.get(), Items.MAGENTA_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_ORANGE_STAINED_GLASS.get(), Items.ORANGE_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_PINK_STAINED_GLASS.get(), Items.PINK_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_PURPLE_STAINED_GLASS.get(), Items.PURPLE_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_RED_STAINED_GLASS.get(), Items.RED_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS.get(), Items.WHITE_STAINED_GLASS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS.get(), Items.YELLOW_STAINED_GLASS, 9, consumer);
+
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS.get(), Items.BLACK_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS.get(), Items.BLUE_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_BROWN_STAINED_GLASS.get(), Items.BROWN_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_CYAN_STAINED_GLASS.get(), Items.CYAN_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_GRAY_STAINED_GLASS.get(), Items.GRAY_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_GREEN_STAINED_GLASS.get(), Items.GREEN_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_LIGHT_BLUE_STAINED_GLASS.get(), Items.LIGHT_BLUE_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_LIGHT_GRAY_STAINED_GLASS.get(), Items.LIGHT_GRAY_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_LIME_STAINED_GLASS.get(), Items.LIME_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_MAGENTA_STAINED_GLASS.get(), Items.MAGENTA_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_ORANGE_STAINED_GLASS.get(), Items.ORANGE_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_PINK_STAINED_GLASS.get(), Items.PINK_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_PURPLE_STAINED_GLASS.get(), Items.PURPLE_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_RED_STAINED_GLASS.get(), Items.RED_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS.get(), Items.WHITE_DYE);
+        stainedGlassFromGlassAndDye(consumer, BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS.get(), Items.YELLOW_DYE);
 
         //Compressed Iron Ingot
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.COMPRESSED_IRON_ORE.get()), Registration.COMPRESSED_IRON_INGOT.get(), 1.0f, 100)
-                .unlockedBy("has_ore", has(Registration.COMPRESSED_IRON_ORE.get()))
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(BlockRegistration.COMPRESSED_IRON_ORE.get()), ItemRegistration.COMPRESSED_IRON_INGOT.get(), 1.0f, 100)
+                .unlockedBy("has_ore", has(BlockRegistration.COMPRESSED_IRON_ORE.get()))
                 .save(consumer, "compressed_iron_ingot1");
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.COMPRESSED_RAW_IRON.get()), Registration.COMPRESSED_IRON_INGOT.get(), 0.0f, 100)
-                .unlockedBy("has_chunk", has(Registration.COMPRESSED_RAW_IRON.get()))
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ItemRegistration.COMPRESSED_RAW_IRON.get()), ItemRegistration.COMPRESSED_IRON_INGOT.get(), 0.0f, 100)
+                .unlockedBy("has_chunk", has(ItemRegistration.COMPRESSED_RAW_IRON.get()))
                 .save(consumer, "compressed_iron_ingot2");
 
         //Compressed Gold Ingot
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.COMPRESSED_GOLD_ORE.get()), Registration.COMPRESSED_GOLD_INGOT.get(), 1.0f, 100)
-                .unlockedBy("has_ore", has(Registration.COMPRESSED_GOLD_ORE.get()))
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(BlockRegistration.COMPRESSED_GOLD_ORE.get()), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), 1.0f, 100)
+                .unlockedBy("has_ore", has(BlockRegistration.COMPRESSED_GOLD_ORE.get()))
                 .save(consumer, "compressed_gold_ingot1");
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.COMPRESSED_RAW_GOLD.get()), Registration.COMPRESSED_GOLD_INGOT.get(), 0.0f, 100)
-                .unlockedBy("has_chunk", has(Registration.COMPRESSED_RAW_GOLD.get()))
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ItemRegistration.COMPRESSED_RAW_GOLD.get()), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), 0.0f, 100)
+                .unlockedBy("has_chunk", has(ItemRegistration.COMPRESSED_RAW_GOLD.get()))
                 .save(consumer, "compressed_gold_ingot2");
 
         //Compressed Diamond
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.COMPRESSED_DIAMOND_ORE.get()), Registration.COMPRESSED_DIAMOND_GEM.get(), 1.0f, 100)
-                .unlockedBy("has_ore", has(Registration.COMPRESSED_DIAMOND_ORE.get()))
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(BlockRegistration.COMPRESSED_DIAMOND_ORE.get()), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), 1.0f, 100)
+                .unlockedBy("has_ore", has(BlockRegistration.COMPRESSED_DIAMOND_ORE.get()))
                 .save(consumer, "compressed_diamond_gem");
 
         //Compressed Copper Ingot
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.COMPRESSED_COPPER_ORE.get()), Registration.COMPRESSED_COPPER_INGOT.get(), 1.0f, 100)
-                .unlockedBy("has_ore", has(Registration.COMPRESSED_COPPER_ORE.get()))
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(BlockRegistration.COMPRESSED_COPPER_ORE.get()), ItemRegistration.COMPRESSED_COPPER_INGOT.get(), 1.0f, 100)
+                .unlockedBy("has_ore", has(BlockRegistration.COMPRESSED_COPPER_ORE.get()))
                 .save(consumer, "compressed_copper_ingot1");
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.COMPRESSED_RAW_COPPER.get()), Registration.COMPRESSED_COPPER_INGOT.get(), 0.0f, 100)
-                .unlockedBy("has_chunk", has(Registration.COMPRESSED_RAW_COPPER.get()))
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ItemRegistration.COMPRESSED_RAW_COPPER.get()), ItemRegistration.COMPRESSED_COPPER_INGOT.get(), 0.0f, 100)
+                .unlockedBy("has_chunk", has(ItemRegistration.COMPRESSED_RAW_COPPER.get()))
                 .save(consumer, "compressed_copper_ingot2");
 
-        //TOOLS
+        //TOOLSItemRegistration
         //Pickaxes
-        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_PICKAXE.get(), Registration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.PICKAXE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_PICKAXE.get(), Registration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.PICKAXE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_PICKAXE.get(), Registration.COMPRESSED_IRON_INGOT.get(), ToolType.PICKAXE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_PICKAXE.get(), Registration.COMPRESSED_GOLD_INGOT.get(), ToolType.PICKAXE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_PICKAXE.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), ToolType.PICKAXE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_PICKAXE.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.PICKAXE, consumer);
+        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_PICKAXE.get(), BlockRegistration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.PICKAXE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_PICKAXE.get(), BlockRegistration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.PICKAXE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_PICKAXE.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), ToolType.PICKAXE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_PICKAXE.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), ToolType.PICKAXE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_PICKAXE.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), ToolType.PICKAXE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_PICKAXE.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.PICKAXE, consumer);
         //Axes
-        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_AXE.get(), Registration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.AXE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_AXE.get(), Registration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.AXE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_AXE.get(), Registration.COMPRESSED_IRON_INGOT.get(), ToolType.AXE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_AXE.get(), Registration.COMPRESSED_GOLD_INGOT.get(), ToolType.AXE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_AXE.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), ToolType.AXE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_AXE.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.AXE, consumer);
+        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_AXE.get(), BlockRegistration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.AXE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_AXE.get(), BlockRegistration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.AXE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_AXE.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), ToolType.AXE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_AXE.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), ToolType.AXE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_AXE.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), ToolType.AXE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_AXE.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.AXE, consumer);
         //Shovels
-        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_SHOVEL.get(), Registration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.SHOVEL, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_SHOVEL.get(), Registration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.SHOVEL, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_SHOVEL.get(), Registration.COMPRESSED_IRON_INGOT.get(), ToolType.SHOVEL, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_SHOVEL.get(), Registration.COMPRESSED_GOLD_INGOT.get(), ToolType.SHOVEL, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_SHOVEL.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), ToolType.SHOVEL, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_SHOVEL.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.SHOVEL, consumer);
+        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_SHOVEL.get(), BlockRegistration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.SHOVEL, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_SHOVEL.get(), BlockRegistration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.SHOVEL, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_SHOVEL.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), ToolType.SHOVEL, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_SHOVEL.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), ToolType.SHOVEL, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_SHOVEL.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), ToolType.SHOVEL, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_SHOVEL.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.SHOVEL, consumer);
         //Swords
-        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_SWORD.get(), Registration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.SWORD, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_SWORD.get(), Registration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.SWORD, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_SWORD.get(), Registration.COMPRESSED_IRON_INGOT.get(), ToolType.SWORD, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_SWORD.get(), Registration.COMPRESSED_GOLD_INGOT.get(), ToolType.SWORD, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_SWORD.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), ToolType.SWORD, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_SWORD.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.SWORD, consumer);
+        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_SWORD.get(), BlockRegistration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.SWORD, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_SWORD.get(), BlockRegistration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.SWORD, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_SWORD.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), ToolType.SWORD, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_SWORD.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), ToolType.SWORD, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_SWORD.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), ToolType.SWORD, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_SWORD.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.SWORD, consumer);
         //Hoes
-        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_HOE.get(), Registration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.HOE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_HOE.get(), Registration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.HOE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_HOE.get(), Registration.COMPRESSED_IRON_INGOT.get(), ToolType.HOE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_HOE.get(), Registration.COMPRESSED_GOLD_INGOT.get(), ToolType.HOE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_HOE.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), ToolType.HOE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_HOE.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.HOE, consumer);
+        CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_HOE.get(), BlockRegistration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.HOE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_HOE.get(), BlockRegistration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.HOE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_HOE.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), ToolType.HOE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_HOE.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), ToolType.HOE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_HOE.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), ToolType.HOE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_HOE.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.HOE, consumer);
 
         //ARMOR
         //Iron
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_HELMET.get(), Registration.COMPRESSED_IRON_INGOT.get(), BodyPart.HEAD, consumer);
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_CHESTPLATE.get(), Registration.COMPRESSED_IRON_INGOT.get(), BodyPart.CHEST, consumer);
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_LEGGINGS.get(), Registration.COMPRESSED_IRON_INGOT.get(), BodyPart.LEGS, consumer);
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_BOOTS.get(), Registration.COMPRESSED_IRON_INGOT.get(), BodyPart.FEET, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_HELMET.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), BodyPart.HEAD, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_CHESTPLATE.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), BodyPart.CHEST, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_LEGGINGS.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), BodyPart.LEGS, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_BOOTS.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), BodyPart.FEET, consumer);
         //Iron
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_HELMET.get(), Registration.COMPRESSED_GOLD_INGOT.get(), BodyPart.HEAD, consumer);
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_CHESTPLATE.get(), Registration.COMPRESSED_GOLD_INGOT.get(), BodyPart.CHEST, consumer);
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_LEGGINGS.get(), Registration.COMPRESSED_GOLD_INGOT.get(), BodyPart.LEGS, consumer);
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_BOOTS.get(), Registration.COMPRESSED_GOLD_INGOT.get(), BodyPart.FEET, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_HELMET.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), BodyPart.HEAD, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_CHESTPLATE.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), BodyPart.CHEST, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_LEGGINGS.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), BodyPart.LEGS, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_BOOTS.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), BodyPart.FEET, consumer);
         //Iron
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_HELMET.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.HEAD, consumer);
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_CHESTPLATE.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.CHEST, consumer);
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_LEGGINGS.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.LEGS, consumer);
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_BOOTS.get(), Registration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.FEET, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_HELMET.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.HEAD, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_CHESTPLATE.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.CHEST, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_LEGGINGS.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.LEGS, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_BOOTS.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.FEET, consumer);
         //Iron
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_HELMET.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.HEAD, consumer);
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_CHESTPLATE.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.CHEST, consumer);
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_LEGGINGS.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.LEGS, consumer);
-        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_BOOTS.get(), Registration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.FEET, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_HELMET.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.HEAD, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_CHESTPLATE.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.CHEST, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_LEGGINGS.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.LEGS, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_BOOTS.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.FEET, consumer);
 
         //FOOD
         //Basic (Raw) Food
@@ -344,11 +377,11 @@ public class ucRecipes extends BaseRecipeProvider
         MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_LEATHER.get(), Items.LEATHER, 9, consumer);
 
         //Snow
-        ShapedRecipeBuilder.shaped(Items.SNOW, 54).pattern("xxx").define('x', Registration.COMPRESSED_SNOW_BLOCK.get()).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Registration.COMPRESSED_SNOW_BLOCK.get()), InventoryChangeTrigger.TriggerInstance.hasItems(Registration.COMPRESSED_SNOW_BLOCK.get()));
+        ShapedRecipeBuilder.shaped(Items.SNOW, 54).pattern("xxx").define('x', BlockRegistration.COMPRESSED_SNOW_BLOCK.get()).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(BlockRegistration.COMPRESSED_SNOW_BLOCK.get()), InventoryChangeTrigger.TriggerInstance.hasItems(BlockRegistration.COMPRESSED_SNOW_BLOCK.get()));
 
         //Sculk
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SCULK.get(), Items.SCULK, 9, consumer);
-        CompressorDecompressorRecipeBuilder(Registration.COMPRESSED_SCULK_CATALYST.get(), Items.SCULK_CATALYST, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SCULK.get(), Items.SCULK, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SCULK_CATALYST.get(), Items.SCULK_CATALYST, 9, consumer);
 
         //Arrows
         ShapedRecipeBuilder.shaped(ItemRegistration.COMPRESSED_ARROW.get(), 4)
@@ -381,7 +414,7 @@ public class ucRecipes extends BaseRecipeProvider
         ShapedRecipeBuilder.shaped(Items.TORCH, 36)
                 .pattern("x")
                 .pattern("s")
-                .define('x', Registration.COMPRESSED_COAL.get())
+                .define('x', ItemRegistration.COMPRESSED_COAL.get())
                 .define('s', ItemRegistration.COMPRESSED_STICK.get())
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_STICK.get()), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_STICK.get()))
@@ -391,22 +424,22 @@ public class ucRecipes extends BaseRecipeProvider
                 .pattern("x")
                 .pattern("s")
                 .pattern("y")
-                .define('x', Registration.COMPRESSED_COAL.get())
+                .define('x', ItemRegistration.COMPRESSED_COAL.get())
                 .define('s', ItemRegistration.COMPRESSED_STICK.get())
-                .define('y', Registration.COMPRESSED_SOUL_SAND.get())
+                .define('y', BlockRegistration.COMPRESSED_SOUL_SAND.get())
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_STICK.get()), InventoryChangeTrigger.TriggerInstance.hasItems(ItemRegistration.COMPRESSED_STICK.get()))
                 .save(consumer, "soul_torch1");
 
         //Compressor Items -> Compressed Items
-        new CompressorRecipeBuilder(Items.COAL, Registration.COMPRESSED_COAL.get(), 9, 0).unlockedBy("compressor_has_" + Items.COAL, InventoryChangeTrigger.TriggerInstance.hasItems(Items.COAL)).save(consumer);
-        new CompressorRecipeBuilder(Items.COPPER_INGOT, Registration.COMPRESSED_COPPER_INGOT.get(), 9, 0).unlockedBy("compressor_has_" + Items.COPPER_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(Items.COPPER_INGOT)).save(consumer);
-        new CompressorRecipeBuilder(Items.IRON_INGOT, Registration.COMPRESSED_IRON_INGOT.get(), 9, 0).unlockedBy("compressor_has_" + Items.IRON_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_INGOT)).save(consumer);
-        new CompressorRecipeBuilder(Items.GOLD_INGOT, Registration.COMPRESSED_GOLD_INGOT.get(), 9, 0).unlockedBy("compressor_has_" + Items.GOLD_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(Items.GOLD_INGOT)).save(consumer);
-        new CompressorRecipeBuilder(Items.DIAMOND, Registration.COMPRESSED_DIAMOND_GEM.get(), 9, 0).unlockedBy("compressor_has_" + Items.DIAMOND, InventoryChangeTrigger.TriggerInstance.hasItems(Items.DIAMOND)).save(consumer);
-        new CompressorRecipeBuilder(Items.EMERALD, Registration.COMPRESSED_EMERALD_GEM.get(), 9, 0).unlockedBy("compressor_has_" + Items.EMERALD, InventoryChangeTrigger.TriggerInstance.hasItems(Items.EMERALD)).save(consumer);
-        new CompressorRecipeBuilder(Items.LAPIS_LAZULI, Registration.COMPRESSED_LAPIS.get(), 9, 0).unlockedBy("compressor_has_" + Items.LAPIS_LAZULI, InventoryChangeTrigger.TriggerInstance.hasItems(Items.LAPIS_LAZULI)).save(consumer);
-        new CompressorRecipeBuilder(Items.REDSTONE, Registration.COMPRESSED_REDSTONE.get(), 9, 0).unlockedBy("compressor_has_" + Items.REDSTONE, InventoryChangeTrigger.TriggerInstance.hasItems(Items.REDSTONE)).save(consumer);
-        new CompressorRecipeBuilder(Items.NETHERITE_INGOT, Registration.COMPRESSED_NETHERITE_INGOT.get(), 9, 0).unlockedBy("compressor_has_" + Items.NETHERITE_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(Items.NETHERITE_INGOT)).save(consumer);
+        new CompressorRecipeBuilder(Items.COAL, ItemRegistration.COMPRESSED_COAL.get(), 9, 0).unlockedBy("compressor_has_" + Items.COAL, InventoryChangeTrigger.TriggerInstance.hasItems(Items.COAL)).save(consumer);
+        new CompressorRecipeBuilder(Items.COPPER_INGOT, ItemRegistration.COMPRESSED_COPPER_INGOT.get(), 9, 0).unlockedBy("compressor_has_" + Items.COPPER_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(Items.COPPER_INGOT)).save(consumer);
+        new CompressorRecipeBuilder(Items.IRON_INGOT, ItemRegistration.COMPRESSED_IRON_INGOT.get(), 9, 0).unlockedBy("compressor_has_" + Items.IRON_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_INGOT)).save(consumer);
+        new CompressorRecipeBuilder(Items.GOLD_INGOT, ItemRegistration.COMPRESSED_GOLD_INGOT.get(), 9, 0).unlockedBy("compressor_has_" + Items.GOLD_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(Items.GOLD_INGOT)).save(consumer);
+        new CompressorRecipeBuilder(Items.DIAMOND, ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), 9, 0).unlockedBy("compressor_has_" + Items.DIAMOND, InventoryChangeTrigger.TriggerInstance.hasItems(Items.DIAMOND)).save(consumer);
+        new CompressorRecipeBuilder(Items.EMERALD, ItemRegistration.COMPRESSED_EMERALD_GEM.get(), 9, 0).unlockedBy("compressor_has_" + Items.EMERALD, InventoryChangeTrigger.TriggerInstance.hasItems(Items.EMERALD)).save(consumer);
+        new CompressorRecipeBuilder(Items.LAPIS_LAZULI, ItemRegistration.COMPRESSED_LAPIS.get(), 9, 0).unlockedBy("compressor_has_" + Items.LAPIS_LAZULI, InventoryChangeTrigger.TriggerInstance.hasItems(Items.LAPIS_LAZULI)).save(consumer);
+        new CompressorRecipeBuilder(Items.REDSTONE, ItemRegistration.COMPRESSED_REDSTONE.get(), 9, 0).unlockedBy("compressor_has_" + Items.REDSTONE, InventoryChangeTrigger.TriggerInstance.hasItems(Items.REDSTONE)).save(consumer);
+        new CompressorRecipeBuilder(Items.NETHERITE_INGOT, ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), 9, 0).unlockedBy("compressor_has_" + Items.NETHERITE_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(Items.NETHERITE_INGOT)).save(consumer);
     }
 }

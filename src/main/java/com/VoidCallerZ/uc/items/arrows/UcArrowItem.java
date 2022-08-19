@@ -1,7 +1,6 @@
 package com.VoidCallerZ.uc.items.arrows;
 
-import com.VoidCallerZ.uc.setup.registration.ItemRegistration;
-import com.VoidCallerZ.uc.world.entity.projectile.CompressedArrow;
+import com.VoidCallerZ.uc.entities.projectiles.CompressedArrow;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;

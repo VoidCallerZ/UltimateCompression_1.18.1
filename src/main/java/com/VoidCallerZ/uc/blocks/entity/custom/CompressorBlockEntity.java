@@ -2,7 +2,7 @@ package com.VoidCallerZ.uc.blocks.entity.custom;
 
 import com.VoidCallerZ.uc.blocks.screen.CompressorBlockMenu;
 import com.VoidCallerZ.uc.recipe.CompressorItemRecipe;
-import com.VoidCallerZ.uc.setup.registration.Registration;
+import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -48,7 +48,7 @@ public class CompressorBlockEntity extends BlockEntity implements MenuProvider
 
     public CompressorBlockEntity(BlockPos pWorldPosition, BlockState pBlockState)
     {
-        super(Registration.COMPRESSOR_BLOCK_ENTITY.get(), pWorldPosition, pBlockState);
+        super(BlockRegistration.COMPRESSOR_BLOCK_ENTITY.get(), pWorldPosition, pBlockState);
         this.data = new ContainerData()
         {
             @Override

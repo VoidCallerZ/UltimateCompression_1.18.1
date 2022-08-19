@@ -1,7 +1,7 @@
 package com.VoidCallerZ.uc.blocks.screen;
 
 import com.VoidCallerZ.uc.blocks.entity.custom.CompressorBlockEntity;
-import com.VoidCallerZ.uc.setup.registration.Registration;
+import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -25,7 +25,7 @@ public class CompressorBlockMenu extends AbstractContainerMenu
 
     public CompressorBlockMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data)
     {
-        super(Registration.COMPRESSOR_BLOCK_MENU.get(), pContainerId);
+        super(BlockRegistration.COMPRESSOR_BLOCK_MENU.get(), pContainerId);
         checkContainerSize(inv, 2);
         blockEntity = ((CompressorBlockEntity) entity);
         this.level = inv.player.level;
@@ -103,7 +103,7 @@ public class CompressorBlockMenu extends AbstractContainerMenu
     @Override
     public boolean stillValid(Player pPlayer)
     {
-        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()), pPlayer, Registration.COMPRESSOR.get());
+        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()), pPlayer, BlockRegistration.COMPRESSOR.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory)

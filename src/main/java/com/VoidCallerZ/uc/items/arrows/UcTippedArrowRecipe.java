@@ -1,7 +1,7 @@
 //package com.VoidCallerZ.uc.items.arrows;
 //
 //import com.VoidCallerZ.uc.setup.UcRecipeSerializer;
-//import com.VoidCallerZ.uc.setup.registration.ItemRegistration;
+//import com.VoidCallerZ.uc.registration.ItemRegistration;
 //import net.minecraft.resources.ResourceLocation;
 //import net.minecraft.world.inventory.CraftingContainer;
 //import net.minecraft.world.item.ItemStack;

@@ -1,6 +1,6 @@
 package com.VoidCallerZ.uc.dataGen.custom;
 
-import com.VoidCallerZ.uc.setup.registration.Registration;
+import com.VoidCallerZ.uc.registration.BlockRegistration;
 import com.google.gson.JsonElement;
 import net.minecraft.data.models.BlockModelGenerators;
 import net.minecraft.data.models.blockstates.*;
@@ -28,14 +28,14 @@ public class UcBlockModelGenerator extends BlockModelGenerators
 
     private void createCompressedSculkCatalyst()
     {
-        Block catalystBlock = Registration.COMPRESSED_SCULK_CATALYST.get();
+        Block catalystBlock = BlockRegistration.COMPRESSED_SCULK_CATALYST.get();
         ResourceLocation resourceLocation = TextureMapping.getBlockTexture(catalystBlock, "_bottom");
         TextureMapping textureMapping = (new TextureMapping()).put(TextureSlot.BOTTOM, resourceLocation).put(TextureSlot.TOP, TextureMapping.getBlockTexture(catalystBlock, "_top")).put(TextureSlot.SIDE, TextureMapping.getBlockTexture(catalystBlock, "_side"));
         TextureMapping textureMapping1 = (new TextureMapping()).put(TextureSlot.BOTTOM, resourceLocation).put(TextureSlot.TOP, TextureMapping.getBlockTexture(catalystBlock, "_top_bloom")).put(TextureSlot.SIDE, TextureMapping.getBlockTexture(catalystBlock, "_side_bloom"));
         ResourceLocation resourceLocation1 = ModelTemplates.CUBE_BOTTOM_TOP.createWithSuffix(catalystBlock, "", textureMapping, this.modelOutput);
         ResourceLocation resourceLocation2 = ModelTemplates.CUBE_BOTTOM_TOP.createWithSuffix(catalystBlock, "_bloom", textureMapping1, this.modelOutput);
         this.blockStateOutput.accept(MultiVariantGenerator.multiVariant(catalystBlock).with(PropertyDispatch.property(BlockStateProperties.BLOOM).generate((multiVariant) -> Variant.variant().with(VariantProperties.MODEL, multiVariant ? resourceLocation2 : resourceLocation1))));
-        this.delegateItemModel(Registration.COMPRESSED_SCULK_CATALYST_ITEM.get(), resourceLocation1);
+        this.delegateItemModel(BlockRegistration.COMPRESSED_SCULK_CATALYST_ITEM.get(), resourceLocation1);
     }
 
     private void delegateItemModel(Item item, ResourceLocation delegateModelLocation)

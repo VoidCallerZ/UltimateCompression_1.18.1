@@ -1,7 +1,7 @@
 package com.VoidCallerZ.uc.blocks;
 
 import com.VoidCallerZ.uc.blocks.entity.custom.CompressorBlockEntity;
-import com.VoidCallerZ.uc.setup.registration.Registration;
+import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -113,6 +113,6 @@ public class CompressorBlock extends BaseEntityBlock
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntityType)
     {
-        return createTickerHelper(blockEntityType, Registration.COMPRESSOR_BLOCK_ENTITY.get(), CompressorBlockEntity::tick);
+        return createTickerHelper(blockEntityType, BlockRegistration.COMPRESSOR_BLOCK_ENTITY.get(), CompressorBlockEntity::tick);
     }
 }

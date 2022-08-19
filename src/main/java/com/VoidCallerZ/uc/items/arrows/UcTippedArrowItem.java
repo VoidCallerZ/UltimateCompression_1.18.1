@@ -1,6 +1,6 @@
 //package com.VoidCallerZ.uc.items.arrows;
 //
-//import com.VoidCallerZ.uc.world.entity.projectile.CompressedArrow;
+//import com.VoidCallerZ.uc.entities.projectiles.CompressedArrow;
 //import net.minecraft.core.NonNullList;
 //import net.minecraft.network.chat.Component;
 //import net.minecraft.world.entity.LivingEntity;

@@ -1,6 +1,6 @@
 package com.VoidCallerZ.uc.setup;
 
-import com.VoidCallerZ.uc.worldgen.ores.OresConfig;
+import com.VoidCallerZ.uc.world.ores.OresConfig;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.config.ModConfig;
