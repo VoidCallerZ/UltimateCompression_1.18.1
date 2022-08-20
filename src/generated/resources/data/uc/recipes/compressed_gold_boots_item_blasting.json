@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "uc",
+  "ingredient": {
+    "item": "uc:compressed_gold_boots"
+  },
+  "result": "uc:compressed_gold_nugget"
+}

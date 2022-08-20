@@ -1,0 +1,11 @@
+{
+  "type": "uc:compressor_item_serializer",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_nugget"
+    }
+  ],
+  "output": {
+    "item": "uc:compressed_gold_nugget"
+  }
+}
