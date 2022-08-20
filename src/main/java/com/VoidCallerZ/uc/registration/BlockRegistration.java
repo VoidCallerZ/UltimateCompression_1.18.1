@@ -60,6 +60,7 @@ public class BlockRegistration
     public static final BlockBehaviour.Properties SOFT_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.DIRT).strength(0.5f);
     public static final BlockBehaviour.Properties WOOL_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.WOOL).strength(0.8f);
     public static final BlockBehaviour.Properties GLASS_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.GLASS).strength(0.3f).sound(SoundType.GLASS).noOcclusion().isValidSpawn(BlockRegistration::never).isRedstoneConductor(BlockRegistration::never).isSuffocating(BlockRegistration::never).isViewBlocking(BlockRegistration::never);
+    public static final BlockBehaviour.Properties OBSIDIAN_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(50, 1200).requiresCorrectToolForDrops();
     public static final Item.Properties ITEM_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_COMPRESSION_TAB);
 
     public static final TagKey<Item> COMPRESSED_PLANKS_FOR_TOOLS = ItemTags.create(new ResourceLocation(UltimateCompression.MODID, "compressed_planks_for_tools"));
@@ -462,6 +463,10 @@ public class BlockRegistration
     public static final RegistryObject<Item> COMPRESSED_WHITE_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_WHITE_STAINED_GLASS_PANE);
     public static final RegistryObject<Block> COMPRESSED_YELLOW_STAINED_GLASS_PANE = BLOCKS.register("compressed_yellow_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.YELLOW, GLASS_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_YELLOW_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_YELLOW_STAINED_GLASS_PANE);
+
+    //Obsidian
+    public static final RegistryObject<Block> COMPRESSED_OBSIDIAN = BLOCKS.register("compressed_obsidian", () -> new Block(OBSIDIAN_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_OBSIDIAN_ITEM = fromBlock(COMPRESSED_OBSIDIAN);
 
     //Compressor
     public static final RegistryObject<CompressorBlock> COMPRESSOR = BLOCKS.register("compressor", () -> new CompressorBlock(INGOT_BLOCK_PROPERTIES));

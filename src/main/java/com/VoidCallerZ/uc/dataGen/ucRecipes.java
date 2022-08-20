@@ -246,6 +246,10 @@ public class ucRecipes extends BaseRecipeProvider
         StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE.get(), Items.WHITE_DYE, consumer);
         StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE.get(), Items.YELLOW_DYE, consumer);
 
+        //Obsidian
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_OBSIDIAN.get(), Items.OBSIDIAN, 9, consumer);
+        ShapedRecipeBuilder.shaped(Blocks.BEDROCK).pattern("xnx").pattern("nxn").pattern("xnx").define('x', BlockRegistration.COMPRESSED_OBSIDIAN.get()).define('n', BlockRegistration.COMPRESSED_NETHERITE_BLOCK.get()).unlockedBy("has_" + BlockRegistration.COMPRESSED_OBSIDIAN.get(), InventoryChangeTrigger.TriggerInstance.hasItems(BlockRegistration.COMPRESSED_OBSIDIAN.get())).group("uc").save(consumer, ForgeRegistries.BLOCKS.getKey(Blocks.BEDROCK) + "_uc");
+
         //Compressed Smelting & Blasting
         BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_IRON_ORE.get(), ItemRegistration.COMPRESSED_RAW_IRON.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), 0.7F, 200, consumer);
         BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_GOLD_ORE.get(), ItemRegistration.COMPRESSED_RAW_GOLD.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), 0.7F, 200, consumer);

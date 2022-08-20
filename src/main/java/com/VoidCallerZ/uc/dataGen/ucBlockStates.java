@@ -244,6 +244,8 @@ public class ucBlockStates extends BaseBlockStateProvider
         paneBlockWithRenderType(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE.get(), "compressed_white_stained_glass_pane", "block/compressed/glass/compressed_white_stained_glass", "translucent");
         paneBlockWithRenderType(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE.get(), "compressed_yellow_stained_glass_pane", "block/compressed/glass/compressed_yellow_stained_glass", "translucent");
 
+        //Obsidian
+        singleTextureBlock(BlockRegistration.COMPRESSED_OBSIDIAN.get(), "compressed_obsidian", "block/compressed/basic/compressed_obsidian");
     }
 
     private void registerCompressor()

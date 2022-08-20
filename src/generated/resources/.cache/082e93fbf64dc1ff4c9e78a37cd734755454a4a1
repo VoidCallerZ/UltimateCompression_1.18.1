@@ -1,4 +1,4 @@
-// 1.19.2	2022-08-20T15:43:56.4405326	UC LootTables
+// 1.19.2	2022-08-20T17:47:41.5249939	UC LootTables
 99ec0c801d3197f720018c169d043ffccd7774ca data/uc/loot_tables/blocks/compressed_acacia_log.json
 f56353c6f3c239b59dc1e3056c70d4a543ef647a data/uc/loot_tables/blocks/compressed_acacia_planks.json
 205e998d60b754d88273c9cc8b16efe11090ac2f data/uc/loot_tables/blocks/compressed_andesite.json
@@ -114,6 +114,7 @@ b3de816126ff86d337e33f5d6a0722b6eb1dcd8c data/uc/loot_tables/blocks/compressed_n
 da0870d267d1eba15c00c68fbca1ce461ada2ab3 data/uc/loot_tables/blocks/compressed_nether_quartz_ore.json
 7e8f5bad6a46ce6ff035430cfe6a858ddd0ab79f data/uc/loot_tables/blocks/compressed_oak_log.json
 84f82a8aec2a96b42a1459292b7738bcd72923c8 data/uc/loot_tables/blocks/compressed_oak_planks.json
+38a101a2f64dd80ed5fd018da5225592220cc46f data/uc/loot_tables/blocks/compressed_obsidian.json
 40e4da077ed59f590cb79241ae64ffc60023739f data/uc/loot_tables/blocks/compressed_orange_concrete.json
 13a8823b72433ebf54e2e5cf62c517546ad15fd0 data/uc/loot_tables/blocks/compressed_orange_concrete_powder.json
 410b96f86b07ab530d63ba854e7940b414d28fa9 data/uc/loot_tables/blocks/compressed_orange_stained_glass.json

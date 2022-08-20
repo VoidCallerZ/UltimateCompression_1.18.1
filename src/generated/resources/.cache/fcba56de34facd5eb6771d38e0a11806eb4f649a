@@ -1,4 +1,4 @@
-// 1.19.2	2022-08-20T15:43:56.4445219	Block States: uc
+// 1.19.2	2022-08-20T17:47:41.522003	Block States: uc
 17dee2b51c09c019bdcfc795512e0f21c37f7870 assets/uc/blockstates/compressed_acacia_log.json
 47729bb940ddec3415b0e6eb9d865a6cedcd2ed6 assets/uc/blockstates/compressed_acacia_planks.json
 f86cad1a0b4189d5245a0e05c5a92b9f0666b1cd assets/uc/blockstates/compressed_andesite.json
@@ -118,6 +118,7 @@ d68debdaa83c4ddde451d3c9be13fdfe3c2b3603 assets/uc/blockstates/compressed_nether
 962275c7ba7e35d5d79476a650a8dec6701ebe24 assets/uc/blockstates/compressed_nether_quartz_ore.json
 cfbd0f85ab2b6fd8e04eb7a56b45cadd3196b94f assets/uc/blockstates/compressed_oak_log.json
 34c3b848f398bff222458582d470d21b4efe7327 assets/uc/blockstates/compressed_oak_planks.json
+d86438ebab59d78d4c4c1f717481bf50a7156452 assets/uc/blockstates/compressed_obsidian.json
 008c7a58e71906acff7bb45b408e31b3edfc77da assets/uc/blockstates/compressed_orange_concrete.json
 9ee808fac1ee168317b4b677619bacf4cad68798 assets/uc/blockstates/compressed_orange_concrete_powder.json
 d7e7c1f5d46af37999f58a9bc319d4965585d897 assets/uc/blockstates/compressed_orange_stained_glass.json
@@ -353,6 +354,7 @@ e89dce12e9035991f96680c4cb5c6a7f55df8dd6 assets/uc/models/block/compressed_nethe
 844cc451bc816f453e34550e46baf7bf3eb6e769 assets/uc/models/block/compressed_oak_log.json
 7db296a8fae13690c3cf47c002bc2126613cc318 assets/uc/models/block/compressed_oak_log_horizontal.json
 02279f95361990fd453db2a1ac4fef2be814b4a6 assets/uc/models/block/compressed_oak_planks.json
+a84abb12a600fa706a694e943d52403f2a11fa1e assets/uc/models/block/compressed_obsidian.json
 0c51715066c69e2285996b31f17d439dcb4e1de4 assets/uc/models/block/compressed_orange_concrete.json
 40eb4435cf8435bb7dcfc60ed7d7b3c40cb13c60 assets/uc/models/block/compressed_orange_concrete_powder.json
 188a7439713ee888cf7ede5efb8a273b5c1a8112 assets/uc/models/block/compressed_orange_stained_glass.json

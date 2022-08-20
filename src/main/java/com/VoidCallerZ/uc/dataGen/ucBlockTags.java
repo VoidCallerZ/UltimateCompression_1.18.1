@@ -108,7 +108,8 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(BlockRegistration.COMPRESSED_CUT_RED_SANDSTONE.get())
                 .add(BlockRegistration.COMPRESSED_CUT_SANDSTONE.get())
                 .add(BlockRegistration.COMPRESSED_RED_SANDSTONE.get())
-                .add(BlockRegistration.COMPRESSED_SANDSTONE.get());
+                .add(BlockRegistration.COMPRESSED_SANDSTONE.get())
+                .add(BlockRegistration.COMPRESSED_OBSIDIAN.get());
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(BlockRegistration.COMPRESSED_GRAVEL.get())

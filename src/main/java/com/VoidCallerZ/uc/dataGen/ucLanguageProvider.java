@@ -178,6 +178,9 @@ public class ucLanguageProvider extends LanguageProvider
         add(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE.get(), "Compressed White Stained Glass Pane");
         add(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE.get(), "Compressed Yellow Stained Glass Pane");
 
+        //Obsidian
+        add(BlockRegistration.COMPRESSED_OBSIDIAN.get(), "Compressed Obsidian");
+
         //Ingots & Chunks
         add(ItemRegistration.COMPRESSED_RAW_IRON.get(), "Compressed Raw Iron");
         add(ItemRegistration.COMPRESSED_IRON_INGOT.get(), "Compressed Iron Ingot");

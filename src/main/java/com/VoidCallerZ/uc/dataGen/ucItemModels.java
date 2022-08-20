@@ -4,6 +4,7 @@ import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.dataGen.providers.BaseItemModelProvider;
 import com.VoidCallerZ.uc.registration.*;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.world.item.Item;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -242,7 +243,9 @@ public class ucItemModels extends BaseItemModelProvider
         singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_white_stained_glass", "translucent");
         singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_yellow_stained_glass", "translucent");
 
-//        withExistingParent(ForgeRegistries.ITEMS.getKey(Registration.ULTIMATE_POWERGEN_ITEM.get()).getPath(), modLoc("block/powergen/main"));
+        //Obsidian
+        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_OBSIDIAN_ITEM.get()).getPath(), modLoc("block/compressed_obsidian"));
+
         withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSOR_ITEM.get()).getPath(), modLoc("block/compressor"));
 
         singleTextureGenerated(ItemRegistration.COMPRESSED_RAW_IRON.get(), "item/compressed/materials/compressed_raw_iron");

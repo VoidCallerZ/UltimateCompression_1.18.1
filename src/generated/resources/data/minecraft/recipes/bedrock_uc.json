@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "key": {
+    "n": {
+      "item": "uc:compressed_netherite_block"
+    },
+    "x": {
+      "item": "uc:compressed_obsidian"
+    }
+  },
+  "pattern": [
+    "xnx",
+    "nxn",
+    "xnx"
+  ],
+  "result": {
+    "item": "minecraft:bedrock"
+  }
+}

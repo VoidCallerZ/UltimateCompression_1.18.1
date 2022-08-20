@@ -201,6 +201,7 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS.get(), createGlassBlockTable("compressed_white_stained_glass", BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS.get()));
         lootTables.put(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS.get(), createGlassBlockTable("compressed_yellow_stained_glass", BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS.get()));
 
+        //Glass Panes
         lootTables.put(BlockRegistration.COMPRESSED_GLASS_PANE.get(), createGlassBlockTable("compressed_glass_block_pane", BlockRegistration.COMPRESSED_GLASS_PANE.get()));
         lootTables.put(BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_black_stained_glass_pane", BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS_PANE.get()));
         lootTables.put(BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_blue_stained_glass_pane", BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS_PANE.get()));
@@ -218,5 +219,8 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(BlockRegistration.COMPRESSED_RED_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_red_stained_glass_pane", BlockRegistration.COMPRESSED_RED_STAINED_GLASS_PANE.get()));
         lootTables.put(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_white_stained_glass_pane", BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE.get()));
         lootTables.put(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_yellow_stained_glass_pane", BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE.get()));
+
+        //Obsidian
+        lootTables.put(BlockRegistration.COMPRESSED_OBSIDIAN.get(), createSimpleTable("compressed_obsidian", BlockRegistration.COMPRESSED_OBSIDIAN.get()));
     }
 }
