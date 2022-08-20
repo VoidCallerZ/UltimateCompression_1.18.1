@@ -1,4 +1,4 @@
-// 1.19.2	2022-08-20T00:23:50.4448517	Item Models: uc
+// 1.19.2	2022-08-20T13:59:54.9972843	Item Models: uc
 f381bd2053cc90b43b7e3d5375a556bc65a53121 assets/uc/models/item/compressed_acacia_log.json
 681df59d895167a265d1b4f93674ad2b384984ba assets/uc/models/item/compressed_acacia_planks.json
 1f67eb77cf349f3cd06d486b9fa61baff8fec05e assets/uc/models/item/compressed_andesite.json
@@ -105,6 +105,7 @@ a6f85d03d823f44d8e8b6d078e84cb47b7224d3b assets/uc/models/item/compressed_gold_h
 bfc641847dd70818b62140e7432d1113d3c52f4e assets/uc/models/item/compressed_gold_ingot.json
 508aa7babe1a77e5f5df5d3384e78db30c9b3719 assets/uc/models/item/compressed_gold_leggings.json
 bd401303c53125248261777c63c5a1297c41849d assets/uc/models/item/compressed_gold_nether_ore.json
+d313b7aa7f8e0267a181cafc5c3416740bb0dcf4 assets/uc/models/item/compressed_gold_nugget.json
 fb59d6d9e7e31f4c6c66d104c413a95dab869696 assets/uc/models/item/compressed_gold_ore.json
 7ae3568771b62b2ab7fca2680ce1d0cea63a001e assets/uc/models/item/compressed_gold_pickaxe.json
 04803f543aa413b60e7e40207b8c31adac0df2bb assets/uc/models/item/compressed_gold_shovel.json
@@ -127,6 +128,7 @@ d65962cd7f40a56002ea0c908bed4340883a2afd assets/uc/models/item/compressed_iron_h
 7cf2247f0db48ad3c585a8ba25036b077b36381c assets/uc/models/item/compressed_iron_hoe.json
 b4bdb9dc0f90e3df7746d085ba9e8a49131af730 assets/uc/models/item/compressed_iron_ingot.json
 674acea19be9a1cddfd4e9dfb0aa4156a67c2928 assets/uc/models/item/compressed_iron_leggings.json
+706c657d82f2e988f296168c8221e44b5dfce695 assets/uc/models/item/compressed_iron_nugget.json
 738ef8afeb02f1aa3eff9e4afc92d3bbf0deb7db assets/uc/models/item/compressed_iron_ore.json
 18428dd572853aa61318ed41ad17205c68ba2036 assets/uc/models/item/compressed_iron_pickaxe.json
 bb7b7cddca364d90673097ef5e9c1ea0149a47e5 assets/uc/models/item/compressed_iron_shovel.json
@@ -207,7 +209,7 @@ fa92432f588b14f838f21a65777e0e4e501f5c3f assets/uc/models/item/compressed_pumpki
 7fc5216c3966800110d997f4e59db9644beab27a assets/uc/models/item/compressed_purple_concrete_powder.json
 3b3554279d9b2b5694f71420d5158fbfb1ae9142 assets/uc/models/item/compressed_purple_stained_glass.json
 cf6b32c8e22324e424cc4988a43b5ff319d4b220 assets/uc/models/item/compressed_purple_wool.json
-99bc158165c1f59a6fc0453da7cba45d318e58f0 assets/uc/models/item/compressed_quartz.json
+5309629d5c21da0dec09e32ab768ae777285816d assets/uc/models/item/compressed_quartz.json
 c05cfb0cccfa873786eeb4bfe747d45efe212a45 assets/uc/models/item/compressed_rabbit.json
 ae80158d048fead40c7a8a06a8d86f999bb17bcd assets/uc/models/item/compressed_rabbit_stew.json
 9539dca2bd8982eaa47b6cf44cb7dbc5151087bc assets/uc/models/item/compressed_raw_copper.json

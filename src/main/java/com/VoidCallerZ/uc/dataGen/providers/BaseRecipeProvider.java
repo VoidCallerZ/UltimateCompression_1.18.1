@@ -1,5 +1,6 @@
 package com.VoidCallerZ.uc.dataGen.providers;
 
+import com.VoidCallerZ.uc.dataGen.custom.CompressorRecipeBuilder;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.client.tutorial.FindTreeTutorialStepInstance;
@@ -431,5 +432,15 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
     {
         BlockBlastingRecipeBuilder(input, output, exp, cookingTime, consumer);
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(alternateInput), output, exp, cookingTime).unlockedBy("has_blasting_", has(alternateInput)).group("uc").save(consumer, ForgeRegistries.ITEMS.getKey(alternateInput) + "_blasting");
+    }
+
+    protected void ItemBlastingRecipeBuilder(Item input, Item output, float exp, int cookingTime, Consumer<FinishedRecipe> consumer)
+    {
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(input), output, exp, cookingTime).unlockedBy("has_blasting_", has(input)).group("uc").save(consumer, ForgeRegistries.ITEMS.getKey(input) + "_item_blasting");
+    }
+
+    protected void CompressorRecipeBuilder(Item input, Item output, int inputCount, Consumer<FinishedRecipe> consumer)
+    {
+        new CompressorRecipeBuilder(input, output, inputCount, 0).unlockedBy("compressor_has_" + input, InventoryChangeTrigger.TriggerInstance.hasItems(input)).save(consumer);
     }
 }

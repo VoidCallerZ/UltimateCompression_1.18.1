@@ -1,4 +1,4 @@
-// 1.19.2	2022-08-20T00:23:50.4337528	UC LootTables
+// 1.19.2	2022-08-20T13:59:54.9942923	UC LootTables
 99ec0c801d3197f720018c169d043ffccd7774ca data/uc/loot_tables/blocks/compressed_acacia_log.json
 f56353c6f3c239b59dc1e3056c70d4a543ef647a data/uc/loot_tables/blocks/compressed_acacia_planks.json
 205e998d60b754d88273c9cc8b16efe11090ac2f data/uc/loot_tables/blocks/compressed_andesite.json
@@ -56,9 +56,10 @@ ad83f2751d50af2fd3a96afa7c808015cab5c03a data/uc/loot_tables/blocks/compressed_d
 51cd8abed71060f34f89db0419cd48ea8e952719 data/uc/loot_tables/blocks/compressed_dirt.json
 e7fe84db0e06b3f007895c149328f0844f9171c3 data/uc/loot_tables/blocks/compressed_emerald_ore.json
 684def8672110edc3fb027c4fda40f6f6413ff79 data/uc/loot_tables/blocks/compressed_gilded_blackstone.json
+cef13bd772bb26bbe96200a4d782ffb58c356721 data/uc/loot_tables/blocks/compressed_glass.json
 e168d25cc371baf830e22b32181b05e2ff9d1999 data/uc/loot_tables/blocks/compressed_glowstone.json
 be7b46e16230fb519dace8cbae633bf7170a0f43 data/uc/loot_tables/blocks/compressed_gold_block.json
-165e2c5fa1c2177597bb3af8482bc90b53f35286 data/uc/loot_tables/blocks/compressed_gold_nether_ore.json
+0e3ffc0655cc6af635e6bb670ff6b16111282f0d data/uc/loot_tables/blocks/compressed_gold_nether_ore.json
 6faf623176c3f207bf8af46760e6787d9212e868 data/uc/loot_tables/blocks/compressed_gold_ore.json
 3ed31aa476ee52c051b282309701fa6ab0cbe4af data/uc/loot_tables/blocks/compressed_granite.json
 cb2e3519818a6ab9a5859b4da4087d35485324b0 data/uc/loot_tables/blocks/compressed_gravel.json

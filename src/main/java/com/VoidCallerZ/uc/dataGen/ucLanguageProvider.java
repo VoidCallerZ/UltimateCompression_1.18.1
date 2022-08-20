@@ -173,6 +173,10 @@ public class ucLanguageProvider extends LanguageProvider
         add(ItemRegistration.COMPRESSED_REDSTONE.get(), "Compressed Redstone");
         add(ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), "Compressed Netherite Ingot");
 
+        //Nuggets
+        add(ItemRegistration.COMPRESSED_GOLD_NUGGET.get(), "Compressed Golden Nugget");
+        add(ItemRegistration.COMPRESSED_IRON_NUGGET.get(), "Compressed Iron Nugget");
+
         //Basic Blocks
         add(BlockRegistration.COMPRESSED_ANDESITE.get(), "Compressed Andesite");
         add(BlockRegistration.COMPRESSED_CALCITE.get(), "Compressed Calcite");

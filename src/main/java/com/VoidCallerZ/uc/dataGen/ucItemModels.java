@@ -21,6 +21,7 @@ public class ucItemModels extends BaseItemModelProvider
                 mcLoc("item/generated"),
                 "layer0", modLoc("gui/ucimage"));
 
+        //Materials
         //Ores
         withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_IRON_ORE_ITEM.get()).getPath(), modLoc("block/compressed_iron_ore"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GOLD_ORE_ITEM.get()).getPath(), modLoc("block/compressed_gold_ore"));
@@ -58,6 +59,11 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_RAW_IRON_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_raw_iron_block"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_RAW_GOLD_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_raw_gold_block"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_RAW_COPPER_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_raw_copper_block"));
+
+        //Other
+        singleTextureGenerated(ItemRegistration.COMPRESSED_GOLD_NUGGET.get(), "item/compressed/materials/compressed_gold_nugget");
+        singleTextureGenerated(ItemRegistration.COMPRESSED_IRON_NUGGET.get(), "item/compressed/materials/compressed_iron_nugget");
+        singleTextureGenerated(ItemRegistration.COMPRESSED_QUARTZ.get(), "item/compressed/materials/compressed_quartz");
 
         //Basic Blocks
         withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_ANDESITE_ITEM.get()).getPath(), modLoc("block/compressed_andesite"));
@@ -338,7 +344,6 @@ public class ucItemModels extends BaseItemModelProvider
 
         //Single Items
         singleTextureGenerated(ItemRegistration.COMPRESSED_FLINT.get(), "item/compressed/single/compressed_flint");
-        singleTextureGenerated(ItemRegistration.COMPRESSED_QUARTZ.get(), "item/compressed/single/compressed_quartz");
         singleTextureGenerated(ItemRegistration.COMPRESSED_STICK.get(), "item/compressed/single/compressed_stick");
         singleTextureGenerated(ItemRegistration.COMPRESSED_LEATHER.get(), "item/compressed/single/compressed_leather");
         singleTextureGenerated(ItemRegistration.COMPRESSED_POWDER_SNOW_BUCKET.get(), "item/compressed/single/compressed_powder_snow_bucket");

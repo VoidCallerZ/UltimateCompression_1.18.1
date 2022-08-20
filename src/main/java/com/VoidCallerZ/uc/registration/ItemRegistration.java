@@ -13,6 +13,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.RecordItem;
 import net.minecraft.world.item.SolidBucketItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -50,6 +51,10 @@ public class ItemRegistration
     public static final RegistryObject<Item> COMPRESSED_LAPIS = ITEMS.register("compressed_lapis", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_NETHERITE_INGOT = ITEMS.register("compressed_netherite_ingot", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_REDSTONE = ITEMS.register("compressed_redstone", () -> new Item(ITEM_PROPERTIES));
+
+    //Nuggets
+    public static final RegistryObject<Item> COMPRESSED_GOLD_NUGGET = ITEMS.register("compressed_gold_nugget", () -> new Item(ITEM_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_IRON_NUGGET = ITEMS.register("compressed_iron_nugget", () -> new Item(ITEM_PROPERTIES));
 
     //Arrows
     //Basic

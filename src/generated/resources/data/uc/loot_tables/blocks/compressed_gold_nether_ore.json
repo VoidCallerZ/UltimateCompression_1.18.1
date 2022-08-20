@@ -50,7 +50,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "uc:compressed_gold_ingot"
+              "name": "uc:compressed_gold_nugget"
             }
           ]
         }
