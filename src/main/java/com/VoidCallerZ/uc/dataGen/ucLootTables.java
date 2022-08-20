@@ -183,6 +183,7 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(BlockRegistration.COMPRESSED_SNOW_BLOCK.get(), createSimpleTable("compressed_snow_block", BlockRegistration.COMPRESSED_SNOW_BLOCK.get()));
 
         //Glass Blocks
+        lootTables.put(BlockRegistration.COMPRESSED_GLASS.get(), createGlassBlockTable("compressed_glass_block", BlockRegistration.COMPRESSED_GLASS.get()));
         lootTables.put(BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS.get(), createGlassBlockTable("compressed_black_stained_glass", BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS.get()));
         lootTables.put(BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS.get(), createGlassBlockTable("compressed_blue_stained_glass", BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS.get()));
         lootTables.put(BlockRegistration.COMPRESSED_BROWN_STAINED_GLASS.get(), createGlassBlockTable("compressed_brown_stained_glass", BlockRegistration.COMPRESSED_BROWN_STAINED_GLASS.get()));

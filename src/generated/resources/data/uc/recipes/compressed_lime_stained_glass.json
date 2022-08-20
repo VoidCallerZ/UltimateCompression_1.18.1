@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "stained_glass",
+  "group": "uc",
   "key": {
     "#": {
-      "item": "minecraft:glass"
-    },
-    "X": {
       "item": "minecraft:lime_dye"
+    },
+    "x": {
+      "item": "uc:compressed_lime_stained_glass"
     }
   },
   "pattern": [
-    "###",
-    "#X#",
-    "###"
+    "xxx",
+    "x#x",
+    "xxx"
   ],
   "result": {
     "count": 8,

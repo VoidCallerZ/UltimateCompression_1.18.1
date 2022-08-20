@@ -141,6 +141,7 @@ public class ucLanguageProvider extends LanguageProvider
         add(BlockRegistration.COMPRESSED_SCULK_CATALYST.get(), "Compressed Sculk Catalyst");
 
         //Glass Blocks
+        add(BlockRegistration.COMPRESSED_GLASS.get(), "Compressed Glass");
         add(BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS.get(), "Compressed Black Stained Glass");
         add(BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS.get(), "Compressed Blue Stained Glass");
         add(BlockRegistration.COMPRESSED_BROWN_STAINED_GLASS.get(), "Compressed Brown Stained Glass");

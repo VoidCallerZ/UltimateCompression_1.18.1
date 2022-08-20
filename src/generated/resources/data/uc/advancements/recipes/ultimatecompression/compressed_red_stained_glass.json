@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glass": {
+    "has_minecraft:red_dye": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:glass"
+              "minecraft:red_dye"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_glass",
+      "has_minecraft:red_dye",
       "has_the_recipe"
     ]
   ],

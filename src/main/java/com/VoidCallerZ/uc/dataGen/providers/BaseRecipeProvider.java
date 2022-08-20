@@ -2,6 +2,7 @@ package com.VoidCallerZ.uc.dataGen.providers;
 
 import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
+import net.minecraft.client.tutorial.FindTreeTutorialStepInstance;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.tags.TagKey;
@@ -9,7 +10,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.SimpleCookingSerializer;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -63,6 +66,34 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
                 .save(consumer, ForgeRegistries.ITEMS.getKey(compressedItem) + "_uc1");
+    }
+
+    protected void StainedGlassRecipeBuilder(Block compressedBlock, Item unCompressedBlock, Item dye, Consumer<FinishedRecipe> consumer)
+    {
+        ShapedRecipeBuilder.shaped(compressedBlock)
+                .pattern("xxx")
+                .pattern("xxx")
+                .pattern("xxx")
+                .define('x', unCompressedBlock)
+                .group("uc")
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(unCompressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(unCompressedBlock))
+                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_ucglass");
+
+        ShapelessRecipeBuilder.shapeless(unCompressedBlock, 9)
+                .requires(compressedBlock)
+                .group("uc")
+                .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(compressedBlock, 8)
+                .pattern("xxx")
+                .pattern("x#x")
+                .pattern("xxx")
+                .define('#', dye)
+                .define('x', compressedBlock)
+                .group("uc")
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(dye), InventoryChangeTrigger.TriggerInstance.hasItems(dye))
+                .save(consumer);
     }
 
     protected void CompressedWoolRecipeBuilder(Block compressedBlock, Item compressedItem, ColorBlockType blockType, Item colorItem, Consumer<FinishedRecipe> consumer)
@@ -378,5 +409,27 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .group("uc")
                 .unlockedBy("has_" + input, InventoryChangeTrigger.TriggerInstance.hasItems(input))
                 .save(consumer);
+    }
+
+    protected void BlockSmeltingRecipeBuilder(Block input, Item output, float exp, int cookingTime, Consumer<FinishedRecipe> consumer)
+    {
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(input), output, exp, cookingTime).unlockedBy("has_smelting_", has(input)).group("uc").save(consumer, ForgeRegistries.BLOCKS.getKey(input) + "_smelting");
+    }
+
+    protected void BlockSmeltingRecipeBuilder(Block input, Item alternateInput, Item output, float exp, int cookingTime, Consumer<FinishedRecipe> consumer)
+    {
+        BlockSmeltingRecipeBuilder(input, output, exp, cookingTime, consumer);
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(alternateInput), output, exp, cookingTime).unlockedBy("has_smelting_", has(alternateInput)).group("uc").save(consumer, ForgeRegistries.ITEMS.getKey(alternateInput) + "_smelting");
+    }
+
+    protected void BlockBlastingRecipeBuilder(Block input, Item output, float exp, int cookingTime, Consumer<FinishedRecipe> consumer)
+    {
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(input), output, exp, cookingTime).unlockedBy("has_blasting_", has(input)).group("uc").save(consumer, ForgeRegistries.BLOCKS.getKey(input) + "_blasting");
+    }
+
+    protected void BlockBlastingRecipeBuilder(Block input, Item alternateInput, Item output, float exp, int cookingTime, Consumer<FinishedRecipe> consumer)
+    {
+        BlockBlastingRecipeBuilder(input, output, exp, cookingTime, consumer);
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(alternateInput), output, exp, cookingTime).unlockedBy("has_blasting_", has(alternateInput)).group("uc").save(consumer, ForgeRegistries.ITEMS.getKey(alternateInput) + "_blasting");
     }
 }
