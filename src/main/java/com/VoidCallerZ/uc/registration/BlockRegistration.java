@@ -5,7 +5,9 @@ import com.VoidCallerZ.uc.blocks.*;
 import com.VoidCallerZ.uc.blocks.entity.custom.CompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.entity.custom.UcSculkCatalystBlockEntity;
 import com.VoidCallerZ.uc.blocks.glass.UcGlassBlock;
+import com.VoidCallerZ.uc.blocks.glass.UcGlassPaneBlock;
 import com.VoidCallerZ.uc.blocks.glass.UcStainedGlassBlock;
+import com.VoidCallerZ.uc.blocks.glass.UcStainedGlassPaneBlock;
 import com.VoidCallerZ.uc.blocks.screen.CompressorBlockMenu;
 import com.VoidCallerZ.uc.setup.ModSetup;
 import net.minecraft.core.BlockPos;
@@ -424,6 +426,42 @@ public class BlockRegistration
     public static final RegistryObject<Item> COMPRESSED_WHITE_STAINED_GLASS_ITEM = fromBlock(COMPRESSED_WHITE_STAINED_GLASS);
     public static final RegistryObject<Block> COMPRESSED_YELLOW_STAINED_GLASS = BLOCKS.register("compressed_yellow_stained_glass", () -> new UcStainedGlassBlock(DyeColor.YELLOW, GLASS_BLOCK_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_YELLOW_STAINED_GLASS_ITEM = fromBlock(COMPRESSED_YELLOW_STAINED_GLASS);
+
+    //Glass Pane Blocks
+    public static final RegistryObject<Block> COMPRESSED_GLASS_PANE = BLOCKS.register("compressed_glass_pane", () -> new UcGlassPaneBlock(GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_BLACK_STAINED_GLASS_PANE = BLOCKS.register("compressed_black_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.BLACK, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BLACK_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_BLACK_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_BLUE_STAINED_GLASS_PANE = BLOCKS.register("compressed_blue_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.BLUE, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BLUE_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_BLUE_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_BROWN_STAINED_GLASS_PANE = BLOCKS.register("compressed_brown_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.BROWN, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_BROWN_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_BROWN_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_CYAN_STAINED_GLASS_PANE = BLOCKS.register("compressed_cyan_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.CYAN, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_CYAN_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_CYAN_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_GRAY_STAINED_GLASS_PANE = BLOCKS.register("compressed_gray_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.GRAY, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_GRAY_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_GRAY_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_GREEN_STAINED_GLASS_PANE = BLOCKS.register("compressed_green_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.GREEN, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_GREEN_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_GREEN_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_LIGHT_BLUE_STAINED_GLASS_PANE = BLOCKS.register("compressed_light_blue_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.LIGHT_BLUE, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LIGHT_BLUE_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_LIGHT_BLUE_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_LIGHT_GRAY_STAINED_GLASS_PANE = BLOCKS.register("compressed_light_gray_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.LIGHT_GRAY, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LIGHT_GRAY_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_LIGHT_GRAY_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_LIME_STAINED_GLASS_PANE = BLOCKS.register("compressed_lime_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.LIME, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_LIME_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_LIME_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_MAGENTA_STAINED_GLASS_PANE = BLOCKS.register("compressed_magenta_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.MAGENTA, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_MAGENTA_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_MAGENTA_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_ORANGE_STAINED_GLASS_PANE = BLOCKS.register("compressed_orange_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.ORANGE, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_ORANGE_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_ORANGE_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_PINK_STAINED_GLASS_PANE = BLOCKS.register("compressed_pink_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.PINK, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_PINK_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_PINK_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_PURPLE_STAINED_GLASS_PANE = BLOCKS.register("compressed_purple_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.PURPLE, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_PURPLE_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_PURPLE_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_RED_STAINED_GLASS_PANE = BLOCKS.register("compressed_red_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.RED, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_RED_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_RED_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_WHITE_STAINED_GLASS_PANE = BLOCKS.register("compressed_white_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.WHITE, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_WHITE_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_WHITE_STAINED_GLASS_PANE);
+    public static final RegistryObject<Block> COMPRESSED_YELLOW_STAINED_GLASS_PANE = BLOCKS.register("compressed_yellow_stained_glass_pane", () -> new UcStainedGlassPaneBlock(DyeColor.YELLOW, GLASS_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> COMPRESSED_YELLOW_STAINED_GLASS_PANE_ITEM = fromBlock(COMPRESSED_YELLOW_STAINED_GLASS_PANE);
 
     //Compressor
     public static final RegistryObject<CompressorBlock> COMPRESSOR = BLOCKS.register("compressor", () -> new CompressorBlock(INGOT_BLOCK_PROPERTIES));

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "key": {
+    "#": {
+      "item": "minecraft:lime_dye"
+    },
+    "x": {
+      "item": "uc:compressed_glass_pane"
+    }
+  },
+  "pattern": [
+    "xxx",
+    "x#x",
+    "xxx"
+  ],
+  "result": {
+    "count": 8,
+    "item": "uc:compressed_lime_stained_glass_pane"
+  }
+}

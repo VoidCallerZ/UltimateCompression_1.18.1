@@ -8,6 +8,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -223,6 +224,26 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlockWithRenderType(BlockRegistration.COMPRESSED_RED_STAINED_GLASS.get(), "compressed_red_stained_glass", "block/compressed/glass/compressed_red_stained_glass", "translucent");
         singleTextureBlockWithRenderType(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS.get(), "compressed_white_stained_glass", "block/compressed/glass/compressed_white_stained_glass", "translucent");
         singleTextureBlockWithRenderType(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS.get(), "compressed_yellow_stained_glass", "block/compressed/glass/compressed_yellow_stained_glass", "translucent");
+
+        //Glass Panes
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_GLASS_PANE.get(), "compressed_glass_pane", "block/compressed/glass/compressed_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS_PANE.get(), "compressed_black_stained_glass_pane", "block/compressed/glass/compressed_black_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS_PANE.get(), "compressed_blue_stained_glass_pane", "block/compressed/glass/compressed_blue_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_BROWN_STAINED_GLASS_PANE.get(), "compressed_brown_stained_glass_pane", "block/compressed/glass/compressed_brown_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_CYAN_STAINED_GLASS_PANE.get(), "compressed_cyan_stained_glass_pane", "block/compressed/glass/compressed_cyan_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_GRAY_STAINED_GLASS_PANE.get(), "compressed_gray_stained_glass_pane", "block/compressed/glass/compressed_gray_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_GREEN_STAINED_GLASS_PANE.get(), "compressed_green_stained_glass_pane", "block/compressed/glass/compressed_green_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_LIGHT_BLUE_STAINED_GLASS_PANE.get(), "compressed_light_blue_stained_glass_pane", "block/compressed/glass/compressed_light_blue_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_LIGHT_GRAY_STAINED_GLASS_PANE.get(), "compressed_light_gray_stained_glass_pane", "block/compressed/glass/compressed_light_gray_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_LIME_STAINED_GLASS_PANE.get(), "compressed_lime_stained_glass_pane", "block/compressed/glass/compressed_lime_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_MAGENTA_STAINED_GLASS_PANE.get(), "compressed_magenta_stained_glass_pane", "block/compressed/glass/compressed_magenta_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_ORANGE_STAINED_GLASS_PANE.get(), "compressed_orange_stained_glass_pane", "block/compressed/glass/compressed_orange_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_PINK_STAINED_GLASS_PANE.get(), "compressed_pink_stained_glass_pane", "block/compressed/glass/compressed_pink_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_PURPLE_STAINED_GLASS_PANE.get(), "compressed_purple_stained_glass_pane", "block/compressed/glass/compressed_purple_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_RED_STAINED_GLASS_PANE.get(), "compressed_red_stained_glass_pane", "block/compressed/glass/compressed_red_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE.get(), "compressed_white_stained_glass_pane", "block/compressed/glass/compressed_white_stained_glass", "translucent");
+        paneBlockWithRenderType(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE.get(), "compressed_yellow_stained_glass_pane", "block/compressed/glass/compressed_yellow_stained_glass", "translucent");
+
     }
 
     private void registerCompressor()

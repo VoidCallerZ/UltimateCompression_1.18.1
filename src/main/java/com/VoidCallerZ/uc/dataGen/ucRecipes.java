@@ -227,6 +227,25 @@ public class ucRecipes extends BaseRecipeProvider
         StainedGlassRecipeBuilder(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS.get(), Items.WHITE_STAINED_GLASS, Items.WHITE_DYE, consumer);
         StainedGlassRecipeBuilder(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS.get(), Items.YELLOW_STAINED_GLASS, Items.YELLOW_DYE, consumer);
 
+        //Glass Panes
+        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_GLASS_PANE.get(), 16).pattern("xxx").pattern("xxx").define('x', BlockRegistration.COMPRESSED_GLASS.get()).group("uc").unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(BlockRegistration.COMPRESSED_GLASS.get()), InventoryChangeTrigger.TriggerInstance.hasItems(BlockRegistration.COMPRESSED_GLASS.get())).save(consumer, ForgeRegistries.BLOCKS.getKey(BlockRegistration.COMPRESSED_GLASS_PANE.get()) + "ucglasspane");
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS_PANE.get(), Items.BLACK_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS_PANE.get(), Items.BLUE_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_BROWN_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_BROWN_STAINED_GLASS_PANE.get(), Items.BROWN_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_CYAN_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_CYAN_STAINED_GLASS_PANE.get(), Items.CYAN_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_GRAY_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_GRAY_STAINED_GLASS_PANE.get(), Items.GRAY_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_GREEN_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_GREEN_STAINED_GLASS_PANE.get(), Items.GREEN_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_LIGHT_BLUE_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_LIGHT_BLUE_STAINED_GLASS_PANE.get(), Items.LIGHT_BLUE_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_LIGHT_GRAY_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_LIGHT_GRAY_STAINED_GLASS_PANE.get(), Items.LIGHT_GRAY_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_LIME_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_LIME_STAINED_GLASS_PANE.get(), Items.LIME_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_MAGENTA_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_MAGENTA_STAINED_GLASS_PANE.get(), Items.MAGENTA_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_ORANGE_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_ORANGE_STAINED_GLASS_PANE.get(), Items.ORANGE_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_PINK_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_PINK_STAINED_GLASS_PANE.get(), Items.PINK_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_PURPLE_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_PURPLE_STAINED_GLASS_PANE.get(), Items.PURPLE_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_RED_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_RED_STAINED_GLASS_PANE.get(), Items.RED_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE.get(), Items.WHITE_DYE, consumer);
+        StainedGlassPaneRecipeBuilder(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE.get(), BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE.get(), Items.YELLOW_DYE, consumer);
+
         //Compressed Smelting & Blasting
         BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_IRON_ORE.get(), ItemRegistration.COMPRESSED_RAW_IRON.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), 0.7F, 200, consumer);
         BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_GOLD_ORE.get(), ItemRegistration.COMPRESSED_RAW_GOLD.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), 0.7F, 200, consumer);

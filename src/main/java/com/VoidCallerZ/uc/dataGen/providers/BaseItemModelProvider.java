@@ -1,5 +1,6 @@
 package com.VoidCallerZ.uc.dataGen.providers;
 
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -18,6 +19,13 @@ public abstract class BaseItemModelProvider extends ItemModelProvider
         singleTexture(ForgeRegistries.ITEMS.getKey(item).getPath(),
                 mcLoc("item/generated"),
                 "layer0", modLoc(textureLocation));
+    }
+
+    public void singleTextureGeneratedWithRenderType(Item item, String textureLocation, String renderType)
+    {
+        singleTexture(ForgeRegistries.ITEMS.getKey(item).getPath(),
+                mcLoc("item/generated"),
+                "layer0", modLoc(textureLocation)).renderType(renderType);
     }
 
     public void singleTextureHandheld(Item item, String textureLocation)

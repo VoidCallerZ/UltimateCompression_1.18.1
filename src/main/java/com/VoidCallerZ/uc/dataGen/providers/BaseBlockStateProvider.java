@@ -4,6 +4,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -31,6 +32,11 @@ public abstract class BaseBlockStateProvider extends BlockStateProvider {
     protected void compressedPillarBlock(RotatedPillarBlock block, ResourceLocation resLoc)
     {
         axisBlock(block, models().cubeColumn(ForgeRegistries.BLOCKS.getKey(block).getPath(), resLoc, extend(resLoc, "_top")), models().cubeColumnHorizontal(ForgeRegistries.BLOCKS.getKey(block).getPath() + "_horizontal", resLoc, extend(resLoc, "_top")));
+    }
+
+    protected void paneBlockWithRenderType(Block block, String modelName, String textureName, String renderType)
+    {
+        paneBlockWithRenderType((IronBarsBlock) block, modelName, modLoc(textureName), extend(modLoc(textureName), "_pane_top"), renderType);
     }
 
     private ResourceLocation extend(ResourceLocation rl, String suffix) {

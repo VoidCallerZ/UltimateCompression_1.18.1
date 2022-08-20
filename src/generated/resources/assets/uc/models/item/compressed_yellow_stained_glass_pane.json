@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "layer0": "uc:block/compressed/glass/compressed_yellow_stained_glass"
+  }
+}

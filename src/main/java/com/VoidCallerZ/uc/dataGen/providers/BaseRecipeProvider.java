@@ -2,6 +2,7 @@ package com.VoidCallerZ.uc.dataGen.providers;
 
 import com.VoidCallerZ.uc.dataGen.custom.CompressorRecipeBuilder;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
+import com.VoidCallerZ.uc.registration.ItemRegistration;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.client.tutorial.FindTreeTutorialStepInstance;
 import net.minecraft.data.DataGenerator;
@@ -84,17 +85,38 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .requires(compressedBlock)
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
-                .save(consumer);
+                .save(consumer, ForgeRegistries.ITEMS.getKey(unCompressedBlock) + "ucglass");
 
         ShapedRecipeBuilder.shaped(compressedBlock, 8)
                 .pattern("xxx")
                 .pattern("x#x")
                 .pattern("xxx")
                 .define('#', dye)
-                .define('x', compressedBlock)
+                .define('x', BlockRegistration.COMPRESSED_GLASS.get())
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(dye), InventoryChangeTrigger.TriggerInstance.hasItems(dye))
-                .save(consumer);
+                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_ucglass1");
+    }
+
+    protected void StainedGlassPaneRecipeBuilder(Block compressedBlock, Block compressedPane, Item dye, Consumer<FinishedRecipe> consumer)
+    {
+        ShapedRecipeBuilder.shaped(compressedPane, 16)
+                .pattern("xxx")
+                .pattern("xxx")
+                .define('x', compressedBlock)
+                .group("uc")
+                .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
+                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedPane) + "_ucglasspane");
+
+        ShapedRecipeBuilder.shaped(compressedPane, 8)
+                .pattern("xxx")
+                .pattern("x#x")
+                .pattern("xxx")
+                .define('#', dye)
+                .define('x', BlockRegistration.COMPRESSED_GLASS_PANE.get())
+                .group("uc")
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(dye), InventoryChangeTrigger.TriggerInstance.hasItems(dye))
+                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedPane) + "_ucglasspane1");
     }
 
     protected void CompressedWoolRecipeBuilder(Block compressedBlock, Item compressedItem, ColorBlockType blockType, Item colorItem, Consumer<FinishedRecipe> consumer)

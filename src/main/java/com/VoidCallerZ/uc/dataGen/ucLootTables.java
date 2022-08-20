@@ -200,5 +200,23 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(BlockRegistration.COMPRESSED_RED_STAINED_GLASS.get(), createGlassBlockTable("compressed_red_stained_glass", BlockRegistration.COMPRESSED_RED_STAINED_GLASS.get()));
         lootTables.put(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS.get(), createGlassBlockTable("compressed_white_stained_glass", BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS.get()));
         lootTables.put(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS.get(), createGlassBlockTable("compressed_yellow_stained_glass", BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS.get()));
+
+        lootTables.put(BlockRegistration.COMPRESSED_GLASS_PANE.get(), createGlassBlockTable("compressed_glass_block_pane", BlockRegistration.COMPRESSED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_black_stained_glass_pane", BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_blue_stained_glass_pane", BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_BROWN_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_brown_stained_glass_pane", BlockRegistration.COMPRESSED_BROWN_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_CYAN_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_cyan_stained_glass_pane", BlockRegistration.COMPRESSED_CYAN_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_GRAY_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_gray_stained_glass_pane", BlockRegistration.COMPRESSED_GRAY_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_GREEN_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_green_stained_glass_pane", BlockRegistration.COMPRESSED_GREEN_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_LIGHT_BLUE_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_light_blue_stained_glass_pane", BlockRegistration.COMPRESSED_LIGHT_BLUE_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_LIGHT_GRAY_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_light_gray_stained_glass_pane", BlockRegistration.COMPRESSED_LIGHT_GRAY_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_LIME_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_lime_stained_glass_pane", BlockRegistration.COMPRESSED_LIME_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_MAGENTA_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_magenta_stained_glass_pane", BlockRegistration.COMPRESSED_MAGENTA_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_ORANGE_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_orange_stained_glass_pane", BlockRegistration.COMPRESSED_ORANGE_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_PINK_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_pink_stained_glass_pane", BlockRegistration.COMPRESSED_PINK_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_PURPLE_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_purple_stained_glass_pane", BlockRegistration.COMPRESSED_PURPLE_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_RED_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_red_stained_glass_pane", BlockRegistration.COMPRESSED_RED_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_white_stained_glass_pane", BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE.get(), createGlassBlockTable("compressed_yellow_stained_glass_pane", BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE.get()));
     }
 }

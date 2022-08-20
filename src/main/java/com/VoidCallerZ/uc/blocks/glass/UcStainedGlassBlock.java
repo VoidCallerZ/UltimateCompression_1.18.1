@@ -3,10 +3,11 @@ package com.VoidCallerZ.uc.blocks.glass;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.BeaconBeamBlock;
 import net.minecraft.world.level.block.StainedGlassBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class UcStainedGlassBlock extends StainedGlassBlock
+public class UcStainedGlassBlock extends StainedGlassBlock implements BeaconBeamBlock
 {
     public UcStainedGlassBlock(DyeColor dyeColor, Properties properties)
     {

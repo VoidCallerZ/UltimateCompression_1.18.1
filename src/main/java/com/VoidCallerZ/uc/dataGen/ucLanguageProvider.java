@@ -159,6 +159,25 @@ public class ucLanguageProvider extends LanguageProvider
         add(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS.get(), "Compressed White Stained Glass");
         add(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS.get(), "Compressed Yellow Stained Glass");
 
+        //Glass Panes
+        add(BlockRegistration.COMPRESSED_GLASS_PANE.get(), "Compressed Glass Pane");
+        add(BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS_PANE.get(), "Compressed Black Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS_PANE.get(), "Compressed Blue Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_BROWN_STAINED_GLASS_PANE.get(), "Compressed Brown Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_CYAN_STAINED_GLASS_PANE.get(), "Compressed Cyan Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_GRAY_STAINED_GLASS_PANE.get(), "Compressed Gray Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_GREEN_STAINED_GLASS_PANE.get(), "Compressed Green Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_LIGHT_BLUE_STAINED_GLASS_PANE.get(), "Compressed Light Blue Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_LIGHT_GRAY_STAINED_GLASS_PANE.get(), "Compressed Light Gray Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_LIME_STAINED_GLASS_PANE.get(), "Compressed Lime Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_MAGENTA_STAINED_GLASS_PANE.get(), "Compressed Magenta Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_ORANGE_STAINED_GLASS_PANE.get(), "Compressed Orange Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_PINK_STAINED_GLASS_PANE.get(), "Compressed Pink Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_PURPLE_STAINED_GLASS_PANE.get(), "Compressed Purple Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_RED_STAINED_GLASS_PANE.get(), "Compressed Red Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE.get(), "Compressed White Stained Glass Pane");
+        add(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE.get(), "Compressed Yellow Stained Glass Pane");
+
         //Ingots & Chunks
         add(ItemRegistration.COMPRESSED_RAW_IRON.get(), "Compressed Raw Iron");
         add(ItemRegistration.COMPRESSED_IRON_INGOT.get(), "Compressed Iron Ingot");
