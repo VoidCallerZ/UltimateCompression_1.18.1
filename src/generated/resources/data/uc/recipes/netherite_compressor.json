@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "key": {
+    "x": {
+      "item": "uc:compressed_diamond_gem"
+    },
+    "y": {
+      "item": "uc:compressed_netherite_ingot"
+    },
+    "z": {
+      "item": "uc:compressed_diamond_block"
+    }
+  },
+  "pattern": [
+    "xxx",
+    "yzy",
+    "xxx"
+  ],
+  "result": {
+    "item": "uc:netherite_compressor"
+  }
+}

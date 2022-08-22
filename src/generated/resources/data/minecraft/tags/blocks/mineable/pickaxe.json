@@ -1,6 +1,9 @@
 {
   "values": [
-    "uc:compressor",
+    "uc:iron_compressor",
+    "uc:golden_compressor",
+    "uc:diamond_compressor",
+    "uc:netherite_compressor",
     "uc:compressed_iron_ore",
     "uc:compressed_gold_ore",
     "uc:compressed_diamond_ore",

@@ -17,11 +17,11 @@ public class ucLanguageProvider extends LanguageProvider
         add("itemGroup." + UC_TAB, "Ultimate Compression");
         add("itemGroup." + UC_TOOLS_TAB, "Ultimate Tool Compression");
         add("itemGroup." + UC_FOOD_TAB, "Ultimate Food Compression");
-//        add(MESSAGE_ULTIMATE_POWERGEN, "Power generator generating %s per tick!");
-//        add(SCREEN_ULTIMATE_POWERGEN, "Power generator");
-//
-//        add(Registration.ULTIMATE_POWERGEN.get(), "Ultimate power generator");
-        add(BlockRegistration.COMPRESSOR.get(), "Ultimate Compressor");
+
+        add(BlockRegistration.IRON_COMPRESSOR.get(), "Iron Compressor");
+        add(BlockRegistration.GOLDEN_COMPRESSOR.get(), "Golden Compressor");
+        add(BlockRegistration.DIAMOND_COMPRESSOR.get(), "Diamond Compressor");
+        add(BlockRegistration.NETHERITE_COMPRESSOR.get(), "Netherite Compressor");
 
         //Ores
         add(BlockRegistration.COMPRESSED_IRON_ORE.get(), "Compressed Iron Ore");

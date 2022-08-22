@@ -5,6 +5,7 @@ import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -40,7 +41,10 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(BlockRegistration.COMPRESSED_MANGROVE_PLANKS.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(BlockRegistration.COMPRESSOR.get())
+                .add(BlockRegistration.IRON_COMPRESSOR.get())
+                .add(BlockRegistration.GOLDEN_COMPRESSOR.get())
+                .add(BlockRegistration.DIAMOND_COMPRESSOR.get())
+                .add(BlockRegistration.NETHERITE_COMPRESSOR.get())
                 .add(BlockRegistration.COMPRESSED_IRON_ORE.get())
                 .add(BlockRegistration.COMPRESSED_GOLD_ORE.get())
                 .add(BlockRegistration.COMPRESSED_DIAMOND_ORE.get())
@@ -139,7 +143,10 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(BlockRegistration.COMPRESSED_GLOWSTONE.get())
                 .add(BlockRegistration.COMPRESSED_MAGMA.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(BlockRegistration.COMPRESSOR.get())
+                .add(BlockRegistration.IRON_COMPRESSOR.get())
+                .add(BlockRegistration.GOLDEN_COMPRESSOR.get())
+                .add(BlockRegistration.DIAMOND_COMPRESSOR.get())
+                .add(BlockRegistration.NETHERITE_COMPRESSOR.get())
                 .add(BlockRegistration.COMPRESSED_GOLD_ORE.get())
                 .add(BlockRegistration.COMPRESSED_DIAMOND_ORE.get())
                 .add(BlockRegistration.COMPRESSED_EMERALD_ORE.get())

@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "uc:block/compressor/gold/side",
+    "east": "uc:block/compressor/gold/side",
+    "north": "uc:block/compressor/gold/front",
+    "south": "uc:block/compressor/gold/back",
+    "up": "uc:block/compressor/gold/side",
+    "west": "uc:block/compressor/gold/side"
+  }
+}

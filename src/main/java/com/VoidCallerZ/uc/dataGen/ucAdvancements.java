@@ -34,7 +34,7 @@ public class ucAdvancements extends BaseAdvancementProvider
                 .addCriterion("mined_compressed_iron_ore", InventoryChangeTrigger.TriggerInstance.hasItems(BlockRegistration.COMPRESSED_IRON_ORE.get()))
                 .addCriterion("mined_compressed_gold_ore", InventoryChangeTrigger.TriggerInstance.hasItems(BlockRegistration.COMPRESSED_GOLD_ORE.get()))
                 .addCriterion("mined_compressed_diamond_ore", InventoryChangeTrigger.TriggerInstance.hasItems(BlockRegistration.COMPRESSED_DIAMOND_ORE.get()))
-                .rewards(AdvancementRewards.Builder.recipe(BlockRegistration.COMPRESSOR.getId()))
+                .rewards(AdvancementRewards.Builder.recipe(BlockRegistration.IRON_COMPRESSOR.getId()))
                 .save(consumer, "mined_compressed_ore");
 
         BasicEatenAdvancement(FoodRegistration.COMPRESSED_PUFFERFISH, "Deadly Consumption",

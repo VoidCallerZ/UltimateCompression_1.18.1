@@ -2,13 +2,23 @@ package com.VoidCallerZ.uc.registration;
 
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.blocks.*;
-import com.VoidCallerZ.uc.blocks.entity.custom.CompressorBlockEntity;
+import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlock;
+import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlockEntity;
+import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlockMenu;
+import com.VoidCallerZ.uc.blocks.compressor.gold.GoldenCompressorBlock;
+import com.VoidCallerZ.uc.blocks.compressor.gold.GoldenCompressorBlockMenu;
+import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlock;
+import com.VoidCallerZ.uc.blocks.compressor.gold.GoldenCompressorBlockEntity;
+import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlockEntity;
+import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlockMenu;
+import com.VoidCallerZ.uc.blocks.compressor.netherite.NetheriteCompressorBlock;
+import com.VoidCallerZ.uc.blocks.compressor.netherite.NetheriteCompressorBlockEntity;
+import com.VoidCallerZ.uc.blocks.compressor.netherite.NetheriteCompressorBlockMenu;
 import com.VoidCallerZ.uc.blocks.entity.custom.UcSculkCatalystBlockEntity;
 import com.VoidCallerZ.uc.blocks.glass.UcGlassBlock;
 import com.VoidCallerZ.uc.blocks.glass.UcGlassPaneBlock;
 import com.VoidCallerZ.uc.blocks.glass.UcStainedGlassBlock;
 import com.VoidCallerZ.uc.blocks.glass.UcStainedGlassPaneBlock;
-import com.VoidCallerZ.uc.blocks.screen.CompressorBlockMenu;
 import com.VoidCallerZ.uc.setup.ModSetup;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
@@ -469,10 +479,29 @@ public class BlockRegistration
     public static final RegistryObject<Item> COMPRESSED_OBSIDIAN_ITEM = fromBlock(COMPRESSED_OBSIDIAN);
 
     //Compressor
-    public static final RegistryObject<CompressorBlock> COMPRESSOR = BLOCKS.register("compressor", () -> new CompressorBlock(INGOT_BLOCK_PROPERTIES));
-    public static final RegistryObject<Item> COMPRESSOR_ITEM = fromBlock(COMPRESSOR);
-    public static final RegistryObject<BlockEntityType<CompressorBlockEntity>> COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("compressor_block_entity", () -> BlockEntityType.Builder.of(CompressorBlockEntity::new, COMPRESSOR.get()).build(null));
-    public static final RegistryObject<MenuType<CompressorBlockMenu>> COMPRESSOR_BLOCK_MENU = registerMenuType(CompressorBlockMenu::new, "compressor_block_menu");
+    //Iron Compressor
+    public static final RegistryObject<IronCompressorBlock> IRON_COMPRESSOR = BLOCKS.register("iron_compressor", () -> new IronCompressorBlock(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> IRON_COMPRESSOR_ITEM = fromBlock(IRON_COMPRESSOR);
+    public static final RegistryObject<BlockEntityType<IronCompressorBlockEntity>> IRON_COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("iron_compressor_block_entity", () -> BlockEntityType.Builder.of(IronCompressorBlockEntity::new, IRON_COMPRESSOR.get()).build(null));
+    public static final RegistryObject<MenuType<IronCompressorBlockMenu>> IRON_COMPRESSOR_BLOCK_MENU = registerMenuType(IronCompressorBlockMenu::new, "iron_compressor_block_menu");
+
+    //Golden Compressor
+    public static final RegistryObject<GoldenCompressorBlock> GOLDEN_COMPRESSOR = BLOCKS.register("golden_compressor", () -> new GoldenCompressorBlock(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> GOLDEN_COMPRESSOR_ITEM = fromBlock(GOLDEN_COMPRESSOR);
+    public static final RegistryObject<BlockEntityType<GoldenCompressorBlockEntity>> GOLDEN_COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("golden_compressor_block_entity", () -> BlockEntityType.Builder.of(GoldenCompressorBlockEntity::new, GOLDEN_COMPRESSOR.get()).build(null));
+    public static final RegistryObject<MenuType<GoldenCompressorBlockMenu>> GOLDEN_COMPRESSOR_BLOCK_MENU = registerMenuType(GoldenCompressorBlockMenu::new, "golden_compressor_block_menu");
+
+    //Diamond Compressor
+    public static final RegistryObject<DiamondCompressorBlock> DIAMOND_COMPRESSOR = BLOCKS.register("diamond_compressor", () -> new DiamondCompressorBlock(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> DIAMOND_COMPRESSOR_ITEM = fromBlock(DIAMOND_COMPRESSOR);
+    public static final RegistryObject<BlockEntityType<DiamondCompressorBlockEntity>> DIAMOND_COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("diamond_compressor_block_entity", () -> BlockEntityType.Builder.of(DiamondCompressorBlockEntity::new, DIAMOND_COMPRESSOR.get()).build(null));
+    public static final RegistryObject<MenuType<DiamondCompressorBlockMenu>> DIAMOND_COMPRESSOR_BLOCK_MENU = registerMenuType(DiamondCompressorBlockMenu::new, "diamond_compressor_block_menu");
+
+    //Netherite Compressor
+    public static final RegistryObject<NetheriteCompressorBlock> NETHERITE_COMPRESSOR = BLOCKS.register("netherite_compressor", () -> new NetheriteCompressorBlock(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> NETHERITE_COMPRESSOR_ITEM = fromBlock(NETHERITE_COMPRESSOR);
+    public static final RegistryObject<BlockEntityType<NetheriteCompressorBlockEntity>> NETHERITE_COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("netherite_compressor_block_entity", () -> BlockEntityType.Builder.of(NetheriteCompressorBlockEntity::new, NETHERITE_COMPRESSOR.get()).build(null));
+    public static final RegistryObject<MenuType<NetheriteCompressorBlockMenu>> NETHERITE_COMPRESSOR_BLOCK_MENU = registerMenuType(NetheriteCompressorBlockMenu::new, "netherite_compressor_block_menu");
 
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name)
     {

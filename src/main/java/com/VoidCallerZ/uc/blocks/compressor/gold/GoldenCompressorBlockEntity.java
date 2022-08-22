@@ -1,6 +1,5 @@
-package com.VoidCallerZ.uc.blocks.entity.custom;
+package com.VoidCallerZ.uc.blocks.compressor.gold;
 
-import com.VoidCallerZ.uc.blocks.screen.CompressorBlockMenu;
 import com.VoidCallerZ.uc.recipe.CompressorItemRecipe;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;
@@ -29,7 +28,7 @@ import org.jetbrains.annotations.Nullable;
 import javax.annotation.Nonnull;
 import java.util.Optional;
 
-public class CompressorBlockEntity extends BlockEntity implements MenuProvider
+public class GoldenCompressorBlockEntity extends BlockEntity implements MenuProvider
 {
     private final ItemStackHandler itemHandler = new ItemStackHandler(2)
     {
@@ -44,11 +43,11 @@ public class CompressorBlockEntity extends BlockEntity implements MenuProvider
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 72;
+    private int maxProgress = 70;
 
-    public CompressorBlockEntity(BlockPos pWorldPosition, BlockState pBlockState)
+    public GoldenCompressorBlockEntity(BlockPos pWorldPosition, BlockState pBlockState)
     {
-        super(BlockRegistration.COMPRESSOR_BLOCK_ENTITY.get(), pWorldPosition, pBlockState);
+        super(BlockRegistration.GOLDEN_COMPRESSOR_BLOCK_ENTITY.get(), pWorldPosition, pBlockState);
         this.data = new ContainerData()
         {
             @Override
@@ -56,8 +55,8 @@ public class CompressorBlockEntity extends BlockEntity implements MenuProvider
             {
                 switch (index)
                 {
-                    case 0: return CompressorBlockEntity.this.progress;
-                    case 1: return CompressorBlockEntity.this.maxProgress;
+                    case 0: return GoldenCompressorBlockEntity.this.progress;
+                    case 1: return GoldenCompressorBlockEntity.this.maxProgress;
                     default: return 0;
                 }
             }
@@ -67,8 +66,8 @@ public class CompressorBlockEntity extends BlockEntity implements MenuProvider
             {
                 switch (index)
                 {
-                    case 0: CompressorBlockEntity.this.progress = value; break;
-                    case 1: CompressorBlockEntity.this.maxProgress = value; break;
+                    case 0: GoldenCompressorBlockEntity.this.progress = value; break;
+                    case 1: GoldenCompressorBlockEntity.this.maxProgress = value; break;
                 }
             }
 
@@ -90,7 +89,7 @@ public class CompressorBlockEntity extends BlockEntity implements MenuProvider
     @Override
     public AbstractContainerMenu createMenu(int pContainerId, Inventory pInventory, Player pPlayer)
     {
-        return new CompressorBlockMenu(pContainerId, pInventory, this, this.data);
+        return new GoldenCompressorBlockMenu(pContainerId, pInventory, this, this.data);
     }
 
     @Nonnull
@@ -144,7 +143,7 @@ public class CompressorBlockEntity extends BlockEntity implements MenuProvider
         Containers.dropContents(this.level, this.worldPosition, inventory);
     }
 
-    public static void tick(Level level, BlockPos pos, BlockState state, CompressorBlockEntity blockEntity)
+    public static void tick(Level level, BlockPos pos, BlockState state, GoldenCompressorBlockEntity blockEntity)
     {
         if (hasRecipe(blockEntity) && hasCorrectAmountOfInputItems(blockEntity))
         {
@@ -162,7 +161,7 @@ public class CompressorBlockEntity extends BlockEntity implements MenuProvider
         }
     }
 
-    private static boolean hasRecipe(CompressorBlockEntity entity)
+    private static boolean hasRecipe(GoldenCompressorBlockEntity entity)
     {
         Level level = entity.level;
         SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
@@ -176,12 +175,12 @@ public class CompressorBlockEntity extends BlockEntity implements MenuProvider
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory) && canInsertItemIntoOutputSlot(inventory, match.get().getResultItem());
     }
 
-    private static boolean hasCorrectAmountOfInputItems(CompressorBlockEntity entity)
+    private static boolean hasCorrectAmountOfInputItems(GoldenCompressorBlockEntity entity)
     {
         return entity.itemHandler.getStackInSlot(0).getCount() >= 9;
     }
 
-    private static void craftItem(CompressorBlockEntity entity)
+    private static void craftItem(GoldenCompressorBlockEntity entity)
     {
         Level level = entity.level;
         SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());

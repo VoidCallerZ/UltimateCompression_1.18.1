@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "uc:block/golden_compressor",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "uc:block/golden_compressor"
+    },
+    "facing=south": {
+      "model": "uc:block/golden_compressor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "uc:block/golden_compressor",
+      "y": 270
+    }
+  }
+}

@@ -1,6 +1,5 @@
-package com.VoidCallerZ.uc.blocks;
+package com.VoidCallerZ.uc.blocks.compressor.iron;
 
-import com.VoidCallerZ.uc.blocks.entity.custom.CompressorBlockEntity;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
@@ -25,11 +24,11 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
-public class CompressorBlock extends BaseEntityBlock
+public class IronCompressorBlock extends BaseEntityBlock
 {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
-    public CompressorBlock(Properties properties)
+    public IronCompressorBlock(Properties properties)
     {
         super(properties);
     }
@@ -75,9 +74,9 @@ public class CompressorBlock extends BaseEntityBlock
         if (state.getBlock() != newState.getBlock())
         {
             BlockEntity blockEntity = level.getBlockEntity(pos);
-            if (blockEntity instanceof CompressorBlockEntity)
+            if (blockEntity instanceof IronCompressorBlockEntity)
             {
-                ((CompressorBlockEntity) blockEntity).drops();
+                ((IronCompressorBlockEntity) blockEntity).drops();
             }
         }
         super.onRemove(state, level, pos, newState, isMoving);
@@ -89,9 +88,9 @@ public class CompressorBlock extends BaseEntityBlock
         if (!level.isClientSide())
         {
             BlockEntity entity = level.getBlockEntity(pos);
-            if (entity instanceof CompressorBlockEntity)
+            if (entity instanceof IronCompressorBlockEntity)
             {
-                NetworkHooks.openScreen(((ServerPlayer) player), (CompressorBlockEntity)entity, pos);
+                NetworkHooks.openScreen(((ServerPlayer) player), (IronCompressorBlockEntity)entity, pos);
             }
             else
             {
@@ -106,13 +105,13 @@ public class CompressorBlock extends BaseEntityBlock
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state)
     {
-        return new CompressorBlockEntity(pos, state);
+        return new IronCompressorBlockEntity(pos, state);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntityType)
     {
-        return createTickerHelper(blockEntityType, BlockRegistration.COMPRESSOR_BLOCK_ENTITY.get(), CompressorBlockEntity::tick);
+        return createTickerHelper(blockEntityType, BlockRegistration.IRON_COMPRESSOR_BLOCK_ENTITY.get(), IronCompressorBlockEntity::tick);
     }
 }

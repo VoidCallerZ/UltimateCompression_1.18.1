@@ -23,8 +23,11 @@ public class ucBlockStates extends BaseBlockStateProvider
     @Override
     protected void registerStatesAndModels()
     {
-//        registerPowergen();
-        registerCompressor();
+        registerIronCompressor();
+        registerCompressor(BlockRegistration.GOLDEN_COMPRESSOR.get(), "golden_compressor", "gold");
+        registerCompressor(BlockRegistration.DIAMOND_COMPRESSOR.get(), "diamond_compressor", "diamond");
+        registerCompressor(BlockRegistration.NETHERITE_COMPRESSOR.get(), "netherite_compressor", "netherite");
+
         registerSculkCatalyst();
 
         //Ores
@@ -248,14 +251,22 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(BlockRegistration.COMPRESSED_OBSIDIAN.get(), "compressed_obsidian", "block/compressed/basic/compressed_obsidian");
     }
 
-    private void registerCompressor()
+    private void registerIronCompressor()
     {
-        ResourceLocation BASE = modLoc("block/compressor/compressor_back");
-        ResourceLocation BACK = modLoc("block/compressor/compressor_back_on");
-        ResourceLocation FRONT = modLoc("block/compressor/compressor_front");
-        ResourceLocation SIDE = modLoc("block/compressor/compressor_side");
+        ResourceLocation FRONT_BACK = modLoc("block/compressor/iron/front_back");
+        ResourceLocation SIDE = modLoc("block/compressor/iron/side");
+        ResourceLocation TOP_BOTTOM = modLoc("block/compressor/iron/top_bottom");
 
-        horizontalBlock(BlockRegistration.COMPRESSOR.get(), models().cube("compressor", BASE, BASE, FRONT, BACK, SIDE, SIDE));
+        horizontalBlock(BlockRegistration.IRON_COMPRESSOR.get(), models().cube("iron_compressor", TOP_BOTTOM, TOP_BOTTOM, FRONT_BACK, FRONT_BACK, SIDE, SIDE));
+    }
+
+    private void registerCompressor(Block block, String name, String materialName)
+    {
+        ResourceLocation BACK = modLoc("block/compressor/" + materialName + "/back");
+        ResourceLocation FRONT = modLoc("block/compressor/" + materialName + "/front");
+        ResourceLocation SIDE = modLoc("block/compressor/" + materialName + "/side");
+
+        horizontalBlock(block, models().cube(name, SIDE, SIDE, FRONT, BACK, SIDE, SIDE));
     }
 
     private void registerSculkCatalyst()

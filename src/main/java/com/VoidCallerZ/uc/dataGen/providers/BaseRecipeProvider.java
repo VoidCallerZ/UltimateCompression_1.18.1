@@ -461,6 +461,20 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(input), output, exp, cookingTime).unlockedBy("has_blasting_", has(input)).group("uc").save(consumer, ForgeRegistries.ITEMS.getKey(input) + "_item_blasting");
     }
 
+    protected void CompressorRecipe(Item topBottomInput, Item leftRightInput, Item centerInput, Block output, Consumer<FinishedRecipe> consumer)
+    {
+        ShapedRecipeBuilder.shaped(output)
+                .pattern("xxx")
+                .pattern("yzy")
+                .pattern("xxx")
+                .define('x', topBottomInput)
+                .define('y', leftRightInput)
+                .define('z', centerInput)
+                .group("uc")
+                .unlockedBy("has_" + leftRightInput, InventoryChangeTrigger.TriggerInstance.hasItems(leftRightInput))
+                .save(consumer);
+    }
+
     protected void CompressorRecipeBuilder(Item input, Item output, int inputCount, Consumer<FinishedRecipe> consumer)
     {
         new CompressorRecipeBuilder(input, output, inputCount, 0).unlockedBy("compressor_has_" + input, InventoryChangeTrigger.TriggerInstance.hasItems(input)).save(consumer);

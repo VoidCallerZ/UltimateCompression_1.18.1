@@ -6,10 +6,10 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "uc:compressor"
+          "name": "uc:golden_compressor"
         }
       ],
-      "name": "ultimate_compressor",
+      "name": "golden_compressor",
       "rolls": 1.0
     }
   ]

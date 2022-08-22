@@ -1,6 +1,5 @@
 package com.VoidCallerZ.uc.dataGen;
 
-import com.VoidCallerZ.uc.dataGen.custom.CompressorRecipeBuilder;
 import com.VoidCallerZ.uc.dataGen.providers.BaseRecipeProvider;
 import com.VoidCallerZ.uc.registration.*;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
@@ -22,16 +21,10 @@ public class ucRecipes extends BaseRecipeProvider
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer)
     {
-        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSOR.get())
-                .pattern("iii")
-                .pattern("dgd")
-                .pattern("iii")
-                .define('i', Items.IRON_INGOT)
-                .define('d', Items.DIAMOND)
-                .define('g', Items.GOLD_BLOCK)
-                .group("uc")
-                .unlockedBy("get_iron_ingot_for_compressor", InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_INGOT))
-                .save(consumer);
+        CompressorRecipe(Items.IRON_INGOT, ItemRegistration.COMPRESSED_COAL.get(), Items.GOLD_BLOCK, BlockRegistration.IRON_COMPRESSOR.get(), consumer);
+        CompressorRecipe(ItemRegistration.COMPRESSED_IRON_INGOT.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), Items.DIAMOND_BLOCK, BlockRegistration.GOLDEN_COMPRESSOR.get(), consumer);
+        CompressorRecipe(ItemRegistration.COMPRESSED_GOLD_INGOT.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), Items.NETHERITE_BLOCK, BlockRegistration.DIAMOND_COMPRESSOR.get(), consumer);
+        CompressorRecipe(ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), BlockRegistration.COMPRESSED_DIAMOND_BLOCK_ITEM.get(), BlockRegistration.NETHERITE_COMPRESSOR.get(), consumer);
 
         //Compression & decompression of most blocks
         //Material Blocks

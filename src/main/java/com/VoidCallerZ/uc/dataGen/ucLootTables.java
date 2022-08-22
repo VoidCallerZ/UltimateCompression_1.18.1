@@ -13,8 +13,13 @@ public class ucLootTables extends BaseLootTableProvider
     @Override
     protected void addTables()
     {
+        //Compressor Blocks
+        lootTables.put(BlockRegistration.IRON_COMPRESSOR.get(), createSimpleTable("iron_compressor", BlockRegistration.IRON_COMPRESSOR.get()));
+        lootTables.put(BlockRegistration.GOLDEN_COMPRESSOR.get(), createSimpleTable("golden_compressor", BlockRegistration.GOLDEN_COMPRESSOR.get()));
+        lootTables.put(BlockRegistration.DIAMOND_COMPRESSOR.get(), createSimpleTable("diamond_compressor", BlockRegistration.DIAMOND_COMPRESSOR.get()));
+        lootTables.put(BlockRegistration.NETHERITE_COMPRESSOR.get(), createSimpleTable("netherite_compressor", BlockRegistration.NETHERITE_COMPRESSOR.get()));
+
         //Ores
-        lootTables.put(BlockRegistration.COMPRESSOR.get(), createSimpleTable("ultimate_compressor", BlockRegistration.COMPRESSOR.get()));
         lootTables.put(BlockRegistration.COMPRESSED_IRON_ORE.get(), createSilkTouchTable("compressed_iron_ore", BlockRegistration.COMPRESSED_IRON_ORE.get(), ItemRegistration.COMPRESSED_RAW_IRON.get(), 1, 1));
         lootTables.put(BlockRegistration.COMPRESSED_GOLD_ORE.get(), createSilkTouchTable("compressed_gold_ore", BlockRegistration.COMPRESSED_GOLD_ORE.get(), ItemRegistration.COMPRESSED_RAW_GOLD.get(), 1, 1));
         lootTables.put(BlockRegistration.COMPRESSED_DIAMOND_ORE.get(), createSilkTouchTable("compressed_diamond_ore", BlockRegistration.COMPRESSED_DIAMOND_ORE.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), 1, 1));
