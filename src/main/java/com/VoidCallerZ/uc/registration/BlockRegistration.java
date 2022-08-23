@@ -2,7 +2,6 @@ package com.VoidCallerZ.uc.registration;
 
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.blocks.*;
-import com.VoidCallerZ.uc.blocks.compressor.TestCompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlock;
 import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlockMenu;

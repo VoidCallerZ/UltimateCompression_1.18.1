@@ -1,6 +1,5 @@
 package com.VoidCallerZ.uc.blocks.compressor.iron;
 
-import com.VoidCallerZ.uc.blocks.compressor.TestCompressorBlockEntity;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
