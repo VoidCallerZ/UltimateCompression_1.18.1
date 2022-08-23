@@ -49,7 +49,7 @@ public class ucAdvancements extends BaseAdvancementProvider
                 "A compressed piece of netherite? You didn't have anything else to do?",
                 FrameType.GOAL, "gathered_compressed_netherite_ingot", 100, mainAdvancement, consumer);
 
-        BasicGatheredAdvancement(BlockRegistration.COMPRESSED_NETHERITE_BLOCK_ITEM, "Richness Overload",
+        BasicGatheredAdvancement(ItemRegistration.COMPRESSED_NETHERITE_BLOCK, "Richness Overload",
                 "Bored? Dumb? Or just too rich for words?",
                 FrameType.CHALLENGE, "gathered_compressed_netherite_block", 500, mainAdvancement, consumer);
 

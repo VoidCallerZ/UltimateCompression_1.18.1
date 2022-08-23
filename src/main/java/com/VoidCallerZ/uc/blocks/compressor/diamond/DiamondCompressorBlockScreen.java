@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class DiamondCompressorBlockScreen extends AbstractContainerScreen<DiamondCompressorBlockMenu>
 {
-    private static final ResourceLocation TEXTURE = new ResourceLocation(UltimateCompression.MODID, "textures/gui/compressor_gui.png");
+    private static final ResourceLocation TEXTURE = new ResourceLocation(UltimateCompression.MODID, "textures/gui/diamond_compressor_gui.png");
 
     public DiamondCompressorBlockScreen(DiamondCompressorBlockMenu menu, Inventory inventory, Component title)
     {

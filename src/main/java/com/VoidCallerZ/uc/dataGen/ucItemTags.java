@@ -1,8 +1,9 @@
 package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
-import com.VoidCallerZ.uc.registration.ItemRegistration;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
+import com.VoidCallerZ.uc.registration.ItemRegistration;
+import com.VoidCallerZ.uc.registration.ItemRegistration;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -21,24 +22,24 @@ public class ucItemTags extends ItemTagsProvider
     protected void addTags()
     {
         tag(Tags.Items.ORES)
-                .add(BlockRegistration.COMPRESSED_IRON_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_GOLD_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_DIAMOND_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_COPPER_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_COAL_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_EMERALD_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_LAPIS_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_REDSTONE_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_DEEPSLATE_IRON_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_DEEPSLATE_GOLD_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_DEEPSLATE_DIAMOND_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_DEEPSLATE_COPPER_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_DEEPSLATE_COAL_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_DEEPSLATE_EMERALD_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_DEEPSLATE_LAPIS_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_DEEPSLATE_REDSTONE_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_NETHER_GOLD_ORE_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_NETHER_QUARTZ_ORE_ITEM.get());
+                .add(ItemRegistration.COMPRESSED_IRON_ORE.get())
+                .add(ItemRegistration.COMPRESSED_GOLD_ORE.get())
+                .add(ItemRegistration.COMPRESSED_DIAMOND_ORE.get())
+                .add(ItemRegistration.COMPRESSED_COPPER_ORE.get())
+                .add(ItemRegistration.COMPRESSED_COAL_ORE.get())
+                .add(ItemRegistration.COMPRESSED_EMERALD_ORE.get())
+                .add(ItemRegistration.COMPRESSED_LAPIS_ORE.get())
+                .add(ItemRegistration.COMPRESSED_REDSTONE_ORE.get())
+                .add(ItemRegistration.COMPRESSED_DEEPSLATE_IRON_ORE.get())
+                .add(ItemRegistration.COMPRESSED_DEEPSLATE_GOLD_ORE.get())
+                .add(ItemRegistration.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get())
+                .add(ItemRegistration.COMPRESSED_DEEPSLATE_COPPER_ORE.get())
+                .add(ItemRegistration.COMPRESSED_DEEPSLATE_COAL_ORE.get())
+                .add(ItemRegistration.COMPRESSED_DEEPSLATE_EMERALD_ORE.get())
+                .add(ItemRegistration.COMPRESSED_DEEPSLATE_LAPIS_ORE.get())
+                .add(ItemRegistration.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get())
+                .add(ItemRegistration.COMPRESSED_NETHER_GOLD_ORE.get())
+                .add(ItemRegistration.COMPRESSED_NETHER_QUARTZ_ORE.get());
 
         tag(Tags.Items.INGOTS)
                 .add(ItemRegistration.COMPRESSED_IRON_INGOT.get())
@@ -54,7 +55,7 @@ public class ucItemTags extends ItemTagsProvider
                 .add(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get());
                 //.add(ItemRegistration.COMPRESSED_TIPPED_ARROW.get());
 
-//        tag(Registration.COMPRESSOR_VALID_ITEMS)
+//        tag(Registration.COMPRESSOR_VALIDS)
 //                .add(Items.IRON_INGOT)
 //                .add(Items.GOLD_INGOT)
 //                .add(Items.DIAMOND)
@@ -75,19 +76,19 @@ public class ucItemTags extends ItemTagsProvider
 //                .add(Items.NETHERITE_BLOCK);
 
         tag(BlockRegistration.COMPRESSED_PLANKS_FOR_TOOLS)
-                .add(BlockRegistration.COMPRESSED_ACACIA_PLANKS_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_BIRCH_PLANKS_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_DARK_OAK_PLANKS_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_JUNGLE_PLANKS_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_OAK_PLANKS_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_SPRUCE_PLANKS_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_CRIMSON_PLANKS_ITEM.get())
-                .add(BlockRegistration.COMPRESSED_WARPED_PLANKS_ITEM.get());
+                .add(ItemRegistration.COMPRESSED_ACACIA_PLANKS.get())
+                .add(ItemRegistration.COMPRESSED_BIRCH_PLANKS.get())
+                .add(ItemRegistration.COMPRESSED_DARK_OAK_PLANKS.get())
+                .add(ItemRegistration.COMPRESSED_JUNGLE_PLANKS.get())
+                .add(ItemRegistration.COMPRESSED_OAK_PLANKS.get())
+                .add(ItemRegistration.COMPRESSED_SPRUCE_PLANKS.get())
+                .add(ItemRegistration.COMPRESSED_CRIMSON_PLANKS.get())
+                .add(ItemRegistration.COMPRESSED_WARPED_PLANKS.get());
 
-        /*tag(Registration.COMPRESSED_ORE_ITEM)
-                .add(Registration.COMPRESSED_IRON_ORE_ITEM.get())
-                .add(Registration.COMPRESSED_GOLD_ORE_ITEM.get())
-                .add(Registration.COMPRESSED_DIAMOND_ORE_ITEM.get());*/
+        /*tag(Registration.COMPRESSED_ORE)
+                .add(Registration.COMPRESSED_IRON_ORE.get())
+                .add(Registration.COMPRESSED_GOLD_ORE.get())
+                .add(Registration.COMPRESSED_DIAMOND_ORE.get());*/
     }
 
     @Override

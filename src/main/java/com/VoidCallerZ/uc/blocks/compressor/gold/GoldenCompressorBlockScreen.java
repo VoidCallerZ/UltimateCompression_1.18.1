@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class GoldenCompressorBlockScreen extends AbstractContainerScreen<GoldenCompressorBlockMenu>
 {
-    private static final ResourceLocation TEXTURE = new ResourceLocation(UltimateCompression.MODID, "textures/gui/compressor_gui.png");
+    private static final ResourceLocation TEXTURE = new ResourceLocation(UltimateCompression.MODID, "textures/gui/golden_compressor_gui.png");
 
     public GoldenCompressorBlockScreen(GoldenCompressorBlockMenu menu, Inventory inventory, Component title)
     {

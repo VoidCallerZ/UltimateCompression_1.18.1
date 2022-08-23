@@ -12,7 +12,7 @@ import net.minecraft.world.level.block.RenderShape;
 
 public class IronCompressorBlockScreen extends AbstractContainerScreen<IronCompressorBlockMenu>
 {
-    private static final ResourceLocation TEXTURE = new ResourceLocation(UltimateCompression.MODID, "textures/gui/compressor_gui.png");
+    private static final ResourceLocation TEXTURE = new ResourceLocation(UltimateCompression.MODID, "textures/gui/iron_compressor_gui.png");
 
     public IronCompressorBlockScreen(IronCompressorBlockMenu menu, Inventory inventory, Component title)
     {

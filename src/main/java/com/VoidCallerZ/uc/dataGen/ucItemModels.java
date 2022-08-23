@@ -24,42 +24,42 @@ public class ucItemModels extends BaseItemModelProvider
 
         //Materials
         //Ores
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_IRON_ORE_ITEM.get()).getPath(), modLoc("block/compressed_iron_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GOLD_ORE_ITEM.get()).getPath(), modLoc("block/compressed_gold_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DIAMOND_ORE_ITEM.get()).getPath(), modLoc("block/compressed_diamond_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_COPPER_ORE_ITEM.get()).getPath(), modLoc("block/compressed_copper_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_COAL_ORE_ITEM.get()).getPath(), modLoc("block/compressed_coal_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_EMERALD_ORE_ITEM.get()).getPath(), modLoc("block/compressed_emerald_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LAPIS_ORE_ITEM.get()).getPath(), modLoc("block/compressed_lapis_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_REDSTONE_ORE_ITEM.get()).getPath(), modLoc("block/compressed_redstone_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_NETHER_GOLD_ORE_ITEM.get()).getPath(), modLoc("block/compressed_nether_gold_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_NETHER_QUARTZ_ORE_ITEM.get()).getPath(), modLoc("block/compressed_nether_quartz_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_IRON_ORE.get()).getPath(), modLoc("block/compressed_iron_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GOLD_ORE.get()).getPath(), modLoc("block/compressed_gold_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DIAMOND_ORE.get()).getPath(), modLoc("block/compressed_diamond_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_COPPER_ORE.get()).getPath(), modLoc("block/compressed_copper_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_COAL_ORE.get()).getPath(), modLoc("block/compressed_coal_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_EMERALD_ORE.get()).getPath(), modLoc("block/compressed_emerald_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LAPIS_ORE.get()).getPath(), modLoc("block/compressed_lapis_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_REDSTONE_ORE.get()).getPath(), modLoc("block/compressed_redstone_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_NETHER_GOLD_ORE.get()).getPath(), modLoc("block/compressed_nether_gold_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_NETHER_QUARTZ_ORE.get()).getPath(), modLoc("block/compressed_nether_quartz_ore"));
 
         //Deepslate Ores
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DEEPSLATE_IRON_ORE_ITEM.get()).getPath(), modLoc("block/compressed_deepslate_iron_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DEEPSLATE_GOLD_ORE_ITEM.get()).getPath(), modLoc("block/compressed_deepslate_gold_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DEEPSLATE_DIAMOND_ORE_ITEM.get()).getPath(), modLoc("block/compressed_deepslate_diamond_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DEEPSLATE_COPPER_ORE_ITEM.get()).getPath(), modLoc("block/compressed_deepslate_copper_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DEEPSLATE_COAL_ORE_ITEM.get()).getPath(), modLoc("block/compressed_deepslate_coal_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DEEPSLATE_EMERALD_ORE_ITEM.get()).getPath(), modLoc("block/compressed_deepslate_emerald_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DEEPSLATE_LAPIS_ORE_ITEM.get()).getPath(), modLoc("block/compressed_deepslate_lapis_ore"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DEEPSLATE_REDSTONE_ORE_ITEM.get()).getPath(), modLoc("block/compressed_deepslate_redstone_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DEEPSLATE_IRON_ORE.get()).getPath(), modLoc("block/compressed_deepslate_iron_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DEEPSLATE_GOLD_ORE.get()).getPath(), modLoc("block/compressed_deepslate_gold_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get()).getPath(), modLoc("block/compressed_deepslate_diamond_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DEEPSLATE_COPPER_ORE.get()).getPath(), modLoc("block/compressed_deepslate_copper_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DEEPSLATE_COAL_ORE.get()).getPath(), modLoc("block/compressed_deepslate_coal_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DEEPSLATE_EMERALD_ORE.get()).getPath(), modLoc("block/compressed_deepslate_emerald_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DEEPSLATE_LAPIS_ORE.get()).getPath(), modLoc("block/compressed_deepslate_lapis_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get()).getPath(), modLoc("block/compressed_deepslate_redstone_ore"));
 
         //Blocks
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GOLD_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_gold_block"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_IRON_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_iron_block"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DIAMOND_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_diamond_block"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_COPPER_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_copper_block"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_COAL_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_coal_block"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_EMERALD_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_emerald_block"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LAPIS_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_lapis_block"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_REDSTONE_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_redstone_block"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_NETHERITE_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_netherite_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GOLD_BLOCK.get()).getPath(), modLoc("block/compressed_gold_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_IRON_BLOCK.get()).getPath(), modLoc("block/compressed_iron_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DIAMOND_BLOCK.get()).getPath(), modLoc("block/compressed_diamond_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_COPPER_BLOCK.get()).getPath(), modLoc("block/compressed_copper_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_COAL_BLOCK.get()).getPath(), modLoc("block/compressed_coal_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_EMERALD_BLOCK.get()).getPath(), modLoc("block/compressed_emerald_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LAPIS_BLOCK.get()).getPath(), modLoc("block/compressed_lapis_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_REDSTONE_BLOCK.get()).getPath(), modLoc("block/compressed_redstone_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_NETHERITE_BLOCK.get()).getPath(), modLoc("block/compressed_netherite_block"));
 
         //Raw Blocks
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_RAW_IRON_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_raw_iron_block"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_RAW_GOLD_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_raw_gold_block"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_RAW_COPPER_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_raw_copper_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_RAW_IRON_BLOCK.get()).getPath(), modLoc("block/compressed_raw_iron_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_RAW_GOLD_BLOCK.get()).getPath(), modLoc("block/compressed_raw_gold_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_RAW_COPPER_BLOCK.get()).getPath(), modLoc("block/compressed_raw_copper_block"));
 
         //Other
         singleTextureGenerated(ItemRegistration.COMPRESSED_GOLD_NUGGET.get(), "item/compressed/materials/compressed_gold_nugget");
@@ -67,190 +67,190 @@ public class ucItemModels extends BaseItemModelProvider
         singleTextureGenerated(ItemRegistration.COMPRESSED_QUARTZ.get(), "item/compressed/materials/compressed_quartz");
 
         //Basic Blocks
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_ANDESITE_ITEM.get()).getPath(), modLoc("block/compressed_andesite"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CALCITE_ITEM.get()).getPath(), modLoc("block/compressed_calcite"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_COBBLED_DEEPSLATE_ITEM.get()).getPath(), modLoc("block/compressed_cobbled_deepslate"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_COBBLESTONE_ITEM.get()).getPath(), modLoc("block/compressed_cobblestone"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DEEPSLATE_ITEM.get()).getPath(), modLoc("block/compressed_deepslate"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DIORITE_ITEM.get()).getPath(), modLoc("block/compressed_diorite"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DIRT_ITEM.get()).getPath(), modLoc("block/compressed_dirt"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GRANITE_ITEM.get()).getPath(), modLoc("block/compressed_granite"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GRAVEL_ITEM.get()).getPath(), modLoc("block/compressed_gravel"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_NETHERRACK_ITEM.get()).getPath(), modLoc("block/compressed_netherrack"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_RED_SAND_ITEM.get()).getPath(), modLoc("block/compressed_red_sand"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_SAND_ITEM.get()).getPath(), modLoc("block/compressed_sand"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_STONE_ITEM.get()).getPath(), modLoc("block/compressed_stone"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_TUFF_ITEM.get()).getPath(), modLoc("block/compressed_tuff"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CLAY_ITEM.get()).getPath(), modLoc("block/compressed_clay"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_MOSSY_COBBLESTONE_ITEM.get()).getPath(), modLoc("block/compressed_mossy_cobblestone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_ANDESITE.get()).getPath(), modLoc("block/compressed_andesite"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CALCITE.get()).getPath(), modLoc("block/compressed_calcite"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_COBBLED_DEEPSLATE.get()).getPath(), modLoc("block/compressed_cobbled_deepslate"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_COBBLESTONE.get()).getPath(), modLoc("block/compressed_cobblestone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DEEPSLATE.get()).getPath(), modLoc("block/compressed_deepslate"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DIORITE.get()).getPath(), modLoc("block/compressed_diorite"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DIRT.get()).getPath(), modLoc("block/compressed_dirt"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GRANITE.get()).getPath(), modLoc("block/compressed_granite"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GRAVEL.get()).getPath(), modLoc("block/compressed_gravel"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_NETHERRACK.get()).getPath(), modLoc("block/compressed_netherrack"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_RED_SAND.get()).getPath(), modLoc("block/compressed_red_sand"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SAND.get()).getPath(), modLoc("block/compressed_sand"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_STONE.get()).getPath(), modLoc("block/compressed_stone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_TUFF.get()).getPath(), modLoc("block/compressed_tuff"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CLAY.get()).getPath(), modLoc("block/compressed_clay"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MOSSY_COBBLESTONE.get()).getPath(), modLoc("block/compressed_mossy_cobblestone"));
 
         //Polished Blocks
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_POLISHED_ANDESITE_ITEM.get()).getPath(), modLoc("block/compressed_polished_andesite"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_POLISHED_BASALT_ITEM.get()).getPath(), modLoc("block/compressed_polished_basalt"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_POLISHED_DEEPSLATE_ITEM.get()).getPath(), modLoc("block/compressed_polished_deepslate"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_POLISHED_BLACKSTONE_ITEM.get()).getPath(), modLoc("block/compressed_polished_blackstone"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_polished_blackstone_bricks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_POLISHED_DIORITE_ITEM.get()).getPath(), modLoc("block/compressed_polished_diorite"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_POLISHED_GRANITE_ITEM.get()).getPath(), modLoc("block/compressed_polished_granite"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_POLISHED_ANDESITE.get()).getPath(), modLoc("block/compressed_polished_andesite"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_POLISHED_BASALT.get()).getPath(), modLoc("block/compressed_polished_basalt"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_POLISHED_DEEPSLATE.get()).getPath(), modLoc("block/compressed_polished_deepslate"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_POLISHED_BLACKSTONE.get()).getPath(), modLoc("block/compressed_polished_blackstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_POLISHED_BLACKSTONE_BRICKS.get()).getPath(), modLoc("block/compressed_polished_blackstone_bricks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_POLISHED_DIORITE.get()).getPath(), modLoc("block/compressed_polished_diorite"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_POLISHED_GRANITE.get()).getPath(), modLoc("block/compressed_polished_granite"));
 
         //Smooth Blocks
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_SMOOTH_BASALT_ITEM.get()).getPath(), modLoc("block/compressed_smooth_basalt"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_SMOOTH_STONE_ITEM.get()).getPath(), modLoc("block/compressed_smooth_stone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SMOOTH_BASALT.get()).getPath(), modLoc("block/compressed_smooth_basalt"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SMOOTH_STONE.get()).getPath(), modLoc("block/compressed_smooth_stone"));
 
         //Stone Bricks
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CHISELED_STONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_stone_bricks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CRACKED_STONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_cracked_stone_bricks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_MOSSY_STONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_mossy_stone_bricks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_STONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_stone_bricks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CHISELED_STONE_BRICKS.get()).getPath(), modLoc("block/compressed_chiseled_stone_bricks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CRACKED_STONE_BRICKS.get()).getPath(), modLoc("block/compressed_cracked_stone_bricks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MOSSY_STONE_BRICKS.get()).getPath(), modLoc("block/compressed_mossy_stone_bricks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_STONE_BRICKS.get()).getPath(), modLoc("block/compressed_stone_bricks"));
 
         //Sandstone
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CHISELED_SANDSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_sandstone"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CHISELED_RED_SANDSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_red_sandstone"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CUT_SANDSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_sandstone"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CUT_RED_SANDSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_red_sandstone"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_SANDSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_sandstone"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_RED_SANDSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_red_sandstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CHISELED_SANDSTONE.get()).getPath(), modLoc("block/compressed_chiseled_sandstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CHISELED_RED_SANDSTONE.get()).getPath(), modLoc("block/compressed_chiseled_red_sandstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CUT_SANDSTONE.get()).getPath(), modLoc("block/compressed_chiseled_sandstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CUT_RED_SANDSTONE.get()).getPath(), modLoc("block/compressed_chiseled_red_sandstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SANDSTONE.get()).getPath(), modLoc("block/compressed_chiseled_sandstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_RED_SANDSTONE.get()).getPath(), modLoc("block/compressed_chiseled_red_sandstone"));
 
         //Nether Blocks
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_NETHER_QUARTZ_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_nether_quartz_block"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BASALT_ITEM.get()).getPath(), modLoc("block/compressed_basalt"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BLACKSTONE_ITEM.get()).getPath(), modLoc("block/compressed_blackstone"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CHISELED_POLISHED_BLACKSTONE_ITEM.get()).getPath(), modLoc("block/compressed_chiseled_polished_blackstone"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS_ITEM.get()).getPath(), modLoc("block/compressed_cracked_polished_blackstone_bricks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GILDED_BLACKSTONE_ITEM.get()).getPath(), modLoc("block/compressed_gilded_blackstone"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GLOWSTONE_ITEM.get()).getPath(), modLoc("block/compressed_glowstone"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_MAGMA_ITEM.get()).getPath(), modLoc("block/compressed_magma"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_SOUL_SAND_ITEM.get()).getPath(), modLoc("block/compressed_soul_sand"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_SOUL_SOIL_ITEM.get()).getPath(), modLoc("block/compressed_soul_soil"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_NETHER_QUARTZ_BLOCK.get()).getPath(), modLoc("block/compressed_nether_quartz_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BASALT.get()).getPath(), modLoc("block/compressed_basalt"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BLACKSTONE.get()).getPath(), modLoc("block/compressed_blackstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CHISELED_POLISHED_BLACKSTONE.get()).getPath(), modLoc("block/compressed_chiseled_polished_blackstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CRACKED_POLISHED_BLACKSTONE_BRICKS.get()).getPath(), modLoc("block/compressed_cracked_polished_blackstone_bricks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GILDED_BLACKSTONE.get()).getPath(), modLoc("block/compressed_gilded_blackstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GLOWSTONE.get()).getPath(), modLoc("block/compressed_glowstone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MAGMA.get()).getPath(), modLoc("block/compressed_magma"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SOUL_SAND.get()).getPath(), modLoc("block/compressed_soul_sand"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SOUL_SOIL.get()).getPath(), modLoc("block/compressed_soul_soil"));
 
         //Logs & Planks
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_ACACIA_LOG_ITEM.get()).getPath(), modLoc("block/compressed_acacia_log"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_ACACIA_PLANKS_ITEM.get()).getPath(), modLoc("block/compressed_acacia_planks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BIRCH_LOG_ITEM.get()).getPath(), modLoc("block/compressed_birch_log"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BIRCH_PLANKS_ITEM.get()).getPath(), modLoc("block/compressed_birch_planks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DARK_OAK_LOG_ITEM.get()).getPath(), modLoc("block/compressed_dark_oak_log"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_DARK_OAK_PLANKS_ITEM.get()).getPath(), modLoc("block/compressed_dark_oak_planks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_JUNGLE_LOG_ITEM.get()).getPath(), modLoc("block/compressed_jungle_log"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_JUNGLE_PLANKS_ITEM.get()).getPath(), modLoc("block/compressed_jungle_planks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_OAK_LOG_ITEM.get()).getPath(), modLoc("block/compressed_oak_log"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_OAK_PLANKS_ITEM.get()).getPath(), modLoc("block/compressed_oak_planks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_SPRUCE_LOG_ITEM.get()).getPath(), modLoc("block/compressed_spruce_log"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_SPRUCE_PLANKS_ITEM.get()).getPath(), modLoc("block/compressed_spruce_planks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_SPRUCE_CRIMSON_STEM_ITEM.get()).getPath(), modLoc("block/compressed_crimson_stem"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CRIMSON_PLANKS_ITEM.get()).getPath(), modLoc("block/compressed_crimson_planks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_WARPED_STEM_ITEM.get()).getPath(), modLoc("block/compressed_warped_stem"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_WARPED_PLANKS_ITEM.get()).getPath(), modLoc("block/compressed_warped_planks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_MANGROVE_LOG_ITEM.get()).getPath(), modLoc("block/compressed_mangrove_log"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_MANGROVE_PLANKS_ITEM.get()).getPath(), modLoc("block/compressed_mangrove_planks"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_MANGROVE_ROOTS_ITEM.get()).getPath(), modLoc("block/compressed_mangrove_roots"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_ACACIA_LOG.get()).getPath(), modLoc("block/compressed_acacia_log"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_ACACIA_PLANKS.get()).getPath(), modLoc("block/compressed_acacia_planks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BIRCH_LOG.get()).getPath(), modLoc("block/compressed_birch_log"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BIRCH_PLANKS.get()).getPath(), modLoc("block/compressed_birch_planks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DARK_OAK_LOG.get()).getPath(), modLoc("block/compressed_dark_oak_log"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DARK_OAK_PLANKS.get()).getPath(), modLoc("block/compressed_dark_oak_planks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_JUNGLE_LOG.get()).getPath(), modLoc("block/compressed_jungle_log"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_JUNGLE_PLANKS.get()).getPath(), modLoc("block/compressed_jungle_planks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_OAK_LOG.get()).getPath(), modLoc("block/compressed_oak_log"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_OAK_PLANKS.get()).getPath(), modLoc("block/compressed_oak_planks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SPRUCE_LOG.get()).getPath(), modLoc("block/compressed_spruce_log"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SPRUCE_PLANKS.get()).getPath(), modLoc("block/compressed_spruce_planks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SPRUCE_CRIMSON_STEM.get()).getPath(), modLoc("block/compressed_crimson_stem"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CRIMSON_PLANKS.get()).getPath(), modLoc("block/compressed_crimson_planks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_WARPED_STEM.get()).getPath(), modLoc("block/compressed_warped_stem"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_WARPED_PLANKS.get()).getPath(), modLoc("block/compressed_warped_planks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MANGROVE_LOG.get()).getPath(), modLoc("block/compressed_mangrove_log"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MANGROVE_PLANKS.get()).getPath(), modLoc("block/compressed_mangrove_planks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MANGROVE_ROOTS.get()).getPath(), modLoc("block/compressed_mangrove_roots"));
 
         //Wool
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BLACK_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_black_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BLUE_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_blue_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BROWN_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_brown_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CYAN_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_cyan_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GRAY_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_gray_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GREEN_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_green_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LIGHT_BLUE_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_light_blue_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LIGHT_GRAY_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_light_gray_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LIME_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_lime_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_MAGENTA_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_magenta_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_ORANGE_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_orange_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_PINK_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_pink_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_PURPLE_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_purple_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_RED_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_red_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_WHITE_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_white_wool"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_YELLOW_WOOL_ITEM.get()).getPath(), modLoc("block/compressed_yellow_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BLACK_WOOL.get()).getPath(), modLoc("block/compressed_black_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BLUE_WOOL.get()).getPath(), modLoc("block/compressed_blue_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BROWN_WOOL.get()).getPath(), modLoc("block/compressed_brown_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CYAN_WOOL.get()).getPath(), modLoc("block/compressed_cyan_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GRAY_WOOL.get()).getPath(), modLoc("block/compressed_gray_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GREEN_WOOL.get()).getPath(), modLoc("block/compressed_green_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LIGHT_BLUE_WOOL.get()).getPath(), modLoc("block/compressed_light_blue_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LIGHT_GRAY_WOOL.get()).getPath(), modLoc("block/compressed_light_gray_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LIME_WOOL.get()).getPath(), modLoc("block/compressed_lime_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MAGENTA_WOOL.get()).getPath(), modLoc("block/compressed_magenta_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_ORANGE_WOOL.get()).getPath(), modLoc("block/compressed_orange_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_PINK_WOOL.get()).getPath(), modLoc("block/compressed_pink_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_PURPLE_WOOL.get()).getPath(), modLoc("block/compressed_purple_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_RED_WOOL.get()).getPath(), modLoc("block/compressed_red_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_WHITE_WOOL.get()).getPath(), modLoc("block/compressed_white_wool"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_YELLOW_WOOL.get()).getPath(), modLoc("block/compressed_yellow_wool"));
 
         //Concrete
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BLACK_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_black_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BLUE_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_blue_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BROWN_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_brown_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CYAN_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_cyan_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GRAY_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_gray_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GREEN_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_green_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LIGHT_BLUE_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_light_blue_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LIGHT_GRAY_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_light_gray_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LIME_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_lime_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_MAGENTA_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_magenta_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_ORANGE_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_orange_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_PINK_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_pink_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_PURPLE_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_purple_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_RED_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_red_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_WHITE_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_white_concrete"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_YELLOW_CONCRETE_ITEM.get()).getPath(), modLoc("block/compressed_yellow_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BLACK_CONCRETE.get()).getPath(), modLoc("block/compressed_black_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BLUE_CONCRETE.get()).getPath(), modLoc("block/compressed_blue_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BROWN_CONCRETE.get()).getPath(), modLoc("block/compressed_brown_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CYAN_CONCRETE.get()).getPath(), modLoc("block/compressed_cyan_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GRAY_CONCRETE.get()).getPath(), modLoc("block/compressed_gray_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GREEN_CONCRETE.get()).getPath(), modLoc("block/compressed_green_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LIGHT_BLUE_CONCRETE.get()).getPath(), modLoc("block/compressed_light_blue_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LIGHT_GRAY_CONCRETE.get()).getPath(), modLoc("block/compressed_light_gray_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LIME_CONCRETE.get()).getPath(), modLoc("block/compressed_lime_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MAGENTA_CONCRETE.get()).getPath(), modLoc("block/compressed_magenta_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_ORANGE_CONCRETE.get()).getPath(), modLoc("block/compressed_orange_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_PINK_CONCRETE.get()).getPath(), modLoc("block/compressed_pink_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_PURPLE_CONCRETE.get()).getPath(), modLoc("block/compressed_purple_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_RED_CONCRETE.get()).getPath(), modLoc("block/compressed_red_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_WHITE_CONCRETE.get()).getPath(), modLoc("block/compressed_white_concrete"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_YELLOW_CONCRETE.get()).getPath(), modLoc("block/compressed_yellow_concrete"));
 
         //Concrete Powder
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BLACK_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_black_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BLUE_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_blue_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BROWN_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_brown_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CYAN_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_cyan_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GRAY_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_gray_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GREEN_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_green_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LIGHT_BLUE_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_light_blue_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LIGHT_GRAY_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_light_gray_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LIME_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_lime_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_MAGENTA_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_magenta_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_ORANGE_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_orange_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_PINK_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_pink_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_PURPLE_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_purple_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_RED_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_red_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_WHITE_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_white_concrete_powder"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_YELLOW_CONCRETE_POWDER_ITEM.get()).getPath(), modLoc("block/compressed_yellow_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BLACK_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_black_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BLUE_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_blue_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BROWN_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_brown_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CYAN_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_cyan_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GRAY_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_gray_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GREEN_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_green_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LIGHT_BLUE_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_light_blue_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LIGHT_GRAY_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_light_gray_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LIME_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_lime_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MAGENTA_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_magenta_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_ORANGE_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_orange_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_PINK_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_pink_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_PURPLE_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_purple_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_RED_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_red_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_WHITE_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_white_concrete_powder"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_YELLOW_CONCRETE_POWDER.get()).getPath(), modLoc("block/compressed_yellow_concrete_powder"));
 
         //Snow
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_SNOW_BLOCK_ITEM.get()).getPath(), modLoc("block/compressed_snow_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SNOW_BLOCK.get()).getPath(), modLoc("block/compressed_snow_block"));
 
         //Sculk
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_SCULK_ITEM.get()).getPath(), modLoc("block/compressed_sculk"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_SCULK_CATALYST_ITEM.get()).getPath(), modLoc("block/compressed_sculk_catalyst"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SCULK.get()).getPath(), modLoc("block/compressed_sculk"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SCULK_CATALYST.get()).getPath(), modLoc("block/compressed_sculk_catalyst"));
 
         //Glass Blocks
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_black_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_blue_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_BROWN_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_brown_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_CYAN_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_cyan_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GRAY_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_gray_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_GREEN_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_green_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LIGHT_BLUE_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_light_blue_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LIGHT_GRAY_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_light_gray_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_LIME_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_lime_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_MAGENTA_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_magenta_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_ORANGE_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_orange_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_PINK_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_pink_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_PURPLE_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_purple_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_RED_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_red_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_white_stained_glass"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_ITEM.get()).getPath(), modLoc("block/compressed_yellow_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GLASS.get()).getPath(), modLoc("block/compressed_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BLACK_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_black_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BLUE_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_blue_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BROWN_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_brown_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CYAN_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_cyan_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GRAY_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_gray_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_GREEN_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_green_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LIGHT_BLUE_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_light_blue_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LIGHT_GRAY_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_light_gray_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LIME_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_lime_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MAGENTA_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_magenta_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_ORANGE_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_orange_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_PINK_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_pink_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_PURPLE_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_purple_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_RED_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_red_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_WHITE_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_white_stained_glass"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_YELLOW_STAINED_GLASS.get()).getPath(), modLoc("block/compressed_yellow_stained_glass"));
 
         //Glass Panes
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_BLACK_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_black_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_BLUE_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_blue_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_BROWN_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_brown_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_CYAN_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_cyan_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_GRAY_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_gray_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_GREEN_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_green_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_LIGHT_BLUE_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_light_blue_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_LIGHT_GRAY_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_light_gray_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_LIME_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_lime_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_MAGENTA_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_magenta_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_ORANGE_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_orange_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_PINK_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_pink_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_PURPLE_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_purple_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_RED_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_red_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_white_stained_glass", "translucent");
-        singleTextureGeneratedWithRenderType(BlockRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE_ITEM.get(), "block/compressed/glass/compressed_yellow_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_GLASS_PANE.get(), "block/compressed/glass/compressed_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_BLACK_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_black_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_BLUE_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_blue_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_BROWN_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_brown_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_CYAN_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_cyan_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_GRAY_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_gray_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_GREEN_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_green_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_LIGHT_BLUE_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_light_blue_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_LIGHT_GRAY_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_light_gray_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_LIME_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_lime_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_MAGENTA_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_magenta_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_ORANGE_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_orange_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_PINK_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_pink_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_PURPLE_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_purple_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_RED_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_red_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_WHITE_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_white_stained_glass", "translucent");
+        singleTextureGeneratedWithRenderType(ItemRegistration.COMPRESSED_YELLOW_STAINED_GLASS_PANE.get(), "block/compressed/glass/compressed_yellow_stained_glass", "translucent");
 
         //Obsidian
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.COMPRESSED_OBSIDIAN_ITEM.get()).getPath(), modLoc("block/compressed_obsidian"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_OBSIDIAN.get()).getPath(), modLoc("block/compressed_obsidian"));
 
         //Compressors
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.IRON_COMPRESSOR_ITEM.get()).getPath(), modLoc("block/iron_compressor"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.GOLDEN_COMPRESSOR_ITEM.get()).getPath(), modLoc("block/golden_compressor"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.DIAMOND_COMPRESSOR_ITEM.get()).getPath(), modLoc("block/diamond_compressor"));
-        withExistingParent(ForgeRegistries.ITEMS.getKey(BlockRegistration.NETHERITE_COMPRESSOR_ITEM.get()).getPath(), modLoc("block/netherite_compressor"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.IRON_COMPRESSOR.get()).getPath(), modLoc("block/iron_compressor"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.GOLDEN_COMPRESSOR.get()).getPath(), modLoc("block/golden_compressor"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.DIAMOND_COMPRESSOR.get()).getPath(), modLoc("block/diamond_compressor"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.NETHERITE_COMPRESSOR.get()).getPath(), modLoc("block/netherite_compressor"));
 
         singleTextureGenerated(ItemRegistration.COMPRESSED_RAW_IRON.get(), "item/compressed/materials/compressed_raw_iron");
         singleTextureGenerated(ItemRegistration.COMPRESSED_IRON_INGOT.get(), "item/compressed/materials/compressed_iron_ingot");

@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class NetheriteCompressorBlockScreen extends AbstractContainerScreen<NetheriteCompressorBlockMenu>
 {
-    private static final ResourceLocation TEXTURE = new ResourceLocation(UltimateCompression.MODID, "textures/gui/compressor_gui.png");
+    private static final ResourceLocation TEXTURE = new ResourceLocation(UltimateCompression.MODID, "textures/gui/netherite_compressor_gui.png");
 
     public NetheriteCompressorBlockScreen(NetheriteCompressorBlockMenu menu, Inventory inventory, Component title)
     {

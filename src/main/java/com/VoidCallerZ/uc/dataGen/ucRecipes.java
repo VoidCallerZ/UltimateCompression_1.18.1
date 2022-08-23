@@ -24,7 +24,7 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorRecipe(Items.IRON_INGOT, ItemRegistration.COMPRESSED_COAL.get(), Items.GOLD_BLOCK, BlockRegistration.IRON_COMPRESSOR.get(), consumer);
         CompressorRecipe(ItemRegistration.COMPRESSED_IRON_INGOT.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), Items.DIAMOND_BLOCK, BlockRegistration.GOLDEN_COMPRESSOR.get(), consumer);
         CompressorRecipe(ItemRegistration.COMPRESSED_GOLD_INGOT.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), Items.NETHERITE_BLOCK, BlockRegistration.DIAMOND_COMPRESSOR.get(), consumer);
-        CompressorRecipe(ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), BlockRegistration.COMPRESSED_DIAMOND_BLOCK_ITEM.get(), BlockRegistration.NETHERITE_COMPRESSOR.get(), consumer);
+        CompressorRecipe(ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), ItemRegistration.COMPRESSED_DIAMOND_BLOCK.get(), BlockRegistration.NETHERITE_COMPRESSOR.get(), consumer);
 
         //Compression & decompression of most blocks
         //Material Blocks
@@ -267,35 +267,35 @@ public class ucRecipes extends BaseRecipeProvider
         //TOOLSItemRegistration
         //Pickaxes
         CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_PICKAXE.get(), BlockRegistration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.PICKAXE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_PICKAXE.get(), BlockRegistration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.PICKAXE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_PICKAXE.get(), ItemRegistration.COMPRESSED_COBBLESTONE.get(), ToolType.PICKAXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_PICKAXE.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), ToolType.PICKAXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_PICKAXE.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), ToolType.PICKAXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_PICKAXE.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), ToolType.PICKAXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_PICKAXE.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.PICKAXE, consumer);
         //Axes
         CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_AXE.get(), BlockRegistration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.AXE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_AXE.get(), BlockRegistration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.AXE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_AXE.get(), ItemRegistration.COMPRESSED_COBBLESTONE.get(), ToolType.AXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_AXE.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), ToolType.AXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_AXE.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), ToolType.AXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_AXE.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), ToolType.AXE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_AXE.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.AXE, consumer);
         //Shovels
         CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_SHOVEL.get(), BlockRegistration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.SHOVEL, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_SHOVEL.get(), BlockRegistration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.SHOVEL, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_SHOVEL.get(), ItemRegistration.COMPRESSED_COBBLESTONE.get(), ToolType.SHOVEL, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_SHOVEL.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), ToolType.SHOVEL, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_SHOVEL.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), ToolType.SHOVEL, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_SHOVEL.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), ToolType.SHOVEL, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_SHOVEL.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.SHOVEL, consumer);
         //Swords
         CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_SWORD.get(), BlockRegistration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.SWORD, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_SWORD.get(), BlockRegistration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.SWORD, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_SWORD.get(), ItemRegistration.COMPRESSED_COBBLESTONE.get(), ToolType.SWORD, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_SWORD.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), ToolType.SWORD, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_SWORD.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), ToolType.SWORD, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_SWORD.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), ToolType.SWORD, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_SWORD.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.SWORD, consumer);
         //Hoes
         CompressedWoodenToolRecipeBuilder(ToolRegistration.COMPRESSED_WOODEN_HOE.get(), BlockRegistration.COMPRESSED_PLANKS_FOR_TOOLS, ToolType.HOE, consumer);
-        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_HOE.get(), BlockRegistration.COMPRESSED_COBBLESTONE_ITEM.get(), ToolType.HOE, consumer);
+        CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_STONE_HOE.get(), ItemRegistration.COMPRESSED_COBBLESTONE.get(), ToolType.HOE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_IRON_HOE.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), ToolType.HOE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_GOLD_HOE.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), ToolType.HOE, consumer);
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_DIAMOND_HOE.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), ToolType.HOE, consumer);
