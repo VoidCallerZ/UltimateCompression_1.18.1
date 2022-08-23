@@ -82,7 +82,7 @@ public class DiamondCompressorBlockEntity extends BlockEntity implements MenuPro
     @Override
     public Component getDisplayName()
     {
-        return Component.literal("Ultimate Compressor");
+        return Component.literal("Diamond Compressor - Tier III");
     }
 
     @Nullable

@@ -1,6 +1,6 @@
 package com.VoidCallerZ.uc.blocks;
 
-import com.VoidCallerZ.uc.blocks.entity.custom.UcSculkCatalystBlockEntity;
+import com.VoidCallerZ.uc.blocks.entity.UcSculkCatalystBlockEntity;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;

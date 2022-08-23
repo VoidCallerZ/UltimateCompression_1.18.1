@@ -14,7 +14,7 @@ import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlockMenu;
 import com.VoidCallerZ.uc.blocks.compressor.netherite.NetheriteCompressorBlock;
 import com.VoidCallerZ.uc.blocks.compressor.netherite.NetheriteCompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.compressor.netherite.NetheriteCompressorBlockMenu;
-import com.VoidCallerZ.uc.blocks.entity.custom.UcSculkCatalystBlockEntity;
+import com.VoidCallerZ.uc.blocks.entity.UcSculkCatalystBlockEntity;
 import com.VoidCallerZ.uc.blocks.glass.UcGlassBlock;
 import com.VoidCallerZ.uc.blocks.glass.UcGlassPaneBlock;
 import com.VoidCallerZ.uc.blocks.glass.UcStainedGlassBlock;

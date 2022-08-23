@@ -82,7 +82,7 @@ public class GoldenCompressorBlockEntity extends BlockEntity implements MenuProv
     @Override
     public Component getDisplayName()
     {
-        return Component.literal("Ultimate Compressor");
+        return Component.literal("Golden Compressor - Tier II");
     }
 
     @Nullable

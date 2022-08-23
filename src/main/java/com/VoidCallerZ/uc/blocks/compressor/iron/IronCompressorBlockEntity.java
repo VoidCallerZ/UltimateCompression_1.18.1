@@ -82,7 +82,7 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
     @Override
     public Component getDisplayName()
     {
-        return Component.literal("Ultimate Compressor");
+        return Component.literal("Iron Compressor - Tier I");
     }
 
     @Nullable

@@ -82,7 +82,7 @@ public class NetheriteCompressorBlockEntity extends BlockEntity implements MenuP
     @Override
     public Component getDisplayName()
     {
-        return Component.literal("Ultimate Compressor");
+        return Component.literal("Netherite Compressor - Tier IV");
     }
 
     @Nullable

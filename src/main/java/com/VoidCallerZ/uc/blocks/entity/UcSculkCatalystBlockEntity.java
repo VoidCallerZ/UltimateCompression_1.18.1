@@ -1,4 +1,4 @@
-package com.VoidCallerZ.uc.blocks.entity.custom;
+package com.VoidCallerZ.uc.blocks.entity;
 
 import com.VoidCallerZ.uc.blocks.UcSculkCatalystBlock;
 import net.minecraft.advancements.CriteriaTriggers;
@@ -11,7 +11,6 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.SculkCatalystBlock;
 import net.minecraft.world.level.block.SculkSpreader;
 import net.minecraft.world.level.block.entity.SculkCatalystBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -43,11 +42,7 @@ public class UcSculkCatalystBlockEntity extends SculkCatalystBlockEntity
 
     public boolean handleGameEvent(ServerLevel level, GameEvent.Message message)
     {
-        if (this.isRemoved())
-        {
-            return false;
-        }
-        else
+        if (!this.isRemoved())
         {
             GameEvent.Context gameevent$context = message.context();
             if (message.gameEvent() == GameEvent.ENTITY_DIE)
@@ -76,8 +71,8 @@ public class UcSculkCatalystBlockEntity extends SculkCatalystBlockEntity
                     return true;
                 }
             }
-            return false;
         }
+        return false;
     }
 
     public static void serverTick(Level level, BlockPos pos, BlockState state, UcSculkCatalystBlockEntity entity)
