@@ -8,8 +8,10 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.RegistryObject;
 
 public class ucItemTags extends ItemTagsProvider
 {
@@ -55,25 +57,16 @@ public class ucItemTags extends ItemTagsProvider
                 .add(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get());
                 //.add(ItemRegistration.COMPRESSED_TIPPED_ARROW.get());
 
-//        tag(Registration.COMPRESSOR_VALIDS)
-//                .add(Items.IRON_INGOT)
-//                .add(Items.GOLD_INGOT)
-//                .add(Items.DIAMOND)
-//                .add(Items.COPPER_INGOT)
-//                .add(Items.COAL)
-//                .add(Items.EMERALD)
-//                .add(Items.LAPIS_LAZULI)
-//                .add(Items.REDSTONE)
-//                .add(Items.NETHERITE_INGOT)
-//                .add(Items.IRON_BLOCK)
-//                .add(Items.GOLD_BLOCK)
-//                .add(Items.DIAMOND_BLOCK)
-//                .add(Items.COPPER_BLOCK)
-//                .add(Items.COAL_BLOCK)
-//                .add(Items.EMERALD_BLOCK)
-//                .add(Items.LAPIS_BLOCK)
-//                .add(Items.REDSTONE_BLOCK)
-//                .add(Items.NETHERITE_BLOCK);
+        tag(BlockRegistration.COMPRESSOR_VALID_ITEMS)
+                .add(Items.IRON_INGOT)
+                .add(Items.GOLD_INGOT)
+                .add(Items.DIAMOND)
+                .add(Items.COPPER_INGOT)
+                .add(Items.COAL)
+                .add(Items.EMERALD)
+                .add(Items.LAPIS_LAZULI)
+                .add(Items.REDSTONE)
+                .add(Items.NETHERITE_INGOT);
 
         tag(BlockRegistration.COMPRESSED_PLANKS_FOR_TOOLS)
                 .add(ItemRegistration.COMPRESSED_ACACIA_PLANKS.get())

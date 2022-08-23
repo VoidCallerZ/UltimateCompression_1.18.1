@@ -2,6 +2,7 @@ package com.VoidCallerZ.uc.registration;
 
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.blocks.*;
+import com.VoidCallerZ.uc.blocks.compressor.TestCompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlock;
 import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlockMenu;
@@ -74,6 +75,7 @@ public class BlockRegistration
     public static final Item.Properties ITEM_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_COMPRESSION_TAB);
 
     public static final TagKey<Item> COMPRESSED_PLANKS_FOR_TOOLS = ItemTags.create(new ResourceLocation(UltimateCompression.MODID, "compressed_planks_for_tools"));
+    public static final TagKey<Item> COMPRESSOR_VALID_ITEMS = ItemTags.create(new ResourceLocation(MODID, "compressor_valid_items"));
 
     public static final RegistryObject<Item> UC_ICON = ITEMS.register("uc_icon", () -> new Item(new Item.Properties()));
 
