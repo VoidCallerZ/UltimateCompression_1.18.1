@@ -7,6 +7,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
@@ -33,6 +34,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import javax.annotation.Nonnull;
+import java.sql.Time;
 import java.util.Optional;
 
 public class IronCompressorBlockEntity extends BlockEntity implements MenuProvider
@@ -88,6 +90,8 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
     private int litTime;
 
     protected NonNullList<ItemStack> items = NonNullList.withSize(3, ItemStack.EMPTY);
+
+    private static int testInt = 0;
 
     public IronCompressorBlockEntity(BlockPos pWorldPosition, BlockState pBlockState)
     {
@@ -214,10 +218,12 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
 
     public static void tick(Level level, BlockPos pos, BlockState state, IronCompressorBlockEntity blockEntity)
     {
-        boolean flag = blockEntity.isLit();
         if (blockEntity.isLit())
         {
             blockEntity.litTime--;
+            state = state.setValue(IronCompressorBlock.LIT, true);
+            level.setBlock(pos, state, 3);
+            setChanged(level, pos, state);
         }
 
         if (hasRecipe(blockEntity) && hasCorrectAmountOfInputItems(blockEntity))
@@ -233,15 +239,11 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
         else
         {
             blockEntity.resetProgress();
-            state = state.setValue(IronCompressorBlock.LIT, Boolean.valueOf(blockEntity.isLit()));
-            level.setBlock(pos, state, 3);
-            setChanged(level, pos, state);
-        }
-
-        if (flag != blockEntity.isLit())
-        {
-            state = state.setValue(IronCompressorBlock.LIT, Boolean.valueOf(blockEntity.isLit()));
-            level.setBlock(pos, state, 3);
+            if (!hasEnoughItemsToCompress(blockEntity.inputItemHandler))
+            {
+                state = state.setValue(IronCompressorBlock.LIT, false);
+                level.setBlock(pos, state, 3);
+            }
             setChanged(level, pos, state);
         }
     }
@@ -296,6 +298,18 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
     private static boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory)
     {
         return inventory.getItem(1).getMaxStackSize() > inventory.getItem(1).getCount();
+    }
+
+    private static boolean hasEnoughItemsToCompress(ItemStackHandler handler)
+    {
+        if (!handler.getStackInSlot(0).isEmpty())
+        {
+            if (handler.getStackInSlot(0).getCount() >= 9)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
 }

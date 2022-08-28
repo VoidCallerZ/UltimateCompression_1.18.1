@@ -4,6 +4,7 @@ import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -117,5 +118,10 @@ public class IronCompressorBlock extends BaseEntityBlock
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntityType)
     {
         return createTickerHelper(blockEntityType, BlockRegistration.IRON_COMPRESSOR_BLOCK_ENTITY.get(), IronCompressorBlockEntity::tick);
+    }
+
+    public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random)
+    {
+        //particle animation + sound
     }
 }

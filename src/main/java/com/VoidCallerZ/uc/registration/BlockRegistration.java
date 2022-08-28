@@ -33,6 +33,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.common.extensions.IForgeMenuType;
@@ -42,6 +43,8 @@ import net.minecraftforge.network.IContainerFactory;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.ToIntFunction;
 
 import static com.VoidCallerZ.uc.UltimateCompression.MODID;
 
@@ -71,7 +74,7 @@ public class BlockRegistration
     public static final BlockBehaviour.Properties WOOL_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.WOOL).strength(0.8f);
     public static final BlockBehaviour.Properties GLASS_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.GLASS).strength(0.3f).sound(SoundType.GLASS).noOcclusion().isValidSpawn(BlockRegistration::never).isRedstoneConductor(BlockRegistration::never).isSuffocating(BlockRegistration::never).isViewBlocking(BlockRegistration::never);
     public static final BlockBehaviour.Properties OBSIDIAN_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(50, 1200).requiresCorrectToolForDrops();
-    public static final Item.Properties ITEM_PROPERTIES = new Item.Properties().tab(ModSetup.ULTIMATE_COMPRESSION_TAB);
+    public static final BlockBehaviour.Properties COMPRESSOR_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.METAL).lightLevel(litBlockEmission(15)).strength(2f).sound(SoundType.METAL).requiresCorrectToolForDrops();
 
     public static final TagKey<Item> COMPRESSED_PLANKS_FOR_TOOLS = ItemTags.create(new ResourceLocation(UltimateCompression.MODID, "compressed_planks_for_tools"));
     public static final TagKey<Item> COMPRESSOR_VALID_ITEMS = ItemTags.create(new ResourceLocation(MODID, "compressor_valid_items"));
@@ -303,7 +306,7 @@ public class BlockRegistration
 
     //Compressor
     //Iron Compressor
-    public static final RegistryObject<IronCompressorBlock> IRON_COMPRESSOR = BLOCKS.register("iron_compressor", () -> new IronCompressorBlock(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<IronCompressorBlock> IRON_COMPRESSOR = BLOCKS.register("iron_compressor", () -> new IronCompressorBlock(COMPRESSOR_BLOCK_PROPERTIES));
     public static final RegistryObject<BlockEntityType<IronCompressorBlockEntity>> IRON_COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("iron_compressor_block_entity", () -> BlockEntityType.Builder.of(IronCompressorBlockEntity::new, IRON_COMPRESSOR.get()).build(null));
     public static final RegistryObject<MenuType<IronCompressorBlockMenu>> IRON_COMPRESSOR_BLOCK_MENU = registerMenuType(IronCompressorBlockMenu::new, "iron_compressor_block_menu");
 
@@ -335,5 +338,11 @@ public class BlockRegistration
     private static boolean never(BlockState state, BlockGetter level, BlockPos pos)
     {
         return false;
+    }
+
+    private static ToIntFunction<BlockState> litBlockEmission(int lightValue)
+    {
+        return (state) ->
+                state.getValue(BlockStateProperties.LIT) ? lightValue : 0;
     }
 }
