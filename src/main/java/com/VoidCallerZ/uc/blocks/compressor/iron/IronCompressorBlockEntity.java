@@ -84,7 +84,8 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 100;
+    private int maxProgress = 70;
+    private int litTime;
 
     protected NonNullList<ItemStack> items = NonNullList.withSize(3, ItemStack.EMPTY);
 
@@ -100,6 +101,7 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
                 {
                     case 0: return IronCompressorBlockEntity.this.progress;
                     case 1: return IronCompressorBlockEntity.this.maxProgress;
+                    case 2: return IronCompressorBlockEntity.this.litTime;
                     default: return 0;
                 }
             }
@@ -111,6 +113,7 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
                 {
                     case 0: IronCompressorBlockEntity.this.progress = value; break;
                     case 1: IronCompressorBlockEntity.this.maxProgress = value; break;
+                    case 2: IronCompressorBlockEntity.this.litTime = value; break;
                 }
             }
 
@@ -181,15 +184,22 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
     {
         tag.put("inventory", inputItemHandler.serializeNBT());
         tag.putInt("compressor.progress", progress);
+        tag.putInt("BurnTime", litTime);
         super.saveAdditional(tag);
     }
 
     @Override
-    public void load(CompoundTag nbt)
+    public void load(CompoundTag tag)
     {
-        super.load(nbt);
-        inputItemHandler.deserializeNBT(nbt.getCompound("inventory"));
-        progress = nbt.getInt("compressor.progress");
+        super.load(tag);
+        inputItemHandler.deserializeNBT(tag.getCompound("inventory"));
+        progress = tag.getInt("compressor.progress");
+        litTime = tag.getInt("BurnTime");
+    }
+
+    private boolean isLit()
+    {
+        return this.litTime > 0;
     }
 
     public void drops()
@@ -204,8 +214,15 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
 
     public static void tick(Level level, BlockPos pos, BlockState state, IronCompressorBlockEntity blockEntity)
     {
+        boolean flag = blockEntity.isLit();
+        if (blockEntity.isLit())
+        {
+            blockEntity.litTime--;
+        }
+
         if (hasRecipe(blockEntity) && hasCorrectAmountOfInputItems(blockEntity))
         {
+            blockEntity.litTime = blockEntity.progress;
             blockEntity.progress++;
             setChanged(level, pos, state);
             if (blockEntity.progress > blockEntity.maxProgress)
@@ -216,6 +233,15 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
         else
         {
             blockEntity.resetProgress();
+            state = state.setValue(IronCompressorBlock.LIT, Boolean.valueOf(blockEntity.isLit()));
+            level.setBlock(pos, state, 3);
+            setChanged(level, pos, state);
+        }
+
+        if (flag != blockEntity.isLit())
+        {
+            state = state.setValue(IronCompressorBlock.LIT, Boolean.valueOf(blockEntity.isLit()));
+            level.setBlock(pos, state, 3);
             setChanged(level, pos, state);
         }
     }
@@ -259,6 +285,7 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
     private void resetProgress()
     {
         this.progress = 0;
+        this.litTime = 0;
     }
 
     private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack output)

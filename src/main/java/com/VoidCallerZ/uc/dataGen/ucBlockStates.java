@@ -9,9 +9,12 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.IronBarsBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.client.model.generators.*;
 import net.minecraftforge.common.data.ExistingFileHelper;
+
+import java.util.function.Function;
 
 public class ucBlockStates extends BaseBlockStateProvider
 {
@@ -254,10 +257,14 @@ public class ucBlockStates extends BaseBlockStateProvider
     private void registerIronCompressor()
     {
         ResourceLocation FRONT_BACK = modLoc("block/compressor/iron/front_back");
+        ResourceLocation FRONT_BACK_LIT = modLoc("block/compressor/iron/front_back_lit");
         ResourceLocation SIDE = modLoc("block/compressor/iron/side");
         ResourceLocation TOP_BOTTOM = modLoc("block/compressor/iron/top_bottom");
 
-        horizontalBlock(BlockRegistration.IRON_COMPRESSOR.get(), models().cube("iron_compressor", TOP_BOTTOM, TOP_BOTTOM, FRONT_BACK, FRONT_BACK, SIDE, SIDE));
+        ModelFile blockOff = models().cube("iron_compressor", TOP_BOTTOM, TOP_BOTTOM, FRONT_BACK, FRONT_BACK, SIDE, SIDE);
+        ModelFile blockOn = models().cube("iron_compressor_lit", TOP_BOTTOM, TOP_BOTTOM, FRONT_BACK, FRONT_BACK_LIT, SIDE, SIDE);
+
+        compressorBlockWithLitState(BlockRegistration.IRON_COMPRESSOR.get(), blockOff, blockOn);
     }
 
     private void registerCompressor(Block block, String name, String materialName)

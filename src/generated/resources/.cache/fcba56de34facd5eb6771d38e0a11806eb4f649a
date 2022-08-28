@@ -1,4 +1,4 @@
-// 1.19.2	2022-08-22T20:26:00.2489428	Block States: uc
+// 1.19.2	2022-08-28T12:29:38.4466654	Block States: uc
 17dee2b51c09c019bdcfc795512e0f21c37f7870 assets/uc/blockstates/compressed_acacia_log.json
 47729bb940ddec3415b0e6eb9d865a6cedcd2ed6 assets/uc/blockstates/compressed_acacia_planks.json
 f86cad1a0b4189d5245a0e05c5a92b9f0666b1cd assets/uc/blockstates/compressed_andesite.json
@@ -182,7 +182,7 @@ b068ce040689758e03b001ebb5483a25449d3427 assets/uc/blockstates/compressed_yellow
 0c5abea38f351110858c080689c4ea43c9a76459 assets/uc/blockstates/compressed_yellow_wool.json
 9c6dc2fbb052b39600b88bb1cfa09e8ac2c11941 assets/uc/blockstates/diamond_compressor.json
 404b0c8a6f17a83af75f3d11a5a84729f9c519e7 assets/uc/blockstates/golden_compressor.json
-0ac159236135d1a9ae5b2b3f5dfa919e99f00f90 assets/uc/blockstates/iron_compressor.json
+2bc89e078aab5dbc54fa68d324b670ab523f15df assets/uc/blockstates/iron_compressor.json
 ee67e55c75da7c9ae856ed9d382bae78d9019617 assets/uc/blockstates/netherite_compressor.json
 9efad62faa5654f14f3ab317121675fd926f9565 assets/uc/models/block/compressed_acacia_log.json
 e31fe37da2e66c763b9e272373ffbe9799e07ade assets/uc/models/block/compressed_acacia_log_horizontal.json
@@ -449,4 +449,5 @@ c6120d2376f3b2721592f623a2070c6caad8ae1f assets/uc/models/block/compressed_yello
 51dd8a779d41923c48d1638b4e0f379b41fbd1c6 assets/uc/models/block/diamond_compressor.json
 b381646b5679dc5d2305bc48651b0d45c983d965 assets/uc/models/block/golden_compressor.json
 776b227b8af80bbfd00e879c1574cd71b7c2d620 assets/uc/models/block/iron_compressor.json
+c33149300906de8891840e8915e20e8ae5023eaf assets/uc/models/block/iron_compressor_lit.json
 0dc4b3b2c0a775895c9983c8a127527d5c3f9548 assets/uc/models/block/netherite_compressor.json

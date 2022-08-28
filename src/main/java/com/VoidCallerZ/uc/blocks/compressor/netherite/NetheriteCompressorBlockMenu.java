@@ -85,6 +85,13 @@ public class NetheriteCompressorBlockMenu extends AbstractContainerMenu
             if (!moveItemStackTo(sourceStack, VANILLA_FIRST_SLOT_INDEX, VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT, false)) {
                 return ItemStack.EMPTY;
             }
+            else if (index == 37)
+            {
+                if (!moveItemStackTo(sourceStack, VANILLA_FIRST_SLOT_INDEX, VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT, false))
+                {
+                    return ItemStack.EMPTY;
+                }
+            }
         } else {
             System.out.println("Invalid slotIndex:" + index);
             return ItemStack.EMPTY;

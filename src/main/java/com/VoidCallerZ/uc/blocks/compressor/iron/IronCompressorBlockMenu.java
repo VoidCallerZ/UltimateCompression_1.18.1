@@ -10,6 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraftforge.client.ClientCommandSourceStack;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -93,9 +94,15 @@ public class IronCompressorBlockMenu extends AbstractContainerMenu
                     return ItemStack.EMPTY;
                 }
             }
+            else if (index == 37)
+            {
+                if (!moveItemStackTo(sourceStack, VANILLA_FIRST_SLOT_INDEX, VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT, false))
+                {
+                    return ItemStack.EMPTY;
+                }
+            }
             else
             {
-                //System.out.println("Invalid slotIndex:" + index);
                 return ItemStack.EMPTY;
             }
             // If stack size == 0 (the entire stack was moved) set slot contents to null

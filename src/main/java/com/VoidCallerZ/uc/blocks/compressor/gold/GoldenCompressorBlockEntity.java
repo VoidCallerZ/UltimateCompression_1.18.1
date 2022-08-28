@@ -1,9 +1,12 @@
 package com.VoidCallerZ.uc.blocks.compressor.gold;
 
+import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlockEntity;
+import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlockMenu;
 import com.VoidCallerZ.uc.recipe.CompressorItemRecipe;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.Containers;
@@ -22,6 +25,7 @@ import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
+import net.minecraftforge.items.wrapper.CombinedInvWrapper;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -30,7 +34,26 @@ import java.util.Optional;
 
 public class GoldenCompressorBlockEntity extends BlockEntity implements MenuProvider
 {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(2)
+    private final ItemStackHandler inputItemHandler = new ItemStackHandler(1)
+    {
+        @Override
+        protected void onContentsChanged(int slot)
+        {
+            setChanged();
+        }
+
+        @Override
+        public boolean isItemValid(int slot, @NotNull ItemStack stack)
+        {
+            if (stack.is(BlockRegistration.COMPRESSOR_VALID_ITEMS))
+            {
+                return true;
+            }
+            return false;
+        }
+    };
+
+    private final ItemStackHandler outputItemHandler = new ItemStackHandler(1)
     {
         @Override
         protected void onContentsChanged(int slot)
@@ -39,11 +62,28 @@ public class GoldenCompressorBlockEntity extends BlockEntity implements MenuProv
         }
     };
 
-    private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
+    private final IItemHandler combinedItemHandler = new CombinedInvWrapper(inputItemHandler, outputItemHandler)
+    {
+        @Override
+        public boolean isItemValid(int slot, @NotNull ItemStack stack)
+        {
+            if (slot == 0 && stack.is(BlockRegistration.COMPRESSOR_VALID_ITEMS))
+            {
+                return true;
+            }
+            return false;
+        }
+    };
+
+    private LazyOptional<IItemHandler> lazyInputItemHandler = LazyOptional.empty();
+    private LazyOptional<IItemHandler> lazyOutputItemHandler = LazyOptional.empty();
+    private LazyOptional<IItemHandler> lazyCombinedItemHandler = LazyOptional.empty();
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 70;
+    private int maxProgress = 100;
+
+    protected NonNullList<ItemStack> items = NonNullList.withSize(3, ItemStack.EMPTY);
 
     public GoldenCompressorBlockEntity(BlockPos pWorldPosition, BlockState pBlockState)
     {
@@ -82,7 +122,7 @@ public class GoldenCompressorBlockEntity extends BlockEntity implements MenuProv
     @Override
     public Component getDisplayName()
     {
-        return Component.literal("Golden Compressor - Tier II");
+        return Component.literal("Gold Compressor - Tier II");
     }
 
     @Nullable
@@ -97,7 +137,20 @@ public class GoldenCompressorBlockEntity extends BlockEntity implements MenuProv
     public <T> LazyOptional<T> getCapability(@Nonnull Capability<T> cap, @javax.annotation.Nullable Direction side)
     {
         if (cap == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY)
-            return lazyItemHandler.cast();
+        {
+            if (side == null)
+            {
+                return lazyCombinedItemHandler.cast();
+            }
+            else if (side == Direction.DOWN)
+            {
+                return lazyOutputItemHandler.cast();
+            }
+            else if (side == Direction.UP || side == Direction.EAST || side == Direction.WEST || side == Direction.SOUTH)
+            {
+                return lazyInputItemHandler.cast();
+            }
+        }
 
         return super.getCapability(cap, side);
     }
@@ -106,20 +159,24 @@ public class GoldenCompressorBlockEntity extends BlockEntity implements MenuProv
     public void onLoad()
     {
         super.onLoad();
-        lazyItemHandler = LazyOptional.of(() -> itemHandler);
+        lazyInputItemHandler = LazyOptional.of(() -> inputItemHandler);
+        lazyOutputItemHandler = LazyOptional.of(() -> outputItemHandler);
+        lazyCombinedItemHandler = LazyOptional.of(() -> combinedItemHandler);
     }
 
     @Override
     public void invalidateCaps()
     {
         super.invalidateCaps();
-        lazyItemHandler.invalidate();
+        lazyInputItemHandler.invalidate();
+        lazyOutputItemHandler.invalidate();
+        lazyCombinedItemHandler.invalidate();
     }
 
     @Override
     protected void saveAdditional(@NotNull CompoundTag tag)
     {
-        tag.put("inventory", itemHandler.serializeNBT());
+        tag.put("inventory", inputItemHandler.serializeNBT());
         tag.putInt("compressor.progress", progress);
         super.saveAdditional(tag);
     }
@@ -128,18 +185,17 @@ public class GoldenCompressorBlockEntity extends BlockEntity implements MenuProv
     public void load(CompoundTag nbt)
     {
         super.load(nbt);
-        itemHandler.deserializeNBT(nbt.getCompound("inventory"));
+        inputItemHandler.deserializeNBT(nbt.getCompound("inventory"));
         progress = nbt.getInt("compressor.progress");
     }
 
     public void drops()
     {
-        SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
-        for (int i = 0; i < itemHandler.getSlots(); i++)
+        SimpleContainer inventory = new SimpleContainer(combinedItemHandler.getSlots());
+        for (int i = 0; i < combinedItemHandler.getSlots(); i++)
         {
-            inventory.setItem(i, itemHandler.getStackInSlot(i));
+            inventory.setItem(i, combinedItemHandler.getStackInSlot(i));
         }
-
         Containers.dropContents(this.level, this.worldPosition, inventory);
     }
 
@@ -164,38 +220,34 @@ public class GoldenCompressorBlockEntity extends BlockEntity implements MenuProv
     private static boolean hasRecipe(GoldenCompressorBlockEntity entity)
     {
         Level level = entity.level;
-        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
-        for (int i =0; i < entity.itemHandler.getSlots(); i++)
+        SimpleContainer inventory = new SimpleContainer(entity.combinedItemHandler.getSlots());
+        for (int i = 0; i < entity.combinedItemHandler.getSlots(); i++)
         {
-            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
+            inventory.setItem(i, entity.combinedItemHandler.getStackInSlot(i));
         }
-
         Optional<CompressorItemRecipe> match = level.getRecipeManager().getRecipeFor(CompressorItemRecipe.Type.INSTANCE, inventory, level);
-
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory) && canInsertItemIntoOutputSlot(inventory, match.get().getResultItem());
     }
 
     private static boolean hasCorrectAmountOfInputItems(GoldenCompressorBlockEntity entity)
     {
-        return entity.itemHandler.getStackInSlot(0).getCount() >= 9;
+        return entity.inputItemHandler.getStackInSlot(0).getCount() >= 9;
     }
 
     private static void craftItem(GoldenCompressorBlockEntity entity)
     {
         Level level = entity.level;
-        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
-        for (int i = 0; i < entity.itemHandler.getSlots(); i++)
+        SimpleContainer inventory = new SimpleContainer(entity.inputItemHandler.getSlots());
+        for (int i = 0; i < entity.inputItemHandler.getSlots(); i++)
         {
-            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
+            inventory.setItem(i, entity.inputItemHandler.getStackInSlot(i));
         }
-
         Optional<CompressorItemRecipe> match = level.getRecipeManager().getRecipeFor(CompressorItemRecipe.Type.INSTANCE, inventory, level);
 
         if (match.isPresent())
         {
-            entity.itemHandler.extractItem(0, 9, false);
-            entity.itemHandler.setStackInSlot(1, new ItemStack(match.get().getResultItem().getItem(),
-                    entity.itemHandler.getStackInSlot(1).getCount() + match.get().getResultItem().getCount()));
+            entity.inputItemHandler.extractItem(0, 9, false);
+            entity.outputItemHandler.setStackInSlot(0, new ItemStack(match.get().getResultItem().getItem(), entity.outputItemHandler.getStackInSlot(0).getCount() + match.get().getResultItem().getCount()));
 
             entity.resetProgress();
         }
@@ -215,4 +267,5 @@ public class GoldenCompressorBlockEntity extends BlockEntity implements MenuProv
     {
         return inventory.getItem(1).getMaxStackSize() > inventory.getItem(1).getCount();
     }
+
 }
