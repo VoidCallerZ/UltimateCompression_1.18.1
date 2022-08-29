@@ -251,6 +251,7 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.GOLDEN_COMPRESSOR.get()).getPath(), modLoc("block/golden_compressor"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.DIAMOND_COMPRESSOR.get()).getPath(), modLoc("block/diamond_compressor"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.NETHERITE_COMPRESSOR.get()).getPath(), modLoc("block/netherite_compressor"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.TEST_COMPRESSOR.get()).getPath(), modLoc("block/test_compressor"));
 
         singleTextureGenerated(ItemRegistration.COMPRESSED_RAW_IRON.get(), "item/compressed/materials/compressed_raw_iron");
         singleTextureGenerated(ItemRegistration.COMPRESSED_IRON_INGOT.get(), "item/compressed/materials/compressed_iron_ingot");

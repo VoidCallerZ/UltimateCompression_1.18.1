@@ -18,6 +18,8 @@ public class ucLanguageProvider extends LanguageProvider
         add("itemGroup." + UC_TOOLS_TAB, "Ultimate Tool Compression");
         add("itemGroup." + UC_FOOD_TAB, "Ultimate Food Compression");
 
+        add("sounds.uc.compressor_use", "Compressor Pressing");
+
         add(BlockRegistration.IRON_COMPRESSOR.get(), "Iron Compressor");
         add(BlockRegistration.GOLDEN_COMPRESSOR.get(), "Golden Compressor");
         add(BlockRegistration.DIAMOND_COMPRESSOR.get(), "Diamond Compressor");

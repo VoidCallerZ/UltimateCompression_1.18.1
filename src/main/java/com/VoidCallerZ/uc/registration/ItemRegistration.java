@@ -262,7 +262,7 @@ public class ItemRegistration
     public static final RegistryObject<Item> GOLDEN_COMPRESSOR = fromBlock(BlockRegistration.GOLDEN_COMPRESSOR);
     public static final RegistryObject<Item> DIAMOND_COMPRESSOR = fromBlock(BlockRegistration.DIAMOND_COMPRESSOR);
     public static final RegistryObject<Item> NETHERITE_COMPRESSOR = fromBlock(BlockRegistration.NETHERITE_COMPRESSOR);
-
+    public static final RegistryObject<Item> TEST_COMPRESSOR = fromBlock(BlockRegistration.TEST_COMPRESSOR);
 
     public static final RegistryObject<Item> COMPRESSED_FLINT = ITEMS.register("compressed_flint", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_LEATHER = ITEMS.register("compressed_leather", () -> new Item(ITEM_PROPERTIES));

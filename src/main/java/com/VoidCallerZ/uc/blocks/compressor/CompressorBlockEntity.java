@@ -1,5 +1,6 @@
-package com.VoidCallerZ.uc.blocks.compressor.iron;
+package com.VoidCallerZ.uc.blocks.compressor;
 
+import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlockEntity;
 import com.VoidCallerZ.uc.recipe.CompressorItemRecipe;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;
@@ -7,39 +8,32 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
-import net.minecraft.world.WorldlyContainer;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.wrapper.CombinedInvWrapper;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import javax.annotation.Nonnull;
-import java.sql.Time;
 import java.util.Optional;
 
-public class IronCompressorBlockEntity extends BlockEntity implements MenuProvider
+public abstract class CompressorBlockEntity extends BlockEntity implements MenuProvider
 {
-    private final ItemStackHandler inputItemHandler = new ItemStackHandler(1)
+    /**
+     * Creating all the necessary ItemHandlers for our BlockEntity
+     */
+    public final ItemStackHandler inputItemHandler = new ItemStackHandler(1)
     {
         @Override
         protected void onContentsChanged(int slot)
@@ -58,7 +52,7 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
         }
     };
 
-    private final ItemStackHandler outputItemHandler = new ItemStackHandler(1)
+    public final ItemStackHandler outputItemHandler = new ItemStackHandler(1)
     {
         @Override
         protected void onContentsChanged(int slot)
@@ -67,7 +61,7 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
         }
     };
 
-    private final IItemHandler combinedItemHandler = new CombinedInvWrapper(inputItemHandler, outputItemHandler)
+    public final IItemHandler combinedItemHandler = new CombinedInvWrapper(inputItemHandler, outputItemHandler)
     {
         @Override
         public boolean isItemValid(int slot, @NotNull ItemStack stack)
@@ -84,16 +78,17 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
     private LazyOptional<IItemHandler> lazyOutputItemHandler = LazyOptional.empty();
     private LazyOptional<IItemHandler> lazyCombinedItemHandler = LazyOptional.empty();
 
+
     protected final ContainerData data;
-    private int progress = 0;
-    private int maxProgress = 70;
-    private int litTime;
-
     protected NonNullList<ItemStack> items = NonNullList.withSize(3, ItemStack.EMPTY);
+    private String name;
+    public int progress;
+    public int maxProgress;
+    public int litTime;
 
-    public IronCompressorBlockEntity(BlockPos pWorldPosition, BlockState pBlockState)
+    public CompressorBlockEntity(BlockEntityType<?> block, BlockPos worldPosition, BlockState blockState, String name)
     {
-        super(BlockRegistration.IRON_COMPRESSOR_BLOCK_ENTITY.get(), pWorldPosition, pBlockState);
+        super(block, worldPosition, blockState);
         this.data = new ContainerData()
         {
             @Override
@@ -101,9 +96,9 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
             {
                 switch (index)
                 {
-                    case 0: return IronCompressorBlockEntity.this.progress;
-                    case 1: return IronCompressorBlockEntity.this.maxProgress;
-                    case 2: return IronCompressorBlockEntity.this.litTime;
+                    case 0: return CompressorBlockEntity.this.progress;
+                    case 1: return CompressorBlockEntity.this.maxProgress;
+                    case 2: return CompressorBlockEntity.this.litTime;
                     default: return 0;
                 }
             }
@@ -113,9 +108,9 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
             {
                 switch (index)
                 {
-                    case 0: IronCompressorBlockEntity.this.progress = value; break;
-                    case 1: IronCompressorBlockEntity.this.maxProgress = value; break;
-                    case 2: IronCompressorBlockEntity.this.litTime = value; break;
+                    case 0: CompressorBlockEntity.this.progress = value; break;
+                    case 1: CompressorBlockEntity.this.maxProgress = value; break;
+                    case 2: CompressorBlockEntity.this.litTime = value; break;
                 }
             }
 
@@ -125,19 +120,13 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
                 return 2;
             }
         };
+        this.name = name;
     }
 
     @Override
     public Component getDisplayName()
     {
-        return Component.literal("Iron Compressor - Tier I");
-    }
-
-    @Nullable
-    @Override
-    public AbstractContainerMenu createMenu(int pContainerId, Inventory pInventory, Player pPlayer)
-    {
-        return new IronCompressorBlockMenu(pContainerId, pInventory, this, this.data);
+        return Component.literal(name);
     }
 
     @Nonnull
@@ -159,7 +148,6 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
                 return lazyOutputItemHandler.cast();
             }
         }
-
         return super.getCapability(cap, side);
     }
 
@@ -199,11 +187,6 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
         litTime = tag.getInt("BurnTime");
     }
 
-    private boolean isLit()
-    {
-        return this.litTime > 0;
-    }
-
     public void drops()
     {
         SimpleContainer inventory = new SimpleContainer(combinedItemHandler.getSlots());
@@ -214,39 +197,35 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
         Containers.dropContents(this.level, this.worldPosition, inventory);
     }
 
-    public static void tick(Level level, BlockPos pos, BlockState state, IronCompressorBlockEntity blockEntity)
+    public void resetProgress()
     {
-        if (blockEntity.isLit())
-        {
-            blockEntity.litTime--;
-            state = state.setValue(IronCompressorBlock.LIT, true);
-            level.setBlock(pos, state, 3);
-            setChanged(level, pos, state);
-        }
-
-        if (hasRecipe(blockEntity) && hasCorrectAmountOfInputItems(blockEntity))
-        {
-            blockEntity.litTime = blockEntity.progress;
-            blockEntity.progress++;
-            setChanged(level, pos, state);
-            if (blockEntity.progress > blockEntity.maxProgress)
-            {
-                craftItem(blockEntity);
-            }
-        }
-        else
-        {
-            blockEntity.resetProgress();
-            if (!hasEnoughItemsToCompress(blockEntity.inputItemHandler))
-            {
-                state = state.setValue(IronCompressorBlock.LIT, false);
-                level.setBlock(pos, state, 3);
-            }
-            setChanged(level, pos, state);
-        }
+        this.progress = 0;
+        this.litTime = 0;
     }
 
-    private static boolean hasRecipe(IronCompressorBlockEntity entity)
+    public static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack output)
+    {
+        return inventory.getItem(1).getItem() == output.getItem() || inventory.getItem(1).isEmpty();
+    }
+
+    public static boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory)
+    {
+        return inventory.getItem(1).getMaxStackSize() > inventory.getItem(1).getCount();
+    }
+
+    public static boolean hasEnoughItemsToCompress(ItemStackHandler handler)
+    {
+        if (!handler.getStackInSlot(0).isEmpty())
+        {
+            if (handler.getStackInSlot(0).getCount() >= 9)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean hasRecipe(CompressorBlockEntity entity)
     {
         Level level = entity.level;
         SimpleContainer inventory = new SimpleContainer(entity.combinedItemHandler.getSlots());
@@ -258,12 +237,12 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory) && canInsertItemIntoOutputSlot(inventory, match.get().getResultItem());
     }
 
-    private static boolean hasCorrectAmountOfInputItems(IronCompressorBlockEntity entity)
+    public static boolean hasCorrectAmountOfInputItems(CompressorBlockEntity entity)
     {
         return entity.inputItemHandler.getStackInSlot(0).getCount() >= 9;
     }
 
-    private static void craftItem(IronCompressorBlockEntity entity)
+    public static void craftItem(CompressorBlockEntity entity)
     {
         Level level = entity.level;
         SimpleContainer inventory = new SimpleContainer(entity.inputItemHandler.getSlots());
@@ -281,33 +260,4 @@ public class IronCompressorBlockEntity extends BlockEntity implements MenuProvid
             entity.resetProgress();
         }
     }
-
-    private void resetProgress()
-    {
-        this.progress = 0;
-        this.litTime = 0;
-    }
-
-    private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack output)
-    {
-        return inventory.getItem(1).getItem() == output.getItem() || inventory.getItem(1).isEmpty();
-    }
-
-    private static boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory)
-    {
-        return inventory.getItem(1).getMaxStackSize() > inventory.getItem(1).getCount();
-    }
-
-    private static boolean hasEnoughItemsToCompress(ItemStackHandler handler)
-    {
-        if (!handler.getStackInSlot(0).isEmpty())
-        {
-            if (handler.getStackInSlot(0).getCount() >= 9)
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-
 }

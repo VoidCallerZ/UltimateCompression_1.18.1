@@ -1,14 +1,10 @@
-package com.VoidCallerZ.uc.blocks.compressor.iron;
+package com.VoidCallerZ.uc.blocks.compressor.test;
 
+import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlockEntity;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
-import com.VoidCallerZ.uc.registration.SoundRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -19,6 +15,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -31,12 +28,12 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
-public class IronCompressorBlock extends BaseEntityBlock
+public class TestCompressorBlock extends BaseEntityBlock
 {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty LIT = BlockStateProperties.LIT;
 
-    public IronCompressorBlock(Properties properties)
+    public TestCompressorBlock(BlockBehaviour.Properties properties)
     {
         super(properties);
         this.registerDefaultState(this.getStateDefinition().any().setValue(FACING, Direction.NORTH).setValue(LIT, Boolean.valueOf(false)));
@@ -83,9 +80,9 @@ public class IronCompressorBlock extends BaseEntityBlock
         if (state.getBlock() != newState.getBlock())
         {
             BlockEntity blockEntity = level.getBlockEntity(pos);
-            if (blockEntity instanceof IronCompressorBlockEntity)
+            if (blockEntity instanceof TestCompressorBlockEntity)
             {
-                ((IronCompressorBlockEntity) blockEntity).drops();
+                ((TestCompressorBlockEntity) blockEntity).drops();
             }
         }
         super.onRemove(state, level, pos, newState, isMoving);
@@ -97,9 +94,9 @@ public class IronCompressorBlock extends BaseEntityBlock
         if (!level.isClientSide())
         {
             BlockEntity entity = level.getBlockEntity(pos);
-            if (entity instanceof IronCompressorBlockEntity)
+            if (entity instanceof TestCompressorBlockEntity)
             {
-                NetworkHooks.openScreen(((ServerPlayer) player), (IronCompressorBlockEntity)entity, pos);
+                NetworkHooks.openScreen(((ServerPlayer) player), (TestCompressorBlockEntity)entity, pos);
             }
             else
             {
@@ -114,13 +111,13 @@ public class IronCompressorBlock extends BaseEntityBlock
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state)
     {
-        return new IronCompressorBlockEntity(pos, state);
+        return new TestCompressorBlockEntity(pos, state);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntityType)
     {
-        return createTickerHelper(blockEntityType, BlockRegistration.IRON_COMPRESSOR_BLOCK_ENTITY.get(), IronCompressorBlockEntity::tick);
+        return createTickerHelper(blockEntityType, BlockRegistration.TEST_COMPRESSOR_BLOCK_ENTITY.get(), TestCompressorBlockEntity::tick);
     }
 }

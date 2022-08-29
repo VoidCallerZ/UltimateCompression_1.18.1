@@ -293,5 +293,6 @@
   "item.uc.compressed_wooden_sword": "Compressed Wooden Sword",
   "itemGroup.ultiamtefoodcompression": "Ultimate Food Compression",
   "itemGroup.ultimatecompression": "Ultimate Compression",
-  "itemGroup.ultimatetoolcompression": "Ultimate Tool Compression"
+  "itemGroup.ultimatetoolcompression": "Ultimate Tool Compression",
+  "sounds.uc.compressor_use": "Compressor Pressing"
 }

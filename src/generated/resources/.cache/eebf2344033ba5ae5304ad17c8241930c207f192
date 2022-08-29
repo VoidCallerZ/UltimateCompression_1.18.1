@@ -1,4 +1,4 @@
-// 1.19.2	2022-08-22T20:26:00.2459521	Item Models: uc
+// 1.19.2	2022-08-29T17:14:48.1034955	Item Models: uc
 f381bd2053cc90b43b7e3d5375a556bc65a53121 assets/uc/models/item/compressed_acacia_log.json
 681df59d895167a265d1b4f93674ad2b384984ba assets/uc/models/item/compressed_acacia_planks.json
 1f67eb77cf349f3cd06d486b9fa61baff8fec05e assets/uc/models/item/compressed_andesite.json
@@ -291,4 +291,5 @@ e2baf979bc510be1c794f236860c879b07d2c148 assets/uc/models/item/compressed_yellow
 894b3dc72f8663c8d313f6cb9db1259162a17666 assets/uc/models/item/golden_compressor.json
 9a82575a7e731ff4c10051bc0b39bbefd1c55cc9 assets/uc/models/item/iron_compressor.json
 13b8bfa18b887e465c93b3443524a613f7053f17 assets/uc/models/item/netherite_compressor.json
+2dac218fa90ddcfb5f2e4c29e4fa0069ca23fd0e assets/uc/models/item/test_compressor.json
 9b6707b0f8cbce61b25a390d506bf1d014077201 assets/uc/models/item/uc_icon.json

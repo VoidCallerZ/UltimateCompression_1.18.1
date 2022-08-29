@@ -27,6 +27,7 @@ public class ucBlockStates extends BaseBlockStateProvider
     protected void registerStatesAndModels()
     {
         registerIronCompressor();
+        registerTestCompressor();
         registerCompressor(BlockRegistration.GOLDEN_COMPRESSOR.get(), "golden_compressor", "gold");
         registerCompressor(BlockRegistration.DIAMOND_COMPRESSOR.get(), "diamond_compressor", "diamond");
         registerCompressor(BlockRegistration.NETHERITE_COMPRESSOR.get(), "netherite_compressor", "netherite");
@@ -265,6 +266,19 @@ public class ucBlockStates extends BaseBlockStateProvider
         ModelFile blockOn = models().cube("iron_compressor_lit", TOP_BOTTOM, TOP_BOTTOM, FRONT_BACK, FRONT_BACK_LIT, SIDE, SIDE);
 
         compressorBlockWithLitState(BlockRegistration.IRON_COMPRESSOR.get(), blockOff, blockOn);
+    }
+
+    private void registerTestCompressor()
+    {
+        ResourceLocation FRONT_BACK = modLoc("block/compressor/iron/front_back");
+        ResourceLocation FRONT_BACK_LIT = modLoc("block/compressor/iron/front_back_lit");
+        ResourceLocation SIDE = modLoc("block/compressor/iron/side");
+        ResourceLocation TOP_BOTTOM = modLoc("block/compressor/iron/top_bottom");
+
+        ModelFile blockOff = models().cube("test_compressor", TOP_BOTTOM, TOP_BOTTOM, FRONT_BACK, FRONT_BACK, SIDE, SIDE);
+        ModelFile blockOn = models().cube("test_compressor_lit", TOP_BOTTOM, TOP_BOTTOM, FRONT_BACK, FRONT_BACK_LIT, SIDE, SIDE);
+
+        compressorBlockWithLitState(BlockRegistration.TEST_COMPRESSOR.get(), blockOff, blockOn);
     }
 
     private void registerCompressor(Block block, String name, String materialName)
