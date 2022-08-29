@@ -1,11 +1,14 @@
 package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.dataGen.providers.BaseAdvancementProvider;
-import com.VoidCallerZ.uc.registration.FoodRegistration;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
+import com.VoidCallerZ.uc.registration.FoodRegistration;
 import com.VoidCallerZ.uc.registration.ItemRegistration;
 import com.VoidCallerZ.uc.registration.ToolRegistration;
-import net.minecraft.advancements.*;
+import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementRewards;
+import net.minecraft.advancements.FrameType;
+import net.minecraft.advancements.RequirementsStrategy;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.network.chat.Component;

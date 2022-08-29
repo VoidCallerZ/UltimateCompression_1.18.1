@@ -1,206 +1,47 @@
 package com.VoidCallerZ.uc.blocks.compressor.diamond;
 
-import com.VoidCallerZ.uc.recipe.CompressorItemRecipe;
+import com.VoidCallerZ.uc.blocks.compressor.CompressorBlockEntity;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
-import net.minecraft.core.NonNullList;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.Containers;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.ContainerData;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.items.wrapper.CombinedInvWrapper;
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import javax.annotation.Nonnull;
-import java.util.Optional;
-
-public class DiamondCompressorBlockEntity extends BlockEntity implements MenuProvider
+public class DiamondCompressorBlockEntity extends CompressorBlockEntity
 {
-    private final ItemStackHandler inputItemHandler = new ItemStackHandler(1)
+    public DiamondCompressorBlockEntity(BlockPos pos, BlockState state)
     {
-        @Override
-        protected void onContentsChanged(int slot)
-        {
-            setChanged();
-        }
-
-        @Override
-        public boolean isItemValid(int slot, @NotNull ItemStack stack)
-        {
-            if (stack.is(BlockRegistration.COMPRESSOR_VALID_ITEMS))
-            {
-                return true;
-            }
-            return false;
-        }
-    };
-
-    private final ItemStackHandler outputItemHandler = new ItemStackHandler(1)
-    {
-        @Override
-        protected void onContentsChanged(int slot)
-        {
-            setChanged();
-        }
-    };
-
-    private final IItemHandler combinedItemHandler = new CombinedInvWrapper(inputItemHandler, outputItemHandler)
-    {
-        @Override
-        public boolean isItemValid(int slot, @NotNull ItemStack stack)
-        {
-            if (slot == 0 && stack.is(BlockRegistration.COMPRESSOR_VALID_ITEMS))
-            {
-                return true;
-            }
-            return false;
-        }
-    };
-
-    private LazyOptional<IItemHandler> lazyInputItemHandler = LazyOptional.empty();
-    private LazyOptional<IItemHandler> lazyOutputItemHandler = LazyOptional.empty();
-    private LazyOptional<IItemHandler> lazyCombinedItemHandler = LazyOptional.empty();
-
-    protected final ContainerData data;
-    private int progress = 0;
-    private int maxProgress = 40;
-
-    protected NonNullList<ItemStack> items = NonNullList.withSize(3, ItemStack.EMPTY);
-
-    public DiamondCompressorBlockEntity(BlockPos pWorldPosition, BlockState pBlockState)
-    {
-        super(BlockRegistration.DIAMOND_COMPRESSOR_BLOCK_ENTITY.get(), pWorldPosition, pBlockState);
-        this.data = new ContainerData()
-        {
-            @Override
-            public int get(int index)
-            {
-                switch (index)
-                {
-                    case 0: return DiamondCompressorBlockEntity.this.progress;
-                    case 1: return DiamondCompressorBlockEntity.this.maxProgress;
-                    default: return 0;
-                }
-            }
-
-            @Override
-            public void set(int index, int value)
-            {
-                switch (index)
-                {
-                    case 0: DiamondCompressorBlockEntity.this.progress = value; break;
-                    case 1: DiamondCompressorBlockEntity.this.maxProgress = value; break;
-                }
-            }
-
-            @Override
-            public int getCount()
-            {
-                return 2;
-            }
-        };
-    }
-
-    @Override
-    public Component getDisplayName()
-    {
-        return Component.literal("Diamond Compressor - Tier III");
+        super(BlockRegistration.DIAMOND_COMPRESSOR_BLOCK_ENTITY.get(), pos, state, 20, "Diamond Compressor - Tier III");
     }
 
     @Nullable
     @Override
-    public AbstractContainerMenu createMenu(int pContainerId, Inventory pInventory, Player pPlayer)
+    public AbstractContainerMenu createMenu(int containerId, Inventory inventory, Player player)
     {
-        return new DiamondCompressorBlockMenu(pContainerId, pInventory, this, this.data);
+        return new DiamondCompressorBlockMenu(containerId, inventory, this);
     }
 
-    @Nonnull
-    @Override
-    public <T> LazyOptional<T> getCapability(@Nonnull Capability<T> cap, @javax.annotation.Nullable Direction side)
+    private boolean isLit()
     {
-        if (cap == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY)
-        {
-            if (side == null)
-            {
-                return lazyCombinedItemHandler.cast();
-            }
-            else if (side == Direction.DOWN)
-            {
-                return lazyOutputItemHandler.cast();
-            }
-            else if (side == Direction.UP || side == Direction.EAST || side == Direction.WEST || side == Direction.SOUTH)
-            {
-                return lazyInputItemHandler.cast();
-            }
-        }
-
-        return super.getCapability(cap, side);
-    }
-
-    @Override
-    public void onLoad()
-    {
-        super.onLoad();
-        lazyInputItemHandler = LazyOptional.of(() -> inputItemHandler);
-        lazyOutputItemHandler = LazyOptional.of(() -> outputItemHandler);
-        lazyCombinedItemHandler = LazyOptional.of(() -> combinedItemHandler);
-    }
-
-    @Override
-    public void invalidateCaps()
-    {
-        super.invalidateCaps();
-        lazyInputItemHandler.invalidate();
-        lazyOutputItemHandler.invalidate();
-        lazyCombinedItemHandler.invalidate();
-    }
-
-    @Override
-    protected void saveAdditional(@NotNull CompoundTag tag)
-    {
-        tag.put("inventory", inputItemHandler.serializeNBT());
-        tag.putInt("compressor.progress", progress);
-        super.saveAdditional(tag);
-    }
-
-    @Override
-    public void load(CompoundTag nbt)
-    {
-        super.load(nbt);
-        inputItemHandler.deserializeNBT(nbt.getCompound("inventory"));
-        progress = nbt.getInt("compressor.progress");
-    }
-
-    public void drops()
-    {
-        SimpleContainer inventory = new SimpleContainer(combinedItemHandler.getSlots());
-        for (int i = 0; i < combinedItemHandler.getSlots(); i++)
-        {
-            inventory.setItem(i, combinedItemHandler.getStackInSlot(i));
-        }
-        Containers.dropContents(this.level, this.worldPosition, inventory);
+        return this.litTime > 0;
     }
 
     public static void tick(Level level, BlockPos pos, BlockState state, DiamondCompressorBlockEntity blockEntity)
     {
+        if (blockEntity.isLit())
+        {
+            blockEntity.litTime--;
+            state = state.setValue(DiamondCompressorBlock.LIT, true);
+            level.setBlock(pos, state, 3);
+            setChanged(level, pos, state);
+        }
+
         if (hasRecipe(blockEntity) && hasCorrectAmountOfInputItems(blockEntity))
         {
+            blockEntity.litTime = blockEntity.progress;
             blockEntity.progress++;
             setChanged(level, pos, state);
             if (blockEntity.progress > blockEntity.maxProgress)
@@ -211,58 +52,12 @@ public class DiamondCompressorBlockEntity extends BlockEntity implements MenuPro
         else
         {
             blockEntity.resetProgress();
+            if (!hasEnoughItemsToCompress(blockEntity.inputItemHandler))
+            {
+                state = state.setValue(DiamondCompressorBlock.LIT, false);
+                level.setBlock(pos, state, 3);
+            }
             setChanged(level, pos, state);
         }
-    }
-
-    private static boolean hasRecipe(DiamondCompressorBlockEntity entity)
-    {
-        Level level = entity.level;
-        SimpleContainer inventory = new SimpleContainer(entity.combinedItemHandler.getSlots());
-        for (int i = 0; i < entity.combinedItemHandler.getSlots(); i++)
-        {
-            inventory.setItem(i, entity.combinedItemHandler.getStackInSlot(i));
-        }
-        Optional<CompressorItemRecipe> match = level.getRecipeManager().getRecipeFor(CompressorItemRecipe.Type.INSTANCE, inventory, level);
-        return match.isPresent() && canInsertAmountIntoOutputSlot(inventory) && canInsertItemIntoOutputSlot(inventory, match.get().getResultItem());
-    }
-
-    private static boolean hasCorrectAmountOfInputItems(DiamondCompressorBlockEntity entity)
-    {
-        return entity.inputItemHandler.getStackInSlot(0).getCount() >= 9;
-    }
-
-    private static void craftItem(DiamondCompressorBlockEntity entity)
-    {
-        Level level = entity.level;
-        SimpleContainer inventory = new SimpleContainer(entity.inputItemHandler.getSlots());
-        for (int i = 0; i < entity.inputItemHandler.getSlots(); i++)
-        {
-            inventory.setItem(i, entity.inputItemHandler.getStackInSlot(i));
-        }
-        Optional<CompressorItemRecipe> match = level.getRecipeManager().getRecipeFor(CompressorItemRecipe.Type.INSTANCE, inventory, level);
-
-        if (match.isPresent())
-        {
-            entity.inputItemHandler.extractItem(0, 9, false);
-            entity.outputItemHandler.setStackInSlot(0, new ItemStack(match.get().getResultItem().getItem(), entity.outputItemHandler.getStackInSlot(0).getCount() + match.get().getResultItem().getCount()));
-
-            entity.resetProgress();
-        }
-    }
-
-    private void resetProgress()
-    {
-        this.progress = 0;
-    }
-
-    private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack output)
-    {
-        return inventory.getItem(1).getItem() == output.getItem() || inventory.getItem(1).isEmpty();
-    }
-
-    private static boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory)
-    {
-        return inventory.getItem(1).getMaxStackSize() > inventory.getItem(1).getCount();
     }
 }

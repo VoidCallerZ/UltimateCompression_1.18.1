@@ -1,8 +1,8 @@
 package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.dataGen.providers.BaseLootTableProvider;
-import com.VoidCallerZ.uc.registration.ItemRegistration;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
+import com.VoidCallerZ.uc.registration.ItemRegistration;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.item.Items;
 

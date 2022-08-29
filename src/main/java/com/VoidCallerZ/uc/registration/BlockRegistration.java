@@ -1,38 +1,34 @@
 package com.VoidCallerZ.uc.registration;
 
 import com.VoidCallerZ.uc.UltimateCompression;
-import com.VoidCallerZ.uc.blocks.*;
-import com.VoidCallerZ.uc.blocks.compressor.CompressorBlockEntity;
-import com.VoidCallerZ.uc.blocks.compressor.CompressorBlockMenu;
+import com.VoidCallerZ.uc.blocks.UcOreBlock;
+import com.VoidCallerZ.uc.blocks.UcPowderSnowBlock;
+import com.VoidCallerZ.uc.blocks.UcSculkCatalystBlock;
 import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlock;
 import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlockMenu;
 import com.VoidCallerZ.uc.blocks.compressor.gold.GoldenCompressorBlock;
+import com.VoidCallerZ.uc.blocks.compressor.gold.GoldenCompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.compressor.gold.GoldenCompressorBlockMenu;
 import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlock;
-import com.VoidCallerZ.uc.blocks.compressor.gold.GoldenCompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlockMenu;
 import com.VoidCallerZ.uc.blocks.compressor.netherite.NetheriteCompressorBlock;
 import com.VoidCallerZ.uc.blocks.compressor.netherite.NetheriteCompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.compressor.netherite.NetheriteCompressorBlockMenu;
-import com.VoidCallerZ.uc.blocks.compressor.test.TestCompressorBlock;
-import com.VoidCallerZ.uc.blocks.compressor.test.TestCompressorBlockEntity;
-import com.VoidCallerZ.uc.blocks.compressor.test.TestCompressorBlockMenu;
 import com.VoidCallerZ.uc.blocks.entity.UcSculkCatalystBlockEntity;
 import com.VoidCallerZ.uc.blocks.glass.UcGlassBlock;
 import com.VoidCallerZ.uc.blocks.glass.UcGlassPaneBlock;
 import com.VoidCallerZ.uc.blocks.glass.UcStainedGlassBlock;
 import com.VoidCallerZ.uc.blocks.glass.UcStainedGlassPaneBlock;
-import com.VoidCallerZ.uc.setup.ModSetup;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
@@ -45,7 +41,6 @@ import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.network.IContainerFactory;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -314,37 +309,42 @@ public class BlockRegistration
     //Iron Compressor
     public static final RegistryObject<IronCompressorBlock> IRON_COMPRESSOR = BLOCKS.register("iron_compressor", () -> new IronCompressorBlock(COMPRESSOR_BLOCK_PROPERTIES));
     public static final RegistryObject<BlockEntityType<IronCompressorBlockEntity>> IRON_COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("iron_compressor_block_entity", () -> BlockEntityType.Builder.of(IronCompressorBlockEntity::new, IRON_COMPRESSOR.get()).build(null));
-    public static final RegistryObject<MenuType<IronCompressorBlockMenu>> IRON_COMPRESSOR_BLOCK_MENU = registerMenuType(IronCompressorBlockMenu::new, "iron_compressor_block_menu");
+    public static final RegistryObject<MenuType<IronCompressorBlockMenu>> IRON_COMPRESSOR_BLOCK_MENU = CONTAINERS.register("iron_compressor_block_menu", () -> IForgeMenuType.create((containerId, inv, data) ->
+    {
+        BlockPos pos = data.readBlockPos();
+        Level level = inv.player.getCommandSenderWorld();
+        return new IronCompressorBlockMenu(containerId, inv, IRON_COMPRESSOR_BLOCK_ENTITY.get().getBlockEntity(level, pos));
+    }));
 
     //Golden Compressor
     public static final RegistryObject<GoldenCompressorBlock> GOLDEN_COMPRESSOR = BLOCKS.register("golden_compressor", () -> new GoldenCompressorBlock(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<BlockEntityType<GoldenCompressorBlockEntity>> GOLDEN_COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("golden_compressor_block_entity", () -> BlockEntityType.Builder.of(GoldenCompressorBlockEntity::new, GOLDEN_COMPRESSOR.get()).build(null));
-    public static final RegistryObject<MenuType<GoldenCompressorBlockMenu>> GOLDEN_COMPRESSOR_BLOCK_MENU = registerMenuType(GoldenCompressorBlockMenu::new, "golden_compressor_block_menu");
+    public static final RegistryObject<MenuType<GoldenCompressorBlockMenu>> GOLDEN_COMPRESSOR_BLOCK_MENU = CONTAINERS.register("golden_compressor_block_menu", () -> IForgeMenuType.create((containerId, inv, data) ->
+    {
+        BlockPos pos = data.readBlockPos();
+        Level level = inv.player.getCommandSenderWorld();
+        return new GoldenCompressorBlockMenu(containerId, inv, GOLDEN_COMPRESSOR_BLOCK_ENTITY.get().getBlockEntity(level, pos));
+    }));
 
     //Diamond Compressor
     public static final RegistryObject<DiamondCompressorBlock> DIAMOND_COMPRESSOR = BLOCKS.register("diamond_compressor", () -> new DiamondCompressorBlock(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<BlockEntityType<DiamondCompressorBlockEntity>> DIAMOND_COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("diamond_compressor_block_entity", () -> BlockEntityType.Builder.of(DiamondCompressorBlockEntity::new, DIAMOND_COMPRESSOR.get()).build(null));
-    public static final RegistryObject<MenuType<DiamondCompressorBlockMenu>> DIAMOND_COMPRESSOR_BLOCK_MENU = registerMenuType(DiamondCompressorBlockMenu::new, "diamond_compressor_block_menu");
+    public static final RegistryObject<MenuType<DiamondCompressorBlockMenu>> DIAMOND_COMPRESSOR_BLOCK_MENU = CONTAINERS.register("diamond_compressor_block_menu", () -> IForgeMenuType.create((containerId, inv, data) ->
+    {
+        BlockPos pos = data.readBlockPos();
+        Level level = inv.player.getCommandSenderWorld();
+        return new DiamondCompressorBlockMenu(containerId, inv, DIAMOND_COMPRESSOR_BLOCK_ENTITY.get().getBlockEntity(level, pos));
+    }));
 
     //Netherite Compressor
     public static final RegistryObject<NetheriteCompressorBlock> NETHERITE_COMPRESSOR = BLOCKS.register("netherite_compressor", () -> new NetheriteCompressorBlock(INGOT_BLOCK_PROPERTIES));
     public static final RegistryObject<BlockEntityType<NetheriteCompressorBlockEntity>> NETHERITE_COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("netherite_compressor_block_entity", () -> BlockEntityType.Builder.of(NetheriteCompressorBlockEntity::new, NETHERITE_COMPRESSOR.get()).build(null));
-    public static final RegistryObject<MenuType<NetheriteCompressorBlockMenu>> NETHERITE_COMPRESSOR_BLOCK_MENU = registerMenuType(NetheriteCompressorBlockMenu::new, "netherite_compressor_block_menu");
-
-    public static final RegistryObject<TestCompressorBlock> TEST_COMPRESSOR = BLOCKS.register("test_compressor", () -> new TestCompressorBlock(INGOT_BLOCK_PROPERTIES));
-    public static final RegistryObject<BlockEntityType<TestCompressorBlockEntity>> TEST_COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("test_compressor_block_entity", () -> BlockEntityType.Builder.of(TestCompressorBlockEntity::new, TEST_COMPRESSOR.get()).build(null));
-    public static final RegistryObject<MenuType<TestCompressorBlockMenu>> TEST_COMPRESSOR_BLOCK_MENU = CONTAINERS.register("test_compressor_block_menu", () -> IForgeMenuType.create((containerId, inv, data) ->
+    public static final RegistryObject<MenuType<NetheriteCompressorBlockMenu>> NETHERITE_COMPRESSOR_BLOCK_MENU = CONTAINERS.register("netherite_compressor_block_menu", () -> IForgeMenuType.create((containerId, inv, data) ->
     {
         BlockPos pos = data.readBlockPos();
         Level level = inv.player.getCommandSenderWorld();
-        return new TestCompressorBlockMenu(containerId, inv, TEST_COMPRESSOR_BLOCK_ENTITY.get().getBlockEntity(level, pos));
+        return new NetheriteCompressorBlockMenu(containerId, inv, NETHERITE_COMPRESSOR_BLOCK_ENTITY.get().getBlockEntity(level, pos));
     }));
-
-
-    private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name)
-    {
-        return CONTAINERS.register(name, () -> IForgeMenuType.create(factory));
-    }
 
     private static Boolean never(BlockState state, BlockGetter level, BlockPos pos, EntityType<?> entityType)
     {

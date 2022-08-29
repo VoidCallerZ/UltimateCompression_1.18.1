@@ -1,7 +1,6 @@
 package com.VoidCallerZ.uc.setup;
 
 import com.VoidCallerZ.uc.registration.FoodRegistration;
-import com.VoidCallerZ.uc.registration.BlockRegistration;
 import com.VoidCallerZ.uc.registration.ItemRegistration;
 import com.VoidCallerZ.uc.registration.ToolRegistration;
 import com.VoidCallerZ.uc.world.ores.Ores;

@@ -1,6 +1,5 @@
 package com.VoidCallerZ.uc.dataGen.providers;
 
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelProvider;

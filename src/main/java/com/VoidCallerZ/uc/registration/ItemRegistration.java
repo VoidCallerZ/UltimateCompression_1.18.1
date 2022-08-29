@@ -1,26 +1,27 @@
 package com.VoidCallerZ.uc.registration;
 
 import com.VoidCallerZ.uc.blocks.UcFuelBlockItem;
+import com.VoidCallerZ.uc.entities.projectiles.CompressedArrow;
+import com.VoidCallerZ.uc.entities.projectiles.CompressedSpectralArrow;
 import com.VoidCallerZ.uc.items.UcFuelItem;
 import com.VoidCallerZ.uc.items.UcSnowball;
 import com.VoidCallerZ.uc.items.UcSnowballItem;
 import com.VoidCallerZ.uc.items.arrows.UcArrowItem;
 import com.VoidCallerZ.uc.items.arrows.UcSpectralArrowItem;
 import com.VoidCallerZ.uc.setup.ModSetup;
-import com.VoidCallerZ.uc.entities.projectiles.CompressedArrow;
-import com.VoidCallerZ.uc.entities.projectiles.CompressedSpectralArrow;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.RecordItem;
 import net.minecraft.world.item.SolidBucketItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.*;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 import static com.VoidCallerZ.uc.UltimateCompression.MODID;
 
@@ -262,7 +263,6 @@ public class ItemRegistration
     public static final RegistryObject<Item> GOLDEN_COMPRESSOR = fromBlock(BlockRegistration.GOLDEN_COMPRESSOR);
     public static final RegistryObject<Item> DIAMOND_COMPRESSOR = fromBlock(BlockRegistration.DIAMOND_COMPRESSOR);
     public static final RegistryObject<Item> NETHERITE_COMPRESSOR = fromBlock(BlockRegistration.NETHERITE_COMPRESSOR);
-    public static final RegistryObject<Item> TEST_COMPRESSOR = fromBlock(BlockRegistration.TEST_COMPRESSOR);
 
     public static final RegistryObject<Item> COMPRESSED_FLINT = ITEMS.register("compressed_flint", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_LEATHER = ITEMS.register("compressed_leather", () -> new Item(ITEM_PROPERTIES));

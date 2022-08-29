@@ -2,9 +2,7 @@ package com.VoidCallerZ.uc.dataGen.providers;
 
 import com.VoidCallerZ.uc.dataGen.custom.CompressorRecipeBuilder;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
-import com.VoidCallerZ.uc.registration.ItemRegistration;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
-import net.minecraft.client.tutorial.FindTreeTutorialStepInstance;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.tags.TagKey;
@@ -12,9 +10,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.SimpleCookingSerializer;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.minecraftforge.registries.ForgeRegistries;
 

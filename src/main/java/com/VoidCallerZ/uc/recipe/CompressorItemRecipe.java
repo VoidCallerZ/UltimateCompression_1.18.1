@@ -11,9 +11,6 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
-import org.checkerframework.checker.units.qual.C;
-
-import javax.annotation.Nullable;
 
 public class CompressorItemRecipe implements Recipe<SimpleContainer>
 {

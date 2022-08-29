@@ -1,6 +1,5 @@
 package com.VoidCallerZ.uc.blocks.compressor;
 
-import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlockEntity;
 import com.VoidCallerZ.uc.recipe.CompressorItemRecipe;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;

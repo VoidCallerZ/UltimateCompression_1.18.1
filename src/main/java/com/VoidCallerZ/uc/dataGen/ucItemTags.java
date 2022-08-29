@@ -3,7 +3,6 @@ package com.VoidCallerZ.uc.dataGen;
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
 import com.VoidCallerZ.uc.registration.ItemRegistration;
-import com.VoidCallerZ.uc.registration.ItemRegistration;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -11,7 +10,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.RegistryObject;
 
 public class ucItemTags extends ItemTagsProvider
 {

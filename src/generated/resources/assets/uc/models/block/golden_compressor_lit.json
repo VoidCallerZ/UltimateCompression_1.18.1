@@ -4,7 +4,7 @@
     "down": "uc:block/compressor/gold/side",
     "east": "uc:block/compressor/gold/side",
     "north": "uc:block/compressor/gold/back",
-    "south": "uc:block/compressor/gold/front",
+    "south": "uc:block/compressor/gold/front_lit",
     "up": "uc:block/compressor/gold/side",
     "west": "uc:block/compressor/gold/side"
   }

@@ -4,7 +4,7 @@
     "down": "uc:block/compressor/diamond/side",
     "east": "uc:block/compressor/diamond/side",
     "north": "uc:block/compressor/diamond/back",
-    "south": "uc:block/compressor/diamond/front",
+    "south": "uc:block/compressor/diamond/front_lit",
     "up": "uc:block/compressor/diamond/side",
     "west": "uc:block/compressor/diamond/side"
   }

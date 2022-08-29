@@ -3,18 +3,11 @@ package com.VoidCallerZ.uc.dataGen;
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.dataGen.providers.BaseBlockStateProvider;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.core.Direction;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.IronBarsBlock;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraftforge.client.model.generators.*;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-
-import java.util.function.Function;
 
 public class ucBlockStates extends BaseBlockStateProvider
 {
@@ -27,7 +20,6 @@ public class ucBlockStates extends BaseBlockStateProvider
     protected void registerStatesAndModels()
     {
         registerIronCompressor();
-        registerTestCompressor();
         registerCompressor(BlockRegistration.GOLDEN_COMPRESSOR.get(), "golden_compressor", "gold");
         registerCompressor(BlockRegistration.DIAMOND_COMPRESSOR.get(), "diamond_compressor", "diamond");
         registerCompressor(BlockRegistration.NETHERITE_COMPRESSOR.get(), "netherite_compressor", "netherite");
@@ -268,26 +260,17 @@ public class ucBlockStates extends BaseBlockStateProvider
         compressorBlockWithLitState(BlockRegistration.IRON_COMPRESSOR.get(), blockOff, blockOn);
     }
 
-    private void registerTestCompressor()
-    {
-        ResourceLocation FRONT_BACK = modLoc("block/compressor/iron/front_back");
-        ResourceLocation FRONT_BACK_LIT = modLoc("block/compressor/iron/front_back_lit");
-        ResourceLocation SIDE = modLoc("block/compressor/iron/side");
-        ResourceLocation TOP_BOTTOM = modLoc("block/compressor/iron/top_bottom");
-
-        ModelFile blockOff = models().cube("test_compressor", TOP_BOTTOM, TOP_BOTTOM, FRONT_BACK, FRONT_BACK, SIDE, SIDE);
-        ModelFile blockOn = models().cube("test_compressor_lit", TOP_BOTTOM, TOP_BOTTOM, FRONT_BACK, FRONT_BACK_LIT, SIDE, SIDE);
-
-        compressorBlockWithLitState(BlockRegistration.TEST_COMPRESSOR.get(), blockOff, blockOn);
-    }
-
     private void registerCompressor(Block block, String name, String materialName)
     {
         ResourceLocation BACK = modLoc("block/compressor/" + materialName + "/back");
         ResourceLocation FRONT = modLoc("block/compressor/" + materialName + "/front");
+        ResourceLocation FRONT_LIT = modLoc("block/compressor/" + materialName + "/front_lit");
         ResourceLocation SIDE = modLoc("block/compressor/" + materialName + "/side");
 
-        horizontalBlock(block, models().cube(name, SIDE, SIDE, FRONT, BACK, SIDE, SIDE));
+        ModelFile blockOff = models().cube(name, SIDE, SIDE, BACK, FRONT, SIDE, SIDE);
+        ModelFile blockOn = models().cube(name + "_lit", SIDE, SIDE, BACK, FRONT_LIT, SIDE, SIDE);
+
+        compressorBlockWithLitState(block, blockOff, blockOn);
     }
 
     private void registerSculkCatalyst()

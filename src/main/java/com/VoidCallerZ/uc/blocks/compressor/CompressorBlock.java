@@ -1,10 +1,7 @@
 package com.VoidCallerZ.uc.blocks.compressor;
 
-import com.VoidCallerZ.uc.blocks.compressor.test.TestCompressorBlockEntity;
-import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -13,8 +10,6 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityTicker;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -25,9 +20,6 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.event.level.NoteBlockEvent;
-import net.minecraftforge.network.NetworkHooks;
-import org.jetbrains.annotations.Nullable;
 
 public abstract class CompressorBlock extends BaseEntityBlock
 {
@@ -81,9 +73,9 @@ public abstract class CompressorBlock extends BaseEntityBlock
         if (state.getBlock() != newState.getBlock())
         {
             BlockEntity blockEntity = level.getBlockEntity(pos);
-            if (blockEntity instanceof TestCompressorBlockEntity)
+            if (blockEntity instanceof CompressorBlockEntity)
             {
-                ((TestCompressorBlockEntity) blockEntity).drops();
+                ((CompressorBlockEntity) blockEntity).drops();
             }
         }
         super.onRemove(state, level, pos, newState, isMoving);
