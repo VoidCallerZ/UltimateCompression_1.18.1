@@ -86,7 +86,7 @@ public abstract class CompressorBlockEntity extends BlockEntity implements MenuP
     public int maxProgress;
     public int litTime;
 
-    public CompressorBlockEntity(BlockEntityType<?> block, BlockPos worldPosition, BlockState blockState, String name)
+    public CompressorBlockEntity(BlockEntityType<?> block, BlockPos worldPosition, BlockState blockState, int maxProgress, String name)
     {
         super(block, worldPosition, blockState);
         this.data = new ContainerData()
@@ -121,6 +121,8 @@ public abstract class CompressorBlockEntity extends BlockEntity implements MenuP
             }
         };
         this.name = name;
+        this.maxProgress = maxProgress;
+
     }
 
     @Override

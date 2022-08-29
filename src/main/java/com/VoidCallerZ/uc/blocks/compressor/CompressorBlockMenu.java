@@ -43,13 +43,16 @@ public abstract class CompressorBlockMenu extends AbstractContainerMenu
 
     public boolean isCrafting()
     {
-        return data.get(0) > 0;
+        return this.blockEntity.progress > 0;
+        //return data.get(0) > 0;
     }
 
     public int getScaledProgress()
     {
-        int progress = this.data.get(0);
-        int maxProgress = this.data.get(1);
+//        int progress = this.data.get(0);
+//        int maxProgress = this.data.get(1);
+        int progress = this.blockEntity.progress;
+        int maxProgress = this.blockEntity.maxProgress;
         int progressArrowSize = 26;
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;

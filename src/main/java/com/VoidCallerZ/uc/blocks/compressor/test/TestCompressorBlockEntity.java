@@ -1,8 +1,6 @@
 package com.VoidCallerZ.uc.blocks.compressor.test;
 
 import com.VoidCallerZ.uc.blocks.compressor.CompressorBlockEntity;
-import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlock;
-import com.VoidCallerZ.uc.blocks.compressor.iron.IronCompressorBlockMenu;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Inventory;
@@ -16,7 +14,7 @@ public class TestCompressorBlockEntity extends CompressorBlockEntity
 {
     public TestCompressorBlockEntity(BlockPos worldPosition, BlockState blockState)
     {
-        super(BlockRegistration.TEST_COMPRESSOR_BLOCK_ENTITY.get(), worldPosition, blockState, "Test Compressor - Tier LXIX");
+        super(BlockRegistration.TEST_COMPRESSOR_BLOCK_ENTITY.get(), worldPosition, blockState, 70, "Test Compressor - Tier LXIX");
     }
 
     @Nullable

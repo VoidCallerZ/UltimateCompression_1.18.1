@@ -23,7 +23,7 @@ public abstract class CompressorScreen<T extends CompressorBlockMenu> extends Ab
     {
         RenderSystem.setShader(GameRenderer::getPositionTexShader);
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-        RenderSystem.setShaderTexture(0, this.texture);
+        RenderSystem.setShaderTexture(0, texture);
         int x = (width - imageWidth) / 2;
         int y = (height - imageHeight) / 2;
 
