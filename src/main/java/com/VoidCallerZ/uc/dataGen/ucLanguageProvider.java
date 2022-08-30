@@ -9,10 +9,13 @@ import static com.VoidCallerZ.uc.setup.ModSetup.*;
 
 public class ucLanguageProvider extends LanguageProvider
 {
-    public ucLanguageProvider(DataGenerator gen, String locale) { super(gen, UltimateCompression.MODID, locale); }
+    public ucLanguageProvider(DataGenerator gen, String locale)
+    {
+        super(gen, UltimateCompression.MODID, locale);
+    }
 
     @Override
-    protected void  addTranslations()
+    protected void addTranslations()
     {
         add("itemGroup." + UC_TAB, "Ultimate Compression");
         add("itemGroup." + UC_TOOLS_TAB, "Ultimate Tool Compression");
@@ -24,6 +27,12 @@ public class ucLanguageProvider extends LanguageProvider
         add(BlockRegistration.GOLDEN_COMPRESSOR.get(), "Golden Compressor");
         add(BlockRegistration.DIAMOND_COMPRESSOR.get(), "Diamond Compressor");
         add(BlockRegistration.NETHERITE_COMPRESSOR.get(), "Netherite Compressor");
+
+        add("tooltip.uc.default", "Press §eSHIFT§r for more information!");
+        add("tooltip.uc.block.iron_compressor", "Compresses an item every §e5§r seconds");
+        add("tooltip.uc.block.gold_compressor", "Compresses an item every §e3.5§r seconds");
+        add("tooltip.uc.block.diamond_compressor", "Compresses an item every §e1§r second");
+        add("tooltip.uc.block.netherite_compressor", "Compresses an item every §e0.5§r seconds");
 
         //Ores
         add(BlockRegistration.COMPRESSED_IRON_ORE.get(), "Compressed Iron Ore");
@@ -369,7 +378,5 @@ public class ucLanguageProvider extends LanguageProvider
         add(ItemRegistration.COMPRESSED_SPECTRAL_ARROW_ENTITY.get(), "Compressed Spectral Arrow Entity");
         add(ItemRegistration.COMPRESSED_SNOWBALL.get(), "Compressed Snowball");
         add(ItemRegistration.COMPRESSED_SNOWBALL_ENTITY.get(), "Compressed SnowBall Entity");
-//        add(ItemRegistration.COMPRESSED_TIPPED_ARROW.get(), "Compressed Tipped Arrow");
-//        add(ItemRegistration.COMPRESSED_TIPPED_ARROW_ENTITY.get(), "Compressed Tipped Arrow Entity");
     }
 }

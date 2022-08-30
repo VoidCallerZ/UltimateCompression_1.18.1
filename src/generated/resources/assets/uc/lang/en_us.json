@@ -294,5 +294,10 @@
   "itemGroup.ultiamtefoodcompression": "Ultimate Food Compression",
   "itemGroup.ultimatecompression": "Ultimate Compression",
   "itemGroup.ultimatetoolcompression": "Ultimate Tool Compression",
-  "sounds.uc.compressor_use": "Compressor Pressing"
+  "sounds.uc.compressor_use": "Compressor Pressing",
+  "tooltip.uc.block.diamond_compressor": "Compresses an item every §e1§r second",
+  "tooltip.uc.block.gold_compressor": "Compresses an item every §e3.5§r seconds",
+  "tooltip.uc.block.iron_compressor": "Compresses an item every §e5§r seconds",
+  "tooltip.uc.block.netherite_compressor": "Compresses an item every §e0.5§r seconds",
+  "tooltip.uc.default": "Press §eSHIFT§r for more information!"
 }

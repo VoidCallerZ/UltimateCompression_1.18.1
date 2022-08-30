@@ -9,19 +9,25 @@ import com.VoidCallerZ.uc.items.UcSnowballItem;
 import com.VoidCallerZ.uc.items.arrows.UcArrowItem;
 import com.VoidCallerZ.uc.items.arrows.UcSpectralArrowItem;
 import com.VoidCallerZ.uc.setup.ModSetup;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.contents.TranslatableContents;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SolidBucketItem;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import javax.annotation.Nullable;
+
+import java.util.List;
 
 import static com.VoidCallerZ.uc.UltimateCompression.MODID;
 
@@ -259,10 +265,10 @@ public class ItemRegistration
     public static final RegistryObject<Item> COMPRESSED_OBSIDIAN = fromBlock(BlockRegistration.COMPRESSED_OBSIDIAN);
 
     //Compressor
-    public static final RegistryObject<Item> IRON_COMPRESSOR = fromBlock(BlockRegistration.IRON_COMPRESSOR);
-    public static final RegistryObject<Item> GOLDEN_COMPRESSOR = fromBlock(BlockRegistration.GOLDEN_COMPRESSOR);
-    public static final RegistryObject<Item> DIAMOND_COMPRESSOR = fromBlock(BlockRegistration.DIAMOND_COMPRESSOR);
-    public static final RegistryObject<Item> NETHERITE_COMPRESSOR = fromBlock(BlockRegistration.NETHERITE_COMPRESSOR);
+    public static final RegistryObject<Item> IRON_COMPRESSOR = fromBlock(BlockRegistration.IRON_COMPRESSOR, "tooltip.uc.block.iron_compressor");
+    public static final RegistryObject<Item> GOLDEN_COMPRESSOR = fromBlock(BlockRegistration.GOLDEN_COMPRESSOR, "tooltip.uc.block.gold_compressor");
+    public static final RegistryObject<Item> DIAMOND_COMPRESSOR = fromBlock(BlockRegistration.DIAMOND_COMPRESSOR, "tooltip.uc.block.diamond_compressor");
+    public static final RegistryObject<Item> NETHERITE_COMPRESSOR = fromBlock(BlockRegistration.NETHERITE_COMPRESSOR, "tooltip.uc.block.netherite_compressor");
 
     public static final RegistryObject<Item> COMPRESSED_FLINT = ITEMS.register("compressed_flint", () -> new Item(ITEM_PROPERTIES));
     public static final RegistryObject<Item> COMPRESSED_LEATHER = ITEMS.register("compressed_leather", () -> new Item(ITEM_PROPERTIES));
@@ -326,6 +332,25 @@ public class ItemRegistration
     private static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block)
     {
         return ITEMS.register(block.getId().getPath(), () -> new BlockItem(block.get(), ITEM_PROPERTIES));
+    }
+
+    private static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block, String tooltipKey)
+    {
+        return ITEMS.register(block.getId().getPath(), () -> new BlockItem(block.get(), ITEM_PROPERTIES)
+        {
+            @Override
+            public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> toolTip, TooltipFlag flag)
+            {
+                if (Screen.hasShiftDown())
+                {
+                    toolTip.add(Component.translatable(tooltipKey));
+                }
+                else
+                {
+                    toolTip.add(Component.translatable("tooltip.uc.default"));
+                }
+            }
+        });
     }
 
     private static <B extends Block> RegistryObject<Item> fromBlockFuelItem(RegistryObject<B> block, int burnTime)

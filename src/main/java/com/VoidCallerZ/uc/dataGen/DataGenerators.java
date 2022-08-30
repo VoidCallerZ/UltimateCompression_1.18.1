@@ -1,6 +1,7 @@
 package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
+import com.VoidCallerZ.uc.dataGen.languages.ucDutchLanguageProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -27,6 +28,7 @@ public class DataGenerators
         generator.addProvider(isServer, new ucBlockStates(generator, event.getExistingFileHelper()));
         generator.addProvider(isServer, new ucItemModels(generator, event.getExistingFileHelper()));
         generator.addProvider(isServer, new ucLanguageProvider(generator, "en_us"));
+        generator.addProvider(isServer, new ucDutchLanguageProvider(generator, "nl_nl"));
 
     }
 }
