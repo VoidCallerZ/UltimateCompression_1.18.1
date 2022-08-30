@@ -13,6 +13,7 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
@@ -84,6 +85,7 @@ public abstract class CompressorBlockEntity extends BlockEntity implements MenuP
     public int progress;
     public int maxProgress;
     public int litTime;
+    private BlockEntityType<?> block;
 
     public CompressorBlockEntity(BlockEntityType<?> block, BlockPos worldPosition, BlockState blockState, int maxProgress, String name)
     {
@@ -121,7 +123,7 @@ public abstract class CompressorBlockEntity extends BlockEntity implements MenuP
         };
         this.name = name;
         this.maxProgress = maxProgress;
-
+        this.block = block;
     }
 
     @Override
@@ -140,13 +142,22 @@ public abstract class CompressorBlockEntity extends BlockEntity implements MenuP
             {
                 return lazyCombinedItemHandler.cast();
             }
-            else if (side == Direction.UP)
-            {
-                return lazyInputItemHandler.cast();
-            }
             else if (side == Direction.DOWN)
             {
                 return lazyOutputItemHandler.cast();
+            }
+            else
+            {
+                if (isBlock(BlockRegistration.IRON_COMPRESSOR.get()))
+                {
+                    if (side == Direction.UP)
+                        return lazyInputItemHandler.cast();
+                }
+                else
+                {
+                    if (side == Direction.UP || side == Direction.SOUTH || side == Direction.WEST || side == Direction.EAST)
+                        return lazyInputItemHandler.cast();
+                }
             }
         }
         return super.getCapability(cap, side);
@@ -260,5 +271,10 @@ public abstract class CompressorBlockEntity extends BlockEntity implements MenuP
 
             entity.resetProgress();
         }
+    }
+
+    private boolean isBlock(Block compressorBlock)
+    {
+        return block.getBlockEntity(level, getBlockPos()).getBlockState().getBlock() == compressorBlock;
     }
 }

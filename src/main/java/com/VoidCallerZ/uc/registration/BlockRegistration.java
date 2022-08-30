@@ -317,7 +317,7 @@ public class BlockRegistration
     }));
 
     //Golden Compressor
-    public static final RegistryObject<GoldenCompressorBlock> GOLDEN_COMPRESSOR = BLOCKS.register("golden_compressor", () -> new GoldenCompressorBlock(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<GoldenCompressorBlock> GOLDEN_COMPRESSOR = BLOCKS.register("golden_compressor", () -> new GoldenCompressorBlock(COMPRESSOR_BLOCK_PROPERTIES));
     public static final RegistryObject<BlockEntityType<GoldenCompressorBlockEntity>> GOLDEN_COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("golden_compressor_block_entity", () -> BlockEntityType.Builder.of(GoldenCompressorBlockEntity::new, GOLDEN_COMPRESSOR.get()).build(null));
     public static final RegistryObject<MenuType<GoldenCompressorBlockMenu>> GOLDEN_COMPRESSOR_BLOCK_MENU = CONTAINERS.register("golden_compressor_block_menu", () -> IForgeMenuType.create((containerId, inv, data) ->
     {
@@ -327,7 +327,7 @@ public class BlockRegistration
     }));
 
     //Diamond Compressor
-    public static final RegistryObject<DiamondCompressorBlock> DIAMOND_COMPRESSOR = BLOCKS.register("diamond_compressor", () -> new DiamondCompressorBlock(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<DiamondCompressorBlock> DIAMOND_COMPRESSOR = BLOCKS.register("diamond_compressor", () -> new DiamondCompressorBlock(COMPRESSOR_BLOCK_PROPERTIES));
     public static final RegistryObject<BlockEntityType<DiamondCompressorBlockEntity>> DIAMOND_COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("diamond_compressor_block_entity", () -> BlockEntityType.Builder.of(DiamondCompressorBlockEntity::new, DIAMOND_COMPRESSOR.get()).build(null));
     public static final RegistryObject<MenuType<DiamondCompressorBlockMenu>> DIAMOND_COMPRESSOR_BLOCK_MENU = CONTAINERS.register("diamond_compressor_block_menu", () -> IForgeMenuType.create((containerId, inv, data) ->
     {
@@ -337,7 +337,7 @@ public class BlockRegistration
     }));
 
     //Netherite Compressor
-    public static final RegistryObject<NetheriteCompressorBlock> NETHERITE_COMPRESSOR = BLOCKS.register("netherite_compressor", () -> new NetheriteCompressorBlock(INGOT_BLOCK_PROPERTIES));
+    public static final RegistryObject<NetheriteCompressorBlock> NETHERITE_COMPRESSOR = BLOCKS.register("netherite_compressor", () -> new NetheriteCompressorBlock(COMPRESSOR_BLOCK_PROPERTIES));
     public static final RegistryObject<BlockEntityType<NetheriteCompressorBlockEntity>> NETHERITE_COMPRESSOR_BLOCK_ENTITY = BLOCK_ENTITIES.register("netherite_compressor_block_entity", () -> BlockEntityType.Builder.of(NetheriteCompressorBlockEntity::new, NETHERITE_COMPRESSOR.get()).build(null));
     public static final RegistryObject<MenuType<NetheriteCompressorBlockMenu>> NETHERITE_COMPRESSOR_BLOCK_MENU = CONTAINERS.register("netherite_compressor_block_menu", () -> IForgeMenuType.create((containerId, inv, data) ->
     {
