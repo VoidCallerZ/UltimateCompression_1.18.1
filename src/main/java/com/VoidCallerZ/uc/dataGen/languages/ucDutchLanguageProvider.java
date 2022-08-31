@@ -34,6 +34,8 @@ public class ucDutchLanguageProvider extends LanguageProvider
         add("tooltip.uc.block.diamond_compressor", "Perst elke §e1§r seconde een item samen");
         add("tooltip.uc.block.netherite_compressor", "Perst elke §e0.5§r seconden een item samen");
 
+        add("uc.jei.category.compressor", "Samenpersen");
+
         //Ores
         add(BlockRegistration.COMPRESSED_IRON_ORE.get(), "Samengeperste IJzererts");
         add(BlockRegistration.COMPRESSED_GOLD_ORE.get(), "Samengeperste Gouderts");

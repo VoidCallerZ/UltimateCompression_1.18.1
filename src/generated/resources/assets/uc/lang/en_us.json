@@ -299,5 +299,6 @@
   "tooltip.uc.block.gold_compressor": "Compresses an item every §e3.5§r seconds",
   "tooltip.uc.block.iron_compressor": "Compresses an item every §e5§r seconds",
   "tooltip.uc.block.netherite_compressor": "Compresses an item every §e0.5§r seconds",
-  "tooltip.uc.default": "Press §eSHIFT§r for more information!"
+  "tooltip.uc.default": "Press §eSHIFT§r for more information!",
+  "uc.jei.category.compressor": "Compressing"
 }

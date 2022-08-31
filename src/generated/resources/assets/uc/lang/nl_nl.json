@@ -299,5 +299,6 @@
   "tooltip.uc.block.gold_compressor": "Perst elke§e3.5§r seconden een item samen",
   "tooltip.uc.block.iron_compressor": "Perst elke §e5§r seconden een item samen",
   "tooltip.uc.block.netherite_compressor": "Perst elke §e0.5§r seconden een item samen",
-  "tooltip.uc.default": "Druk op §eSHIFT§r voor meer informatie!"
+  "tooltip.uc.default": "Druk op §eSHIFT§r voor meer informatie!",
+  "uc.jei.category.compressor": "Samenpersen"
 }

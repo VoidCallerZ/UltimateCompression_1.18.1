@@ -34,6 +34,8 @@ public class ucLanguageProvider extends LanguageProvider
         add("tooltip.uc.block.diamond_compressor", "Compresses an item every §e1§r second");
         add("tooltip.uc.block.netherite_compressor", "Compresses an item every §e0.5§r seconds");
 
+        add("uc.jei.category.compressor", "Compressing");
+
         //Ores
         add(BlockRegistration.COMPRESSED_IRON_ORE.get(), "Compressed Iron Ore");
         add(BlockRegistration.COMPRESSED_GOLD_ORE.get(), "Compressed Gold Ore");
