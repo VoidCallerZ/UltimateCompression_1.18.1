@@ -28,10 +28,6 @@ public class CompressorItemRecipe implements Recipe<SimpleContainer>
     @Override
     public boolean matches(SimpleContainer pContainer, Level pLevel)
     {
-        if (pLevel.isClientSide())
-        {
-            return false;
-        }
         return recipeItems.get(0).test(pContainer.getItem(0));
     }
 
