@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -122,7 +123,7 @@ public abstract class CompressorBlockEntity extends BlockEntity implements MenuP
             }
         };
         this.name = name;
-        this.maxProgress = maxProgress;
+        this.maxProgress = getCompressingTimeConfig().get();
         this.block = block;
     }
 
@@ -276,5 +277,10 @@ public abstract class CompressorBlockEntity extends BlockEntity implements MenuP
     private boolean isBlock(Block compressorBlock)
     {
         return block.getBlockEntity(level, getBlockPos()).getBlockState().getBlock() == compressorBlock;
+    }
+
+    public ForgeConfigSpec.IntValue getCompressingTimeConfig()
+    {
+        return null;
     }
 }

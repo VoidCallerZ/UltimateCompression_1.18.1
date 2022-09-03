@@ -1,6 +1,7 @@
 package com.VoidCallerZ.uc.registration;
 
 import com.VoidCallerZ.uc.UltimateCompression;
+import com.VoidCallerZ.uc.setup.Config;
 import com.VoidCallerZ.uc.world.modifiers.OreBiomeModifier;
 import com.VoidCallerZ.uc.world.ores.Ores;
 import com.mojang.serialization.Codec;

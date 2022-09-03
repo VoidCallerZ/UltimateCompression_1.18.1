@@ -2,12 +2,14 @@ package com.VoidCallerZ.uc.blocks.compressor.iron;
 
 import com.VoidCallerZ.uc.blocks.compressor.CompressorBlockEntity;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
+import com.VoidCallerZ.uc.setup.Config;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.ForgeConfigSpec;
 import org.jetbrains.annotations.Nullable;
 
 public class IronCompressorBlockEntity extends CompressorBlockEntity
@@ -24,6 +26,12 @@ public class IronCompressorBlockEntity extends CompressorBlockEntity
         return new IronCompressorBlockMenu(containerId, inventory, this);
     }
 
+    @Override
+    public ForgeConfigSpec.IntValue getCompressingTimeConfig()
+    {
+        return Config.ironCompressorSpeed;
+    }
+
     private boolean isLit()
     {
         return this.litTime > 0;
@@ -31,6 +39,10 @@ public class IronCompressorBlockEntity extends CompressorBlockEntity
 
     public static void tick(Level level, BlockPos pos, BlockState state, IronCompressorBlockEntity blockEntity)
     {
+        System.out.println("Iron: " + Config.ironCompressorSpeed.get() +
+                "\nGold: " + Config.goldCompressorSpeed.get() +
+                "\nDiamond: " + Config.diamondCompressorSpeed.get() +
+                "\nNetherite: " + Config.netheriteCompressorSpeed.get());
         if (blockEntity.isLit())
         {
             blockEntity.litTime--;
