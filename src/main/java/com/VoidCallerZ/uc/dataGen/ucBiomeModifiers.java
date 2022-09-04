@@ -2,6 +2,7 @@ package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.registration.WorldGenRegistration;
+import com.VoidCallerZ.uc.setup.Config;
 import com.VoidCallerZ.uc.world.modifiers.OreBiomeModifier;
 import com.google.gson.JsonElement;
 import com.mojang.serialization.JsonOps;
@@ -48,7 +49,6 @@ public class ucBiomeModifiers implements DataProvider
         setOverworldModifier(cache, ops, WorldGenRegistration.COMPRESSED_EMERALD_ORE_GEN);
         setOverworldModifier(cache, ops, WorldGenRegistration.COMPRESSED_LAPIS_ORE_GEN);
         setOverworldModifier(cache, ops, WorldGenRegistration.COMPRESSED_REDSTONE_ORE_GEN);
-
         setOverworldModifier(cache, ops, WorldGenRegistration.COMPRESSED_DEEPSLATE_IRON_ORE_GEN);
         setOverworldModifier(cache, ops, WorldGenRegistration.COMPRESSED_DEEPSLATE_GOLD_ORE_GEN);
         setOverworldModifier(cache, ops, WorldGenRegistration.COMPRESSED_DEEPSLATE_COPPER_ORE_GEN);
@@ -61,7 +61,6 @@ public class ucBiomeModifiers implements DataProvider
         //Nether Ores
         setNetherModifier(cache, ops, WorldGenRegistration.COMPRESSED_NETHER_QUARTZ_ORE_GEN);
         setNetherModifier(cache, ops, WorldGenRegistration.COMPRESSED_NETHER_GOLD_ORE_GEN);
-
     }
 
     @Override

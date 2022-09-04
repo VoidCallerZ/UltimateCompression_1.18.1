@@ -39,10 +39,6 @@ public class IronCompressorBlockEntity extends CompressorBlockEntity
 
     public static void tick(Level level, BlockPos pos, BlockState state, IronCompressorBlockEntity blockEntity)
     {
-        System.out.println("Iron: " + Config.ironCompressorSpeed.get() +
-                "\nGold: " + Config.goldCompressorSpeed.get() +
-                "\nDiamond: " + Config.diamondCompressorSpeed.get() +
-                "\nNetherite: " + Config.netheriteCompressorSpeed.get());
         if (blockEntity.isLit())
         {
             blockEntity.litTime--;
