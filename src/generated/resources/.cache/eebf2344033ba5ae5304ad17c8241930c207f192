@@ -1,4 +1,5 @@
-// 1.19.2	2022-08-30T00:08:04.5327145	Item Models: uc
+// 1.19.2	2022-09-04T19:47:48.9856817	Item Models: uc
+5c32245dff3f7bd12c2610ee82b92e00663bce4a assets/uc/models/item/compressed_acacia_leaves.json
 f381bd2053cc90b43b7e3d5375a556bc65a53121 assets/uc/models/item/compressed_acacia_log.json
 681df59d895167a265d1b4f93674ad2b384984ba assets/uc/models/item/compressed_acacia_planks.json
 1f67eb77cf349f3cd06d486b9fa61baff8fec05e assets/uc/models/item/compressed_andesite.json
@@ -9,6 +10,7 @@ c4fc5b727666f61b54467de2852783b24901c53b assets/uc/models/item/compressed_apple.
 360edfc4032393a8f3e44a3795d09e7d2a7a0ae6 assets/uc/models/item/compressed_beef.json
 98ecd2c02b6adb86b2cb7104561f62cd0fb73e0f assets/uc/models/item/compressed_beetroot.json
 879a8b2ad892954887c50ec92bf8d2e97e2517da assets/uc/models/item/compressed_beetroot_soup.json
+7c38d8c138ef3dae9b3fd97235abd05dabbf7567 assets/uc/models/item/compressed_birch_leaves.json
 c868ffc9f628511a2468678b12106152f31bbe17 assets/uc/models/item/compressed_birch_log.json
 8ccffca37bfe4d725993cdf0d5e91d742f16fecf assets/uc/models/item/compressed_birch_planks.json
 058ea41efccadacf10f9d44e376170e9284a4c7c assets/uc/models/item/compressed_blackstone.json
@@ -64,6 +66,7 @@ a7cf1ee61662531959c37544de64c1ab9ffe0f27 assets/uc/models/item/compressed_cut_sa
 e8e7a8e08c071cee77d60e2438df8b706a3f55ef assets/uc/models/item/compressed_cyan_stained_glass.json
 5922842b409370ff9aa0ba5cf9fe06a5ca60cb1c assets/uc/models/item/compressed_cyan_stained_glass_pane.json
 2ef08ca6a16356784e491886523695a4cb99a45e assets/uc/models/item/compressed_cyan_wool.json
+32d030ff092abcec9c743f3794a8ccec7961be26 assets/uc/models/item/compressed_dark_oak_leaves.json
 cda9dd2118ffc633c86031602b0aa9f6b7928398 assets/uc/models/item/compressed_dark_oak_log.json
 7dabb04df38ede79a32dccbdf8a4c585452faab5 assets/uc/models/item/compressed_dark_oak_planks.json
 eda045d75f295c102668ff42abcae3adc885b942 assets/uc/models/item/compressed_deepslate.json
@@ -140,6 +143,7 @@ b4bdb9dc0f90e3df7746d085ba9e8a49131af730 assets/uc/models/item/compressed_iron_i
 18428dd572853aa61318ed41ad17205c68ba2036 assets/uc/models/item/compressed_iron_pickaxe.json
 bb7b7cddca364d90673097ef5e9c1ea0149a47e5 assets/uc/models/item/compressed_iron_shovel.json
 3779a8c4c15cc2b9acd176c98592de8f10c641b8 assets/uc/models/item/compressed_iron_sword.json
+5ef9665f3b78971885f28625e633467ce4cc8816 assets/uc/models/item/compressed_jungle_leaves.json
 09456d85a128d50787c2d1d0d1979536215ce9ec assets/uc/models/item/compressed_jungle_log.json
 9900d8d5f1abd1fe4a48a8f42066f909ef78eeaa assets/uc/models/item/compressed_jungle_planks.json
 53149781c4adc2543438b5437f431fc627c9559b assets/uc/models/item/compressed_lapis.json
@@ -171,6 +175,7 @@ d58c4ef3bf6542e48b9b4a59280ebafa724f1c86 assets/uc/models/item/compressed_magent
 270824a78b118f5d4864fe2ccd50f7cd77a3b02d assets/uc/models/item/compressed_magenta_stained_glass_pane.json
 092be7893ccad540d97e9f022a8ef135adccdf6b assets/uc/models/item/compressed_magenta_wool.json
 d838618f2623def5bfed9a2ae402399d90304699 assets/uc/models/item/compressed_magma.json
+a5434d7321250934e87d02d671d9942cd014d3e4 assets/uc/models/item/compressed_mangrove_leaves.json
 63c6022934d39887f07ffc8ea2c0bda3f8291451 assets/uc/models/item/compressed_mangrove_log.json
 25e332cc86616bee419af660dd8d89cffe23dfc3 assets/uc/models/item/compressed_mangrove_planks.json
 5e72f19d64a6946a61d2eb7f26a2e31e5cd1d49f assets/uc/models/item/compressed_mangrove_roots.json
@@ -193,6 +198,7 @@ ab8cc028eca22c67cf86db4b4353d2d85401941e assets/uc/models/item/compressed_nether
 1739a9bdca385be4540fd29588b19b4315aa10cd assets/uc/models/item/compressed_netherrack.json
 055642e409507449b32b6986a9ed53da7d3e38cb assets/uc/models/item/compressed_nether_quartz_block.json
 e1909ea70312571a956a299d45bd5af28a136a86 assets/uc/models/item/compressed_nether_quartz_ore.json
+2c72b9a876004f1d5280f7443840f70168f4648d assets/uc/models/item/compressed_oak_leaves.json
 8756da22c32e371d762a03429b4edd978474cd77 assets/uc/models/item/compressed_oak_log.json
 a10a7e3c0abdf9489b6126fb349b7264030c8d52 assets/uc/models/item/compressed_oak_planks.json
 2933d25ad7b3acd8b877efb6275ca485156318d7 assets/uc/models/item/compressed_obsidian.json
@@ -257,6 +263,7 @@ f9e31b8d1a810912169613e080e6b632d85adf96 assets/uc/models/item/compressed_smooth
 cdab326308969589827e9f38e283ec07da67978e assets/uc/models/item/compressed_soul_soil.json
 b0600c63ed3d11c07433d148c7b6400decf8e603 assets/uc/models/item/compressed_spectral_arrow.json
 30cce60d78351783a2f3e386a6addc5e60683f16 assets/uc/models/item/compressed_spider_eye.json
+bedfb7523d875e6300b7bf29f5886036d57f5651 assets/uc/models/item/compressed_spruce_leaves.json
 33038f20714d0a75f9155f7439dd6412e92a476e assets/uc/models/item/compressed_spruce_log.json
 39ac7a0ccf2a5123ca0f9267c996adcdde24d047 assets/uc/models/item/compressed_spruce_planks.json
 1be817fedeb89849930d32e55f4ef7f6f8cd7f85 assets/uc/models/item/compressed_stick.json

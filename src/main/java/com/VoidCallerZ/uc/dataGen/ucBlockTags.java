@@ -125,6 +125,15 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(BlockRegistration.COMPRESSED_SNOW_BLOCK.get())
                 .add(BlockRegistration.COMPRESSED_POWDER_SNOW.get());
 
+        tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(BlockRegistration.COMPRESSED_ACACIA_LEAVES.get())
+                .add(BlockRegistration.COMPRESSED_BIRCH_LEAVES.get())
+                .add(BlockRegistration.COMPRESSED_DARK_OAK_LEAVES.get())
+                .add(BlockRegistration.COMPRESSED_JUNGLE_LEAVES.get())
+                .add(BlockRegistration.COMPRESSED_MANGROVE_LEAVES.get())
+                .add(BlockRegistration.COMPRESSED_OAK_LEAVES.get())
+                .add(BlockRegistration.COMPRESSED_SPRUCE_LEAVES.get());
+
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(BlockRegistration.COMPRESSED_IRON_ORE.get())
                 .add(BlockRegistration.COMPRESSED_COPPER_ORE.get())

@@ -91,6 +91,15 @@ public class ucLanguageProvider extends LanguageProvider
         add(BlockRegistration.COMPRESSED_MANGROVE_PLANKS.get(), "Compressed Mangrove Planks");
         add(BlockRegistration.COMPRESSED_MANGROVE_ROOTS.get(), "Compressed Mangrove Roots");
 
+        //Leaves
+        add(BlockRegistration.COMPRESSED_ACACIA_LEAVES.get(), "Compressed Acacia Leaves");
+        add(BlockRegistration.COMPRESSED_BIRCH_LEAVES.get(), "Compressed Birch Leaves");
+        add(BlockRegistration.COMPRESSED_DARK_OAK_LEAVES.get(), "Compressed Dark Oak Leaves");
+        add(BlockRegistration.COMPRESSED_JUNGLE_LEAVES.get(), "Compressed Jungle Leaves");
+        add(BlockRegistration.COMPRESSED_MANGROVE_LEAVES.get(), "Compressed Mangrove Leaves");
+        add(BlockRegistration.COMPRESSED_OAK_LEAVES.get(), "Compressed Oak Leaves");
+        add(BlockRegistration.COMPRESSED_SPRUCE_LEAVES.get(), "Compressed Spruce Leaves");
+
         //Wool
         add(BlockRegistration.COMPRESSED_BLACK_WOOL.get(), "Compressed Black Wool");
         add(BlockRegistration.COMPRESSED_BLUE_WOOL.get(), "Compressed Blue Wool");

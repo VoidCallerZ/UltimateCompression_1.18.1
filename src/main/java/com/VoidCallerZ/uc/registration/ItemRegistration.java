@@ -161,6 +161,15 @@ public class ItemRegistration
     public static final RegistryObject<Item> COMPRESSED_MANGROVE_LOG = fromBlockFuelItem(BlockRegistration.COMPRESSED_MANGROVE_LOG, 2700);
     public static final RegistryObject<Item> COMPRESSED_MANGROVE_PLANKS = fromBlockFuelItem(BlockRegistration.COMPRESSED_MANGROVE_PLANKS, 2700);
     public static final RegistryObject<Item> COMPRESSED_MANGROVE_ROOTS = fromBlockFuelItem(BlockRegistration.COMPRESSED_MANGROVE_ROOTS, 2700);
+
+    //Leaves
+    public static final RegistryObject<Item> COMPRESSED_ACACIA_LEAVES = fromBlock(BlockRegistration.COMPRESSED_ACACIA_LEAVES);
+    public static final RegistryObject<Item> COMPRESSED_BIRCH_LEAVES = fromBlock(BlockRegistration.COMPRESSED_BIRCH_LEAVES);
+    public static final RegistryObject<Item> COMPRESSED_DARK_OAK_LEAVES = fromBlock(BlockRegistration.COMPRESSED_DARK_OAK_LEAVES);
+    public static final RegistryObject<Item> COMPRESSED_JUNGLE_LEAVES = fromBlock(BlockRegistration.COMPRESSED_JUNGLE_LEAVES);
+    public static final RegistryObject<Item> COMPRESSED_MANGROVE_LEAVES = fromBlock(BlockRegistration.COMPRESSED_MANGROVE_LEAVES);
+    public static final RegistryObject<Item> COMPRESSED_OAK_LEAVES = fromBlock(BlockRegistration.COMPRESSED_OAK_LEAVES);
+    public static final RegistryObject<Item> COMPRESSED_SPRUCE_LEAVES = fromBlock(BlockRegistration.COMPRESSED_SPRUCE_LEAVES);
     
     //Wool Blocks
     public static final RegistryObject<Item> COMPRESSED_BLACK_WOOL = fromBlockFuelItem(BlockRegistration.COMPRESSED_BLACK_WOOL, 200);

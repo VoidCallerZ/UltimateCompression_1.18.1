@@ -21,6 +21,8 @@ import com.VoidCallerZ.uc.blocks.glass.UcGlassBlock;
 import com.VoidCallerZ.uc.blocks.glass.UcGlassPaneBlock;
 import com.VoidCallerZ.uc.blocks.glass.UcStainedGlassBlock;
 import com.VoidCallerZ.uc.blocks.glass.UcStainedGlassPaneBlock;
+import net.minecraft.client.color.block.BlockColor;
+import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
@@ -29,6 +31,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
@@ -44,7 +47,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
 
+import java.awt.*;
 import java.util.function.ToIntFunction;
 
 import static com.VoidCallerZ.uc.UltimateCompression.MODID;
@@ -76,11 +81,14 @@ public class BlockRegistration
     public static final BlockBehaviour.Properties GLASS_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.GLASS).strength(0.3f).sound(SoundType.GLASS).noOcclusion().isValidSpawn(BlockRegistration::never).isRedstoneConductor(BlockRegistration::never).isSuffocating(BlockRegistration::never).isViewBlocking(BlockRegistration::never);
     public static final BlockBehaviour.Properties OBSIDIAN_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(50, 1200).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties COMPRESSOR_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.METAL).lightLevel(litBlockEmission(15)).strength(2f).sound(SoundType.METAL).requiresCorrectToolForDrops();
+    public static final BlockBehaviour.Properties LEAVE_PROPERTIES = BlockBehaviour.Properties.of(Material.GRASS).strength(0.2F).sound(SoundType.GRASS).noOcclusion().isValidSpawn(BlockRegistration::ocelotOrParrot).isSuffocating(BlockRegistration::never).isViewBlocking(BlockRegistration::never);
 
     public static final TagKey<Item> COMPRESSED_PLANKS_FOR_TOOLS = ItemTags.create(new ResourceLocation(UltimateCompression.MODID, "compressed_planks_for_tools"));
     public static final TagKey<Item> COMPRESSOR_VALID_ITEMS = ItemTags.create(new ResourceLocation(MODID, "compressor_valid_items"));
 
     public static final RegistryObject<Item> UC_ICON = ITEMS.register("uc_icon", () -> new Item(new Item.Properties()));
+
+
 
     //parentBlocks & Items
     //Ores
@@ -200,6 +208,15 @@ public class BlockRegistration
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_MANGROVE_LOG = BLOCKS.register("compressed_mangrove_log", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));
     public static final RegistryObject<Block> COMPRESSED_MANGROVE_PLANKS = BLOCKS.register("compressed_mangrove_planks", () -> new Block(WOOD_BLOCK_PROPERTIES));
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_MANGROVE_ROOTS = BLOCKS.register("compressed_mangrove_roots", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));
+
+    //Leaves
+    public static final RegistryObject<Block> COMPRESSED_ACACIA_LEAVES = BLOCKS.register("compressed_acacia_leaves", () -> new Block(LEAVE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_BIRCH_LEAVES = BLOCKS.register("compressed_birch_leaves", () -> new Block(LEAVE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_DARK_OAK_LEAVES = BLOCKS.register("compressed_dark_oak_leaves", () -> new Block(LEAVE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_JUNGLE_LEAVES = BLOCKS.register("compressed_jungle_leaves", () -> new Block(LEAVE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_MANGROVE_LEAVES = BLOCKS.register("compressed_mangrove_leaves", () -> new Block(LEAVE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_OAK_LEAVES = BLOCKS.register("compressed_oak_leaves", () -> new Block(LEAVE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_SPRUCE_LEAVES = BLOCKS.register("compressed_spruce_leaves", () -> new Block(LEAVE_PROPERTIES));
 
     //Wool Blocks
     public static final RegistryObject<Block> COMPRESSED_BLACK_WOOL = BLOCKS.register("compressed_black_wool", () -> new Block(WOOL_BLOCK_PROPERTIES));
@@ -360,5 +377,10 @@ public class BlockRegistration
     {
         return (state) ->
                 state.getValue(BlockStateProperties.LIT) ? lightValue : 0;
+    }
+
+    private static Boolean ocelotOrParrot(BlockState state, BlockGetter getter, BlockPos pos, EntityType<?> type)
+    {
+        return type == EntityType.OCELOT || type == EntityType.PARROT;
     }
 }

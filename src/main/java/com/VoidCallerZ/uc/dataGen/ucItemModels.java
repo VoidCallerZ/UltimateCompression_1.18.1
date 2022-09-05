@@ -143,6 +143,15 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MANGROVE_PLANKS.get()).getPath(), modLoc("block/compressed_mangrove_planks"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MANGROVE_ROOTS.get()).getPath(), modLoc("block/compressed_mangrove_roots"));
 
+        //Leaves
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_ACACIA_LEAVES.get()).getPath(), modLoc("block/compressed_acacia_leaves"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BIRCH_LEAVES.get()).getPath(), modLoc("block/compressed_birch_leaves"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DARK_OAK_LEAVES.get()).getPath(), modLoc("block/compressed_dark_oak_leaves"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_JUNGLE_LEAVES.get()).getPath(), modLoc("block/compressed_jungle_leaves"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MANGROVE_LEAVES.get()).getPath(), modLoc("block/compressed_mangrove_leaves"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_OAK_LEAVES.get()).getPath(), modLoc("block/compressed_oak_leaves"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SPRUCE_LEAVES.get()).getPath(), modLoc("block/compressed_spruce_leaves"));
+
         //Wool
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BLACK_WOOL.get()).getPath(), modLoc("block/compressed_black_wool"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BLUE_WOOL.get()).getPath(), modLoc("block/compressed_blue_wool"));

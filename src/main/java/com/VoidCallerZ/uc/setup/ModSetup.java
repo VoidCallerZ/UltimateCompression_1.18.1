@@ -51,6 +51,8 @@ public class ModSetup
     public static void init(FMLCommonSetupEvent event)
     {
         event.enqueueWork(() ->
-                Ores.registerConfiguredFeatures());
+        {
+            Ores.registerConfiguredFeatures();
+        });
     }
 }

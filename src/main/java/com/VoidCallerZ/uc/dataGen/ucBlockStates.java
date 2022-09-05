@@ -144,6 +144,15 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(BlockRegistration.COMPRESSED_WARPED_PLANKS.get(), "compressed_warped_planks", "block/compressed/planks/compressed_warped_planks");
         singleTextureBlock(BlockRegistration.COMPRESSED_MANGROVE_PLANKS.get(), "compressed_mangrove_planks", "block/compressed/planks/compressed_mangrove_planks");
 
+        //Leaves
+        singleTextureBlockWithRenderTypeAndBlockColors(BlockRegistration.COMPRESSED_ACACIA_LEAVES.get(), "compressed_acacia_leaves", "block/compressed/leaves/compressed_acacia_leaves", "cutout");
+        singleTextureBlockWithRenderTypeAndBlockColors(BlockRegistration.COMPRESSED_BIRCH_LEAVES.get(), "compressed_birch_leaves", "block/compressed/leaves/compressed_birch_leaves", "translucent");
+        singleTextureBlockWithRenderTypeAndBlockColors(BlockRegistration.COMPRESSED_DARK_OAK_LEAVES.get(), "compressed_dark_oak_leaves", "block/compressed/leaves/compressed_dark_oak_leaves", "translucent");
+        singleTextureBlockWithRenderTypeAndBlockColors(BlockRegistration.COMPRESSED_JUNGLE_LEAVES.get(), "compressed_jungle_leaves", "block/compressed/leaves/compressed_jungle_leaves", "translucent");
+        singleTextureBlockWithRenderTypeAndBlockColors(BlockRegistration.COMPRESSED_MANGROVE_LEAVES.get(), "compressed_mangrove_leaves", "block/compressed/leaves/compressed_mangrove_leaves", "translucent");
+        singleTextureBlockWithRenderTypeAndBlockColors(BlockRegistration.COMPRESSED_OAK_LEAVES.get(), "compressed_oak_leaves", "block/compressed/leaves/compressed_oak_leaves", "translucent");
+        singleTextureBlockWithRenderTypeAndBlockColors(BlockRegistration.COMPRESSED_SPRUCE_LEAVES.get(), "compressed_spruce_leaves", "block/compressed/leaves/compressed_spruce_leaves", "translucent");
+
         //Wool
         singleTextureBlock(BlockRegistration.COMPRESSED_BLACK_WOOL.get(), "compressed_black_wool", "block/compressed/wool/compressed_black_wool");
         singleTextureBlock(BlockRegistration.COMPRESSED_BLUE_WOOL.get(), "compressed_blue_wool", "block/compressed/wool/compressed_blue_wool");

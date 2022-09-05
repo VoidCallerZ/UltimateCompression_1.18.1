@@ -16,6 +16,8 @@ import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import static net.minecraftforge.client.model.generators.ModelProvider.BLOCK_FOLDER;
+
 public abstract class BaseBlockStateProvider extends BlockStateProvider {
     public BaseBlockStateProvider(DataGenerator gen, String modid, ExistingFileHelper exFileHelper)
     {
@@ -31,6 +33,12 @@ public abstract class BaseBlockStateProvider extends BlockStateProvider {
     protected void singleTextureBlockWithRenderType(Block block, String modelName, String textureName, String renderType)
     {
         ModelFile model = models().cubeAll(modelName, modLoc(textureName)).renderType(renderType);
+        simpleBlock(block, model);
+    }
+
+    protected void singleTextureBlockWithRenderTypeAndBlockColors(Block block, String modelName, String textureName, String renderType)
+    {
+        ModelFile model = models().singleTexture(modelName, mcLoc(BLOCK_FOLDER + "/leaves"), "all", modLoc(textureName)).renderType(renderType);
         simpleBlock(block, model);
     }
 
