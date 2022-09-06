@@ -1,4 +1,4 @@
-// 1.19.2	2022-09-05T20:49:36.5237022	Item Models: uc
+// 1.19.2	2022-09-06T21:08:26.5591642	Item Models: uc
 5c32245dff3f7bd12c2610ee82b92e00663bce4a assets/uc/models/item/compressed_acacia_leaves.json
 f381bd2053cc90b43b7e3d5375a556bc65a53121 assets/uc/models/item/compressed_acacia_log.json
 681df59d895167a265d1b4f93674ad2b384984ba assets/uc/models/item/compressed_acacia_planks.json
@@ -275,6 +275,7 @@ fa6346d2a17e02c958d9d89221bb39d55da8658b assets/uc/models/item/compressed_stone_
 4dd23d875bfd1053b3edea7f5ff9196a0154a0ca assets/uc/models/item/compressed_stone_shovel.json
 774d6056629ca9f4c85fee1b13b116742b2d6286 assets/uc/models/item/compressed_stone_sword.json
 4ccef85f1bd634fe1d89931dc554e46f07c3343a assets/uc/models/item/compressed_sweet_berries.json
+a158709c2445155c19bd70cc2b4d720d877adb0c assets/uc/models/item/compressed_tipped_arrow.json
 055c9de4f649912a4f4e4de64e7830510e714314 assets/uc/models/item/compressed_tropical_fish.json
 6da9c8585e2615a0f6c538c8f4aea2faac1c87bc assets/uc/models/item/compressed_tuff.json
 02a2064af1158f0add545f983ec379337b699890 assets/uc/models/item/compressed_warped_planks.json

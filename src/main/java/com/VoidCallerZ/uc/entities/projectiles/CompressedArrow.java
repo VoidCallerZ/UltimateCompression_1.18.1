@@ -14,12 +14,14 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.Collection;
 import java.util.Set;
 
 public class CompressedArrow extends AbstractArrow
@@ -47,36 +49,37 @@ public class CompressedArrow extends AbstractArrow
         super(ItemRegistration.COMPRESSED_ARROW_ENTITY.get(), entity, level);
     }
 
-//    public void setEffectsFromItem(ItemStack stack)
-//    {
-//        if (stack.is(ItemRegistration.COMPRESSED_TIPPED_ARROW.get()))
-//        {
-//            this.potion = PotionUtils.getPotion(stack);
-//            Collection<MobEffectInstance> collection = PotionUtils.getCustomEffects(stack);
-//            if (!collection.isEmpty())
-//            {
-//                for (MobEffectInstance mobEffectInstance : collection)
-//                {
-//                    this.effects.add(new MobEffectInstance(mobEffectInstance));
-//                }
-//            }
-//            int i = getCustomColor(stack);
-//            if (i == -1)
-//            {
-//                this.updateColor();
-//            }
-//            else
-//            {
-//                this.setFixedColor(i);
-//            }
-//        }
-//        else if (stack.is(ItemRegistration.COMPRESSED_ARROW.get()))
-//        {
-//            this.potion = Potions.EMPTY;
-//            this.effects.clear();
-//            this.entityData.set(ID_EFFECT_COLOR, -1);
-//        }
-//    }
+    public void setEffectsFromItem(ItemStack stack)
+    {
+        if (stack.is(ItemRegistration.COMPRESSED_TIPPED_ARROW.get()))
+        {
+            this.potion = PotionUtils.getPotion(stack);
+            Collection<MobEffectInstance> collection = PotionUtils.getCustomEffects(stack);
+            if (!collection.isEmpty())
+            {
+                for (MobEffectInstance mobEffectInstance : collection)
+                {
+                    this.effects.add(new MobEffectInstance(mobEffectInstance));
+                }
+            }
+
+            int i = getCustomColor(stack);
+            if (i == -1)
+            {
+                this.updateColor();
+            }
+            else
+            {
+                this.setFixedColor(i);
+            }
+        }
+        else if (stack.is(ItemRegistration.COMPRESSED_ARROW.get()))
+        {
+            this.potion = Potions.EMPTY;
+            this.effects.clear();
+            this.entityData.set(ID_EFFECT_COLOR, -1);
+        }
+    }
 
     public static int getCustomColor(ItemStack stack)
     {
@@ -112,6 +115,7 @@ public class CompressedArrow extends AbstractArrow
     public void tick()
     {
         super.tick();
+        System.out.println(this.getName());
         if (this.level.isClientSide)
         {
             if (this.inGround)
@@ -206,25 +210,23 @@ public class CompressedArrow extends AbstractArrow
         }
     }
 
-    protected void doPostHurtEffects(LivingEntity pLiving)
+    protected void doPostHurtEffects(LivingEntity livingEntity)
     {
-        super.doPostHurtEffects(pLiving);
+        super.doPostHurtEffects(livingEntity);
         Entity entity = this.getEffectSource();
 
         for (MobEffectInstance mobEffectInstance : this.potion.getEffects())
         {
-            pLiving.addEffect(new MobEffectInstance(mobEffectInstance.getEffect(), Math.max(mobEffectInstance.getDuration() / 8, 1), mobEffectInstance.getAmplifier(), mobEffectInstance.isAmbient(), mobEffectInstance.isVisible()), entity);
+            livingEntity.addEffect(new MobEffectInstance(mobEffectInstance.getEffect(), Math.max(mobEffectInstance.getDuration() / 8, 1), mobEffectInstance.getAmplifier(), mobEffectInstance.isAmbient(), mobEffectInstance.isVisible()), entity);
         }
 
         if (!this.effects.isEmpty())
         {
-            for (MobEffectInstance mobEffectInstance1 : this.effects)
+            for (MobEffectInstance mobEffectInstance : this.effects)
             {
-                pLiving.addEffect(mobEffectInstance1, entity);
+                livingEntity.addEffect(mobEffectInstance, entity);
             }
         }
-
-        //pLiving.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 1));
     }
 
     @Override
@@ -234,19 +236,17 @@ public class CompressedArrow extends AbstractArrow
         {
             return new ItemStack(ItemRegistration.COMPRESSED_ARROW.get());
         }
-//        else
-//        {
-//            ItemStack itemStack = new ItemStack(ItemRegistration.COMPRESSED_TIPPED_ARROW.get());
-//            PotionUtils.setPotion(itemStack, this.potion);
-//            PotionUtils.setCustomEffects(itemStack, this.effects);
-//            if (this.fixedColor)
-//            {
-//                itemStack.getOrCreateTag().putInt("CustomPotionColor", this.getColor());
-//            }
-//
-//            return itemStack;
-//        }
-        return ItemStack.EMPTY;
+        else
+        {
+            ItemStack itemStack = new ItemStack(ItemRegistration.COMPRESSED_TIPPED_ARROW.get());
+            PotionUtils.setPotion(itemStack, this.potion);
+            PotionUtils.setCustomEffects(itemStack, this.effects);
+            if (this.fixedColor)
+            {
+                itemStack.getOrCreateTag().putInt("CustomPotionColor", this.getColor());
+            }
+            return itemStack;
+        }
     }
 
     public void handleEntityEvent(byte id)

@@ -5,8 +5,8 @@ import com.VoidCallerZ.uc.colors.UcBlockColors;
 import com.VoidCallerZ.uc.colors.UcItemColors;
 import com.VoidCallerZ.uc.entities.renderer.CompressedArrowRenderer;
 import com.VoidCallerZ.uc.entities.renderer.CompressedSpectralArrowRenderer;
+import com.VoidCallerZ.uc.entities.renderer.CompressedTippableArrowRenderer;
 import com.VoidCallerZ.uc.registration.ItemRegistration;
-import net.minecraft.client.color.item.ItemColors;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
@@ -26,8 +26,9 @@ public class ModEventBusEvents
     @SubscribeEvent
     public static void onClientSetup(EntityRenderersEvent.RegisterRenderers event)
     {
-        event.registerEntityRenderer(ItemRegistration.COMPRESSED_ARROW_ENTITY.get(), CompressedArrowRenderer::new);
+        event.registerEntityRenderer(ItemRegistration.COMPRESSED_ARROW_ENTITY.get(), CompressedTippableArrowRenderer::new);
         event.registerEntityRenderer(ItemRegistration.COMPRESSED_SPECTRAL_ARROW_ENTITY.get(), CompressedSpectralArrowRenderer::new);
+        //event.registerEntityRenderer(ItemRegistration.COMPRESSED_TIPPED_ARROW_ENTITY.get(), CompressedTippableArrowRenderer::new);
     }
 
     @SubscribeEvent

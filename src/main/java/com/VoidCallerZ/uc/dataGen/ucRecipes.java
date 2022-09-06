@@ -313,22 +313,27 @@ public class ucRecipes extends BaseRecipeProvider
         CompressedToolRecipeBuilder(ToolRegistration.COMPRESSED_NETHERITE_HOE.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), ToolType.HOE, consumer);
 
         //ARMOR
+        //Leather
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_LEATHER_HELMET.get(), ItemRegistration.COMPRESSED_LEATHER.get(), BodyPart.HEAD, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_LEATHER_CHESTPLATE.get(), ItemRegistration.COMPRESSED_LEATHER.get(), BodyPart.CHEST, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_LEATHER_LEGGINGS.get(), ItemRegistration.COMPRESSED_LEATHER.get(), BodyPart.LEGS, consumer);
+        CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_LEATHER_BOOTS.get(), ItemRegistration.COMPRESSED_LEATHER.get(), BodyPart.FEET, consumer);
         //Iron
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_HELMET.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), BodyPart.HEAD, consumer);
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_CHESTPLATE.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), BodyPart.CHEST, consumer);
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_LEGGINGS.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), BodyPart.LEGS, consumer);
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_IRON_BOOTS.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), BodyPart.FEET, consumer);
-        //Iron
+        //Gold
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_HELMET.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), BodyPart.HEAD, consumer);
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_CHESTPLATE.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), BodyPart.CHEST, consumer);
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_LEGGINGS.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), BodyPart.LEGS, consumer);
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_GOLD_BOOTS.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), BodyPart.FEET, consumer);
-        //Iron
+        //Diamond
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_HELMET.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.HEAD, consumer);
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_CHESTPLATE.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.CHEST, consumer);
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_LEGGINGS.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.LEGS, consumer);
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_DIAMOND_BOOTS.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), BodyPart.FEET, consumer);
-        //Iron
+        //Netherite
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_HELMET.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.HEAD, consumer);
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_CHESTPLATE.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.CHEST, consumer);
         CompressedArmorRecipeBuilder(ArmorRegistration.COMPRESSED_NETHERITE_LEGGINGS.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), BodyPart.LEGS, consumer);

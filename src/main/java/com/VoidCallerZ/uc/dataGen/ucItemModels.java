@@ -4,6 +4,8 @@ import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.dataGen.providers.BaseItemModelProvider;
 import com.VoidCallerZ.uc.registration.*;
 import net.minecraft.data.DataGenerator;
+import net.minecraftforge.client.model.generators.ItemModelBuilder;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -385,6 +387,10 @@ public class ucItemModels extends BaseItemModelProvider
         //Projectiles
         singleTextureGenerated(ItemRegistration.COMPRESSED_ARROW.get(), "item/compressed/projectiles/compressed_arrow");
         singleTextureGenerated(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get(), "item/compressed/projectiles/compressed_spectral_arrow");
+        getBuilder(ItemRegistration.COMPRESSED_TIPPED_ARROW.get().toString())
+                .parent(new ModelFile.UncheckedModelFile("item/generated"))
+                .texture("layer0", modLoc("item/compressed/projectiles/compressed_tipped_arrow_head"))
+                .texture("layer1", modLoc("item/compressed/projectiles/compressed_tipped_arrow_base"));
 
         singleTextureGenerated(ItemRegistration.COMPRESSED_SNOWBALL.get(), "item/compressed/projectiles/compressed_snowball");
         //singleTextureGenerated(ItemRegistration.COMPRESSED_TIPPED_ARROW.get(), "item/compressed/arrows/compressed_arrow");

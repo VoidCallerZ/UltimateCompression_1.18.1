@@ -12,7 +12,7 @@ import net.minecraft.world.level.Level;
 
 public class UcArrowItem extends ArrowItem
 {
-    private final float damage;
+    private static float damage;
 
     public UcArrowItem(Properties properties, float damage)
     {
@@ -25,6 +25,7 @@ public class UcArrowItem extends ArrowItem
     {
         CompressedArrow arrow = new CompressedArrow(level, shooter);
         arrow.setBaseDamage(this.damage);
+        arrow.setEffectsFromItem(stack);
         return arrow;
     }
 

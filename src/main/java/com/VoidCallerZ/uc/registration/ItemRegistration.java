@@ -8,6 +8,7 @@ import com.VoidCallerZ.uc.items.UcSnowball;
 import com.VoidCallerZ.uc.items.UcSnowballItem;
 import com.VoidCallerZ.uc.items.arrows.UcArrowItem;
 import com.VoidCallerZ.uc.items.arrows.UcSpectralArrowItem;
+import com.VoidCallerZ.uc.items.arrows.UcTippedArrowItem;
 import com.VoidCallerZ.uc.setup.ModSetup;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
@@ -318,6 +319,9 @@ public class ItemRegistration
                     .clientTrackingRange(4)
                     .updateInterval(20)
                     .build(new ResourceLocation(MODID, "compressed_spectral_arrow_entity").toString()));
+
+    //Tipped
+    public static final RegistryObject<Item> COMPRESSED_TIPPED_ARROW = ITEMS.register("compressed_tipped_arrow", () -> new UcTippedArrowItem(ITEM_PROPERTIES, 1.5f));
 
     //Snowball
     public static final RegistryObject<Item> COMPRESSED_SNOWBALL = ITEMS.register("compressed_snowball", () -> new UcSnowballItem(ITEM_PROPERTIES));

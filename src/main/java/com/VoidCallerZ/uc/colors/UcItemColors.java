@@ -3,6 +3,7 @@ package com.VoidCallerZ.uc.colors;
 import com.VoidCallerZ.uc.registration.ItemRegistration;
 import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.world.item.DyeableLeatherItem;
+import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraft.world.level.FoliageColor;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 
@@ -12,6 +13,8 @@ public class UcItemColors
     {
         ItemColors colors = event.getItemColors();
         colors.register((state, tint) -> tint > 0 ? -1 : ((DyeableLeatherItem)state.getItem()).getColor(state));
+
+        colors.register((state, tint) -> tint == 0 ? PotionUtils.getColor(state) : -1, ItemRegistration.COMPRESSED_TIPPED_ARROW.get());
 
         colors.register((state, tint) -> tint == 0 ? 5877296 : -1, ItemRegistration.COMPRESSED_ACACIA_LEAVES.get(), ItemRegistration.COMPRESSED_DARK_OAK_LEAVES.get(), ItemRegistration.COMPRESSED_JUNGLE_LEAVES.get(),
                 ItemRegistration.COMPRESSED_MANGROVE_LEAVES.get(), ItemRegistration.COMPRESSED_OAK_LEAVES.get());
