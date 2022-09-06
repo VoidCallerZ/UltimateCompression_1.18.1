@@ -313,10 +313,10 @@ public class ucItemModels extends BaseItemModelProvider
 
         //ARMOR
         //Leather Armor
-        singleTextureGenerated(ArmorRegistration.COMPRESSED_LEATHER_HELMET.get(), "item/compressed/armor/compressed_leather_helmet");
-        singleTextureGenerated(ArmorRegistration.COMPRESSED_LEATHER_CHESTPLATE.get(), "item/compressed/armor/compressed_leather_chestplate");
-        singleTextureGenerated(ArmorRegistration.COMPRESSED_LEATHER_LEGGINGS.get(), "item/compressed/armor/compressed_leather_leggings");
-        singleTextureGenerated(ArmorRegistration.COMPRESSED_LEATHER_BOOTS.get(), "item/compressed/armor/compressed_leather_boots");
+        leatherArmorItem(ArmorRegistration.COMPRESSED_LEATHER_HELMET.get(), "item/compressed/armor/compressed_leather_helmet", "item/compressed/armor/compressed_leather_helmet_overlay");
+        leatherArmorItem(ArmorRegistration.COMPRESSED_LEATHER_CHESTPLATE.get(), "item/compressed/armor/compressed_leather_chestplate", "item/compressed/armor/compressed_leather_chestplate_overlay");
+        leatherArmorItem(ArmorRegistration.COMPRESSED_LEATHER_LEGGINGS.get(), "item/compressed/armor/compressed_leather_leggings", "item/compressed/armor/compressed_leather_leggings_overlay");
+        leatherArmorItem(ArmorRegistration.COMPRESSED_LEATHER_BOOTS.get(), "item/compressed/armor/compressed_leather_boots", "item/compressed/armor/compressed_leather_boots_overlay");
         //Iron Armor
         singleTextureGenerated(ArmorRegistration.COMPRESSED_IRON_HELMET.get(), "item/compressed/armor/compressed_iron_helmet");
         singleTextureGenerated(ArmorRegistration.COMPRESSED_IRON_CHESTPLATE.get(), "item/compressed/armor/compressed_iron_chestplate");

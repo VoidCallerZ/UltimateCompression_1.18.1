@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "uc:item/compressed/armor/compressed_leather_helmet"
+    "layer0": "uc:item/compressed/armor/compressed_leather_helmet",
+    "layer1": "uc:item/compressed/armor/compressed_leather_helmet_overlay"
   }
 }

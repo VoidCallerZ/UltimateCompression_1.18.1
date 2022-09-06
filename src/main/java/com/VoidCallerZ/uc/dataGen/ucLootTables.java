@@ -130,6 +130,15 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(BlockRegistration.COMPRESSED_MANGROVE_PLANKS.get(), createSimpleTable("compressed_mangrove_planks", BlockRegistration.COMPRESSED_MANGROVE_PLANKS.get()));
         lootTables.put(BlockRegistration.COMPRESSED_MANGROVE_ROOTS.get(), createSimpleTable("compressed_mangrove_roots", BlockRegistration.COMPRESSED_MANGROVE_ROOTS.get()));
 
+        //Leaves
+        lootTables.put(BlockRegistration.COMPRESSED_ACACIA_LEAVES.get(), createSimpleTable("compressed_acacia_leaves", BlockRegistration.COMPRESSED_ACACIA_LEAVES.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_BIRCH_LEAVES.get(), createSimpleTable("compressed_birch_leaves", BlockRegistration.COMPRESSED_BIRCH_LEAVES.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_DARK_OAK_LEAVES.get(), createSimpleTable("compressed_dark_oak_leaves", BlockRegistration.COMPRESSED_DARK_OAK_LEAVES.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_JUNGLE_LEAVES.get(), createSimpleTable("compressed_jungle_leaves", BlockRegistration.COMPRESSED_JUNGLE_LEAVES.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_MANGROVE_LEAVES.get(), createSimpleTable("compressed_mangrove_leaves", BlockRegistration.COMPRESSED_MANGROVE_LEAVES.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_OAK_LEAVES.get(), createSimpleTable("compressed_oak_leaves", BlockRegistration.COMPRESSED_OAK_LEAVES.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_SPRUCE_LEAVES.get(), createSimpleTable("compressed_spruce_leaves", BlockRegistration.COMPRESSED_SPRUCE_LEAVES.get()));
+
         //Wool
         lootTables.put(BlockRegistration.COMPRESSED_BLACK_WOOL.get(), createSimpleTable("compressed_black_wool", BlockRegistration.COMPRESSED_BLACK_WOOL.get()));
         lootTables.put(BlockRegistration.COMPRESSED_BLUE_WOOL.get(), createSimpleTable("compressed_blue_wool", BlockRegistration.COMPRESSED_BLUE_WOOL.get()));

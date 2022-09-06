@@ -149,6 +149,15 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_MANGROVE_PLANKS.get(), Items.MANGROVE_PLANKS, 9, consumer);
         CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_MANGROVE_ROOTS.get(), Items.MANGROVE_ROOTS, 9, consumer);
 
+        //Leaves
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_ACACIA_LEAVES.get(), Items.ACACIA_LEAVES, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_BIRCH_LEAVES.get(), Items.BIRCH_LEAVES, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_DARK_OAK_LEAVES.get(), Items.DARK_OAK_LEAVES, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_JUNGLE_LEAVES.get(), Items.JUNGLE_LEAVES, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_MANGROVE_LEAVES.get(), Items.MANGROVE_LEAVES, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_OAK_LEAVES.get(), Items.OAK_LEAVES, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SPRUCE_LEAVES.get(), Items.SPRUCE_LEAVES, 9, consumer);
+
         //Wool
         CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_BLACK_WOOL.get(), Items.BLACK_WOOL, ColorBlockType.WOOL, Items.BLACK_DYE, consumer);
         CompressedWoolRecipeBuilder(BlockRegistration.COMPRESSED_BLUE_WOOL.get(), Items.BLUE_WOOL, ColorBlockType.WOOL, Items.BLUE_DYE, consumer);

@@ -1,4 +1,4 @@
-// 1.19.2	2022-09-04T19:47:48.9856817	Item Models: uc
+// 1.19.2	2022-09-05T20:49:36.5237022	Item Models: uc
 5c32245dff3f7bd12c2610ee82b92e00663bce4a assets/uc/models/item/compressed_acacia_leaves.json
 f381bd2053cc90b43b7e3d5375a556bc65a53121 assets/uc/models/item/compressed_acacia_log.json
 681df59d895167a265d1b4f93674ad2b384984ba assets/uc/models/item/compressed_acacia_planks.json
@@ -150,10 +150,10 @@ bb7b7cddca364d90673097ef5e9c1ea0149a47e5 assets/uc/models/item/compressed_iron_s
 c6fb0f8a323c3fa4793d7283405d0878ed3f95fb assets/uc/models/item/compressed_lapis_block.json
 a6972cd712bbdc828bcae53f71f6947db5ffa1b5 assets/uc/models/item/compressed_lapis_ore.json
 3838bba3fa2c77e12bd33e5c4691ef752ea561c0 assets/uc/models/item/compressed_leather.json
-bb284d6136ef53f312d5098bbb339250bd0f94fd assets/uc/models/item/compressed_leather_boots.json
-1b8ceb158db00c88dd8809fcea60f4b21bc27f26 assets/uc/models/item/compressed_leather_chestplate.json
-ee042b7804cd18608c4f3aee64a9cdbc1aa148b8 assets/uc/models/item/compressed_leather_helmet.json
-50dc5c93a461518674fc7772cbbe418e7e45a89b assets/uc/models/item/compressed_leather_leggings.json
+a18f31ca7dec7d65277ad6afe0eab8cc754b0f0e assets/uc/models/item/compressed_leather_boots.json
+5b24b025efabca8d76342b52e457b8129374e17b assets/uc/models/item/compressed_leather_chestplate.json
+ba8e5096076a59245ef4917278dc44dcc166395c assets/uc/models/item/compressed_leather_helmet.json
+59dfe7b2f72ce180aef60293e3052b6eafe52a53 assets/uc/models/item/compressed_leather_leggings.json
 c9a476d0f40024d6fba2bcfd0e68194efeff7979 assets/uc/models/item/compressed_light_blue_concrete.json
 6251e6c33e53febab44d0d9c2ff2b55112e7a7ad assets/uc/models/item/compressed_light_blue_concrete_powder.json
 00ebb30fe36663b0ad0ef319adab0e4cd66655f0 assets/uc/models/item/compressed_light_blue_stained_glass.json

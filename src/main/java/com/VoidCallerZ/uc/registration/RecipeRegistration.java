@@ -1,6 +1,7 @@
 package com.VoidCallerZ.uc.registration;
 
 import com.VoidCallerZ.uc.UltimateCompression;
+import com.VoidCallerZ.uc.recipe.CompressedArmorDyeRecipe;
 import com.VoidCallerZ.uc.recipe.CompressorItemRecipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,4 +21,5 @@ public class RecipeRegistration
     }
 
     public static final RegistryObject<RecipeSerializer<CompressorItemRecipe>> COMPRESSOR_ITEM_SERIALIZER = SERIALIZERS.register("compressor_item_serializer", () -> CompressorItemRecipe.Serializer.INSTANCE);
+    public static final RegistryObject<RecipeSerializer<CompressedArmorDyeRecipe>> COMPRESSED_ARMOR_DYE_SERIALIZER = SERIALIZERS.register("crafting_special_armordye", () -> CompressedArmorDyeRecipe.Serializer.INSTANCE);
 }
