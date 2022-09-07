@@ -28,29 +28,26 @@ public class CompressedTippedArrowRecipe extends CustomRecipe
 
     public boolean matches(CraftingContainer inv, Level level)
     {
-        if (inv.getWidth() == 3 && inv.getHeight() == 3)
-        {
-            for (int i = 0; i < inv.getWidth(); i++)
-            {
-                for (int j = 0; j < inv.getHeight(); j++)
-                {
-                    ItemStack itemStack = inv.getItem(i + j * inv.getWidth());
-                    if (itemStack.isEmpty())
+        if (inv.getWidth() == 3 && inv.getHeight() == 3) {
+            for(int i = 0; i < inv.getWidth(); ++i) {
+                for(int j = 0; j < inv.getHeight(); ++j) {
+                    ItemStack itemstack = inv.getItem(i + j * inv.getWidth());
+                    if (itemstack.isEmpty()) {
                         return false;
-
-                    if (i == 1 && j == 1)
-                    {
-                        if (!itemStack.is(Items.LINGERING_POTION))
-                            return false;
                     }
-                    else if (!itemStack.is(ItemRegistration.COMPRESSED_ARROW.get()))
+
+                    if (i == 1 && j == 1) {
+                        if (!itemstack.is(Items.LINGERING_POTION)) {
+                            return false;
+                        }
+                    } else if (!itemstack.is(ItemRegistration.COMPRESSED_ARROW.get())) {
                         return false;
+                    }
                 }
             }
+
             return true;
-        }
-        else
-        {
+        } else {
             return false;
         }
     }
@@ -59,7 +56,9 @@ public class CompressedTippedArrowRecipe extends CustomRecipe
     {
         ItemStack itemStack = inv.getItem(1 + inv.getWidth());
         if (!itemStack.is(Items.LINGERING_POTION))
+        {
             return ItemStack.EMPTY;
+        }
         else
         {
             ItemStack itemStack1 = new ItemStack(ItemRegistration.COMPRESSED_TIPPED_ARROW.get(), 8);

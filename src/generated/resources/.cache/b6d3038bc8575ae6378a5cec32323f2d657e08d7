@@ -1,7 +1,7 @@
-// 1.19.2	2022-09-06T22:08:52.5760194	UC Tags
+// 1.19.2	2022-09-07T19:39:52.4292419	UC Tags
 5506874433b37cf370cb3724dc96907b445701c4 data/forge/tags/items/gems.json
 1764f560b8fde914bb2ac2146281ffbc404a5051 data/forge/tags/items/ingots.json
 c37f5b2a0e43b4ee868778fec09e1ef013535ae2 data/forge/tags/items/ores.json
-d6f1eb62792f8e2b0d6e38ded1afb0f8b7a9fd15 data/minecraft/tags/items/arrows.json
+dcd8e531ec991f1356bec0ca87897cc251c57cb0 data/minecraft/tags/items/arrows.json
 6df725695c096a9d73d2efb14a8ab16a4677a06d data/uc/tags/items/compressed_planks_for_tools.json
 b2024b3016a92b944c85e4e4cfcb1d87d705a7c4 data/uc/tags/items/compressor_valid_items.json

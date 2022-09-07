@@ -2,7 +2,6 @@ package com.VoidCallerZ.uc.dataGen;
 
 import com.VoidCallerZ.uc.UltimateCompression;
 import com.VoidCallerZ.uc.registration.WorldGenRegistration;
-import com.VoidCallerZ.uc.setup.Config;
 import com.VoidCallerZ.uc.world.modifiers.OreBiomeModifier;
 import com.google.gson.JsonElement;
 import com.mojang.serialization.JsonOps;

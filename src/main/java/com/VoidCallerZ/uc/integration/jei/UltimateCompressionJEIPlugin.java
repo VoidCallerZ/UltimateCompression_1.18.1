@@ -1,5 +1,6 @@
 package com.VoidCallerZ.uc.integration.jei;
 
+import com.VoidCallerZ.uc.recipe.CompressedTippedArrowRecipe;
 import com.VoidCallerZ.uc.recipe.CompressorItemRecipe;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
