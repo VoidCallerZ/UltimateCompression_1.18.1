@@ -5,6 +5,7 @@ import com.VoidCallerZ.uc.recipe.CompressorItemRecipe;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.recipe.RecipeType;
+import mezz.jei.api.registration.IModIngredientRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.minecraft.client.Minecraft;
@@ -39,5 +40,11 @@ public class UltimateCompressionJEIPlugin implements IModPlugin
         RecipeManager rm = Objects.requireNonNull(Minecraft.getInstance().level).getRecipeManager();
         List<CompressorItemRecipe> recipes = rm.getAllRecipesFor(CompressorItemRecipe.Type.INSTANCE);
         registration.addRecipes(COMPRESSOR_TYPE, recipes);
+    }
+
+    @Override
+    public void registerIngredients(IModIngredientRegistration registration)
+    {
+        registration.register();
     }
 }

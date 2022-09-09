@@ -8,24 +8,30 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.inventory.CraftingContainer;
+import net.minecraft.world.inventory.CraftingMenu;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.PotionUtils;
-import net.minecraft.world.item.crafting.CustomRecipe;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.item.crafting.ShapedRecipe;
+import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 
 import static com.VoidCallerZ.uc.UltimateCompression.MODID;
 
 public class CompressedTippedArrowRecipe extends CustomRecipe
 {
-    public CompressedTippedArrowRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> inputs)
+    private final ResourceLocation id;
+    private final ItemStack output;
+    private final NonNullList<Ingredient> recipeItems;
+
+    public CompressedTippedArrowRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> recipeItems)
     {
         super(id);
+        this.id = id;
+        this.output = output;
+        this.recipeItems = recipeItems;
     }
 
+    @Override
     public boolean matches(CraftingContainer inv, Level level)
     {
         if (inv.getWidth() == 3 && inv.getHeight() == 3) {
@@ -52,6 +58,13 @@ public class CompressedTippedArrowRecipe extends CustomRecipe
         }
     }
 
+    @Override
+    public NonNullList<Ingredient> getIngredients()
+    {
+        return recipeItems;
+    }
+
+    @Override
     public ItemStack assemble(CraftingContainer inv)
     {
         ItemStack itemStack = inv.getItem(1 + inv.getWidth());
@@ -70,7 +83,19 @@ public class CompressedTippedArrowRecipe extends CustomRecipe
 
     public boolean canCraftInDimensions(int width, int height)
     {
-        return true;
+        return width >= 2 && height >= 2;
+    }
+
+    @Override
+    public ItemStack getResultItem()
+    {
+        return output.copy();
+    }
+
+    @Override
+    public ResourceLocation getId()
+    {
+        return id;
     }
 
     public RecipeSerializer<?> getSerializer()
@@ -94,20 +119,19 @@ public class CompressedTippedArrowRecipe extends CustomRecipe
             {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
-
             return new CompressedTippedArrowRecipe(id, output, inputs);
         }
 
         @Override
         public CompressedTippedArrowRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf)
         {
+            ItemStack output = buf.readItem();
             NonNullList<Ingredient> inputs = NonNullList.withSize(buf.readInt(), Ingredient.EMPTY);
             for (int i = 0; i < inputs.size(); i++)
             {
                 inputs.set(i, Ingredient.fromNetwork(buf));
             }
 
-            ItemStack output = buf.readItem();
             return new CompressedTippedArrowRecipe(id, output, inputs);
         }
 

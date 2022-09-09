@@ -410,6 +410,81 @@ public class ucLanguageProvider extends LanguageProvider
         add("item.minecraft.compressed_tipped_arrow.effect.turtle_master", "Compressed Arrow of the Turtle Master");
         add("item.minecraft.compressed_tipped_arrow.effect.slow_falling", "Compressed Arrow of Slow Falling");
 
+        //Colored Leather Armor
+        //Default
+        add("compressed_leather_helmet.color.10511680", "Compressed Leather Helmet");
+        add("compressed_leather_chestplate.color.10511680", "Compressed Leather Chestplate");
+        add("compressed_leather_leggings.color.10511680", "Compressed Leather Leggings");
+        add("compressed_leather_boots.color.10511680", "Compressed Leather Boots");
+        //Helmets
+        add("compressed_leather_helmet.color.16383998", "Compressed White Leather Helmet");
+        add("compressed_leather_helmet.color.16351261", "Compressed Orange Leather Helmet");
+        add("compressed_leather_helmet.color.13061821", "Compressed Magenta Leather Helmet");
+        add("compressed_leather_helmet.color.3847130", "Compressed Light Blue Leather Helmet");
+        add("compressed_leather_helmet.color.16701501", "Compressed Yellow Leather Helmet");
+        add("compressed_leather_helmet.color.8439583", "Compressed Lime Leather Helmet");
+        add("compressed_leather_helmet.color.15961002", "Compressed Pink Leather Helmet");
+        add("compressed_leather_helmet.color.4673362", "Compressed Gray Leather Helmet");
+        add("compressed_leather_helmet.color.10329495", "Compressed Light Gray Leather Helmet");
+        add("compressed_leather_helmet.color.1481884", "Compressed Cyan Leather Helmet");
+        add("compressed_leather_helmet.color.8991416", "Compressed Purple Leather Helmet");
+        add("compressed_leather_helmet.color.3949738", "Compressed Blue Leather Helmet");
+        add("compressed_leather_helmet.color.8606770", "Compressed Brown Leather Helmet");
+        add("compressed_leather_helmet.color.6192150", "Compressed Green Leather Helmet");
+        add("compressed_leather_helmet.color.11546150", "Compressed Red Leather Helmet");
+        add("compressed_leather_helmet.color.1908001", "Compressed Black Leather Helmet");
+        //Chestplates
+        add("compressed_leather_chestplate.color.16383998", "Compressed White Leather Chestplate");
+        add("compressed_leather_chestplate.color.16351261", "Compressed Orange Leather Chestplate");
+        add("compressed_leather_chestplate.color.13061821", "Compressed Magenta Leather Chestplate");
+        add("compressed_leather_chestplate.color.3847130", "Compressed Light Blue Leather Chestplate");
+        add("compressed_leather_chestplate.color.16701501", "Compressed Yellow Leather Chestplate");
+        add("compressed_leather_chestplate.color.8439583", "Compressed Lime Leather Chestplate");
+        add("compressed_leather_chestplate.color.15961002", "Compressed Pink Leather Chestplate");
+        add("compressed_leather_chestplate.color.4673362", "Compressed Gray Leather Chestplate");
+        add("compressed_leather_chestplate.color.10329495", "Compressed Light Gray Leather Chestplate");
+        add("compressed_leather_chestplate.color.1481884", "Compressed Cyan Leather Chestplate");
+        add("compressed_leather_chestplate.color.8991416", "Compressed Purple Leather Chestplate");
+        add("compressed_leather_chestplate.color.3949738", "Compressed Blue Leather Chestplate");
+        add("compressed_leather_chestplate.color.8606770", "Compressed Brown Leather Chestplate");
+        add("compressed_leather_chestplate.color.6192150", "Compressed Green Leather Chestplate");
+        add("compressed_leather_chestplate.color.11546150", "Compressed Red Leather Chestplate");
+        add("compressed_leather_chestplate.color.1908001", "Compressed Black Leather Chestplate");
+        //Leggings
+        add("compressed_leather_leggings.color.16383998", "Compressed White Leather Leggings");
+        add("compressed_leather_leggings.color.16351261", "Compressed Orange Leather Leggings");
+        add("compressed_leather_leggings.color.13061821", "Compressed Magenta Leather Leggings");
+        add("compressed_leather_leggings.color.3847130", "Compressed Light Blue Leather Leggings");
+        add("compressed_leather_leggings.color.16701501", "Compressed Yellow Leather Leggings");
+        add("compressed_leather_leggings.color.8439583", "Compressed Lime Leather Leggings");
+        add("compressed_leather_leggings.color.15961002", "Compressed Pink Leather Leggings");
+        add("compressed_leather_leggings.color.4673362", "Compressed Gray Leather Leggings");
+        add("compressed_leather_leggings.color.10329495", "Compressed Light Gray Leather Leggings");
+        add("compressed_leather_leggings.color.1481884", "Compressed Cyan Leather Leggings");
+        add("compressed_leather_leggings.color.8991416", "Compressed Purple Leather Leggings");
+        add("compressed_leather_leggings.color.3949738", "Compressed Blue Leather Leggings");
+        add("compressed_leather_leggings.color.8606770", "Compressed Brown Leather Leggings");
+        add("compressed_leather_leggings.color.6192150", "Compressed Green Leather Leggings");
+        add("compressed_leather_leggings.color.11546150", "Compressed Red Leather Leggings");
+        add("compressed_leather_leggings.color.1908001", "Compressed Black Leather Leggings");
+        //Boots
+        add("compressed_leather_boots.color.16383998", "Compressed White Leather Boots");
+        add("compressed_leather_boots.color.16351261", "Compressed Orange Leather Boots");
+        add("compressed_leather_boots.color.13061821", "Compressed Magenta Leather Boots");
+        add("compressed_leather_boots.color.3847130", "Compressed Light Blue Leather Boots");
+        add("compressed_leather_boots.color.16701501", "Compressed Yellow Leather Boots");
+        add("compressed_leather_boots.color.8439583", "Compressed Lime Leather Boots");
+        add("compressed_leather_boots.color.15961002", "Compressed Pink Leather Boots");
+        add("compressed_leather_boots.color.4673362", "Compressed Gray Leather Boots");
+        add("compressed_leather_boots.color.10329495", "Compressed Light Gray Leather Boots");
+        add("compressed_leather_boots.color.1481884", "Compressed Cyan Leather Boots");
+        add("compressed_leather_boots.color.8991416", "Compressed Purple Leather Boots");
+        add("compressed_leather_boots.color.3949738", "Compressed Blue Leather Boots");
+        add("compressed_leather_boots.color.8606770", "Compressed Brown Leather Boots");
+        add("compressed_leather_boots.color.6192150", "Compressed Green Leather Boots");
+        add("compressed_leather_boots.color.11546150", "Compressed Red Leather Boots");
+        add("compressed_leather_boots.color.1908001", "Compressed Black Leather Boots");
+
         add(ItemRegistration.COMPRESSED_SNOWBALL.get(), "Compressed Snowball");
         add(ItemRegistration.COMPRESSED_SNOWBALL_ENTITY.get(), "Compressed SnowBall Entity");
     }
