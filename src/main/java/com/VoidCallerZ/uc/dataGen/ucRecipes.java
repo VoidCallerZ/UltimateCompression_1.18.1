@@ -437,5 +437,17 @@ public class ucRecipes extends BaseRecipeProvider
 
         CompressorRecipeBuilder(Items.GOLD_NUGGET, ItemRegistration.COMPRESSED_GOLD_NUGGET.get(), 9, consumer);
         CompressorRecipeBuilder(Items.IRON_NUGGET, ItemRegistration.COMPRESSED_IRON_NUGGET.get(), 9, consumer);
+
+
+        //Double Compressed
+        CompressorDecompressorRecipeBuilder(BlockRegistration.DOUBLE_COMPRESSED_COBBLED_DEEPSLATE.get(), ItemRegistration.COMPRESSED_COBBLED_DEEPSLATE.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.DOUBLE_COMPRESSED_COBBLESTONE.get(), ItemRegistration.COMPRESSED_COBBLESTONE.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.DOUBLE_COMPRESSED_DEEPSLATE.get(), ItemRegistration.COMPRESSED_DEEPSLATE.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.DOUBLE_COMPRESSED_DIRT.get(), ItemRegistration.COMPRESSED_DIRT.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.DOUBLE_COMPRESSED_GRAVEL.get(), ItemRegistration.COMPRESSED_GRAVEL.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.DOUBLE_COMPRESSED_NETHERRACK.get(), ItemRegistration.COMPRESSED_NETHERRACK.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.DOUBLE_COMPRESSED_RED_SAND.get(), ItemRegistration.COMPRESSED_RED_SAND.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.DOUBLE_COMPRESSED_SAND.get(), ItemRegistration.COMPRESSED_SAND.get(), 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.DOUBLE_COMPRESSED_STONE.get(), ItemRegistration.COMPRESSED_STONE.get(), 9, consumer);
     }
 }

@@ -63,7 +63,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .requires(compressedBlock)
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
-                .save(consumer, ForgeRegistries.ITEMS.getKey(compressedItem) + "_uc1");
+                .save(consumer, ForgeRegistries.ITEMS.getKey(compressedItem) + "_uc2");
     }
 
     protected void StainedGlassRecipeBuilder(Block compressedBlock, Item unCompressedBlock, Item dye, Consumer<FinishedRecipe> consumer)

@@ -1,4 +1,4 @@
-// 1.19.2	2022-09-06T21:08:26.5591642	Item Models: uc
+// 1.19.2	2022-09-12T20:09:46.0400567	Item Models: uc
 5c32245dff3f7bd12c2610ee82b92e00663bce4a assets/uc/models/item/compressed_acacia_leaves.json
 f381bd2053cc90b43b7e3d5375a556bc65a53121 assets/uc/models/item/compressed_acacia_log.json
 681df59d895167a265d1b4f93674ad2b384984ba assets/uc/models/item/compressed_acacia_planks.json
@@ -296,6 +296,15 @@ ff0da51af88aa805b1edc9f5a7b2395d7f5f7d31 assets/uc/models/item/compressed_yellow
 e2baf979bc510be1c794f236860c879b07d2c148 assets/uc/models/item/compressed_yellow_stained_glass_pane.json
 4a3112b3fb752bd748526b211bc000d059b6307d assets/uc/models/item/compressed_yellow_wool.json
 85cf14330d2eb22c5d1a9b27b02357a9dd6d37fc assets/uc/models/item/diamond_compressor.json
+542e373474317a6134f59ba1cc9bd495cd144671 assets/uc/models/item/double_compressed_cobbled_deepslate.json
+1013532a65c761b01277984ee58508efeea40f08 assets/uc/models/item/double_compressed_cobblestone.json
+696e4d371b360f2b9211ee5b3087bdb797915890 assets/uc/models/item/double_compressed_deepslate.json
+6828e6df61b4795915e61528ad1863ae5db53224 assets/uc/models/item/double_compressed_dirt.json
+71b4b80fc8c0303fb0fbea7bd3a466ad972dcf14 assets/uc/models/item/double_compressed_gravel.json
+c03c9796c25360f2124d520c7b018c41de3d183d assets/uc/models/item/double_compressed_netherrack.json
+09afa4ea16d83d3126e9f1f3d95a5f757a157715 assets/uc/models/item/double_compressed_red_sand.json
+12f58213b06a8a92914ec736a5444a4c9cd3b565 assets/uc/models/item/double_compressed_sand.json
+432c9b30d1bacb6b2776a17c7bb28e5aaf1e92ea assets/uc/models/item/double_compressed_stone.json
 894b3dc72f8663c8d313f6cb9db1259162a17666 assets/uc/models/item/golden_compressor.json
 9a82575a7e731ff4c10051bc0b39bbefd1c55cc9 assets/uc/models/item/iron_compressor.json
 13b8bfa18b887e465c93b3443524a613f7053f17 assets/uc/models/item/netherite_compressor.json

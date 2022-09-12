@@ -44,4 +44,15 @@ public abstract class BaseItemModelProvider extends ItemModelProvider
                 .texture("layer0", modLoc(texture0))
                 .texture("layer1", modLoc(texture1));
     }
+
+    public void withExistingParent(Item item)
+    {
+        withExistingParent(item.toString(), modLoc("block/" + trim(item.getDescriptionId())));
+    }
+
+    private String trim(String string)
+    {
+        string = string.substring(9);
+        return string;
+    }
 }

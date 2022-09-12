@@ -363,6 +363,19 @@ public class BlockRegistration
         return new NetheriteCompressorBlockMenu(containerId, inv, NETHERITE_COMPRESSOR_BLOCK_ENTITY.get().getBlockEntity(level, pos));
     }));
 
+
+    //Double Compressed
+    public static final RegistryObject<Block> DOUBLE_COMPRESSED_COBBLED_DEEPSLATE = BLOCKS.register("double_compressed_cobbled_deepslate", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> DOUBLE_COMPRESSED_COBBLESTONE = BLOCKS.register("double_compressed_cobblestone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> DOUBLE_COMPRESSED_DEEPSLATE = BLOCKS.register("double_compressed_deepslate", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> DOUBLE_COMPRESSED_DIRT = BLOCKS.register("double_compressed_dirt", () -> new Block(SOFT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> DOUBLE_COMPRESSED_GRAVEL = BLOCKS.register("double_compressed_gravel", () -> new Block(SOFT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> DOUBLE_COMPRESSED_NETHERRACK = BLOCKS.register("double_compressed_netherrack", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> DOUBLE_COMPRESSED_RED_SAND = BLOCKS.register("double_compressed_red_sand", () -> new Block(SOFT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> DOUBLE_COMPRESSED_SAND = BLOCKS.register("double_compressed_sand", () -> new Block(SOFT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> DOUBLE_COMPRESSED_STONE = BLOCKS.register("double_compressed_stone", () -> new Block(ORE_PROPERTIES));
+
+
     private static Boolean never(BlockState state, BlockGetter level, BlockPos pos, EntityType<?> entityType)
     {
         return false;

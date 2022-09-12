@@ -378,6 +378,29 @@ public class ucDutchLanguageProvider extends LanguageProvider
         add(ItemRegistration.COMPRESSED_ARROW_ENTITY.get(), "Samengeperste Pijl Entity");
         add(ItemRegistration.COMPRESSED_SPECTRAL_ARROW.get(), "Samengeperste Spectrale Pijl");
         add(ItemRegistration.COMPRESSED_SPECTRAL_ARROW_ENTITY.get(), "Samengeperste Spectrale Pijl Entity");
+        add("item.uc.compressed_tipped_arrow.effect.empty", "Onmaakbare Samengeperste Pijl");
+        add("item.uc.compressed_tipped_arrow.effect.water", "Samengeperste Pijl der Spatting");
+        add("item.uc.compressed_tipped_arrow.effect.mundane", "Samengeperste Getipte Pijl");
+        add("item.uc.compressed_tipped_arrow.effect.thick", "Samengeperste Getipte Pijl");
+        add("item.uc.compressed_tipped_arrow.effect.awkward", "Samengeperste Getipte Pijl");
+        add("item.uc.compressed_tipped_arrow.effect.night_vision", "Samengeperste Pijl des Nachtzichts");
+        add("item.uc.compressed_tipped_arrow.effect.invisibility", "Samengeperste Pijl der Onzichtbaarheid");
+        add("item.uc.compressed_tipped_arrow.effect.leaping", "Samengeperste Pijl der sprongen");
+        add("item.uc.compressed_tipped_arrow.effect.fire_resistance", "Samengeperste Pijl der Vuurbestendigheid");
+        add("item.uc.compressed_tipped_arrow.effect.swiftness", "Samengeperste Pijl der Vlotheid");
+        add("item.uc.compressed_tipped_arrow.effect.slowness", "Samengeperste Pijl der Traagheid");
+        add("item.uc.compressed_tipped_arrow.effect.water_breathing", "Samengeperste Pijl der Wateradems");
+        add("item.uc.compressed_tipped_arrow.effect.healing", "Samengeperste Pijl der Genezing");
+        add("item.uc.compressed_tipped_arrow.effect.harming", "Samengeperste Pijl der Verwonding");
+        add("item.uc.compressed_tipped_arrow.effect.poison", "Samengeperste Pijl des Gifs");
+        add("item.uc.compressed_tipped_arrow.effect.regeneration", "Samengeperste Pijl der Regeneratie");
+        add("item.uc.compressed_tipped_arrow.effect.strength", "Samengeperste Pijl der Kracht");
+        add("item.uc.compressed_tipped_arrow.effect.weakness", "Samengeperste Pijl der Zwakheid");
+        add("item.uc.compressed_tipped_arrow.effect.levitation", "Samengeperste Pijl der Zweving");
+        add("item.uc.compressed_tipped_arrow.effect.luck", "Samengeperste Pijl des Geluk");
+        add("item.uc.compressed_tipped_arrow.effect.turtle_master", "Samengeperste Pijl der Schildpadmeester");
+        add("item.uc.compressed_tipped_arrow.effect.slow_falling", "Samengeperste Pijl der Valvertraging");
+
         add(ItemRegistration.COMPRESSED_SNOWBALL.get(), "Samengeperste Sneeuwbal");
         add(ItemRegistration.COMPRESSED_SNOWBALL_ENTITY.get(), "Samengeperste Sneeuwbal Entity");
     }

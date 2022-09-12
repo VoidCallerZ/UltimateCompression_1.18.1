@@ -1,4 +1,4 @@
-// 1.19.2	2022-09-05T20:28:14.1463251	UC LootTables
+// 1.19.2	2022-09-12T20:29:11.420148	UC LootTables
 0c3cdd80da02cbb366a2c9bca7213bc793199e0e data/uc/loot_tables/blocks/compressed_acacia_leaves.json
 99ec0c801d3197f720018c169d043ffccd7774ca data/uc/loot_tables/blocks/compressed_acacia_log.json
 f56353c6f3c239b59dc1e3056c70d4a543ef647a data/uc/loot_tables/blocks/compressed_acacia_planks.json
@@ -180,6 +180,15 @@ e376e1c3243e1318b6622804d375e0b97be2e0e1 data/uc/loot_tables/blocks/compressed_w
 e2f11f1b5d40a88e1422a95cb8961a4c7f4c5b1f data/uc/loot_tables/blocks/compressed_yellow_stained_glass_pane.json
 44c7ee8ffb5ecbd101af084e479ce187d3582cad data/uc/loot_tables/blocks/compressed_yellow_wool.json
 bad82db1130b03b5082c264828ded643fd62eff6 data/uc/loot_tables/blocks/diamond_compressor.json
+32d8adac000dd4b6d0c6e048511c989ba6f550da data/uc/loot_tables/blocks/double_compressed_cobbled_deepslate.json
+45d546785ab10e746a1fa6d678d123d505398f88 data/uc/loot_tables/blocks/double_compressed_cobblestone.json
+7f1448eb27900f7da24db4cc4adbc27534911095 data/uc/loot_tables/blocks/double_compressed_deepslate.json
+381c754f82dc7ae1e44d94f4e82304ae050d67cb data/uc/loot_tables/blocks/double_compressed_dirt.json
+67b0006aeefa5e4ac1b850b3ccda7338597d28a9 data/uc/loot_tables/blocks/double_compressed_gravel.json
+8e49da50b5e6e769ffe4447f058dfb36a311571b data/uc/loot_tables/blocks/double_compressed_netherrack.json
+2965ca43bac71b5e9debc3bb6cd95fb6444a7c9e data/uc/loot_tables/blocks/double_compressed_red_sand.json
+553a2dfcf996a65ad4f198a9188d27ae76df152c data/uc/loot_tables/blocks/double_compressed_sand.json
+d2188a58796ad2d4a7437c9e613b2f6d9fa7d8d6 data/uc/loot_tables/blocks/double_compressed_stone.json
 b333d3e289ccf17b8e3dd896d7eec2aace2a6708 data/uc/loot_tables/blocks/golden_compressor.json
 727e56cef80debe6ce1282de20747b0a9711ebb9 data/uc/loot_tables/blocks/iron_compressor.json
 a8afb6ee607431f5ea05fa4778993d278c70e265 data/uc/loot_tables/blocks/netherite_compressor.json

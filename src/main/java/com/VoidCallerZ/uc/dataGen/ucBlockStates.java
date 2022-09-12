@@ -254,6 +254,18 @@ public class ucBlockStates extends BaseBlockStateProvider
 
         //Obsidian
         singleTextureBlock(BlockRegistration.COMPRESSED_OBSIDIAN.get(), "compressed_obsidian", "block/compressed/basic/compressed_obsidian");
+
+
+        //Double Compressed
+        singleTextureBlock(BlockRegistration.DOUBLE_COMPRESSED_COBBLED_DEEPSLATE.get(), "block/double_compressed/double_compressed_cobbled_deepslate");
+        singleTextureBlock(BlockRegistration.DOUBLE_COMPRESSED_COBBLESTONE.get(), "block/double_compressed/double_compressed_cobblestone");
+        singleTextureBlock(BlockRegistration.DOUBLE_COMPRESSED_DEEPSLATE.get(), "block/double_compressed/double_compressed_deepslate");
+        singleTextureBlock(BlockRegistration.DOUBLE_COMPRESSED_DIRT.get(), "block/double_compressed/double_compressed_dirt");
+        singleTextureBlock(BlockRegistration.DOUBLE_COMPRESSED_GRAVEL.get(), "block/double_compressed/double_compressed_gravel");
+        singleTextureBlock(BlockRegistration.DOUBLE_COMPRESSED_NETHERRACK.get(), "block/double_compressed/double_compressed_netherrack");
+        singleTextureBlock(BlockRegistration.DOUBLE_COMPRESSED_RED_SAND.get(), "block/double_compressed/double_compressed_red_sand");
+        singleTextureBlock(BlockRegistration.DOUBLE_COMPRESSED_SAND.get(), "block/double_compressed/double_compressed_sand");
+        singleTextureBlock(BlockRegistration.DOUBLE_COMPRESSED_STONE.get(), "block/double_compressed/double_compressed_stone");
     }
 
     private void registerIronCompressor()

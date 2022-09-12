@@ -5,6 +5,11 @@ import com.VoidCallerZ.uc.registration.BlockRegistration;
 import com.VoidCallerZ.uc.registration.ItemRegistration;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+
+import java.util.Map;
 
 public class ucLootTables extends BaseLootTableProvider
 {
@@ -236,5 +241,17 @@ public class ucLootTables extends BaseLootTableProvider
 
         //Obsidian
         lootTables.put(BlockRegistration.COMPRESSED_OBSIDIAN.get(), createSimpleTable("compressed_obsidian", BlockRegistration.COMPRESSED_OBSIDIAN.get()));
+
+
+        //Double Compressed
+        lootTables.put(BlockRegistration.DOUBLE_COMPRESSED_COBBLED_DEEPSLATE.get(), createSimpleTable("double_compressed_cobbled_deepslate", BlockRegistration.DOUBLE_COMPRESSED_COBBLED_DEEPSLATE.get()));
+        lootTables.put(BlockRegistration.DOUBLE_COMPRESSED_COBBLESTONE.get(), createSimpleTable("double_compressed_cobblestone", BlockRegistration.DOUBLE_COMPRESSED_COBBLESTONE.get()));
+        lootTables.put(BlockRegistration.DOUBLE_COMPRESSED_DEEPSLATE.get(), createSimpleTable("double_compressed_deepslate", BlockRegistration.DOUBLE_COMPRESSED_DEEPSLATE.get()));
+        lootTables.put(BlockRegistration.DOUBLE_COMPRESSED_DIRT.get(), createSimpleTable("double_compressed_dirt", BlockRegistration.DOUBLE_COMPRESSED_DIRT.get()));
+        lootTables.put(BlockRegistration.DOUBLE_COMPRESSED_GRAVEL.get(), createSimpleTable("double_compressed_gravel", BlockRegistration.DOUBLE_COMPRESSED_GRAVEL.get()));
+        lootTables.put(BlockRegistration.DOUBLE_COMPRESSED_NETHERRACK.get(), createSimpleTable("double_compressed_netherrack", BlockRegistration.DOUBLE_COMPRESSED_NETHERRACK.get()));
+        lootTables.put(BlockRegistration.DOUBLE_COMPRESSED_RED_SAND.get(), createSimpleTable("double_compressed_red_sand", BlockRegistration.DOUBLE_COMPRESSED_RED_SAND.get()));
+        lootTables.put(BlockRegistration.DOUBLE_COMPRESSED_SAND.get(), createSimpleTable("double_compressed_sand", BlockRegistration.DOUBLE_COMPRESSED_SAND.get()));
+        lootTables.put(BlockRegistration.DOUBLE_COMPRESSED_STONE.get(), createSimpleTable("double_compressed_stone", BlockRegistration.DOUBLE_COMPRESSED_STONE.get()));
     }
 }

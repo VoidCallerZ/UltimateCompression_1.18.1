@@ -41,10 +41,4 @@ public class UltimateCompressionJEIPlugin implements IModPlugin
         List<CompressorItemRecipe> recipes = rm.getAllRecipesFor(CompressorItemRecipe.Type.INSTANCE);
         registration.addRecipes(COMPRESSOR_TYPE, recipes);
     }
-
-    @Override
-    public void registerIngredients(IModIngredientRegistration registration)
-    {
-        registration.register();
-    }
 }

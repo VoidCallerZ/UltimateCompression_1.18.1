@@ -341,6 +341,17 @@ public class ItemRegistration
     public static final RegistryObject<Item> COMPRESSED_STICK = ITEMS.register("compressed_stick", () -> new Item(ITEM_PROPERTIES));
 
 
+    //Double Compressed
+    public static final RegistryObject<Item> DOUBLE_COMPRESSED_COBBLED_DEEPSLATE = fromBlock(BlockRegistration.DOUBLE_COMPRESSED_COBBLED_DEEPSLATE);
+    public static final RegistryObject<Item> DOUBLE_COMPRESSED_COBBLESTONE = fromBlock(BlockRegistration.DOUBLE_COMPRESSED_COBBLESTONE);
+    public static final RegistryObject<Item> DOUBLE_COMPRESSED_DEEPSLATE = fromBlock(BlockRegistration.DOUBLE_COMPRESSED_DEEPSLATE);
+    public static final RegistryObject<Item> DOUBLE_COMPRESSED_DIRT = fromBlock(BlockRegistration.DOUBLE_COMPRESSED_DIRT);
+    public static final RegistryObject<Item> DOUBLE_COMPRESSED_GRAVEL = fromBlock(BlockRegistration.DOUBLE_COMPRESSED_GRAVEL);
+    public static final RegistryObject<Item> DOUBLE_COMPRESSED_NETHERRACK = fromBlock(BlockRegistration.DOUBLE_COMPRESSED_NETHERRACK);
+    public static final RegistryObject<Item> DOUBLE_COMPRESSED_RED_SAND = fromBlock(BlockRegistration.DOUBLE_COMPRESSED_RED_SAND);
+    public static final RegistryObject<Item> DOUBLE_COMPRESSED_SAND = fromBlock(BlockRegistration.DOUBLE_COMPRESSED_SAND);
+    public static final RegistryObject<Item> DOUBLE_COMPRESSED_STONE = fromBlock(BlockRegistration.DOUBLE_COMPRESSED_STONE);
+
 
     private static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block)
     {

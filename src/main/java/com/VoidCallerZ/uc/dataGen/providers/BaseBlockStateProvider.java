@@ -30,6 +30,12 @@ public abstract class BaseBlockStateProvider extends BlockStateProvider {
         simpleBlock(block, model);
     }
 
+    protected void singleTextureBlock(Block block, String textureName)
+    {
+        ModelFile model = models().cubeAll(trim(block.getDescriptionId()), modLoc(textureName));
+        simpleBlock(block, model);
+    }
+
     protected void singleTextureBlockWithRenderType(Block block, String modelName, String textureName, String renderType)
     {
         ModelFile model = models().cubeAll(modelName, modLoc(textureName)).renderType(renderType);
@@ -90,5 +96,11 @@ public abstract class BaseBlockStateProvider extends BlockStateProvider {
 
     private ResourceLocation extend(ResourceLocation rl, String suffix) {
         return new ResourceLocation(rl.getNamespace(), rl.getPath() + suffix);
+    }
+
+    private String trim(String string)
+    {
+        string = string.substring(9);
+        return string;
     }
 }

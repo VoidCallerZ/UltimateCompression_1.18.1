@@ -72,6 +72,15 @@
     "uc:compressed_cut_sandstone",
     "uc:compressed_red_sandstone",
     "uc:compressed_sandstone",
-    "uc:compressed_obsidian"
+    "uc:compressed_obsidian",
+    "uc:double_compressed_cobbled_deepslate",
+    "uc:double_compressed_cobblestone",
+    "uc:double_compressed_deepslate",
+    "uc:double_compressed_dirt",
+    "uc:double_compressed_gravel",
+    "uc:double_compressed_netherrack",
+    "uc:double_compressed_red_sand",
+    "uc:double_compressed_sand",
+    "uc:double_compressed_stone"
   ]
 }

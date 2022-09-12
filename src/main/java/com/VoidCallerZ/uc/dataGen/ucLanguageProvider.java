@@ -393,22 +393,22 @@ public class ucLanguageProvider extends LanguageProvider
         add("item.uc.compressed_tipped_arrow.effect.thick", "Compressed Tipped Arrow");
         add("item.uc.compressed_tipped_arrow.effect.awkward", "Compressed Tipped Arrow");
         add("item.uc.compressed_tipped_arrow.effect.night_vision", "Compressed Arrow of Night Vision");
-        add("item.minecraft.compressed_tipped_arrow.effect.invisibility", "Compressed Arrow of Invisibility");
-        add("item.minecraft.compressed_tipped_arrow.effect.leaping", "Compressed Arrow of Leaping");
-        add("item.minecraft.compressed_tipped_arrow.effect.fire_resistance", "Compressed Arrow of Fire Resistance");
-        add("item.minecraft.compressed_tipped_arrow.effect.swiftness", "Compressed Arrow of Swiftness");
-        add("item.minecraft.compressed_tipped_arrow.effect.slowness", "Compressed Arrow of Slowness");
-        add("item.minecraft.compressed_tipped_arrow.effect.water_breathing", "Compressed Arrow of Water Breathing");
-        add("item.minecraft.compressed_tipped_arrow.effect.healing", "Compressed Arrow of Healing");
-        add("item.minecraft.compressed_tipped_arrow.effect.harming", "Compressed Arrow of Harming");
-        add("item.minecraft.compressed_tipped_arrow.effect.poison", "Compressed Arrow of Poison");
-        add("item.minecraft.compressed_tipped_arrow.effect.regeneration", "Compressed Arrow of Regeneration");
-        add("item.minecraft.compressed_tipped_arrow.effect.strength", "Compressed Arrow of Strength");
-        add("item.minecraft.compressed_tipped_arrow.effect.weakness", "Compressed Arrow of Weakness");
-        add("item.minecraft.compressed_tipped_arrow.effect.levitation", "Compressed Arrow of Levitation");
-        add("item.minecraft.compressed_tipped_arrow.effect.luck", "Compressed Arrow of Luck");
-        add("item.minecraft.compressed_tipped_arrow.effect.turtle_master", "Compressed Arrow of the Turtle Master");
-        add("item.minecraft.compressed_tipped_arrow.effect.slow_falling", "Compressed Arrow of Slow Falling");
+        add("item.uc.compressed_tipped_arrow.effect.invisibility", "Compressed Arrow of Invisibility");
+        add("item.uc.compressed_tipped_arrow.effect.leaping", "Compressed Arrow of Leaping");
+        add("item.uc.compressed_tipped_arrow.effect.fire_resistance", "Compressed Arrow of Fire Resistance");
+        add("item.uc.compressed_tipped_arrow.effect.swiftness", "Compressed Arrow of Swiftness");
+        add("item.uc.compressed_tipped_arrow.effect.slowness", "Compressed Arrow of Slowness");
+        add("item.uc.compressed_tipped_arrow.effect.water_breathing", "Compressed Arrow of Water Breathing");
+        add("item.uc.compressed_tipped_arrow.effect.healing", "Compressed Arrow of Healing");
+        add("item.uc.compressed_tipped_arrow.effect.harming", "Compressed Arrow of Harming");
+        add("item.uc.compressed_tipped_arrow.effect.poison", "Compressed Arrow of Poison");
+        add("item.uc.compressed_tipped_arrow.effect.regeneration", "Compressed Arrow of Regeneration");
+        add("item.uc.compressed_tipped_arrow.effect.strength", "Compressed Arrow of Strength");
+        add("item.uc.compressed_tipped_arrow.effect.weakness", "Compressed Arrow of Weakness");
+        add("item.uc.compressed_tipped_arrow.effect.levitation", "Compressed Arrow of Levitation");
+        add("item.uc.compressed_tipped_arrow.effect.luck", "Compressed Arrow of Luck");
+        add("item.uc.compressed_tipped_arrow.effect.turtle_master", "Compressed Arrow of the Turtle Master");
+        add("item.uc.compressed_tipped_arrow.effect.slow_falling", "Compressed Arrow of Slow Falling");
 
         //Colored Leather Armor
         //Default
@@ -487,5 +487,15 @@ public class ucLanguageProvider extends LanguageProvider
 
         add(ItemRegistration.COMPRESSED_SNOWBALL.get(), "Compressed Snowball");
         add(ItemRegistration.COMPRESSED_SNOWBALL_ENTITY.get(), "Compressed SnowBall Entity");
+
+        add(BlockRegistration.DOUBLE_COMPRESSED_COBBLED_DEEPSLATE.get(), "Double Compressed Cobbled Deepslate");
+        add(BlockRegistration.DOUBLE_COMPRESSED_COBBLESTONE.get(), "Double Compressed Cobblestone");
+        add(BlockRegistration.DOUBLE_COMPRESSED_DEEPSLATE.get(), "Double Compressed Deepslate");
+        add(BlockRegistration.DOUBLE_COMPRESSED_DIRT.get(), "Double Compressed Dirt");
+        add(BlockRegistration.DOUBLE_COMPRESSED_GRAVEL.get(), "Double Compressed Gravel");
+        add(BlockRegistration.DOUBLE_COMPRESSED_NETHERRACK.get(), "Double Compressed Netherrack");
+        add(BlockRegistration.DOUBLE_COMPRESSED_RED_SAND.get(), "Double Compressed Red Sand");
+        add(BlockRegistration.DOUBLE_COMPRESSED_SAND.get(), "Double Compressed Sand");
+        add(BlockRegistration.DOUBLE_COMPRESSED_STONE.get(), "Double Compressed Stone");
     }
 }

@@ -394,5 +394,17 @@ public class ucItemModels extends BaseItemModelProvider
 
         singleTextureGenerated(ItemRegistration.COMPRESSED_SNOWBALL.get(), "item/compressed/projectiles/compressed_snowball");
         //singleTextureGenerated(ItemRegistration.COMPRESSED_TIPPED_ARROW.get(), "item/compressed/arrows/compressed_arrow");
+
+
+        //Double Compressed
+        withExistingParent(ItemRegistration.DOUBLE_COMPRESSED_COBBLED_DEEPSLATE.get());
+        withExistingParent(ItemRegistration.DOUBLE_COMPRESSED_COBBLESTONE.get());
+        withExistingParent(ItemRegistration.DOUBLE_COMPRESSED_DEEPSLATE.get());
+        withExistingParent(ItemRegistration.DOUBLE_COMPRESSED_DIRT.get());
+        withExistingParent(ItemRegistration.DOUBLE_COMPRESSED_GRAVEL.get());
+        withExistingParent(ItemRegistration.DOUBLE_COMPRESSED_NETHERRACK.get());
+        withExistingParent(ItemRegistration.DOUBLE_COMPRESSED_RED_SAND.get());
+        withExistingParent(ItemRegistration.DOUBLE_COMPRESSED_SAND.get());
+        withExistingParent(ItemRegistration.DOUBLE_COMPRESSED_STONE.get());
     }
 }

@@ -2,6 +2,7 @@ package com.VoidCallerZ.uc.blocks.compressor.iron;
 
 import com.VoidCallerZ.uc.blocks.compressor.CompressorBlockEntity;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
+import com.VoidCallerZ.uc.registration.ItemRegistration;
 import com.VoidCallerZ.uc.setup.Config;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.core.BlockPos;
@@ -12,6 +13,7 @@ import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ForgeConfigSpec;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
 
 public class IronCompressorBlockEntity extends CompressorBlockEntity
