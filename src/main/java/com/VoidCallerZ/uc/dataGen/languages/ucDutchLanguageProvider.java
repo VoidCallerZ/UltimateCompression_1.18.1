@@ -401,6 +401,13 @@ public class ucDutchLanguageProvider extends LanguageProvider
         add("item.uc.compressed_tipped_arrow.effect.turtle_master", "Samengeperste Pijl der Schildpadmeester");
         add("item.uc.compressed_tipped_arrow.effect.slow_falling", "Samengeperste Pijl der Valvertraging");
 
+        //Colored Leather Armor
+        //Default
+        add("compressed_leather_helmet.color.10511680", "Samengeperste Leren Kap");
+        add("compressed_leather_chestplate.color.10511680", "Samengeperste Leren Tuniek");
+        add("compressed_leather_leggings.color.10511680", "Samengeperste Leren Broek");
+        add("compressed_leather_boots.color.10511680", "Samengeperste Leren Laarzen");
+
         add(ItemRegistration.COMPRESSED_SNOWBALL.get(), "Samengeperste Sneeuwbal");
         add(ItemRegistration.COMPRESSED_SNOWBALL_ENTITY.get(), "Samengeperste Sneeuwbal Entity");
     }

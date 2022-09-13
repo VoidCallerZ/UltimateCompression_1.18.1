@@ -10,9 +10,4 @@ public class UcDyeableArmorItem extends DyeableArmorItem implements DyeableLeath
     {
         super(armorMaterial, equipmentSlot, properties);
     }
-
-    public String getDescriptionId(ItemStack stack)
-    {
-        return (stack.getItem() + ".color." + getColor(stack));
-    }
 }

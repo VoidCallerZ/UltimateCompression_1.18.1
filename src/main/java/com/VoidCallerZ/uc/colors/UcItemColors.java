@@ -1,5 +1,6 @@
 package com.VoidCallerZ.uc.colors;
 
+import com.VoidCallerZ.uc.registration.ArmorRegistration;
 import com.VoidCallerZ.uc.registration.ItemRegistration;
 import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.world.item.DyeableLeatherItem;
@@ -13,6 +14,8 @@ public class UcItemColors
     {
         ItemColors colors = event.getItemColors();
         colors.register((state, tint) -> tint > 0 ? -1 : ((DyeableLeatherItem)state.getItem()).getColor(state));
+        colors.register((state, tint) -> tint == 0 ? ((DyeableLeatherItem)state.getItem()).getColor(state) : -1, ArmorRegistration.COMPRESSED_LEATHER_HELMET.get(),
+                ArmorRegistration.COMPRESSED_LEATHER_CHESTPLATE.get(), ArmorRegistration.COMPRESSED_LEATHER_LEGGINGS.get(), ArmorRegistration.COMPRESSED_LEATHER_BOOTS.get());
 
         colors.register((state, tint) -> tint == 0 ? PotionUtils.getColor(state) : -1, ItemRegistration.COMPRESSED_TIPPED_ARROW.get());
 
