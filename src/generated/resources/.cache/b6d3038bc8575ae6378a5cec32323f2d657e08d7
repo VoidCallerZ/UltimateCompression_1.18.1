@@ -1,7 +1,9 @@
-// 1.19.2	2022-09-13T16:43:40.6820664	UC Tags
-5506874433b37cf370cb3724dc96907b445701c4 data/forge/tags/items/gems.json
-1764f560b8fde914bb2ac2146281ffbc404a5051 data/forge/tags/items/ingots.json
-c37f5b2a0e43b4ee868778fec09e1ef013535ae2 data/forge/tags/items/ores.json
-dcd8e531ec991f1356bec0ca87897cc251c57cb0 data/minecraft/tags/items/arrows.json
-6df725695c096a9d73d2efb14a8ab16a4677a06d data/uc/tags/items/compressed_planks_for_tools.json
-b2024b3016a92b944c85e4e4cfcb1d87d705a7c4 data/uc/tags/items/compressor_valid_items.json
+// 1.19.2	2022-09-13T17:02:37.2984836	UC Tags
+3d4b77e6434084888cbea76773ab5bbc24d2669d data/forge/tags/blocks/ores.json
+a994c9bf36e5f933e02cb14dc71939df16391f37 data/forge/tags/blocks/storage_blocks.json
+11f5298fcdbb1a7d2c6af13bad71c200615d543d data/minecraft/tags/blocks/mineable/axe.json
+7bbe6128b8369bbab26abcc8c0b879a918157c25 data/minecraft/tags/blocks/mineable/hoe.json
+c5f1178cdeb8fbb90d75611b7b702b2de062d5d2 data/minecraft/tags/blocks/mineable/pickaxe.json
+94a0aa23430a61bdaa4ce30d74ff376fbe11f6fa data/minecraft/tags/blocks/mineable/shovel.json
+e85d0c3cd986d798fc8b48969403d0e9052543b1 data/minecraft/tags/blocks/needs_iron_tool.json
+c2efabf1eac1ee6cfc9a9b7ab2e808884a7deffe data/minecraft/tags/blocks/needs_stone_tool.json

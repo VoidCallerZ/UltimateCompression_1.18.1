@@ -403,12 +403,22 @@ public class ucDutchLanguageProvider extends LanguageProvider
 
         //Colored Leather Armor
         //Default
-        add("compressed_leather_helmet.color.10511680", "Samengeperste Leren Kap");
-        add("compressed_leather_chestplate.color.10511680", "Samengeperste Leren Tuniek");
-        add("compressed_leather_leggings.color.10511680", "Samengeperste Leren Broek");
-        add("compressed_leather_boots.color.10511680", "Samengeperste Leren Laarzen");
+        add(ArmorRegistration.COMPRESSED_LEATHER_HELMET.get(), "Samengeperste Leren Kap");
+        add(ArmorRegistration.COMPRESSED_LEATHER_CHESTPLATE.get(), "Samengeperste Leren Tuniek");
+        add(ArmorRegistration.COMPRESSED_LEATHER_LEGGINGS.get(), "Samengeperste Leren Broek");
+        add(ArmorRegistration.COMPRESSED_LEATHER_BOOTS.get(), "Samengeperste Leren Laarzen");
 
         add(ItemRegistration.COMPRESSED_SNOWBALL.get(), "Samengeperste Sneeuwbal");
         add(ItemRegistration.COMPRESSED_SNOWBALL_ENTITY.get(), "Samengeperste Sneeuwbal Entity");
+
+        add(BlockRegistration.DOUBLE_COMPRESSED_COBBLED_DEEPSLATE.get(), "Dubbel Samengeperste Geplaveid Wrevelsteen");
+        add(BlockRegistration.DOUBLE_COMPRESSED_COBBLESTONE.get(), "Dubbel Samengeperste Keisteen");
+        add(BlockRegistration.DOUBLE_COMPRESSED_DEEPSLATE.get(), "Dubbel Samengeperste Wrevelsteen");
+        add(BlockRegistration.DOUBLE_COMPRESSED_DIRT.get(), "Dubbel Samengeperste Aarde");
+        add(BlockRegistration.DOUBLE_COMPRESSED_GRAVEL.get(), "Dubbel Samengeperst Grind");
+        add(BlockRegistration.DOUBLE_COMPRESSED_NETHERRACK.get(), "Dubbel Samengeperst Netherkruidblok");
+        add(BlockRegistration.DOUBLE_COMPRESSED_RED_SAND.get(), "Dubbel Samengeperst Rood Zand");
+        add(BlockRegistration.DOUBLE_COMPRESSED_SAND.get(), "Dubbel Samengeperst Zand");
+        add(BlockRegistration.DOUBLE_COMPRESSED_STONE.get(), "Dubbel Samengeperste Steen");
     }
 }
