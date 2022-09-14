@@ -81,6 +81,7 @@
     "uc:double_compressed_netherrack",
     "uc:double_compressed_red_sand",
     "uc:double_compressed_sand",
-    "uc:double_compressed_stone"
+    "uc:double_compressed_stone",
+    "uc:compressed_bone_block"
   ]
 }

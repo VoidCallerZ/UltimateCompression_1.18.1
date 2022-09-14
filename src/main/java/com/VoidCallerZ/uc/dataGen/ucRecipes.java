@@ -88,6 +88,8 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_TUFF.get(), Items.TUFF, 9, consumer);
         CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CLAY.get(), Items.CLAY, 9, consumer);
         CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_MOSSY_COBBLESTONE.get(), Items.MOSSY_COBBLESTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_BONE_BLOCK.get(), Items.BONE_BLOCK, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_HAY_BLOCK.get(), Items.HAY_BLOCK, 9, consumer);
 
         //Polished Blocks
         CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_POLISHED_ANDESITE.get(), Items.POLISHED_ANDESITE, 9, consumer);

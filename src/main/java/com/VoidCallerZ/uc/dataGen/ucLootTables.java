@@ -74,6 +74,8 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(BlockRegistration.COMPRESSED_TUFF.get(), createSimpleTable("compressed_tuff", BlockRegistration.COMPRESSED_TUFF.get()));
         lootTables.put(BlockRegistration.COMPRESSED_CLAY.get(), createSilkTouchTable("compressed_clay", BlockRegistration.COMPRESSED_CLAY.get(), Items.CLAY_BALL, 3, 8));
         lootTables.put(BlockRegistration.COMPRESSED_MOSSY_COBBLESTONE.get(), createSimpleTable("compressed_mossy_cobblestone", BlockRegistration.COMPRESSED_MOSSY_COBBLESTONE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_BONE_BLOCK.get(), createSimpleTable("compressed_bone_block", BlockRegistration.COMPRESSED_BONE_BLOCK.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_HAY_BLOCK.get(), createSimpleTable("compressed_hay_block", BlockRegistration.COMPRESSED_HAY_BLOCK.get()));
 
         //Polished Blocks
         lootTables.put(BlockRegistration.COMPRESSED_POLISHED_ANDESITE.get(), createSimpleTable("compressed_polished_andesite", BlockRegistration.COMPRESSED_POLISHED_ANDESITE.get()));

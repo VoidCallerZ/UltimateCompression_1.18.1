@@ -1,4 +1,4 @@
-// 1.19.2	2022-09-12T20:29:11.420148	UC LootTables
+// 1.19.2	2022-09-13T20:24:58.6395777	UC LootTables
 0c3cdd80da02cbb366a2c9bca7213bc793199e0e data/uc/loot_tables/blocks/compressed_acacia_leaves.json
 99ec0c801d3197f720018c169d043ffccd7774ca data/uc/loot_tables/blocks/compressed_acacia_log.json
 f56353c6f3c239b59dc1e3056c70d4a543ef647a data/uc/loot_tables/blocks/compressed_acacia_planks.json
@@ -18,6 +18,7 @@ ae60c75683df173a8fac4d22e380e94cf19d4e84 data/uc/loot_tables/blocks/compressed_b
 43cf24ab4e33c4c72fa6bcf8a6ff6628908ed0e2 data/uc/loot_tables/blocks/compressed_blue_stained_glass.json
 afbb189fdafbb289e9995de8d7f4723c020ade25 data/uc/loot_tables/blocks/compressed_blue_stained_glass_pane.json
 6b2536b327ff41588f1cbe3110f96f73bbf230d6 data/uc/loot_tables/blocks/compressed_blue_wool.json
+b5890400ceda6ffa7b5f92ec6f88cbf95f2de299 data/uc/loot_tables/blocks/compressed_bone_block.json
 37c9cb7d47e9cb190f97ce4f42063704c0a6fd5c data/uc/loot_tables/blocks/compressed_brown_concrete.json
 201e0d729279a52376a6a115e3475f85f5143df4 data/uc/loot_tables/blocks/compressed_brown_concrete_powder.json
 33714dad49a8cf710c9734dfa2543fa097b461ca data/uc/loot_tables/blocks/compressed_brown_stained_glass.json
@@ -81,6 +82,7 @@ b536d6cd0d15a8babbb18c7b79a862f9dbf4e1e0 data/uc/loot_tables/blocks/compressed_g
 d6bf11ade6c001a31244defda4748406a7210092 data/uc/loot_tables/blocks/compressed_green_stained_glass.json
 e5925ed7d3d937360f8a4beb52ec81ff591bff6d data/uc/loot_tables/blocks/compressed_green_stained_glass_pane.json
 b8e0d84eebb5c6716d4963cbddbd3311c2a5afc6 data/uc/loot_tables/blocks/compressed_green_wool.json
+ae89784d5aa5ee625f1cdf9ba9cc9f179b6e39da data/uc/loot_tables/blocks/compressed_hay_block.json
 440e02e3c94bafeb5e2bbb2ab8d9317a7b8378fd data/uc/loot_tables/blocks/compressed_iron_block.json
 2eb05976bd1b2da19d2a4c703840741a9f8dfe4e data/uc/loot_tables/blocks/compressed_iron_ore.json
 08be0955adc0c66dcba1f0f4313d42855fdd573d data/uc/loot_tables/blocks/compressed_jungle_leaves.json

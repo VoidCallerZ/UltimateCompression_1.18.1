@@ -84,6 +84,8 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_TUFF.get()).getPath(), modLoc("block/compressed_tuff"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CLAY.get()).getPath(), modLoc("block/compressed_clay"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MOSSY_COBBLESTONE.get()).getPath(), modLoc("block/compressed_mossy_cobblestone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_BONE_BLOCK.get()).getPath(), modLoc("block/compressed_bone_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_HAY_BLOCK.get()).getPath(), modLoc("block/compressed_hay_block"));
 
         //Polished Blocks
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_POLISHED_ANDESITE.get()).getPath(), modLoc("block/compressed_polished_andesite"));

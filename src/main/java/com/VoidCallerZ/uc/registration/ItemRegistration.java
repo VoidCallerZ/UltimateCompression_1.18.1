@@ -102,6 +102,8 @@ public class ItemRegistration
     public static final RegistryObject<Item> COMPRESSED_TUFF = fromBlock(BlockRegistration.COMPRESSED_TUFF);
     public static final RegistryObject<Item> COMPRESSED_CLAY = fromBlock(BlockRegistration.COMPRESSED_CLAY);
     public static final RegistryObject<Item> COMPRESSED_MOSSY_COBBLESTONE = fromBlock(BlockRegistration.COMPRESSED_MOSSY_COBBLESTONE);
+    public static final RegistryObject<Item> COMPRESSED_BONE_BLOCK = fromBlock(BlockRegistration.COMPRESSED_BONE_BLOCK);
+    public static final RegistryObject<Item> COMPRESSED_HAY_BLOCK = fromBlock(BlockRegistration.COMPRESSED_HAY_BLOCK);
     
     //Polished Blocks
     public static final RegistryObject<Item> COMPRESSED_POLISHED_ANDESITE = fromBlock(BlockRegistration.COMPRESSED_POLISHED_ANDESITE);

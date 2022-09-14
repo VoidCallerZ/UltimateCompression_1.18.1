@@ -1,6 +1,7 @@
 package com.VoidCallerZ.uc.registration;
 
 import com.VoidCallerZ.uc.UltimateCompression;
+import com.VoidCallerZ.uc.blocks.UcHayBlock;
 import com.VoidCallerZ.uc.blocks.UcOreBlock;
 import com.VoidCallerZ.uc.blocks.UcPowderSnowBlock;
 import com.VoidCallerZ.uc.blocks.UcSculkCatalystBlock;
@@ -148,6 +149,8 @@ public class BlockRegistration
     public static final RegistryObject<Block> COMPRESSED_TUFF = BLOCKS.register("compressed_tuff", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Block> COMPRESSED_CLAY = BLOCKS.register("compressed_clay", () -> new Block(SOFT_BLOCK_PROPERTIES));
     public static final RegistryObject<Block> COMPRESSED_MOSSY_COBBLESTONE = BLOCKS.register("compressed_mossy_cobblestone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<RotatedPillarBlock> COMPRESSED_BONE_BLOCK = BLOCKS.register("compressed_bone_block", () -> new RotatedPillarBlock(ORE_PROPERTIES));
+    public static final RegistryObject<UcHayBlock> COMPRESSED_HAY_BLOCK = BLOCKS.register("compressed_hay_block", () -> new UcHayBlock(SOFT_BLOCK_PROPERTIES));
 
     //Polished Blocks
     public static final RegistryObject<Block> COMPRESSED_POLISHED_ANDESITE = BLOCKS.register("compressed_polished_andesite", () -> new Block(ORE_PROPERTIES));

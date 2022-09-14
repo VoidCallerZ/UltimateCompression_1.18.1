@@ -121,7 +121,8 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(BlockRegistration.DOUBLE_COMPRESSED_NETHERRACK.get())
                 .add(BlockRegistration.DOUBLE_COMPRESSED_RED_SAND.get())
                 .add(BlockRegistration.DOUBLE_COMPRESSED_SAND.get())
-                .add(BlockRegistration.DOUBLE_COMPRESSED_STONE.get());
+                .add(BlockRegistration.DOUBLE_COMPRESSED_STONE.get())
+                .add(BlockRegistration.COMPRESSED_BONE_BLOCK.get());
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(BlockRegistration.COMPRESSED_GRAVEL.get())

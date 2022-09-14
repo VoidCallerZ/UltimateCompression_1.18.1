@@ -81,6 +81,8 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(BlockRegistration.COMPRESSED_TUFF.get(), "compressed_tuff", "block/compressed/basic/compressed_tuff");
         singleTextureBlock(BlockRegistration.COMPRESSED_CLAY.get(), "compressed_clay", "block/compressed/basic/compressed_clay");
         singleTextureBlock(BlockRegistration.COMPRESSED_MOSSY_COBBLESTONE.get(), "compressed_mossy_cobblestone", "block/compressed/basic/compressed_mossy_cobblestone");
+        compressedPillarBlock(BlockRegistration.COMPRESSED_BONE_BLOCK.get(), modLoc("block/compressed/basic/compressed_bone_block"));
+        compressedPillarBlock(BlockRegistration.COMPRESSED_HAY_BLOCK.get(), modLoc("block/compressed/basic/compressed_hay_block"));
 
         //Polished Blocks
         singleTextureBlock(BlockRegistration.COMPRESSED_POLISHED_ANDESITE.get(), "compressed_polished_andesite", "block/compressed/basic/polished/compressed_polished_andesite");

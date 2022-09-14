@@ -238,6 +238,8 @@ public class ucLanguageProvider extends LanguageProvider
         add(BlockRegistration.COMPRESSED_TUFF.get(), "Compressed Tuff");
         add(BlockRegistration.COMPRESSED_CLAY.get(), "Compressed Clay");
         add(BlockRegistration.COMPRESSED_MOSSY_COBBLESTONE.get(), "Compressed Mossy Cobblestone");
+        add(BlockRegistration.COMPRESSED_BONE_BLOCK.get(), "Compressed Bone Block");
+        add(BlockRegistration.COMPRESSED_HAY_BLOCK.get(), "Compressed Hay Block");
 
         //Polished Blocks
         add(BlockRegistration.COMPRESSED_POLISHED_ANDESITE.get(), "Compressed Polished Andesite");
