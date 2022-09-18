@@ -1,0 +1,45 @@
+{
+  "name": "All available blocks",
+  "icon": "minecraft:writable_book",
+  "category": "uc:introduction_category",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "These are all the currently available blocks in Ultimate Compression: $(li)(Deepslate) Ores $(li2)Iron $(li2)Gold $(li2)Diamond $(li2)Copper $(li2)Coal $(li2)Emerald $(li2)Lapis $(li2)Redstone"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Compressed Iron Block $(li)Compressed Gold Block $(li)Compressed Diamond Block $(li)Compressed Copper Block $(li)Compressed Coal Block $(li)Compressed Emerald Block $(li)Compressed Lapis Block $(li)Compressed Redstone Block $(br)$(li)Compressed Raw Iron Block $(li)Compressed Raw Gold Block $(li)Compressed Raw Copper Block"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Compressed Andesite $(li)Compressed Calcite $(li)Compressed Cobbled Deepslate $(li)Compressed Cobblestone $(li)Compressed Deepslate $(li)Compressed Diorite $(li)Compressed Dirt $(li)Compressed Granite $(li)Compressed Gravel $(li)Compressed Netherrack $(li)Compressed Red Sand $(li)Compressed Sand $(li)Compressed Stone $(li)Compressed Tuff $(li)Compressed Clay"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Compressed Mossy Cobblestone $(li)Compressed Bone Block $(li)Compressed Hay Block $(br)$(li)Polished block types $(li)Smooth block types &(li)All types of stone bricks $(li)All types of (red) sandstone"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Nether Blocks $(li2)Nether Quartz Ore $(li2)Nether Gold Ore $(li2)Compressed Nether Quartz Block $(li2)Compressed Basalt $(li2)Compressed Blackstone $(li2)Compressed Chiseled Polished Blackstone $(li2)Compressed Chiseled Polished Blackstone Bricks $(li2)Compressed Gilded Blackstone $(li2)Compressed Glowstone"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li2)Compressed Magma Block $(li2)Compressed Soul Sand $(li2)Compressed Soul Soil $(br)$(li)All Available Logs & Planks $(li)All Leaves Types $(li)All Wool Blocks $(li)All Concrete and Powder Concrete Blocks $(li)Snow & Powder Snow Blocks $(li)All (Colored) Glass Blocks & Panes"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Obsidian Block $(li)Double Compressed: $(li2)Cobbled Deepslate $(li2)Cobbled Deepslate $(li2)Cobblestone $(li2)Deepslate $(li2)Dirt $(li2)Gravel $(li2)Netherrack $(li2)Red Sand $(li2)Sand $(li2)Stone"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "uc:textures/patchouli/compressors.png"
+      ],
+      "title": "Compressors",
+      "border": "true",
+      "text": "$(li)Iron, Gold, Diamond & Netherite Compressor"
+    }
+  ]
+}

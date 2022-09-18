@@ -1,0 +1,12 @@
+{
+  "name": "What is Ultimate Compression?",
+  "icon": "minecraft:writable_book",
+  "category": "uc:introduction_category",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ultimate Compression is a storage solution against overflowing systems and chest monsters. It compresses all sorts of vanilla blocks & items"
+    }
+  ]
+}

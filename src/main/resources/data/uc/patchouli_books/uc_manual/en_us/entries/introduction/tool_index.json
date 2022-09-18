@@ -1,0 +1,12 @@
+{
+  "name": "All available tools",
+  "icon": "minecraft:writable_book",
+  "category": "uc:introduction_category",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "These are all the currently available tools in Ultimate Compression, all tools have increased durability and can have beneficial potion effects: $(li)Compressed Wooden Tools $(li)Compressed Stone Tools $(li)Compressed Iron Tools $(li)Compressed Golden Tools $(li)Compressed Diamond Tools $(li)Compressed Netherite Tools"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "All available items",
+  "icon": "minecraft:writable_book",
+  "category": "uc:introduction_category",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "These are all the currently available items in Ultimate Compression: $(li)Compressed Iron Ingot $(li)Compressed Gold Ingot $(li)Compressed Diamond $(li)Compressed Copper Ingot $(li)Compressed Coal $(li)Compressed Emerald $(li)Compressed Lapis Lazuli $(li)Compressed Redstone $(li)Compressed Netherite Ingot $(li)Compressed Raw Iron $(li)Compressed Raw Gold"
+    },
+    {
+      "type": "patchouli:text",
+      "text": " $(li)Compressed Raw Copper $(li)Compressed Gold Nugget $(li)Compressed Iron Nugget $(br)$(li)Compressed Arrow $(li)Compressed Spectral Arrow $(li)Compressed Tipped Arrows $(li)Compressed Snowballs $(br)$(li)Compressed Quartz $(li)Compressed Sticks"
+    }
+  ]
+}
