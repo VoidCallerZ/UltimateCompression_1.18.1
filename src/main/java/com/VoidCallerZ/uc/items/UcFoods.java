@@ -6,6 +6,9 @@ import net.minecraft.world.food.FoodProperties;
 
 public class UcFoods
 {
+    //Hunger = nutrition()
+    //Saturation = (nutrition() / saturationMod()) * 2
+
     public static final FoodProperties COMPRESSED_APPLE = new FoodProperties.Builder().nutrition(8).saturationMod(0.9f).build();
     public static final FoodProperties COMPRESSED_BAKED_POTATO = new FoodProperties.Builder().nutrition(10).saturationMod(1.8f).build();
     public static final FoodProperties COMPRESSED_BEEF = new FoodProperties.Builder().nutrition(4).saturationMod(0.4f).build();

@@ -1,0 +1,89 @@
+{
+  "components": [
+    {
+      "type": "patchouli:header",
+      "text": "#header",
+      "centered": true,
+      "scale": 0.8,
+      "x": -1,
+      "y": -1
+    },
+    {
+      "type": "patchouli:separator",
+      "x": -1,
+      "y": -1
+    },
+    {
+      "type": "patchouli:image",
+      "image": "uc:textures/item/compressed/food/#image#.png",
+      "width": 18,
+      "height": 18,
+      "texture_width": 18,
+      "texture_height": 18,
+      "scale": 2,
+      "x": 80,
+      "y": 15
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Hunger: #hunger#",
+      "x": 0,
+      "y": 20
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Saturation: #saturation#",
+      "x": 0,
+      "y": 30
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Effects: #effect#",
+      "x": 0,
+      "y": 40
+    },
+
+    {
+      "type": "patchouli:header",
+      "text": "#header2",
+      "centered": true,
+      "scale": 0.8,
+      "x": -1,
+      "y": 70
+    },
+    {
+      "type": "patchouli:separator",
+      "x": -1,
+      "y": 85
+    },
+    {
+      "type": "patchouli:image",
+      "image": "uc:textures/item/compressed/food/#image2#.png",
+      "width": 18,
+      "height": 18,
+      "texture_width": 18,
+      "texture_height": 18,
+      "scale": 2,
+      "x": 80,
+      "y": 90
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Hunger: #hunger2#",
+      "x": 0,
+      "y": 95
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Saturation: #saturation2#",
+      "x": 0,
+      "y": 105
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Effects: #effect2#",
+      "x": 0,
+      "y": 115
+    }
+  ]
+}

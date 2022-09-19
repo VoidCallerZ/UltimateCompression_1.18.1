@@ -1,0 +1,6 @@
+{
+  "name": "Food Item Stats",
+  "description": "These are the buffs and de-buffs received from consuming the compressed food items.",
+  "icon": "minecraft:writable_book",
+  "sortnum": 2
+}
