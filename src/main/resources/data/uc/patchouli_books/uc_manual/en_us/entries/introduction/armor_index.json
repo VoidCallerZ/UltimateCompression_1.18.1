@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "These are all the currently available armor sets in Ultimate Compression, all armor sets have increased durability and can have beneficial potion effects: $(li)Compressed Leather Armor $(li)Compressed Iron Armor $(li)Compressed Gold Armor $(li)Compressed Diamond Armor $(li)Compressed Netherite Armor"
+      "text": "These are all the currently available armor sets in Ultimate Compression, all armor sets have increased durability and can have beneficial potion effects: $(l:armor/overview#leather)$(li)Compressed Leather Armor $(l:armor/overview#iron)$(li)Compressed Iron Armor $(l:armor/overview#gold)$(li)Compressed Gold Armor $(l:armor/overview#diamond)$(li)Compressed Diamond Armor $(l:armor/overview#netherite)$(li)Compressed Netherite Armor"
     }
   ]
 }

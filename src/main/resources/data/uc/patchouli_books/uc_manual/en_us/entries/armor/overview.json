@@ -15,6 +15,7 @@
     },
     {
       "type": "uc:armorstats",
+      "anchor": "leather",
       "header": "Compressed Leather Helmet",
       "image": "compressed_leather_helmet",
       "durability": 495,
@@ -49,6 +50,7 @@
     },
     {
       "type": "uc:armorstats",
+      "anchor": "iron",
       "header": "Compressed Iron Helmet",
       "image": "compressed_iron_helmet",
       "durability": 1485,
@@ -83,6 +85,7 @@
     },
     {
       "type": "uc:armorstats",
+      "anchor": "gold",
       "header": "Compressed Golden Helmet",
       "image": "compressed_golden_helmet",
       "durability": 693,
@@ -117,6 +120,7 @@
     },
     {
       "type": "uc:armorstats",
+      "anchor": "diamond",
       "header": "Compressed Diamond Helmet",
       "image": "compressed_diamond_helmet",
       "durability": 3267,
@@ -151,6 +155,7 @@
     },
     {
       "type": "uc:armorstats",
+      "anchor": "netherite",
       "header": "Compressed Netherite Helmet",
       "image": "compressed_netherite_helmet",
       "durability": 3663,

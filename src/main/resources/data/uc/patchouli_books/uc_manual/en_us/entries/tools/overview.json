@@ -15,6 +15,7 @@
     },
     {
       "type": "uc:toolstats",
+      "anchor": "wood",
       "header": "Compressed Wooden Pickaxe",
       "image": "compressed_wooden_pickaxe",
       "damage": 3,
@@ -41,6 +42,7 @@
     },
     {
       "type": "uc:toolstats",
+      "anchor": "stone",
       "header": "Compressed Wooden Hoe",
       "image": "compressed_wooden_hoe",
       "damage": 2,
@@ -80,6 +82,7 @@
     },
     {
       "type": "uc:toolstats",
+      "anchor": "iron",
       "header": "Compressed Iron Pickaxe",
       "image": "compressed_iron_pickaxe",
       "damage": 5,
@@ -106,6 +109,7 @@
     },
     {
       "type": "uc:toolstats",
+      "anchor": "gold",
       "header": "Compressed Iron Hoe",
       "image": "compressed_iron_hoe",
       "damage": 4,
@@ -145,6 +149,7 @@
     },
     {
       "type": "uc:toolstats",
+      "anchor": "diamond",
       "header": "Compressed Diamond Pickaxe",
       "image": "compressed_diamond_pickaxe",
       "damage": 6,
@@ -171,6 +176,7 @@
     },
     {
       "type": "uc:toolstats",
+      "anchor": "netherite",
       "header": "Compressed Diamond Hoe",
       "image": "compressed_diamond_hoe",
       "damage": 5,

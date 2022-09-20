@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "These are all the currently available tools in Ultimate Compression, all tools have increased durability and can have beneficial potion effects: $(li)Compressed Wooden Tools $(li)Compressed Stone Tools $(li)Compressed Iron Tools $(li)Compressed Golden Tools $(li)Compressed Diamond Tools $(li)Compressed Netherite Tools"
+      "text": "These are all the currently available tools in Ultimate Compression, all tools have increased durability and can have beneficial potion effects: $(l:tools/overview#wood)$(li)Compressed Wooden Tools $(l:tools/overview#stone)$(li)Compressed Stone Tools $(l:tools/overview#iron)$(li)Compressed Iron Tools $(l:tools/overview#gold)$(li)Compressed Golden Tools $(l:tools/overview#diamond)$(li)Compressed Diamond Tools $(l:tools/overview#netherite)$(li)Compressed Netherite Tools"
     }
   ]
 }
