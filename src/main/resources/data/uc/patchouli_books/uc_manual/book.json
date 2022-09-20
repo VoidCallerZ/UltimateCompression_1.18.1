@@ -3,5 +3,6 @@
   "landing_text": "Tired of overflowing storage? Ultimate Compression is a mod to reduce storage requirements by compressing all sorts of vanilla blocks and items.",
   "version": 1,
   "creative_tab": "ultimatecompression",
-  "text_overflow_mode": "truncate"
+  "text_overflow_mode": "truncate",
+  "show_progress": false
 }

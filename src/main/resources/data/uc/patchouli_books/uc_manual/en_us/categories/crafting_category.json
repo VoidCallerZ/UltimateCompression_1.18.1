@@ -1,6 +1,6 @@
 {
   "name": "Crafting Recipes",
   "description": "All currently available crafting recipes in Ultimate Compression!",
-  "icon": "minecraft:writable_book",
+  "icon": "minecraft:crafting_table",
   "sortnum": 1
 }

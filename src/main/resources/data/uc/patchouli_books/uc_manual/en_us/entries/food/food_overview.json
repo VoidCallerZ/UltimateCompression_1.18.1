@@ -10,6 +10,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "appleBakedPotato",
       "header": "Compressed Apple",
       "image": "compressed_apple",
       "hunger": "8",
@@ -23,6 +24,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "beefBeetroot",
       "header": "Compressed Beef",
       "image": "compressed_beef",
       "hunger": "4",
@@ -36,6 +38,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "beetrootSoupBread",
       "header": "Compressed Beetroot Soup",
       "image": "compressed_beetroot_soup",
       "hunger": "12",
@@ -49,6 +52,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "carrotChicken",
       "header": "Compressed Carrot",
       "image": "compressed_carrot",
       "hunger": "6",
@@ -62,6 +66,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "codCookedBeef",
       "header": "Compressed Cod",
       "image": "compressed_cod",
       "hunger": "4",
@@ -75,6 +80,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "cookedChickenCookedCod",
       "header": "Compressed Cooked Chicken",
       "image": "compressed_cooked_chicken",
       "hunger": "12",
@@ -88,6 +94,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "cookedMuttonCookedPorkchop",
       "header": "Compressed Cooked Mutton",
       "image": "compressed_cooked_mutton",
       "hunger": "12",
@@ -101,6 +108,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "cookedRabbitCookedSalmon",
       "header": "Compressed Cooked Rabbit",
       "image": "compressed_cooked_rabbit",
       "hunger": "10",
@@ -114,6 +122,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "cookieDriedKelp",
       "header": "Compressed Cookie",
       "image": "compressed_cookie",
       "hunger": "4",
@@ -127,6 +136,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "glowBerriesGoldenApple",
       "header": "Compressed Glow Berries",
       "image": "compressed_glow_berries",
       "hunger": "4",
@@ -140,6 +150,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "enchantedGoldenAppleMelonSlice",
       "header": "Compressed Enchanted Golden Apple",
       "image": "compressed_golden_apple",
       "hunger": "8",
@@ -153,6 +164,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "mushroomStewMutton",
       "header": "Compressed Mushroom Stew",
       "image": "compressed_mushroom_stew",
       "hunger": "6",
@@ -166,6 +178,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "poisonousPotatoPorkchop",
       "header": "Compressed Poisonous Potato",
       "image": "compressed_poisonous_potato",
       "hunger": "4",
@@ -179,6 +192,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "potatoPufferfish",
       "header": "Compressed Potato",
       "image": "compressed_potato",
       "hunger": "2",
@@ -192,6 +206,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "pumpkinPieRabbit",
       "header": "Compressed Pumpkin Pie",
       "image": "compressed_pumpkin_pie",
       "hunger": "16",
@@ -205,6 +220,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "rabbitStewRottenFlesh",
       "header": "Compressed Rabbit Stew",
       "image": "compressed_rabbit_stew",
       "hunger": "10",
@@ -218,6 +234,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "salmonSpiderEye",
       "header": "Compressed Salmon",
       "image": "compressed_salmon",
       "hunger": "4",
@@ -231,6 +248,7 @@
     },
     {
       "type": "uc:foodstats",
+      "anchor": "sweetBerriesTropicalFish",
       "header": "Compressed Sweet Berries",
       "image": "compressed_sweet_berries",
       "hunger": "4",

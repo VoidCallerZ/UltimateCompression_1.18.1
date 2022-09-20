@@ -6,15 +6,15 @@
   "pages": [
     {
       "type": "text",
-      "text": "These are all the currently available food items in Ultimate Compression, all food items give more hunger back and have increased saturation. Bad effects will also be worse: $(li)Compressed $(li2)Apple $(li2)Baked Potato $(li2)Beef $(li2)Beetroot $(li2)Beetroot Soup $(li2)Bread"
+      "text": "These are all the currently available food items in Ultimate Compression, all food items give more hunger back and have increased saturation. Bad effects will also be worse: $(li)Compressed $(l:food/food_overview#appleBakedPotato)$(li2)Apple $(l:food/food_overview#appleBakedPotato)$(li2)Baked Potato $(l:food/food_overview#beefBeetroot)$(li2)Beef $(l:food/food_overview#beefBeetroot)$(li2)Beetroot $(l:food/food_overview#beetrootSoupBread)$(li2)Beetroot Soup $(l:food/food_overview#beetrootSoupBread)$(li2)Bread$()"
     },
     {
       "type": "text",
-      "text": "$(li2)Carrot $(li2)Chicken $(li2)Cod $(li2)Cooked Beef $(li2)Cooked Chicken $(li2)Cooked Cod $(li2)Cooked Mutton $(li2)Cooked Porkchop $(li2)Cooked Rabbit $(li2)Cooked Salmon $(li2)Cookie $(li2)Dried Kelp $(li2)Glow Berries $(li2)Golden Apple $(li2)Enchanted Golden Apple $(li2)Melon Slice"
+      "text": "$(l:food/food_overview#carrotChicken)$(li2)Carrot $(l:food/food_overview#carrotChicken)$(li2)Chicken $(l:food/food_overview#codCookedBeef)$(li2)Cod $(l:food/food_overview#codCookedBeef)$(li2)Cooked Beef $(l:food/food_overview#cookedChickenCookedCod)$(li2)Cooked Chicken $(l:food/food_overview#cookedChickenCookedCod)$(li2)Cooked Cod $(l:food/food_overview#cookedMuttonCookedPorkchop)$(li2)Cooked Mutton $(l:food/food_overview#cookedMuttonCookedPorkchop)$(li2)Cooked Porkchop $(l:food/food_overview#cookedRabbitCookedSalmon)$(li2)Cooked Rabbit $(l:food/food_overview#cookedRabbitCookedSalmon)$(li2)Cooked Salmon $(l:food/food_overview#cookieDriedKelp)$(li2)Cookie $(l:food/food_overview#cookieDriedKelp)$(li2)Dried Kelp $(l:food/food_overview#glowBerriesGoldenApple)$(li2)Glow Berries $(l:food/food_overview#glowBerriesGoldenApple)$(li2)Golden Apple $(l:food/food_overview#enchantedGoldenAppleMelonSlice)$(li2)Enchanted Golden Apple $(l:food/food_overview#enchantedGoldenAppleMelonSlice)$(li2)Melon Slice$()"
     },
     {
       "type": "text",
-      "text": "$(li2)Mushroom Stew $(li2)Mutton $(li2)Poisonous Potato $(li2)Porkchop $(li2)Potato $(li2)Pufferfish $(li2)Pumpkin Pie $(li2)Rabbit $(li2)Rabbit Stew $(li2)Rotten Flesh $(li2)Salmon $(li2)Spider Eye $(li2)Sweet Berries $(li2)Tropcial Fish"
+      "text": "$(l:food/food_overview#mushroomStewMutton)$(li2)Mushroom Stew $(l:food/food_overview#mushroomStewMutton)$(li2)Mutton $(l:food/food_overview#poisonousPotatoPorkchop)$(li2)Poisonous Potato $(l:food/food_overview#poisonousPotatoPorkchop)$(li2)Porkchop $(l:food/food_overview#potatoPufferfish)$(li2)Potato $(l:food/food_overview#potatoPufferfish)$(li2)Pufferfish $(l:food/food_overview#pumpkinPieRabbit)$(li2)Pumpkin Pie $(l:food/food_overview#pumpkinPieRabbit)$(li2)Rabbit $(l:food/food_overview#rabbitStewRottenFlesh)$(li2)Rabbit Stew $(l:food/food_overview#rabbitStewRottenFlesh)$(li2)Rotten Flesh $(l:food/food_overview#salmonSpiderEye)$(li2)Salmon $(l:food/food_overview#salmonSpiderEye)$(li2)Spider Eye $(l:food/food_overview#sweetBerriesTropicalFish)$(li2)Sweet Berries $(l:food/food_overview#sweetBerriesTropicalFish)$(li2)Tropcial Fish$()"
     }
   ]
 }

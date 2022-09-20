@@ -1,6 +1,6 @@
 {
   "name": "Tool Stats",
   "description": "All tools have increased durability, increased damage & adjusted attack speeds. This chapter will give you all the required information on these tools.",
-  "icon": "minecraft:writable_book",
+  "icon": "uc:compressed_diamond_pickaxe",
   "sortnum": 3
 }
