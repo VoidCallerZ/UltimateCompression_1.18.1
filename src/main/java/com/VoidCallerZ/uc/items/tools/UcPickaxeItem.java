@@ -58,7 +58,7 @@ public class UcPickaxeItem extends PickaxeItem
     {
         pStack.hurtAndBreak(1, pEntityLiving, (breakConsumer) -> breakConsumer.broadcastBreakEvent(EquipmentSlot.MAINHAND));
         if (pStack.getItem() == ToolRegistration.COMPRESSED_IRON_PICKAXE.get() ||
-        pStack.getItem() == ToolRegistration.COMPRESSED_GOLD_PICKAXE.get() ||
+        pStack.getItem() == ToolRegistration.COMPRESSED_NETHERITE_PICKAXE.get() ||
         pStack.getItem() == ToolRegistration.COMPRESSED_DIAMOND_PICKAXE.get())
         {
             if (new Random().nextFloat() > 0.5f)

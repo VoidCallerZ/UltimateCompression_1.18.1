@@ -66,8 +66,7 @@ public class UcSwordItem extends SwordItem
     {
         pStack.hurtAndBreak(1, pAttacker, (breakConsumer) -> breakConsumer.broadcastBreakEvent(EquipmentSlot.MAINHAND));
         if (pStack.getItem() == ToolRegistration.COMPRESSED_IRON_SWORD.get() ||
-                pStack.getItem() == ToolRegistration.COMPRESSED_DIAMOND_SWORD.get() ||
-                pStack.getItem() == ToolRegistration.COMPRESSED_GOLD_SWORD.get() ||
+                pStack.getItem() == ToolRegistration.COMPRESSED_NETHERITE_SWORD.get() ||
                 pStack.getItem() == ToolRegistration.COMPRESSED_DIAMOND_SWORD.get())
         {
             if (new Random().nextFloat() > 0.5f)

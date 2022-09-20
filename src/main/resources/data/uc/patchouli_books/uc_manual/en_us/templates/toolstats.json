@@ -1,0 +1,89 @@
+{
+  "components": [
+    {
+      "type": "patchouli:header",
+      "text": "#header",
+      "centered": true,
+      "scale": 0.8,
+      "x": -1,
+      "y": -1
+    },
+    {
+      "type": "patchouli:separator",
+      "x": -1,
+      "y": -1
+    },
+    {
+      "type": "patchouli:image",
+      "image": "uc:textures/item/compressed/tools/#image#.png",
+      "width": 16,
+      "height": 16,
+      "texture_width": 16,
+      "texture_height": 16,
+      "scale": 2,
+      "x": 80,
+      "y": 15
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Damage: #damage#",
+      "x": 0,
+      "y": 20
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Attack Speed: #aspeed#",
+      "x": 0,
+      "y": 30
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Effects: #effect#",
+      "x": 0,
+      "y": 40
+    },
+
+    {
+      "type": "patchouli:header",
+      "text": "#header2",
+      "centered": true,
+      "scale": 0.8,
+      "x": -1,
+      "y": 70
+    },
+    {
+      "type": "patchouli:separator",
+      "x": -1,
+      "y": 85
+    },
+    {
+      "type": "patchouli:image",
+      "image": "uc:textures/item/compressed/tools/#image2#.png",
+      "width": 16,
+      "height": 16,
+      "texture_width": 16,
+      "texture_height": 16,
+      "scale": 2,
+      "x": 80,
+      "y": 90
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Damage: #damage2#",
+      "x": 0,
+      "y": 95
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Attack Speed: #aspeed2#",
+      "x": 0,
+      "y": 105
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Effects: #effect2#",
+      "x": 0,
+      "y": 115
+    }
+  ]
+}

@@ -58,7 +58,7 @@ public class UcAxeItem extends AxeItem
     {
         pStack.hurtAndBreak(1, pEntityLiving, (breakConsumer) -> breakConsumer.broadcastBreakEvent(EquipmentSlot.MAINHAND));
         if (pStack.getItem() == ToolRegistration.COMPRESSED_IRON_AXE.get() ||
-                pStack.getItem() == ToolRegistration.COMPRESSED_GOLD_AXE.get() ||
+                pStack.getItem() == ToolRegistration.COMPRESSED_NETHERITE_AXE.get() ||
                 pStack.getItem() == ToolRegistration.COMPRESSED_DIAMOND_AXE.get())
         {
             if (new Random().nextFloat() > 0.5f)
