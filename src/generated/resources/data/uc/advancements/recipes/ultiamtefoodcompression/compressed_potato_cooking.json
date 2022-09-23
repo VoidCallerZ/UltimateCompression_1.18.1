@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_compressed_mutton": {
+    "has_cooking_compressed_potato": {
       "conditions": {
         "items": [
           {
             "items": [
-              "uc:compressed_mutton"
+              "uc:compressed_potato"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "uc:compressed_cooked_mutton"
+        "recipe": "uc:compressed_potato_cooking"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_compressed_mutton",
+      "has_cooking_compressed_potato",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "uc:compressed_cooked_mutton"
+      "uc:compressed_potato_cooking"
     ]
   }
 }

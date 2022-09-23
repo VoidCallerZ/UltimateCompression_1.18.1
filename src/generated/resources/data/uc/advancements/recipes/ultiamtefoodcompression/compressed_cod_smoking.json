@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_compressed_potato": {
+    "has_smoking_compressed_cod": {
       "conditions": {
         "items": [
           {
             "items": [
-              "uc:compressed_potato"
+              "uc:compressed_cod"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "uc:compressed_baked_potato"
+        "recipe": "uc:compressed_cod_smoking"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_compressed_potato",
+      "has_smoking_compressed_cod",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "uc:compressed_baked_potato"
+      "uc:compressed_cod_smoking"
     ]
   }
 }

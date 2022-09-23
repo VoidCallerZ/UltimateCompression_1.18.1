@@ -59,6 +59,9 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
+
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
         }
 
         data {
@@ -69,6 +72,9 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             args '--mod', 'uc', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
         }
     }
 }

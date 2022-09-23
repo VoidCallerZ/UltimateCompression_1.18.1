@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_compressed_porkchop": {
+    "has_smoking_compressed_chicken": {
       "conditions": {
         "items": [
           {
             "items": [
-              "uc:compressed_porkchop"
+              "uc:compressed_chicken"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "uc:compressed_cooked_porkchop"
+        "recipe": "uc:compressed_chicken_smoking"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_compressed_porkchop",
+      "has_smoking_compressed_chicken",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "uc:compressed_cooked_porkchop"
+      "uc:compressed_chicken_smoking"
     ]
   }
 }

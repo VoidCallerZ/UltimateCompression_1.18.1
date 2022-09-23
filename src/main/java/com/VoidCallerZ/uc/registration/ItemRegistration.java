@@ -12,7 +12,6 @@ import com.VoidCallerZ.uc.items.arrows.UcTippedArrowItem;
 import com.VoidCallerZ.uc.setup.ModSetup;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.contents.TranslatableContents;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EntityType;

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_compressed_salmon": {
+    "has_cooking_compressed_salmon": {
       "conditions": {
         "items": [
           {
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "uc:compressed_cooked_salmon"
+        "recipe": "uc:compressed_salmon_cooking"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_compressed_salmon",
+      "has_cooking_compressed_salmon",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "uc:compressed_cooked_salmon"
+      "uc:compressed_salmon_cooking"
     ]
   }
 }

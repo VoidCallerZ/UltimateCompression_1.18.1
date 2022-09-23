@@ -424,10 +424,19 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
 
     protected void CookingFoodRecipeBuilder(Item foodItem, Item input, Consumer<FinishedRecipe> consumer)
     {
+        SmokingFoodRecipeBuilder(input, foodItem, consumer);
         SimpleCookingRecipeBuilder.cooking(Ingredient.of(input), foodItem, 0.35f, 100, SimpleCookingSerializer.SMELTING_RECIPE)
                 .group("uc")
-                .unlockedBy("has_" + input, InventoryChangeTrigger.TriggerInstance.hasItems(input))
-                .save(consumer);
+                .unlockedBy("has_cooking_" + input, InventoryChangeTrigger.TriggerInstance.hasItems(input))
+                .save(consumer, ForgeRegistries.ITEMS.getKey(input) + "_cooking");
+    }
+
+    protected void SmokingFoodRecipeBuilder(Item input, Item output, Consumer<FinishedRecipe> consumer)
+    {
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(input), output, 0.7F, 50)
+                .group("uc")
+                .unlockedBy("has_smoking_" + input, InventoryChangeTrigger.TriggerInstance.hasItems(input))
+                .save(consumer, ForgeRegistries.ITEMS.getKey(input) + "_smoking");
     }
 
     protected void BlockSmeltingRecipeBuilder(Block input, Item output, float exp, int cookingTime, Consumer<FinishedRecipe> consumer)
