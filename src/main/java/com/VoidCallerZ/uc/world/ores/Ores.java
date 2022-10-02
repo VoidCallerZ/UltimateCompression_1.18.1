@@ -1,10 +1,14 @@
 package com.VoidCallerZ.uc.world.ores;
 
 import com.VoidCallerZ.uc.registration.BlockRegistration;
+import com.VoidCallerZ.uc.registration.WorldGenRegistration;
+import net.minecraft.core.DefaultedRegistry;
 import net.minecraft.core.Holder;
+import net.minecraft.core.Registry;
 import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
@@ -13,8 +17,17 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.placement.*;
+import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
 
+import static com.VoidCallerZ.uc.UltimateCompression.MODID;
+
+@Mod.EventBusSubscriber(modid = MODID)
 public class Ores
 {
     public static Holder<PlacedFeature> IRON_OREGEN;
@@ -87,26 +100,73 @@ public class Ores
                 HeightRangePlacement.uniform(VerticalAnchor.absolute(minY), VerticalAnchor.absolute(maxY)));
     }
 
-    public static void onBiomeLoadingEvent(BiomeLoadingEvent event)
+    @SubscribeEvent
+    public static void biomeLoadingEvent(final BiomeLoadingEvent event)
     {
         if (event.getCategory() == Biome.BiomeCategory.NETHER)
         {
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, NETHER_GOLD_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, NETHER_QUARTZ_OREGEN);
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_NETHER_GOLD_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_NETHER_QUARTZ_ORE_GEN.getHolder().get());
         }
         else
         {
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, IRON_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, GOLD_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, COPPER_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, DIAMOND_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, COAL_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, LAPIS_OREGEN);
-            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, REDSTONE_OREGEN);
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_IRON_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_GOLD_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_COPPER_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_DIAMOND_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_COAL_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_LAPIS_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_REDSTONE_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_DEEPSLATE_IRON_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_DEEPSLATE_GOLD_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_DEEPSLATE_COPPER_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_DEEPSLATE_DIAMOND_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_DEEPSLATE_COAL_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_DEEPSLATE_LAPIS_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_DEEPSLATE_REDSTONE_ORE_GEN.getHolder().get());
             if (event.getCategory() == Biome.BiomeCategory.MOUNTAIN)
             {
-                event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, EMERALD_OREGEN);
+                event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_EMERALD_ORE_GEN.getHolder().get());
+                event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_DEEPSLATE_EMERALD_ORE_GEN.getHolder().get());
             }
         }
+    }
+
+    @NotNull
+    public static Holder<PlacedFeature> createOverworldOregen(boolean isDeepslate, boolean isUniform, RegistryObject<Block> oreBlock, int veinSize, int amount, int height)
+    {
+        VerticalAnchor zero = VerticalAnchor.absolute(0);
+        VerticalAnchor absMinY = VerticalAnchor.absolute(height);
+        VerticalAnchor absMaxY = VerticalAnchor.absolute(height);
+
+        OreConfiguration overworldConfig = new OreConfiguration(isDeepslate ? OreFeatures.DEEPSLATE_ORE_REPLACEABLES : OreFeatures.STONE_ORE_REPLACEABLES, oreBlock.get().defaultBlockState(), veinSize);
+        return registerPlacedFeature(oreBlock.getId().getNamespace(), new ConfiguredFeature<>(Feature.ORE, overworldConfig),
+                CountPlacement.of(amount),
+                InSquarePlacement.spread(),
+                BiomeFilter.biome(),
+                isDeepslate ?
+                        (isUniform ? HeightRangePlacement.uniform(absMinY, zero) : HeightRangePlacement.triangle(absMinY, zero)):
+                        (isUniform ? HeightRangePlacement.uniform(zero, absMaxY) : HeightRangePlacement.triangle(zero, absMaxY))
+        );
+    }
+
+    @NotNull
+    public static Holder<PlacedFeature> createNetherOregen(RegistryObject<Block> oreBlock, int veinSize, int amount, int minY, int maxY)
+    {
+        VerticalAnchor absMinY = VerticalAnchor.absolute(minY);
+        VerticalAnchor absMaxY = VerticalAnchor.absolute(maxY);
+
+        OreConfiguration netherConfig = new OreConfiguration(OreFeatures.NETHER_ORE_REPLACEABLES, oreBlock.get().defaultBlockState(), veinSize);
+        return registerPlacedFeature(oreBlock.getId().getNamespace(), new ConfiguredFeature<>(Feature.ORE, netherConfig),
+                CountPlacement.of(amount),
+                InSquarePlacement.spread(),
+                BiomeFilter.biome(),
+                HeightRangePlacement.uniform(absMinY, absMaxY)
+        );
+    }
+
+    private static <C extends FeatureConfiguration, F extends Feature<C>> Holder<PlacedFeature> registerPlacedFeature(String registryName, ConfiguredFeature<C, F> feature, PlacementModifier... placementModifiers)
+    {
+        return PlacementUtils.register(registryName, Holder.direct(feature), placementModifiers);
     }
 }

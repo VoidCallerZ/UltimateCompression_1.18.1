@@ -1,0 +1,30 @@
+{
+  "name": "Tool Recipes",
+  "icon": "minecraft:writable_book",
+  "category": "uc:crafting_category",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ultimate Compression has a compressed version of all vanilla tools. They are crafted in the same way as usual but they will have increased durability and might give a bonus potion effect."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "uc:compressed_iron_pickaxe",
+      "recipe2": "uc:compressed_iron_axe_alt",
+      "title": "Pickaxes & Axes"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "uc:compressed_iron_shovel",
+      "recipe2": "uc:compressed_iron_sword",
+      "title": "Shovels & Swords"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "uc:compressed_iron_hoe_alt",
+      "title": "Hoes",
+      "text": "All the tools recipes are similar as Vanilla Minecraft. For any further information you can always check the Official Ultimate Compression Wiki or check the recipes shown within JEI. $(br)$(l:https://github.com/VoidCallerZ/UltimateCompression_1.18.x/wiki)Official Ultimate Compression Wiki$(/l)"
+    }
+  ]
+}

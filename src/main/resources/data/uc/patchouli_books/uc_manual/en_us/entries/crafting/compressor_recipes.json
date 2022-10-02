@@ -1,0 +1,29 @@
+{
+  "name": "Compressor Recipes",
+  "icon": "minecraft:writable_book",
+  "category": "uc:crafting_category",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Compressor is used to compress ingots, this is done to avoid conflicting recipes with Vanilla Minecraft."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "uc:iron_compressor",
+      "recipe2": "uc:golden_compressor",
+      "title": "Iron + Gold"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "uc:diamond_compressor",
+      "recipe2": "uc:netherite_compressor",
+      "title": "Diamond + Netherite"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Compressing",
+      "text": "To use the compressor, simply add 9 of the required ingots to the top slot of the compressor and wait for it to finish its progress. The 9 ingots will be compressed into 1 single compressed ingot."
+    }
+  ]
+}

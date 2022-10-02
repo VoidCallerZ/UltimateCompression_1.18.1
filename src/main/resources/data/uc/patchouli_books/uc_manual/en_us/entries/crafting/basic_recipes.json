@@ -1,0 +1,36 @@
+{
+  "name": "Basic Recipes",
+  "icon": "minecraft:writable_book",
+  "category": "uc:crafting_category",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This first section is on the very basic compression and decompression recipes used in over 50% of all recipes in this mod! $(br)All recipes in this mod can also easily be seen when using Just Enough Items (JEI) in combination with Ultimate Compression!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "uc:compressed_cobblestone_uc1",
+      "title": "Blocks",
+      "text": "This is the basic recipe used by a lot of blocks. These basic blocks can all be decompressed."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "uc:compressed_iron_ingot_uc3",
+      "title": "Items",
+      "text": "This is the basic item recipe, it is the same as the blocks. These basic items can all be decompressed."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "uc:compressed_cobblestone_uc2",
+      "recipe2": "minecraft:iron_ingot_uc3",
+      "title": "Basic Decompression"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "uc:compressed_apple",
+      "title": "Food",
+      "text": "All food items are crafted using just 4 of the vanilla items. They can be arranged in any order on the crafting grid. For any further information you can always check the Official Ultimate Compression Wiki or check the recipes shown within JEI. $(br)$(l:https://github.com/VoidCallerZ/UltimateCompression_1.18.x/wiki)Official Ultimate Compression Wiki$(/l)"
+    }
+  ]
+}

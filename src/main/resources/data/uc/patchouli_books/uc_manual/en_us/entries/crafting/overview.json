@@ -1,0 +1,12 @@
+{
+  "name": "Crafting Overview",
+  "icon": "minecraft:writable_book",
+  "category": "uc:crafting_category",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ultimate Compression has a lot of different crafting recipes, including: $(br)$(li)Shaped & Shapeless $(br)$(li)Furnace & Blast Furnace $(br)$(li)Custom Compressor Recipes"
+    }
+  ]
+}

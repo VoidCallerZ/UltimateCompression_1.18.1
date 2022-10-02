@@ -1,0 +1,20 @@
+{
+  "name": "All available food items",
+  "icon": "minecraft:writable_book",
+  "category": "uc:introduction_category",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "text",
+      "text": "These are all the currently available food items in Ultimate Compression, all food items give more hunger back and have increased saturation. Bad effects will also be worse: $(li)Compressed $(l:food/food_overview#appleBakedPotato)$(li2)Apple $(l:food/food_overview#appleBakedPotato)$(li2)Baked Potato $(l:food/food_overview#beefBeetroot)$(li2)Beef $(l:food/food_overview#beefBeetroot)$(li2)Beetroot $(l:food/food_overview#beetrootSoupBread)$(li2)Beetroot Soup $(l:food/food_overview#beetrootSoupBread)$(li2)Bread$()"
+    },
+    {
+      "type": "text",
+      "text": "$(l:food/food_overview#carrotChicken)$(li2)Carrot $(l:food/food_overview#carrotChicken)$(li2)Chicken $(l:food/food_overview#codCookedBeef)$(li2)Cod $(l:food/food_overview#codCookedBeef)$(li2)Cooked Beef $(l:food/food_overview#cookedChickenCookedCod)$(li2)Cooked Chicken $(l:food/food_overview#cookedChickenCookedCod)$(li2)Cooked Cod $(l:food/food_overview#cookedMuttonCookedPorkchop)$(li2)Cooked Mutton $(l:food/food_overview#cookedMuttonCookedPorkchop)$(li2)Cooked Porkchop $(l:food/food_overview#cookedRabbitCookedSalmon)$(li2)Cooked Rabbit $(l:food/food_overview#cookedRabbitCookedSalmon)$(li2)Cooked Salmon $(l:food/food_overview#cookieDriedKelp)$(li2)Cookie $(l:food/food_overview#cookieDriedKelp)$(li2)Dried Kelp $(l:food/food_overview#glowBerriesGoldenApple)$(li2)Glow Berries $(l:food/food_overview#glowBerriesGoldenApple)$(li2)Golden Apple $(l:food/food_overview#enchantedGoldenAppleMelonSlice)$(li2)Enchanted Golden Apple $(l:food/food_overview#enchantedGoldenAppleMelonSlice)$(li2)Melon Slice$()"
+    },
+    {
+      "type": "text",
+      "text": "$(l:food/food_overview#mushroomStewMutton)$(li2)Mushroom Stew $(l:food/food_overview#mushroomStewMutton)$(li2)Mutton $(l:food/food_overview#poisonousPotatoPorkchop)$(li2)Poisonous Potato $(l:food/food_overview#poisonousPotatoPorkchop)$(li2)Porkchop $(l:food/food_overview#potatoPufferfish)$(li2)Potato $(l:food/food_overview#potatoPufferfish)$(li2)Pufferfish $(l:food/food_overview#pumpkinPieRabbit)$(li2)Pumpkin Pie $(l:food/food_overview#pumpkinPieRabbit)$(li2)Rabbit $(l:food/food_overview#rabbitStewRottenFlesh)$(li2)Rabbit Stew $(l:food/food_overview#rabbitStewRottenFlesh)$(li2)Rotten Flesh $(l:food/food_overview#salmonSpiderEye)$(li2)Salmon $(l:food/food_overview#salmonSpiderEye)$(li2)Spider Eye $(l:food/food_overview#sweetBerriesTropicalFish)$(li2)Sweet Berries $(l:food/food_overview#sweetBerriesTropicalFish)$(li2)Tropcial Fish$()"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "patchouli:shapeless_book_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "uc:compressed_iron_ingot"
+    }
+  ],
+  "book": "uc:uc_manual"
+}

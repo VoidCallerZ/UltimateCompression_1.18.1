@@ -2,7 +2,6 @@ package com.VoidCallerZ.uc;
 
 import com.VoidCallerZ.uc.registration.*;
 import com.VoidCallerZ.uc.setup.ClientSetup;
-import com.VoidCallerZ.uc.setup.Config;
 import com.VoidCallerZ.uc.setup.ModSetup;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,6 +23,7 @@ public class UltimateCompression
     {
         ModSetup.setup();
         BlockRegistration.init();
+        WorldGenRegistration.init();
         ToolRegistration.init();
         ArmorRegistration.init();
         FoodRegistration.init();
