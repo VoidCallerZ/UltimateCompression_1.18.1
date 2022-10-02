@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_flint_uc3"
+    ]
+  },
+  "criteria": {
+    "has_uc:compressed_flint": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:flint"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_flint_uc3"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_flint",
+      "has_the_recipe"
+    ]
+  ]
+}

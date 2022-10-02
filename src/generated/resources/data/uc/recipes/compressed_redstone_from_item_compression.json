@@ -1,0 +1,11 @@
+{
+  "type": "uc:item_compression",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "output": {
+    "item": "uc:compressed_redstone"
+  }
+}

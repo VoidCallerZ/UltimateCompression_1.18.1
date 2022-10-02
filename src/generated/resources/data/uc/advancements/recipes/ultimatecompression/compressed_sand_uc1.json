@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_sand_uc1"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:sand"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_sand_uc1"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:sand",
+      "has_the_recipe"
+    ]
+  ]
+}

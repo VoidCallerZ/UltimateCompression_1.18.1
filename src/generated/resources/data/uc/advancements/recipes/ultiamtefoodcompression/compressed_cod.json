@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_cod"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:cod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cod"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_cod"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:cod",
+      "has_the_recipe"
+    ]
+  ]
+}

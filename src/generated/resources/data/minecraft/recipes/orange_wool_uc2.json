@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "uc:compressed_orange_wool"
+    }
+  ],
+  "result": {
+    "item": "minecraft:orange_wool",
+    "count": 9
+  }
+}

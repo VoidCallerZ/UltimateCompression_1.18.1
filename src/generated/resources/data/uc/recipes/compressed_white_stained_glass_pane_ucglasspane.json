@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "pattern": [
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "uc:compressed_white_stained_glass_pane"
+    }
+  },
+  "result": {
+    "item": "uc:compressed_white_stained_glass_pane",
+    "count": 16
+  }
+}

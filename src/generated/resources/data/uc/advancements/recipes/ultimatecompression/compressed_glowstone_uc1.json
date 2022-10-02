@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_glowstone_uc1"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:glowstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:glowstone"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_glowstone_uc1"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:glowstone",
+      "has_the_recipe"
+    ]
+  ]
+}

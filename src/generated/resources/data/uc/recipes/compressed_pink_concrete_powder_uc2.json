@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:pink_concrete_powder"
+    }
+  },
+  "result": {
+    "item": "uc:compressed_pink_concrete_powder"
+  }
+}

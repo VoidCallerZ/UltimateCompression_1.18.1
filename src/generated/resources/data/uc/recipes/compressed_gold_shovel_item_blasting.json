@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "uc",
+  "ingredient": {
+    "item": "uc:compressed_gold_shovel"
+  },
+  "result": "uc:compressed_gold_nugget",
+  "experience": 1.0,
+  "cookingtime": 100
+}

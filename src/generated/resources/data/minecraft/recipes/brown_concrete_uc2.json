@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "uc:compressed_brown_concrete"
+    }
+  ],
+  "result": {
+    "item": "minecraft:brown_concrete",
+    "count": 9
+  }
+}

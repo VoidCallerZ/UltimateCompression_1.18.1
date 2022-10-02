@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_iron_block_vanillablocktocompressedblock"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:iron_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_block"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_iron_block_vanillablocktocompressedblock"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:iron_block",
+      "has_the_recipe"
+    ]
+  ]
+}

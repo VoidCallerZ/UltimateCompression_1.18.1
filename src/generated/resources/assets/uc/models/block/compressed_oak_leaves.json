@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "uc:block/compressed/leaves/compressed_oak_leaves"
+  }
+}

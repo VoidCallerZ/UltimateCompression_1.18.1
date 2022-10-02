@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "uc:compressed_bone_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft:bone_block",
+    "count": 9
+  }
+}

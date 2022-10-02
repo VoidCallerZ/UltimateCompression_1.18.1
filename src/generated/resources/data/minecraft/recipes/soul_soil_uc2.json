@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "uc:compressed_soul_soil"
+    }
+  ],
+  "result": {
+    "item": "minecraft:soul_soil",
+    "count": 9
+  }
+}

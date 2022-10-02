@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_diamond_gem_uc3"
+    ]
+  },
+  "criteria": {
+    "has_uc:compressed_diamond_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_diamond_gem_uc3"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_diamond_gem",
+      "has_the_recipe"
+    ]
+  ]
+}

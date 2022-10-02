@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "side": "uc:block/compressed/logs/compressed_jungle_log",
+    "end": "uc:block/compressed/logs/compressed_jungle_log_top"
+  }
+}

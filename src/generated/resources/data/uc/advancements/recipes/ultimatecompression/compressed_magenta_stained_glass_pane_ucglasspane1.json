@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_magenta_stained_glass_pane_ucglasspane1"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:magenta_dye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:magenta_dye"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_magenta_stained_glass_pane_ucglasspane1"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:magenta_dye",
+      "has_the_recipe"
+    ]
+  ]
+}

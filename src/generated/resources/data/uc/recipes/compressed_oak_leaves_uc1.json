@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:oak_leaves"
+    }
+  },
+  "result": {
+    "item": "uc:compressed_oak_leaves"
+  }
+}

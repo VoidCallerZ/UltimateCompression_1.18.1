@@ -1,0 +1,7 @@
+{
+  "compressor_use":
+  {
+    "subtitle": "sounds.uc.compressor_use",
+    "sounds": ["uc:compressor_use"]
+  }
+}

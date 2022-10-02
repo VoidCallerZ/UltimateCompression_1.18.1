@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "uc",
+  "ingredient": {
+    "item": "uc:compressed_mutton"
+  },
+  "result": "uc:compressed_cooked_mutton",
+  "experience": 0.35,
+  "cookingtime": 100
+}

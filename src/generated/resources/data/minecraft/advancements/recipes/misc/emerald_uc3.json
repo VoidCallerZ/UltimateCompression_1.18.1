@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:emerald_uc3"
+    ]
+  },
+  "criteria": {
+    "has_uc:compressed_emerald_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_emerald_gem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:emerald_uc3"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_emerald_gem",
+      "has_the_recipe"
+    ]
+  ]
+}

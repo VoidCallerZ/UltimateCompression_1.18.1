@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_glass_pane_noside",
+  "textures": {
+    "pane": "uc:block/compressed/glass/compressed_green_stained_glass"
+  }
+}

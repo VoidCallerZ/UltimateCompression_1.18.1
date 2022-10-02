@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "uc:block/compressor/netherite/side",
+    "up": "uc:block/compressor/netherite/side",
+    "north": "uc:block/compressor/netherite/back",
+    "south": "uc:block/compressor/netherite/front_lit",
+    "east": "uc:block/compressor/netherite/side",
+    "west": "uc:block/compressor/netherite/side"
+  }
+}

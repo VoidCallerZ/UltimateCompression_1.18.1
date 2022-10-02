@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "uc",
+  "ingredient": {
+    "item": "uc:compressed_potato"
+  },
+  "result": "uc:compressed_baked_potato",
+  "experience": 0.35,
+  "cookingtime": 100
+}

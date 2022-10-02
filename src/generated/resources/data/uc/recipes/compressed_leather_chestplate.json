@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "pattern": [
+    "x x",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "uc:compressed_leather"
+    }
+  },
+  "result": {
+    "item": "uc:compressed_leather_chestplate"
+  }
+}

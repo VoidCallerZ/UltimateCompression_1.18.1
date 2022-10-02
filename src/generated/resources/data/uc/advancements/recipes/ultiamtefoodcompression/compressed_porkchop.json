@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_porkchop"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:porkchop": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:porkchop"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_porkchop"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:porkchop",
+      "has_the_recipe"
+    ]
+  ]
+}

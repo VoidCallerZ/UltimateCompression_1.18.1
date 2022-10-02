@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_stone_uc2"
+    ]
+  },
+  "criteria": {
+    "has_uc:double_compressed_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:double_compressed_stone"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_stone_uc2"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:double_compressed_stone",
+      "has_the_recipe"
+    ]
+  ]
+}

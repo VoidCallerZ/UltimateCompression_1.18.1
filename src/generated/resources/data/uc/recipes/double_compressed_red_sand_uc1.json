@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "uc:compressed_red_sand"
+    }
+  },
+  "result": {
+    "item": "uc:double_compressed_red_sand"
+  }
+}

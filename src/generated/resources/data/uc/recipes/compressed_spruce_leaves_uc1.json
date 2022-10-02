@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:spruce_leaves"
+    }
+  },
+  "result": {
+    "item": "uc:compressed_spruce_leaves"
+  }
+}

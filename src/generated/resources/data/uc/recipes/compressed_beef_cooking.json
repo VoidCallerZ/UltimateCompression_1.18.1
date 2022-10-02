@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "uc",
+  "ingredient": {
+    "item": "uc:compressed_beef"
+  },
+  "result": "uc:compressed_cooked_beef",
+  "experience": 0.35,
+  "cookingtime": 100
+}

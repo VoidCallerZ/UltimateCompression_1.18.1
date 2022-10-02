@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_nether_quartz_block_uc1"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:quartz_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:quartz_block"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_nether_quartz_block_uc1"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:quartz_block",
+      "has_the_recipe"
+    ]
+  ]
+}

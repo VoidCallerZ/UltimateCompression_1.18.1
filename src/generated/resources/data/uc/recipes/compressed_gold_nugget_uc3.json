@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "result": {
+    "item": "uc:compressed_gold_nugget"
+  }
+}

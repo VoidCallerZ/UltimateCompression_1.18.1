@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "uc:compressed_chiseled_polished_blackstone"
+    }
+  ],
+  "result": {
+    "item": "minecraft:chiseled_polished_blackstone",
+    "count": 9
+  }
+}

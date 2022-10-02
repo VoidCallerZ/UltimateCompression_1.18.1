@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:cut_red_sandstone"
+    }
+  },
+  "result": {
+    "item": "uc:compressed_cut_red_sandstone"
+  }
+}

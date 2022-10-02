@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "uc",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "uc:compressed_raw_copper"
+    }
+  },
+  "result": {
+    "item": "uc:compressed_raw_copper_block"
+  }
+}

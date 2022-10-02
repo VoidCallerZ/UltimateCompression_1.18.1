@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_rabbit_cooking"
+    ]
+  },
+  "criteria": {
+    "has_cooking_compressed_rabbit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_rabbit"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_rabbit_cooking"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cooking_compressed_rabbit",
+      "has_the_recipe"
+    ]
+  ]
+}

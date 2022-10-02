@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:basalt_uc2"
+    ]
+  },
+  "criteria": {
+    "has_uc:compressed_basalt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_basalt"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:basalt_uc2"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_basalt",
+      "has_the_recipe"
+    ]
+  ]
+}

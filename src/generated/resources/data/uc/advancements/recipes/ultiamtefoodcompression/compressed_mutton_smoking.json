@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_mutton_smoking"
+    ]
+  },
+  "criteria": {
+    "has_smoking_compressed_mutton": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_mutton"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_mutton_smoking"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_smoking_compressed_mutton",
+      "has_the_recipe"
+    ]
+  ]
+}

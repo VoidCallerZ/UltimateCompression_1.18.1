@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "uc:block/compressor/diamond/side",
+    "up": "uc:block/compressor/diamond/side",
+    "north": "uc:block/compressor/diamond/back",
+    "south": "uc:block/compressor/diamond/front",
+    "east": "uc:block/compressor/diamond/side",
+    "west": "uc:block/compressor/diamond/side"
+  }
+}

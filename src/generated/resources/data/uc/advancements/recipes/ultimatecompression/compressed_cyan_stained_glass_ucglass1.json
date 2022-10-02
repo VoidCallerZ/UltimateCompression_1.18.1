@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_cyan_stained_glass_ucglass1"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:cyan_dye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cyan_dye"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_cyan_stained_glass_ucglass1"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:cyan_dye",
+      "has_the_recipe"
+    ]
+  ]
+}

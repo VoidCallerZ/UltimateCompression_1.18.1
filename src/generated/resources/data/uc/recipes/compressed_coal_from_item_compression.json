@@ -1,0 +1,11 @@
+{
+  "type": "uc:item_compression",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "output": {
+    "item": "uc:compressed_coal"
+  }
+}
