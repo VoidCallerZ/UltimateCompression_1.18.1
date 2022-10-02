@@ -1,6 +1,6 @@
 package com.VoidCallerZ.uc.items.tools;
 
-import com.VoidCallerZ.uc.setup.registration.ToolRegistration;
+import com.VoidCallerZ.uc.registration.ToolRegistration;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;

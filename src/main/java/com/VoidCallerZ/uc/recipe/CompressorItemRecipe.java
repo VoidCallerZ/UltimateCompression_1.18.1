@@ -11,9 +11,7 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
-import org.checkerframework.checker.units.qual.C;
-
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 public class CompressorItemRecipe implements Recipe<SimpleContainer>
 {
@@ -123,25 +121,30 @@ public class CompressorItemRecipe implements Recipe<SimpleContainer>
             buf.writeItemStack(recipe.getResultItem(), false);
         }
 
+
+
+        @SuppressWarnings("unchecked") // Need this wrapper, because generics
+        private static <G> Class<G> castClass(Class<?> cls) {
+            return (Class<G>)cls;
+        }
+
         @Override
-        public RecipeSerializer<?> setRegistryName(ResourceLocation name) {
+        public RecipeSerializer<?> setRegistryName(ResourceLocation name)
+        {
             return INSTANCE;
         }
 
         @Nullable
         @Override
-        public ResourceLocation getRegistryName() {
+        public ResourceLocation getRegistryName()
+        {
             return ID;
         }
 
         @Override
-        public Class<RecipeSerializer<?>> getRegistryType() {
+        public Class<RecipeSerializer<?>> getRegistryType()
+        {
             return Serializer.castClass(RecipeSerializer.class);
-        }
-
-        @SuppressWarnings("unchecked") // Need this wrapper, because generics
-        private static <G> Class<G> castClass(Class<?> cls) {
-            return (Class<G>)cls;
         }
     }
 }

@@ -1,6 +1,6 @@
 package com.VoidCallerZ.uc.items.tools;
 
-import com.VoidCallerZ.uc.setup.registration.ToolRegistration;
+import com.VoidCallerZ.uc.registration.ToolRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

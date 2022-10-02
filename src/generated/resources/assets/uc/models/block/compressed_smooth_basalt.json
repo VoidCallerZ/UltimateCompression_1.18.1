@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "uc:block/compressed/basic/smooth/compressed_smooth_basalt"
-  }
-}

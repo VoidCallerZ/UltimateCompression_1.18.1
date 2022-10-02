@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "uc:block/compressed/wool/compressed_pink_wool"
-  }
-}
