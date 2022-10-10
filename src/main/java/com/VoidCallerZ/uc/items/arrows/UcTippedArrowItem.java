@@ -33,10 +33,13 @@ public class UcTippedArrowItem extends UcArrowItem
     {
         for (Potion potion : Registry.POTION)
         {
+            if (this.allowdedIn(group))
+            {
                 if (!potion.getEffects().isEmpty())
                 {
                     items.add(PotionUtils.setPotion(new ItemStack(this), potion));
                 }
+            }
         }
     }
 

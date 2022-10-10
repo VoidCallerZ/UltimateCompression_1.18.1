@@ -386,7 +386,6 @@ public class ucItemModels extends BaseItemModelProvider
                 .texture("layer1", modLoc("item/compressed/projectiles/compressed_tipped_arrow_base"));
 
         singleTextureGenerated(ItemRegistration.COMPRESSED_SNOWBALL.get(), "item/compressed/projectiles/compressed_snowball");
-        //singleTextureGenerated(ItemRegistration.COMPRESSED_TIPPED_ARROW.get(), "item/compressed/arrows/compressed_arrow");
 
 
         //Double Compressed
