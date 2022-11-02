@@ -1,7 +1,8 @@
-// 1.19.2	2022-10-16T15:34:57.9788099	UC LootTables
+// 1.19.2	2022-11-02T19:21:38.9173162	UC LootTables
 0c3cdd80da02cbb366a2c9bca7213bc793199e0e data/uc/loot_tables/blocks/compressed_acacia_leaves.json
 99ec0c801d3197f720018c169d043ffccd7774ca data/uc/loot_tables/blocks/compressed_acacia_log.json
 f56353c6f3c239b59dc1e3056c70d4a543ef647a data/uc/loot_tables/blocks/compressed_acacia_planks.json
+71934187b0986aac54d26344ae6cb6d7f9e18b12 data/uc/loot_tables/blocks/compressed_ancient_debris.json
 205e998d60b754d88273c9cc8b16efe11090ac2f data/uc/loot_tables/blocks/compressed_andesite.json
 8bbc343b4b785e1e0c889cfac9e4b1a4e820f3c8 data/uc/loot_tables/blocks/compressed_basalt.json
 b08b4d0de6f3deb5380c51579f51267eca196c60 data/uc/loot_tables/blocks/compressed_birch_leaves.json

@@ -1,9 +1,10 @@
-// 1.19.2	2022-11-01T20:58:45.8258757	UC Tags
-3d4b77e6434084888cbea76773ab5bbc24d2669d data/forge/tags/blocks/ores.json
+// 1.19.2	2022-11-02T19:31:19.9864357	UC Tags
+f88ad28dfb54a3d316bdfda4dce7bc9d705e8743 data/forge/tags/blocks/ores.json
 a994c9bf36e5f933e02cb14dc71939df16391f37 data/forge/tags/blocks/storage_blocks.json
 11f5298fcdbb1a7d2c6af13bad71c200615d543d data/minecraft/tags/blocks/mineable/axe.json
 7bbe6128b8369bbab26abcc8c0b879a918157c25 data/minecraft/tags/blocks/mineable/hoe.json
-a8df0a9bebcb1303db3754f0f677fa58f8e775f8 data/minecraft/tags/blocks/mineable/pickaxe.json
+2a96ab17c27ea1cedd80580f1c2d3c15e2d815cb data/minecraft/tags/blocks/mineable/pickaxe.json
 94a0aa23430a61bdaa4ce30d74ff376fbe11f6fa data/minecraft/tags/blocks/mineable/shovel.json
+447ac479945bd4b92cd79d3f2c2c64df2acb5ab7 data/minecraft/tags/blocks/needs_diamond_tool.json
 e85d0c3cd986d798fc8b48969403d0e9052543b1 data/minecraft/tags/blocks/needs_iron_tool.json
 c2efabf1eac1ee6cfc9a9b7ab2e808884a7deffe data/minecraft/tags/blocks/needs_stone_tool.json

@@ -127,7 +127,8 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(BlockRegistration.COMPRESSED_CRYING_OBSIDIAN.get())
                 .add(BlockRegistration.COMPRESSED_LODESTONE.get())
                 .add(BlockRegistration.COMPRESSED_RED_NETHER_BRICKS.get())
-                .add(BlockRegistration.COMPRESSED_WARPED_NYLIUM.get());
+                .add(BlockRegistration.COMPRESSED_WARPED_NYLIUM.get())
+                .add(BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get());
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(BlockRegistration.COMPRESSED_GRAVEL.get())
@@ -190,6 +191,8 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(BlockRegistration.COMPRESSED_REDSTONE_BLOCK.get())
                 .add(BlockRegistration.COMPRESSED_NETHERITE_BLOCK.get())
                 .add(BlockRegistration.COMPRESSED_RAW_GOLD_BLOCK.get());
+        tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get());
         tag(Tags.Blocks.ORES)
                 .add(BlockRegistration.COMPRESSED_IRON_ORE.get())
                 .add(BlockRegistration.COMPRESSED_GOLD_ORE.get())
@@ -206,7 +209,8 @@ public class ucBlockTags extends BlockTagsProvider
                 .add(BlockRegistration.COMPRESSED_DEEPSLATE_COAL_ORE.get())
                 .add(BlockRegistration.COMPRESSED_DEEPSLATE_EMERALD_ORE.get())
                 .add(BlockRegistration.COMPRESSED_DEEPSLATE_LAPIS_ORE.get())
-                .add(BlockRegistration.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get());
+                .add(BlockRegistration.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get())
+                .add(BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get());
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .add(BlockRegistration.COMPRESSED_IRON_BLOCK.get())
                 .add(BlockRegistration.COMPRESSED_GOLD_BLOCK.get())

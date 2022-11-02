@@ -35,6 +35,7 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(BlockRegistration.COMPRESSED_REDSTONE_ORE.get(), createSilkTouchTable("compressed_redstone_ore", BlockRegistration.COMPRESSED_REDSTONE_ORE.get(), ItemRegistration.COMPRESSED_REDSTONE.get(), 1, 1));
         lootTables.put(BlockRegistration.COMPRESSED_NETHER_GOLD_ORE.get(), createSilkTouchTable("compressed_nether_gold_ore", BlockRegistration.COMPRESSED_NETHER_GOLD_ORE.get(), ItemRegistration.COMPRESSED_GOLD_NUGGET.get(), 1, 1));
         lootTables.put(BlockRegistration.COMPRESSED_NETHER_QUARTZ_ORE.get(), createSilkTouchTable("compressed_nether_quartz_ore", BlockRegistration.COMPRESSED_NETHER_QUARTZ_ORE.get(), ItemRegistration.COMPRESSED_QUARTZ.get(), 2, 4));
+        lootTables.put(BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get(), createSimpleTable("compressed_ancient_debris", BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get()));
 
         //Deepslate Ores
         lootTables.put(BlockRegistration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), createSilkTouchTable("compressed_deepslate_iron_ore", BlockRegistration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), ItemRegistration.COMPRESSED_RAW_IRON.get(), 1, 2));

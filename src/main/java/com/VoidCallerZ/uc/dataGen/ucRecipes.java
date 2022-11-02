@@ -273,10 +273,30 @@ public class ucRecipes extends BaseRecipeProvider
         BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_EMERALD_ORE.get(), ItemRegistration.COMPRESSED_EMERALD_GEM.get(), 0.7F, 200, consumer);
         BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_LAPIS_ORE.get(), ItemRegistration.COMPRESSED_LAPIS.get(), 0.7F, 200, consumer);
         BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_REDSTONE_ORE.get(), ItemRegistration.COMPRESSED_REDSTONE.get(), 0.7F, 200, consumer);
+        BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get(), Items.NETHERITE_INGOT, 5.0F, 200, consumer);
 
-        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), ItemRegistration.COMPRESSED_RAW_IRON.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), 1.0F, 100, consumer);
-        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_GOLD_ORE.get(), ItemRegistration.COMPRESSED_RAW_GOLD.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), 1.0F, 100, consumer);
-        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_COPPER_ORE.get(), ItemRegistration.COMPRESSED_RAW_COPPER.get(), ItemRegistration.COMPRESSED_COPPER_INGOT.get(), 1.0F, 100, consumer);
+        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_IRON_ORE.get(), ItemRegistration.COMPRESSED_RAW_IRON.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), 0.7F, 200, consumer);
+        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_GOLD_ORE.get(), ItemRegistration.COMPRESSED_RAW_GOLD.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), 0.7F, 200, consumer);
+        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_COPPER_ORE.get(), ItemRegistration.COMPRESSED_RAW_COPPER.get(), ItemRegistration.COMPRESSED_COPPER_INGOT.get(), 0.7F, 200, consumer);
+        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_DIAMOND_ORE.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), 0.7F, 200, consumer);
+        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_COAL_ORE.get(), ItemRegistration.COMPRESSED_COAL.get(), 0.7F, 200, consumer);
+        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_EMERALD_ORE.get(), ItemRegistration.COMPRESSED_EMERALD_GEM.get(), 0.7F, 200, consumer);
+        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_LAPIS_ORE.get(), ItemRegistration.COMPRESSED_LAPIS.get(), 0.7F, 200, consumer);
+        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_REDSTONE_ORE.get(), ItemRegistration.COMPRESSED_REDSTONE.get(), 0.7F, 200, consumer);
+        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get(), Items.NETHERITE_INGOT, 5.0F, 100, consumer);
+
+        BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), 1.0F, 100, consumer);
+        BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_GOLD_ORE.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), 1.0F, 100, consumer);
+        BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_COPPER_ORE.get(), ItemRegistration.COMPRESSED_COPPER_INGOT.get(), 1.0F, 100, consumer);
+        BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), 1.0F, 100, consumer);
+        BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_COAL_ORE.get(), ItemRegistration.COMPRESSED_COAL.get(), 1.0F, 100, consumer);
+        BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_EMERALD_ORE.get(), ItemRegistration.COMPRESSED_EMERALD_GEM.get(), 1.0F, 100, consumer);
+        BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_LAPIS_ORE.get(), ItemRegistration.COMPRESSED_LAPIS.get(), 1.0F, 100, consumer);
+        BlockSmeltingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get(), ItemRegistration.COMPRESSED_REDSTONE.get(), 1.0F, 100, consumer);
+
+        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), ItemRegistration.COMPRESSED_IRON_INGOT.get(), 1.0F, 100, consumer);
+        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_GOLD_ORE.get(), ItemRegistration.COMPRESSED_GOLD_INGOT.get(), 1.0F, 100, consumer);
+        BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_COPPER_ORE.get(), ItemRegistration.COMPRESSED_COPPER_INGOT.get(), 1.0F, 100, consumer);
         BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(), ItemRegistration.COMPRESSED_DIAMOND_GEM.get(), 1.0F, 100, consumer);
         BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_COAL_ORE.get(), ItemRegistration.COMPRESSED_COAL.get(), 1.0F, 100, consumer);
         BlockBlastingRecipeBuilder(BlockRegistration.COMPRESSED_DEEPSLATE_EMERALD_ORE.get(), ItemRegistration.COMPRESSED_EMERALD_GEM.get(), 1.0F, 100, consumer);

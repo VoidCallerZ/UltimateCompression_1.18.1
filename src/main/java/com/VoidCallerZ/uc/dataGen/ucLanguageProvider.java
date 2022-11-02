@@ -55,6 +55,7 @@ public class ucLanguageProvider extends LanguageProvider
         add(BlockRegistration.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get(), "Compressed Deepslate Redstone Ore");
         add(BlockRegistration.COMPRESSED_NETHER_GOLD_ORE.get(), "Compressed Nether Gold ore");
         add(BlockRegistration.COMPRESSED_NETHER_QUARTZ_ORE.get(), "Compressed Nether Quartz Ore");
+        add(BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get(), "Compressed Ancient Debris");
 
         //Blocks
         add(BlockRegistration.COMPRESSED_IRON_BLOCK.get(), "Compressed Block of Iron");

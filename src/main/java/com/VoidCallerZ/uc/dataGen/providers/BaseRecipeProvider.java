@@ -478,7 +478,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
     protected void BlockSmeltingRecipeBuilder(Block input, Item alternateInput, Item output, float exp, int cookingTime, Consumer<FinishedRecipe> consumer)
     {
         BlockSmeltingRecipeBuilder(input, output, exp, cookingTime, consumer);
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(alternateInput), output, exp, cookingTime).unlockedBy("has_smelting_", has(alternateInput)).group("uc").save(consumer, ForgeRegistries.ITEMS.getKey(alternateInput) + "_smelting");
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(alternateInput), output, exp, cookingTime).unlockedBy("has_smelting_", has(alternateInput)).group("uc").save(consumer, ForgeRegistries.ITEMS.getKey(alternateInput) + "_smelting_alt");
     }
 
     protected void BlockBlastingRecipeBuilder(Block input, Item output, float exp, int cookingTime, Consumer<FinishedRecipe> consumer)
@@ -489,7 +489,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
     protected void BlockBlastingRecipeBuilder(Block input, Item alternateInput, Item output, float exp, int cookingTime, Consumer<FinishedRecipe> consumer)
     {
         BlockBlastingRecipeBuilder(input, output, exp, cookingTime, consumer);
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(alternateInput), output, exp, cookingTime).unlockedBy("has_blasting_", has(alternateInput)).group("uc").save(consumer, ForgeRegistries.ITEMS.getKey(alternateInput) + "_blasting");
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(alternateInput), output, exp, cookingTime).unlockedBy("has_blasting_", has(alternateInput)).group("uc").save(consumer, ForgeRegistries.ITEMS.getKey(alternateInput) + "_blasting_alt");
     }
 
     protected void ItemBlastingRecipeBuilder(Item input, Item output, float exp, int cookingTime, Consumer<FinishedRecipe> consumer)

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "uc:compressed_raw_gold"
+              "uc:compressed_lapis_ore"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "uc:compressed_raw_gold_blasting"
+        "recipe": "uc:compressed_lapis_ore_blasting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "uc:compressed_raw_gold_blasting"
+      "uc:compressed_lapis_ore_blasting"
     ]
   }
 }

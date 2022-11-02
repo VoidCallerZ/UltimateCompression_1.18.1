@@ -1,10 +1,7 @@
 package com.VoidCallerZ.uc.registration;
 
 import com.VoidCallerZ.uc.UltimateCompression;
-import com.VoidCallerZ.uc.blocks.UcHayBlock;
-import com.VoidCallerZ.uc.blocks.UcOreBlock;
-import com.VoidCallerZ.uc.blocks.UcPowderSnowBlock;
-import com.VoidCallerZ.uc.blocks.UcSculkCatalystBlock;
+import com.VoidCallerZ.uc.blocks.*;
 import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlock;
 import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlockEntity;
 import com.VoidCallerZ.uc.blocks.compressor.diamond.DiamondCompressorBlockMenu;
@@ -74,7 +71,7 @@ public class BlockRegistration
     //Block & Item properties
     public static final BlockBehaviour.Properties ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties DEEPSLATE_ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(4.5f).requiresCorrectToolForDrops();
-    public static final BlockBehaviour.Properties ANCIENT_DEBRIS_PROPERTIES = BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.NETHERITE_BLOCK);
+    public static final BlockBehaviour.Properties ANCIENT_DEBRIS_PROPERTIES = BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.ANCIENT_DEBRIS);
     public static final BlockBehaviour.Properties NETHER_ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(3).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties INGOT_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.METAL).strength(2f).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties WOOD_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.WOOD).strength(2f);
@@ -104,7 +101,7 @@ public class BlockRegistration
     public static final RegistryObject<Block> COMPRESSED_REDSTONE_ORE = BLOCKS.register("compressed_redstone_ore", () -> new UcOreBlock(ORE_PROPERTIES, 4, 7));
     public static final RegistryObject<Block> COMPRESSED_NETHER_GOLD_ORE = BLOCKS.register("compressed_gold_nether_ore", () -> new UcOreBlock(NETHER_ORE_PROPERTIES, 2, 3));
     public static final RegistryObject<Block> COMPRESSED_NETHER_QUARTZ_ORE = BLOCKS.register("compressed_nether_quartz_ore", () -> new UcOreBlock(NETHER_ORE_PROPERTIES, 4, 7));
-    public static final RegistryObject<Block> COMPRESSED_ANCIENT_DEBRIS = BLOCKS.register("compressed_ancient_debris", () -> new UcOreBlock(ANCIENT_DEBRIS_PROPERTIES));
+    public static final RegistryObject<RotatedPillarBlock> COMPRESSED_ANCIENT_DEBRIS = BLOCKS.register("compressed_ancient_debris", () -> new UcRotatedOreBlock(ANCIENT_DEBRIS_PROPERTIES));
 
     //Deepslate Ores
     public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_IRON_ORE = BLOCKS.register("compressed_deepslate_iron_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));

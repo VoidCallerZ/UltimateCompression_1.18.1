@@ -35,6 +35,7 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_REDSTONE_ORE.get()).getPath(), modLoc("block/compressed_redstone_ore"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_NETHER_GOLD_ORE.get()).getPath(), modLoc("block/compressed_nether_gold_ore"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_NETHER_QUARTZ_ORE.get()).getPath(), modLoc("block/compressed_nether_quartz_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_ANCIENT_DEBRIS.get()).getPath(), modLoc("block/compressed_ancient_debris"));
 
         //Deepslate Ores
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DEEPSLATE_IRON_ORE.get()).getPath(), modLoc("block/compressed_deepslate_iron_ore"));

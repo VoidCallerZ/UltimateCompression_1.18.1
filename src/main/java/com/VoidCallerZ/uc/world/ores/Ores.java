@@ -6,6 +6,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -62,6 +63,20 @@ public class Ores
                 BiomeFilter.biome(),
                 HeightRangePlacement.uniform(absMinY, absMaxY)
         );
+    }
+
+    @NotNull
+    public static Holder<PlacedFeature> createAncientDebrisOregen(RegistryObject<RotatedPillarBlock> oreBlock, int veinSize, int amount, int minY, int maxY)
+    {
+        VerticalAnchor absMinY = VerticalAnchor.absolute(minY);
+        VerticalAnchor absMaxY = VerticalAnchor.absolute(maxY);
+
+        OreConfiguration ancientDebrisConfig = new OreConfiguration(OreFeatures.NETHER_ORE_REPLACEABLES, oreBlock.get().defaultBlockState(), veinSize);
+        return registerPlacedFeature(oreBlock.getId().getNamespace(), new ConfiguredFeature<>(Feature.ORE, ancientDebrisConfig),
+                CountPlacement.of(amount),
+                InSquarePlacement.spread(),
+                BiomeFilter.biome(),
+                HeightRangePlacement.triangle(absMinY, absMaxY));
     }
 
     private static <C extends FeatureConfiguration, F extends Feature<C>> Holder<PlacedFeature> registerPlacedFeature(String registryName, ConfiguredFeature<C, F> feature, PlacementModifier... placementModifiers)

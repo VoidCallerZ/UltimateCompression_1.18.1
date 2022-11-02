@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blasting_": {
+    "has_smelting_": {
       "conditions": {
         "items": [
           {
             "items": [
-              "uc:compressed_raw_iron"
+              "uc:compressed_deepslate_iron_ore"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "uc:compressed_raw_iron_blasting"
+        "recipe": "uc:compressed_deepslate_iron_ore_smelting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_blasting_",
+      "has_smelting_",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "uc:compressed_raw_iron_blasting"
+      "uc:compressed_deepslate_iron_ore_smelting"
     ]
   }
 }

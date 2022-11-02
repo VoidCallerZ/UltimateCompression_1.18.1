@@ -60,6 +60,7 @@ public class ucBiomeModifiers implements DataProvider
         //Nether Ores
         setNetherModifier(cache, ops, WorldGenRegistration.COMPRESSED_NETHER_QUARTZ_ORE_GEN);
         setNetherModifier(cache, ops, WorldGenRegistration.COMPRESSED_NETHER_GOLD_ORE_GEN);
+        setNetherModifier(cache, ops, WorldGenRegistration.COMPRESSED_ANCIENT_DEBRIS_GEN);
     }
 
     @Override

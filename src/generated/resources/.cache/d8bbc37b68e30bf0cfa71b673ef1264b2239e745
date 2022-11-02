@@ -1,4 +1,5 @@
-// 1.19.2	2022-08-13T20:51:50.3873588	UC Biome Modifiers
+// 1.19.2	2022-11-02T19:21:38.9143243	UC Biome Modifiers
+970b8ea2acbaf17a868a7228b2d3e2f715e9fe35 data/uc/forge/biome_modifier/compressed_ancient_debris_bm.json
 124e2f23090decc58558f4932f074ff7c7320d05 data/uc/forge/biome_modifier/compressed_coal_ore_bm.json
 b96a0a7d976962996f038fa3083440aec30d1a33 data/uc/forge/biome_modifier/compressed_copper_ore_bm.json
 1ca6dad73112d629b758ce99743a4be3eca9cbaa data/uc/forge/biome_modifier/compressed_deepslate_coal_ore_bm.json
@@ -17,6 +18,7 @@ fa2e5580aee0fbe783c8b00aff4593416348e98f data/uc/forge/biome_modifier/compressed
 68d49d326fe0e909a8d800167e22d9823404cdc3 data/uc/forge/biome_modifier/compressed_nether_gold_ore_bm.json
 7d74a95cc6640a59c5c766575e452fe01e57de06 data/uc/forge/biome_modifier/compressed_redstone_ore_bm.json
 d058daee0af907ff99e1acab53613e1cfeffdff8 data/uc/forge/biome_modifier/comrpessed_nether_quartz_ore_bm.json
+7623fcbf1d2ac3f25a9c34ef12167273b222eee4 data/uc/worldgen/placed_feature/compressed_ancient_debris_pf.json
 ef1b14d0c442ad67e85f47da479a41b32b1e2226 data/uc/worldgen/placed_feature/compressed_coal_ore_pf.json
 c6fc6bfe7abce353f11406f9035ce872e0b0a233 data/uc/worldgen/placed_feature/compressed_copper_ore_pf.json
 f741d6a9aa65f9f96b8c0f521c2800be7d3f212f data/uc/worldgen/placed_feature/compressed_deepslate_coal_ore_pf.json
