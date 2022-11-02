@@ -222,7 +222,7 @@ public class ucDutchLanguageProvider extends LanguageProvider
         add(BlockRegistration.COMPRESSED_DIRT.get(), "Samengeperste Aarde");
         add(BlockRegistration.COMPRESSED_GRANITE.get(), "Samengeperst Graniet");
         add(BlockRegistration.COMPRESSED_GRAVEL.get(), "Samengeperst Grind");
-        add(BlockRegistration.COMPRESSED_NETHERRACK.get(), "Samengeperst Netherkruidblok");
+        add(BlockRegistration.COMPRESSED_NETHERRACK.get(), "Samengeperst Netherrack");
         add(BlockRegistration.COMPRESSED_RED_SAND.get(), "Samengeperst Rood Zand");
         add(BlockRegistration.COMPRESSED_SAND.get(), "Samengeperst Zand");
         add(BlockRegistration.COMPRESSED_STONE.get(), "Samengeperste Steen");
@@ -268,6 +268,14 @@ public class ucDutchLanguageProvider extends LanguageProvider
         add(BlockRegistration.COMPRESSED_MAGMA.get(), "Samengeperste Magmablok");
         add(BlockRegistration.COMPRESSED_SOUL_SAND.get(), "Samengeperst Zielenzand");
         add(BlockRegistration.COMPRESSED_SOUL_SOIL.get(), "Samengeperste Zielenaarde");
+        add(BlockRegistration.COMPRESSED_CRIMSON_NYLIUM.get(), "Samengeperste Helrood Nylium");
+        add(BlockRegistration.COMPRESSED_CRYING_OBSIDIAN.get(), "Samengeperste Huilend Obsidiaan");
+        add(BlockRegistration.COMPRESSED_LODESTONE.get(), "Samengeperste Zeilsteen");
+        add(BlockRegistration.COMPRESSED_NETHER_WART_BLOCK.get(), "Samengeperst Netherkruidblok");
+        add(BlockRegistration.COMPRESSED_RED_NETHER_BRICKS.get(), "Compressed Rode Netherbakstenen");
+        add(BlockRegistration.COMPRESSED_SHROOMLIGHT.get(), "Samengeperst Zwammenlicht");
+        add(BlockRegistration.COMPRESSED_WARPED_NYLIUM.get(), "Samengeperste Spookachtig Nylium");
+        add(BlockRegistration.COMPRESSED_WARPED_WART_BLOCK.get(), "Samengeperst Spookachtig Kruidblok");
 
         //TOOLS
         //Pickaxes

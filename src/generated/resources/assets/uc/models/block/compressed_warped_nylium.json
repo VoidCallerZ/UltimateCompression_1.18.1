@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "uc:block/compressed/nether/compressed_netherrack",
+    "east": "uc:block/compressed/nether/compressed_warped_nylium_side",
+    "north": "uc:block/compressed/nether/compressed_warped_nylium_side",
+    "south": "uc:block/compressed/nether/compressed_warped_nylium_side",
+    "up": "uc:block/compressed/nether/compressed_warped_nylium",
+    "west": "uc:block/compressed/nether/compressed_warped_nylium_side"
+  }
+}

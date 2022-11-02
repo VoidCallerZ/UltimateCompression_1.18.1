@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "uc:compressed_crying_obsidian"
+        }
+      ],
+      "name": "compressed_crying_obsidian",
+      "rolls": 1.0
+    }
+  ]
+}

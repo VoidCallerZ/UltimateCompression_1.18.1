@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "_uc:compressed_diamond_gem_mcrb"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uc:compressed_diamond_gem": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_diamond_gem",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "_uc:compressed_diamond_gem_mcrb"
+    ]
+  }
+}

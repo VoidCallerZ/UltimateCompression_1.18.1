@@ -1,7 +1,10 @@
 package com.VoidCallerZ.uc.blocks.compressor;
 
+import com.VoidCallerZ.uc.registration.SoundRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;

@@ -74,7 +74,7 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(BlockRegistration.COMPRESSED_DIRT.get(), "compressed_dirt", "block/compressed/basic/compressed_dirt");
         singleTextureBlock(BlockRegistration.COMPRESSED_GRANITE.get(), "compressed_granite", "block/compressed/basic/compressed_granite");
         singleTextureBlock(BlockRegistration.COMPRESSED_GRAVEL.get(), "compressed_gravel", "block/compressed/basic/compressed_gravel");
-        singleTextureBlock(BlockRegistration.COMPRESSED_NETHERRACK.get(), "compressed_netherrack", "block/compressed/basic/compressed_netherrack");
+        singleTextureBlock(BlockRegistration.COMPRESSED_NETHERRACK.get(), "compressed_netherrack", "block/compressed/nether/compressed_netherrack");
         singleTextureBlock(BlockRegistration.COMPRESSED_RED_SAND.get(), "compressed_red_sand", "block/compressed/basic/compressed_red_sand");
         singleTextureBlock(BlockRegistration.COMPRESSED_SAND.get(), "compressed_sand", "block/compressed/basic/compressed_sand");
         singleTextureBlock(BlockRegistration.COMPRESSED_STONE.get(), "compressed_stone", "block/compressed/basic/compressed_stone");
@@ -122,6 +122,14 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(BlockRegistration.COMPRESSED_MAGMA.get(), "compressed_magma", "block/compressed/nether/compressed_magma");
         singleTextureBlock(BlockRegistration.COMPRESSED_SOUL_SAND.get(), "compressed_soul_sand", "block/compressed/nether/compressed_soul_sand");
         singleTextureBlock(BlockRegistration.COMPRESSED_SOUL_SOIL.get(), "compressed_soul_soil", "block/compressed/nether/compressed_soul_soil");
+        grassTextureBlock(BlockRegistration.COMPRESSED_CRIMSON_NYLIUM.get(), "compressed_crimson_nylium");
+        singleTextureBlock(BlockRegistration.COMPRESSED_CRYING_OBSIDIAN.get(), "compressed_crying_obsidian", "block/compressed/nether/compressed_crying_obsidian");
+        grassTextureBlock(BlockRegistration.COMPRESSED_LODESTONE.get(), "compressed_lodestone");
+        singleTextureBlock(BlockRegistration.COMPRESSED_NETHER_WART_BLOCK.get(), "compressed_nether_wart_block", "block/compressed/nether/compressed_nether_wart_block");
+        singleTextureBlock(BlockRegistration.COMPRESSED_RED_NETHER_BRICKS.get(), "compressed_red_nether_bricks", "block/compressed/nether/compressed_red_nether_bricks");
+        singleTextureBlock(BlockRegistration.COMPRESSED_SHROOMLIGHT.get(), "compressed_shroomlight", "block/compressed/nether/compressed_shroomlight");
+        grassTextureBlock(BlockRegistration.COMPRESSED_WARPED_NYLIUM.get(), "compressed_warped_nylium");
+        singleTextureBlock(BlockRegistration.COMPRESSED_WARPED_WART_BLOCK.get(), "compressed_warped_wart_block", "block/compressed/nether/compressed_warped_wart_block");
 
         //Logs
         compressedPillarBlock(BlockRegistration.COMPRESSED_ACACIA_LOG.get(), modLoc("block/compressed/logs/compressed_acacia_log"));
@@ -147,7 +155,7 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(BlockRegistration.COMPRESSED_MANGROVE_PLANKS.get(), "compressed_mangrove_planks", "block/compressed/planks/compressed_mangrove_planks");
 
         //Leaves
-        singleTextureBlockWithRenderTypeAndBlockColors(BlockRegistration.COMPRESSED_ACACIA_LEAVES.get(), "compressed_acacia_leaves", "block/compressed/leaves/compressed_acacia_leaves", "cutout");
+        singleTextureBlockWithRenderTypeAndBlockColors(BlockRegistration.COMPRESSED_ACACIA_LEAVES.get(), "compressed_acacia_leaves", "block/compressed/leaves/compressed_acacia_leaves", "translucent");
         singleTextureBlockWithRenderTypeAndBlockColors(BlockRegistration.COMPRESSED_BIRCH_LEAVES.get(), "compressed_birch_leaves", "block/compressed/leaves/compressed_birch_leaves", "translucent");
         singleTextureBlockWithRenderTypeAndBlockColors(BlockRegistration.COMPRESSED_DARK_OAK_LEAVES.get(), "compressed_dark_oak_leaves", "block/compressed/leaves/compressed_dark_oak_leaves", "translucent");
         singleTextureBlockWithRenderTypeAndBlockColors(BlockRegistration.COMPRESSED_JUNGLE_LEAVES.get(), "compressed_jungle_leaves", "block/compressed/leaves/compressed_jungle_leaves", "translucent");

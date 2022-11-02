@@ -17,6 +17,7 @@
     "uc:compressed_deepslate_lapis_ore",
     "uc:compressed_deepslate_redstone_ore",
     "uc:compressed_gold_nether_ore",
-    "uc:compressed_nether_quartz_ore"
+    "uc:compressed_nether_quartz_ore",
+    "uc:compressed_ancient_debris"
   ]
 }

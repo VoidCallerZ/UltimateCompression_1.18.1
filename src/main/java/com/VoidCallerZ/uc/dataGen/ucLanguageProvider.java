@@ -279,6 +279,14 @@ public class ucLanguageProvider extends LanguageProvider
         add(BlockRegistration.COMPRESSED_MAGMA.get(), "Compressed Magma Block");
         add(BlockRegistration.COMPRESSED_SOUL_SAND.get(), "Compressed Soul Sand");
         add(BlockRegistration.COMPRESSED_SOUL_SOIL.get(), "Compressed Soul Soil");
+        add(BlockRegistration.COMPRESSED_CRIMSON_NYLIUM.get(), "Compressed Crimson Nylium");
+        add(BlockRegistration.COMPRESSED_CRYING_OBSIDIAN.get(), "Compressed Crying Obsidian");
+        add(BlockRegistration.COMPRESSED_LODESTONE.get(), "Compressed Lodestone");
+        add(BlockRegistration.COMPRESSED_NETHER_WART_BLOCK.get(), "Compressed Nether Wart Block");
+        add(BlockRegistration.COMPRESSED_RED_NETHER_BRICKS.get(), "Compressed Red Nether Bricks");
+        add(BlockRegistration.COMPRESSED_SHROOMLIGHT.get(), "Compressed Shroomlight");
+        add(BlockRegistration.COMPRESSED_WARPED_NYLIUM.get(), "Compressed Warped Nylium");
+        add(BlockRegistration.COMPRESSED_WARPED_WART_BLOCK.get(), "Compressed Warped Wart Block");
 
         //TOOLS
         //Pickaxes
@@ -383,6 +391,7 @@ public class ucLanguageProvider extends LanguageProvider
         add(ItemRegistration.COMPRESSED_STICK.get(), "Compressed Stick");
         add(ItemRegistration.COMPRESSED_LEATHER.get(), "Compressed Leather");
         add(ItemRegistration.COMPRESSED_POWDER_SNOW_BUCKET.get(), "Compressed Powder Snow Bucket");
+        add(ItemRegistration.COMPRESSED_GLOWSTONE_DUST.get(), "Compressed Glowstone Dust");
 
         //Projectiles
         add(ItemRegistration.COMPRESSED_ARROW.get(), "Compressed Arrow");

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "uc:birch_planks_cdrb_un"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uc:compressed_birch_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_birch_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_birch_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "uc:birch_planks_cdrb_un"
+    ]
+  }
+}

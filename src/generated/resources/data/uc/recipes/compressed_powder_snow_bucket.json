@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "minecraft:powder_snow_bucket"
+    },
+    {
+      "item": "minecraft:powder_snow_bucket"
+    },
+    {
+      "item": "minecraft:powder_snow_bucket"
+    },
+    {
+      "item": "minecraft:powder_snow_bucket"
+    }
+  ],
+  "result": {
+    "item": "uc:compressed_powder_snow_bucket"
+  }
+}

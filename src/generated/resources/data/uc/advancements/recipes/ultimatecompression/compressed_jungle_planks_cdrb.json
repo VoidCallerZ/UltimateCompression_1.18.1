@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_minecraft:jungle_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:jungle_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "uc:compressed_jungle_planks_cdrb"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:jungle_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "uc:compressed_jungle_planks_cdrb"
+    ]
+  }
+}

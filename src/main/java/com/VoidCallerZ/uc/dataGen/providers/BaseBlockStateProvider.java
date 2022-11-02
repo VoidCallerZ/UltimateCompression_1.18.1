@@ -48,6 +48,17 @@ public abstract class BaseBlockStateProvider extends BlockStateProvider {
         simpleBlock(block, model);
     }
 
+    protected void grassTextureBlock(Block block, String textureName)
+    {
+        ResourceLocation TOP = modLoc("block/compressed/nether/" + textureName);
+        ResourceLocation SIDE = modLoc("block/compressed/nether/" + textureName + "_side");
+        ResourceLocation BOTTOM = modLoc("block/compressed/nether/compressed_netherrack");
+
+        ModelFile model = models().cube(textureName, BOTTOM, TOP, SIDE, SIDE, SIDE, SIDE);
+
+        simpleBlock(block, model);
+    }
+
     protected void compressedPillarBlock(RotatedPillarBlock block, ResourceLocation resLoc)
     {
         axisBlock(block, models().cubeColumn(ForgeRegistries.BLOCKS.getKey(block).getPath(), resLoc, extend(resLoc, "_top")), models().cubeColumnHorizontal(ForgeRegistries.BLOCKS.getKey(block).getPath() + "_horizontal", resLoc, extend(resLoc, "_top")));

@@ -74,6 +74,7 @@ public class BlockRegistration
     //Block & Item properties
     public static final BlockBehaviour.Properties ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties DEEPSLATE_ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(4.5f).requiresCorrectToolForDrops();
+    public static final BlockBehaviour.Properties ANCIENT_DEBRIS_PROPERTIES = BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.NETHERITE_BLOCK);
     public static final BlockBehaviour.Properties NETHER_ORE_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE).strength(3).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties INGOT_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.METAL).strength(2f).requiresCorrectToolForDrops();
     public static final BlockBehaviour.Properties WOOD_BLOCK_PROPERTIES = BlockBehaviour.Properties.of(Material.WOOD).strength(2f);
@@ -103,6 +104,7 @@ public class BlockRegistration
     public static final RegistryObject<Block> COMPRESSED_REDSTONE_ORE = BLOCKS.register("compressed_redstone_ore", () -> new UcOreBlock(ORE_PROPERTIES, 4, 7));
     public static final RegistryObject<Block> COMPRESSED_NETHER_GOLD_ORE = BLOCKS.register("compressed_gold_nether_ore", () -> new UcOreBlock(NETHER_ORE_PROPERTIES, 2, 3));
     public static final RegistryObject<Block> COMPRESSED_NETHER_QUARTZ_ORE = BLOCKS.register("compressed_nether_quartz_ore", () -> new UcOreBlock(NETHER_ORE_PROPERTIES, 4, 7));
+    public static final RegistryObject<Block> COMPRESSED_ANCIENT_DEBRIS = BLOCKS.register("compressed_ancient_debris", () -> new UcOreBlock(ANCIENT_DEBRIS_PROPERTIES));
 
     //Deepslate Ores
     public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_IRON_ORE = BLOCKS.register("compressed_deepslate_iron_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
@@ -190,6 +192,14 @@ public class BlockRegistration
     public static final RegistryObject<Block> COMPRESSED_MAGMA = BLOCKS.register("compressed_magma", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Block> COMPRESSED_SOUL_SAND = BLOCKS.register("compressed_soul_sand", () -> new Block(ORE_PROPERTIES));
     public static final RegistryObject<Block> COMPRESSED_SOUL_SOIL = BLOCKS.register("compressed_soul_soil", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_CRIMSON_NYLIUM = BLOCKS.register("compressed_crimson_nylium", () -> new Block(SOFT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_CRYING_OBSIDIAN = BLOCKS.register("compressed_crying_obsidian", () -> new Block(OBSIDIAN_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_LODESTONE = BLOCKS.register("compressed_lodestone", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_NETHER_WART_BLOCK = BLOCKS.register("compressed_nether_wart_block", () -> new Block(LEAVE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_RED_NETHER_BRICKS = BLOCKS.register("compressed_red_nether_bricks", () -> new Block(ORE_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_SHROOMLIGHT = BLOCKS.register("compressed_shroomlight", () -> new Block(SOFT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_WARPED_NYLIUM = BLOCKS.register("compressed_warped_nylium", () -> new Block(SOFT_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_WARPED_WART_BLOCK = BLOCKS.register("compressed_warped_wart_block", () -> new Block(LEAVE_PROPERTIES));
 
     //Logs & Planks
     public static final RegistryObject<RotatedPillarBlock> COMPRESSED_ACACIA_LOG = BLOCKS.register("compressed_acacia_log", () -> new RotatedPillarBlock(WOOD_BLOCK_PROPERTIES));

@@ -2,14 +2,17 @@ package com.VoidCallerZ.uc.blocks.compressor;
 
 import com.VoidCallerZ.uc.recipe.CompressorItemRecipe;
 import com.VoidCallerZ.uc.registration.BlockRegistration;
+import com.VoidCallerZ.uc.registration.SoundRegistration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -87,6 +90,8 @@ public abstract class CompressorBlockEntity extends BlockEntity implements MenuP
     public int maxProgress;
     public int litTime;
     private BlockEntityType<?> block;
+
+    boolean isPlaying = false;
 
     public CompressorBlockEntity(BlockEntityType<?> block, BlockPos worldPosition, BlockState blockState, int maxProgress, String name)
     {
@@ -269,6 +274,7 @@ public abstract class CompressorBlockEntity extends BlockEntity implements MenuP
         {
             entity.inputItemHandler.extractItem(0, 9, false);
             entity.outputItemHandler.setStackInSlot(0, new ItemStack(match.get().getResultItem().getItem(), entity.outputItemHandler.getStackInSlot(0).getCount() + match.get().getResultItem().getCount()));
+            entity.useSound(entity);
 
             entity.resetProgress();
         }
@@ -282,5 +288,14 @@ public abstract class CompressorBlockEntity extends BlockEntity implements MenuP
     public ForgeConfigSpec.IntValue getCompressingTimeConfig()
     {
         return null;
+    }
+
+    private void useSound(CompressorBlockEntity entity)
+    {
+//        if (!isPlaying)
+//        {
+//            isPlaying = true;
+//            level.playSound(null, entity.getBlockPos(), SoundRegistration.COMPRESSOR_USE.get(), SoundSource.BLOCKS, 1, 1);
+//        }
     }
 }

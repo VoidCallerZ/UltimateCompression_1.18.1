@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "uc",
+  "ingredients": [
+    {
+      "item": "uc:compressed_warped_nylium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:warped_nylium"
+  }
+}

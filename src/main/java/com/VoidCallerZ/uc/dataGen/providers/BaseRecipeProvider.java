@@ -18,6 +18,9 @@ import java.util.function.Consumer;
 
 public abstract class BaseRecipeProvider extends RecipeProvider implements IConditionBuilder
 {
+    private String MODID = "uc:";
+    private String LOWP = "_uc:";
+
     public enum BodyPart
     {
         HEAD,
@@ -50,20 +53,32 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
 
     protected void CompressorDecompressorRecipeBuilder(Block compressedBlock, Item compressedItem, int decompAmountItem, Consumer<FinishedRecipe> consumer)
     {
-        ShapedRecipeBuilder.shaped((compressedBlock))
+        ShapedRecipeBuilder.shaped(compressedBlock)
                 .pattern("xxx")
                 .pattern("xxx")
                 .pattern("xxx")
                 .define('x', compressedItem)
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(compressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
-                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_uc1");
+                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_cdrb");
 
         ShapelessRecipeBuilder.shapeless(compressedItem, decompAmountItem)
                 .requires(compressedBlock)
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
-                .save(consumer, ForgeRegistries.ITEMS.getKey(compressedItem) + "_uc2");
+                .save(consumer, MODID + compressedItem + "_cdrb_un");
+    }
+
+    protected void CompressorDecompressorRecipeBuilder(Block output, Block input, Consumer<FinishedRecipe> consumer)
+    {
+        ShapedRecipeBuilder.shaped(output)
+                .pattern("xxx")
+                .pattern("xxx")
+                .pattern("xxx")
+                .define('x', input)
+                .group("uc")
+                .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(input), InventoryChangeTrigger.TriggerInstance.hasItems(input))
+                .save(consumer, ForgeRegistries.BLOCKS.getKey(output) + "_cdrb_blockinput");
     }
 
     protected void StainedGlassRecipeBuilder(Block compressedBlock, Item unCompressedBlock, Item dye, Consumer<FinishedRecipe> consumer)
@@ -75,13 +90,13 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .define('x', unCompressedBlock)
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(unCompressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(unCompressedBlock))
-                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_ucglass");
+                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_sgrb");
 
         ShapelessRecipeBuilder.shapeless(unCompressedBlock, 9)
                 .requires(compressedBlock)
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
-                .save(consumer, ForgeRegistries.ITEMS.getKey(unCompressedBlock) + "ucglass");
+                .save(consumer, MODID + unCompressedBlock + "_sgrb");
 
         ShapedRecipeBuilder.shaped(compressedBlock, 8)
                 .pattern("xxx")
@@ -91,7 +106,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .define('x', BlockRegistration.COMPRESSED_GLASS.get())
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(dye), InventoryChangeTrigger.TriggerInstance.hasItems(dye))
-                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_ucglass1");
+                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_sgrb_colored");
     }
 
     protected void StainedGlassPaneRecipeBuilder(Block compressedBlock, Block compressedPane, Item dye, Consumer<FinishedRecipe> consumer)
@@ -102,7 +117,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .define('x', compressedBlock)
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
-                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedPane) + "_ucglasspane");
+                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedPane) + "_sgprb");
 
         ShapedRecipeBuilder.shaped(compressedPane, 8)
                 .pattern("xxx")
@@ -112,7 +127,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .define('x', BlockRegistration.COMPRESSED_GLASS_PANE.get())
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(dye), InventoryChangeTrigger.TriggerInstance.hasItems(dye))
-                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedPane) + "_ucglasspane1");
+                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedPane) + "_sgprb_colored");
     }
 
     protected void CompressedWoolRecipeBuilder(Block compressedBlock, Item compressedItem, ColorBlockType blockType, Item colorItem, Consumer<FinishedRecipe> consumer)
@@ -124,7 +139,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .define('x', compressedItem)
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
-                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_uc2");
+                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_cwrb");
 
         if (blockType == ColorBlockType.WOOL)
         {
@@ -133,7 +148,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .requires(colorItem)
                     .group("uc")
                     .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
-                    .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_uc2_alt");
+                    .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_cwrb_wool");
         }
         else if (blockType == ColorBlockType.CONCRETE)
         {
@@ -142,7 +157,7 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .requires(colorItem)
                     .group("uc")
                     .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
-                    .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_uc2_alt");
+                    .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_cwrb_concrete");
         }
         else if (blockType == ColorBlockType.CONCRETE_POWDER)
         {
@@ -151,14 +166,14 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                     .requires(colorItem)
                     .group("uc")
                     .unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(compressedBlock), InventoryChangeTrigger.TriggerInstance.hasItems(compressedBlock))
-                    .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_uc2_alt");
+                    .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedBlock) + "_cwrb_concrete_powder");
         }
 
         ShapelessRecipeBuilder.shapeless(compressedItem, 9)
                 .requires(compressedBlock)
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(compressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
-                .save(consumer, ForgeRegistries.ITEMS.getKey(compressedItem) + "_uc2");
+                .save(consumer, MODID + compressedItem + "_cwrb");
     }
 
     protected void BasicDecompressorRecipeBuilder(Item result, int amount, Item requirement, Consumer<FinishedRecipe> consumer)
@@ -179,13 +194,14 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .define('x', uncompressedItem)
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(compressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(uncompressedItem))
-                .save(consumer, ForgeRegistries.ITEMS.getKey(compressedItem) + "_uc3");
+                //.save(consumer, ForgeRegistries.ITEMS.getKey(compressedItem) + "_mcrb");
+                .save(consumer, LOWP + compressedItem + "_mcrb");
 
         ShapelessRecipeBuilder.shapeless(uncompressedItem, decompAmountItem)
                 .requires(compressedItem)
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(compressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
-                .save(consumer, ForgeRegistries.ITEMS.getKey(uncompressedItem) + "_uc3");
+                .save(consumer, MODID + uncompressedItem + "_mcrb");
     }
 
     protected void FourItemMaterialCompressionRecipeBuilder(Block compressedItem, Item uncompressedItem, int decompAmountItem, Consumer<FinishedRecipe> consumer)
@@ -194,13 +210,28 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .requires(uncompressedItem, 4)
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(uncompressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
-                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedItem) + "_uc4");
+                .save(consumer, ForgeRegistries.BLOCKS.getKey(compressedItem) + "_fimcrb_block");
 
         ShapelessRecipeBuilder.shapeless(uncompressedItem, decompAmountItem)
                 .requires(compressedItem)
                 .group("uc")
                 .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(uncompressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
-                .save(consumer, ForgeRegistries.ITEMS.getKey(uncompressedItem) + "_uc4");
+                .save(consumer, ForgeRegistries.ITEMS.getKey(uncompressedItem) + "_fimcrb_block");
+    }
+
+    protected void FourItemMaterialCompressionRecipeBuilder(Item compressedItem, Item uncompressedItem, int decompAmountItem, Consumer<FinishedRecipe> consumer)
+    {
+        ShapelessRecipeBuilder.shapeless(compressedItem, 1)
+                .requires(uncompressedItem, 4)
+                .group("uc")
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(uncompressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
+                .save(consumer, ForgeRegistries.ITEMS.getKey(compressedItem) + "_fimcrb_item");
+
+        ShapelessRecipeBuilder.shapeless(uncompressedItem, decompAmountItem)
+                .requires(compressedItem)
+                .group("uc")
+                .unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(uncompressedItem), InventoryChangeTrigger.TriggerInstance.hasItems(compressedItem))
+                .save(consumer, MODID + uncompressedItem + "_fimcrb_item");
     }
 
     protected void CompressedWoodenToolRecipeBuilder(Item toolItem, TagKey material, ToolType tool, Consumer<FinishedRecipe> consumer)

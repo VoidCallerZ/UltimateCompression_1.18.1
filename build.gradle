@@ -90,10 +90,6 @@ repositories {
         url "https://dvs1.progwml6.com/files/maven"
     }
 
-    maven { //TOP
-        url "https://cursemaven.com"
-    }
-
     maven { //Patchouli
         url "https://maven.blamejared.com"
     }

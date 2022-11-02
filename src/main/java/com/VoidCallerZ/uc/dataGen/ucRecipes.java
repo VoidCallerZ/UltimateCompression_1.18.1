@@ -42,15 +42,15 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_NETHERITE_BLOCK.get(), ItemRegistration.COMPRESSED_NETHERITE_INGOT.get(), 9, consumer);
 
         //Material Blocks -> Compressed Blocks
-        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_IRON_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.IRON_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.IRON_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.IRON_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_GOLD_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.GOLD_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.GOLD_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.GOLD_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_DIAMOND_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.DIAMOND_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.DIAMOND_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.DIAMOND_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_COPPER_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.COPPER_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.COPPER_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.COPPER_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_COAL_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.COAL_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.COAL_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.COAL_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_EMERALD_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.EMERALD_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.EMERALD_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.EMERALD_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_LAPIS_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.LAPIS_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.LAPIS_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.LAPIS_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_REDSTONE_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.REDSTONE_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.REDSTONE_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.REDSTONE_BLOCK)).group("uc").save(consumer);
-        ShapedRecipeBuilder.shaped(BlockRegistration.COMPRESSED_NETHERITE_BLOCK.get()).pattern("xxx").pattern("xxx").pattern("xxx").define('x', Items.NETHERITE_BLOCK).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(Blocks.NETHERITE_BLOCK), InventoryChangeTrigger.TriggerInstance.hasItems(Items.NETHERITE_BLOCK)).group("uc").save(consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_IRON_BLOCK.get(), Blocks.IRON_BLOCK, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_GOLD_BLOCK.get(), Blocks.GOLD_BLOCK, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_DIAMOND_BLOCK.get(), Blocks.DIAMOND_BLOCK, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_COPPER_BLOCK.get(), Blocks.COPPER_BLOCK, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_COAL_BLOCK.get(), Blocks.COAL_BLOCK, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_EMERALD_BLOCK.get(), Blocks.EMERALD_BLOCK, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_LAPIS_BLOCK.get(), Blocks.LAPIS_BLOCK, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_REDSTONE_BLOCK.get(), Blocks.REDSTONE_BLOCK, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_NETHERITE_BLOCK.get(), Blocks.NETHERITE_BLOCK, consumer);
 
         MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_IRON_INGOT.get(), Items.IRON_INGOT, 9, consumer);
         MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_GOLD_INGOT.get(), Items.GOLD_INGOT, 9, consumer);
@@ -129,6 +129,14 @@ public class ucRecipes extends BaseRecipeProvider
         CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_MAGMA.get(), Items.MAGMA_BLOCK, 9, consumer);
         CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SOUL_SAND.get(), Items.SOUL_SAND, 9, consumer);
         CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SOUL_SOIL.get(), Items.SOUL_SOIL, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CRIMSON_NYLIUM.get(), Items.CRIMSON_NYLIUM, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_CRYING_OBSIDIAN.get(), Items.CRYING_OBSIDIAN, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_LODESTONE.get(), Items.LODESTONE, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_NETHER_WART_BLOCK.get(), Items.NETHER_WART_BLOCK, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_RED_NETHER_BRICKS.get(), Items.RED_NETHER_BRICKS, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_SHROOMLIGHT.get(), Items.SHROOMLIGHT, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_WARPED_NYLIUM.get(), Items.WARPED_NYLIUM, 9, consumer);
+        CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_WARPED_WART_BLOCK.get(), Items.WARPED_WART_BLOCK, 9, consumer);
 
         //Logs & Planks
         CompressorDecompressorRecipeBuilder(BlockRegistration.COMPRESSED_ACACIA_LOG.get(), Items.ACACIA_LOG, 9, consumer);
@@ -386,6 +394,12 @@ public class ucRecipes extends BaseRecipeProvider
         MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_FLINT.get(), Items.FLINT, 9, consumer);
         MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_STICK.get(), Items.STICK, 9, consumer);
         MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_LEATHER.get(), Items.LEATHER, 9, consumer);
+        FourItemMaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_GLOWSTONE_DUST.get(), Items.GLOWSTONE_DUST, 9, consumer);
+        MaterialCompressionRecipeBuilder(ItemRegistration.COMPRESSED_GLOWSTONE.get(), ItemRegistration.COMPRESSED_GLOWSTONE_DUST.get(), 9, consumer);
+
+        //Snowball & Bucket of Powder Snow
+        BasicFoodRecipeBuilder(ItemRegistration.COMPRESSED_SNOWBALL.get(), Items.SNOWBALL, consumer);
+        BasicFoodRecipeBuilder(ItemRegistration.COMPRESSED_POWDER_SNOW_BUCKET.get(), Items.POWDER_SNOW_BUCKET, consumer);
 
         //Snow
         ShapedRecipeBuilder.shaped(Items.SNOW, 54).pattern("xxx").define('x', BlockRegistration.COMPRESSED_SNOW_BLOCK.get()).unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(BlockRegistration.COMPRESSED_SNOW_BLOCK.get()), InventoryChangeTrigger.TriggerInstance.hasItems(BlockRegistration.COMPRESSED_SNOW_BLOCK.get()));

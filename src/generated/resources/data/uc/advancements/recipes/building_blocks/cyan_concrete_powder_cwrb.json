@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_minecraft:cyan_concrete_powder": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cyan_concrete_powder"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "uc:cyan_concrete_powder_cwrb"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:cyan_concrete_powder",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "uc:cyan_concrete_powder_cwrb"
+    ]
+  }
+}

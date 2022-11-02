@@ -14,8 +14,6 @@ import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 
-;
-
 public class UcSnowball extends Snowball
 {
     public UcSnowball(EntityType<? extends UcSnowball> entityType, Level level)

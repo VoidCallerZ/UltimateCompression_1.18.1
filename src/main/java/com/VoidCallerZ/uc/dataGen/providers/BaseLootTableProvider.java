@@ -105,6 +105,20 @@ public abstract class BaseLootTableProvider extends LootTableProvider
         return LootTable.lootTable().withPool(builder);
     }
 
+    protected LootTable.Builder createSilkTouchTable(String name, Block silkTouchBlock, Block defaultBlock)
+    {
+        LootPool.Builder builder = LootPool.lootPool()
+                .name(name)
+                .setRolls(ConstantValue.exactly(1))
+                .add(AlternativesEntry.alternatives(
+                        LootItem.lootTableItem(silkTouchBlock)
+                                .when(MatchTool.toolMatches(ItemPredicate.Builder.item()
+                                        .hasEnchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, MinMaxBounds.Ints.atLeast(1))))),
+                        LootItem.lootTableItem(defaultBlock)
+                ));
+        return LootTable.lootTable().withPool(builder);
+    }
+
     protected LootTable.Builder createChanceDropTable(String name, Block block, Item chanceItem)
     {
         LootPool.Builder builder = LootPool.lootPool()

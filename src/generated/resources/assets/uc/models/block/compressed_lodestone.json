@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "uc:block/compressed/nether/compressed_netherrack",
+    "east": "uc:block/compressed/nether/compressed_lodestone_side",
+    "north": "uc:block/compressed/nether/compressed_lodestone_side",
+    "south": "uc:block/compressed/nether/compressed_lodestone_side",
+    "up": "uc:block/compressed/nether/compressed_lodestone",
+    "west": "uc:block/compressed/nether/compressed_lodestone_side"
+  }
+}
