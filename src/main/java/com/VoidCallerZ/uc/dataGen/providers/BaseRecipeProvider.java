@@ -176,15 +176,6 @@ public abstract class BaseRecipeProvider extends RecipeProvider implements ICond
                 .save(consumer, MODID + compressedItem + "_cwrb");
     }
 
-    protected void BasicDecompressorRecipeBuilder(Item result, int amount, Item requirement, Consumer<FinishedRecipe> consumer)
-    {
-        ShapelessRecipeBuilder.shapeless(result, amount)
-                .requires(requirement)
-                .group("uc")
-                .unlockedBy("uncompress_has_" + requirement, InventoryChangeTrigger.TriggerInstance.hasItems(requirement))
-                .save(consumer);
-    }
-
     protected void MaterialCompressionRecipeBuilder(Item compressedItem, Item uncompressedItem, int decompAmountItem, Consumer<FinishedRecipe> consumer)
     {
         ShapedRecipeBuilder.shaped(compressedItem)
