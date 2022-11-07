@@ -37,7 +37,7 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(BlockRegistration.COMPRESSED_REDSTONE_ORE.get(), "compressed_redstone_ore", "block/compressed/ores/compressed_redstone_ore");
         singleTextureBlock(BlockRegistration.COMPRESSED_NETHER_GOLD_ORE.get(), "compressed_nether_gold_ore", "block/compressed/ores/compressed_nether_gold_ore");
         singleTextureBlock(BlockRegistration.COMPRESSED_NETHER_QUARTZ_ORE.get(), "compressed_nether_quartz_ore", "block/compressed/ores/compressed_nether_quartz_ore");
-        doubleTextureBlock(BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get(), "block/compressed/ores/compressed_ancient_debris");
+        doubleTextureBlock(BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get(), "compressed_ancient_debris", "block/compressed/ores/compressed_ancient_debris");
 
         //Deepslate Ores
         singleTextureBlock(BlockRegistration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), "compressed_deepslate_iron_ore", "block/compressed/ores/compressed_deepslate_iron_ore");
