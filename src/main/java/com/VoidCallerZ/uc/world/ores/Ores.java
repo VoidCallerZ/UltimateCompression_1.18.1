@@ -65,20 +65,6 @@ public class Ores
         );
     }
 
-    @NotNull
-    public static Holder<PlacedFeature> createAncientDebrisOregen(RegistryObject<RotatedPillarBlock> oreBlock, int veinSize, int amount, int minY, int maxY)
-    {
-        VerticalAnchor absMinY = VerticalAnchor.absolute(minY);
-        VerticalAnchor absMaxY = VerticalAnchor.absolute(maxY);
-
-        OreConfiguration ancientDebrisConfig = new OreConfiguration(OreFeatures.NETHER_ORE_REPLACEABLES, oreBlock.get().defaultBlockState(), veinSize);
-        return registerPlacedFeature(oreBlock.getId().getNamespace(), new ConfiguredFeature<>(Feature.ORE, ancientDebrisConfig),
-                CountPlacement.of(amount),
-                InSquarePlacement.spread(),
-                BiomeFilter.biome(),
-                HeightRangePlacement.triangle(absMinY, absMaxY));
-    }
-
     private static <C extends FeatureConfiguration, F extends Feature<C>> Holder<PlacedFeature> registerPlacedFeature(String registryName, ConfiguredFeature<C, F> feature, PlacementModifier... placementModifiers)
     {
         return PlacementUtils.register(registryName, Holder.direct(feature), placementModifiers);

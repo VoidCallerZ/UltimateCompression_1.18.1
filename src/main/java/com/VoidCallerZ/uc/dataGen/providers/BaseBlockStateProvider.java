@@ -48,6 +48,16 @@ public abstract class BaseBlockStateProvider extends BlockStateProvider {
         simpleBlock(block, model);
     }
 
+    protected void doubleTextureBlock(Block block, String textureName)
+    {
+        ResourceLocation PRIMARY = modLoc(textureName);
+        ResourceLocation SECONDARY = modLoc(textureName + "_top");
+
+        ModelFile model = models().cube(textureName, SECONDARY, SECONDARY, PRIMARY, PRIMARY, PRIMARY, PRIMARY);
+
+        simpleBlock(block, model);
+    }
+
     protected void grassTextureBlock(Block block, String textureName)
     {
         ResourceLocation TOP = modLoc("block/compressed/nether/" + textureName);

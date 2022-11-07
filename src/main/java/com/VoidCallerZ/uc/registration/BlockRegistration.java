@@ -101,7 +101,7 @@ public class BlockRegistration
     public static final RegistryObject<Block> COMPRESSED_REDSTONE_ORE = BLOCKS.register("compressed_redstone_ore", () -> new UcOreBlock(ORE_PROPERTIES, 4, 7));
     public static final RegistryObject<Block> COMPRESSED_NETHER_GOLD_ORE = BLOCKS.register("compressed_gold_nether_ore", () -> new UcOreBlock(NETHER_ORE_PROPERTIES, 2, 3));
     public static final RegistryObject<Block> COMPRESSED_NETHER_QUARTZ_ORE = BLOCKS.register("compressed_nether_quartz_ore", () -> new UcOreBlock(NETHER_ORE_PROPERTIES, 4, 7));
-    public static final RegistryObject<RotatedPillarBlock> COMPRESSED_ANCIENT_DEBRIS = BLOCKS.register("compressed_ancient_debris", () -> new UcRotatedOreBlock(ANCIENT_DEBRIS_PROPERTIES));
+    public static final RegistryObject<Block> COMPRESSED_ANCIENT_DEBRIS = BLOCKS.register("compressed_ancient_debris", () -> new UcOreBlock(ANCIENT_DEBRIS_PROPERTIES));
 
     //Deepslate Ores
     public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_IRON_ORE = BLOCKS.register("compressed_deepslate_iron_ore", () -> new Block(DEEPSLATE_ORE_PROPERTIES));
