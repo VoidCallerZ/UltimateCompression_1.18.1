@@ -42,12 +42,12 @@ public abstract class BaseBlockStateProvider extends BlockStateProvider {
         simpleBlock(block, model);
     }
 
-    protected void doubleTextureBlock(Block block, String textureName)
+    protected void doubleTextureBlock(Block block, String modelName, String textureName)
     {
         ResourceLocation PRIMARY = modLoc(textureName);
         ResourceLocation SECONDARY = modLoc(textureName + "_top");
 
-        ModelFile model = models().cube(textureName, SECONDARY, SECONDARY, PRIMARY, PRIMARY, PRIMARY, PRIMARY);
+        ModelFile model = models().cube(modelName, SECONDARY, SECONDARY, PRIMARY, PRIMARY, PRIMARY, PRIMARY);
 
         simpleBlock(block, model);
     }
