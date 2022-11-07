@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_tuff_cdrb"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:tuff": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:tuff"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_tuff_cdrb"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:tuff",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:lapis_lazuli_mcrb"
+    ]
+  },
+  "criteria": {
+    "has_uc:compressed_lapis": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_lapis"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:lapis_lazuli_mcrb"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_lapis",
+      "has_the_recipe"
+    ]
+  ]
+}

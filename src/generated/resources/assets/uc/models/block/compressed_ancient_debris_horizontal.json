@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "side": "uc:block/compressed/ores/compressed_ancient_debris",
+    "end": "uc:block/compressed/ores/compressed_ancient_debris_top"
+  }
+}

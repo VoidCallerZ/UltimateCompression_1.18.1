@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_shroomlight_cdrb"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:shroomlight": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:shroomlight"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_shroomlight_cdrb"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:shroomlight",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_hay_block_cdrb"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:hay_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:hay_block"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_hay_block_cdrb"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:hay_block",
+      "has_the_recipe"
+    ]
+  ]
+}

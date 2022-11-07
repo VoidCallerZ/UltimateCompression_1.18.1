@@ -9,6 +9,7 @@ import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
@@ -40,6 +41,7 @@ public class Ores
     public static Holder<PlacedFeature> REDSTONE_OREGEN;
     public static Holder<PlacedFeature> NETHER_GOLD_OREGEN;
     public static Holder<PlacedFeature> NETHER_QUARTZ_OREGEN;
+    public static Holder<PlacedFeature> ANCIENT_DEBRIS_OREGEN;
 
     public static void registerConfiguredFeatures()
     {
@@ -66,11 +68,7 @@ public class Ores
         //Nether Ores
         NETHER_GOLD_OREGEN = registerPlacedFeatureNether("compressed_nether_gold_ore", BlockRegistration.COMPRESSED_NETHER_GOLD_ORE.get().defaultBlockState(), OresConfig.NETHER_GOLD_ORE_VEINSIZE.get(), OresConfig.NETHER_GOLD_ORE_AMOUNT.get(), 10, 117);
         NETHER_QUARTZ_OREGEN = registerPlacedFeatureNether("compressed_nether_quartz_ore", BlockRegistration.COMPRESSED_NETHER_QUARTZ_ORE.get().defaultBlockState(), OresConfig.NETHER_QUARTZ_ORE_VEINSIZE.get(), OresConfig.NETHER_QUARTZ_ORE_AMOUNT.get(), 10, 117);
-
-        //Nether
-        //NetherOreGen("compressed_nether_gold_ore", Registration.COMPRESSED_NETHER_GOLD_ORE.get().defaultBlockState(), OresConfig.NETHER_GOLD_ORE_VEINSIZE.get(), OresConfig.NETHER_GOLD_ORE_AMOUNT.get(), 10, 117);
-        //NetherOreGen("compressed_nether_gold_ore", Registration.COMPRESSED_NETHER_GOLD_ORE.get().defaultBlockState(), 100, 500, 0, 117);
-        //NetherOreGen("compressed_nether_quartz_ore", Registration.COMPRESSED_NETHER_QUARTZ_ORE.get().defaultBlockState(), OresConfig.NETHER_QUARTZ_ORE_VEINSIZE.get(), OresConfig.NETHER_QUARTZ_ORE_AMOUNT.get(), 10, 117);
+        ANCIENT_DEBRIS_OREGEN = registerPlacedFeatureNether("compressed_ancient_debris", BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get().defaultBlockState(), OresConfig.ANCIENT_DEBRIS_VEINSIZE.get(), OresConfig.ANCIENT_DEBRIS_AMOUNT.get(), 8, 22);
     }
 
     private static <C extends FeatureConfiguration, F extends Feature<C>> Holder<PlacedFeature> registerPlacedFeatureUniform(String registryName, boolean isDeepslateOre, BlockState oreBlock, int veinSize, int chunkAmount, int minY, int maxY)
@@ -107,6 +105,7 @@ public class Ores
         {
             event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_NETHER_GOLD_ORE_GEN.getHolder().get());
             event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_NETHER_QUARTZ_ORE_GEN.getHolder().get());
+            event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, WorldGenRegistration.COMPRESSED_ANCIENT_DEBRIS_GEN.getHolder().get());
         }
         else
         {
@@ -163,6 +162,20 @@ public class Ores
                 BiomeFilter.biome(),
                 HeightRangePlacement.uniform(absMinY, absMaxY)
         );
+    }
+
+    @NotNull
+    public static Holder<PlacedFeature> createAncientDebrisOregen(RegistryObject<RotatedPillarBlock> oreBlock, int veinSize, int amount, int minY, int maxY)
+    {
+        VerticalAnchor absMinY = VerticalAnchor.absolute(minY);
+        VerticalAnchor absMaxY = VerticalAnchor.absolute(maxY);
+
+        OreConfiguration ancientDebrisConfig = new OreConfiguration(OreFeatures.NETHER_ORE_REPLACEABLES, oreBlock.get().defaultBlockState(), veinSize);
+        return registerPlacedFeature(oreBlock.getId().getNamespace(), new ConfiguredFeature<>(Feature.ORE, ancientDebrisConfig),
+                CountPlacement.of(amount),
+                InSquarePlacement.spread(),
+                BiomeFilter.biome(),
+                HeightRangePlacement.triangle(absMinY, absMaxY));
     }
 
     private static <C extends FeatureConfiguration, F extends Feature<C>> Holder<PlacedFeature> registerPlacedFeature(String registryName, ConfiguredFeature<C, F> feature, PlacementModifier... placementModifiers)

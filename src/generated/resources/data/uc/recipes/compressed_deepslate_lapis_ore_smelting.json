@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "uc",
+  "ingredient": {
+    "item": "uc:compressed_deepslate_lapis_ore"
+  },
+  "result": "uc:compressed_lapis",
+  "experience": 1.0,
+  "cookingtime": 100
+}

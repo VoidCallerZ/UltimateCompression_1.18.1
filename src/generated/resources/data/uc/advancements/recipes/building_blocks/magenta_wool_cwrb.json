@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:magenta_wool_cwrb"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:magenta_wool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:magenta_wool"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:magenta_wool_cwrb"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:magenta_wool",
+      "has_the_recipe"
+    ]
+  ]
+}

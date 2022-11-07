@@ -35,6 +35,7 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_REDSTONE_ORE.get()).getPath(), modLoc("block/compressed_redstone_ore"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_NETHER_GOLD_ORE.get()).getPath(), modLoc("block/compressed_nether_gold_ore"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_NETHER_QUARTZ_ORE.get()).getPath(), modLoc("block/compressed_nether_quartz_ore"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_ANCIENT_DEBRIS.get()).getPath(), modLoc("block/compressed_ancient_debris"));
 
         //Deepslate Ores
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_DEEPSLATE_IRON_ORE.get()).getPath(), modLoc("block/compressed_deepslate_iron_ore"));
@@ -125,6 +126,14 @@ public class ucItemModels extends BaseItemModelProvider
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_MAGMA.get()).getPath(), modLoc("block/compressed_magma"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SOUL_SAND.get()).getPath(), modLoc("block/compressed_soul_sand"));
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SOUL_SOIL.get()).getPath(), modLoc("block/compressed_soul_soil"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CRIMSON_NYLIUM.get()).getPath(), modLoc("block/compressed_crimson_nylium"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_CRYING_OBSIDIAN.get()).getPath(), modLoc("block/compressed_crying_obsidian"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_LODESTONE.get()).getPath(), modLoc("block/compressed_lodestone"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_NETHER_WART_BLOCK.get()).getPath(), modLoc("block/compressed_nether_wart_block"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_RED_NETHER_BRICKS.get()).getPath(), modLoc("block/compressed_red_nether_bricks"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_SHROOMLIGHT.get()).getPath(), modLoc("block/compressed_shroomlight"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_WARPED_NYLIUM.get()).getPath(), modLoc("block/compressed_warped_nylium"));
+        withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_WARPED_WART_BLOCK.get()).getPath(), modLoc("block/compressed_warped_wart_block"));
 
         //Logs & Planks
         withExistingParent(ForgeRegistries.ITEMS.getKey(ItemRegistration.COMPRESSED_ACACIA_LOG.get()).getPath(), modLoc("block/compressed_acacia_log"));

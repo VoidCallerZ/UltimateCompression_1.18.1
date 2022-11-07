@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_ancient_debris_blasting"
+    ]
+  },
+  "criteria": {
+    "has_blasting_": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_ancient_debris"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_ancient_debris_blasting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_blasting_",
+      "has_the_recipe"
+    ]
+  ]
+}

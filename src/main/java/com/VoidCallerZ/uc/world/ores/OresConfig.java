@@ -21,6 +21,8 @@ public class OresConfig
     public static ForgeConfigSpec.IntValue NETHER_GOLD_ORE_AMOUNT;
     public static ForgeConfigSpec.IntValue NETHER_QUARTZ_ORE_VEINSIZE;
     public static ForgeConfigSpec.IntValue NETHER_QUARTZ_ORE_AMOUNT;
+    public static ForgeConfigSpec.IntValue ANCIENT_DEBRIS_VEINSIZE;
+    public static ForgeConfigSpec.IntValue ANCIENT_DEBRIS_AMOUNT;
 
     public static void registerCommonConfig(ForgeConfigSpec.Builder COMMON_BUILDER)
     {
@@ -45,5 +47,7 @@ public class OresConfig
         NETHER_GOLD_ORE_AMOUNT = COMMON_BUILDER.comment("Default maximum amount of generations per chunk").defineInRange("netherGoldChunkAmount", 10, 0, 50);
         NETHER_QUARTZ_ORE_VEINSIZE = COMMON_BUILDER.comment("Default veinsize of nether quartz ore").defineInRange("netherQuartzVeinsize", 10, 0, 50);
         NETHER_QUARTZ_ORE_AMOUNT = COMMON_BUILDER.comment("Default maximum amount of generations per chunk").defineInRange("netherQuartzChunkAmount", 16, 0, 50);
+        ANCIENT_DEBRIS_VEINSIZE = COMMON_BUILDER.comment("Default veinsize for compressed ancient debris").defineInRange("ancientDebrisVeinsize", 3, 0, 50);
+        ANCIENT_DEBRIS_AMOUNT = COMMON_BUILDER.comment("Default maximum amount of generations per chunk").defineInRange("ancientDebrisChunkAmount", 1, 0, 50);
     }
 }

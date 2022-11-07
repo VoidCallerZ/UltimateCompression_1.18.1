@@ -37,6 +37,9 @@ public class UcOreBlock extends Block
     public int getExpDrop(BlockState state, LevelReader world, BlockPos pos, int fortuneLevel, int silkTouchLevel)
     {
         Random randomSource = new Random();
-        return silkTouchLevel == 0 ? randomSource.nextInt(xpMinRange, xpRange) : 0;
+        if (xpMinRange > 0)
+            return silkTouchLevel == 0 ? randomSource.nextInt(xpMinRange, xpRange) : 0;
+        else
+            return 0;
     }
 }

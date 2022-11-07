@@ -35,6 +35,7 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(BlockRegistration.COMPRESSED_REDSTONE_ORE.get(), "compressed_redstone_ore", "block/compressed/ores/compressed_redstone_ore");
         singleTextureBlock(BlockRegistration.COMPRESSED_NETHER_GOLD_ORE.get(), "compressed_nether_gold_ore", "block/compressed/ores/compressed_nether_gold_ore");
         singleTextureBlock(BlockRegistration.COMPRESSED_NETHER_QUARTZ_ORE.get(), "compressed_nether_quartz_ore", "block/compressed/ores/compressed_nether_quartz_ore");
+        compressedPillarBlock(BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get(), modLoc("block/compressed/ores/compressed_ancient_debris"));
 
         //Deepslate Ores
         singleTextureBlock(BlockRegistration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), "compressed_deepslate_iron_ore", "block/compressed/ores/compressed_deepslate_iron_ore");
@@ -120,6 +121,14 @@ public class ucBlockStates extends BaseBlockStateProvider
         singleTextureBlock(BlockRegistration.COMPRESSED_MAGMA.get(), "compressed_magma", "block/compressed/nether/compressed_magma");
         singleTextureBlock(BlockRegistration.COMPRESSED_SOUL_SAND.get(), "compressed_soul_sand", "block/compressed/nether/compressed_soul_sand");
         singleTextureBlock(BlockRegistration.COMPRESSED_SOUL_SOIL.get(), "compressed_soul_soil", "block/compressed/nether/compressed_soul_soil");
+        grassTextureBlock(BlockRegistration.COMPRESSED_CRIMSON_NYLIUM.get(), "compressed_crimson_nylium");
+        singleTextureBlock(BlockRegistration.COMPRESSED_CRYING_OBSIDIAN.get(), "compressed_crying_obsidian", "block/compressed/nether/compressed_crying_obsidian");
+        grassTextureBlock(BlockRegistration.COMPRESSED_LODESTONE.get(), "compressed_lodestone");
+        singleTextureBlock(BlockRegistration.COMPRESSED_NETHER_WART_BLOCK.get(), "compressed_nether_wart_block", "block/compressed/nether/compressed_nether_wart_block");
+        singleTextureBlock(BlockRegistration.COMPRESSED_RED_NETHER_BRICKS.get(), "compressed_red_nether_bricks", "block/compressed/nether/compressed_red_nether_bricks");
+        singleTextureBlock(BlockRegistration.COMPRESSED_SHROOMLIGHT.get(), "compressed_shroomlight", "block/compressed/nether/compressed_shroomlight");
+        grassTextureBlock(BlockRegistration.COMPRESSED_WARPED_NYLIUM.get(), "compressed_warped_nylium");
+        singleTextureBlock(BlockRegistration.COMPRESSED_WARPED_WART_BLOCK.get(), "compressed_warped_wart_block", "block/compressed/nether/compressed_warped_wart_block");
 
         //Logs
         compressedPillarBlock(BlockRegistration.COMPRESSED_ACACIA_LOG.get(), modLoc("block/compressed/logs/compressed_acacia_log"));

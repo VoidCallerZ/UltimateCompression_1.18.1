@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_birch_leaves_cdrb"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:birch_leaves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:birch_leaves"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_birch_leaves_cdrb"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:birch_leaves",
+      "has_the_recipe"
+    ]
+  ]
+}

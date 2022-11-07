@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_obsidian_cdrb"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:obsidian": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:obsidian"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_obsidian_cdrb"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:obsidian",
+      "has_the_recipe"
+    ]
+  ]
+}

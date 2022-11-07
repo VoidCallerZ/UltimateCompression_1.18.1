@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "uc",
+  "ingredient": {
+    "item": "uc:compressed_deepslate_emerald_ore"
+  },
+  "result": "uc:compressed_emerald_gem",
+  "experience": 1.0,
+  "cookingtime": 100
+}

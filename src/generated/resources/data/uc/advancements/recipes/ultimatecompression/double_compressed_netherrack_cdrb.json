@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:double_compressed_netherrack_cdrb"
+    ]
+  },
+  "criteria": {
+    "has_uc:compressed_netherrack": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_netherrack"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:double_compressed_netherrack_cdrb"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_netherrack",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:red_sandstone_cdrb_un"
+    ]
+  },
+  "criteria": {
+    "has_uc:compressed_red_sandstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "uc:compressed_red_sandstone"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:red_sandstone_cdrb_un"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_red_sandstone",
+      "has_the_recipe"
+    ]
+  ]
+}

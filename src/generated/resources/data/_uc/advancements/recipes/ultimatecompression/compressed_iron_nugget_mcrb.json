@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "_uc:compressed_iron_nugget_mcrb"
+    ]
+  },
+  "criteria": {
+    "has_uc:compressed_iron_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_nugget"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "_uc:compressed_iron_nugget_mcrb"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_uc:compressed_iron_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

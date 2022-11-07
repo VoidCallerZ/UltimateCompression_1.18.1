@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "uc:compressed_smooth_stone_cdrb"
+    ]
+  },
+  "criteria": {
+    "has_minecraft:smooth_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:smooth_stone"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "uc:compressed_smooth_stone_cdrb"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_minecraft:smooth_stone",
+      "has_the_recipe"
+    ]
+  ]
+}

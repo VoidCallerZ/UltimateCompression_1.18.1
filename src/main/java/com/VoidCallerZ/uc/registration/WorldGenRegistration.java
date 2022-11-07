@@ -42,6 +42,8 @@ public class WorldGenRegistration
     public static final int NETHER_GOLD_ORE_AMOUNT = 10;
     public static final int NETHER_QUARTZ_ORE_VEINSIZE = 10;
     public static final int NETHER_QUARTZ_ORE_AMOUNT = 16;
+    public static final int ANCIENT_DEBRIS_VEINSIZE = 3;
+    public static final int ANCIENT_DEBRIS_AMOUNT = 1;
 
     //Overworld Ores
     public static final RegistryObject<PlacedFeature> COMPRESSED_IRON_ORE_GEN = PLACED_FEATURES.register("compressed_iron_ore", () -> Ores.createOverworldOregen(false, true, BlockRegistration.COMPRESSED_IRON_ORE, OVERWORLD_VEINSIZE, OVERWORLD_AMOUNT, 48).value());
@@ -65,4 +67,5 @@ public class WorldGenRegistration
     //Nether Ores
     public static final RegistryObject<PlacedFeature> COMPRESSED_NETHER_QUARTZ_ORE_GEN = PLACED_FEATURES.register("compressed_nether_quartz_ore", () -> Ores.createNetherOregen(BlockRegistration.COMPRESSED_NETHER_QUARTZ_ORE, NETHER_QUARTZ_ORE_VEINSIZE, NETHER_QUARTZ_ORE_AMOUNT, 10, 117).value());
     public static final RegistryObject<PlacedFeature> COMPRESSED_NETHER_GOLD_ORE_GEN = PLACED_FEATURES.register("compressed_nether_gold_ore", () -> Ores.createNetherOregen(BlockRegistration.COMPRESSED_NETHER_GOLD_ORE, NETHER_GOLD_ORE_VEINSIZE, NETHER_GOLD_ORE_AMOUNT, 10, 117).value());
+    public static final RegistryObject<PlacedFeature> COMPRESSED_ANCIENT_DEBRIS_GEN = PLACED_FEATURES.register("compressed_ancient_debris", () -> Ores.createAncientDebrisOregen(BlockRegistration.COMPRESSED_ANCIENT_DEBRIS, ANCIENT_DEBRIS_VEINSIZE, ANCIENT_DEBRIS_AMOUNT, 8, 22).value());
 }

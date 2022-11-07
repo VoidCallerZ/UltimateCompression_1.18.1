@@ -35,6 +35,7 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(BlockRegistration.COMPRESSED_REDSTONE_ORE.get(), createSilkTouchTable("compressed_redstone_ore", BlockRegistration.COMPRESSED_REDSTONE_ORE.get(), ItemRegistration.COMPRESSED_REDSTONE.get(), 1, 1));
         lootTables.put(BlockRegistration.COMPRESSED_NETHER_GOLD_ORE.get(), createSilkTouchTable("compressed_nether_gold_ore", BlockRegistration.COMPRESSED_NETHER_GOLD_ORE.get(), ItemRegistration.COMPRESSED_GOLD_NUGGET.get(), 1, 1));
         lootTables.put(BlockRegistration.COMPRESSED_NETHER_QUARTZ_ORE.get(), createSilkTouchTable("compressed_nether_quartz_ore", BlockRegistration.COMPRESSED_NETHER_QUARTZ_ORE.get(), ItemRegistration.COMPRESSED_QUARTZ.get(), 2, 4));
+        lootTables.put(BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get(), createSimpleTable("compressed_ancient_debris", BlockRegistration.COMPRESSED_ANCIENT_DEBRIS.get()));
 
         //Deepslate Ores
         lootTables.put(BlockRegistration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), createSilkTouchTable("compressed_deepslate_iron_ore", BlockRegistration.COMPRESSED_DEEPSLATE_IRON_ORE.get(), ItemRegistration.COMPRESSED_RAW_IRON.get(), 1, 2));
@@ -115,6 +116,14 @@ public class ucLootTables extends BaseLootTableProvider
         lootTables.put(BlockRegistration.COMPRESSED_MAGMA.get(), createSimpleTable("compressed_magma", BlockRegistration.COMPRESSED_MAGMA.get()));
         lootTables.put(BlockRegistration.COMPRESSED_SOUL_SAND.get(), createSimpleTable("compressed_soul_sand", BlockRegistration.COMPRESSED_SOUL_SAND.get()));
         lootTables.put(BlockRegistration.COMPRESSED_SOUL_SOIL.get(), createSimpleTable("compressed_soul_soil", BlockRegistration.COMPRESSED_SOUL_SOIL.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_CRIMSON_NYLIUM.get(), createSimpleTable("compressed_crimson_nylium", BlockRegistration.COMPRESSED_CRIMSON_NYLIUM.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_CRYING_OBSIDIAN.get(), createSimpleTable("compressed_crying_obsidian", BlockRegistration.COMPRESSED_CRYING_OBSIDIAN.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_LODESTONE.get(), createSimpleTable("compressed_lodestone", BlockRegistration.COMPRESSED_LODESTONE.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_NETHER_WART_BLOCK.get(), createSimpleTable("compressed_nether_wart_block", BlockRegistration.COMPRESSED_NETHER_WART_BLOCK.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_RED_NETHER_BRICKS.get(), createSimpleTable("compressed_nether_bricks", BlockRegistration.COMPRESSED_RED_NETHER_BRICKS.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_SHROOMLIGHT.get(), createSimpleTable("compressed_shroomlight", BlockRegistration.COMPRESSED_SHROOMLIGHT.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_WARPED_NYLIUM.get(), createSimpleTable("compressed_warped_nylium", BlockRegistration.COMPRESSED_WARPED_NYLIUM.get()));
+        lootTables.put(BlockRegistration.COMPRESSED_WARPED_WART_BLOCK.get(), createSimpleTable("compressed_warped_wart_block", BlockRegistration.COMPRESSED_WARPED_WART_BLOCK.get()));
 
         //Logs & Planks
         lootTables.put(BlockRegistration.COMPRESSED_ACACIA_LOG.get(), createSimpleTable("compressed_acacia_log", BlockRegistration.COMPRESSED_ACACIA_LOG.get()));

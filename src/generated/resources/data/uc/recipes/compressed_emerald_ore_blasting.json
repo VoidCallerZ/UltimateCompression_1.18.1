@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "uc",
+  "ingredient": {
+    "item": "uc:compressed_emerald_ore"
+  },
+  "result": "uc:compressed_emerald_gem",
+  "experience": 0.7,
+  "cookingtime": 200
+}

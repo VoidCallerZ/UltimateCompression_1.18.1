@@ -57,6 +57,7 @@ public class ItemRegistration
     public static final RegistryObject<Item> COMPRESSED_REDSTONE_ORE = fromBlock(BlockRegistration.COMPRESSED_REDSTONE_ORE);
     public static final RegistryObject<Item> COMPRESSED_NETHER_GOLD_ORE = fromBlock(BlockRegistration.COMPRESSED_NETHER_GOLD_ORE);
     public static final RegistryObject<Item> COMPRESSED_NETHER_QUARTZ_ORE = fromBlock(BlockRegistration.COMPRESSED_NETHER_QUARTZ_ORE);
+    public static final RegistryObject<Item> COMPRESSED_ANCIENT_DEBRIS = fromBlock(BlockRegistration.COMPRESSED_ANCIENT_DEBRIS);
 
     //Deepslate Ores
     public static final RegistryObject<Item> COMPRESSED_DEEPSLATE_IRON_ORE = fromBlock(BlockRegistration.COMPRESSED_DEEPSLATE_IRON_ORE);
@@ -142,6 +143,14 @@ public class ItemRegistration
     public static final RegistryObject<Item> COMPRESSED_MAGMA = fromBlock(BlockRegistration.COMPRESSED_MAGMA);
     public static final RegistryObject<Item> COMPRESSED_SOUL_SAND = fromBlock(BlockRegistration.COMPRESSED_SOUL_SAND);
     public static final RegistryObject<Item> COMPRESSED_SOUL_SOIL = fromBlock(BlockRegistration.COMPRESSED_SOUL_SOIL);
+    public static final RegistryObject<Item> COMPRESSED_CRIMSON_NYLIUM = fromBlock(BlockRegistration.COMPRESSED_CRIMSON_NYLIUM);
+    public static final RegistryObject<Item> COMPRESSED_CRYING_OBSIDIAN = fromBlock(BlockRegistration.COMPRESSED_CRYING_OBSIDIAN);
+    public static final RegistryObject<Item> COMPRESSED_LODESTONE = fromBlock(BlockRegistration.COMPRESSED_LODESTONE);
+    public static final RegistryObject<Item> COMPRESSED_NETHER_WART_BLOCK = fromBlock(BlockRegistration.COMPRESSED_NETHER_WART_BLOCK);
+    public static final RegistryObject<Item> COMPRESSED_RED_NETHER_BRICKS = fromBlock(BlockRegistration.COMPRESSED_RED_NETHER_BRICKS);
+    public static final RegistryObject<Item> COMPRESSED_SHROOMLIGHT = fromBlock(BlockRegistration.COMPRESSED_SHROOMLIGHT);
+    public static final RegistryObject<Item> COMPRESSED_WARPED_NYLIUM = fromBlock(BlockRegistration.COMPRESSED_WARPED_NYLIUM);
+    public static final RegistryObject<Item> COMPRESSED_WARPED_WART_BLOCK = fromBlock(BlockRegistration.COMPRESSED_WARPED_WART_BLOCK);
 
     //Logs & Planks
     public static final RegistryObject<Item> COMPRESSED_ACACIA_LOG = fromBlockFuelItem(BlockRegistration.COMPRESSED_ACACIA_LOG, 2700);
