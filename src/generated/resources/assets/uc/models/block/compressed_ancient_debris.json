@@ -1,7 +1,11 @@
 {
-  "parent": "minecraft:block/cube_column",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "end": "uc:block/compressed/ores/compressed_ancient_debris_top",
-    "side": "uc:block/compressed/ores/compressed_ancient_debris"
+    "down": "uc:block/compressed/ores/compressed_ancient_debris_top",
+    "east": "uc:block/compressed/ores/compressed_ancient_debris",
+    "north": "uc:block/compressed/ores/compressed_ancient_debris",
+    "south": "uc:block/compressed/ores/compressed_ancient_debris",
+    "up": "uc:block/compressed/ores/compressed_ancient_debris_top",
+    "west": "uc:block/compressed/ores/compressed_ancient_debris"
   }
 }

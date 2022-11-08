@@ -1,8 +1,8 @@
-// 1.19.2	2022-11-02T19:21:38.9223032	Block States: uc
+// 1.19.2	2022-11-08T12:23:52.786722	Block States: uc
 fc44a947a928baf01797f28cb4cde176f99b572c assets/uc/blockstates/compressed_acacia_leaves.json
 17dee2b51c09c019bdcfc795512e0f21c37f7870 assets/uc/blockstates/compressed_acacia_log.json
 47729bb940ddec3415b0e6eb9d865a6cedcd2ed6 assets/uc/blockstates/compressed_acacia_planks.json
-b9c621b513429cfe2f4db2434b7fd1aae174139b assets/uc/blockstates/compressed_ancient_debris.json
+88751b70ab3307de594456bc3cb4b7cec813a9d7 assets/uc/blockstates/compressed_ancient_debris.json
 f86cad1a0b4189d5245a0e05c5a92b9f0666b1cd assets/uc/blockstates/compressed_andesite.json
 f88b6b2cb51f75e19b1cedc1593d27fdf8b516d1 assets/uc/blockstates/compressed_basalt.json
 d3fde997b72987a4587bd5c155cd1567461fd163 assets/uc/blockstates/compressed_birch_leaves.json
@@ -215,8 +215,7 @@ b4710d8d60040ba3ae9ca292535e72b24718698b assets/uc/blockstates/double_compressed
 9efad62faa5654f14f3ab317121675fd926f9565 assets/uc/models/block/compressed_acacia_log.json
 e31fe37da2e66c763b9e272373ffbe9799e07ade assets/uc/models/block/compressed_acacia_log_horizontal.json
 99291005312ea4737c5c115c94bc3a142b8f4efb assets/uc/models/block/compressed_acacia_planks.json
-111f0c6ba979f3ffe654556423ffa8582ddaf1ee assets/uc/models/block/compressed_ancient_debris.json
-9077a252c1a91f775309972c84a33f5fdca01217 assets/uc/models/block/compressed_ancient_debris_horizontal.json
+1f41ea51d57e1ea13cc974bfecdc84aa191319aa assets/uc/models/block/compressed_ancient_debris.json
 6f5f800fdfaa02460320942fd278255a0954fcdf assets/uc/models/block/compressed_andesite.json
 dca6804cdce1201aca87e9b1315b195580009b1c assets/uc/models/block/compressed_basalt.json
 78b4b115870496f712c4d2faa6e6170df7ef3491 assets/uc/models/block/compressed_basalt_horizontal.json
